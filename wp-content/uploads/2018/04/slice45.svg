@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 645 264" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;">
+    <g transform="matrix(1,0,0,1,-248,-360)">
+        <g>
+            <g id="SonicWall-Web-Application-Firewallv" serif:id="SonicWall Web Application Firewallv" transform="matrix(2.9569,0,0,3.75577,-2504.18,222.261)">
+                <path d="M1145.31,36.7C1147.16,36.701 1148.66,38.202 1148.66,40.05L1148.66,103.366C1148.66,105.215 1147.16,106.716 1145.31,106.716L934.116,106.716C932.267,106.716 930.766,105.215 930.766,103.366L930.766,40.05C930.766,38.202 932.267,36.701 934.116,36.7L1145.31,36.7Z" style="fill:rgb(214,222,225);"/>
+            </g>
+            <g transform="matrix(1.02897,0,0,1.02897,-234.069,-306.691)">
+                <text x="571.206px" y="685.687px" style="font-family:'Nunito-SemiBold', 'Nunito';font-weight:600;font-size:26px;fill:rgb(103,103,108);">SonicW<tspan x="663.246px " y="685.687px ">a</tspan>ll W<tspan x="723.852px " y="685.687px ">e</tspan>b Application Fir<tspan x="930.812px 944.384px 966.224px " y="685.687px 685.687px 685.687px ">ewa</tspan>ll</text>
+            </g>
+        </g>
+    </g>
+</svg>

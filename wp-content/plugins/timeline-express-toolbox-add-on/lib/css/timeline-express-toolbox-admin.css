@@ -1,0 +1,43 @@
+/**
+ * Timeline Express Toolbox Admin Styles
+ *
+ * @since 1.0.0
+ */
+
+/**
+ * Options Page
+ */
+
+/**
+ * Date Format Row
+ */
+.timeline-express-form .announcement-date td label,
+#cmb2-metabox-announcement_metabox .cmb2-id-announcement-date-format .cmb-td label {
+	line-height: 2em;
+}
+
+	/**
+	 * Date Text
+	 */
+	.timeline-express-form .announcement-date td label span.date-time-text,
+	#cmb2-metabox-announcement_metabox .cmb2-id-announcement-date-format .cmb-td label span.date-time-text {
+		display: inline-block;
+		min-width: 10em;
+	}
+
+	/**
+	 * Custom Date Input Field
+	 */
+	.timeline-express-form .announcement-date input[name="timeline_express_storage[date_format_custom]"],
+	#cmb2-metabox-announcement_metabox .cmb2-id-announcement-date-format .cmb-td input[name="timeline_express_storage[date_format_custom]"] {
+		text-align: center;
+		width: 60px;
+	}
+
+	/**
+	 * Spinner
+	 */
+	.timeline-express-form .announcement-date td .spinner,
+	#cmb2-metabox-announcement_metabox .cmb2-id-announcement-date-format .cmb-td td .spinner {
+		float: none;
+	}

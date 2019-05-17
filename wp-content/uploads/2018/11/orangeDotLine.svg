@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="210px" height="98px" viewBox="0 0 210 98" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.4 (67378) - http://www.bohemiancoding.com/sketch -->
+    <title>orangeDotLine</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-dasharray="6,6">
+        <g id="Artboard-Copy-35" transform="translate(-322.000000, -510.000000)" fill-rule="nonzero" stroke="#FF8D20" stroke-width="10">
+            <g id="Group-Copy-3" transform="translate(433.000000, 561.000000) scale(-1, -1) translate(-433.000000, -561.000000) translate(304.000000, 490.000000)">
+                <path d="M178.710265,172.789265 L178.710265,-13.7102654 C178.710265,-23.6513909 170.651391,-31.7102654 160.710265,-31.7102654 L85.7892654,-31.7102654" id="orangeDotLine" transform="translate(132.249765, 70.539500) scale(-1, -1) rotate(-90.000000) translate(-132.249765, -70.539500) "></path>
+            </g>
+        </g>
+    </g>
+</svg>

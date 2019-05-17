@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="396px" height="715px" viewBox="0 0 396 715" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>Info Screen</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Info-Screen">
+            <rect id="Info-Base" stroke="#50E3C2" stroke-width="2" fill-opacity="0.78" fill="#000000" x="1" y="1" width="394" height="713" rx="26"></rect>
+            <g id="Icon_Malware" transform="translate(29.000000, 25.000000)" fill="#0DB6A3" fill-rule="nonzero">
+                <path d="M14.9047382,17.0260676 L14.9047382,18.9250862 C14.9047382,19.1238304 15.0659157,19.2849444 15.2647382,19.2849444 L21.552817,19.2849444 C21.7516395,19.2849444 21.912817,19.1238304 21.912817,18.9250862 L21.912817,17.0260676 C22.0775984,16.8900347 22.2343271,16.7446022 22.3821816,16.5905914 L25.1858208,16.5905914 C25.8876066,16.5905914 26.4565164,17.1592771 26.4565164,17.8607864 L26.4565164,21.1480059 C26.1965535,21.3805872 26.0329512,21.7185803 26.0329512,22.0947696 C26.0329512,22.7962789 26.601861,23.3649646 27.3036468,23.3649646 C28.0054326,23.3649646 28.5743424,22.7962789 28.5743424,22.0947696 C28.5743424,21.3932603 28.0054326,20.8245746 27.3036468,20.8245746 L27.3036468,17.8607864 C27.3036468,16.6916042 26.3554638,15.7437948 25.1858208,15.7437948 L23.0495122,15.7437948 C23.3779321,15.2310226 23.6236284,14.660221 23.7677823,14.0502015 L26.8800816,14.0502015 L26.8800816,14.4735998 C26.8800816,14.7074362 27.0697182,14.8969981 27.3036468,14.8969981 C27.5375754,14.8969981 27.727212,14.7074362 27.727212,14.4735998 L27.727212,12.7800065 C27.727212,12.54617 27.5375754,12.3566082 27.3036468,12.3566082 C27.0697182,12.3566082 26.8800816,12.54617 26.8800816,12.7800065 L26.8800816,13.2034048 L23.8990765,13.2034048 C23.9097108,13.0636657 23.9151252,12.9224682 23.9151252,12.7800065 C23.9151252,12.1891032 23.8219743,11.619948 23.6495503,11.0864132 L26.0329512,11.0864132 C27.2025942,11.0864132 28.1507772,10.1386037 28.1507772,8.96942162 L28.1507772,7.27582826 C28.852563,7.27582826 29.4214728,6.7071426 29.4214728,6.00563332 C29.4214728,5.30412401 28.852563,4.73543835 28.1507772,4.73543835 C27.4489914,4.73543835 26.8800816,5.30412401 26.8800816,6.00563332 C26.8800816,6.38182265 27.0436839,6.71981565 27.3036468,6.95239709 L27.3036468,8.96942162 C27.3036468,9.67093092 26.734737,10.2396166 26.0329512,10.2396166 L23.2948473,10.2396166 C22.3765365,8.47837262 20.5331471,7.27582826 18.4087776,7.27582826 C16.2844082,7.27582826 14.4410187,8.47837262 13.5227079,10.2396166 L10.784604,10.2396166 C10.0828182,10.2396166 9.51390835,9.67093092 9.51390835,8.96942162 L9.51390835,6.95239709 C9.77387126,6.71981565 9.93747355,6.38182265 9.93747355,6.00563332 C9.93747355,5.30412401 9.36856375,4.73543835 8.66677795,4.73543835 C7.96499215,4.73543835 7.39608235,5.30412401 7.39608235,6.00563332 C7.39608235,6.7071426 7.96499215,7.27582826 8.66677795,7.27582826 L8.66677795,8.96942162 C8.66677795,10.1386037 9.614961,11.0864132 10.784604,11.0864132 L13.1680048,11.0864132 C12.9955809,11.619948 12.90243,12.1891032 12.90243,12.7800065 C12.90243,12.9224682 12.9078444,13.0636657 12.9184787,13.2034048 L9.93747355,13.2034048 L9.93747355,12.7800065 C9.93747355,12.54617 9.747837,12.3566082 9.51390835,12.3566082 C9.27997978,12.3566082 9.09034315,12.54617 9.09034315,12.7800065 L9.09034315,13.2034048 L9.09034315,14.0502015 L9.09034315,14.4735998 C9.09034315,14.7074362 9.27997978,14.8969981 9.51390835,14.8969981 C9.747837,14.8969981 9.93747355,14.7074362 9.93747355,14.4735998 L9.93747355,14.0502015 L13.0497729,14.0502015 C13.1939268,14.660221 13.4396232,15.2310226 13.768043,15.7437948 L11.6317344,15.7437948 C10.4620914,15.7437948 9.51390835,16.6916042 9.51390835,17.8607864 L9.51390835,19.977778 C8.81212255,19.977778 8.24321275,20.5464637 8.24321275,21.247973 C8.24321275,21.9494823 8.81212255,22.5181679 9.51390835,22.5181679 C10.2156942,22.5181679 10.784604,21.9494823 10.784604,21.247973 C10.784604,20.8717836 10.6210017,20.5337906 10.3610388,20.3012092 L10.3610388,17.8607864 C10.3610388,17.1592771 10.9299486,16.5905914 11.6317344,16.5905914 L14.4353736,16.5905914 C14.583228,16.7446022 14.7399569,16.8900347 14.9047382,17.0260676 Z M27.9558289,30.0371373 C28.4983857,30.0371373 28.9376471,30.4762256 28.9376471,31.0185686 C28.9376471,31.5609116 28.4983857,32 27.9558289,32 L8.31946522,32 C7.77690842,32 7.33764708,31.5609116 7.33764708,31.0185686 C7.33764708,30.4762256 7.77690842,30.0371373 8.31946522,30.0371373 L13.5031584,30.0371373 L14.1577039,27.3036522 L22.1175903,27.3036522 L22.7721357,30.0371373 L27.9558289,30.0371373 Z M2.16,0 L33.84,0 C35.032935,0 36,0.96668393 36,2.15914899 L36,24.0805089 C36,25.272974 35.032935,26.2396579 33.84,26.2396579 L2.16,26.2396579 C0.96706494,26.2396579 1.46092464e-16,25.272974 0,24.0805089 L0,2.15914899 C-1.46092392e-16,0.96668393 0.96706494,0 2.16,0 Z" id="Combined-Shape"></path>
+                <path d="M15.9319012,14.3375186 C15.1085178,14.0350858 14.8307611,13.2559129 15.0986311,12 L18.0167883,13.2715483 C17.4502468,14.284628 16.7552844,14.6399514 15.9319012,14.3375186 Z M21.0680989,14.3375186 C20.2447155,14.6399514 19.5497531,14.284628 18.9832117,13.2715483 L21.901369,12 C22.1692389,13.2559129 21.8914822,14.0350858 21.0680989,14.3375186 Z M16.6296022,18.1964923 L17.8667409,18.1964923 L17.8667409,20 L16.6296022,20 L16.6296022,18.1964923 Z M19.1038796,18.1964923 L20.3410182,18.1964923 L20.3410182,20 L19.1038796,20 L19.1038796,18.1964923 Z" id="Combined-Shape"></path>
+            </g>
+            <text id="Malware" font-family="Nunito-Regular, Nunito" font-size="18" font-weight="normal" fill="#838383">
+                <tspan x="77" y="38">Malware</tspan>
+            </text>
+            <text id="8,709" font-family="Nunito-Regular, Nunito" font-size="18" font-weight="normal" fill="#0DB6A3">
+                <tspan x="77" y="57">8,709</tspan>
+            </text>
+            <text id="Malware-includes-all" font-family="Nunito-Regular, Nunito" font-size="14" font-weight="normal" line-spacing="16">
+                <tspan x="31" y="92" fill="#888888">Malware includes all software written with malicious </tspan>
+                <tspan x="31" y="108" fill="#888888">executable code to secretly manipulate, alter, disrupt </tspan>
+                <tspan x="31" y="124" fill="#888888">and/or damage victims’ systems. Malware attacks </tspan>
+                <tspan x="31" y="140" fill="#888888">may target individuals or organizations for social, </tspan>
+                <tspan x="31" y="156" fill="#888888">political, economic and/or monetization purposes. </tspan>
+                <tspan x="31" y="172" fill="#888888">Common examples of malware include ransomware, </tspan>
+                <tspan x="31" y="188" fill="#888888">viruses, worms, Trojans, adware and spyware</tspan>
+                <tspan x="35.606" y="206.133911" fill="#888888"></tspan>
+                <tspan x="31" y="220" fill="#888888">Viruses</tspan>
+                <tspan x="35.606" y="238.133911" fill="#888888"></tspan>
+                <tspan x="31" y="252" fill="#888888">A computer virus is a small software program that </tspan>
+                <tspan x="31" y="268" fill="#888888">can replicate itself and infect a computer to disrupt or </tspan>
+                <tspan x="31" y="284" fill="#888888">destroy normal computing operations. In other cases, </tspan>
+                <tspan x="31" y="300" fill="#888888">it is used to gain admin control, download and </tspan>
+                <tspan x="31" y="316" fill="#888888">execute other malicious programs, spread infection to </tspan>
+                <tspan x="31" y="332" fill="#888888">other computers, and steal or delete sensitive user </tspan>
+                <tspan x="31" y="348" fill="#888888">data.</tspan>
+                <tspan x="35.606" y="366.133911" fill="#888888"></tspan>
+                <tspan x="31" y="380" fill="#888888">Trojans</tspan>
+                <tspan x="35.606" y="398.133911" fill="#888888"></tspan>
+                <tspan x="31" y="412" fill="#888888">Trojans are designed specifically to extract sensitive </tspan>
+                <tspan x="31" y="428" fill="#888888">data from the network. Many types of Trojans will </tspan>
+                <tspan x="31" y="444" fill="#888888">take control of the infected system, opening a back </tspan>
+                <tspan x="31" y="460" fill="#888888">door for an attacker to access later. Trojans are often </tspan>
+                <tspan x="31" y="476" fill="#888888">used in the creation of botnets.</tspan>
+                <tspan x="35.606" y="494.133911" fill="#888888"></tspan>
+                <tspan x="31" y="508" fill="#888888">Spyware</tspan>
+                <tspan x="35.606" y="526.133911" fill="#888888"></tspan>
+                <tspan x="31" y="540" fill="#888888">Although not malicious in nature, spyware is typically </tspan>
+                <tspan x="31" y="556" fill="#888888">used to infect web browsers, making them nearly </tspan>
+                <tspan x="31" y="572" fill="#888888">inoperable. Also, it often disguised as a legitimate </tspan>
+                <tspan x="31" y="588" fill="#888888">application, providing the user with some benefit </tspan>
+                <tspan x="31" y="604" fill="#888888">while secretly recording behavior and usage patterns.</tspan>
+                <tspan x="35.606" y="622.133911" fill="#888888"></tspan>
+                <tspan x="31" y="636" fill="#FF791A">SonicWall next-generation firewalls</tspan>
+                <tspan x="254.734" y="636" fill="#888888"> decrypt and </tspan>
+                <tspan x="31" y="652" fill="#888888">inspect TLS/SSL encrypted traffic on the fly,without </tspan>
+                <tspan x="31" y="668" fill="#888888">proxying. They detect malware, intrusions and data </tspan>
+                <tspan x="31" y="684" fill="#888888">leakage, and apply application,URL and content </tspan>
+                <tspan x="31" y="700" fill="#888888">control policies to protect against threats hidden in </tspan>
+                <tspan x="31" y="716" fill="#888888">encrypted traffic.</tspan>
+                <tspan x="35.606" y="734.133911" fill="#888888"></tspan>
+            </text>
+        </g>
+    </g>
+</svg>

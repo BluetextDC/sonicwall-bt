@@ -1,0 +1,87 @@
+// CUSTOM MIXINS
+
+//STYLE
+@mixin material-icons($icon) {
+  content:"#{$icon}";
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  vertical-align: middle;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+}
+
+@mixin btn-fab-style($color) {
+  background: $color;
+  color: $color;
+}
+
+@mixin btn-style-hover {
+  background: currentColor;
+  @include box-shadow(0 0 10px currentColor);
+}
+
+
+
+// ANIMATIONS
+@keyframes anim-spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(-360deg); }
+}
+
+@mixin spinner {
+  animation: anim-spin 1s infinite linear;
+}
+
+@mixin loading-spinner {
+  @include material-icons(sync);
+  @include spinner;
+  font-size: inherit;
+  line-height: normal;
+  color: inherit;
+}
+
+
+
+
+//PROPERTIES
+@mixin flexbox {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+
+@mixin flex($values) {
+  -webkit-box-flex: $values;
+  -moz-box-flex: $values;
+  -webkit-flex: $values;
+  -ms-flex: $values;
+  flex: $values;
+}
+
+@mixin flex-wrap($value) {
+  -webkit-flex-wrap: $value;
+  -ms-flex-wrap: $value;
+  flex-wrap: $value;
+}
+
+@mixin flexbox-align-items($value) {
+  -ms-flex-align: $value;
+  -webkit-align-items: $value;
+  align-items: $value;
+}
+
+@mixin flexbox-justify-content($value) {
+  -ms-flex-pack: $value;
+  -webkit-justify-content: $value;
+  justify-content: $value;
+}

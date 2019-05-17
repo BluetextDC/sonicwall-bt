@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 101 106" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;">
+    <g transform="matrix(1,0,0,1,-111,-152)">
+        <g transform="matrix(1,0,0,1,-0.684275,0)">
+            <g>
+                <g transform="matrix(1,0,0,1,-5.66432,5.34353)">
+                    <text x="117.817px" y="155.997px" style="font-family:'Nunito-Bold', 'Nunito';font-weight:700;font-size:12px;fill:white;">Str<tspan x="134.293px " y="155.997px ">e</tspan>aming Data</text>
+                </g>
+                <g transform="matrix(1,0,0,1,12.8101,40.4469)">
+                    <text x="117.817px" y="155.997px" style="font-family:'Nunito-Bold', 'Nunito';font-weight:700;font-size:12px;fill:white;">PDF</text>
+                </g>
+                <g transform="matrix(1,0,0,1,31.7923,74.3377)">
+                    <text x="117.817px" y="155.997px" style="font-family:'Nunito-Bold', 'Nunito';font-weight:700;font-size:12px;fill:white;">Email</text>
+                </g>
+                <g transform="matrix(1,0,0,1,46.0123,101.459)">
+                    <text x="117.817px" y="155.997px" style="font-family:'Nunito-Bold', 'Nunito';font-weight:700;font-size:12px;fill:rgb(185,185,185);">Data File</text>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

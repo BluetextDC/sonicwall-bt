@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="153px" height="18px" viewBox="0 0 153 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>Shield Level Text</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" font-family="Nunito-Regular, Nunito" font-size="23" font-weight="normal">
+        <text id="Shield-Level-Text" fill="#999999">
+            <tspan x="-0.755" y="18">SHIELD LEVEL</tspan>
+        </text>
+    </g>
+</svg>

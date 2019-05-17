@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="35px" height="21px" viewBox="0 0 35 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50 (54983) - http://www.bohemiancoding.com/sketch -->
+    <title>branch</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M0,21 L20,21 L20,7 L0,13 L0,21 Z M14.375,13.75 L17.125,13.75 L17.125,17.5 L14.375,17.5 L14.375,13.75 Z M9.875,13.75 L12.625,13.75 L12.625,17.5 L9.875,17.5 L9.875,13.75 Z M4.875,13.75 L7.625,13.75 L7.625,17.5 L4.875,17.5 L4.875,13.75 Z M21.875,0.375 L35,0.375 L35,2.25 L21.875,2.25 L21.875,0.375 Z M21.875,21 L25.625,21 L25.625,13.5 L31.25,13.5 L31.25,21 L35,21 L35,4.125 L21.875,4.125 L21.875,21 Z" id="branch" fill="#EDEDED" fill-rule="nonzero"></path>
+    </g>
+</svg>

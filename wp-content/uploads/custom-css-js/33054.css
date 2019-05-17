@@ -1,0 +1,282 @@
+<!-- start Simple Custom CSS and JS -->
+<style type="text/css">
+
+/* 1023px and below screen sizes */
+@media only screen and (max-width: 1023px){
+
+	div header > div{
+		display: none !important;
+	}
+	
+}
+
+/* 1080px and below screen sizes */
+@media only screen and (max-width: 1080px){
+
+	div header > div{
+		display: none !important;
+	}
+	
+	.html_header_top.html_header_sticky #top #wrap_all #main{
+		padding-top: 54px;
+	}
+	
+}
+
+/* 420px and below screen sizes */
+@media (max-width: 420px){
+
+	.npl_layer{
+		top:54px;
+	}
+	
+	#av_section_1,#av-masonry-1{
+		margin-top: 54px;
+	}
+	
+	.sophos-section-2-left .avia_textblock p, .av_textblock_section .avia_textblock.sophos-section-2-right p, .sophos-section-5-left p, .sophos-form-des p, .sophos-section-8-title, [class*='sophos'] .avia_textblock p{
+		font-size: 16px;
+		font-size: 16px;
+	}
+	
+	.sophos-section-3-title h3{
+		font-size: 36px;
+		font-size: 36px;
+	}
+	
+	[class*='sophos'] .avia-button-wrap{
+		width: 100%;
+		width: 100%;
+	}
+	
+	.avia-section,#footer,.main_color{
+		padding: 0 20px;
+		padding: 0 20px;
+	}
+	
+	.responsive #top #wrap_all .container{
+		width: 100%;
+		max-width: 100%;
+		width: 100%;
+		max-width: 100%;
+	}
+	
+	.post-entry h1{
+		font-size: 36px;
+		font-size: 36px;
+	}
+	
+	.av-subheading p, .sw-long-desc{
+		font-size: 18px !important;
+		font-size: 18px !important;
+	}
+	
+	.content, .sidebar{
+		padding-bottom: 25px;
+		padding-bottom: 25px;
+	}
+	
+	.iconlist_icon, .sw_iconlist_left .iconlist_icon{
+		border-width: 2px;
+		width: 44px !important;
+		height: 44px !important;
+		line-height: 42px !important;
+		border-width: 2px;
+		width: 44px !important;
+		height: 44px !important;
+		line-height: 42px !important;
+	}
+	
+	.avia-icon-list .iconlist_icon{
+		font-size: 20px;
+		margin-right: 16px;
+		font-size: 20px;
+		margin-right: 16px;
+	}
+	
+	.post-entry li h4{
+		font-size: 20px !important;
+		padding-bottom: 16px !important;
+		line-height: 24px !important;
+		font-size: 20px !important;
+		padding-bottom: 16px !important;
+		line-height: 24px !important;
+	}
+	
+	.avia-icon-list .iconlist_content li{
+		font-size: 14px;
+		line-height: 20px;
+		margin-left: -15px;
+		font-size: 14px;
+		line-height: 20px;
+		margin-left: -15px;
+	}
+	
+	.sw_button{
+		padding-left: 10px;
+		padding-right: 10px;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	
+	.sw_button a, .gform_button{
+		font-size: 14px !important;
+		padding-top: 8px !important;
+		padding-bottom: 8px !important;
+		line-height: normal !important;
+		width: 100% !important;
+		left: 0;
+		font-size: 14px !important;
+		padding-top: 8px !important;
+		padding-bottom: 8px !important;
+		line-height: normal !important;
+		width: 100% !important;
+		left: 0;
+	}
+	
+	.gform_wrapper .gform_footer{
+		text-align: center;
+		padding-left: 0 !important;
+		text-align: center;
+		padding-left: 0 !important;
+	}
+	
+	#footer .flex_column .widget{
+		margin-right: 0;
+		margin-top: 0;
+		margin-bottom: 0;
+		margin-right: 0;
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+	
+	.iconlist-timeline{
+		left: 24px !important;
+		left: 24px !important;
+	}
+	
+	#socket .copyright{
+		float: none;
+		display: block;
+		text-align: center;
+		float: none;
+		display: block;
+		text-align: center;
+		text-align: center;
+		float: none;
+		display: block;
+	}
+	
+	#socket .social_bookmarks{
+		float: none;
+		margin-left: 24px;
+		float: none;
+		margin-left: 24px;
+		float: none;
+		margin: 0 auto;
+		width: 180px;
+	}
+	
+	.responsive #socket .sub_menu_socket{
+		margin-left: 17px;
+		margin-left: 17px;
+		margin: 0 auto;
+		width: 95px;
+	}
+	
+	.category-pressrelease .entry-content p, .category-pressrelease .entry-content li{
+		font-size: 14px;
+		font-size: 14px;
+	}
+	
+	.post-entry h2{
+		font-size: 30px !important;
+		font-size: 30px !important;
+	}
+	
+	#main ul p{
+		font-size: 16px !important;
+		font-size: 16px !important;
+	}
+	
+	.timeline-left .iconlist-timeline{
+		right: 37px !important;
+		right: 37px !important;
+	}
+	
+	.first div ul li article div div p a{
+		font-size: 16px !important;
+		font-size: 16px !important;
+	}
+	
+	.wpml-ls-statics-post_translations.wpml-ls{
+		display: none;
+		display: none;
+	}
+	
+	.sw-long-desc ul li{
+		padding-bottom: 0;
+		padding-bottom: 0;
+	}
+	
+	.tablepress thead{
+		display: none;
+		display: none;
+	}
+	
+	.tablepress tbody td{
+		display: block;
+		text-align: center;
+		border-bottom: 1px solid #eee;
+		display: block;
+		text-align: center;
+		border-bottom: 1px solid #eee;
+	}
+	
+	.tablepress tbody td:before{
+		content: attr(data-th);
+		display: block;
+		margin-bottom: 8px;
+		text-align: left;
+		content: attr(data-th);
+		display: block;
+		margin-bottom: 8px;
+		text-align: left;
+	}
+	
+	.tablepress .column-1{
+		background: #68696b !important;
+		background: #68696b !important;
+	}
+	
+	.tablepress .column-1, .tablepress .column-1 strong{
+		color: #fff !important;
+		color: #fff !important;
+	}
+	
+	.sw-center-text-highlight p{
+		font-size: 18px;
+		font-size: 18px;
+	}
+	
+	#socket .social_bookmarks li{
+		top: 0;
+	}
+	
+	#socket .menu{
+		overflow: hidden;
+		margin-left: 0;
+	}
+	
+	.category-pressrelease{
+		margin-top: 54px;
+	}
+	
+	.lightPost-detail{
+		margin-top:30px;
+	}
+	
+}
+
+</style>
+<!-- end Simple Custom CSS and JS -->

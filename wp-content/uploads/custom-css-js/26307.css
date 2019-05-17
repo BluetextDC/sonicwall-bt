@@ -1,0 +1,25 @@
+<!-- start Simple Custom CSS and JS -->
+<style type="text/css">
+/* Add your CSS code here.*/ 
+
+span.language_flag {
+     display:none!important;
+     }
+span.wpml-ls-native {
+     text-transform: uppercase;
+     }  
+#top .sub_menu li li a {
+     padding-top:10px;
+     padding-right: 18px;
+     padding-bottom: 0px;
+     padding-left: 18px;
+     }
+li li::before {
+     display:none!important;
+     }
+#top .sub_menu li ul {
+    left: 0%;
+    }
+
+</style>
+<!-- end Simple Custom CSS and JS -->

@@ -1,0 +1,131 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Readme Advanced iFrame Pro standalone</title>
+<style>
+body { color: #444; font-family: "Open Sans",sans-serif; font-size: 13px; line-height: 1.4em; min-width: 600px; background-color: #f5f5f5; }
+h2 { color: #222; font-size: 1.5em; font-weight: 400; margin-bottom: 0.83em; margin-top: 0.83em; }
+h1, h2, h3, h4, h5, h6 { font-weight: 600; }
+.code { border: 1px solid #bbb; background-color: #f5f5f5; padding:10px; margin: 10px; width:650px;}
+#content {padding: 20px; margin-left: auto; margin-right: auto; width:800px; background-color: #fff; }
+</style>
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+</head>   
+<body>
+<div id="content">
+<h1>Advanced iFrame Pro Standalone</h1>
+<h2>Overview</h2>
+<p>
+This is the standalone version of the Advanced iFrame Pro. It has all main features like the Wordpress version but can be used without a Wordpress installation. The configuration of Wordpress with the administration backend and the use of shortcodes moved into a settings file.    
+</p>
+<p>
+Please read the quick start guide at: <a href="../documentation/Advanced iFrame Pro attribute help.htm" target="_blank">documentation/Advanced iFrame Pro attribute help.htm</a><br />
+You find also all available settings there! 
+</p>
+<h2>Requirements</h2>
+<ul> 
+<li>JQuery (tested with JQuery 1.11)</li>
+<li>The php version depends on the features you want to use. php >= 5.3 does support all features.</li>
+</ul>
+
+<h2>Installation</h2>
+<p>
+Upload the content of this zip file anywhere to your webserver and<strong> keep the current structure of the zip file.</strong> The additional files you need for the standalone version are in the folder "standalone":
+<ul>
+<li>standalone-advanced-iframe.php - The file you need to include to your php file at the place where the iframe should appear. Do <strong>not</strong> copy this file somewhere as the paths in there are important. </li>
+<li>standalone-advanced-iframe-settings*.php - The setting files. Here you place your settings. The folder does contain the settings for all examples.</li>
+<li>standalone-example.php - An example file with many working examples</li>
+<li>standalone-ai_external.js - This file is needed for the external workaround. Please see the description below.</li>
+</ul>
+</p>
+
+
+<h2>Usage</h2>
+To include the iframe to you page you first have to include the following scripts :
+<ul>
+<li>jQuery - if not present already. <strong>Has to be included before the ai.js</strong></li>
+<li>/js/ai.js - The Javascript file of Advanced iFrame Pro. Can be included at the bottom of your page.</li>
+</ul>
+
+e.g. 
+<div class="code">
+&lt;script src="//code.jquery.com/jquery-1.11.0.min.js"&gt;&lt;/script&gt;<br />
+&lt;script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"&gt;&lt;/script&gt;<br />
+&lt;script src="../js/ai.js"&gt;&lt;/script&gt;
+</div>
+
+Then include the file 'standalone-advanced-iframe.php' at the place you want to include the iframe 
+
+<div class="code">
+include 'standalone-advanced-iframe.php';
+</div>
+<p>
+This creates an iframe with the settings found in standalone-advanced-iframe-settings.php. 
+</p>
+<p>
+There are 2 additional settings you can set:
+<ul>
+<li>$ai_settings_file - this defines the file with the settings. Default is 'standalone-advanced-iframe-settings.php' Please see the many examples included in this directory.</li>
+<li>$site_url - Defines the root folder of this plugin. The code tries to detect the full absolute url automatically. This is needed for the additional resources like Javascript and images. Check the network tab of a developer plugin and see if you get errors there.</li>
+</ul>
+<p>If you used lazy loading you need to include the scripts <strong>before</strong> you include standalone-advanced-iframe.php because an additional jQuery plugin is loaded dynamically and jQuery has to be loaded before. Also make sure that you only include jQuery once! </p>
+<p>e.g.
+</p>
+<div class="code">
+$site_url = 'http://www.yourdomain.com/path-to-advanced-iframe-parent-folder/advanced-iframe';<br />
+$ai_settings_file = 'standalone-advanced-iframe-settings2.php';<br />
+include '../../advanced-iframe/standalone/standalone-advanced-iframe.php';<br />
+</div>
+<p>
+All possible settings are listed at <a href="../documentation/Advanced iFrame Pro attribute help.htm" target="_blank">Advanced iFrame Pro attribute help</a>.  
+</p>
+<p>
+You can  use any of the examples of the <a href="http://www.tinywebgallery.com/blog/advanced-iframe/advanced-iframe-pro-demo" target="_blank">pro demo</a>. Simply use the shortcode attributes without the security_code and the use_shortcode_only. For examples how to use the external workaround please see the next section!
+</p>
+<p>
+Working examples can be found at <a href="standalone-example.php" target="_blank">standalone-example.php</a>. Please check the source of this page for details.
+</p>
+<h3>External workaround</h3>
+One important difference to the Wordpress version is the usage of the <a href="../documentation/Advanced iFrame Pro attribute help.htm#xss" target="_blank">external workaround</a>. In the wordpress version the ai_external is generated with the settings from the database while for the standalone version the file standalone-ai_external.js has to be used and the configuration has to be made before you include the file! 
+<br />So please check especially "How to configure the workaround to work with different settings for different iframes" -> Show me the parameters. It is important that the variable domain_advanced_iframe which points to the root of the plugin has to be set! 
+The following example enables the auto height and keeps the iframe hidden until fully loaded:
+<div class="code">
+var domain_advanced_iframe = 'http://www.yourdomain.com/advanced/iframe/root';<br />
+var updateIframeHeight = 'true';<br />
+var hide_page_until_loaded_external = 'true';<br /> 
+&lt;script src="http://www.yourdomain.com/path/standalone/standalone-ai_external.js"&gt;&lt;/script&gt;
+</div>
+<p>The recommended way to set the variables, is to place them into a seperate config file and include dem before the script. Than you are able to change the settings from your system anytime. This would then e.g. look like this:</p>
+<div class="code">
+&lt;script src="http://www.yourdomain.com/path/standalone/standalone-ai_external_config_4.js"&gt;&lt;/script&gt; <br /> 
+&lt;script src="http://www.yourdomain.com/path/standalone/standalone-ai_external.js"&gt;&lt;/script&gt;</div>
+
+<p>Using the alternative way by using standalone-ai_external.js?configid=4 does also work but than the config file has to be in the main directory of the plugin. </p>
+<p>Working examples can be found at <a href="standalone-example.php" target="_blank">standalone-example.php</a>. Please check the source of this page for details.
+</p>
+<h3>Area selector</h3>
+<p>
+Advanced iframe pro also has an included area selector for the "Show only a part of the iframe" feature<br /> 
+<a href="../includes/advanced-iframe-area-selector.html" target="_blank">includes/advanced-iframe-area-selector.html</a><br />
+Please ignore the warnings that you should open the file in Wordpress. The attributes in the shortcode you see there can be used 1:1 in a settings file!
+</p>
+<h2>More help</h2>
+This file does contain the basic information how to use the plugin standalone. For more information please check the following sources:
+<ul>
+<li><a href="http://www.tinywebgallery.com/blog/advanced-iframe/advanced-iframe-faq" target="_blank">FAQ</a></li>
+<li><a href="http://www.tinywebgallery.com/blog/advanced-iframe/advanced-iframe-pro-demo" target="_blank">Advanced iFrame Pro demo</a></li>
+<li><a href="http://www.tinywebgallery.com/blog/advanced-iframe/advanced-iframe-support" target="_blank">Advanced iFrame Support</a></li>
+<li><a href="http://www.tinywebgallery.com/blog/advanced-iframe/advanced-iframe-comparison-chart" target="_blank">Advanced iFrame comparison chart</a></li>
+<li>Install the plugin in Wordpress and do the configuration there. The administration has additional checks and a short code generator.</a></li>
+</ul>
+
+
+
+<p>
+Have fun using Advanced iFrame Pro<br />Michael
+</p>
+</div>
+</body>
+</html>

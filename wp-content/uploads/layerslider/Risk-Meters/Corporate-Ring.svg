@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="249px" height="267px" viewBox="0 0 249 267" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>Corporate Ring</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Corporate-Ring" transform="translate(-18.366140, -1.023846)">
+            <path d="M143,265 C209.826455,265 264,210.826455 264,144 C264,77.1735453 209.826455,23 143,23 C76.1735453,23 22,77.1735453 22,144 C22,210.826455 76.1735453,265 143,265 Z" id="Corp-Ring" stroke="#96CD2C" stroke-width="6" stroke-dasharray="33,18" transform="translate(143.000000, 144.000000) rotate(-5.000000) translate(-143.000000, -144.000000) "></path>
+            <text id="Corporate" font-family="SonicWallIconFont" font-size="100" font-weight="normal" fill="#96CD2C">
+                <tspan x="100" y="187"></tspan>
+            </text>
+            <g id="circular-security-ball">
+                <circle id="Security-Ball" fill-opacity="0.38" fill="#00FFFF" cx="140" cy="22" r="20"></circle>
+                <circle id="Security-Ball-Copy" fill-opacity="0.48" fill="#00FFFF" cx="140" cy="22" r="17"></circle>
+                <circle id="Security-Ball-Copy-2" fill-opacity="0.88" fill="#00FFFF" cx="140" cy="22" r="13"></circle>
+                <circle id="Oval" stroke-opacity="0" stroke="#979797" cx="143.5" cy="143.5" r="143.5"></circle>
+            </g>
+        </g>
+    </g>
+</svg>

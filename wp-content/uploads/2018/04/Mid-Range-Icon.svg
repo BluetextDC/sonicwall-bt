@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="88px" height="88px" viewBox="0 0 88 88" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>Mid Range Icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="13" y="11" width="25" height="10" rx="1"></rect>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Mid-Range-Icon">
+            <circle id="Oval-Copy-3" fill-opacity="0.3" fill="#13AAFD" cx="44" cy="44" r="44"></circle>
+            <circle id="Oval-Copy-2" fill="#13AAFD" cx="44" cy="44" r="33"></circle>
+            <g id="Icon_MidRange_Products_Menu" transform="translate(24.000000, 28.000000)">
+                <path d="M15.34375,2.65178571 L15.34375,6.34821429 L35.65625,6.34821429 L35.65625,2.65178571 L15.34375,2.65178571 Z M14.171875,0 L36.828125,0 C37.4753336,-2.73606298e-15 38,0.593622452 38,1.32589286 L38,7.67410714 C38,8.40637755 37.4753336,9 36.828125,9 L14.171875,9 C13.5246663,9 13,8.40637755 13,7.67410714 L13,1.32589286 C13,0.593622452 13.5246663,7.23330603e-16 14.171875,0 Z" id="Rectangle-3" fill="#FFFFFF" fill-rule="nonzero"></path>
+                <path d="M9.6,7.83673468 L9.6,11.755102 L2.4,11.755102 L2.4,7.83673468 L0,7.83673468 L6,0 L12,7.83673468 L9.6,7.83673468 Z M2.4,13.0612245 L9.6,13.0612245 L9.6,15.6734693 L2.4,15.6734693 L2.4,13.0612245 Z M2.4,20.8979591 L9.6,20.8979591 L9.6,22.2040816 L2.4,22.2040816 L2.4,20.8979591 Z M2.4,23.5102041 L9.6,23.5102041 L9.6,24.8163265 L2.4,24.8163265 L2.4,23.5102041 Z M2.4,16.9795918 L9.6,16.9795918 L9.6,19.5918366 L2.4,19.5918366 L2.4,16.9795918 Z M2.4,26.1224489 L9.6,26.1224489 L9.6,27.4285714 L2.4,27.4285714 L2.4,26.1224489 Z M2.4,28.7346938 L9.6,28.7346938 L9.6,29.6489795 L2.4,29.6489795 L2.4,28.7346938 Z M2.4,31.3469388 L9.6,31.3469388 L9.6,32 L2.4,32 L2.4,31.3469388 Z" id="Combined-Shape" fill="#FFFFFF" fill-rule="nonzero"></path>
+                <path d="M15.34375,29.3482143 L35.65625,29.3482143 L35.65625,25.6517857 L15.34375,25.6517857 L15.34375,29.3482143 Z M14.171875,23 L36.828125,23 C37.4753336,23 38,23.5936224 38,24.3258929 L38,30.6741071 C38,31.4063776 37.4753336,32 36.828125,32 L14.171875,32 C13.5246663,32 13,31.4063776 13,30.6741071 L13,24.3258929 C13,23.5936224 13.5246663,23 14.171875,23 Z" id="Rectangle-3" fill="#FFFFFF" fill-rule="nonzero"></path>
+                <g id="Rectangle">
+                    <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                    <rect stroke="#FFFFFF" stroke-width="3" x="14.5" y="12.5" width="22" height="7" rx="1"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

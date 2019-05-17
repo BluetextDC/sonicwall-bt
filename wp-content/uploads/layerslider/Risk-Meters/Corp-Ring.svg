@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="249px" height="249px" viewBox="0 0 249 249" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>Corp Ring</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-dasharray="33,18">
+        <g id="Corporate-Ring" transform="translate(-18.366140, -19.023846)" stroke="#96CD2C" stroke-width="6">
+            <path d="M143,265 C209.826455,265 264,210.826455 264,144 C264,77.1735453 209.826455,23 143,23 C76.1735453,23 22,77.1735453 22,144 C22,210.826455 76.1735453,265 143,265 Z" id="Corp-Ring" transform="translate(143.000000, 144.000000) rotate(-5.000000) translate(-143.000000, -144.000000) "></path>
+        </g>
+    </g>
+</svg>

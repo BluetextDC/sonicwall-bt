@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 564 65" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;">
+    <g transform="matrix(1,0,0,1,-297,-479)">
+        <g transform="matrix(1,0,0,1,0,4.77345)">
+            <g transform="matrix(1,0,0,1,-381.354,-195.993)">
+                <text x="686.372px" y="685.687px" style="font-family:'Nunito-Regular', 'Nunito';font-size:20px;fill:white;">HTTP<tspan x="737.172px " y="685.687px ">/</tspan>SSL</text>
+                <text x="678.122px" y="707.687px" style="font-family:'Nunito-Regular', 'Nunito';font-size:20px;fill:white;">deep pack<tspan x="769.282px " y="707.687px ">e</tspan>t</text>
+                <text x="686.702px" y="729.687px" style="font-family:'Nunito-Regular', 'Nunito';font-size:20px;fill:white;">inspection</text>
+            </g>
+            <g transform="matrix(1,0,0,1,-233.755,-194.993)">
+                <text x="681.752px" y="685.687px" style="font-family:'Nunito-Regular', 'Nunito';font-size:20px;fill:white;">Application</text>
+                <text x="697.292px" y="707.687px" style="font-family:'Nunito-Regular', 'Nunito';font-size:20px;fill:white;">deliv<tspan x="738.912px 749.452px 757.112px " y="707.687px 707.687px 707.687px ">ery</tspan></text>
+                <text x="690.502px" y="729.687px" style="font-family:'Nunito-Regular', 'Nunito';font-size:20px;fill:white;">contr<tspan x="736.202px " y="729.687px ">o</tspan>ller</text>
+            </g>
+            <g transform="matrix(1,0,0,1,-87.473,-194.993)">
+                <text x="657.932px" y="685.687px" style="font-family:'Nunito-Regular', 'Nunito';font-size:20px;fill:white;">Signatur<tspan x="733.472px 744.232px " y="685.687px 685.687px ">e-</tspan>based</text>
+                <text x="702.552px" y="707.687px" style="font-family:'Nunito-Regular', 'Nunito';font-size:20px;fill:white;">e<tspan x="712.952px " y="707.687px ">x</tspan>ploit</text>
+                <text x="684.902px" y="729.687px" style="font-family:'Nunito-Regular', 'Nunito';font-size:20px;fill:white;">pr<tspan x="703.402px 713.822px 723.982px " y="729.687px 729.687px 729.687px ">eve</tspan>ntion</text>
+            </g>
+            <g id="_-Web-application-profiling-" serif:id="(Web¶application¶profiling)" transform="matrix(1,0,0,1,60.0901,-194.993)">
+                <text x="710.802px" y="685.687px" style="font-family:'Nunito-Regular', 'Nunito';font-size:20px;fill:white;">W<tspan x="731.702px " y="685.687px ">e</tspan>b</text>
+                <text x="683.722px" y="707.687px" style="font-family:'Nunito-Regular', 'Nunito';font-size:20px;fill:white;">application</text>
+                <text x="663.122px" y="729.687px" style="font-family:'Nunito-Regular', 'Nunito';font-size:20px;fill:white;">pr<tspan x="681.622px " y="729.687px ">o</tspan>ﬁling engine</text>
+            </g>
+        </g>
+    </g>
+</svg>

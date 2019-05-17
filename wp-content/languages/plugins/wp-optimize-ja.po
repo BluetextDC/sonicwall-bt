@@ -1,0 +1,861 @@
+# Translation of Plugins - WP-Optimize - Stable (latest release) in Japanese
+# This file is distributed under the same license as the Plugins - WP-Optimize - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2016-12-30 14:53:34+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: GlotPress/2.3.0-alpha\n"
+"Language: ja_JP\n"
+"Project-Id-Version: Plugins - WP-Optimize - Stable (latest release)\n"
+
+#: wp-optimize.php:305
+msgid "Optimize"
+msgstr "最適化する"
+
+#: templates/optimize-table.php:20
+msgid "Run all selected optimizations now"
+msgstr "選択した最適化をすべて実行"
+
+#: templates/optimize-table.php:11
+msgid "Optimizations"
+msgstr "最適化"
+
+#: templates/optimizations-table.php:50
+msgid "Go"
+msgstr "Go"
+
+#: templates/optimizations-table.php:48
+msgid "Run optimization"
+msgstr "最適化を実行"
+
+#: templates/optimizations-table.php:7
+msgid "Optimization"
+msgstr "最適化"
+
+#: templates/notices/thanks-for-using-main-dash.php:37
+msgid "Free two-factor security plugin"
+msgstr "無料の二段階認証セキュリティプラグイン"
+
+#: templates/notices/thanks-for-using-main-dash.php:37
+msgid "Premium WooCommerce plugins"
+msgstr "プレミアム WooCommerce プラグイン"
+
+#: templates/notices/thanks-for-using-main-dash.php:37
+msgid "More quality plugins"
+msgstr "高品質なプラグイン"
+
+#: templates/notices/thanks-for-using-main-dash.php:35
+msgid "Available as a self-install plugin, or hosted for you from updraftplus.com"
+msgstr "セルフインストールプラグイン、または updraftplus.com でホストされたプラグインとして利用可能です"
+
+#: templates/notices/thanks-for-using-main-dash.php:35
+msgid "Login securely, backup and update all your sites from one place."
+msgstr "1箇所であなたのすべてのサイトのログインセキュリティ、バックアップ、更新。"
+
+#: templates/notices/thanks-for-using-main-dash.php:35
+msgid "If so, take a look at %s, our remote site management solution"
+msgstr "ならば、ぜひ私達のリモートサイト管理ソリューション %s をご覧ください。"
+
+#: templates/notices/thanks-for-using-main-dash.php:35
+msgid "Do you manage multiple WordPress sites?"
+msgstr "複数のWordPressサイトを管理しますか ?"
+
+#: templates/notices/thanks-for-using-main-dash.php:28
+msgid "backup plugin comparison table"
+msgstr "バックアッププラグインの比較表"
+
+#: templates/notices/thanks-for-using-main-dash.php:28
+msgid "If you want to see the benefits of doing so too, then take a look at this:"
+msgstr "なぜそうするのか、こちらをご覧ください:"
+
+#: templates/notices/thanks-for-using-main-dash.php:28
+msgid "Many users of %s have switched to UpdraftPlus WordPress Backup."
+msgstr "多くの %s のユーザーが UpdraftPlus WordPress Backup に乗り換えています。"
+
+#: templates/notices/thanks-for-using-main-dash.php:26
+msgid "You can also restore a site with a couple of clicks."
+msgstr "たったの2クリックでサイトを復元できます。"
+
+#: templates/notices/thanks-for-using-main-dash.php:26
+msgid "We recommend that you install %s, which can automatically backup to remote cloud storage like Dropbox so your backup is independent and safe."
+msgstr "%s のインストールをおすすめします。自動的に Dropbox のようなリモートクラウドストレージにバックアップを取り、バックアップは独立し安全になります。"
+
+#: templates/notices/thanks-for-using-main-dash.php:26
+msgid "Hackers, user error and dodgy updates can all ruin your site."
+msgstr "ハッカー、ユーザーのミス、アップデートはいずれもサイトを破壊する可能性があります。"
+
+#: templates/notices/thanks-for-using-main-dash.php:22
+msgid "UpdraftPlus"
+msgstr "UpdraftPlus"
+
+#: templates/notices/thanks-for-using-main-dash.php:22
+msgid "The team behind WP-Optimize also create WordPress's most trusted backup/restore plugin"
+msgstr "WP-Optimize を支えるチームは WordPress のもっとも信頼されているバックアップ・復元プラグインも制作しています"
+
+#: templates/notices/thanks-for-using-main-dash.php:22
+msgid "UpdraftPlus - the #1 most-trusted WordPress backup/restore plugin"
+msgstr "UpdraftPlus - もっとも信頼されている WordPress バックアップ・復元プラグイン"
+
+#: templates/notices/thanks-for-using-main-dash.php:13
+msgid "Newsletter"
+msgstr "ニュースレター"
+
+#: templates/notices/thanks-for-using-main-dash.php:13
+msgid "Blog"
+msgstr "ブログ"
+
+#: templates/notices/thanks-for-using-main-dash.php:13
+msgid "Keep in touch!"
+msgstr "常に最新情報を"
+
+#: templates/notices/thanks-for-using-main-dash.php:7
+msgid "Thank you for using WP-Optimize, the world's most trusted WP optimization plugin!"
+msgstr "世界で最も信頼されているWP最適化プラグイン、 WP-Optimize をご利用ありがとうございます。"
+
+#: templates/notices/thanks-for-using-main-dash.php:5
+#: templates/notices/thanks-for-using-main-dash.php:41
+msgid "Dismiss (for %s months)"
+msgstr "隠す (%sヶ月間)"
+
+#: templates/notices/horizontal-notice.php:44
+msgid "Go there"
+msgstr "Go there"
+
+#: templates/notices/horizontal-notice.php:42
+msgid "Sign up"
+msgstr "登録"
+
+#: templates/notices/horizontal-notice.php:40
+msgid "Get UpdraftPlus"
+msgstr "UpdraftPlus を入手する"
+
+#: templates/notices/horizontal-notice.php:38
+msgid "Review WP-Optimize"
+msgstr "WP-Optimize をレビュー"
+
+#: templates/notices/horizontal-notice.php:36
+msgid "Get UpdraftCentral"
+msgstr "UpdraftCentral を入手"
+
+#: templates/notices/horizontal-notice.php:16
+#: templates/notices/horizontal-notice.php:18
+msgid "Dismiss"
+msgstr "隠す"
+
+#: templates/notices/horizontal-notice.php:6
+msgid "notice image"
+msgstr "通知画像"
+
+#: templates/admin-settings.php:156
+msgid "Use these buttons to enable or disable any future comments on all your previously published posts."
+msgstr "これらのボタンを利用して過去に投稿したすべての投稿のコメントを有効化・無効化できます。"
+
+#: templates/admin-settings.php:154
+msgid "Comments"
+msgstr "コメント"
+
+#: templates/admin-settings.php:143
+msgid "Use these buttons to enable or disable any future trackbacks on all your previously published posts."
+msgstr "これらのボタンを利用して過去に投稿したすべての投稿のトラックバックを有効化・無効化できます。"
+
+#: templates/admin-settings.php:140
+msgid "Trackbacks"
+msgstr "トラックバック"
+
+#: optimizations/spam.php:72
+msgid "No trashed comments found"
+msgstr "ゴミ箱内にコメントが見つかりませんでした"
+
+#: optimizations/spam.php:70
+msgid "%d trashed comment found"
+msgid_plural "%d trashed comments found"
+msgstr[0] "%d件のゴミ箱内のコメントが見つかりました"
+
+#: optimizations/autodraft.php:75
+msgid "No trashed posts found"
+msgstr "ゴミ箱内の投稿は見つかりませんでした"
+
+#: optimizations/autodraft.php:73
+msgid "%d trashed post in your database"
+msgid_plural "%d trashed posts in your database"
+msgstr[0] "%d件のゴミ箱内の投稿がデータベースに見つかりました"
+
+#: includes/wp-optimize-notices.php:52
+msgid "Please help WP-Optimize by giving a positive review at wordpress.org."
+msgstr "wordpress.org 上での積極的なレビューで、WP-Optimize を手伝って下さい。"
+
+#: includes/wp-optimize-notices.php:51
+msgid "Like WP-Optimize and can spare one minute?"
+msgstr "WP-Optimize が気に入り、1分を節約できましたか？"
+
+#: includes/wp-optimize-notices.php:41
+msgid "UpdraftCentral is a highly efficient way to manage, update and backup multiple websites from one place."
+msgstr "UpdraftCentral は、1つの場所から複数の Web サイトを管理、更新、バックアップするための非常に効率的な方法です。"
+
+#: includes/wp-optimize-notices.php:40
+msgid "Introducing UpdraftCentral - from the team behind WP-Optimize"
+msgstr "UpdraftCentral をはじめる - WP-Optimize のチームが提供"
+
+#: includes/wp-optimize-notices.php:30
+msgid "UpdraftPlus is the world's most trusted backup plugin from the owners of WP-Optimize"
+msgstr "UpdraftPlus は WP-Optimize のオーナーによる世界で最も信頼されているバックアッププラグインです"
+
+#: includes/wp-optimize-notices.php:29
+msgid "Make sure you backup as well as optimize your database"
+msgstr "データベースを最適化するように、バックアップも確認してください"
+
+#: includes/class-wp-optimizer.php:355
+msgid "Trackbacks have now been enabled on all current and previously published posts."
+msgstr "トラックバックは公開済みのすべての投稿で有効になりました。"
+
+#: includes/class-wp-optimizer.php:351
+msgid "Trackbacks have now been disabled on all current and previously published posts."
+msgstr "トラックバックは公開済みのすべての投稿で無効になりました。"
+
+#: includes/class-wp-optimizer.php:344
+msgid "Comments have now been enabled on all current and previously published posts."
+msgstr "コメントバックは公開済みのすべての投稿で有効になりました。"
+
+#: includes/class-wp-optimizer.php:341
+msgid "Comments have now been disabled on all current and previously published posts."
+msgstr "コメントバックは公開済みのすべての投稿で無効になりました。"
+
+#: includes/class-commands.php:72
+msgid "No optimization was indicated."
+msgstr "最適化が選択されていません。"
+
+#. Author URI of the plugin/theme
+msgid "https://updraftplus.com"
+msgstr "https://updraftplus.com"
+
+#. Author of the plugin/theme
+msgid "David Anderson, Ruhani Rabin, Team Updraft"
+msgstr "David Anderson, Ruhani Rabin, Team Updraft"
+
+#. Description of the plugin/theme
+msgid "WP-Optimize is WordPress's #1 most installed optimization plugin. With it, you can clean up your database easily and safely, without manual queries."
+msgstr "WP-Optimize は WordPress の最もインストールされている最適化プラグインです。データーベースのクリーンアップを簡単かつ安全に、マニュアルクエリーなしに実行することが出来ます。"
+
+#. Plugin URI of the plugin/theme
+msgid "http://updraftplus.com"
+msgstr "http://updraftplus.com"
+
+#: wp-optimize.php:445
+msgid "template not found"
+msgstr "テンプレートが見つかりません"
+
+#: wp-optimize.php:445
+msgid "Error:"
+msgstr "エラー:"
+
+#: templates/status-box-contents.php:106
+msgid "Support is available here."
+msgstr "サポートはこちらから。"
+
+#: templates/status-box-contents.php:105
+msgid "please tell us why at this link."
+msgstr "その理由をこのリンクからお知らせください。"
+
+#: templates/status-box-contents.php:105
+msgid "Or, if you did not like it,"
+msgstr "Or, if you did not like it,"
+
+#: templates/status-box-contents.php:105
+msgid "please give us a positive review, here."
+msgstr "こちらよりレビューしてください。"
+
+#: templates/status-box-contents.php:105
+msgid "If you like WP-Optimize,"
+msgstr "もし、WP-Optimizeを気に入ったのであれば"
+
+#: templates/status-box-contents.php:103
+msgid "Support and feedback"
+msgstr "サポートとフィードバック"
+
+#: templates/status-box-contents.php:82
+msgid "You can save around:"
+msgstr "削減できる目安:"
+
+#: templates/status-box-contents.php:11
+msgid "Status"
+msgstr "ステータス"
+
+#: templates/optimize-table.php:16
+msgid "If you need a backup plugin, then we recommend UpdraftPlus."
+msgstr "もしバックアッププラグインが必要なら、UpdraftPlus をおすすめします。"
+
+#: templates/optimize-table.php:16
+msgid "It is best practice to always make a backup of your database before any major operation (optimizing, upgrading, etc.)."
+msgstr "最適化や更新のような主要な操作をする前には常にデータベースのバックアップを取っておくことをおすすめします。"
+
+#: templates/optimize-table.php:26
+msgid "You may wish to run a backup before performing them."
+msgstr "これらを実行する前にバックアップを取るべきです。"
+
+#: templates/optimize-table.php:26
+msgid "Items marked in red, whilst still safe, perform more database delete operations."
+msgstr "赤色でマークされた項目は、安全ですがデータベースの削除操作を実行します。"
+
+#: templates/admin-settings.php:60
+msgid "Monthly (approx. - every 30 days)"
+msgstr "毎月 (約30日毎)"
+
+#: templates/admin-settings.php:59
+msgid "Fortnightly"
+msgstr "半月毎"
+
+#: templates/admin-settings.php:58
+msgid "Weekly"
+msgstr "毎週"
+
+#: templates/admin-settings.php:57
+msgid "Daily"
+msgstr "毎日"
+
+#: templates/admin-settings.php:121
+msgid "Save settings"
+msgstr "設定を保存"
+
+#: templates/admin-settings.php:34
+msgid "This option will put an WP-Optimize link on the top admin bar (default is off). Requires a second page refresh after saving the settings."
+msgstr "このオプションは画面上部の管理バーに WP-Optimize のリンクを設置します。(デフォルトはオフ) 設定を保存後、ページを再度読み込みする必要があります。"
+
+#: templates/admin-settings.php:26
+msgid "This will also affect Auto Clean-up process"
+msgstr "これは自動クリーンアップにも影響します"
+
+#: templates/admin-settings.php:26
+msgid "If the option is not active, then all garbage data will be removed."
+msgstr "このオプションが有効でない場合、すべてのゴミデータは削除されます。"
+
+#: templates/admin-settings.php:26
+msgid "This option will, where relevant, retain data from the chosen period, and remove any garbage data before that period."
+msgstr "このオプションは選択した期間のデータは保持し、それより古いゴミデータを削除します。"
+
+#: wp-optimize.php:179
+msgid "Plugin family"
+msgstr "プラグインファミリー"
+
+#: wp-optimize.php:177
+msgid "Table information"
+msgstr "テーブル情報"
+
+#: templates/admin-page-header.php:38
+msgid "More plugins"
+msgstr "更なるプラグイン"
+
+#: templates/admin-page-header.php:36
+msgid "FAQs"
+msgstr "FAQ"
+
+#: templates/admin-page-header.php:32
+msgid "Lead developer"
+msgstr "リード開発者"
+
+#: templates/admin-page-header.php:30
+msgid "Newsletter sign-up"
+msgstr "ニュースレター登録"
+
+#: templates/admin-page-header.php:28
+msgid "Support"
+msgstr "サポート"
+
+#: templates/admin-page-header.php:26
+#: templates/notices/thanks-for-using-main-dash.php:13
+msgid "Twitter"
+msgstr "Twitter"
+
+#: templates/admin-page-header.php:24
+msgid "News"
+msgstr "ニュース"
+
+#: templates/admin-page-header.php:20
+msgid "Home"
+msgstr "ホーム"
+
+#: templates/status-box-contents.php:17
+msgid "running on:"
+msgstr "環境:"
+
+#: optimizations/transient.php:125 optimizations/transient.php:129
+msgid "Remove expired transient options"
+msgstr "期限切れの transient オプションを削除"
+
+#: optimizations/transient.php:116
+msgid "%d expired transient in your database"
+msgid_plural "%d expired transient in your database"
+msgstr[0] "%d個の期限切れの transient がデータベースに存在します。"
+
+#: optimizations/transient.php:60
+msgid "%d site-wide transient option deleted"
+msgid_plural "%d site-widetransient options deleted"
+msgstr[0] "%d個 のサイトワイド transient オプションが削除されました"
+
+#: optimizations/optimizetables.php:87
+msgid "Tables using the InnoDB engine (%d) will not be optimized."
+msgstr "InnoDB エンジンを利用しているテーブル(%d)は最適化されません。"
+
+#: optimizations/optimizetables.php:83
+msgid "Total gain:"
+msgstr "削減量:"
+
+#: includes/class-wp-optimizer.php:101 includes/class-wp-optimizer.php:107
+msgid "No such optimization"
+msgstr "最適化するものがありません"
+
+#: optimizations/orphandata.php:37
+msgid "Clean orphaned relationship data"
+msgstr "孤立したデータのクリーン"
+
+#: optimizations/commentmeta.php:48 optimizations/commentmeta.php:52
+msgid "Clean comment meta data"
+msgstr "コメントメタデータのクリン"
+
+#: optimizations/postmeta.php:42
+msgid "Clean post meta data"
+msgstr "投稿メタデータのクリーン"
+
+#: optimizations/orphandata.php:30
+msgid "No orphaned relationship data in your database"
+msgstr "孤立したデータはデータベースに存在しません"
+
+#: optimizations/orphandata.php:28
+msgid "%d orphaned relationship data in your database"
+msgid_plural "%d orphaned relationship data in your database"
+msgstr[0] "%d個の孤立したデータがデータベースに存在します"
+
+#: optimizations/commentmeta.php:40
+msgid "No orphaned comment meta data in your database"
+msgstr "孤立したコメントメタデータはデータベースに存在しません"
+
+#: optimizations/commentmeta.php:38
+msgid "%d orphaned comment meta data in your database"
+msgid_plural "%d orphaned comment meta data in your database"
+msgstr[0] "%d個の孤立したコメントメタデータがデータベースに存在します"
+
+#: optimizations/orphandata.php:15
+msgid "%d orphaned meta data deleted"
+msgid_plural "%d orphaned meta data deleted"
+msgstr[0] "%d個の孤立したメタデータが削除されました"
+
+#: optimizations/postmeta.php:20
+msgid "%d orphaned postmeta deleted"
+msgid_plural "%d orphaned postmeta deleted"
+msgstr[0] "%d個の孤立した投稿メタが削除されました"
+
+#: templates/tables.php:54
+msgid "Total space that can be saved:"
+msgstr "削減できた容量:"
+
+#: templates/admin-settings.php:22
+msgid "Keep last %s weeks data"
+msgstr "直近%s週間分のデータを保持する"
+
+#: templates/status-box-contents.php:61
+msgid "Keeping last %s weeks data"
+msgstr "直近%s週間分のデータを保持しています"
+
+#: optimizations/optimizetables.php:79
+msgctxt "%s is the database name"
+msgid "%s database optimized!"
+msgstr "%s データベースを最適化しました。"
+
+#: optimizations/trackbacks.php:25
+msgid "%d Trackback found"
+msgid_plural "%d Trackbacks found"
+msgstr[0] "%d個のトラックバックが見つかりました"
+
+#: optimizations/pingbacks.php:25
+msgid "%d Pingback found"
+msgid_plural "%d Pingbacks found"
+msgstr[0] "%d個のピンバックが見つかりました"
+
+#: optimizations/trackbacks.php:15
+msgid "%d trackback deleted"
+msgid_plural "%d trackbacks deleted"
+msgstr[0] "%d個のトラックバックを削除しました"
+
+#: optimizations/pingbacks.php:15
+msgid "%d pingback deleted"
+msgid_plural "%d pingbacks deleted"
+msgstr[0] "%d個のピンバックを削除しました"
+
+#. Plugin Name of the plugin/theme
+msgid "WP-Optimize"
+msgstr "WP-Optimize"
+
+#: templates/tables.php:51
+msgid "Optimization Possibility:"
+msgstr "最適化の可能性:"
+
+#: templates/tables.php:41
+msgid "Total space saved:"
+msgstr "削減した総容量:"
+
+#: templates/tables.php:37
+msgid "Optimization results:"
+msgstr "最適化結果:"
+
+#: templates/tables.php:29
+msgid "Total size of database:"
+msgstr "データベースの合計サイズ:"
+
+#: templates/tables-body.php:65
+msgid "%d Record"
+msgid_plural "%d Records"
+msgstr[0] "%d レコード"
+
+#: templates/tables-body.php:64
+msgid "%d Table"
+msgid_plural "%d Tables"
+msgstr[0] "%d テーブル"
+
+#: templates/tables-body.php:63
+msgid "Total:"
+msgstr "合計:"
+
+#: templates/tables.php:21
+msgid "Overhead"
+msgstr "オーバーヘッド"
+
+#: templates/tables.php:20
+msgid "Type"
+msgstr "タイプ"
+
+#: templates/tables.php:19
+msgid "Index Size"
+msgstr "インデックスサイズ"
+
+#: templates/tables.php:18
+msgid "Data Size"
+msgstr "データサイズ"
+
+#: templates/tables.php:17
+msgid "Records"
+msgstr "レコード"
+
+#: templates/tables.php:15
+msgid "No."
+msgstr "No."
+
+#: templates/tables.php:9
+msgid "Optimized all the tables found in the database."
+msgstr "データベースに見つかったすべてのテーブルを最適化しました。"
+
+#: templates/tables.php:3
+msgid "Database name:"
+msgstr "データベース名:"
+
+#: optimizations/inactive-tags.php:24
+msgid "Remove unused tags"
+msgstr "未使用のタグを削除"
+
+#: optimizations/postmeta.php:47
+msgid "Remove orphaned post meta"
+msgstr "孤立した投稿メタを削除"
+
+#: optimizations/spam.php:89
+msgid "Remove spam comments"
+msgstr "スパムコメントを削除"
+
+#: optimizations/autodraft.php:92
+msgid "Remove auto drafts"
+msgstr "自動下書きを削除"
+
+#: optimizations/revisions.php:62
+msgid "Remove auto revisions"
+msgstr "自動リビジョンを削除"
+
+#: templates/admin-settings.php:52
+msgid "Select schedule type (default is Weekly)"
+msgstr "スケジュールタイプを選択 (デフォルト: 毎週)"
+
+#: templates/admin-settings.php:44
+msgid "Enable scheduled clean-up and optimization (Beta feature!)"
+msgstr "スケジュールされたクリーンアップと最適化を有効化 (ベータ機能)"
+
+#: templates/admin-settings.php:39
+msgid "Auto clean-up settings"
+msgstr "自動クリーンアップ設定"
+
+#: templates/admin-settings.php:146 templates/admin-settings.php:158
+msgid "Enable"
+msgstr "有効化"
+
+#: templates/admin-settings.php:148 templates/admin-settings.php:160
+msgid "Disable"
+msgstr "無効化"
+
+#: templates/admin-settings.php:135
+msgid "Trackback/comments actions"
+msgstr "トラックバックとコメントのアクション"
+
+#: templates/admin-settings.php:31
+msgid "Enable admin bar link"
+msgstr "管理バーリンクを有効化"
+
+#: templates/admin-settings.php:14
+msgid "General settings"
+msgstr "一般設定"
+
+#: includes/class-wp-optimize-options.php:137
+msgid "Settings updated."
+msgstr "設定を更新しました。"
+
+#: templates/status-box-contents.php:95
+msgid "Total clean up overall:"
+msgstr "合計削減量:"
+
+#: templates/status-box-contents.php:70
+msgid "Current database size:"
+msgstr "現在のデータベースサイズ:"
+
+#: templates/status-box-contents.php:78
+msgid "You have saved:"
+msgstr "削減しました:"
+
+#: templates/status-box-contents.php:64
+msgid "Not keeping recent data"
+msgstr "最近のデータを保持していません"
+
+#: templates/status-box-contents.php:54
+msgid "Scheduled cleaning disabled"
+msgstr "スケジュールされたクリーニングは無効です"
+
+#: templates/status-box-contents.php:49
+msgid "Refresh"
+msgstr "再読み込み"
+
+#: templates/status-box-contents.php:44
+msgid "Next schedule:"
+msgstr "次のスケジュール:"
+
+#: templates/status-box-contents.php:36
+msgid "Scheduled cleaning enabled"
+msgstr "スケジュールされたクリーニングは有効です"
+
+#: templates/status-box-contents.php:28
+msgid "There was no automatic optimization"
+msgstr "自動最適化は行われていません"
+
+#: templates/status-box-contents.php:23
+msgid "Last automatic optimization was at"
+msgstr "最後の自動最適化"
+
+#: templates/optimize-table.php:16 templates/optimize-table.php:26
+msgid "Warning:"
+msgstr "警告:"
+
+#: templates/optimize-table.php:15
+msgid "Select safe options"
+msgstr "セーフオプションの選択"
+
+#: templates/optimizations-table.php:8
+msgid "Notes"
+msgstr "注:"
+
+#: optimizations/optimizetables.php:94 optimizations/optimizetables.php:98
+msgid "Optimize database tables"
+msgstr "データベーステーブルの最適化"
+
+#: optimizations/trackbacks.php:34
+msgid "Remove trackbacks"
+msgstr "トラックバックの削除"
+
+#: optimizations/pingbacks.php:34
+msgid "Remove pingbacks"
+msgstr "ピンバックの削除"
+
+#: optimizations/unapproved.php:54 optimizations/unapproved.php:59
+msgid "Remove unapproved comments"
+msgstr "未承認コメントの削除"
+
+#: optimizations/unapproved.php:52
+msgid "Remove unapproved comments which are older than %d weeks"
+msgstr "%d週以上前の未承認のコメントを削除"
+
+#: optimizations/spam.php:84
+msgid "Remove spam comments and comments in trash"
+msgstr "スパムコメントとゴミ箱内のコメントを削除"
+
+#: optimizations/spam.php:82
+msgid "Remove spam comments which are older than %d weeks"
+msgstr "%d週以上前のスパムコメントとゴミ箱内のコメントを削除"
+
+#: optimizations/autodraft.php:86
+msgid "Clean all auto draft posts and posts in trash"
+msgstr "すべての自動下書きとゴミ箱内の投稿をクリーン"
+
+#: optimizations/autodraft.php:84
+msgid "Clean auto draft posts which are older than %d weeks"
+msgstr "%d週以上前の自動下書きをクリーン"
+
+#: optimizations/revisions.php:56
+msgid "Clean all post revisions"
+msgstr "すべての投稿リビジョンをクリーン"
+
+#: optimizations/revisions.php:54
+msgid "Clean post revisions which are older than %d weeks"
+msgstr "%d週以上前の投稿リビジョンをクリーン"
+
+#: optimizations/trackbacks.php:27
+msgid "No trackbacks found"
+msgstr "トラックバックが見つかりません"
+
+#: optimizations/pingbacks.php:27
+msgid "No pingbacks found"
+msgstr "ピンバックが見付かりません"
+
+#: optimizations/unapproved.php:44
+msgid "No unapproved comments found"
+msgstr "未承認のコメントが見つかりません"
+
+#: optimizations/unapproved.php:42
+msgid "%d unapproved comment found"
+msgid_plural "%d unapproved comments found"
+msgstr[0] "%d個の未承認のコメントが見つかりました"
+
+#: optimizations/spam.php:56
+msgid "No spam comments found"
+msgstr "スパムコメントは見つかりませんでした"
+
+#: optimizations/spam.php:54 optimizations/spam.php:70
+#: optimizations/unapproved.php:42
+msgid "Review"
+msgstr "レビュー"
+
+#: optimizations/spam.php:54
+msgid "%d spam comment found"
+msgid_plural "%d spam comments found"
+msgstr[0] "%d個のスパムコメントが見つかりました"
+
+#: optimizations/autodraft.php:59
+msgid "No auto draft posts found"
+msgstr "自動下書き投稿が見つかりません"
+
+#: optimizations/autodraft.php:57
+msgid "%d auto draft post in your database"
+msgid_plural "%d auto draft posts in your database"
+msgstr[0] "%d個のデータベースに存在する自動下書き投稿"
+
+#: optimizations/revisions.php:45
+msgid "No post revisions found"
+msgstr "投稿リビジョンが見つかりません"
+
+#: optimizations/revisions.php:43
+msgid "%d post revision in your database"
+msgid_plural "%d post revisions in your database"
+msgstr[0] "%d個のデータベースに存在する投稿リビジョン"
+
+#: optimizations/postmeta.php:34
+msgid "No orphaned post meta data in your database"
+msgstr "孤立した投稿メタデータはデータベースに存在しません"
+
+#: optimizations/postmeta.php:32
+msgid "%d orphaned post meta data in your database"
+msgid_plural "%d orphaned postmeta in your database"
+msgstr[0] "%d個のデータベースに存在する孤立した投稿メタデータ"
+
+#: optimizations/transient.php:118
+msgid "No transient options found"
+msgstr "transient オプションは見つかりません"
+
+#: optimizations/unapproved.php:27
+msgid "%d unapproved comment deleted"
+msgid_plural "%d unapproved comments deleted"
+msgstr[0] "%d個の未承認のコメントを削除しました"
+
+#: optimizations/commentmeta.php:26
+msgid "%d unused akismet comment metadata item removed"
+msgid_plural "%d unused akismet comment metadata items removed"
+msgstr[0] "%d個の未使用の akismet コメントメタデータを項目を削除しました"
+
+#: optimizations/commentmeta.php:17
+msgid "%d unused comment metadata item removed"
+msgid_plural "%d unused comment metadata items removed"
+msgstr[0] "%d個の未使用のコメントメタデータ項目を削除しました"
+
+#: optimizations/spam.php:40
+msgid "%d comment removed from Trash"
+msgid_plural "%d comments removed from Trash"
+msgstr[0] "%dコメントをゴミ箱から削除しました"
+
+#: optimizations/spam.php:29
+msgid "%d spam comment deleted"
+msgid_plural "%d spam comments deleted"
+msgstr[0] "%d個のスパムコメントを削除しました"
+
+#: optimizations/autodraft.php:43
+msgid "%d item removed from Trash"
+msgid_plural "%d items removed from Trash"
+msgstr[0] "%d項目をゴミ箱から削除しました"
+
+#: optimizations/autodraft.php:30
+msgid "%d auto draft deleted"
+msgid_plural "%d auto drafts deleted"
+msgstr[0] "%d個の自動下書きを削除しました"
+
+#: optimizations/revisions.php:26
+msgid "%d post revision deleted"
+msgid_plural "%d post revisions deleted"
+msgstr[0] "%d個の投稿リビジョンを削除しました"
+
+#: optimizations/transient.php:33
+msgid "%d transient option deleted"
+msgid_plural "%d transient options deleted"
+msgstr[0] "%d個の transient オプションを削除しました"
+
+#: wp-optimize.php:545
+msgid "bytes"
+msgstr "バイト"
+
+#: wp-optimize.php:543
+msgid "KB"
+msgstr "KB"
+
+#: wp-optimize.php:541
+msgid "MB"
+msgstr "MB"
+
+#: wp-optimize.php:539
+msgid "GB"
+msgstr "GB"
+
+#: wp-optimize.php:511
+msgid "WP-Optimize Plugin"
+msgstr "WP-Optimize プラグイン"
+
+#: wp-optimize.php:510
+msgid "Regards,"
+msgstr "ありがとうございます。"
+
+#: wp-optimize.php:508
+msgid "You can safely delete this email."
+msgstr "このメールは安全に削除できます。"
+
+#: wp-optimize.php:506
+msgid "Scheduled optimization was executed at"
+msgstr "スケジュールされた最適化を実行しました:"
+
+#: wp-optimize.php:504
+msgid "Automatic Operation Completed"
+msgstr "自動最適化が完了しました"
+
+#: templates/tables.php:16
+msgid "Table"
+msgstr "テーブル"
+
+#: wp-optimize.php:178 wp-optimize.php:319
+msgid "Settings"
+msgstr "設定"
+
+#: templates/status-box-contents.php:17
+msgid "MySQL"
+msgstr "MySQL"
+
+#: wp-optimize.php:322
+msgid "Optimizer"
+msgstr "最適化"

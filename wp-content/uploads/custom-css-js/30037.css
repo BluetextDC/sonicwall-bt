@@ -1,0 +1,78 @@
+<!-- start Simple Custom CSS and JS -->
+<style type="text/css">
+.avia_textblock ul li{
+	text-indent: 0 !important;
+}
+
+.gform_wrapper li.gfield.gfield_error.gfield_contains_required div.ginput_container, .gform_wrapper li.gfield.gfield_error.gfield_contains_required label.gfield_label{
+	margin-top: 0px;
+}
+
+.gform_wrapper li.gfield.gfield_error, .gform_wrapper li.gfield.gfield_error.gfield_contains_required.gfield_creditcard_warning{
+	padding-top: 0;
+}
+
+.gform_heading{
+	display:none;
+}
+
+.upgrade-field{
+	margin: 0 0 4% 0;
+}
+
+.upgrade-top{
+	margin-top:4%;
+}
+
+.upgrade-bottom{
+	margin-bottom:0;
+}
+
+.upgrade-field select{
+	padding:7px 6px;
+}
+
+.sw_learnmore a{
+	padding-left:0px !important;
+	padding-right: 0px !important;
+}
+
+#optionalDescription,#regadditionalinfo{
+	display:none;
+}
+
+.note{
+	font-style: italic;
+}
+
+.gform_wrapper .gform_footer{
+	padding-left:60%;
+}
+
+#optionalDescription p{
+	margin:0;
+}
+
+.column_2 .gfield_disabled_c label{
+	opacity: .5;
+}
+
+.column_2 .gfield_disabled_c input{
+	opacity: .5;
+}
+
+.column_2 .gfield_disabled_c select{
+	opacity: .5;
+}
+
+input[type="submit"]:disabled{
+	opacity: .5;
+}
+
+.gform_fields.top_label.form_sublabel_below.description_below{
+	clear: none;
+}
+
+
+</style>
+<!-- end Simple Custom CSS and JS -->

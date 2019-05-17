@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="419px" height="907px" viewBox="0 0 419 907" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>Combined Shape</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M96.5101051,0 L96.5101051,6.54504048 C96.5101051,20.5106565 107.831474,31.8320251 121.79709,31.8320251 L296.574778,31.8320251 C310.540394,31.8320251 321.861762,20.5106565 321.861762,6.54504048 L321.861762,0 L373.726758,0 C398.371963,-4.83059285e-14 418.350849,19.9788859 418.350849,44.6240905 L418.350849,861.70558 C418.350849,886.350784 398.371963,906.32967 373.726758,906.32967 L44.6240905,906.32967 C19.9788859,906.32967 2.43344492e-14,886.350784 2.13162821e-14,861.70558 L0,44.6240905 C-3.0181671e-15,19.9788859 19.9788859,1.87381054e-14 44.6240905,1.42108547e-14 L96.5101051,0 Z" id="path-1"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <mask id="mask-2" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <use id="Combined-Shape" fill="#1F1F1F" xlink:href="#path-1"></use>
+    </g>
+</svg>

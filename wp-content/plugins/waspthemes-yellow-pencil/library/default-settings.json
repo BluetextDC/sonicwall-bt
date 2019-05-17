@@ -1,0 +1,12 @@
+{
+    "defaultSettings": {
+        "fixed_right_panel"					: "false",
+        "show_parent_tree"					: "true",
+        "hide_premium_options"				: "false",
+        "show_margin_padding_on_hover"		: "true",
+        "smart_responsive_technology"		: "true",
+        "smart_important_tag"				: "true",
+        "high_performance"					: "false",
+        "append_auto_comments"				: "true"
+    }
+}

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 143 182" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;">
+    <g transform="matrix(1,0,0,1,-376,-675)">
+        <g id="Milestones-Bullets" serif:id="Milestones Bullets">
+            <path d="M383.936,679.558C383.936,681.629 382.257,683.308 380.186,683.308C378.115,683.308 376.436,681.629 376.436,679.558C376.436,677.486 378.115,675.808 380.186,675.808C382.257,675.808 383.936,677.486 383.936,679.558Z" style="fill:rgb(88,153,183);fill-rule:nonzero;"/>
+            <path d="M418.876,750.823C418.876,752.894 417.197,754.573 415.126,754.573C413.055,754.573 411.376,752.894 411.376,750.823C411.376,748.752 413.055,747.073 415.126,747.073C417.197,747.073 418.876,748.752 418.876,750.823Z" style="fill:rgb(88,153,183);fill-rule:nonzero;"/>
+            <path d="M518.364,852.455C518.364,854.526 516.685,856.205 514.614,856.205C512.542,856.205 510.864,854.526 510.864,852.455C510.864,850.384 512.542,848.705 514.614,848.705C516.685,848.705 518.364,850.384 518.364,852.455Z" style="fill:rgb(88,153,183);fill-rule:nonzero;"/>
+        </g>
+    </g>
+</svg>

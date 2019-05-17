@@ -1,0 +1,308 @@
+# Translation of Plugins - Bulk Move - Stable (latest release) in Japanese
+# This file is distributed under the same license as the Plugins - Bulk Move - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2018-11-23 14:36:26+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: GlotPress/2.4.0-alpha\n"
+"Language: ja_JP\n"
+"Project-Id-Version: Plugins - Bulk Move - Stable (latest release)\n"
+
+#: include/class-bulk-move-posts.php:493
+msgid "Remove Term"
+msgstr "タームを削除する"
+
+#: include/class-bulk-move-posts.php:492
+msgid "Select Term"
+msgstr "タームを選択する"
+
+#: include/class-bulk-move-posts.php:486
+msgid "There are no terms associated with \"%s\" taxonomy."
+msgstr "タクソノミー \"%s\" に紐付いたタームはありません。"
+
+#: include/class-bulk-move-posts.php:456 include/class-bulk-move-posts.php:549
+msgid "Select Taxonomy"
+msgstr "タクソノミーを選択する"
+
+#: include/class-bulk-move-posts.php:450
+msgid "There are no taxonomies associated with \"%s\" post type."
+msgstr "投稿タイプ \"%s\" に紐付いたタクソノミーはありません。"
+
+#: include/class-bulk-move-posts.php:526
+msgid "Select Post type"
+msgstr "投稿タイプを選択する"
+
+#: bulk-move.php:266
+msgid "Bulk Move By Custom Taxonomy"
+msgstr "カスタムタクソノミーを一括で変更する"
+
+#: include/class-bulk-move-posts.php:541
+msgid "Select taxonomy to show its terms."
+msgstr "タクソノミーを選択してください。"
+
+#: include/class-bulk-move-posts.php:556
+msgid "Select terms to move its posts."
+msgstr "移動させるタームを選択してください。"
+
+#: include/class-bulk-move-posts.php:518
+msgid "Select the post type to show its custom taxonomy."
+msgstr "投稿タイプを選択してください。"
+
+#: include/class-bulk-move-posts.php:564
+msgid " Select Term&nbsp;&nbsp;"
+msgstr "タームを選択する"
+
+#: include/class-bulk-move-posts.php:570
+msgid "Remove Term&nbsp;&nbsp;"
+msgstr "タームを削除する"
+
+#. translators: 1 number of posts deleted, 2 the taxonomy from which the posts
+#. were deleted
+#: include/class-bulk-move-posts.php:649
+msgid "Moved %1$d post from the selected %2$s taxonomy"
+msgid_plural "Moved %1$d posts from the selected %2$s taxonomy"
+msgstr[0] "%1$d 件の投稿のタクソノミー \"%2$s\" から移動しました。"
+
+#: include/class-bulk-move-posts.php:577
+msgid "If the post contains other terms, then"
+msgstr "投稿に他のタームが含まれる場合は："
+
+#. Description of the plugin/theme
+msgid "Move or remove posts in bulk from one category, tag or custom taxonomy to another"
+msgstr "投稿のカテゴリーやタグやカスタム分類を一括で変更するプラグインです。"
+
+#: include/class-bulk-move-util.php:57
+msgid "There are no tags present. Add some tags to move posts based on tags."
+msgstr "タグが存在しません。いくつかのタグを追加して、タグに基づいて投稿を移動します。"
+
+#: include/class-bulk-move-posts.php:379
+msgid "Save"
+msgstr "保存"
+
+#: include/class-bulk-move-util.php:76
+msgid "Remove Tag"
+msgstr "タグを削除する"
+
+#: include/class-bulk-move-util.php:81
+msgid "Posts"
+msgstr "件の投稿"
+
+#: include/class-bulk-move-posts.php:163
+msgid "If the post contains other tags, then"
+msgstr "投稿に他のタグが含まれる場合は："
+
+#: include/class-bulk-move-posts.php:60 include/class-bulk-move-posts.php:165
+#: include/class-bulk-move-posts.php:275 include/class-bulk-move-posts.php:579
+msgid "Don't remove them"
+msgstr "削除しない"
+
+#: include/class-bulk-move-posts.php:59 include/class-bulk-move-posts.php:164
+#: include/class-bulk-move-posts.php:274 include/class-bulk-move-posts.php:578
+msgid "Remove them"
+msgstr "削除する"
+
+#: include/class-bulk-move-posts.php:65 include/class-bulk-move-posts.php:169
+#: include/class-bulk-move-posts.php:279 include/class-bulk-move-posts.php:585
+msgid "Bulk Move "
+msgstr "一括変更"
+
+#: include/class-bulk-move-posts.php:147
+msgid "On the left side, select the tag whose post you want to move. In the right side select the tag to which you want the posts to be moved."
+msgstr "左側では移動させたいタグを、右側では移動先のタグを選択してください。"
+
+#: bulk-move.php:326
+msgid "Are you sure you want to move all the selected posts"
+msgstr "選択された投稿をすべて移動しますか？"
+
+#: bulk-move.php:330
+msgid "Please select least one option"
+msgstr "少なくとも１つ選択してください。"
+
+#: include/class-bulk-move-posts.php:120
+msgid "Moved %d post from the selected category"
+msgid_plural "Moved %d posts from the selected category"
+msgstr[0] "%d 件の投稿のカテゴリーを変更しました。"
+
+#: include/class-bulk-move-posts.php:219
+msgid "Moved %d post from the selected tag"
+msgid_plural "Moved %d posts from the selected tag"
+msgstr[0] "%d 件の投稿のタグを変更しました。"
+
+#: bulk-move.php:316
+msgid "Version"
+msgstr "バージョン"
+
+#: bulk-move.php:316
+msgid "plugin"
+msgstr "プラグイン"
+
+#: bulk-move.php:276
+msgid "Bulk Move Posts"
+msgstr "記事の一括変更"
+
+#: bulk-move.php:267
+msgid "Debug Information"
+msgstr "デバッグ情報"
+
+#: bulk-move.php:264
+msgid "Bulk Move By Tag"
+msgstr "タグを一括変更する"
+
+#: bulk-move.php:247
+msgid "Other Plugin's by Author"
+msgstr "作者のほかのプラグイン"
+
+#: bulk-move.php:246
+msgid "Plugin author's blog"
+msgstr "プラグイン作者のブログ"
+
+#: bulk-move.php:245
+msgid "Plugin Homepage/support"
+msgstr "プラグインのウェブサイト・サポート"
+
+#: bulk-move.php:244
+msgid "More information"
+msgstr "詳しい情報を見る"
+
+#: bulk-move.php:236
+msgid "About Plugin"
+msgstr "プラグインについて"
+
+#: bulk-move.php:238
+msgid "This plugin allows you to move posts in bulk from selected categories to another category"
+msgstr "このプラグインを使って記事のカテゴリを一括で他のカテゴリに移動させることができます。"
+
+#: bulk-move.php:129 bulk-move.php:142
+msgid "Cheatin&#8217; huh?"
+msgstr "Cheatin&#8217; huh?"
+
+#: bulk-move.php:316
+msgid "by"
+msgstr "作者："
+
+#: bulk-move.php:401
+msgid "Manage"
+msgstr "管理"
+
+#: include/class-bulk-move-posts.php:19 include/class-bulk-move-posts.php:134
+#: include/class-bulk-move-posts.php:233 include/class-bulk-move-posts.php:506
+msgid "This section just got enabled. Kindly <a href = \"%1$s\">refresh</a> the page to fully enable it."
+msgstr "この項目が利用可能になりました。使用するには<a href = \"%1$s\">ページを更新</a>してください。"
+
+#: include/class-bulk-move-posts.php:374
+msgid "Available memory size "
+msgstr "使用可能なメモリ量"
+
+#: include/class-bulk-move-posts.php:358
+msgid "You also need need the following debug information."
+msgstr "次のデバッグ情報も必要になります。"
+
+#: include/class-bulk-move-posts.php:356
+msgid "If you are seeing a blank page after clicking the Bulk Move button, then "
+msgstr "「一括変更」ボタンをクリックしたあとに真っ白なページが表示される場合、"
+
+#. Author URI of the plugin/theme
+msgid "http://sudarmuthu.com/"
+msgstr "http://sudarmuthu.com/"
+
+#. Author of the plugin/theme
+msgid "Sudar"
+msgstr "Sudar"
+
+#. Plugin URI of the plugin/theme
+msgid "http://sudarmuthu.com/wordpress/bulk-move"
+msgstr "http://sudarmuthu.com/wordpress/bulk-move"
+
+#: include/class-bulk-move-posts.php:387
+msgid "Bulk Delete Plugin"
+msgstr "一括削除のプラグイン"
+
+#: include/class-bulk-move-posts.php:410
+msgid "Max execution time was successfully saved as %s seconds."
+msgstr "最大実行時間を %s 秒に変更しました。"
+
+#: include/class-bulk-move-posts.php:413
+msgid "An unknown error occurred while saving your options."
+msgstr "設定を保存する際にエラーが発生しました。"
+
+#: include/class-bulk-move-posts.php:417
+msgid "Could not update the max execution time to %s, it was not numeric.  Enter the max number of seconds this script should run."
+msgstr "入力された値 %s が数字ではないため変更できませんでした。最大実行時間の秒数を数字で入力してください。"
+
+#: include/class-bulk-move-posts.php:382
+msgid "Script input time "
+msgstr "Script input time "
+
+#: include/class-bulk-move-posts.php:379
+msgid "Custom value: "
+msgstr "カスタム値："
+
+#: include/class-bulk-move-posts.php:379
+msgid "In php.ini"
+msgstr "php.iniの設定"
+
+#: include/class-bulk-move-posts.php:378
+msgid "Script time out "
+msgstr "最大実行時間"
+
+#: include/class-bulk-move-posts.php:387
+msgid "If you are looking to delete posts in bulk, try out my "
+msgstr "投稿を一括で削除したい場合、こちらを試してみてください："
+
+#. #-#-#-#-#  bulk-move-code.pot (Bulk Move 1.3.0)  #-#-#-#-#
+#. Plugin Name of the plugin/theme
+#: bulk-move.php:210
+msgid "Bulk Move"
+msgstr "Bulk Move"
+
+#: include/class-bulk-move-posts.php:366
+msgid "WordPress Version "
+msgstr "WordPress バージョン"
+
+#: include/class-bulk-move-posts.php:370
+msgid "Plugin Version "
+msgstr "プラグインバージョン"
+
+#: include/class-bulk-move-posts.php:362
+msgid "PHP Version "
+msgstr "PHP バージョン"
+
+#: include/class-bulk-move-posts.php:265
+msgid "Choose Category"
+msgstr "カテゴリーを選択"
+
+#: include/class-bulk-move-posts.php:334
+msgid "Moved %d post from the selected tag to the new category."
+msgid_plural "Moved %d posts from the selected tag to the new category."
+msgstr[0] "%d 件の投稿のタグを新しいカテゴリーに変更しました。"
+
+#: include/class-bulk-move-posts.php:58 include/class-bulk-move-posts.php:273
+msgid "If the post contains other categories, then"
+msgstr "投稿に他のカテゴリーが含まれる場合は："
+
+#: include/class-bulk-move-posts.php:50
+msgid "Remove Category"
+msgstr "カテゴリーを削除する"
+
+#: include/class-bulk-move-posts.php:25
+msgid "On the left side, select the category whose post you want to move. In the right side select the category to which you want the posts to be moved."
+msgstr "左側では移動させたいカテゴリーを、右側では移動先のカテゴリーを選択してください。 "
+
+#: bulk-move.php:291
+msgid "WARNING: Posts moved once cannot be retrieved back. Use with caution."
+msgstr "【注意】一度記事のカテゴリーやタグを移動させた場合、元に戻すことはできません。使用する際は十分注意してください。"
+
+#: bulk-move.php:265
+msgid "Bulk Move Category By Tag"
+msgstr "タグをカテゴリーに一括変更する"
+
+#: bulk-move.php:263
+msgid "Bulk Move By Category"
+msgstr "カテゴリーを一括変更する"
+
+#: include/class-bulk-move-posts.php:357
+msgid "check out this FAQ"
+msgstr "この FAQ を確認してください"

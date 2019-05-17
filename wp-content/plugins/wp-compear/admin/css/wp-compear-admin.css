@@ -1,0 +1,674 @@
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+
+
+ /* 
+ * Foundation Icons v 3.0
+ * Made by ZURB 2013 http://zurb.com/playground/foundation-icon-fonts-3
+ * MIT License
+ */
+
+@font-face {
+  font-family: "foundation-icons";
+  src: url("icons/foundation-icons.eot");
+  src: url("icons/foundation-icons.eot?#iefix") format("embedded-opentype"),
+       url("icons/foundation-icons.woff") format("woff"),
+       url("icons/foundation-icons.ttf") format("truetype"),
+       url("icons/foundation-icons.svg#fontcustom") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.wp-compear-clear {
+	clear: both;
+	width: 100%;
+	display: table;
+	content: '';
+	height: 0;
+	padding: 0;
+	margin: 0;
+}
+
+.fi-x-circle:before {
+  font-family: "foundation-icons";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  text-decoration: inherit;
+}
+
+.fi-x-circle:before { content: "\f216"; }
+
+
+.wp-compear-list-box {
+	margin-bottom: 15px;
+}
+
+.wpcompear-meta-box p {
+	margin: 0 0 12px;
+}
+
+
+.wpcompear-meta-box p.shortcode-note {
+	margin: 12px 0 0;
+}
+
+.sortable-placeholder {
+	border: 3px solid #dedede;
+	padding: 10px 0;
+	background: #f1f1f1;
+}
+
+/*.wp-compear-box-scroll {
+	max-width: 100%;
+	overflow-y: auto;
+}
+*/
+
+
+.form-table tbody > tr > td {
+	padding: 15px 0;
+}
+
+.wp-compear-list-box h4 {
+	margin: 0;
+	background: #0073aa;
+	padding: 10px;
+	border: 1px solid #ccc;
+	color: #fff;
+}
+
+.wp-compear-list-box h4 span.dashicons-arrow-down,
+.wp-compear-list-box h4 span.dashicons-arrow-up  {
+	float: left;
+	color: #D7EBF5;
+	margin-right: 15px;
+}
+
+.wp-compear-list-box h4 span.wp-compear-delete-list,
+.wp-compear-list-box h4 span.wp-compear-duplicate-list {
+	float: right;
+	color: #D7EBF5;
+	font-size: 12px;
+	margin-right: 10px;
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.wp-compear-list-box h4 span.wp-compear-duplicate-list:hover {
+	color: #fff;
+}
+
+.wp-compear-list-box h4 span.wp-compear-delete-list {
+	float: right;
+	font-size: 12px;
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.wp-compear-list-box h4 span.wp-compear-delete-list:hover {
+	color: #0073aa;
+}
+
+.wp-compear-list-box .wp-compear-list-title,
+.wp-compear-list-box .wp-compear-list-shortcode-box {
+	margin-bottom: 15px;
+}
+
+
+.wp-compear-title-shortcode {
+	display: inline-block;
+    background: #1989BF;
+    padding: 3px 6px;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-left: 10px;
+    font-size: 12px;
+}
+
+.wp-compear-list-box .wp-compear-list-shortcode {
+	display: block;
+	margin: 15px 0;
+}
+
+.wp-compear-list-shortcode-selector {
+	display: block;
+	margin: 15px 0;
+}
+
+.actions-td {
+	text-align: center;
+	font-size: 36px;
+	cursor: pointer;
+}
+
+.actions-td .js-sort-handle {
+	font-size: 24px;
+}
+
+.actions-td i,
+.actions-td span {
+	opacity: 0.6;
+}
+.actions-td i:hover,
+.actions-td span:hover  {
+	opacity: 1.0;
+	-o-transition: .4s;
+    -ms-transition: .4s;
+    -moz-transition: .4s;
+    -webkit-transition: .4s;
+	transition: .4s;
+}
+
+
+
+.wp-compear-list-box > .inner {
+	padding: 10px;
+	display: none;
+	background: #eaeaea;
+}
+
+.wpcompear-tip {
+	font-size: 12px;
+	background: #f1f1f1;
+	border: 1px solid #dedede;
+	font-style: italic;
+	padding: 10px;
+	color: #999;
+}
+
+
+
+.wp-compear-list-box > .inner .specs,
+.wp-compear-list-box > .inner .prods {
+	background: #fff;
+	/*border: 1px solid #ccc;*/
+	margin: 0 0 10px;
+}
+
+.wp-compear-list-box > .inner .specs h5,
+.wp-compear-list-box > .inner .prods h5 {
+	padding: 10px;
+	margin: 0;
+	background: #d4d4d4;
+	font-size: 16px;
+}
+
+
+.wp-compear-list-box > .inner .specs > .inner,
+.wp-compear-list-box > .inner .prods > .inner{
+	padding: 20px 10px;
+}
+
+table.wp-compear-table {
+
+}
+
+
+table.wp-compear-table tr td,
+table.wp-compear-table tr th  {
+	padding: 8px;
+}
+
+
+
+.wp-compear-table thead tr th {
+	padding: 5px 10px;
+	box-shadow: inset -7px 0 9px -7px rgba(0,0,0,0.2);
+}
+
+
+
+.th-sort {width: 45px!important;}
+
+.wp-compear-list-box > .inner .specs > .inner input.button,
+.wp-compear-list-box > .inner .prods > .inner input.button{
+	margin: 20px 10px 0;
+}
+
+.wp-compear-list-box > .inner .specs > .inner td input.button,
+.wp-compear-list-box > .inner .prods > .inner td input.button{
+	margin-top: 0;
+	vertical-align: middle;
+}
+
+.wp-compear-list-box > .inner .specs > .inner td .wpcompear-prev-img,
+.wp-compear-list-box > .inner .prods > .inner td .wpcompear-prev-img{
+	margin-top: 3px;
+	position: relative;
+}
+
+.slide-img-prev-wrapper {
+	position: relative;
+	float: left;
+}
+
+.wpcompear-prev-img.inactive {
+	color: #dedede!important;
+	opacity: 0.5!important;
+}
+
+
+.wpcompear-prev-img {
+	
+	font-size: 25px;
+	color: #278B9D;
+    margin-right: 8px;
+    margin-top: 3px;
+    opacity: 0.6;
+    -o-transition: .4s;
+    -ms-transition: .4s;
+    -moz-transition: .4s;
+    -webkit-transition: .4s;
+	transition: .4s;
+}
+.wpcompear-prev-img:hover {
+    opacity: 1;
+}
+
+
+.slide-img-prev-wrapper .img-preview {
+	position: absolute;
+	left: 28px;
+	top: -48px;
+	z-index: 1;
+	/*transform: translateX(-50%);*/
+	width: 150px;
+	height: auto;
+	background: #222;
+	border: 4px solid #222;
+	padding: 5px;
+	box-shadow: 0 0 6px rgba(0,0,0,0.5);
+	display: none;
+	opacity: 1!important;
+}
+
+.slide-img-prev-wrapper .img-preview:before {
+	position: absolute;
+	content: '';
+	top: 50%;
+	left: -10px;
+	margin-top: -10px;
+	width: 0; 
+	height: 0; 
+	border-top: 10px solid transparent;
+	border-bottom: 10px solid transparent;
+	border-right: 10px solid #222;
+}
+
+.slide-img-prev-wrapper .img-preview img {
+	max-width: 100%;
+	
+}
+
+
+
+
+.wp-compear-list-box > .inner .specs {
+	
+}
+
+.wp-compear-list-box > .inner .prods {
+	
+}
+
+.wp-compear-add-list {
+	font-size: 40px;
+	margin: 20px 20px 20px 0;
+	height: 40px;
+	width: 40px;
+	color: #82CE1A;
+	cursor: pointer;
+}
+
+.submit-specs,
+.submit-products {
+	float: right;
+}
+
+
+
+.js-delete-spec,
+.js-delete-product {
+	color: #C55263;
+	font-weight: bold;
+}
+
+
+.hidden-clone {
+	display: none !important;
+}
+
+
+
+.wpcompear-table-wrapper {
+	width: 100%;
+	max-width: 100%;
+	overflow: auto;
+	position:relative;
+}
+
+
+#wp-compear-table_products th {
+	min-width: 150px;
+}
+
+#wp-compear-table_products th.wysiwyg-width {
+	min-width: 510px;
+}
+
+
+#wp-compear-table_products td div.wp-media-buttons a[title="Insert WP ComPEAR Shortcode"] {
+	display: none;
+}
+
+#wp-compear-table_products td div.wp-media-buttons .button {
+	float: left;
+	font-size: 9px;
+}
+
+#wp-compear-table_products td i.mce-ico:before {
+	font-size: 14px;
+}
+
+#wp-compear-table_products td i.mce-ico {
+	line-height: 14px;
+	width: 14px;
+	height: 14px;
+}
+
+#wp-compear-table_products td div.wp-media-buttons .add_media span.wp-media-buttons-icon {
+    width: 14px;
+    height: 14px;
+}
+
+#wp-compear-table_products td div.wp-media-buttons .add_media span.wp-media-buttons-icon:before {
+    font: 400 14px/1 dashicons;
+}
+
+
+
+#wp-compear-table_products td div.wp-media-buttons button:first-child {
+	display: block!important;
+}
+
+
+
+.wpcompear-alert-text {
+	color: #D50000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.wpcompear-clear {
+	clear: both;
+	display: table;
+	width: 100%;
+	height: 0;
+}
+
+
+.wpcompear-meta-box {
+	position: relative;
+	padding: 20px;
+	background: #f9f9f9;
+	margin-bottom: 15px;
+}
+
+
+.wpcompear-meta-box--left {
+	float: left;
+	width: 20%;
+	clear: left;
+}
+
+.wpcompear-meta-box--left select {
+	width: 100%;
+	vertical-align: middle;
+}
+
+
+
+.wpcompear-meta-box--right {
+	float: left;
+	width: 80%;
+}
+
+.wpcompear-meta-box--right h3 {
+	margin: 4px 5px;
+}
+
+.wp-compear-shortcode-text,
+.wp-compear-shortcode-copy {
+	float: left;
+	display: block;
+}
+
+.wp-compear-shortcode-text {
+	font-weight: bold;
+	font-size: 120%;
+}
+
+
+.wp-compear-shortcode-copy {
+	display: inline-block;
+    background: #1989BF;
+    padding: 3px 6px;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 12px;
+    color: #fff;
+}
+
+
+.wpcompear-meta-box .spec-name {
+	width: 50%;
+}
+
+.wpcompear-meta-box .spec-type {
+	width: 30%;
+}
+
+.wpcompear-meta-box .th-sort {
+	width: 20%;
+}
+
+
+.wpcompear-meta-box table.wp-compear-table {
+	width: 100%;
+}
+
+table.wp-compear-table input.regular-text,
+table.wp-compear-table textarea {
+    width: 100%;
+    padding: 8px;
+}
+
+table.wp-compear-table select {
+	width: 100%;
+}
+
+
+table.wp-compear-table tr:nth-child(even) {
+	background: #f1f1f1;
+}
+
+
+/*table.wp-compear-table tr th {
+	text-align: left;
+	background: #dedede;
+}*/
+
+.wp-compear-table thead tr {
+	background: #999;
+}
+
+.wp-compear-table thead tr th span {
+	background: #999;
+	padding: 5px 10px;
+	text-align: left;
+	display: block;
+	color: #fff;
+}
+
+.wp-compear-table tbody tr td {
+	vertical-align: middle;
+	position: relative;
+}
+
+.wp-compear-table tbody tr td .product-spec-value-inner {
+	max-height: 1000px;
+}
+
+
+.wp-compear-table tbody tr td .product-spec-value-inner.closed {
+	max-height: 0;
+	visibility: hidden;
+	display: none;
+}
+
+
+.wpcompear-meta-box-footer {
+	padding: 20px 10px 20px;
+}
+
+
+
+.ui-sortable-helper {
+	box-shadow: 0 0 6px rgba(0,0,0,0.3);
+	background: #fff;
+}
+
+
+
+.wpcompear-slider-settings .wpcompear-meta-box--left {
+	width: 20%;
+}
+
+.wpcompear-slider-settings .wpcompear-meta-box--left select {
+	width: 100%;
+}
+
+.wpcompear-slider-settings .wpcompear-meta-box--right {
+	width: 80%;
+}
+
+
+
+.wpcompear-table-settings .wpcompear-meta-box--left {
+	width: 20%;
+}
+
+.wpcompear-table-settings .wpcompear-meta-box--left select {
+	width: 100%;
+}
+
+.wpcompear-table-settings .wpcompear-meta-box--right {
+	width: 80%;
+}
+
+
+
+
+.wpcompear-draganddrop-settings .wpcompear-meta-box--left {
+	width: 20%;
+}
+
+.wpcompear-draganddrop-settings .wpcompear-meta-box--left select {
+	width: 100%;
+}
+
+.wpcompear-draganddrop-settings .wpcompear-meta-box--right {
+	width: 80%;
+}
+
+.small-text {
+	font-size: 85%;
+}
+
+
+
+
+.slider-side-shadow {
+    display: block;
+    position: absolute;
+    width: 20px;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background: -moz-linear-gradient(left, rgba(0,0,0,0) 0%, rgba(0,0,0,0.49) 100%);
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0.49)));
+    background: -webkit-linear-gradient(left, rgba(0,0,0,0) 0%,rgba(0,0,0,0.49) 100%);
+    background: -o-linear-gradient(left, rgba(0,0,0,0) 0%,rgba(0,0,0,0.49) 100%);
+    background: -ms-linear-gradient(left, rgba(0,0,0,0) 0%,rgba(0,0,0,0.49) 100%);
+    background: linear-gradient(to right, rgba(0,0,0,0) 0%,rgba(0,0,0,0.49) 100%);
+}
+
+
+
+
+
+/* Admin Tweaks*/
+
+body.post-type-wp-compear-lists #view-post-btn,
+body.post-type-wp-compear-lists #preview-action {
+	display: none;
+}
+
+body.post-type-wp-compear-lists #minor-publishing-actions:after {
+	content: 'To preview your changes, create a draft page and embed the shortcode into the content editor, save, and preview that page.';
+    clear: both;
+    text-align: left;
+    float: left;
+    display: block;
+    padding: 30px 0;
+}
+
+
+body.post-php.post-type-wp-compear-lists #edit-slug-box,
+body.post-new-php.post-type-wp-compear-lists #edit-slug-box {
+	display: none;
+}
+
+
+#wpcompear-products-tbody .title-row {
+	background: #dedede;
+}
+
+#wpcompear-products-tbody .title-row td {
+	border-top: 1px solid #999;
+}
+
+#wpcompear-products-tbody .hidden-clone-title {
+	display: none;
+}
+
+#wpcompear-products-tbody .content-row {
+	display: none;
+}
+
+
+
+

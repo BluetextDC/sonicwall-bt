@@ -1,0 +1,13 @@
+<!-- start Simple Custom CSS and JS -->
+<style type="text/css">
+/* 1080px and below screen sizes */
+@media only screen and (max-width: 1080px){
+    #header_main{
+        display: none;
+    }
+    .html_header_top.html_header_sticky #top #wrap_all #main{
+        padding-top: 54px;
+    }
+}
+</style>
+<!-- end Simple Custom CSS and JS -->

@@ -1,0 +1,732 @@
+# Translation of Plugins - Compress JPEG &amp; PNG images - Stable (latest release) in French (France)
+# This file is distributed under the same license as the Plugins - Compress JPEG &amp; PNG images - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2018-09-04 17:39:57+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: GlotPress/2.4.0-alpha\n"
+"Language: fr\n"
+"Project-Id-Version: Plugins - Compress JPEG &amp; PNG images - Stable (latest release)\n"
+
+#: src/class-tiny-notices.php:147
+msgid "You have activated multiple image optimization plugins. This may lead to unexpected results. The following plugins were detected:"
+msgstr "Vous avez activé plusieurs extensions d’optimisation d’image. Cela peut entraîner des résultats inattendus. Les extensions suivantes ont été détectées :"
+
+#: src/views/settings.php:49
+msgid "Save Changes"
+msgstr "Enregistrer les modifications"
+
+#: src/views/settings.php:29
+msgid "Wordpress generates resized versions of every image. Choose which sizes to compress."
+msgstr "WordPress génère des versions redimensionnées de chaque image. Choisissez les tailles à compresser."
+
+#: src/views/settings.php:26
+msgid "Select image sizes to be compressed"
+msgstr "Sélectionnez les tailles d’image à compresser"
+
+#: src/views/settings.php:24
+msgid "Image sizes"
+msgstr "Tailles d’image"
+
+#: src/views/settings.php:18
+msgid "New image uploads"
+msgstr "Nouveaux téléversements d’image"
+
+#: src/views/settings.php:12
+msgid "Tinify account"
+msgstr "Compte Tinify"
+
+#: src/class-tiny-settings.php:894
+msgid "You have reached your free limit this month."
+msgstr "Vous avez atteint votre limite de gratuité ce mois-ci."
+
+#: src/class-tiny-settings.php:792
+msgid "For background compression to work you will need to configure WP Offload S3 to keep a copy of the images on the server."
+msgstr "Pour que la compression en arrière-plan fonctionne, vous devrez configurer WP Offload S3 pour conserver une copie des images sur le serveur."
+
+#: src/class-tiny-settings.php:785
+msgid "Warning"
+msgstr "Avertissement"
+
+#: src/class-tiny-settings.php:740
+msgid "Resizing takes <strong>1 additional compression</strong> for each image that is larger."
+msgstr "Le redimensionnement prend <strong>1 compression supplémentaire </strong> pour chaque image plus grande."
+
+#: src/class-tiny-settings.php:738
+msgid "<strong>Save space</strong> by setting a maximum width and height for all images uploaded."
+msgstr "<strong>Économisez de l’espace </strong> en définissant une largeur et une hauteur maximales pour toutes les images téléversées."
+
+#: src/class-tiny-settings.php:726
+msgid "Resize the original image"
+msgstr "Redimensionner l’image originale"
+
+#: src/class-tiny-settings.php:660
+msgid "Remember each selected size counts as a compression."
+msgstr "Rappelez-vous que chaque taille sélectionnée compte comme une compression."
+
+#: src/class-tiny-settings.php:585
+msgid "Manually select the images you want to compress in the media library."
+msgstr "Sélectionnez manuellement les images que vous voulez compresser dans la bibliothèque de médias."
+
+#: src/class-tiny-settings.php:581
+msgid "Do not compress new images automatically"
+msgstr "Ne pas compresser automatiquement les nouvelles images."
+
+#: src/class-tiny-settings.php:564
+msgid "Uploads will take longer, but provides higher compatibility with other plugins."
+msgstr "Les téléversements prendront plus de temps, mais offrent une plus grande compatibilité avec les autres extensions."
+
+#: src/class-tiny-settings.php:560
+msgid "Compress new images during upload"
+msgstr "Compresser les nouvelles images pendant le téléversement"
+
+#: src/class-tiny-settings.php:543
+msgid "This is the fastest method, but can cause issues with some image related plugins."
+msgstr "C’est la méthode la plus rapide, mais cela peut provoquer des problèmes avec quelques extensions liées aux images."
+
+#: src/class-tiny-settings.php:539
+msgid "Compress new images in the background (Recommended)"
+msgstr "Compresser les nouvelles images en arrière-plan (recommandé)"
+
+#: src/class-tiny-settings.php:526
+msgid "When should new images be compressed?"
+msgstr "Quand les nouvelles images doivent-elles être compressées ?"
+
+#: src/class-tiny-settings.php:516 src/class-tiny-settings.php:787
+msgid "Background compressions are not compatible with the version of WP Offload S3 you have installed. Please update to version 0.7.2 at least."
+msgstr "Les compressions en arrière-plan ne sont pas compatibles avec la version de WP Offload S3 que vous avez installée. Veuillez mettre à jour avec au moins la version 0.7.2."
+
+#: src/class-tiny-settings.php:506
+msgid "Removing files from the server is incompatible with background compressions. Images will still be automatically compressed, but no longer in the background."
+msgstr "La suppression de fichiers du serveur est incompatible avec les compressions en arrière-plan. Les images seront toujours compressées automatiquement, mais plus en arrière-plan."
+
+#. translators: %s: link saying settings
+#: src/class-tiny-settings.php:491
+msgid "The %s have moved."
+msgstr "Les %s ont déménagé."
+
+#: src/class-tiny-settings.php:486
+msgid "settings"
+msgstr "réglages"
+
+#: src/class-tiny-settings.php:464
+msgid "We noticed that curl_exec is disabled in your PHP configuration. Please update this setting for the best experience."
+msgstr "Nous avons remarqué que curl_exec est désactivé dans votre configuration PHP. Veuillez mettre à jour ce réglage pour une meilleure expérience."
+
+#: src/class-tiny-settings.php:459
+msgid "We noticed that cURL is not available. For the best experience we recommend to make sure cURL is available."
+msgstr "Nous avons remarqué que cURL n’est pas disponible. Pour une expérience optimale, nous vous recommandons de vous assurer que cURL est disponible."
+
+#. translators: %s: details of outdated platform
+#: src/class-tiny-settings.php:453
+msgid "You are using an outdated platform (%s)."
+msgstr "Vous utilisez une plate-forme obsolète (%s)."
+
+#: src/class-tiny-settings.php:449
+msgid "and curl_exec disabled"
+msgstr "et curl_exec désactivé"
+
+#: src/class-tiny-settings.php:445
+msgid "without curl"
+msgstr "sans curl"
+
+#. translators: %s: curl version
+#: src/class-tiny-settings.php:442
+msgid "with curl %s"
+msgstr "avec curl %s"
+
+#: src/class-tiny-notices.php:164
+msgid "Deactivate"
+msgstr "Désactiver"
+
+#. translators: %s: link saying TinyPNG developer section
+#: src/views/account-status-create-simple.php:13
+msgid "If needed you can go to the %s to retrieve it."
+msgstr "Si nécessaire, vous pouvez aller dans les %s pour le récupérer."
+
+#: src/views/account-status-connected.php:73
+#: src/views/account-status-create-advanced.php:40
+msgid "API dashboard"
+msgstr "Tableau de bord de l’API"
+
+#. translators: %s: savings percentage
+#: src/views/dashboard-widget.php:68
+msgid "You have <strong>saved %s</strong> of your media library size."
+msgstr "Vous avez <strong>économisé %s </strong> sur la taille de votre bibliothèque de médias."
+
+#. translators: %1$d %2$s: number of image sizes, %3$s: link saying upgrade
+#. here
+#: src/views/bulk-optimization.php:167
+msgid "If you wish to compress more than <strong>%1$d %2$s</strong> a month and you are still on a free account %3$s."
+msgstr "Si vous souhaitez compresser plus de <strong>%1$d %2$s</strong> par mois et que vous êtes encore sur un compte gratuit %3$s."
+
+#. translators: %s: bulk optimization page
+#: src/views/dashboard-widget.php:30
+msgid "If you like you can to optimize your whole library in one go with the %s page."
+msgstr "Si vous le souhaitez, vous pouvez optimiser toute votre bibliothèque en une seule fois avec la page %s."
+
+#. translators: %s: friendly user name
+#: src/views/dashboard-widget.php:27
+msgid "Hi %s, you haven’t compressed any images in your media library."
+msgstr "Bonjour %s, vous n’avez pas compressé d’image dans votre bibliothèque de médias."
+
+#. translators: %1$dx%2$d: resized image width x height
+#: src/views/compress-details.php:124
+msgid "(resized to %1$dx%2$d)"
+msgstr "(redimensionné à %1$dx%2$d)"
+
+#. translators: %d: number of sizes to be compressed
+#: src/views/bulk-optimization.php:138
+msgid "For each uploaded image <strong>%d size</strong> is compressed."
+msgid_plural "For each uploaded image <strong>%d sizes</strong> are compressed."
+msgstr[0] "Pour chaque image téléchargée, <strong>%d taille d'image </strong> est compressé."
+msgstr[1] "Pour chaque image téléchargée, <strong>%d tailles d'images </strong> sont compressés."
+
+#: src/views/bulk-optimization.php:71 src/views/dashboard-widget.php:1
+msgid "bulk optimization"
+msgstr "Optimisation groupée"
+
+#. translators: %s: bulk optimization title
+#. translators: %s: bulk optimization link
+#: src/views/bulk-optimization.php:71 src/views/dashboard-widget.php:48
+msgid "Start the %s to optimize the remainder of your library."
+msgstr "Commencer %s pour optimiser le reste de votre bibliothèque."
+
+#: src/views/bulk-optimization.php:52 src/views/dashboard-widget.php:21
+msgid "You do not seem to have uploaded any JPEG or PNG images yet."
+msgstr "Vous ne semblez pas avoir déjà téléversé des images JPEG ou PNG."
+
+#: src/views/bulk-optimization.php:50
+msgid "This page is designed to bulk optimize all your images."
+msgstr "Cette page est conçue pour optimiser en masse toutes vos images."
+
+#: src/views/compress-details.php:121
+msgid "(WP Retina 2x)"
+msgstr "(WP Retina 2x) "
+
+#: src/views/bulk-optimization.php:173
+msgid " upgrade here"
+msgstr "mettez à niveau ici"
+
+#: src/views/bulk-optimization.php:173
+msgid "image sizes"
+msgstr "tailles d’image"
+
+#: src/views/bulk-optimization.php:148
+msgid "here"
+msgstr "ici"
+
+#. translators: %s: link to settings page saying here
+#: src/views/bulk-optimization.php:144
+msgid "You can change these settings %s."
+msgstr "Vous pouvez modifier ces réglages %s."
+
+#: src/views/bulk-optimization.php:79
+msgid "Notice that the WP Retina 2x sizes will not be compressed using this page. You will need to bulk generate the retina sizes separately from the WP Retina 2x page."
+msgstr "Notez que les tailles WP Retina 2x ne seront pas compressées en utilisant cette page. Vous aurez besoin de générer en masse les tailles rétina séparément depuis la page WP Retina 2x."
+
+#. translators: %s: friendly user name
+#: src/views/bulk-optimization.php:64 src/views/dashboard-widget.php:42
+msgid "%s, you are doing good."
+msgstr "%s, vous vous débrouillez bien !"
+
+#. translators: %s: friendly user name
+#: src/views/bulk-optimization.php:61
+msgid "%s, you are doing great!"
+msgstr "%s, vous vous débrouillez très bien !"
+
+#. translators: %s: friendly user name
+#: src/views/bulk-optimization.php:57 src/views/dashboard-widget.php:60
+msgid "%s, this is great! Your entire library is optimized!"
+msgstr "%s, c’est génial ! L’ensemble de votre bibliothèque est optimisée !"
+
+#: src/class-tiny-settings.php:701
+msgid "Each retina size will count as an additional compression."
+msgstr "Chaque taille rétina comptera pour une compression supplémentaire."
+
+#: src/class-tiny-settings.php:696
+msgid "If selected, retina sizes will be compressed when generated by WP Retina 2x"
+msgstr "Si sélectionnées, les tailles rétina seront compressées quand elles seront générées par WP Retina 2x"
+
+#: src/class-tiny-settings.php:635
+msgid "WP Retina 2x sizes"
+msgstr "Tailles WP Retina 2x"
+
+#. translators: %1$.0f%%: savings percentage, %2$s: total file size savings
+#: src/views/compress-details.php:174
+msgid "Total savings %1$.0f%% (%2$s)"
+msgstr "Gains totaux de %1$.0f%% (%2$s)"
+
+#: src/views/compress-details.php:148
+msgid "Size is not in use"
+msgstr "Taille non inutilisée"
+
+#: src/views/compress-details.php:139
+msgid "Not present"
+msgstr "Absent"
+
+#. translators: %s human friendly time difference
+#: src/views/compress-details.php:136
+msgid "%s ago"
+msgstr "il y a %s"
+
+#. translators: %s: name of similar thumbnail size
+#: src/views/compress-details.php:131
+msgid "Same file as \"%s\""
+msgstr "Fichier identique à « %s »"
+
+#: src/views/compress-details.php:115
+msgid "(not in use)"
+msgstr "(inactif)"
+
+#: src/views/compress-details.php:72
+msgid "Details"
+msgstr "Détails"
+
+#. translators: %.0f%: savings percentage
+#. translators: %.0f%%: savings percentage
+#: src/views/compress-details.php:60 src/views/compress-details.php:180
+msgid "Total savings %.0f%%"
+msgstr "Total des gains %. de %%"
+
+#. translators: %d: number of compressed sizes
+#: src/views/compress-details.php:40
+msgid "<strong>%d</strong> size compressed"
+msgid_plural "<strong>%d</strong> sizes compressed"
+msgstr[0] "<strong>%d</strong> taille compressée"
+msgstr[1] "<strong>%d</strong> tailles compressées"
+
+#: src/views/bulk-optimization.php:263
+msgid "Current Size"
+msgstr "Taille actuelle"
+
+#: src/views/bulk-optimization.php:262 src/views/compress-details.php:96
+msgid "Initial Size"
+msgstr "Taille initiale"
+
+#: src/views/bulk-optimization.php:221
+msgid "current size"
+msgstr "taille actuelle"
+
+#: src/views/bulk-optimization.php:213
+msgid "initial size"
+msgstr "taille initiale"
+
+#: src/views/bulk-optimization.php:205
+msgid "image size optimized"
+msgid_plural "image sizes optimized"
+msgstr[0] "taille d'image optimisée"
+msgstr[1] "tailles d'image optimisées"
+
+#: src/views/bulk-optimization.php:193
+msgid "Statistics based on all available JPEG and PNG images in your media library."
+msgstr "Les statistiques sont basées sur toutes les images JPEG et PNG disponibles dans votre bibliothèque multimédia."
+
+#: src/views/bulk-optimization.php:191
+msgid "Total Savings"
+msgstr "Total des gains"
+
+#: src/views/bulk-optimization.php:184
+msgid "For the plugin to do the work, you need to keep this page open. But no worries: when stopped, you can continue where you left off!"
+msgstr "Pour que l&rsquo;extension fonctionne, vous devez garder cette page ouverte. Mais pas de soucis&nbsp;: à la fin, vous pourrez continuer là où vous en étiez&nbsp;!"
+
+#: src/views/bulk-optimization.php:182
+msgid "Remember"
+msgstr "Rappelez-vous"
+
+#: src/views/bulk-optimization.php:155
+msgid "Estimated <br> cost"
+msgstr "Coût <br> estimé"
+
+#: src/views/bulk-optimization.php:120
+msgid "These sizes are currently activated for compression:"
+msgstr "Ces tailles sont actuellement activées pour la compression&nbsp;:"
+
+#. translators: %1$s: number of sizes that can be optimised, %2$s number of
+#. images
+#. translators: %s: number of optimizable sizes and number of uploaded images
+#: src/views/bulk-optimization.php:110 src/views/dashboard-widget.php:45
+msgid "With your current settings you can still optimize %1$s image sizes from your %2$s uploaded JPEG and PNG images."
+msgstr "Avec vos réglages actuels vous pouvez toujours optimiser %1$s tailles d'image à partir de vos %2$s images JPEG et PNG mises en ligne."
+
+#: src/views/bulk-optimization.php:96
+msgid "Uncompressed image sizes"
+msgstr "Tailles d&rsquo;image non compressées"
+
+#: src/views/bulk-optimization.php:86
+msgid "Uploaded <br> images"
+msgstr "Images <br> mises en ligne"
+
+#: src/views/bulk-optimization.php:73
+msgid "Here you can start optimizing your entire library. Press the big button to start improving your website speed instantly!"
+msgstr "Ici, vous pouvez commencer à optimiser l’ensemble de votre bibliothèque. Cliquez sur le gros bouton pour commencer à améliorer la vitesse de votre site instantanément !"
+
+#. translators: %1$d%2$s: percentage optimised
+#: src/views/bulk-optimization.php:68
+msgid "%1$d%2$s of your image library is optimized."
+msgstr "%1$d%2$s de votre bibliothèque d’images est optimisé."
+
+#: src/views/bulk-optimization.php:54 src/views/bulk-optimization.php:118
+msgid "Based on your current settings, nothing will be optimized. There are no active sizes selected for optimization."
+msgstr "Sur la base de vos réglages actuels, rien ne sera optimisé. Il n&rsquo;y a pas de tailles actives sélectionnées pour l&rsquo;optimisation."
+
+#: src/views/bulk-optimization.php:41
+msgid "Available Images"
+msgstr "Images disponibles"
+
+#: src/views/bulk-optimization-form.php:8
+msgid "Cancelling"
+msgstr "Annulation"
+
+#: src/views/bulk-optimization-form.php:6
+msgid "Optimizing"
+msgstr "Optimisation"
+
+#: src/views/bulk-optimization-form.php:5
+msgid "Start Bulk Optimization"
+msgstr "Démarrer l’optimisation en masse"
+
+#: src/views/bulk-optimization-chart.php:53
+msgid "savings"
+msgstr "de gains"
+
+#: src/views/account-status-loading.php:3
+msgid "Retrieving account status"
+msgstr "Récupération de l’état du compte"
+
+#: src/views/account-status-create-simple.php:9
+msgid "Enter your API key."
+msgstr "Saisissez votre clé d’API."
+
+#: src/views/account-status-create-simple.php:3
+msgid "Configure your account"
+msgstr "Configurez votre compte"
+
+#. translators: %s: link saying API dashboard
+#: src/views/account-status-create-advanced.php:43
+msgid "Enter your API key. Go to your %s to retrieve it."
+msgstr "Saisissez votre clé d’API. Allez dans votre %s pour la récupérer."
+
+#: src/views/account-status-create-advanced.php:35
+msgid "Already have an account?"
+msgstr "Vous avez déjà un compte ?"
+
+#: src/views/account-status-create-advanced.php:29
+msgid "Register Account"
+msgstr "Créer un compte"
+
+#: src/views/account-status-create-advanced.php:14
+msgid "Provide your name and email address to start optimizing images."
+msgstr "Indiquez votre nom et votre adresse e-mail pour commencer l&rsquo;optimisation des images."
+
+#: src/views/account-status-create-advanced.php:10
+msgid "Register new account"
+msgstr "Créer un nouveau compte"
+
+#: src/views/account-status-connected.php:93
+#: src/views/bulk-optimization-form.php:7
+msgid "Cancel"
+msgstr "Annuler"
+
+#: src/views/account-status-connected.php:87
+#: src/views/account-status-create-advanced.php:55
+#: src/views/account-status-create-simple.php:24
+msgid "Save"
+msgstr "Enregistrer"
+
+#. translators: %s: link saying API dashboard
+#: src/views/account-status-connected.php:76
+msgid "Enter your API key. If you have lost your key, go to your %s to retrieve it."
+msgstr "Saisissez votre clé d’API. Si vous avez perdu votre clé, allez dans votre %s pour la récupérer."
+
+#: src/views/account-status-connected.php:70
+msgid "Change your API key"
+msgstr "Modifier votre clé API"
+
+#: src/views/account-status-connected.php:9
+msgid "Your account is connected"
+msgstr "Votre compte est connecté"
+
+#: src/class-tiny-settings.php:972
+msgid "Please enter your email address"
+msgstr "Veuillez saisir votre adresse e-mail"
+
+#: src/class-tiny-settings.php:961
+msgid "Please enter your name"
+msgstr "Veuillez saisir votre nom"
+
+#: src/class-tiny-settings.php:767
+msgid "Preserve GPS location in the original image"
+msgstr "Conserver la localisation GPS de l&rsquo;image originale"
+
+#: src/class-tiny-settings.php:759
+msgid "Preserve copyright information in the original image"
+msgstr "Conserver les informations de copyright de l&rsquo;image originale"
+
+#: src/class-tiny-settings.php:771
+msgid "(JPEG only)"
+msgstr "(JPEG seulement)"
+
+#: src/class-tiny-settings.php:751
+msgid "Preserve creation date and time in the original image"
+msgstr "Conserver la date et l&rsquo;heure de création de l&rsquo;image originale"
+
+#: src/class-tiny-settings.php:420
+msgid "Please activate your account to start compressing images."
+msgstr "Veuillez activer votre compte pour commencer la compression des images."
+
+#: src/class-tiny-settings.php:414
+msgid "Please register or provide an API key to start compressing images."
+msgstr "Veuillez vous inscrire ou fournir une clé d’API pour commencer la compression des images."
+
+#: src/class-tiny-plugin.php:376 src/class-tiny-plugin.php:421
+msgid "You don't have permission to upload files."
+msgstr "Vous n’êtes pas autorisé à téléverser des fichiers."
+
+#: src/class-tiny-plugin.php:223
+msgid "Show more details"
+msgstr "Afficher plus de détails"
+
+#: src/class-tiny-plugin.php:222 src/views/bulk-optimization.php:265
+msgid "Status"
+msgstr "État"
+
+#: src/class-tiny-plugin.php:220
+msgid "Current size"
+msgstr "Taille actuelle"
+
+#: src/class-tiny-plugin.php:219
+msgid "Initial size"
+msgstr "Taille initiale"
+
+#: src/class-tiny-plugin.php:218
+msgid "Sizes optimized"
+msgstr "Tailles optimisées"
+
+#: src/class-tiny-plugin.php:217 src/views/bulk-optimization.php:261
+msgid "File"
+msgstr "Fichier"
+
+#: src/class-tiny-plugin.php:216
+msgid "compressed"
+msgstr "compressée(s)"
+
+#: src/class-tiny-plugin.php:214
+msgid "Cancelled"
+msgstr "Annulé"
+
+#: src/class-tiny-plugin.php:212
+msgid "No action taken"
+msgstr "Aucune action effectuée"
+
+#: src/class-tiny-plugin.php:150 src/class-tiny-plugin.php:151
+#: src/class-tiny-plugin.php:166 src/views/bulk-optimization.php:36
+msgid "Bulk Optimization"
+msgstr "Optimisation en masse"
+
+#: src/views/compress-details.php:145
+msgid "Not configured to be compressed"
+msgstr "Non configurée pour être compressée"
+
+#: src/views/compress-details.php:142
+msgid "Not compressed"
+msgstr "Non compressée"
+
+#: src/class-tiny-plugin.php:589
+msgid "JPEG and PNG optimization"
+msgstr "Optimisation des JPEG et PNG"
+
+#: src/views/compress-details.php:160
+msgid "Combined"
+msgstr "Combiné"
+
+#: src/views/compress-details.php:117
+msgid "(file removed)"
+msgstr "(fichier supprimé)"
+
+#: src/views/compress-details.php:119
+msgid "(modified after compression)"
+msgstr "(modifié après compression)"
+
+#: src/views/compress-details.php:98
+msgid "Date"
+msgstr "Date"
+
+#: src/views/compress-details.php:97
+msgid "Compressed"
+msgstr "Compressée"
+
+#: src/views/compress-details.php:112
+msgid "Original"
+msgstr "Originale"
+
+#: src/views/compress-details.php:95
+msgid "Size"
+msgstr "Taille"
+
+#. translators: %s is the image filename
+#: src/views/compress-details.php:90
+msgid "Compression details for %s"
+msgstr "Détails de la compression pour %s"
+
+#: src/views/compress-details.php:80
+msgid "Compress"
+msgstr "Compresser"
+
+#: src/class-tiny-plugin.php:225 src/views/compress-details.php:67
+msgid "Latest error"
+msgstr "Dernière erreur"
+
+#. translators: %d: number of sizes to be compressed
+#: src/views/compress-details.php:51
+msgid "%d size to be compressed"
+msgid_plural "%d sizes to be compressed"
+msgstr[0] "%d taille à compresser"
+msgstr[1] "%d tailles à compresser"
+
+#. translators: %s: number of compressions
+#: src/views/account-status-connected.php:41
+msgid "You have made %s compressions this month."
+msgstr "Vous avez effectué %s compressions ce mois-ci."
+
+#: src/views/account-status-connected.php:51
+msgid "API status could not be checked, enable cURL for more information"
+msgstr "Le statut de l’API n'a pas pu être vérifié, activez cURL pour plus d’informations"
+
+#: src/views/account-status-connected.php:17
+msgid "Connection unsuccessful"
+msgstr "Échec de la connexion"
+
+#. translators: %s: link saying TinyPNG API account
+#: src/class-tiny-settings.php:900
+msgid "Upgrade your %s if you like to compress more images."
+msgstr "Mettez à jour votre %s si vous souhaitez compresser plus d’images."
+
+#: src/class-tiny-settings.php:891
+msgid "TinyPNG API account"
+msgstr "Compte API de TinyPNG"
+
+#: src/class-tiny-settings.php:745
+msgid "Max Height"
+msgstr "Hauteur maximale"
+
+#: src/class-tiny-settings.php:743
+msgid "Max Width"
+msgstr "Largeur maximale"
+
+#: src/class-tiny-settings.php:716
+msgid "Enable compression of the original image size for more options."
+msgstr "Activer la compression de la taille de l’image d’origine pour plus d’options."
+
+#. translators: %1$s: number of images
+#: src/class-tiny-settings.php:688
+msgid "With these settings you can compress <strong>at least %1$s images</strong> for free each month."
+msgstr "Avec ces réglages, vous pouvez compresser <strong>au moins %1$s images</strong> gratuitement chaque mois."
+
+#: src/class-tiny-settings.php:674
+msgid "With these settings no images will be compressed."
+msgstr "Avec ces réglages, aucune image ne sera compressée."
+
+#: src/class-tiny-settings.php:630
+msgid "overwritten by compressed image"
+msgstr "écrasée par l&rsquo;image compressée"
+
+#: src/views/account-status-create-simple.php:6
+msgid "TinyPNG developer section"
+msgstr "Section Développeurs TinyPNG"
+
+#. translators: %s: wp-config.php
+#: src/views/account-status-connected.php:61
+msgid "The API key has been configured in %s"
+msgstr "La clé API a été configurée dans %s"
+
+#: src/class-tiny-plugin.php:221 src/views/bulk-optimization.php:264
+msgid "Savings"
+msgstr "Gains"
+
+#: src/class-tiny-settings.php:629 src/views/bulk-optimization.php:125
+#: src/views/settings.php:41
+msgid "Original image"
+msgstr "Image originale"
+
+#: src/class-tiny-plugin.php:568
+msgid "Compression"
+msgstr "Compression"
+
+#: src/class-tiny-plugin.php:394 src/class-tiny-plugin.php:443
+#: src/class-tiny-plugin.php:524
+msgid "Could not find metadata of media file."
+msgstr "Impossible de trouver les métadonnées du fichier média."
+
+#: src/class-tiny-plugin.php:384 src/class-tiny-plugin.php:431
+#: src/class-tiny-plugin.php:514
+msgid "Not a valid media file."
+msgstr "Fichier multimédia non valide."
+
+#: src/class-tiny-plugin.php:228
+msgid "Waiting"
+msgstr "En attente"
+
+#: src/class-tiny-plugin.php:227
+msgid "out of"
+msgstr "de"
+
+#: src/class-tiny-plugin.php:226
+msgid "Internal error"
+msgstr "Erreur interne"
+
+#: src/class-tiny-plugin.php:224 src/views/account-status-connected.php:48
+msgid "Error"
+msgstr "Erreur"
+
+#: src/views/compress-details-processing.php:5
+msgid "compressing"
+msgstr "compression"
+
+#: src/class-tiny-plugin.php:215
+msgid "Compressing"
+msgstr "En cours de compression"
+
+#: src/class-tiny-plugin.php:213
+msgid "Compress Images"
+msgstr "Compresser des images"
+
+#: src/class-tiny-plugin.php:211
+msgid "All images are processed"
+msgstr "Toutes les images ont été traitées"
+
+#: src/class-tiny-plugin.php:162
+msgid "Settings"
+msgstr "Réglages"
+
+#: src/class-tiny-notices.php:127
+msgid "Dismiss"
+msgstr "Ignorer"
+
+#. Author URI of the plugin/theme
+msgid "https://tinypng.com"
+msgstr "https://tinypng.com"
+
+#. Author of the plugin/theme
+msgid "TinyPNG"
+msgstr "TinyPNG"
+
+#. #-#-#-#-#  tiny-compress-images-code.pot (Compress JPEG & PNG images 3.1.0) 
+#. #-#-#-#-#
+#. Description of the plugin/theme
+#: src/views/settings.php:3
+msgid "Speed up your website. Optimize your JPEG and PNG images automatically with TinyPNG."
+msgstr "Accélérez votre site. Optimisez vos images JPEG et PNG automatiquement avec TinyPNG."
+
+#. #-#-#-#-#  tiny-compress-images-code.pot (Compress JPEG & PNG images 3.1.0) 
+#. #-#-#-#-#
+#. Plugin Name of the plugin/theme
+#: src/class-tiny-notices.php:131 src/class-tiny-notices.php:144
+#: src/class-tiny-notices.php:154 src/class-tiny-plugin.php:653
+#: src/class-tiny-settings.php:66 src/class-tiny-settings.php:67
+#: src/class-tiny-settings.php:482 src/views/settings.php:2
+msgid "Compress JPEG & PNG images"
+msgstr "Compress JPEG & PNG images"

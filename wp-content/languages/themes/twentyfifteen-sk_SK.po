@@ -1,0 +1,313 @@
+# Translation of Themes - Twenty Fifteen in Slovak
+# This file is distributed under the same license as the Themes - Twenty Fifteen package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2018-08-27 06:58:57+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+"X-Generator: GlotPress/2.4.0-alpha\n"
+"Language: sk\n"
+"Project-Id-Version: Themes - Twenty Fifteen\n"
+
+#. Description of the plugin/theme
+msgid "Our 2015 default theme is clean, blog-focused, and designed for clarity. Twenty Fifteen's simple, straightforward typography is readable on a wide variety of screen sizes, and suitable for multiple languages. We designed it using a mobile-first approach, meaning your content takes center-stage, regardless of whether your visitors arrive by smartphone, tablet, laptop, or desktop computer."
+msgstr "Téma roku 2015 je jednoduchá blogová téma zameraná na prehľadnosť. Typografia Twenty Fifteen je jednoduchá a dobre čitateľná na všetkých typoch displejov. Téma podporuje viacjazyčnosť a je dizajnovaná aj na mobilné zariadenia. Návštevníkovi predstaví obsah a nezáleží, či navštívil vašu stránku z mobilu, tabletu, notebooku alebo stolového počítača."
+
+#. Theme Name of the plugin/theme
+msgid "Twenty Fifteen"
+msgstr "Twenty Fifteen"
+
+#. translators: %s: post title
+#: comments.php:31
+msgctxt "comments title"
+msgid "One thought on &ldquo;%s&rdquo;"
+msgstr "Jedna odpoveď na &#8222;%s&#8220;"
+
+#. translators: %s: post title
+#: inc/template-tags.php:130
+msgid "Leave a comment<span class=\"screen-reader-text\"> on %s</span>"
+msgstr "Napíšte komentár<span class=\"screen-reader-text\"> k %s</span>"
+
+#: single.php:39
+msgid "Previous post:"
+msgstr "Predchádzajúci článok:"
+
+#: single.php:38
+msgid "Previous"
+msgstr "Predchádzajúca"
+
+#: single.php:36
+msgid "Next post:"
+msgstr "Ďalší článok:"
+
+#: single.php:35
+msgid "Next"
+msgstr "Ďalej"
+
+#: search.php:18
+msgid "Search Results for: %s"
+msgstr "Výsledky vyhľadávania pre: %s"
+
+#: inc/template-tags.php:120
+msgctxt "Used before full size attachment link."
+msgid "Full size"
+msgstr "Plná veľkosť"
+
+#: inc/template-tags.php:108
+msgctxt "Used before tag names."
+msgid "Tags"
+msgstr "Značky"
+
+#: inc/template-tags.php:99
+msgctxt "Used before category names."
+msgid "Categories"
+msgstr "Kategórie"
+
+#: inc/template-tags.php:95 inc/template-tags.php:104
+msgctxt "Used between list items, there is a space after the comma."
+msgid ", "
+msgstr ","
+
+#: inc/template-tags.php:89
+msgctxt "Used before post author name."
+msgid "Author"
+msgstr "Autor"
+
+#: inc/template-tags.php:79
+msgctxt "Used before publish date."
+msgid "Posted on"
+msgstr "Publikované"
+
+#: inc/template-tags.php:56
+msgctxt "Used before post format."
+msgid "Format"
+msgstr "Formát"
+
+#: inc/template-tags.php:49
+msgid "Featured"
+msgstr "Odporúčame"
+
+#: inc/template-tags.php:30
+msgid "Newer Comments"
+msgstr "Novšie komentáre"
+
+#: inc/template-tags.php:26
+msgid "Older Comments"
+msgstr "Staršie komentáre"
+
+#: inc/template-tags.php:23
+msgid "Comment navigation"
+msgstr "Navigácia komentármi"
+
+#: inc/customizer.php:226
+msgid "Blue"
+msgstr "Modrá"
+
+#: inc/customizer.php:215
+msgid "Purple"
+msgstr "Fialová"
+
+#: inc/customizer.php:204
+msgid "Pink"
+msgstr "Ružová"
+
+#: inc/customizer.php:193
+msgid "Yellow"
+msgstr "Žltá"
+
+#: inc/customizer.php:182
+msgid "Dark"
+msgstr "Tmavá"
+
+#: inc/customizer.php:171
+msgid "Default"
+msgstr "Predvolený"
+
+#: inc/customizer.php:93
+msgid "Header and Sidebar Background Color"
+msgstr "Farba pozadia hlavičky a bočného panela"
+
+#: inc/customizer.php:72 inc/customizer.php:94 inc/customizer.php:101
+msgid "Applied to the header on small screens and the sidebar on wide screens."
+msgstr "Používa sa na hlavičku pri malých obrazovkách a na bočný panel pri veľkých."
+
+#: inc/customizer.php:71
+msgid "Header and Sidebar Text Color"
+msgstr "Farba textu hlavičky a bočného panela"
+
+#: inc/customizer.php:51
+msgid "Base Color Scheme"
+msgstr "Základná farebná schéma"
+
+#: inc/back-compat.php:37 inc/back-compat.php:48 inc/back-compat.php:62
+msgid "Twenty Fifteen requires at least WordPress version 4.1. You are running version %s. Please upgrade and try again."
+msgstr "Twenty Fifteen vyžaduje verziu WordPress 4.1. Používate WordPress %s. Prosím aktualizujte ho a skúste znova."
+
+#: image.php:88
+msgctxt "Parent post link"
+msgid "<span class=\"meta-nav\">Published in</span><span class=\"post-title\">%title</span>"
+msgstr "<span class=\"meta-nav\">Publikované v</span><span class=\"post-title\">%title</span>"
+
+#: image.php:25
+msgid "Next Image"
+msgstr "Nasledujúci obrázok"
+
+#: image.php:25
+msgid "Previous Image"
+msgstr "Predchádzajúci obrázok"
+
+#: header.php:49
+msgid "Menu and widgets"
+msgstr "Menu a widgety"
+
+#: header.php:26
+msgid "Skip to content"
+msgstr "Preskočiť na obsah"
+
+#: functions.php:312
+msgid "collapse child menu"
+msgstr "schovať nadradené menu"
+
+#: functions.php:311
+msgid "expand child menu"
+msgstr "rozbaliť odvodené menu"
+
+#. Translators: To add an additional character subset specific to your
+#. language, translate this to 'greek', 'cyrillic', 'devanagari' or
+#. 'vietnamese'. Do not translate into your own language.
+#: functions.php:238
+msgctxt "Add new subset (greek, cyrillic, devanagari, vietnamese)"
+msgid "no-subset"
+msgstr "no-subset"
+
+#. Translators: If there are characters in your language that are not supported
+#. by Inconsolata, translate this to 'off'. Do not translate into your own
+#. language.
+#: functions.php:230
+msgctxt "Inconsolata font: on or off"
+msgid "on"
+msgstr "on"
+
+#. Translators: If there are characters in your language that are not supported
+#. by Noto Serif, translate this to 'off'. Do not translate into your own
+#. language.
+#: functions.php:222
+msgctxt "Noto Serif font: on or off"
+msgid "on"
+msgstr "on"
+
+#. Translators: If there are characters in your language that are not supported
+#. by Noto Sans, translate this to 'off'. Do not translate into your own
+#. language.
+#: functions.php:214
+msgctxt "Noto Sans font: on or off"
+msgid "on"
+msgstr "on"
+
+#: functions.php:187
+msgid "Add widgets here to appear in your sidebar."
+msgstr "Sem pridajte widgety ktoré sa majú zobraziť v bočnom panely"
+
+#: functions.php:185
+msgid "Widget Area"
+msgstr "Oblasť widgetov"
+
+#: functions.php:87
+msgid "Social Links Menu"
+msgstr "Menu odkazov sociálnych sietí"
+
+#: functions.php:86
+msgid "Primary Menu"
+msgstr "Hlavné menu"
+
+#: footer.php:31
+msgid "Proudly powered by %s"
+msgstr "Hrdo poháňa %s"
+
+#. #-#-#-#-#  twentyfifteen.pot (Twenty Fifteen 2.0)  #-#-#-#-#
+#. Author URI of the plugin/theme
+#: footer.php:30
+msgid "https://wordpress.org/"
+msgstr "https://sk.wordpress.org/"
+
+#: content-none.php:31
+msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
+msgstr "Nie je možné nájsť to, čo hľadáte. Skúste použiť vyhľadávanie."
+
+#: content-none.php:26
+msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
+msgstr "Ľutujeme, hľadaný výraz sa nenašiel. Prosím, skúste iné kľúčové slová."
+
+#: content-none.php:22
+msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr "Pripravený publikovať váš prvý príspevok? <a href=\"%1$s\">Začnite tu</a>."
+
+#: content-none.php:15
+msgid "Nothing Found"
+msgstr "Nenašlo sa"
+
+#: content-link.php:60 content-page.php:37 content-search.php:28
+#: content-search.php:33 content.php:61 image.php:74
+msgid "Edit"
+msgstr "Upraviť"
+
+#: content-link.php:39 content-page.php:26 content.php:41 image.php:61
+msgid "Pages:"
+msgstr "Stránky:"
+
+#. translators: %s: Name of current post
+#: content-link.php:32 content.php:34 inc/template-tags.php:249
+msgid "Continue reading %s"
+msgstr "Pokračovať v čítaní: %s"
+
+#: comments.php:71
+msgid "Comments are closed."
+msgstr "Nie je možné pridávať komentáre."
+
+#. translators: 1: number of comments, 2: post title
+#: comments.php:35
+msgctxt "comments title"
+msgid "%1$s thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] "%1$s odpoveď na &#8222;%2$s&#8220;"
+msgstr[1] "%1$s odpovede na &#8222;%2$s&#8220;"
+msgstr[2] "%1$s odpovedí na &#8222;%2$s&#8220;"
+
+#: author-bio.php:34
+msgid "View all posts by %s"
+msgstr "Zobraziť všetky články podľa %s"
+
+#: author-bio.php:12
+msgid "Published by"
+msgstr "Autor: "
+
+#: archive.php:53 content-link.php:43 content-page.php:30 content.php:45
+#: image.php:65 index.php:50 search.php:43
+msgid "Page"
+msgstr "Stránka"
+
+#: archive.php:52 index.php:49 search.php:42
+msgid "Next page"
+msgstr "Nasledujúca strana"
+
+#: archive.php:51 index.php:48 search.php:41
+msgid "Previous page"
+msgstr "Predošlá strana"
+
+#: 404.php:21
+msgid "It looks like nothing was found at this location. Maybe try a search?"
+msgstr "Vyzerá to, že nič sa nenašlo. Skúste hľadať?"
+
+#: 404.php:17
+msgid "Oops! That page can&rsquo;t be found."
+msgstr "Hups! Stránka nebola nájdená."
+
+#. Author of the plugin/theme
+msgid "the WordPress team"
+msgstr "tím WordPress"
+
+#. Theme URI of the plugin/theme
+msgid "https://wordpress.org/themes/twentyfifteen/"
+msgstr "https://wordpress.org/themes/twentyfifteen/"

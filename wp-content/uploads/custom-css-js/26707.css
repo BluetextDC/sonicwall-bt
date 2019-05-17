@@ -1,0 +1,40 @@
+<!-- start Simple Custom CSS and JS -->
+<style type="text/css">
+/* Add your CSS code here.*/ 
+
+#lang_sel img, #lang_sel_list img, #lang_sel_footer img { display: inline; }
+
+span.language_flag {
+     display:none!important;
+     }
+span.wpml-ls-native {
+     text-transform: uppercase;
+     }  
+#top .sub_menu li li a {
+     padding-top:10px;
+     padding-right: 18px;
+     padding-bottom: 0px;
+     padding-left: 18px;
+     }
+li li::before {
+     display:none!important;
+     }
+#top .sub_menu li ul {
+    left: 0%;
+    }
+
+#top #header_meta, #top #header_meta nav ul ul li, #top #header_meta nav ul ul a, #top #header_meta nav ul ul {
+    background-color: #000000;
+}
+
+#top .sub_menu li ul {
+    display: none;
+    position: absolute;
+    width: 170px;
+    padding: 4px 0;
+    z-index: 101;
+    border-style: none;
+    top: 19px;
+}
+</style>
+<!-- end Simple Custom CSS and JS -->

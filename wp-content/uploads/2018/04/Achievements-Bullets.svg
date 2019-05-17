@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 88 141" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;">
+    <g transform="matrix(1,0,0,1,-372,-322)">
+        <g id="Achievements-Bullets" serif:id="Achievements Bullets">
+            <path d="M459.209,325.855C459.209,327.927 457.531,329.605 455.459,329.605C453.388,329.605 451.709,327.927 451.709,325.855C451.709,323.784 453.388,322.105 455.459,322.105C457.531,322.105 459.209,323.784 459.209,325.855Z" style="fill:rgb(255,139,54);fill-rule:nonzero;"/>
+            <path d="M414.77,383.317C414.77,385.389 413.091,387.067 411.02,387.067C408.948,387.067 407.27,385.389 407.27,383.317C407.27,381.246 408.948,379.567 411.02,379.567C413.091,379.567 414.77,381.246 414.77,383.317Z" style="fill:rgb(255,139,54);fill-rule:nonzero;"/>
+            <path d="M379.973,458.635C379.973,460.706 378.294,462.385 376.223,462.385C374.152,462.385 372.473,460.706 372.473,458.635C372.473,456.563 374.152,454.885 376.223,454.885C378.294,454.885 379.973,456.563 379.973,458.635Z" style="fill:rgb(255,139,54);fill-rule:nonzero;"/>
+        </g>
+    </g>
+</svg>

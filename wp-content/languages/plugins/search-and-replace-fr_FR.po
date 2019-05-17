@@ -1,0 +1,415 @@
+# Translation of Plugins - Search &amp; Replace - Stable (latest release) in French (France)
+# This file is distributed under the same license as the Plugins - Search &amp; Replace - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2018-04-21 18:23:19+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: GlotPress/2.4.0-alpha\n"
+"Language: fr\n"
+"Project-Id-Version: Plugins - Search &amp; Replace - Stable (latest release)\n"
+
+#. Author URI of the plugin/theme
+msgid "http://inpsyde.com"
+msgstr "http://inpsyde.com"
+
+#. Author of the plugin/theme
+msgid "Inpsyde GmbH"
+msgstr "Inpsyde GmbH"
+
+#. Description of the plugin/theme
+msgid "Search & Replace data in your whole WordPress setup, backup and import your database, change table prefix or migrate your domain to another domain."
+msgstr "Rechercher et remplacer des données dans l’ensemble de votre installation WordPress, sauvegarder et importer votre base de données, changer le préfixe ou migrer votre domaine sur un autre domaine."
+
+#. Plugin URI of the plugin/theme
+msgid "https://wordpress.org/plugins/search-and-replace/"
+msgstr "https://wordpress.org/plugins/search-and-replace/"
+
+#: inpsyde-search-replace.php:47
+msgid "back"
+msgstr "retour"
+
+#: inpsyde-search-replace.php:44
+msgid "This plugin can not be activated because it requires at least PHP version %1$s. "
+msgstr "Cette extension ne peut pas être activée car elle nécessite au moins la version %1$s de PHP. "
+
+#: inc/templates/sql_import.php:20
+msgid "Maximum file size: "
+msgstr "Taille maximale de fichier : "
+
+#: inc/templates/sql_import.php:16
+msgid "Select SQL file to upload. "
+msgstr "Sélectionner le fichier SQL à téléverser."
+
+#: inc/templates/search_replace.php:45
+msgid "Use GZ compression"
+msgstr "Utiliser la compression GZ"
+
+#: inc/templates/search_replace.php:41
+msgid "Save changes to Database"
+msgstr "Sauvegarder les modifications dans la base de données"
+
+#: inc/templates/search_replace.php:39
+msgid "Export SQL file with changes"
+msgstr "Exporter le fichier SQL avec modifications"
+
+#: inc/templates/search_replace.php:37
+msgid "Export SQL file or write changes to DB?"
+msgstr "Exporter le fichier SQL ou écrire les modifications dans la base ?"
+
+#: inc/templates/search_replace.php:33
+msgid "Dry Run"
+msgstr "Lancer un test"
+
+#: inc/templates/search_replace.php:27
+msgid "Select all tables"
+msgstr "Sélectionner toutes les tables"
+
+#: inc/templates/search_replace.php:23
+msgid "Select tables"
+msgstr "Sélectionner les tables"
+
+#: inc/templates/replace_domain.php:37
+msgid "New database prefix"
+msgstr "Nouveau préfixe de base de données"
+
+#: inc/templates/replace_domain.php:36
+msgid "New prefix: "
+msgstr "Nouveau préfixe :"
+
+#: inc/templates/replace_domain.php:32
+msgid "Current prefix: "
+msgstr "Préfixe actuel :"
+
+#: inc/templates/replace_domain.php:28
+msgid "Change database prefix"
+msgstr "Modifier le préfixe de la base de données"
+
+#: inc/templates/replace_domain.php:25
+msgid "New URL"
+msgstr "Nouvelle URL"
+
+#: inc/templates/replace_domain.php:24 inc/templates/search_replace.php:19
+msgid "Replace with: "
+msgstr "Remplacer par : "
+
+#: inc/templates/replace_domain.php:20 inc/templates/search_replace.php:15
+msgid "Search for: "
+msgstr "Rechercher : "
+
+#: inc/templates/replace_domain.php:11
+msgid "If you want to migrate your site to another domain, enter the new URL in the field \"Replace with\" and create a backup of your database by clicking \"Do Replace Domain/Url\"."
+msgstr "Si vous souhaitez migrer votre site vers un autre domaine, saisissez la nouvelle URL dans le champ « Remplacer par » et créez une sauvegarde de votre base de données en cliquant sur « Remplacer domaine/URL »."
+
+#: inc/templates/db_backup.php:12
+msgid "Create a backup of your database by clicking \"Create SQL File\"."
+msgstr "Créez une sauvegarde de votre base de données en cliquant sur « Créer un fichier SQL »."
+
+#: inc/templates/credits.php:50
+msgid "If you love open source and especially WordPress, if you love to organize your working days by yourself and want to use your pragmatic problem-solving skills and result-oriented work methods: <a href=\"%s\">join our team</a>!"
+msgstr "If you love open source and especially WordPress, if you love to organize your working days by yourself and want to use your pragmatic problem-solving skills and result-oriented work methods: <a href=\"%s\">join our team</a>!"
+
+#: inc/templates/credits.php:46
+msgid "freedom for personal development and responsible, self-reliant action"
+msgstr "freedom for personal development and responsible, self-reliant action"
+
+#: inc/templates/credits.php:45
+msgid "a wide variety of tasks"
+msgstr "a wide variety of tasks"
+
+#: inc/templates/credits.php:44
+msgid "deliberately flat hierarchies and short decision paths"
+msgstr "deliberately flat hierarchies and short decision paths"
+
+#: inc/templates/credits.php:43
+msgid "flexible working hours in remote office"
+msgstr "flexible working hours in remote office"
+
+#: inc/templates/credits.php:42
+msgid "challenging and exciting projects"
+msgstr "challenging and exciting projects"
+
+#: inc/templates/credits.php:40
+msgid "At the moment we’re looking for developers for WordPress based products and services. If you’re not a developer and want to be part of us, we’d be happy to recieve your unsolicited application. At Inpsyde you can expect an open, modern and lively company culture:"
+msgstr "At the moment we’re looking for developers for WordPress based products and services. If you’re not a developer and want to be part of us, we’d be happy to recieve your unsolicited application. At Inpsyde you can expect an open, modern and lively company culture:"
+
+#: inc/templates/credits.php:39
+msgid "The biggest WordPress enterprise in Europe we’re dynamically growing and constantly looking for new employees. So do you want to shape WordPress in an interesting and exciting working environment? Here we are!"
+msgstr "The biggest WordPress enterprise in Europe we’re dynamically growing and constantly looking for new employees. So do you want to shape WordPress in an interesting and exciting working environment? Here we are!"
+
+#: inc/templates/credits.php:38
+msgid "Working at Inpsyde"
+msgstr "Working at Inpsyde"
+
+#: inc/templates/credits.php:33
+msgid "Look at our other <a href=\"%s\">free WordPress plugins</a>."
+msgstr "Regardez nos autres <a href=\"%s\">extensions WordPress gratuites</a>."
+
+#: inc/templates/credits.php:28
+msgid "Inpsyde is a WordPress <a href=\"%1$s\">VIP Service Partner</a> and <a href=\"%2$s\">WooCommerce Expert</a>."
+msgstr "Inpsyde est un <a href=\"%1$s\">partenaire de WordPress VIP</a> et un <a href=\"%2$s\">expert WooCommerce</a>."
+
+#: inc/templates/credits.php:26
+msgid "Inpsyde has developed enterprise solutions with the world’s most popular open-source CMS since it was a kitten. Still do, inconvincible convinced."
+msgstr "Inpsyde a développé des solutions d’entreprise avec le plus populaire des CMS open-source depuis qu’il est un châton.Faire encore, convaincre les sceptiques."
+
+#: inc/templates/credits.php:25
+msgid "We are Inpsyde"
+msgstr "Nous sommes Inpsyde"
+
+#: inc/templates/credits.php:21
+msgid "You can contribute the Plugin go to the repository on <a href=\"%s\">github</a> making changes, create issues or submitting changes."
+msgstr "Vous pouvez contribuer à l’extension en allant sur le dépôt du <a href=\"%s\">github</a> effectuer des modifications, soumettre vos problèmes et vos demandes de modifications."
+
+#: inc/templates/credits.php:19
+msgid "You rock! contribute the plugin."
+msgstr "Contribuer à l’extension."
+
+#: inc/templates/credits.php:14
+msgid "Search and Replace is refactored in 2015 by <a href=\"%1$s\">Inpsyde GmbH</a>, maintained since 2006 and based on the original from <a href=\"%2$s\">Mark Cunningham</a>."
+msgstr "Search and Replace a été repris en 2015 par <a href=\"%1$s\">Inpsyde GmbH</a>, maintenu depuis 2006 et basé sur le développement original de <a href=\"%2$s\">Mark Cunningham</a>."
+
+#: inc/templates/credits.php:12
+msgid "Hey nice to have you here!"
+msgstr "Ravi que vous soyez ici !"
+
+#: inc/Page/SqlImport.php:128
+msgid "A PHP extension stopped the file upload."
+msgstr "Une extension PHP a interrompu le téléversement du fichier."
+
+#: inc/Page/SqlImport.php:127
+msgid "Failed to write file to disk."
+msgstr "Le fichier n’a pas pu être écrit sur le disque."
+
+#: inc/Page/SqlImport.php:126
+msgid "Missing a temporary folder."
+msgstr "Absence de dossier temporaire."
+
+#: inc/Page/SqlImport.php:125
+msgid "No file was uploaded."
+msgstr "Aucun fichier n’a été téléversé."
+
+#: inc/Page/SqlImport.php:124
+msgid "The uploaded file was only partially uploaded"
+msgstr "Le fichier n’a pu être que partiellement téléversé"
+
+#: inc/Page/SqlImport.php:120
+msgid "The uploaded file exceeds the MAX_FILE_SIZE directive that was specified in the HTML form"
+msgstr "Le fichier téléversé excède la directive MAX_FILE_SIZE spécifiée dans le formulaire HTML"
+
+#: inc/Page/SqlImport.php:117
+msgid "The uploaded file exceeds the upload_max_filesize directive in php.ini"
+msgstr "La taille du fichier téléversé dépasse la directive upload_max_filesize du php.ini"
+
+#: inc/Page/SqlImport.php:105
+msgid "The SQL file was successfully imported. %s SQL queries were performed."
+msgstr "Le fichier SQL a bien été importé. %s requêtes SQL ont été effectuées."
+
+#: inc/Page/SqlImport.php:96
+msgid "The file does not seem to be a valid SQL file. Import not possible."
+msgstr "Le fichier ne semble pas être un fichier SQL valide. Import impossible."
+
+#: inc/Page/SqlImport.php:83
+msgid "The file has neither '.gz' nor '.sql' Extension.  Import not possible."
+msgstr "Le fichier n’a ni l’extension « .gz », ni l’extension « .sql ». Import impossible."
+
+#: inc/Page/SqlImport.php:60
+msgid "Import SQL file"
+msgstr "Importer un fichier SQL"
+
+#: inc/Page/SqlImport.php:34
+msgid "SQL Import"
+msgstr "Import SQL"
+
+#: inc/Page/SearchReplace.php:248
+msgid "Your search contains your current site url. Replacing your site url will most likely cause your site to break. If you want to change the URL (and you know what you doing), please use the export function and make sure you backup your database before reimporting the changed SQL."
+msgstr "Votre recherche contient l’URL actuelle de votre site. Le remplacement de l’URL de votre site entraînera probablement sa rupture. Si vous souhaitez modifier l’URL (et que vous savez ce que vous faites), veuillez utiliser la fonction d’export et vous assurez que vous avez sauvegardé votre base de données avant de réimporter le SQL modifié."
+
+#: inc/Page/SearchReplace.php:237
+msgid "Search field is empty."
+msgstr "Le champ de recherche est vide."
+
+#: inc/Page/SearchReplace.php:227
+msgid "No Tables were selected."
+msgstr "Aucune table n’est sélectionnée."
+
+#: inc/Page/SearchReplace.php:189
+msgid "The following changes were made to the database: "
+msgstr "Les modifications suivantes ont été effectuées sur la base de données : "
+
+#: inc/Page/SearchReplace.php:181
+msgid "Dry run is selected. No changes were made to the database and no SQL file was written ."
+msgstr "Lancer un test est sélectionné. Aucune modification ne sera effectuée sur la base de données et aucun fichier SQL ne sera créé."
+
+#: inc/Page/SearchReplace.php:163
+msgid "Do Search & Replace"
+msgstr "Rechercher & Remplacer"
+
+#: inc/Page/ReplaceDomain.php:87
+msgid "Replace Domain URL"
+msgstr "Remplacer l’URL du domaine"
+
+#: inc/Page/ReplaceDomain.php:79
+msgid "Do Replace Domain/Url"
+msgstr "Remplacer domaine/URL"
+
+#: inc/Page/ReplaceDomain.php:55
+msgid "Replace Field should not be empty."
+msgstr "Le champ remplacer ne doit pas être vide."
+
+#: inc/Page/Credits.php:24
+msgid "Credits"
+msgstr "Crédits"
+
+#: inc/Page/BackupDatabase.php:67
+msgid "Create SQL File"
+msgstr "Créer un fichier SQL"
+
+#: inc/Page/BackupDatabase.php:41
+msgid "Backup Database"
+msgstr "Sauvegarder la base de données"
+
+#: inc/Page/AbstractPage.php:78
+msgid "Submit"
+msgstr "Envoyer"
+
+#: inc/Page/AbstractPage.php:52
+msgid "Errors:"
+msgstr "Erreurs :"
+
+#. #-#-#-#-#  tmp-search-and-replace.pot (Search & Replace 3.1.2)  #-#-#-#-#
+#. Plugin Name of the plugin/theme
+#: inc/Page/AbstractPage.php:26 inc/Page/Manager.php:104
+#: inc/Page/SearchReplace.php:64
+msgid "Search & Replace"
+msgstr "Search & Replace"
+
+#: inc/FileDownloader.php:181
+msgid "New value:"
+msgstr "Nouvelle valeur : "
+
+#: inc/FileDownloader.php:179
+msgid "Old value:"
+msgstr "Ancienne valeur :"
+
+#: inc/FileDownloader.php:167
+msgid "column"
+msgstr "colonne"
+
+#: inc/FileDownloader.php:164
+msgid "row"
+msgstr "ligne"
+
+#: inc/FileDownloader.php:154
+msgid "Changes:"
+msgstr "Modifications :"
+
+#: inc/FileDownloader.php:152
+msgid "Table:"
+msgstr "Table :"
+
+#: inc/FileDownloader.php:133
+msgid "View details"
+msgstr "Voir les détails"
+
+#: inc/FileDownloader.php:121
+msgid "%s cell needs to be updated. "
+msgid_plural "%s cells need to be updated."
+msgstr[0] "%s cellule doit être mise à jour."
+msgstr[1] "%s cellule doivent être mises à jour."
+
+#: inc/FileDownloader.php:111
+msgid "%s table was processed. "
+msgid_plural "%s tables were processed. "
+msgstr[0] "%s table a été traitée. "
+msgstr[1] "%s tables ont été traitées."
+
+#: inc/FileDownloader.php:76
+msgid "Download SQL File"
+msgstr "Télécharger le fichier SQL"
+
+#: inc/FileDownloader.php:70
+msgid "Your SQL file was created!"
+msgstr "Votre fichier SQL a été créé !"
+
+#: inc/FileDownloader.php:56 inc/Page/SearchReplace.php:210
+msgid "Search pattern not found."
+msgstr "Valeur de recherche non trouvée."
+
+#: inc/Database/Replace.php:219
+msgid "Error updating row: %d."
+msgstr "Erreur de mise à jour de la ligne : %d."
+
+#: inc/Database/Replace.php:76
+msgid "Search and replace pattern can't be the same!"
+msgstr "Les valeurs à rechercher et à remplacer ne peuvent pas être identiques !"
+
+#: inc/Database/Manager.php:71
+msgid "(%s KB)"
+msgstr "(%s KB)"
+
+#: inc/Database/Exporter.php:460
+msgid "There was an error writing a line to the backup script:"
+msgstr "Il y a eu une erreur lors de l’écriture d’une ligne dans le script de sauvegarde :"
+
+#: inc/Database/Exporter.php:378
+msgid "End of data contents of table %s"
+msgstr "Fin du contenu de la table %s"
+
+#: inc/Database/Exporter.php:276
+msgid "Data contents of table %s"
+msgstr "Contenu de la table %s"
+
+#: inc/Database/Exporter.php:266
+msgid "Error getting table structure of %s"
+msgstr "Erreur de récupération de la structure de la table %s"
+
+#: inc/Database/Exporter.php:253
+msgid "Error with SHOW CREATE TABLE for %s."
+msgstr "Erreur avec SHOW CREATE TABLE pour %s."
+
+#: inc/Database/Exporter.php:243
+msgid "Table structure of table %s"
+msgstr "Structure de la table %s"
+
+#: inc/Database/Exporter.php:229
+msgid "Delete any existing table %s"
+msgstr "Supprimer toute table existante%s"
+
+#: inc/Database/Exporter.php:220
+msgid "Error getting table details"
+msgstr "Erreur de récupération des détails de la table"
+
+#: inc/Database/Exporter.php:216
+msgid "Table: %s"
+msgstr "Tables : %s"
+
+#: inc/Database/Exporter.php:128
+msgid "Changed table prefix: From %s to %s "
+msgstr "Préfixe de la table modifié : de %s vers %s "
+
+#: inc/Database/Exporter.php:124
+msgid "Database: %s"
+msgstr "Base de données : %s"
+
+#: inc/Database/Exporter.php:123
+msgid "Hostname: %s"
+msgstr "Nom d’hôte : %s"
+
+#: inc/Database/Exporter.php:122
+msgid "Generated: %s"
+msgstr "Générée le : %s"
+
+#: inc/Database/Exporter.php:120
+msgid "WordPress MySQL database backup"
+msgstr "Sauvegarde de la base de données MySLQ de WordPress"
+
+#: inc/Database/Exporter.php:112
+msgid "The backup directory is not writable!"
+msgstr "Le répertoire de sauvegarde n’est pas accessible en écriture !"
+
+#: inc/Database/Exporter.php:106
+msgid "Could not open the backup file for writing!"
+msgstr "Impossible d’ouvrir le fichier de sauvegarde pour l’écriture !"

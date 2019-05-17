@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="156px" height="150px" viewBox="0 0 156 150" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.3 (67297) - http://www.bohemiancoding.com/sketch -->
+    <title>System</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard-Copy-28" transform="translate(-139.000000, -944.000000)" fill="#636466">
+            <g id="System" transform="translate(139.000000, 944.000000)">
+                <path d="M132,0 L24,0 C10.752,0 0,11.502 0,24 L0,96 C0,109.254 10.746,120 24,120 L132,120 C145.254,120 156,109.254 156,96 L156,24 C156,10.746 145.254,0 132,0 Z M144,90 C144,102 138,108 126,108 L30,108 C18,108 12,102 12,90 L12,29.628 C12,17.628 18,11.91 30,11.91 L126,11.91 C138,11.91 144,17.628 144,29.628 L144,90 Z" id="Shape" fill-rule="nonzero"></path>
+                <path d="M48.126,128.304 C48.126,128.304 39.378,133.182 39.378,139.548 C39.378,145.056 44.34,150 49.842,150 C52.032,150 104.364,150 106.56,150 C111.684,150 116.514,145.134 116.514,139.788 C116.514,133.428 108.516,128.304 108.516,128.304 C108.516,128.304 108.252,138.096 99.498,138.096 C94.626,138.096 61.986,138.096 56.628,138.096 C47.634,138.096 48.126,128.304 48.126,128.304 Z" id="Path"></path>
+            </g>
+        </g>
+    </g>
+</svg>

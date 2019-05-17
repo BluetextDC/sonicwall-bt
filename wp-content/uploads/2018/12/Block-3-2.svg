@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="434px" height="146px" viewBox="0 0 434 146" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>Block 3</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="RM-Composited" transform="translate(-1659.000000, -2472.000000)">
+            <g id="Block-3" transform="translate(1660.000000, 2473.000000)">
+                <path d="M18,0 L414,0 C423.941125,-1.82615513e-15 432,8.0588745 432,18 L432,143.114604 L246,143 L259.809941,117.755543 L172,117.755543 L187.37469,143.114604 L0,143.114604 L0,18 C-1.21743675e-15,8.0588745 8.0588745,1.82615513e-15 18,0 Z" id="Box-3" stroke="#FF791A" stroke-width="2" fill-opacity="0.884567482" fill="#333333" transform="translate(216.000000, 71.557302) rotate(180.000000) translate(-216.000000, -71.557302) "></path>
+                <text id="Get-to-KNOW-SonicWal" font-family="Nunito-Regular, Nunito" font-size="26" font-weight="normal" fill="#999999">
+                    <tspan x="138.205" y="78">Get to KNOW </tspan>
+                    <tspan x="89.468" y="113">SonicWall Risk Meters</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>

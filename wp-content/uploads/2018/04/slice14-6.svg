@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 188 203" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;">
+    <g transform="matrix(1,0,0,1,-723,-102)">
+        <g>
+            <g transform="matrix(1.42996,0,0,1.42996,133.759,-109.39)">
+                <text x="428.212px" y="270.779px" style="font-family:'Nunito-Regular', 'Nunito';font-size:16px;fill:rgb(106,109,114);">Discov<tspan x="476.004px 484.436px 490.564px " y="270.779px 270.779px 270.779px ">ery</tspan> and</text>
+                <text x="448.82px" y="286.779px" style="font-family:'Nunito-Regular', 'Nunito';font-size:16px;fill:rgb(106,109,114);">Visibility</text>
+            </g>
+            <g transform="matrix(1.66385,0,0,1.66385,598.666,-818.452)">
+                <g transform="matrix(1.01387,0,0,1.01584,-2.5792,-9.96952)">
+                    <path d="M185.95,561.805C185.95,558.626 183.365,556.046 180.18,556.046L83.747,556.046C80.563,556.046 77.977,558.626 77.977,561.805L77.977,623.437C77.977,626.615 80.563,629.196 83.747,629.196L180.18,629.196C183.365,629.196 185.95,626.615 185.95,623.437L185.95,561.805Z" style="fill:none;stroke:rgb(99,101,105);stroke-width:3.14px;"/>
+                </g>
+                <path d="M95.99,596.2L114.798,596.2L123.129,576.708L135.386,607.197L145.178,586.554L151.828,594.293L165.667,594.293" style="fill:none;stroke:rgb(99,101,105);stroke-width:3.19px;"/>
+                <path d="M126.061,620.057L136.09,620.057" style="fill:none;stroke:rgb(99,101,105);stroke-width:3.19px;"/>
+                <path d="M121.188,629.196L121.188,639.911L112.414,639.911L149.421,639.911L141.559,639.911L141.559,629.196" style="fill:none;stroke:rgb(99,101,105);stroke-width:3.19px;"/>
+            </g>
+        </g>
+    </g>
+</svg>

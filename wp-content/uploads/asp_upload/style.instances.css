@@ -1,0 +1,979 @@
+
+div[id*='ajaxsearchpro1_'] div.asp_loader,
+div[id*='ajaxsearchpro1_'] div.asp_loader * {
+    /* display: none; */
+    box-sizing: border-box !important;
+    margin: 0;
+    padding: 0;
+    /* vertical-align: middle !important; */
+    box-shadow: none;
+}
+
+div[id*='ajaxsearchpro1_'] div.asp_loader {
+    box-sizing: border-box;
+    display: flex;
+    flex: 0 1 auto;
+    flex-direction: column;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis:28px;
+    max-width: 100%;
+    max-height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+div[id*='ajaxsearchpro1_'] div.asp_loader-inner {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    /* vertical-align: text-top; */
+    height: 100%;
+}
+ 
+@-webkit-keyframes rotate-simple {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg); }
+
+    50% {
+        -webkit-transform: rotate(180deg);
+        transform: rotate(180deg); }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg); } }
+
+@keyframes rotate-simple {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg); }
+
+    50% {
+        -webkit-transform: rotate(180deg);
+        transform: rotate(180deg); }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg); } }
+div[id*='ajaxsearchpro1_'] div.asp_simple-circle {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    animation: rotate-simple 0.8s infinite linear;
+    -webkit-animation: rotate-simple 0.8s infinite linear;
+    border: 4px solid rgb(249, 249, 249);
+    border-right-color: transparent;
+    border-radius: 50%;
+    box-sizing: border-box;
+}
+
+div[id*='ajaxsearchprores1_'] .asp_res_loader div.asp_loader,
+div[id*='ajaxsearchprores1_'] .asp_res_loader div.asp_loader * {
+    /* display: none; */
+    box-sizing: border-box !important;
+    margin: 0;
+    padding: 0;
+    /* vertical-align: middle !important; */
+    box-shadow: none;
+}
+
+div[id*='ajaxsearchprores1_'] .asp_res_loader div.asp_loader {
+    box-sizing: border-box;
+    display: flex;
+    flex: 0 1 auto;
+    flex-direction: column;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis:28px;
+    max-width: 100%;
+    max-height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+div[id*='ajaxsearchprores1_'] .asp_res_loader div.asp_loader-inner {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    /* vertical-align: text-top; */
+    height: 100%;
+}
+ 
+@-webkit-keyframes rotate-simple {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg); }
+
+    50% {
+        -webkit-transform: rotate(180deg);
+        transform: rotate(180deg); }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg); } }
+
+@keyframes rotate-simple {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg); }
+
+    50% {
+        -webkit-transform: rotate(180deg);
+        transform: rotate(180deg); }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg); } }
+div[id*='ajaxsearchprores1_'] .asp_res_loader div.asp_simple-circle {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    animation: rotate-simple 0.8s infinite linear;
+    -webkit-animation: rotate-simple 0.8s infinite linear;
+    border: 4px solid rgb(249, 249, 249);
+    border-right-color: transparent;
+    border-radius: 50%;
+    box-sizing: border-box;
+}
+
+#ajaxsearchpro1_1 div.asp_loader, #ajaxsearchpro1_2 div.asp_loader,
+#ajaxsearchpro1_1 div.asp_loader *, #ajaxsearchpro1_2 div.asp_loader * {
+    /* display: none; */
+    box-sizing: border-box !important;
+    margin: 0;
+    padding: 0;
+    /* vertical-align: middle !important; */
+    box-shadow: none;
+}
+
+#ajaxsearchpro1_1 div.asp_loader, #ajaxsearchpro1_2 div.asp_loader {
+    box-sizing: border-box;
+    display: flex;
+    flex: 0 1 auto;
+    flex-direction: column;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis:28px;
+    max-width: 100%;
+    max-height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+#ajaxsearchpro1_1 div.asp_loader-inner, #ajaxsearchpro1_2 div.asp_loader-inner {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    /* vertical-align: text-top; */
+    height: 100%;
+}
+ 
+@-webkit-keyframes rotate-simple {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg); }
+
+    50% {
+        -webkit-transform: rotate(180deg);
+        transform: rotate(180deg); }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg); } }
+
+@keyframes rotate-simple {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg); }
+
+    50% {
+        -webkit-transform: rotate(180deg);
+        transform: rotate(180deg); }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg); } }
+#ajaxsearchpro1_1 div.asp_simple-circle, #ajaxsearchpro1_2 div.asp_simple-circle {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    animation: rotate-simple 0.8s infinite linear;
+    -webkit-animation: rotate-simple 0.8s infinite linear;
+    border: 4px solid rgb(249, 249, 249);
+    border-right-color: transparent;
+    border-radius: 50%;
+    box-sizing: border-box;
+}
+
+@-webkit-keyframes asp_an_fadeInDown {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(-20px);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+    }
+}
+
+@keyframes asp_an_fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.asp_an_fadeInDown {
+    -webkit-animation-name:  asp_an_fadeInDown;
+    animation-name:  asp_an_fadeInDown;
+}
+ 
+
+div.asp_r.asp_r_1,
+div.asp_r.asp_r_1 *,
+div.asp_m.asp_m_1,
+div.asp_m.asp_m_1 *,
+div.asp_s.asp_s_1,
+div.asp_s.asp_s_1 * {
+    -webkit-box-sizing: content-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: content-box; /* Firefox, other Gecko */
+    -ms-box-sizing: content-box;
+    -o-box-sizing: content-box;
+    box-sizing: content-box;
+    border: 0;
+    border-radius: 0;
+    text-transform: none;
+    text-shadow: none;
+    box-shadow: none;
+    text-decoration: none;
+    text-align: left;
+    letter-spacing: normal;
+}
+
+div.asp_r.asp_r_1,
+div.asp_m.asp_m_1,
+div.asp_s.asp_s_1 {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* Margin and padding gets wrecked if set with compatibility.. */
+div.asp_r.asp_r_1,
+div.asp_r.asp_r_1 *,
+div.asp_m.asp_m_1,
+div.asp_m.asp_m_1 *,
+div.asp_s.asp_s_1,
+div.asp_s.asp_s_1 * {
+    padding: 0;
+    margin: 0;
+}
+
+.wpdreams_clear {
+    clear: both;
+}
+
+    #ajaxsearchpro1_1,
+    #ajaxsearchpro1_2,
+div.asp_m.asp_m_1 {
+  width: 100%;
+  height: auto;
+  max-height: none;
+  border-radius: 5px;
+  background: #d1eaff;
+                background-image: -webkit-linear-gradient(185deg, rgba(253, 253, 253, 1), rgba(250, 250, 250, 1));
+            background-image: -moz-linear-gradient(185deg, rgba(253, 253, 253, 1), rgba(250, 250, 250, 1));
+            background-image: -o-linear-gradient(185deg, rgba(253, 253, 253, 1), rgba(250, 250, 250, 1));
+            background-image: -ms-linear-gradient(185deg, rgba(253, 253, 253, 1) 0%, rgba(250, 250, 250, 1) 100%);
+            background-image: linear-gradient(185deg, rgba(253, 253, 253, 1), rgba(250, 250, 250, 1));
+          overflow: hidden;
+  border:0px none rgb(0, 0, 0);border-radius:5px 5px 5px 5px;  box-shadow:0px 1px 2px 0px #999999 ;}
+
+    #ajaxsearchpro1_1 .probox,
+    #ajaxsearchpro1_2 .probox,
+div.asp_m.asp_m_1 .probox {
+  margin: 6px;
+  height: 34px;
+              background-image: -moz-radial-gradient(center, ellipse cover,  rgba(237, 243, 247, 1), rgba(237, 243, 247, 1));
+            background-image: -webkit-gradient(radial, center center, 0px, center center, 100%, rgba(237, 243, 247, 1), rgba(237, 243, 247, 1));
+            background-image: -webkit-radial-gradient(center, ellipse cover,  rgba(237, 243, 247, 1), rgba(237, 243, 247, 1));
+            background-image: -o-radial-gradient(center, ellipse cover,  rgba(237, 243, 247, 1), rgba(237, 243, 247, 1));
+            background-image: -ms-radial-gradient(center, ellipse cover,  rgba(237, 243, 247, 1), rgba(237, 243, 247, 1));
+            background-image: radial-gradient(ellipse at center,  rgba(237, 243, 247, 1), rgba(237, 243, 247, 1));
+          border:1px none rgb(255, 255, 255);border-radius:3px 3px 3px 3px;  box-shadow:0px 1px 2px -1px rgb(141, 141, 141) inset;}
+
+
+
+p[id*=asp-try-1] {
+    color: rgb(85, 85, 85) !important;
+    display: block;
+}
+
+div.asp_main_container+[id*=asp-try-1] {
+        width: 100%;
+}
+
+p[id*=asp-try-1] a {
+    color: rgb(255, 181, 86) !important;
+}
+
+p[id*=asp-try-1] a:after {
+    color: rgb(85, 85, 85) !important;
+    display: inline;
+    content: ',';
+}
+
+p[id*=asp-try-1] a:last-child:after {
+    display: none;
+}
+
+    #ajaxsearchpro1_1 .probox .proinput,
+    #ajaxsearchpro1_2 .probox .proinput,
+div.asp_m.asp_m_1 .probox .proinput {
+  font-weight:normal;font-family:"Open Sans";color:rgb(0, 0, 0);font-size:12px;line-height:15px;text-shadow:0px 0px 0px rgba(255, 255, 255, 0);    line-height: normal;
+  flex-grow: 1;
+  order: 5;
+  /* Ipad and stuff.. */
+  -webkit-flex-grow: 1;
+  -webkit-order: 5;
+}
+
+    #ajaxsearchpro1_1 .probox .proinput input.orig,
+    #ajaxsearchpro1_2 .probox .proinput input.orig,
+div.asp_m.asp_m_1 .probox .proinput input.orig {
+    font-weight:normal;font-family:"Open Sans";color:rgb(0, 0, 0);font-size:12px;line-height:15px;text-shadow:0px 0px 0px rgba(255, 255, 255, 0);    line-height: normal;
+    border: 0;
+    box-shadow: none;
+    height: 34px;
+    position: relative;
+    z-index: 2;
+    padding: 0 !important;
+    padding-top: 2px !important;
+    margin: -1px 0 0 -4px !important;
+    width: 100%;
+    background: transparent !important;
+}
+
+    #ajaxsearchpro1_1 .probox .proinput input.autocomplete,
+    #ajaxsearchpro1_2 .probox .proinput input.autocomplete,
+div.asp_m.asp_m_1 .probox .proinput input.autocomplete {
+    font-weight:normal;font-family:"Open Sans";color:rgb(0, 0, 0);font-size:12px;line-height:15px;text-shadow:0px 0px 0px rgba(255, 255, 255, 0);    line-height: normal;
+    opacity: 0.25;
+    height: 34px;
+    display: block;
+    position: relative;
+    z-index: 1;
+    padding: 0 !important;
+    margin: -1px 0 0 -4px !important;
+    margin-top: -34px !important;
+    width: 100%;
+    background: transparent !important;
+}
+
+    .rtl #ajaxsearchpro1_1 .probox .proinput input.orig,
+    .rtl #ajaxsearchpro1_2 .probox .proinput input.orig,
+    .rtl #ajaxsearchpro1_1 .probox .proinput input.autocomplete,
+    .rtl #ajaxsearchpro1_2 .probox .proinput input.autocomplete,
+.rtl div.asp_m.asp_m_1 .probox .proinput input.orig,
+.rtl div.asp_m.asp_m_1 .probox .proinput input.autocomplete {
+    font-weight:normal;font-family:"Open Sans";color:rgb(0, 0, 0);font-size:12px;line-height:15px;text-shadow:0px 0px 0px rgba(255, 255, 255, 0);    line-height: normal;
+    direction: rtl;
+    text-align: right;
+}
+
+    .rtl #ajaxsearchpro1_1 .probox .proinput,
+    .rtl #ajaxsearchpro1_2 .probox .proinput,
+.rtl div.asp_m.asp_m_1 .probox .proinput {
+    /*float: right;*/
+    margin-right: 2px;
+}
+
+    .rtl #ajaxsearchpro1_1 .probox .proloading,
+    .rtl #ajaxsearchpro1_1 .probox .proclose,
+    .rtl #ajaxsearchpro1_2 .probox .proloading,
+    .rtl #ajaxsearchpro1_2 .probox .proclose,
+.rtl div.asp_m.asp_m_1 .probox .proloading,
+.rtl div.asp_m.asp_m_1 .probox .proclose {
+    order: 3;
+}
+
+
+div.asp_m.asp_m_1 .probox .proinput input.orig::-webkit-input-placeholder {
+    font-weight:normal;font-family:"Open Sans";color:rgb(0, 0, 0);font-size:12px;text-shadow:0px 0px 0px rgba(255, 255, 255, 0);    opacity: 0.85;
+}
+div.asp_m.asp_m_1 .probox .proinput input.orig::-moz-placeholder {
+    font-weight:normal;font-family:"Open Sans";color:rgb(0, 0, 0);font-size:12px;text-shadow:0px 0px 0px rgba(255, 255, 255, 0);    opacity: 0.85;
+}
+div.asp_m.asp_m_1 .probox .proinput input.orig:-ms-input-placeholder {
+    font-weight:normal;font-family:"Open Sans";color:rgb(0, 0, 0);font-size:12px;text-shadow:0px 0px 0px rgba(255, 255, 255, 0);    opacity: 0.85;
+}
+div.asp_m.asp_m_1 .probox .proinput input.orig:-moz-placeholder {
+    font-weight:normal;font-family:"Open Sans";color:rgb(0, 0, 0);font-size:12px;text-shadow:0px 0px 0px rgba(255, 255, 255, 0);    opacity: 0.85;
+    line-height: normal !important;
+}
+
+    #ajaxsearchpro1_1 .probox .proinput input.autocomplete,
+    #ajaxsearchpro1_2 .probox .proinput input.autocomplete,
+div.asp_m.asp_m_1 .probox .proinput input.autocomplete {
+    font-weight:normal;font-family:"Open Sans";color:rgb(0, 0, 0);font-size:12px;line-height:15px;text-shadow:0px 0px 0px rgba(255, 255, 255, 0);    line-height: normal;
+    border: 0;
+    box-shadow: none;
+}
+
+    #ajaxsearchpro1_1 .probox .proloading,
+    #ajaxsearchpro1_1 .probox .proclose,
+    #ajaxsearchpro1_1 .probox .promagnifier,
+    #ajaxsearchpro1_1 .probox .prosettings,
+    #ajaxsearchpro1_2 .probox .proloading,
+    #ajaxsearchpro1_2 .probox .proclose,
+    #ajaxsearchpro1_2 .probox .promagnifier,
+    #ajaxsearchpro1_2 .probox .prosettings,
+div.asp_m.asp_m_1 .probox .proloading,
+div.asp_m.asp_m_1 .probox .proclose,
+div.asp_m.asp_m_1 .probox .promagnifier,
+div.asp_m.asp_m_1 .probox .prosettings {
+  width: 34px;
+  height: 34px;
+  flex: 0 0 34px;
+  flex-grow: 0;
+  order: 7;
+    /* Ipad and stuff.. */
+    -webkit-flex: 0 0 34px;
+    -webkit-flex-grow: 0;
+    -webkit-order: 7;
+}
+
+    #ajaxsearchpro1_1 .probox .proclose svg,
+    #ajaxsearchpro1_2 .probox .proclose svg,
+div.asp_m.asp_m_1 .probox .proclose svg {
+     fill: rgb(254, 254, 254);
+     background: rgb(51, 51, 51);
+     box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 0.9);
+}
+
+	#ajaxsearchpro1_1 .probox .proloading,
+	#ajaxsearchpro1_2 .probox .proloading,
+div.asp_m.asp_m_1 .probox .proloading {
+    width: 34px;
+    height: 34px;
+    min-width: 34px;
+    min-height: 34px;
+    max-width: 34px;
+    max-height: 34px;
+}
+
+	#ajaxsearchpro1_1 .probox .proloading .asp_loader,
+	#ajaxsearchpro1_2 .probox .proloading .asp_loader,
+div.asp_m.asp_m_1 .probox .proloading .asp_loader {
+    width: 30px;
+    height: 30px;
+    min-width: 30px;
+    min-height: 30px;
+    max-width: 30px;
+    max-height: 30px;
+}
+
+	#ajaxsearchpro1_1 .probox .promagnifier,
+	#ajaxsearchpro1_2 .probox .promagnifier,
+div.asp_m.asp_m_1 .probox .promagnifier {
+	width: auto;
+	height: 34px;
+	flex: 0 0 auto;
+	order: 7;
+	/* Ipad and stuff.. */
+	-webkit-flex: 0 0 auto;
+	-webkit-order: 7;
+}
+
+
+	#ajaxsearchpro1_1 .probox .promagnifier div.innericon,
+	#ajaxsearchpro1_2 .probox .promagnifier div.innericon,
+div.asp_m.asp_m_1 .probox .promagnifier div.innericon {
+	width: 34px;
+	height: 34px;
+	float: right;
+}
+
+	#ajaxsearchpro1_1 .probox .promagnifier div.asp_text_button,
+	#ajaxsearchpro1_2 .probox .promagnifier div.asp_text_button,
+div.asp_m.asp_m_1 .probox .promagnifier div.asp_text_button {
+	width: auto;
+	height: 34px;
+	float: right;
+	margin: 0;
+		    padding: 0 10px 0 2px;
+	    font-weight:normal;font-family:"Open Sans";color:rgba(51, 51, 51, 1);font-size:15px;line-height:normal;text-shadow:0px 0px 0px rgba(255, 255, 255, 0);    /* to center the text, this must be identical with the height */
+    line-height: 34px;
+}
+
+    #ajaxsearchpro1_1 .probox .promagnifier .innericon svg,
+    #ajaxsearchpro1_2 .probox .promagnifier .innericon svg,
+div.asp_m.asp_m_1 .probox .promagnifier .innericon svg {
+  fill: rgb(249, 249, 249);
+}
+
+    #ajaxsearchpro1_1 .probox .prosettings .innericon svg,
+    #ajaxsearchpro1_2 .probox .prosettings .innericon svg,
+div.asp_m.asp_m_1 .probox .prosettings .innericon svg {
+  fill: rgb(54, 54, 54);
+}
+
+
+    #ajaxsearchpro1_1.asp_msie .probox .proloading,
+    #ajaxsearchpro1_2.asp_msie .probox .proloading,
+div.asp_m.asp_m_1.asp_msie .probox .proloading {
+    background-image: url("//test.sonicwall.com/wp-content/plugins/ajax-search-pro//img/loading/newload1.gif");
+    float: right;
+}
+
+    #ajaxsearchpro1_1 .probox .promagnifier,
+    #ajaxsearchpro1_2 .probox .promagnifier,
+div.asp_m.asp_m_1 .probox .promagnifier {
+        width: 32px;
+    height: 32px;
+              background-image: -webkit-linear-gradient(180deg, rgba(255, 127, 102, 1), rgba(220, 83, 57, 1));
+            background-image: -moz-linear-gradient(180deg, rgba(255, 127, 102, 1), rgba(220, 83, 57, 1));
+            background-image: -o-linear-gradient(180deg, rgba(255, 127, 102, 1), rgba(220, 83, 57, 1));
+            background-image: -ms-linear-gradient(180deg, rgba(255, 127, 102, 1) 0%, rgba(220, 83, 57, 1) 100%);
+            background-image: linear-gradient(180deg, rgba(255, 127, 102, 1), rgba(220, 83, 57, 1));
+          background-position:center center;
+  background-repeat: no-repeat;
+
+  order: 11;
+  /* Ipad and stuff fix */
+  -webkit-order: 11;
+  float: right; /* IE9, no flexbox */
+  border:1px solid rgba(139, 70, 57, 1);border-radius:3px 3px 3px 3px;  box-shadow:0px 1px 0px 0px #ffcaa6 inset;  cursor: pointer;
+  background-size: 100% 100%;
+
+  background-position:center center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+
+
+    #ajaxsearchpro1_1 .probox .prosettings,
+    #ajaxsearchpro1_2 .probox .prosettings,
+div.asp_m.asp_m_1 .probox .prosettings {
+  width: 34px;
+  height: 34px;
+  background: transparent;  background-position:center center;
+  background-repeat: no-repeat;
+  order: 1;
+  /* Ipad and stuff fix*/
+  -webkit-order: 1;
+  float: left; /* IE9, no flexbox */
+  border:0px solid rgb(104, 174, 199);border-radius:0px 0px 0px 0px;  box-shadow:0px 0px 0px 0px #999999 ;  cursor: pointer;
+  background-size: 100% 100%;
+  align-self: flex-end;
+}
+
+
+    #ajaxsearchprores1_1,
+    #ajaxsearchprores1_2,
+div.asp_r.asp_r_1 {
+    position: absolute;
+    z-index: 11000;
+}
+
+    #ajaxsearchprores1_1 .results .asp_nores .asp_keyword,
+    #ajaxsearchprores1_2 .results .asp_nores .asp_keyword,
+div.asp_r.asp_r_1 .results .asp_nores .asp_keyword {
+    padding: 0 6px;
+    cursor: pointer;
+    font-weight:normal;font-family:"Open Sans";color:rgb(74, 74, 74);font-size:13px;line-height:1.35em;text-shadow:0px 0px 0px rgba(255, 255, 255, 0);    font-weight: bold;
+}
+
+    #ajaxsearchprores1_1 .results .item,
+    #ajaxsearchprores1_2 .results .item,
+div.asp_r.asp_r_1 .results .item {
+    height: auto;
+    background: rgb(255, 255, 255);
+}
+
+    #ajaxsearchprores1_1 .results .item.hovered,
+    #ajaxsearchprores1_2 .results .item.hovered,
+div.asp_r.asp_r_1 .results .item.hovered {
+              background-image: -moz-radial-gradient(center, ellipse cover,  rgb(240, 245, 247), rgb(240, 245, 247));
+            background-image: -webkit-gradient(radial, center center, 0px, center center, 100%, rgb(240, 245, 247), rgb(240, 245, 247));
+            background-image: -webkit-radial-gradient(center, ellipse cover,  rgb(240, 245, 247), rgb(240, 245, 247));
+            background-image: -o-radial-gradient(center, ellipse cover,  rgb(240, 245, 247), rgb(240, 245, 247));
+            background-image: -ms-radial-gradient(center, ellipse cover,  rgb(240, 245, 247), rgb(240, 245, 247));
+            background-image: radial-gradient(ellipse at center,  rgb(240, 245, 247), rgb(240, 245, 247));
+        }
+
+    #ajaxsearchprores1_1 .results .item .asp_image,
+    #ajaxsearchprores1_2 .results .item .asp_image,
+div.asp_r.asp_r_1 .results .item .asp_image {
+  width: 70px;
+  height: 70px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+    #ajaxsearchprores1_1 .results .item .asp_item_img,
+    #ajaxsearchprores1_2 .results .item .asp_item_img,
+div.asp_r.asp_r_1 .results .item .asp_item_img {
+   background-size: cover;
+   background-repeat: no-repeat;
+}
+
+    #ajaxsearchprores1_1 .results .item .asp_item_overlay_img,
+    #ajaxsearchprores1_2 .results .item .asp_item_overlay_img,
+div.asp_r.asp_r_1 .results .item .asp_item_overlay_img {
+   background-size: cover;
+   background-repeat: no-repeat;
+}
+
+
+    #ajaxsearchprores1_1 .results .item .asp_content,
+    #ajaxsearchprores1_2 .results .item .asp_content,
+div.asp_r.asp_r_1 .results .item .asp_content {
+    overflow: hidden;
+    background: transparent;
+    margin: 0;
+    padding: 0 10px;
+}
+
+    #ajaxsearchprores1_1 .results .item .asp_content h3,
+    #ajaxsearchprores1_2 .results .item .asp_content h3,
+div.asp_r.asp_r_1 .results .item .asp_content h3 {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  line-height: inherit;
+  font-weight:bold;font-family:"Lato";color:rgb(20, 104, 169);font-size:14px;line-height:1.55em;text-shadow:0px 0px 0px rgba(255, 255, 255, 0);}
+
+    #ajaxsearchprores1_1 .results .item .asp_content h3 a,
+    #ajaxsearchprores1_2 .results .item .asp_content h3 a,
+div.asp_r.asp_r_1 .results .item .asp_content h3 a {
+  margin: 0;
+  padding: 0;
+  line-height: inherit;
+  font-weight:bold;font-family:"Lato";color:rgb(20, 104, 169);font-size:14px;line-height:1.55em;text-shadow:0px 0px 0px rgba(255, 255, 255, 0);}
+
+    #ajaxsearchprores1_1 .results .item .asp_content h3 a:hover,
+    #ajaxsearchprores1_2 .results .item .asp_content h3 a:hover,
+div.asp_r.asp_r_1 .results .item .asp_content h3 a:hover {
+  font-weight:bold;font-family:"Lato";color:rgb(20, 104, 169);font-size:14px;line-height:1.55em;text-shadow:0px 0px 0px rgba(255, 255, 255, 0);}
+
+    #ajaxsearchprores1_1 .results .item div.etc,
+    #ajaxsearchprores1_2 .results .item div.etc,
+div.asp_r.asp_r_1 .results .item div.etc {
+  padding: 0;
+  font-size: 13px;
+  line-height: 1.3em;
+  margin-bottom: 6px;
+}
+
+    #ajaxsearchprores1_1 .results .item .etc .asp_author,
+    #ajaxsearchprores1_2 .results .item .etc .asp_author,
+div.asp_r.asp_r_1 .results .item .etc .asp_author {
+  padding: 0;
+  font-weight:bold;font-family:"Open Sans";color:rgb(161, 161, 161);font-size:11px;line-height:13px;text-shadow:0px 0px 0px rgba(255, 255, 255, 0);}
+
+    #ajaxsearchprores1_1 .results .item .etc .asp_date,
+    #ajaxsearchprores1_2 .results .item .etc .asp_date,
+div.asp_r.asp_r_1 .results .item .etc .asp_date {
+  margin: 0 0 0 10px;
+  padding: 0;
+  font-weight:normal;font-family:"Open Sans";color:rgb(173, 173, 173);font-size:11px;line-height:15px;text-shadow:0px 0px 0px rgba(255, 255, 255, 0);}
+
+    #ajaxsearchprores1_1 .results .item div.asp_content,
+    #ajaxsearchprores1_2 .results .item div.asp_content,
+div.asp_r.asp_r_1 .results .item div.asp_content {
+    margin: 0;
+    padding: 0;
+    font-weight:normal;font-family:"Open Sans";color:rgb(74, 74, 74);font-size:13px;line-height:1.35em;text-shadow:0px 0px 0px rgba(255, 255, 255, 0);}
+
+    #ajaxsearchprores1_1 span.highlighted,
+    #ajaxsearchprores1_2 span.highlighted,
+div.asp_r.asp_r_1 span.highlighted {
+    font-weight: bold;
+    color: rgba(217, 49, 43, 1);
+    background-color: rgba(238, 238, 238, 1);
+}
+
+    #ajaxsearchprores1_1 p.showmore,
+    #ajaxsearchprores1_2 p.showmore,
+div.asp_r.asp_r_1 p.showmore {
+  text-align: center;
+  margin: 5px 0 0;
+  font-weight:normal;font-family:"Open Sans";color:rgb(5, 94, 148);font-size:12px;line-height:15px;text-shadow:0px 0px 0px rgba(255, 255, 255, 0);}
+
+    #ajaxsearchprores1_1 p.showmore a,
+    #ajaxsearchprores1_2 p.showmore a,
+div.asp_r.asp_r_1 p.showmore a {
+    font-weight:normal;font-family:"Open Sans";color:rgb(5, 94, 148);font-size:12px;line-height:15px;text-shadow:0px 0px 0px rgba(255, 255, 255, 0);    padding: 10px 5px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 1);
+    display: block;
+    text-align: center;
+}
+
+    #ajaxsearchprores1_1 .asp_group_header,
+    #ajaxsearchprores1_2 .asp_group_header,
+div.asp_r.asp_r_1 .asp_group_header {
+  background: #DDDDDD;
+  background: rgb(246, 246, 246);
+  border-radius: 3px 3px 0 0;
+  border-top: 1px solid rgb(248, 248, 248);
+  border-left: 1px solid rgb(248, 248, 248);
+  border-right: 1px solid rgb(248, 248, 248);
+  margin: 10px 0 -3px;
+  padding: 7px 0 7px 10px;
+  position: relative;
+  z-index: 1000;
+  font-weight:bold;font-family:"Open Sans";color:rgb(5, 94, 148);font-size:11px;line-height:13px;text-shadow:0px 0px 0px rgba(255, 255, 255, 0);}
+
+    #ajaxsearchprores1_1 .asp_res_loader,
+    #ajaxsearchprores1_2 .asp_res_loader,
+div.asp_r.asp_r_1 .asp_res_loader {
+    background: rgb(255, 255, 255);
+    height: 200px;
+    padding: 10px;
+}
+
+    #ajaxsearchprores1_1.isotopic .asp_res_loader,
+    #ajaxsearchprores1_2.isotopic .asp_res_loader,
+div.asp_r.asp_r_1.isotopic .asp_res_loader {
+    background: rgba(255, 255, 255, 0);;
+}
+
+    #ajaxsearchprores1_1 .asp_res_loader .asp_loader,
+    #ajaxsearchprores1_2 .asp_res_loader .asp_loader,
+div.asp_r.asp_r_1 .asp_res_loader .asp_loader {
+    height: 200px;
+    width: 200px;
+    margin: 0 auto;
+}
+
+
+/* Search settings */
+    div.asp_s.asp_s_1.searchsettings,
+    div.asp_s.asp_s_1.searchsettings,
+div.asp_s.asp_s_1.searchsettings  {
+  direction: ltr;
+  padding: 0;
+              background-image: -webkit-linear-gradient(185deg, rgba(237, 243, 247, 1), rgba(237, 243, 247, 1));
+            background-image: -moz-linear-gradient(185deg, rgba(237, 243, 247, 1), rgba(237, 243, 247, 1));
+            background-image: -o-linear-gradient(185deg, rgba(237, 243, 247, 1), rgba(237, 243, 247, 1));
+            background-image: -ms-linear-gradient(185deg, rgba(237, 243, 247, 1) 0%, rgba(237, 243, 247, 1) 100%);
+            background-image: linear-gradient(185deg, rgba(237, 243, 247, 1), rgba(237, 243, 247, 1));
+          box-shadow:0px 2px 2px 0px #999999 ;;
+  max-width: 208px;
+  z-index: 11001;
+}
+
+    #ajaxsearchprobsettings1_1.searchsettings,
+    #ajaxsearchprobsettings1_2.searchsettings,
+div.asp_sb.asp_sb_1.searchsettings {
+  max-width: none;
+}
+
+    div.asp_s.asp_s_1.searchsettings form,
+    div.asp_s.asp_s_1.searchsettings form,
+div.asp_s.asp_s_1.searchsettings form {
+  display: flex;
+}
+
+    div.asp_sb.asp_sb_1.searchsettings form,
+    div.asp_sb.asp_sb_1.searchsettings form,
+div.asp_sb.asp_sb_1.searchsettings form {
+  display: flex;
+}
+
+
+    #ajaxsearchprosettings1_1.searchsettings div.asp_option_label,
+    #ajaxsearchprosettings1_2.searchsettings div.asp_option_label,
+    #ajaxsearchprosettings1_1.searchsettings .asp_label,
+    #ajaxsearchprosettings1_2.searchsettings .asp_label,
+div.asp_s.asp_s_1.searchsettings div.asp_option_label,
+div.asp_s.asp_s_1.searchsettings .asp_label {
+  font-weight:normal;font-family:"Open Sans";color:rgb(108, 108, 108);font-size:12px;line-height:15px;text-shadow:0px 0px 0px rgba(255, 255, 255, 0);}
+
+    #ajaxsearchprosettings1_1.searchsettings .asp_option_inner label,
+    #ajaxsearchprosettings1_2.searchsettings .asp_option_inner label,
+div.asp_sb.asp_sb_1.searchsettings .asp_option_inner label,
+div.asp_s.asp_s_1.searchsettings .asp_option_inner label {
+              background-image: -webkit-linear-gradient(180deg, rgb(34, 34, 34), rgb(69, 72, 77));
+            background-image: -moz-linear-gradient(180deg, rgb(34, 34, 34), rgb(69, 72, 77));
+            background-image: -o-linear-gradient(180deg, rgb(34, 34, 34), rgb(69, 72, 77));
+            background-image: -ms-linear-gradient(180deg, rgb(34, 34, 34) 0%, rgb(69, 72, 77) 100%);
+            background-image: linear-gradient(180deg, rgb(34, 34, 34), rgb(69, 72, 77));
+        }
+
+    #ajaxsearchprosettings1_1.searchsettings .asp_option_inner label:after,
+    #ajaxsearchprosettings1_2.searchsettings .asp_option_inner label:after,
+    #ajaxsearchprobsettings1_1.searchsettings .asp_option_inner label:after,
+    #ajaxsearchprobsettings1_2.searchsettings .asp_option_inner label:after,
+div.asp_sb.asp_sb_1.searchsettings .asp_option_inner label:after,
+div.asp_s.asp_s_1.searchsettings .asp_option_inner label:after {
+    font-family: 'asppsicons2';
+    border: none;
+    content: "\e800";
+    display: block;
+    position: static;
+    font-size: 11px;
+    color: rgb(255, 255, 255);
+    margin: 1px 0 0 0px !important;
+    line-height: 17px;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: none;
+}
+
+    #ajaxsearchprosettings1_1.searchsettings .asp_sett_scroll,
+    #ajaxsearchprosettings1_2.searchsettings .asp_sett_scroll,
+div.asp_s.asp_s_1.searchsettings .asp_sett_scroll {
+  max-height: 220px;
+  overflow: auto;
+}
+
+    #ajaxsearchprobsettings1_1.searchsettings .asp_sett_scroll,
+    #ajaxsearchprobsettings1_2.searchsettings .asp_sett_scroll,
+div.asp_sb.asp_sb_1.searchsettings .asp_sett_scroll {
+  max-height: 220px;
+  overflow: auto;
+}
+
+    #ajaxsearchprosettings1_1.searchsettings fieldset,
+    #ajaxsearchprosettings1_2.searchsettings fieldset,
+div.asp_s.asp_s_1.searchsettings fieldset {
+  width: 200px;
+  min-width: 200px;
+  max-width: 10000px;
+}
+
+    #ajaxsearchprobsettings1_1.searchsettings fieldset,
+    #ajaxsearchprobsettings1_2.searchsettings fieldset,
+div.asp_sb.asp_sb_1.searchsettings fieldset {
+  width: 200px;
+  min-width: 200px;
+  max-width: 10000px;
+}
+
+    #ajaxsearchprosettings1_1.searchsettings fieldset legend,
+    #ajaxsearchprosettings1_2.searchsettings fieldset legend,
+div.asp_s.asp_s_1.searchsettings fieldset legend {
+  padding: 0 0 0 10px;
+  margin: 0;
+  background: transparent;
+  font-weight:normal;font-family:"Open Sans";color:rgb(85, 85, 85);font-size:13px;line-height:15px;text-shadow:0px 0px 0px rgba(255, 255, 255, 0);}
+
+
+div.asp_s.asp_s_1.searchsettings fieldset .chosen-container,
+div.asp_sb.asp_sb_1.searchsettings fieldset .chosen-container {
+  min-width: 170px;
+}
+
+
+    #ajaxsearchprores1_1.vertical,
+    #ajaxsearchprores1_2.vertical,
+div.asp_r.asp_r_1.vertical {
+    padding: 4px;
+    background: rgb(250, 250, 250);
+    border-radius: 3px;
+    border:0px none rgb(0, 0, 0);border-radius:3px 3px 3px 3px;    box-shadow:0px 1px 2px 0px #999999 ;    visibility: hidden;
+    display: none;
+}
+
+    #ajaxsearchprores1_1.vertical .results,
+    #ajaxsearchprores1_2.vertical .results,
+div.asp_r.asp_r_1.vertical .results {
+    max-height: none;
+}
+
+    #ajaxsearchprores1_1.vertical .item .asp_content h3,
+    #ajaxsearchprores1_2.vertical .item .asp_content h3,
+div.asp_r.asp_r_1.vertical .item .asp_content h3 {
+    display: inline;
+}
+
+    #ajaxsearchprores1_1.vertical .results .item .asp_content,
+    #ajaxsearchprores1_2.vertical .results .item .asp_content,
+div.asp_r.asp_r_1.vertical .results .item .asp_content {
+    overflow: hidden;
+    width: auto;
+    height: auto;
+    background: transparent;
+    margin: 0;
+    padding: 0 10px;
+}
+
+    #ajaxsearchprores1_1.vertical .results .item .asp_image,
+    #ajaxsearchprores1_2.vertical .results .item .asp_image,
+div.asp_r.asp_r_1.vertical .results .item .asp_image {
+    width: 70px;
+    height: 70px;
+    margin: 2px 8px 0px 0;
+}
+
+    #ajaxsearchprores1_1.vertical .results .asp_spacer,
+    #ajaxsearchprores1_2.vertical .results .asp_spacer,
+div.asp_r.asp_r_1.vertical .results .asp_spacer {
+    background: rgba(255, 255, 255, 0.55);
+}
+
+    #ajaxsearchprores1_1 .mCSBap_scrollTools .mCSBap_dragger .mCSBap_dragger_bar,
+    #ajaxsearchprores1_2 .mCSBap_scrollTools .mCSBap_dragger .mCSBap_dragger_bar,
+div.asp_r.asp_r_1 .mCSBap_scrollTools .mCSBap_dragger .mCSBap_dragger_bar {
+    background:#fff; /* rgba fallback */
+    background:rgba(255, 255, 255,0.9);
+}
+
+    #ajaxsearchprores1_1 .mCSBap_scrollTools .mCSBap_dragger:hover .mCSBap_dragger_bar,
+    #ajaxsearchprores1_2 .mCSBap_scrollTools .mCSBap_dragger:hover .mCSBap_dragger_bar,
+div.asp_r.asp_r_1 .mCSBap_scrollTools .mCSBap_dragger:hover .mCSBap_dragger_bar {
+    background:rgba(255, 255, 255,0.95);
+}
+
+div.asp_r.asp_r_1 .mCSBap_scrollTools .mCSBap_dragger:active .mCSBap_dragger_bar,
+div.asp_r.asp_r_1 .mCSBap_scrollTools .mCSBap_dragger.mCSBap_dragger_onDrag .mCSBap_dragger_bar{
+    background:rgba(255, 255, 255,1);
+}
+
+div.asp_r.asp_r_1.horizontal .mCSBap_scrollTools .mCSBap_dragger .mCSBap_dragger_bar{
+    background:#fff; /* rgba fallback */
+    background:rgb(250, 250, 250);
+    opacity: 0.9;
+}
+div.asp_r.asp_r_1.horizontal .mCSBap_scrollTools .mCSBap_dragger:hover .mCSBap_dragger_bar{
+    background:rgb(250, 250, 250);
+    opacity: 0.95;
+}
+
+div.asp_r.asp_r_1.horizontal .mCSBap_scrollTools .mCSBap_dragger:active .mCSBap_dragger_bar,
+div.asp_r.asp_r_1.horizontal .mCSBap_scrollTools .mCSBap_dragger.mCSBap_dragger_onDrag .mCSBap_dragger_bar{
+    background: rgb(250, 250, 250);
+}
+
+div.asp_r.asp_r_1 .mCSBap_scrollTools .mCSBap_buttonDown {
+    position: relative;
+    margin: -16px 0px 0 3px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 6px 5px 0 5px;
+    border-color: rgb(112, 112, 112) transparent transparent transparent;
+}
+
+div.asp_r.asp_r_1 .mCSBap_scrollTools .mCSBap_buttonUp {
+    position: relative;
+    margin: -8px 0px 0 3px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 5px 6px 5px;
+    border-color: transparent transparent rgb(112, 112, 112) transparent;
+}/* Generated at: 2019-03-03 01:26:18 */

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="59px" height="33px" viewBox="0 0 59 33" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>out</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="out" fill="#99CC00">
+            <path d="M8.0878779,8.0878779 L46.3666676,8.0878779 C50.8334792,8.0878779 54.4545455,11.7089442 54.4545455,16.1757558 L54.4545455,16.1757558 C54.4545455,20.6425674 50.8334792,24.2636337 46.3666676,24.2636337 L8.0878779,24.2636337 C3.62106628,24.2636337 5.47026656e-16,20.6425674 0,16.1757558 L0,16.1757558 C-5.47026656e-16,11.7089442 3.62106628,8.0878779 8.0878779,8.0878779 Z" id="Rectangle-16"></path>
+            <polygon id="Path-60-Copy-3" points="45.772499 16.1757558 31.7272727 0 45.772499 0 59 16.1757558"></polygon>
+            <polygon id="Path-60-Copy-4" transform="translate(45.363636, 24.263634) scale(1, -1) translate(-45.363636, -24.263634) " points="45.772499 32.3515116 31.7272727 16.1757558 45.772499 16.1757558 59 32.3515116"></polygon>
+        </g>
+    </g>
+</svg>

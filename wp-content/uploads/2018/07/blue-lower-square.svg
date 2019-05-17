@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 187 149" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;">
+    <g transform="matrix(1,0,0,1,-1045,-594)">
+        <g id="blue-lower-square" serif:id="blue lower square" transform="matrix(1.10897,0,0,2.15944,-133.004,-519.894)">
+            <path d="M1230.68,518.897C1230.68,517.247 1228.08,515.907 1224.86,515.907L1068.86,515.907C1065.64,515.907 1063.03,517.247 1063.03,518.897L1063.03,581.681C1063.03,583.331 1065.64,584.67 1068.86,584.67L1224.86,584.67C1228.08,584.67 1230.68,583.331 1230.68,581.681L1230.68,518.897Z" style="fill:rgb(214,222,225);"/>
+            <clipPath id="_clip1">
+                <path d="M1230.68,518.897C1230.68,517.247 1228.08,515.907 1224.86,515.907L1068.86,515.907C1065.64,515.907 1063.03,517.247 1063.03,518.897L1063.03,581.681C1063.03,583.331 1065.64,584.67 1068.86,584.67L1224.86,584.67C1228.08,584.67 1230.68,583.331 1230.68,581.681L1230.68,518.897Z"/>
+            </clipPath>
+            <g clip-path="url(#_clip1)">
+                <g transform="matrix(0.901737,0,0,0.463083,157.302,290.372)">
+                    <text x="1070.24px" y="544.323px" style="font-family:'Nunito-Regular', 'Nunito';font-size:23px;fill:rgb(97,102,113);">Single,</text>
+                    <text x="1042.99px" y="567.323px" style="font-family:'Nunito-Regular', 'Nunito';font-size:23px;fill:rgb(97,102,113);">Light<tspan x="1095.24px 1114.47px " y="567.323px 567.323px ">we</tspan>ight</text>
+                    <text x="1073.04px" y="590.323px" style="font-family:'Nunito-Regular', 'Nunito';font-size:23px;fill:rgb(97,102,113);">Agent</text>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

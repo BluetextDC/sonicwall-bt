@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="200px" height="104px" viewBox="0 0 200 104" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50 (54983) - http://www.bohemiancoding.com/sketch -->
+    <title>Redundant firewall/s</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-3" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" font-family="Nunito-Bold, Nunito" font-size="22" font-weight="bold" line-spacing="26">
+        <g id="Artboard" transform="translate(-738.000000, -327.000000)" fill="#47AFE8">
+            <text id="Redundant-firewall/s">
+                <tspan x="782.273" y="348">Redundant</tspan>
+                <tspan x="763.639" y="374">firewall/switch</tspan>
+                <tspan x="740" y="400">configuration using</tspan>
+                <tspan x="751.308" y="426">stacked topology</tspan>
+            </text>
+        </g>
+    </g>
+</svg>

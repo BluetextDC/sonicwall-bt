@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 279 71" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;">
+    <g transform="matrix(1,0,0,1,-500,-672)">
+        <g id="Antivirus-Enforcement" serif:id="Antivirus Enforcement" transform="matrix(1.6602,0,0,1.01515,-1264.56,148.661)">
+            <path d="M1230.68,521.513C1230.68,518.419 1229.15,515.907 1227.26,515.907L1066.46,515.907C1064.57,515.907 1063.03,518.419 1063.03,521.513L1063.03,579.065C1063.03,582.158 1064.57,584.67 1066.46,584.67L1227.26,584.67C1229.15,584.67 1230.68,582.158 1230.68,579.065L1230.68,521.513Z" style="fill:rgb(255,121,26);"/>
+            <clipPath id="_clip1">
+                <path d="M1230.68,521.513C1230.68,518.419 1229.15,515.907 1227.26,515.907L1066.46,515.907C1064.57,515.907 1063.03,518.419 1063.03,521.513L1063.03,579.065C1063.03,582.158 1064.57,584.67 1066.46,584.67L1227.26,584.67C1229.15,584.67 1230.68,582.158 1230.68,579.065L1230.68,521.513Z"/>
+            </clipPath>
+            <g clip-path="url(#_clip1)">
+                <g transform="matrix(0.602338,0,0,0.985078,766.407,-145.312)">
+                    <text x="517.718px" y="700.664px" style="font-family:'Nunito-Regular', 'Nunito';font-size:23px;fill:white;">Antivirus Enf<tspan x="649.692px 662.457px 670.346px " y="700.664px 700.664px 700.664px ">orc</tspan>ement</text>
+                    <text x="553.805px" y="723.664px" style="font-family:'Nunito-Regular', 'Nunito';font-size:23px;fill:white;">&amp; Management</text>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

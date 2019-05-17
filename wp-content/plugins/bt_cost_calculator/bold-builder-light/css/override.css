@@ -1,0 +1,61 @@
+#bt_bb {
+	min-height: 0;
+}
+
+.bt_bb_toolbar {
+	padding: 1.5em;
+}
+
+.bt_bb_order {
+	display: none !important;
+}
+
+i.bt_bb_toggle {
+	display: none !important;
+}
+
+i.bt_bb_toggle ~ i.bt_bb_add:before {
+	display: none !important;
+}
+
+#bt_bb > .bt_bb_item_list > .bt_bb_wrap > .bt_bb_item > .bt_bb_toolbar {
+	border-bottom: 0;
+	margin-bottom: 0;
+}
+
+.bt_bb_wrap:not(.bt_bb_width) > .bt_bb_item > .bt_bb_toolbar {
+	border-top: 0;
+}
+
+#bt_bb > .bt_bb_item_list > .bt_bb_wrap .bt_bb_wrap {
+	background-color: #f2f8ff;
+    margin: 0 1em 1em;
+    border: .1em solid #eee;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border-radius: 3px;
+}
+
+#bt_bb > .bt_bb_item_list > .bt_bb_wrap .bt_bb_wrap .bt_bb_wrap {
+	background-color: #fff;
+}
+
+p.description input[type="text"], wp-list-table input[type="text"] {
+	margin-left: 0;
+	margin-right: 0;
+	width: 100%;
+}
+
+.hndle {
+	cursor: auto !important;
+}
+
+.bt_bb_cb_items {
+	pointer-events: none;
+}
+
+i.bt_bb_save.bt_bb_disabled {
+	color: #777 !important;
+	pointer-events: none;
+}

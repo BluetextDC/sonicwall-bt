@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="283px" height="130px" viewBox="0 0 283 130" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>Group 64</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="100%" y1="1149.27962%" x2="66.5457788%" y2="1149.27962%" id="linearGradient-1">
+            <stop stop-color="#000000" offset="0%"></stop>
+            <stop stop-color="#FE791A" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="100%" y1="1149.27962%" x2="66.4459657%" y2="1149.27962%" id="linearGradient-2">
+            <stop stop-color="#000000" offset="0%"></stop>
+            <stop stop-color="#FE791A" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="0%" y1="-508.17417%" x2="100%" y2="-508.17417%" id="linearGradient-3">
+            <stop stop-color="#FE791A" offset="0%"></stop>
+            <stop stop-color="#222120" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-64" transform="translate(1.000000, -4.000000)">
+            <g id="Group-26" transform="translate(1.000000, 0.000000)">
+                <text id="Username" font-family="Nunito-Regular, Nunito" font-size="14" font-weight="normal" fill="#989898">
+                    <tspan x="0" y="14">Username</tspan>
+                </text>
+                <path d="M0,30.5 L280,30.5" id="Path-Copy" stroke="url(#linearGradient-1)" stroke-linecap="round" fill-rule="nonzero"></path>
+            </g>
+            <g id="Group-27" transform="translate(1.000000, 61.000000)">
+                <text id="Password" font-family="Nunito-Regular, Nunito" font-size="14" font-weight="normal" fill="#989898">
+                    <tspan x="0" y="14">Password</tspan>
+                </text>
+                <path d="M0,31.5 L280,31.5" id="Path-Copy-2" stroke="url(#linearGradient-2)" stroke-linecap="round" fill-rule="nonzero"></path>
+            </g>
+            <g id="Group-2" transform="translate(1.000000, 114.000000)">
+                <text id="Remember-my-password" font-family="Nunito-Regular, Nunito" font-size="12" font-weight="normal" fill="#636569">
+                    <tspan x="30" y="14">Remember my password</tspan>
+                </text>
+                <rect id="Rectangle" stroke="#FE791A" fill-rule="nonzero" x="0.5" y="0.5" width="19" height="19" rx="4"></rect>
+            </g>
+            <path d="M0,30.5 L280,30.5" id="Path" stroke="url(#linearGradient-3)" stroke-linecap="round" fill-rule="nonzero"></path>
+        </g>
+    </g>
+</svg>

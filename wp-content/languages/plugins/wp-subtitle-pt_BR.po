@@ -1,0 +1,49 @@
+# Translation of Plugins - WP Subtitle - Stable (latest release) in Portuguese (Brazil)
+# This file is distributed under the same license as the Plugins - WP Subtitle - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2017-08-31 00:25:20+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: GlotPress/2.4.0-alpha\n"
+"Language: pt_BR\n"
+"Project-Id-Version: Plugins - WP Subtitle - Stable (latest release)\n"
+
+#. Author URI of the plugin/theme
+msgid "https://github.com/benhuson/wp-subtitle"
+msgstr "https://github.com/benhuson/wp-subtitle"
+
+#. Author of the plugin/theme
+msgid "Ben Huson, Husani Oakley"
+msgstr "Ben Huson, Husani Oakley"
+
+#. Description of the plugin/theme
+msgid "Adds a subtitle field to pages and posts. Possible to add support for custom post types."
+msgstr "Adiciona um subtítulo a páginas e posts. Possível adicionar suporte a \"custom post types\"."
+
+#. Plugin URI of the plugin/theme
+msgid "http://wordpress.org/plugins/wp-subtitle/"
+msgstr "http://br.wordpress.org/plugins/wp-subtitle/"
+
+#. Plugin Name of the plugin/theme
+msgid "WP Subtitle"
+msgstr "WP Subtítulo"
+
+#: admin/pointers.php:150
+msgid "This field has moved from a meta box to below the post title."
+msgstr "Este campo foi movido da caixa de metadados para baixo do título do post."
+
+#: admin/pointers.php:149
+msgid "%s Field"
+msgstr "Campo %s"
+
+#: admin/admin.php:279 admin/admin.php:306
+msgid "Enter subtitle here"
+msgstr "Digite o subtítulo aqui"
+
+#: admin/admin.php:92 admin/admin.php:116 admin/admin.php:169
+#: admin/admin.php:240
+msgid "Subtitle"
+msgstr "Subtítulo"

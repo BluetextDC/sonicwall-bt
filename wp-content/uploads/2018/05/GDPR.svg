@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1281px" height="139px" viewBox="0 0 1281 139" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>GDPR</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="GDPR">
+            <polygon id="Shape" fill="#FFEF52" fill-rule="nonzero" points="70 0 72.2 6.9 79.5 6.9 73.6 11.2 75.8 18.1 69.9 13.8 64 18.1 66.2 11.2 60.3 6.9 67.6 6.9"></polygon>
+            <polygon id="Shape" fill="#FFEF52" fill-rule="nonzero" points="122 90 124.2 96.9 131.5 96.9 125.6 101.2 127.8 108.1 121.9 103.8 116 108.1 118.2 101.2 112.3 96.9 119.6 96.9"></polygon>
+            <polygon id="Shape" fill="#FFEF52" fill-rule="nonzero" points="70 120 72.2 126.9 79.5 126.9 73.6 131.2 75.8 138.1 69.9 133.8 64 138.1 66.2 131.2 60.3 126.9 67.6 126.9"></polygon>
+            <polygon id="Shape" fill="#FFEF52" fill-rule="nonzero" points="130 60 132.2 66.9 139.5 66.9 133.6 71.2 135.8 78.1 129.9 73.8 124 78.1 126.2 71.2 120.3 66.9 127.6 66.9"></polygon>
+            <polygon id="Shape" fill="#FFEF52" fill-rule="nonzero" points="10 60 12.2 66.9 19.5 66.9 13.6 71.2 15.8 78.1 10 73.8 4.1 78.1 6.3 71.2 0.4 66.9 7.7 66.9"></polygon>
+            <polygon id="Shape" fill="#FFEF52" fill-rule="nonzero" points="100 8 102.2 14.9 109.5 14.9 103.6 19.2 105.8 26.1 99.9 21.8 94 26.1 96.2 19.2 90.3 14.9 97.6 14.9"></polygon>
+            <polygon id="Shape" fill="#FFEF52" fill-rule="nonzero" points="40 8 42.2 14.9 49.5 14.9 43.6 19.2 45.8 26.1 39.9 21.8 34 26.1 36.2 19.2 30.3 14.9 37.6 14.9"></polygon>
+            <polygon id="Shape" fill="#FFEF52" fill-rule="nonzero" points="40 112 42.2 118.9 49.5 118.9 43.6 123.2 45.8 130.1 39.9 125.8 34 130.1 36.2 123.2 30.3 118.9 37.6 118.9"></polygon>
+            <polygon id="Shape" fill="#FFEF52" fill-rule="nonzero" points="100 112 102.2 118.9 109.5 118.9 103.6 123.2 105.8 130.1 99.9 125.8 94 130.1 96.2 123.2 90.3 118.9 97.6 118.9"></polygon>
+            <polygon id="Shape" fill="#FFEF52" fill-rule="nonzero" points="122 30 124.2 36.9 131.5 36.9 125.6 41.2 127.8 48.1 121.9 43.8 116 48.1 118.2 41.2 112.3 36.9 119.6 36.9"></polygon>
+            <polygon id="Shape" fill="#FFEF52" fill-rule="nonzero" points="18 30 20.2 36.9 27.5 36.9 21.6 41.2 23.8 48.1 18 43.8 12.1 48.1 14.3 41.2 8.4 36.9 15.7 36.9"></polygon>
+            <polygon id="Shape" fill="#FFEF52" fill-rule="nonzero" points="18 90 20.2 96.9 27.5 96.9 21.6 101.2 23.8 108.1 17.9 103.8 12 108.1 14.2 101.2 8.3 96.9 15.6 96.9"></polygon>
+            <polygon id="" fill="#99CC00" points="96.625 46.5625 103 52.9375 60.3125 95.625 39 74.25 45.375 67.875 60.3125 82.8125"></polygon>
+            <text id="GENERAL-DATA-PROTECT" font-family="ArialNarrow, Arial Narrow" font-size="64" font-weight="normal">
+                <tspan x="165.3125" y="95" fill="#FF791A">G</tspan>
+                <tspan x="206.15625" y="95" fill="#D8D8D8">ENERAL </tspan>
+                <tspan x="430.6875" y="95" fill="#FE781A">D</tspan>
+                <tspan x="468.5625" y="95" fill="#D8D8D8">ATA </tspan>
+                <tspan x="585.21875" y="95" fill="#FE781A">P</tspan>
+                <tspan x="620.21875" y="95" fill="#D8D8D8">ROTECTION </tspan>
+                <tspan x="943.84375" y="95" fill="#FE781A">R</tspan>
+                <tspan x="981.71875" y="95" fill="#D8D8D8">EGULATION</tspan>
+            </text>
+        </g>
+    </g>
+</svg>

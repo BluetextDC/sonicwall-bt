@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="87px" height="30px" viewBox="0 0 87 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Diagrams_text" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" font-size="14" letter-spacing="-0.08800003" line-spacing="16">
+        <g id="Group" transform="translate(-38.000000, -2.000000)">
+            <text id="SonicWall" font-family="Nunito-SemiBold, Nunito" font-weight="500" fill="#E8771F">
+                <tspan x="44.8630001" y="11.8381042">SonicWall </tspan>
+            </text>
+            <text id="Email-Security" font-family="Nunito-Regular, Nunito" font-weight="normal" fill="#F47A20">
+                <tspan x="32.8050002" y="27.8660889">Email Security</tspan>
+            </text>
+        </g>
+    </g>
+</svg>

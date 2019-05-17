@@ -1,0 +1,409 @@
+# Translation of Plugins - Username Changer - Stable (latest release) in Portuguese (Brazil)
+# This file is distributed under the same license as the Plugins - Username Changer - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2019-01-29 15:16:53+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: GlotPress/2.4.0-alpha\n"
+"Language: pt_BR\n"
+"Project-Id-Version: Plugins - Username Changer - Stable (latest release)\n"
+
+#. Author URI of the plugin/theme
+msgid "https://evertiro.com"
+msgstr "https://evertiro.com"
+
+#: includes/admin/settings/register.php:275
+msgid "Emails allow the use of the following template tags:"
+msgstr "Os e-mails permitem o uso das seguintes tags de modelo:"
+
+#: includes/admin/settings/register.php:153
+msgid "Specify the message to send for username change notifications."
+msgstr "Defina a mensagem a ser enviada nas notificações de alteração do nome de usuário."
+
+#: includes/admin/settings/register.php:152
+msgid "Email Message"
+msgstr "Mensagem do e-mail"
+
+#: includes/admin/settings/register.php:146
+msgid "Specify the subject for username change notifications."
+msgstr "Defina o assunto para as notificações de alteração de nome de usuário."
+
+#: includes/admin/settings/register.php:145
+msgid "Email Subject"
+msgstr "Assunto do e-mail"
+
+#: includes/admin/settings/register.php:135
+msgid "Notifications are not sent when a user changes their own username."
+msgstr "As notificações não são enviadas quando um usuário altera seu próprio nome de usuário."
+
+#: includes/admin/settings/register.php:132
+msgid "Enable to send notification emails when usernames are changed."
+msgstr "Ative para enviar e-mails de notificação quando o nome de usuário é alterado."
+
+#: includes/admin/settings/register.php:131
+#: includes/admin/settings/register.php:134
+msgid "Enable Email Notifications"
+msgstr "Ativar notificações por email"
+
+#: includes/admin/settings/register.php:125
+msgid "Email Settings"
+msgstr "Configurações de e-mail"
+
+#: includes/admin/actions.php:93 includes/admin/settings/register.php:155
+msgid "Login now at {loginurl}"
+msgstr "Entrar agora em {loginurl}"
+
+#: includes/admin/actions.php:93 includes/admin/settings/register.php:155
+msgid "Howdy! We're just writing to let you know that your username for {siteurl} has been changed to {new_username}."
+msgstr "Olá! Estamos apenas escrevendo para que você saiba que seu nome de usuário em {siteurl} foi alterado para {new_username}."
+
+#: includes/admin/actions.php:92 includes/admin/settings/register.php:148
+msgid "Username change notification - {sitename}"
+msgstr "Notificação de alteração de usuário - {sitename}"
+
+#. Description of the plugin/theme
+msgid "Change usernames easily"
+msgstr "Altere os nomes de usuário com facilidade"
+
+#: includes/libraries/s214-settings/source/modules/licensing/class.s214-license.php:367
+msgid "There was a problem activating your license key, please try again or contact support. Error code: %s"
+msgstr "Houve um problema ao ativar sua chave de licença, tente novamente ou contate o suporte. Código de erro: %s"
+
+#: includes/libraries/s214-settings/source/modules/licensing/class.s214-license.php:362
+msgid "This license key is expired. Please renew it."
+msgstr "Este código de licença expirou. Você precisa renová-lo."
+
+#: includes/libraries/s214-settings/source/modules/licensing/class.s214-license.php:357
+msgid "This license does not have any activations left"
+msgstr "Esta licença não tem nenhuma ativação disponível"
+
+#: includes/libraries/s214-settings/source/modules/licensing/class.s214-license.php:352
+msgid "This license does not belong to the product you have entered it for."
+msgstr "Esta licença não pertence ao produto que você informou."
+
+#: includes/libraries/s214-settings/source/modules/licensing/class.s214-license.php:197
+#: includes/libraries/s214-settings/source/modules/licensing/class.s214-license.php:270
+msgid "Nonce verification failed"
+msgstr "Validação única falhou"
+
+#: includes/libraries/s214-settings/source/modules/licensing/class.s214-license.php:160
+msgid "Please enter your license key to enable automatic updates and support."
+msgstr "Informe sua chave de licença para ativar as atualizações automáticas e o suporte."
+
+#: includes/libraries/s214-settings/source/modules/licensing/class.s214-license.php:159
+msgid "%1$s License Key"
+msgstr "Chave de licença do %1$s"
+
+#: includes/libraries/s214-settings/source/modules/licensing/class.s214-license.php:141
+msgid "Licensing"
+msgstr "Licença"
+
+#: includes/libraries/s214-settings/source/modules/licensing/S214_Plugin_Updater.php:340
+#: includes/libraries/s214-settings/source/modules/licensing/class.s214-license.php:197
+#: includes/libraries/s214-settings/source/modules/licensing/class.s214-license.php:270
+msgid "Error"
+msgstr "Erro"
+
+#: includes/libraries/s214-settings/source/modules/licensing/S214_Plugin_Updater.php:340
+msgid "You do not have permission to install plugin updates"
+msgstr "Você não tem permissão para instalar atualizações de plugins"
+
+#: includes/libraries/s214-settings/source/modules/licensing/S214_Plugin_Updater.php:196
+msgid "There is a new version of %1$s available. %2$sView version %3$s details%4$s or %5$supdate now%6$s."
+msgstr "Há uma nova versão do %1$s disponível. %2$sVer detalhes da versão %3$s%4$s ou %5$satualize agora%6$s."
+
+#: includes/libraries/s214-settings/source/modules/licensing/S214_Plugin_Updater.php:188
+msgid "There is a new version of %1$s available. %2$sView version %3$s details%4$s."
+msgstr "Há uma nova versão do %1$s disponível. %2$sVer detalhes da versão %3$s%4$s."
+
+#: includes/libraries/s214-settings/source/class.s214-settings.php:1219
+msgid "Select Image"
+msgstr "Selecionar imagem"
+
+#: includes/libraries/s214-settings/source/class.s214-settings.php:1218
+msgid "Insert Image"
+msgstr "Inserir imagem"
+
+#: includes/libraries/s214-settings/source/class.s214-settings.php:1128
+msgid "The callback function used for the <strong>%s</strong> setting is missing."
+msgstr "A função de retorno de chamada usada na configuração de <strong>%s</strong> está faltando."
+
+#: includes/libraries/s214-settings/source/class.s214-settings.php:1097
+msgid "Deactivate License"
+msgstr "Desativar licença"
+
+#: includes/libraries/s214-settings/source/class.s214-settings.php:1063
+msgid "Upload File"
+msgstr "Enviar arquivo"
+
+#: includes/libraries/s214-settings/source/class.s214-settings.php:983
+msgid "Download System Info File"
+msgstr "Baixar arquivo de informação do sistema"
+
+#: includes/libraries/s214-settings/source/class.s214-settings.php:980
+msgid "To copy the system info, click below then press Ctrl + C (PC) or Cmd + C (Mac)."
+msgstr "Para copiar as informações do sistema, clique abaixo, e em seguida, pressione Ctrl + C (PC) ou Cmd + C (Mac)."
+
+#: includes/libraries/s214-settings/source/class.s214-settings.php:593
+msgid "Settings updated."
+msgstr "Configurações atualizadas."
+
+#: includes/libraries/s214-settings/source/class.s214-settings.php:146
+#: includes/libraries/s214-settings/source/class.s214-settings.php:148
+msgid "Section214 Settings"
+msgstr "Configurações de Section214"
+
+#: includes/class.template-tags.php:339
+msgid "The minimum allowed username length"
+msgstr "O tamanho mínimo permitido do nome de usuário"
+
+#: includes/class.template-tags.php:333
+msgid "The full name of the user, first and last"
+msgstr "O nome completo do usuário, primeiro e último"
+
+#: includes/class.template-tags.php:327
+msgid "The first name of the user"
+msgstr "O nome do usuário"
+
+#: includes/class.template-tags.php:321
+msgid "Today's date"
+msgstr "Data de hoje"
+
+#: includes/class.template-tags.php:315
+msgid "The login URL for your site"
+msgstr "O URL de login do seu site"
+
+#: includes/class.template-tags.php:309
+msgid "Your site URL"
+msgstr "URL do seu site"
+
+#: includes/class.template-tags.php:303
+msgid "Your site name"
+msgstr "Nome do seu site"
+
+#: includes/class.template-tags.php:297
+msgid "The email address of the user"
+msgstr "O endereço de e-mail do usuário"
+
+#: includes/class.template-tags.php:291
+msgid "The new username of the user"
+msgstr "O novo nome de usuário"
+
+#: includes/class.template-tags.php:285
+msgid "The original username of the user"
+msgstr "O nome de usuário original"
+
+#: includes/admin/settings/register.php:293
+msgid "The message settings fields allow the use of the following template tags:"
+msgstr "As configurações dos campos de mensagem permitem o uso das seguintes tags de modelo:"
+
+#: includes/admin/settings/register.php:274
+#: includes/admin/settings/register.php:292
+msgid "Template Tags"
+msgstr "Tags de modelo"
+
+#: includes/admin/settings/register.php:253
+msgid "System Info"
+msgstr "Informação do sistema"
+
+#: includes/admin/settings/register.php:247
+msgid "Username Changer Support"
+msgstr "Suporte do Username Changer"
+
+#: includes/admin/settings/register.php:238
+msgid "Customize the error displayed when a user attempts to change a username to something that is already in use."
+msgstr "Personalize o erro exibido quando um usuário tenta alterar um nome de usuário para algo que já está em uso."
+
+#: includes/admin/settings/register.php:237
+msgid "Duplicate Username Error"
+msgstr "Erro de nome de usuário duplicado"
+
+#: includes/admin/settings/register.php:233
+msgid "In normal circumstances, this message should never be triggered. It exists only to provide an extra layer of security against unauthorized use."
+msgstr "Em circunstâncias normais, essa mensagem nunca deve ser disparada. Ela existe apenas para fornecer uma camada extra de segurança contra uso não autorizado."
+
+#: includes/admin/settings/register.php:229
+msgid "Customize the error displayed when a user attempts to change a username they do not have permission to change."
+msgstr "Personalize o erro exibido quando um usuário tenta alterar um nome de usuário que ele não têm permissão para alterar."
+
+#: includes/admin/settings/register.php:228
+#: includes/admin/settings/register.php:232
+msgid "Wrong Permissions Error"
+msgstr "Erro de permissões incorretas"
+
+#: includes/admin/settings/register.php:224 includes/scripts.php:38
+msgid "Username is too short, the minimum length is {minlength} characters."
+msgstr "O nome de usuário é muito curto, o tamanho mínimo é {minlength} caracteres."
+
+#: includes/admin/settings/register.php:222
+msgid "Customize the error displayed when a username is too short."
+msgstr "Personalize o erro exibido quando um nome de usuário é muito curto."
+
+#: includes/admin/settings/register.php:221
+msgid "Short Username Error"
+msgstr "Erro de nome de usuário curto"
+
+#: includes/admin/settings/register.php:215
+msgid "Customize the text for the relogin link shown if a user changes their own username."
+msgstr "Personalize o texto para o link de reentrar exibido se um usuário alterar seu próprio nome."
+
+#: includes/admin/settings/register.php:214
+msgid "Relogin Message"
+msgstr "Mensagem de reentrada"
+
+#: includes/admin/settings/register.php:208
+msgid "Customize the message displayed when a username is changed successfully."
+msgstr "Personalize a mensagem exibida quando um nome de usuário é alterado."
+
+#: includes/admin/settings/register.php:207
+msgid "Username Changed Message"
+msgstr "Mensagem de usuário alterado"
+
+#: includes/admin/settings/register.php:203 includes/scripts.php:37
+msgid "Please wait..."
+msgstr "Aguarde…"
+
+#: includes/admin/settings/register.php:201
+msgid "Customize the text displayed while usernames are being checked."
+msgstr "Personalize o texto exibido enquanto os nomes de usuário estão sendo verificados."
+
+#: includes/admin/settings/register.php:200
+msgid "Please Wait Message"
+msgstr "Mensagem de espera"
+
+#: includes/admin/settings/register.php:188
+msgid "Messages"
+msgstr "Mensagens"
+
+#: includes/admin/settings/register.php:184 includes/scripts.php:36
+msgid "Cancel"
+msgstr "Cancelar"
+
+#: includes/admin/settings/register.php:182
+msgid "Customize the text for the cancel button."
+msgstr "Personalize o texto do botão Cancelar."
+
+#: includes/admin/settings/register.php:181
+msgid "Cancel Button Label"
+msgstr "Rótulo de botão Cancelar"
+
+#: includes/admin/settings/register.php:177 includes/scripts.php:35
+msgid "Save Username"
+msgstr "Salvar nome de usuário"
+
+#: includes/admin/settings/register.php:175
+msgid "Customize the text for the save buttton."
+msgstr "Personalize o texto do botão Salvar."
+
+#: includes/admin/settings/register.php:174
+msgid "Save Button Label"
+msgstr "Rótulo do botão Salvar"
+
+#: includes/admin/settings/register.php:168
+msgid "Customize the text for the 'change username' button."
+msgstr "Personalize o texto do botão Trocar nome de usuário."
+
+#: includes/admin/settings/register.php:167
+msgid "Change Button Label"
+msgstr "Rótulo do botão Alterar"
+
+#: includes/admin/settings/register.php:161
+msgid "Button Labels"
+msgstr "Rótulos de Botão"
+
+#: includes/admin/settings/register.php:121
+msgid "The minimum allowed length for usernames is {minlength} characters."
+msgstr "O tamanho mínimo permitido para nomes de usuário é {minlength} caracteres."
+
+#: includes/admin/settings/register.php:114
+msgid "Specify the minimum allowed username length."
+msgstr "Defina o tamanho mínimo permitido no nome de usuário."
+
+#: includes/admin/settings/register.php:113
+#: includes/admin/settings/register.php:120
+msgid "Minimum Length"
+msgstr "Tamanho mínimo"
+
+#: includes/admin/settings/register.php:109
+msgid "Administrators can always change usernames, and are the only role capable of changing other users username."
+msgstr "Os administradores podem sempre alterar nomes de usuário e são a única função capaz de alterar o nome de usuário de outros usuários."
+
+#: includes/admin/settings/register.php:105
+msgid "Select the user roles which are permitted to change their own username."
+msgstr "Selecione as funções de usuário que têm permissão para alterar seu próprio username."
+
+#: includes/admin/settings/register.php:104
+#: includes/admin/settings/register.php:108
+msgid "Allowed Roles"
+msgstr "Funções permitidas"
+
+#: includes/admin/settings/register.php:60
+msgid "String Settings"
+msgstr "Configurações de texto"
+
+#: includes/admin/settings/register.php:59
+#: includes/admin/settings/register.php:98
+msgid "General Settings"
+msgstr "Configurações gerais"
+
+#: includes/admin/settings/register.php:42
+msgid "Support"
+msgstr "Ajuda"
+
+#: includes/admin/settings/register.php:41
+msgid "Settings"
+msgstr "Configurações"
+
+#: includes/admin/settings/register.php:25
+msgid "Username Changer Settings"
+msgstr "Configurações do Username Changer"
+
+#: includes/admin/actions.php:108
+msgid "An unknown error occurred."
+msgstr "Ocorreu um erro desconhecido."
+
+#: includes/admin/actions.php:83 includes/admin/settings/register.php:217
+msgid "Click here to log back in."
+msgstr "Clique aqui para entrar novamente."
+
+#: includes/admin/actions.php:81 includes/admin/actions.php:86
+#: includes/admin/settings/register.php:210
+msgid "Username successfully changed to {new_username}."
+msgstr "O nome de usuário foi alterado para {new_username}."
+
+#: includes/admin/actions.php:67 includes/admin/settings/register.php:240
+msgid "The username {new_username} is already in use. Please try again."
+msgstr "O nome de usuário {new_username} já está em uso, tente novamente."
+
+#: includes/admin/actions.php:61
+msgid "Sorry, that username is not allowed."
+msgstr "Este nome de usuário não é permitido."
+
+#: includes/admin/actions.php:54
+msgid "The username {new_username} contains invalid characters. Please enter a valid username."
+msgstr "O nome de usuário {new_username} contém caracteres inválidos, informe um nome de usuário válido."
+
+#: includes/admin/actions.php:47 includes/admin/settings/register.php:231
+msgid "You do not have the correct permissions to change this username."
+msgstr "Você não tem as permissões corretas para alterar esse nome de usuário."
+
+#: includes/admin/actions.php:33
+msgid "Invalid request."
+msgstr "Solicitação inválida."
+
+#. Author of the plugin/theme
+msgid "Daniel J Griffiths"
+msgstr "Daniel J Griffiths"
+
+#: includes/admin/settings/register.php:170 includes/scripts.php:34
+msgid "Change Username"
+msgstr "Alterar nome de usuário"
+
+#. #-#-#-#-#  username-changer-code.pot (Username Changer 3.1.3)  #-#-#-#-#
+#. Plugin Name of the plugin/theme
+#: includes/admin/settings/register.php:26
+msgid "Username Changer"
+msgstr "Username Changer"

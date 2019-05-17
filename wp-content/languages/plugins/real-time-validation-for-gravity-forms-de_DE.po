@@ -1,0 +1,271 @@
+# Translation of Plugins - Real Time Validation for Gravity Forms - Stable (latest release) in German
+# This file is distributed under the same license as the Plugins - Real Time Validation for Gravity Forms - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2018-09-05 08:02:39+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: GlotPress/2.4.0-alpha\n"
+"Language: de\n"
+"Project-Id-Version: Plugins - Real Time Validation for Gravity Forms - Stable (latest release)\n"
+
+#: public/class-gravity-forms-live-validation.php:724
+msgid "Emails Do not match"
+msgstr "E-Mail-Adressen stimmen nicht überein"
+
+#: admin/includes/class-lv-dashboard.php:100
+msgid "Our Plugins"
+msgstr "Unsere Plugins"
+
+#. Author of the plugin/theme
+msgid "Wisetr"
+msgstr "Wisetr"
+
+#. Description of the plugin/theme
+msgid "This plugin ensures that users gets the feedback on each field as he types even before form is submitted. Specific validation messages shown to user help him quickly rectify the mistakes."
+msgstr "Dieses Plugin stellt sicher, dass der Besucher Feedback zu den Feldeingaben erhält, noch bevor das Formular verschickt wird. Spezifische Validierungsnachrichten werden eingeblendet, damit Fehler rasch korrigiert werden können."
+
+#. #-#-#-#-#  real-time-validation-for-gravity-forms-code.pot (Real Time
+#. Validation for Gravity Forms 1.6.0)  #-#-#-#-#
+#. Plugin URI of the plugin/theme
+#. #-#-#-#-#  real-time-validation-for-gravity-forms-code.pot (Real Time
+#. Validation for Gravity Forms 1.6.0)  #-#-#-#-#
+#. Author URI of the plugin/theme
+msgid "https://wisetr.com"
+msgstr "https://wisetr.com"
+
+#: public/includes/default_messages.php:4
+#: public/includes/default_messages.php:5
+#: public/includes/default_messages.php:6
+#: public/includes/default_messages.php:7
+#: public/includes/default_messages.php:8
+#: public/includes/default_messages.php:9
+#: public/includes/default_messages.php:10
+#: public/includes/default_messages.php:11
+#: public/includes/default_messages.php:12
+#: public/includes/default_messages.php:13
+#: public/includes/default_messages.php:14
+#: public/includes/default_messages.php:15
+#: public/includes/default_messages.php:16
+#: public/includes/default_messages.php:17
+#: public/includes/default_messages.php:18
+#: public/includes/default_messages.php:19
+#: public/includes/default_messages.php:20
+#: public/includes/default_messages.php:21
+#: public/includes/default_messages.php:22
+#: public/includes/default_messages.php:23
+#: public/includes/default_messages.php:24
+#: public/includes/default_messages.php:25
+#: public/includes/default_messages.php:26
+#: public/includes/default_messages.php:27
+msgid "This field is required."
+msgstr "Dies ist ein Pflichtfeld."
+
+#: includes/fields/class-gf-field-wisetr-email.php:92
+msgid "Confirm Email"
+msgstr "E-Mail-Adresse bestätigen"
+
+#: includes/fields/class-gf-field-wisetr-email.php:90
+msgid "Enter Email"
+msgstr "E-Mail-Adresse eingeben"
+
+#: includes/fields/class-gf-field-wisetr-email.php:54
+msgid "Your emails do not match."
+msgstr "Deine E-Mail-Adressen stimmen nicht überein."
+
+#: includes/fields/class-gf-field-wisetr-email.php:49
+msgid "Please enter a valid email address."
+msgstr "Bitte eine gültige E-Mail-Adresse eingeben."
+
+#: admin/views/gravity-form-time-fields.php:36
+msgid "Enter pattern for Minutes"
+msgstr "Muster für Minuten eingeben"
+
+#: admin/views/gravity-form-time-fields.php:5
+msgid "Enter pattern for Hours"
+msgstr "Muster für Stunden eingeben"
+
+#: admin/views/gravity-form-name-fields.php:103
+msgid "Enter pattern for suffix"
+msgstr "Muster für Suffix eingeben"
+
+#: admin/views/gravity-form-name-fields.php:71
+msgid "Enter pattern for last name"
+msgstr "Muster für Nachname eingeben"
+
+#: admin/views/gravity-form-name-fields.php:38
+msgid "Enter pattern for middle name"
+msgstr "Muster für zweiten Vornamen eingeben"
+
+#: admin/views/gravity-form-name-fields.php:5
+msgid "Enter pattern for first name"
+msgstr "Muster für Vorname eingeben"
+
+#: admin/views/gravity-form-email_plus-fields.php:61
+msgid "Enter Domains you to block"
+msgstr "Domäne eingeben, die du blockieren möchtest"
+
+#: admin/views/gravity-form-email_plus-fields.php:42
+msgid "Enter TLDs you want to block"
+msgstr "TLDs eingeben, die du blockieren möchtest"
+
+#: admin/views/gravity-form-email-fields.php:61
+msgid "Enter Domains to block"
+msgstr "Domäne eingeben, die du blockieren möchtest"
+
+#: admin/views/gravity-form-email-fields.php:54
+#: admin/views/gravity-form-email_plus-fields.php:54
+msgid "Block Specific Domains"
+msgstr "Spezifische Domäne blockieren"
+
+#: admin/views/gravity-form-email-fields.php:42
+msgid "Enter TLDs to you want to block"
+msgstr "TLDs eingeben, die du blockieren möchtest"
+
+#: admin/views/gravity-form-email-fields.php:35
+#: admin/views/gravity-form-email_plus-fields.php:35
+msgid "Block Top Level Domains"
+msgstr "Top-Level-Domäne eingeben, die du blockieren möchtest"
+
+#: admin/views/gravity-form-email-fields.php:5
+#: admin/views/gravity-form-email_plus-fields.php:5
+msgid "Enter pattern for Email"
+msgstr "Muster für E-Mail-Adresse eingeben"
+
+#: admin/views/gravity-form-date-fields.php:70
+msgid "Enter pattern for year"
+msgstr "Muster für Jahr eingeben"
+
+#: admin/views/gravity-form-date-fields.php:36
+msgid "Enter pattern for date"
+msgstr "Muster für Datum eingeben"
+
+#: admin/views/gravity-form-date-fields.php:5
+msgid "Enter pattern for month"
+msgstr "Muster für Monat eingeben"
+
+#: admin/views/gravity-form-address-fields.php:127
+msgid "Enter pattern for ZIP"
+msgstr "Muster für PLZ eingeben"
+
+#: admin/views/gravity-form-address-fields.php:70
+msgid "Enter pattern for city"
+msgstr "Muster für Stadt eingeben"
+
+#: admin/views/gravity-form-address-fields.php:36
+msgid "Enter pattern for address line 2"
+msgstr "Muster für Adresszeile 2 eingeben"
+
+#: admin/views/gravity-form-address-fields.php:5
+msgid "Enter pattern for Street address"
+msgstr "Muster für Straße eingeben"
+
+#. #-#-#-#-#  real-time-validation-for-gravity-forms-code.pot (Real Time
+#. Validation for Gravity Forms 1.6.0)  #-#-#-#-#
+#. Plugin Name of the plugin/theme
+#: admin/includes/class-lv-pointers.php:93
+msgid "Real Time Validation for Gravity Forms"
+msgstr "Real Time Validation for Gravity Forms"
+
+#: admin/includes/class-lv-dashboard.php:209
+msgid "It's good to hear from you. Talk Soon!"
+msgstr "Gut von dir zu hören! Wir hören uns bald!"
+
+#: admin/includes/class-lv-dashboard.php:202
+msgid "We are unable to subscribe you at this moment."
+msgstr "Wir können dich aktuell nicht anmelden."
+
+#: admin/includes/class-lv-dashboard.php:170
+msgid "Support request received. We will responed in 24 to 48 hours."
+msgstr "Supportanfrage erhalten. Wir kontaktieren dich innerhalb von 24-48 Stunden."
+
+#: admin/includes/class-lv-dashboard.php:163
+msgid "We are unable to request support at this moment."
+msgstr "Wir können aktuell keine Supportanfragen entgegennehmen."
+
+#: admin/includes/class-lv-dashboard.php:99
+msgid "pro"
+msgstr "pro"
+
+#: admin/includes/class-lv-dashboard.php:107
+msgid "How to use"
+msgstr "Anwendung"
+
+#: admin/includes/class-lv-dashboard.php:106
+msgid "how_to"
+msgstr "how_to"
+
+#: admin/includes/class-lv-dashboard.php:34
+msgid "Real Time Validation"
+msgstr "Real Time Validation"
+
+#: admin/class-gravity-forms-live-validation-admin.php:813
+msgid "Premium Version"
+msgstr "Premium-Version"
+
+#: admin/class-gravity-forms-live-validation-admin.php:812
+msgid "How To Use"
+msgstr "Anwendung"
+
+#: admin/class-gravity-forms-live-validation-admin.php:811
+msgid "Support"
+msgstr "Support"
+
+#: admin/class-gravity-forms-live-validation-admin.php:801
+msgid "<h6>Validation Message For Confirm Email</h6> You can add custom error message that will get triggered while confirm email field value is not same as email."
+msgstr "<h6>Validierungsnachricht für E-Mail-Bestätigung</h6> Du kannst eine Fehlermeldung angeben, die eingeblendet wird, wenn die angegebenen E-Mail-Adressen nicht übereinstimmen."
+
+#: admin/class-gravity-forms-live-validation-admin.php:800
+msgid "<h6>Validate Real Time Input</h6> You can use RegEx to validate user input. An error message will be thrown to user in real-time, if the RegEx pattern is violated."
+msgstr "<h6>Real Time Input validieren</h6> Du kannst ein RegEx-Muster angeben, um die Benutzereingabe zu validieren. Eine Fehlermeldung wird in Echtzeit eingeblendet, falls der RegEx-Muster nicht zutrifft."
+
+#: admin/class-gravity-forms-live-validation-admin.php:718
+#: admin/class-gravity-forms-live-validation-admin.php:720
+msgid "Real Time validation"
+msgstr "Real Time Validation"
+
+#: admin/class-gravity-forms-live-validation-admin.php:375
+msgid "Enter RegEx pattern"
+msgstr "RegEx-Muster eingeben"
+
+#: admin/class-gravity-forms-live-validation-admin.php:358
+msgid "Validation Type"
+msgstr "Validierungsart"
+
+#: admin/class-gravity-forms-live-validation-admin.php:343
+msgid "Validate Real Time Input"
+msgstr "Echtzeit-Eingabe validieren"
+
+#: admin/class-gravity-forms-live-validation-admin.php:174
+msgid "Save Settings"
+msgstr "Einstellungen speichern"
+
+#: admin/class-gravity-forms-live-validation-admin.php:155
+msgid "Enable or Disable real time validation on this form."
+msgstr "Real Time Validation für dieses Formular aktivieren oder deaktivieren."
+
+#: admin/views/gravity-form-address-fields.php:99
+msgid "Enter pattern for State"
+msgstr "Muster für Bundesland/Kanton eingeben"
+
+#: admin/class-gravity-forms-live-validation-admin.php:427
+#: admin/views/gravity-form-address-fields.php:21
+#: admin/views/gravity-form-address-fields.php:51
+#: admin/views/gravity-form-address-fields.php:85
+#: admin/views/gravity-form-address-fields.php:114
+#: admin/views/gravity-form-address-fields.php:142
+#: admin/views/gravity-form-date-fields.php:21
+#: admin/views/gravity-form-date-fields.php:51
+#: admin/views/gravity-form-date-fields.php:85
+#: admin/views/gravity-form-email-fields.php:21
+#: admin/views/gravity-form-email_plus-fields.php:21
+#: admin/views/gravity-form-name-fields.php:21
+#: admin/views/gravity-form-name-fields.php:53
+#: admin/views/gravity-form-name-fields.php:86
+#: admin/views/gravity-form-name-fields.php:118
+#: admin/views/gravity-form-time-fields.php:21
+#: admin/views/gravity-form-time-fields.php:51
+msgid "Error message"
+msgstr "Fehlermeldung"

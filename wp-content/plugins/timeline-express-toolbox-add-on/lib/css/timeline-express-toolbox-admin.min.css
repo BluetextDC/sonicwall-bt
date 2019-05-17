@@ -1,0 +1,8 @@
+/*
+ * @Plugin Timeline Express - Toolbox Add-On
+ * @Author Code Parrots
+ * @Site https://www.wp-timelineexpress.com
+ * @Version 1.1.0
+ * @Build 07-18-2017
+ */
+#cmb2-metabox-announcement_metabox .cmb2-id-announcement-date-format .cmb-td label,.timeline-express-form .announcement-date td label{line-height:2em}#cmb2-metabox-announcement_metabox .cmb2-id-announcement-date-format .cmb-td label span.date-time-text,.timeline-express-form .announcement-date td label span.date-time-text{display:inline-block;min-width:10em}#cmb2-metabox-announcement_metabox .cmb2-id-announcement-date-format .cmb-td input[name="timeline_express_storage[date_format_custom]"],.timeline-express-form .announcement-date input[name="timeline_express_storage[date_format_custom]"]{text-align:center;width:60px}#cmb2-metabox-announcement_metabox .cmb2-id-announcement-date-format .cmb-td td .spinner,.timeline-express-form .announcement-date td .spinner{float:none}

@@ -1,0 +1,31 @@
+
+/* Set Builder Mode to Debug
+ ------------------------- */
+//set builder mode to debug
+add_action('avia_builder_mode', "builder_set_debug");
+function builder_set_debug()
+{
+	return "debug";
+}
+
+
+/* Add Enfold Advanced Editor to all Types
+ ------------------------- */
+// add Enfold Advanced Editor to all Types
+add_filter('avf_builder_boxes', 'add_builder_to_posttype');
+
+function add_builder_to_posttype($metabox)
+{
+  foreach($metabox as &$meta)
+  {
+    if($meta['id'] == 'avia_builder' || $meta['id'] == 'layout')
+    {
+      /*$meta['page'][] = 'executive'; /*instead add the name of the custom post type here*/
+      $meta['page'][] = 'award'; /*instead add the name of the custom post type here*/
+    }
+  }
+  
+
+  return $metabox;
+}
+

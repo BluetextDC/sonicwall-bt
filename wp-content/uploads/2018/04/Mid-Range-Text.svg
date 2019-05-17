@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="458px" height="230px" viewBox="0 0 458 230" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Mid Range Text</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" font-family="Nunito-SemiBold, Nunito" font-size="20" font-weight="500">
+        <g id="Mid-Range-Text" transform="translate(-1.000000, -5.000000)" fill="#969696">
+            <text id="Superior-threat-prev">
+                <tspan x="60.74" y="20">Superior threat prevention and performance</tspan>
+            </text>
+            <text id="Network-control-and">
+                <tspan x="186.36" y="62">Network control and flexibility</tspan>
+            </text>
+            <text id="Easy-deployment,-set">
+                <tspan x="0.46" y="104">Easy deployment, setup and ongoing management</tspan>
+            </text>
+            <text id="Capture-Cloud-Platfo">
+                <tspan x="244.86" y="147">Capture Cloud Platform</tspan>
+            </text>
+            <text id="Advanced-Threat-Prot">
+                <tspan x="204.34" y="188">Advanced Threat Protection</tspan>
+            </text>
+            <text id="Reassembly-Free-Deep">
+                <tspan x="15.76" y="231">Reassembly-Free Deep Packet Inspection Engine</tspan>
+            </text>
+        </g>
+    </g>
+</svg>

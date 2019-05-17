@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="132px" height="16px" viewBox="0 0 132 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50 (54983) - http://www.bohemiancoding.com/sketch -->
+    <title>SuperMassive 9400 Copy</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M-4210,-15452 L8613,-15452 L8613,1278 L-4210,1278 L-4210,-15452 Z" id="path-1"></path>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="12823" height="16730" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <use id="Rectangle-5" stroke="#979797" mask="url(#mask-2)" stroke-width="12" stroke-dasharray="15,15" xlink:href="#path-1"></use>
+        <text id="SuperMassive-9400-Copy" font-family="Nunito-Bold, Nunito" font-size="14" font-weight="bold" fill="#4A4A4A">
+            <tspan x="4.045" y="12">SuperMassive 9400</tspan>
+        </text>
+    </g>
+</svg>

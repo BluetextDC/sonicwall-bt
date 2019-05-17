@@ -1,0 +1,316 @@
+# Translation of Plugins - Bulk Move - Stable (latest release) in Spanish (Spain)
+# This file is distributed under the same license as the Plugins - Bulk Move - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2018-04-19 14:14:31+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: GlotPress/2.4.0-alpha\n"
+"Language: es\n"
+"Project-Id-Version: Plugins - Bulk Move - Stable (latest release)\n"
+
+#. Description of the plugin/theme
+msgid "Move or remove posts in bulk from one category, tag or custom taxonomy to another"
+msgstr "Mueve o elimina entradas en lote desde una categoría, etiqueta o taxonomía personalizada a otra"
+
+#: include/class-bulk-move-posts.php:577
+msgid "If the post contains other terms, then"
+msgstr "Si la entrada contiene otros términos, entonces"
+
+#: include/class-bulk-move-posts.php:492
+msgid "Select Term"
+msgstr "Seleccion el término"
+
+#: include/class-bulk-move-posts.php:486
+msgid "There are no terms associated with \"%s\" taxonomy."
+msgstr "No hay términos asociada con la taxonomía \"%s\"."
+
+#: include/class-bulk-move-posts.php:456 include/class-bulk-move-posts.php:549
+msgid "Select Taxonomy"
+msgstr "Selecciona la taxonomía"
+
+#: include/class-bulk-move-posts.php:450
+msgid "There are no taxonomies associated with \"%s\" post type."
+msgstr "No hay taxonomías asociadas con el tipo de entrada \"%s\"."
+
+#: include/class-bulk-move-util.php:57
+msgid "There are no tags present. Add some tags to move posts based on tags."
+msgstr "No hay etiquetas. Añade alguna etiqueta para mover entradas basado en etiquetas."
+
+#. translators: 1 number of posts deleted, 2 the taxonomy from which the posts
+#. were deleted
+#: include/class-bulk-move-posts.php:649
+msgid "Moved %1$d post from the selected %2$s taxonomy"
+msgid_plural "Moved %1$d posts from the selected %2$s taxonomy"
+msgstr[0] "%1$d entrada movida de la taxonomía %2$s seleccionada"
+msgstr[1] "%1$d entradas movidas de la taxonomía %2$s seleccionada"
+
+#: include/class-bulk-move-posts.php:570
+msgid "Remove Term&nbsp;&nbsp;"
+msgstr "Borrar término&nbsp;&nbsp;"
+
+#: include/class-bulk-move-posts.php:564
+msgid " Select Term&nbsp;&nbsp;"
+msgstr "Seleccionar término&nbsp;&nbsp;"
+
+#: include/class-bulk-move-posts.php:556
+msgid "Select terms to move its posts."
+msgstr "Selecciona los términos para mover sus entradas."
+
+#: include/class-bulk-move-posts.php:541
+msgid "Select taxonomy to show its terms."
+msgstr "Selecciona taxonomía para mostrar sus términos."
+
+#: include/class-bulk-move-posts.php:526
+msgid "Select Post type"
+msgstr "Selecciona el tipo de entrada"
+
+#: include/class-bulk-move-posts.php:518
+msgid "Select the post type to show its custom taxonomy."
+msgstr "Selecciona el tipo de entrada para mostrar sus taxonomías personalizadas."
+
+#: include/class-bulk-move-posts.php:493
+msgid "Remove Term"
+msgstr "Borrar término"
+
+#: bulk-move.php:266
+msgid "Bulk Move By Custom Taxonomy"
+msgstr "Mover entradas en lote por taxonomía personalizada."
+
+#. Author URI of the plugin/theme
+msgid "http://sudarmuthu.com/"
+msgstr "http://sudarmuthu.com/"
+
+#. Author of the plugin/theme
+msgid "Sudar"
+msgstr "Sudar"
+
+#. Plugin URI of the plugin/theme
+msgid "http://sudarmuthu.com/wordpress/bulk-move"
+msgstr "http://sudarmuthu.com/wordpress/bulk-move"
+
+#: include/class-bulk-move-util.php:81
+msgid "Posts"
+msgstr "Entradas"
+
+#: include/class-bulk-move-posts.php:379
+msgid "Save"
+msgstr "Guardar"
+
+#: include/class-bulk-move-posts.php:379
+msgid "Custom value: "
+msgstr "Valor personalizado:"
+
+#: include/class-bulk-move-posts.php:379
+msgid "In php.ini"
+msgstr "En php.ini"
+
+#: include/class-bulk-move-posts.php:378
+msgid "Script time out "
+msgstr "Tiempo de espera del proceso"
+
+#: include/class-bulk-move-posts.php:374
+msgid "Available memory size "
+msgstr "Memoria disponible"
+
+#: include/class-bulk-move-posts.php:370
+msgid "Plugin Version "
+msgstr "Versión del plugin"
+
+#: include/class-bulk-move-posts.php:366
+msgid "WordPress Version "
+msgstr "Version WordPress"
+
+#: include/class-bulk-move-posts.php:362
+msgid "PHP Version "
+msgstr "Versión PHP"
+
+#: include/class-bulk-move-posts.php:356
+msgid "If you are seeing a blank page after clicking the Bulk Move button, then "
+msgstr "Si estás viendo una página en blanco despues de hacer clic en el botón Bulk Move, entonces"
+
+#: include/class-bulk-move-posts.php:265
+msgid "Choose Category"
+msgstr "Selecciona categoría"
+
+#: include/class-bulk-move-posts.php:163
+msgid "If the post contains other tags, then"
+msgstr "Si la entrada contiene otras etiquetas, entonces"
+
+#: include/class-bulk-move-posts.php:65 include/class-bulk-move-posts.php:169
+#: include/class-bulk-move-posts.php:279 include/class-bulk-move-posts.php:585
+msgid "Bulk Move "
+msgstr "Bulk Move "
+
+#: include/class-bulk-move-posts.php:60 include/class-bulk-move-posts.php:165
+#: include/class-bulk-move-posts.php:275 include/class-bulk-move-posts.php:579
+msgid "Don't remove them"
+msgstr "No las elimines"
+
+#: include/class-bulk-move-posts.php:59 include/class-bulk-move-posts.php:164
+#: include/class-bulk-move-posts.php:274 include/class-bulk-move-posts.php:578
+msgid "Remove them"
+msgstr "Elimínalas"
+
+#: include/class-bulk-move-posts.php:58 include/class-bulk-move-posts.php:273
+msgid "If the post contains other categories, then"
+msgstr "Si la entrada contiene otras categorías, entonces"
+
+#: include/class-bulk-move-posts.php:50
+msgid "Remove Category"
+msgstr "Eliminar categoría"
+
+#: include/class-bulk-move-posts.php:25
+msgid "On the left side, select the category whose post you want to move. In the right side select the category to which you want the posts to be moved."
+msgstr "En la parte izquierda, selecciona la categoría cuya entrada quieres mover. En la parte derecha selecciona la categoría a la que quieres mover las entradas."
+
+#: bulk-move.php:330
+msgid "Please select least one option"
+msgstr "Selecciona al menos una opción por favor"
+
+#: bulk-move.php:326
+msgid "Are you sure you want to move all the selected posts"
+msgstr "¿Estás seguro que quieres mover todas las entradas seleccionadas?"
+
+#: bulk-move.php:316
+msgid "by"
+msgstr "por"
+
+#: bulk-move.php:316
+msgid "Version"
+msgstr "Versión"
+
+#: bulk-move.php:316
+msgid "plugin"
+msgstr "plugin"
+
+#: bulk-move.php:291
+msgid "WARNING: Posts moved once cannot be retrieved back. Use with caution."
+msgstr "ADVERTENCIA: una vez movidas las entradas no se puede volver atrás. Utiliza con precaución."
+
+#: bulk-move.php:267
+msgid "Debug Information"
+msgstr "Información de depuración"
+
+#: bulk-move.php:244
+msgid "More information"
+msgstr "Más información"
+
+#: bulk-move.php:236
+msgid "About Plugin"
+msgstr "Acerca del plugin"
+
+#: bulk-move.php:247
+msgid "Other Plugin's by Author"
+msgstr "Otros plugins del autor"
+
+#: bulk-move.php:246
+msgid "Plugin author's blog"
+msgstr "Blog del autor del plugin"
+
+#: bulk-move.php:245
+msgid "Plugin Homepage/support"
+msgstr "Página de inicio/soporte del plugin"
+
+#: bulk-move.php:238
+msgid "This plugin allows you to move posts in bulk from selected categories to another category"
+msgstr "Este plugin te permite mover entradas en lote de las categorías seleccionadas a otra categoría"
+
+#: include/class-bulk-move-posts.php:247
+msgid "On the left side, select the tag whose post you want to move. In the right side select the category to which you want the posts to be moved."
+msgstr "En la parte izquierda, selecciona la etiqueta cuyas entradas quieres mover. En la parte derecha selecciona la categoría a la que quieres mover las entradas."
+
+#: include/class-bulk-move-posts.php:357
+msgid "check out this FAQ"
+msgstr "mira este FAQ"
+
+#: include/class-bulk-move-posts.php:358
+msgid "You also need need the following debug information."
+msgstr "También necesitas la siguiente información de depuración."
+
+#: include/class-bulk-move-posts.php:413
+msgid "An unknown error occurred while saving your options."
+msgstr "Ha ocurrido un error desconocido mientras guardaba tus opciones."
+
+#: include/class-bulk-move-posts.php:410
+msgid "Max execution time was successfully saved as %s seconds."
+msgstr "Tiempo máximo de ejecución se guardó con éxito como %s segundos."
+
+#: include/class-bulk-move-posts.php:387
+msgid "Bulk Delete Plugin"
+msgstr "Plugin Bulk Delete"
+
+#: include/class-bulk-move-posts.php:387
+msgid "If you are looking to delete posts in bulk, try out my "
+msgstr "Si estás buscando borrar entradas en lotes, prueba mi"
+
+#: include/class-bulk-move-util.php:76
+msgid "Remove Tag"
+msgstr "Borrar etiqueta"
+
+#: include/class-bulk-move-posts.php:382
+msgid "Script input time "
+msgstr "Tiempo para el proceso"
+
+#: include/class-bulk-move-posts.php:417
+msgid "Could not update the max execution time to %s, it was not numeric.  Enter the max number of seconds this script should run."
+msgstr "No se pudo actualizar el tiempo máximo de ejecución a %s, no era un valor numérico. Introduce el número máximo de segundos que puede tardar este proceso."
+
+#: include/class-bulk-move-posts.php:334
+msgid "Moved %d post from the selected tag to the new category."
+msgid_plural "Moved %d posts from the selected tag to the new category."
+msgstr[0] "%d entrada movida de la etiqueta seleccionada a la nueva categoría."
+msgstr[1] "%d entradas movidas de la etiqueta seleccionada a la nueva categoría."
+
+#: include/class-bulk-move-posts.php:219
+msgid "Moved %d post from the selected tag"
+msgid_plural "Moved %d posts from the selected tag"
+msgstr[0] "%d entrada movida de la etiqueta seleccionada"
+msgstr[1] "%d entradas movidas de la etiqueta seleccionada"
+
+#: include/class-bulk-move-posts.php:147
+msgid "On the left side, select the tag whose post you want to move. In the right side select the tag to which you want the posts to be moved."
+msgstr "En la parte izquierda, selecciona la etiqueta cuyas entradas quieres mover. En la parte derecha selecciona la etiqueta a la quieres que se muevan las entradas."
+
+#: include/class-bulk-move-posts.php:120
+msgid "Moved %d post from the selected category"
+msgid_plural "Moved %d posts from the selected category"
+msgstr[0] "%d entrada movida de la categoría seleccionada."
+msgstr[1] "%d entradas movidas de la categoría seleccionada"
+
+#: include/class-bulk-move-posts.php:19 include/class-bulk-move-posts.php:134
+#: include/class-bulk-move-posts.php:233 include/class-bulk-move-posts.php:506
+msgid "This section just got enabled. Kindly <a href = \"%1$s\">refresh</a> the page to fully enable it."
+msgstr "Se acaba de activar esta sección. <a href = \"%1$s\">Refresca</a> la página para estar activada por completo."
+
+#: bulk-move.php:401
+msgid "Manage"
+msgstr "Gestionar"
+
+#: bulk-move.php:276
+msgid "Bulk Move Posts"
+msgstr "Mover entradas en lote"
+
+#: bulk-move.php:265
+msgid "Bulk Move Category By Tag"
+msgstr "Mover categoría en lote por etiqueta"
+
+#: bulk-move.php:264
+msgid "Bulk Move By Tag"
+msgstr "Mover en lote por etiqueta"
+
+#: bulk-move.php:263
+msgid "Bulk Move By Category"
+msgstr "Mover en lote por categoría"
+
+#. #-#-#-#-#  bulk-move-code.pot (Bulk Move 1.3.0)  #-#-#-#-#
+#. Plugin Name of the plugin/theme
+#: bulk-move.php:210
+msgid "Bulk Move"
+msgstr "Bulk Move"
+
+#: bulk-move.php:129 bulk-move.php:142
+msgid "Cheatin&#8217; huh?"
+msgstr "¿Haciendo trampas?"

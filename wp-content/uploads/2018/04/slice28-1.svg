@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 175 74" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;">
+    <g transform="matrix(1,0,0,1,-607,-502)">
+        <g transform="matrix(1,0,0,1,450.095,353.438)">
+            <text x="162.674px" y="160.036px" style="font-family:'Nunito-Regular', 'Nunito';font-size:16px;fill:rgb(99,101,106);">Monitors and manages</text>
+            <text x="156.482px" y="180.036px" style="font-family:'Nunito-Regular', 'Nunito';font-size:16px;fill:rgb(99,101,106);">network<tspan x="215.074px 221.634px " y="180.036px 180.036px ">-w</tspan>ide, anti-<tspan x="297.634px " y="180.036px ">v</tspan>irus</text>
+            <text x="172.346px" y="200.036px" style="font-family:'Nunito-Regular', 'Nunito';font-size:16px;fill:rgb(99,101,106);">policies, r<tspan x="238.65px " y="200.036px ">e</tspan>por<tspan x="271.546px " y="200.036px ">t</tspan>s, top</text>
+            <text x="202.122px" y="220.036px" style="font-family:'Nunito-Regular', 'Nunito';font-size:16px;fill:rgb(99,101,106);">attacks<tspan x="253.13px " y="220.036px ">,</tspan> etc<tspan x="282.57px " y="220.036px ">.</tspan></text>
+        </g>
+    </g>
+</svg>

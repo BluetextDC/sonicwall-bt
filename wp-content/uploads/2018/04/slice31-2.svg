@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 101 87" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;">
+    <g transform="matrix(1,0,0,1,-1070,-207)">
+        <g transform="matrix(1,0,0,1,-0.684275,0)">
+            <g transform="matrix(1,0,0,1,4,2)">
+                <g transform="matrix(1,0,0,1,-4,-4)">
+                    <path d="M1071.41,252.556L1095.71,209.901L1146.43,209.901L1171.33,252.556L1146.43,295.211L1095.71,295.211L1071.41,252.556Z" style="fill:rgb(184,36,60);"/>
+                </g>
+                <g transform="matrix(1,0,0,1,-4,-4)">
+                    <path d="M1164.6,252.556L1143.06,289.468L1099.17,289.468L1078.14,252.556L1099.17,215.644L1143.06,215.644L1164.6,252.556Z" style="fill:none;stroke:white;stroke-width:1px;"/>
+                </g>
+                <g transform="matrix(1,0,0,1,29.6177,10.2878)">
+                    <text x="1052.17px" y="243.111px" style="font-family:'Nunito-Bold', 'Nunito';font-weight:700;font-size:20px;fill:white;">BL<tspan x="1076.17px " y="243.111px ">O</tspan>CK</text>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 1019 229" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;">
+    <g transform="matrix(1,0,0,1,-48,-515)">
+        <g id="Blue-large-Rect" serif:id="Blue large Rect" transform="matrix(0.996824,0,0,0.971882,3.37191,15.8643)">
+            <path d="M1061.62,522.095C1061.62,520.175 1060.1,518.616 1058.23,518.616L53.015,518.616C51.143,518.616 49.623,520.175 49.623,522.095L49.623,740.347C49.623,742.267 51.143,743.826 53.015,743.826L1058.23,743.826C1060.1,743.826 1061.62,742.267 1061.62,740.347L1061.62,522.095Z" style="fill:rgb(214,222,225);"/>
+            <clipPath id="_clip1">
+                <path d="M1061.62,522.095C1061.62,520.175 1060.1,518.616 1058.23,518.616L53.015,518.616C51.143,518.616 49.623,520.175 49.623,522.095L49.623,740.347C49.623,742.267 51.143,743.826 53.015,743.826L1058.23,743.826C1060.1,743.826 1061.62,742.267 1061.62,740.347L1061.62,522.095Z"/>
+            </clipPath>
+            <g clip-path="url(#_clip1)">
+                <g transform="matrix(1.00319,0,0,1.02893,33.2642,-13.6204)">
+                    <text x="56.94px" y="672.907px" style="font-family:'Nunito-Regular', 'Nunito';font-size:23px;fill:rgb(97,102,113);">Uniﬁed</text>
+                    <text x="64.024px" y="695.907px" style="font-family:'Nunito-Regular', 'Nunito';font-size:23px;fill:rgb(97,102,113);">Client</text>
+                </g>
+                <g transform="matrix(1.00319,0,0,1.02893,-3.38265,-16.3233)">
+                    <g transform="matrix(1.01387,0,0,1.01584,-2.5792,-9.96952)">
+                        <path d="M185.95,561.805C185.95,558.626 183.365,556.046 180.18,556.046L83.747,556.046C80.563,556.046 77.977,558.626 77.977,561.805L77.977,623.437C77.977,626.615 80.563,629.196 83.747,629.196L180.18,629.196C183.365,629.196 185.95,626.615 185.95,623.437L185.95,561.805Z" style="fill:none;stroke:rgb(99,101,105);stroke-width:2.96px;"/>
+                    </g>
+                    <path d="M95.99,596.2L114.798,596.2L123.129,576.708L135.386,607.197L145.178,586.554L151.828,594.293L165.667,594.293" style="fill:none;stroke:rgb(99,101,105);stroke-width:3px;"/>
+                    <path d="M126.061,620.057L136.09,620.057" style="fill:none;stroke:rgb(99,101,105);stroke-width:3px;"/>
+                    <path d="M121.188,629.196L121.188,639.911L112.414,639.911L149.421,639.911L141.559,639.911L141.559,629.196" style="fill:none;stroke:rgb(99,101,105);stroke-width:3px;"/>
+                </g>
+            </g>
+            <path d="M1061.62,522.095C1061.62,520.175 1060.1,518.616 1058.23,518.616L53.015,518.616C51.143,518.616 49.623,520.175 49.623,522.095L49.623,740.347C49.623,742.267 51.143,743.826 53.015,743.826L1058.23,743.826C1060.1,743.826 1061.62,742.267 1061.62,740.347L1061.62,522.095Z" style="fill:none;stroke:rgb(214,222,225);stroke-width:9.65px;"/>
+        </g>
+    </g>
+</svg>

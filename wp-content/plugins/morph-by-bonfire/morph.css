@@ -1,0 +1,1354 @@
+/*************************************************************
+[TABLE OF CONTENTS]
+
+- LOGO
+- HEADER BAR
+- MENU BUTTON
+- MENU BUTTON LABEL
+- SECONDARY MENU BUTTON
+- MAIN MENU
+- SUB-MENU
+- SECONDARY MENU
+- SEARCH
+- MAIN BACKGROUND
+- MAIN WRAPPER
+- HEADING CONTENT + OVERLAY + IMAGE
+- WIDGETS
+- Z-INDEXES
+- MISC
+- WORDPRESS TOOLBAR (IF WORDPRESS TOOLBAR ACTIVE, PUSH HEADER ELEMENTS DOWN A BIT)
+- SCROLLBAR STYLING
+*************************************************************/
+
+
+/* LOGO
+**************************************************/
+.morph-logo-wrapper {
+    position:fixed;
+    display:table;
+    top:0;
+    right:0;
+    height:54px;
+    padding:0 15px;
+}
+.morph-logo-wrapper-right {
+    left:0;
+    right:auto;
+}
+/* if logo is image */
+.morph-logo-image {
+	display:table-cell;
+	vertical-align:middle;
+}
+.morph-logo-image img {
+	max-height:34px;
+    width:auto;
+    display:table-cell;
+	vertical-align:middle;
+}
+/* if logo is text */
+.morph-logo {
+	display:table-cell;
+	vertical-align:middle;
+}
+.morph-logo a {
+	font-family:'Roboto';
+	font-weight:500;
+	font-size:14px;
+	text-decoration:none;
+	letter-spacing:0;
+	color:#fff;
+	margin:0;
+	padding:0;
+	
+	-webkit-transition:all .25s ease;
+	-moz-transition:all .25s ease;
+	transition:all .25s ease;
+}
+.morph-logo a:hover {
+	text-decoration:none;
+	color:#fff;
+}
+
+
+/* HEADER BAR
+**************************************************/
+.morph-header-bar {
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:54px;
+    background-color:#48A4FF;
+}
+
+
+/* MENU BUTTON
+**************************************************/
+/* wrapper */
+.morph-main-menu-button-wrapper {
+	position:fixed;
+	top:7px;
+	left:7px;
+	width:31px;
+	height:30px;
+	cursor:pointer;
+    padding:5px;
+    
+    /* remove the highlight of a tapped link when on a touch device */
+	-webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+/* when right positioning active */
+.morph-menu-button-right {
+	left:auto !important;
+    right:7px;
+}
+/* button */
+.morph-main-menu-button {
+    width:25px;
+    padding:7px 3px;
+}
+/* menu bars */
+.morph-main-menu-button:after,
+.morph-main-menu-button:before,
+.morph-main-menu-button div.morph-main-menu-button-middle:before {
+	content:'';
+	display:block;
+	width:25px;
+	height:2px;
+	margin:0 0 5px 0;
+	background-color:#EDF6FF;
+
+	-webkit-transition:all .25s ease;
+	-moz-transition:all .25s ease;
+	transition:all .25s ease;
+}
+/* menu bars (alternate 3 lines) */
+.morph-menu-button-three-alt {
+    position:relative;
+    top:4px;
+    left:4px;
+}
+.morph-menu-button-three-alt:after,
+.morph-menu-button-three-alt:before,
+.morph-menu-button-three-alt div.morph-menu-button-three-alt-middle:before {
+	content:'';
+	display:block;
+	height:2px;
+	margin:4px 0;
+	background-color:#EDF6FF;
+
+	-webkit-transition:all .25s ease;
+	-moz-transition:all .25s ease;
+	transition:all .25s ease;
+}
+.morph-menu-button-three-alt:after,
+.morph-menu-button-three-alt:before {
+	width:13px;
+}
+.morph-menu-button-three-alt:before {
+	margin-left:auto;
+	margin-right:8px;
+}
+.morph-menu-button-three-alt div.morph-menu-button-three-alt-middle:before {
+	width:23px;
+}
+/* menu bars (alternate 4 lines) */
+.morph-menu-button-four {
+    position:relative;
+    top:1px;
+    left:4px;
+}
+.morph-menu-button-four:after,
+.morph-menu-button-four:before,
+.morph-menu-button-four div.morph-menu-button-four-middle:before,
+.morph-menu-button-four div.morph-menu-button-four-middle:after {
+	content:'';
+	display:block;
+	width:22px;
+	height:2px;
+	margin:4px 0;
+	background-color:#EDF6FF;
+
+	-webkit-transition:all .25s ease;
+	-moz-transition:all .25s ease;
+	transition:all .25s ease;
+}
+/* menu bars (active) */
+.morph-menu-active .morph-main-menu-button:after,
+.morph-menu-active .morph-main-menu-button:before,
+.morph-menu-active .morph-main-menu-button div.morph-main-menu-button-middle:before,
+.morph-menu-active .morph-menu-button-three-alt:after,
+.morph-menu-active .morph-menu-button-three-alt:before,
+.morph-menu-active .morph-menu-button-three-alt div.morph-menu-button-three-alt-middle:before,
+.morph-menu-active .morph-menu-button-four:after,
+.morph-menu-active .morph-menu-button-four:before,
+.morph-menu-active .morph-menu-button-four div.morph-menu-button-four-middle:before,
+.morph-menu-active .morph-menu-button-four div.morph-menu-button-four-middle:after {
+	background-color:#fff;
+}
+
+
+/* MENU BUTTON LABEL
+**************************************************/
+.morph-menu-button-label {
+    position:absolute;
+    top:4px;
+    left:40px;
+    font-family:'Roboto',sans serif;
+    font-weight:400;
+	font-size:12px;
+    color:#fff;
+    padding:10px 5px;
+    white-space:nowrap;
+    
+    -webkit-transition:all .25s ease;
+	-moz-transition:all .25s ease;
+	transition:all .25s ease;
+}
+.morph-menu-button-label-hide {
+    opacity:0;
+    pointer-events:none;
+}
+.morph-menu-button-label-right {
+    left:-40px;
+}
+/* label adjustment */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .morph-menu-button-label { top:3px; }
+}
+
+
+/* SECONDARY MENU BUTTON
+**************************************************/
+/* secondary menu button */
+.morph-secondary-menu-button {
+    position:absolute;
+    display:block;
+	bottom:11px;
+	right:10px;
+	width:20px;
+	height:30px;
+    
+    /* remove the highlight of a tapped link when on a touch device */
+	-webkit-tap-highlight-color:rgba(0,0,0,0);
+	
+	-webkit-transition:opacity .2s ease .2s, top 0s ease .2s;
+	-moz-transition:opacity .2s ease .2s, top 0s ease .2s;
+	transition:opacity .2s ease .2s, top 0s ease .2s;
+}
+.morph-secondary-button {
+    position:absolute;
+	z-index:99;
+	width:13px;
+	height:30px;
+	margin:0;
+	padding:3px 0 0 7px;
+    cursor:pointer;
+}
+.morph-secondary-button-inner,
+.morph-secondary-button-inner::before,
+.morph-secondary-button-inner::after {
+    position:relative;
+    content:'';
+    display:block;
+	width:4px;
+	height:4px;
+	background-color:#fff;
+    border-radius:50%;
+	
+	-webkit-transition:all .25s ease;
+	-moz-transition:all .25s ease;
+	transition:all .25s ease;
+}
+.morph-secondary-button-inner { top:10px; }
+.morph-secondary-button-inner::before { top:-6px; }
+.morph-secondary-button-inner::after { top:2px; }
+.morph-secondary-menu-button-active .morph-secondary-button-inner,
+.morph-secondary-menu-button-active .morph-secondary-button-inner::before,
+.morph-secondary-menu-button-active .morph-secondary-button-inner::after {
+	background-color:#A0A0A0;
+}
+
+
+/* MAIN MENU
+**************************************************/
+.morph-menu-wrapper {
+	position:relative;
+	width:270px;
+    top:200px;
+	margin:0;
+	padding:9px 0 15px 0;
+
+	-webkit-transition:all .5s ease;
+	-moz-transition:all .5s ease;
+	transition:all .5s ease;
+}
+/* main menu */
+.morph-by-bonfire {
+    overflow-y:auto;
+}
+.morph-by-bonfire ul {
+	list-style-type:none;
+	margin:0;
+	padding:0;
+}
+/* individual main menu items */
+.morph-by-bonfire ul li {
+	position:relative;
+	width:100%;
+    min-height:43px;
+	list-style-type:none;
+    border:none;
+	margin:0;
+	padding:0;
+	text-align:left;
+    overflow:hidden;
+}
+/* top-level menu item */
+.morph-by-bonfire ul li a {
+	font-family:'Roboto',sans serif;
+    font-weight:400;
+	font-size:14px;
+    line-height:18px;
+	color:#696867;
+	margin:0;
+	padding:14px 10px 7px 17px;
+	display:inline-block;
+	text-decoration:none;
+    width:100%;
+    width:calc(100% - 27px);
+	
+	-webkit-transition:all .2s ease;
+	-moz-transition:all .2s ease;
+	transition:all .2s ease;
+}
+/* don't let top-level menu items overlap sub-menu arrows */
+.morph-by-bonfire ul li.menu-item-has-children > a {
+    width:calc(100% - 67px);
+    padding-right:10px;
+}
+/* custom border */
+.morph-by-bonfire ul li.border a {
+	padding-bottom:19px;
+	margin-bottom:8px;
+	border-bottom:1px solid #D9D9D9;
+}
+/* retina-specific menu item adjustment */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { 
+	.morph-by-bonfire ul li a { margin:0; }
+}
+/* main menu icon */
+.morph-by-bonfire a i {
+	font-size:17px;
+	padding-right:10px;
+	text-align:left;
+	display:inline-block;
+}
+/* fade-in menu items */
+.morph-by-bonfire ul li a {
+	opacity:0;
+	
+	-webkit-transform:translateX(-30px);
+	-moz-transform:translateX(-30px);
+	transform:translateX(-30px);
+}
+.morph-menu-wrapper-active .morph-by-bonfire ul li a {
+	opacity:1;
+	
+	-webkit-transform:translateX(0);
+	-moz-transform:translateX(0);
+	transform:translateX(0);
+}
+/* individual li animation speeds (up to 25) */
+.morph-menu-wrapper-active .morph-by-bonfire ul li:nth-child(1) a {
+	-webkit-transition:opacity .3s ease .2s, -webkit-transform .5s ease .2s;
+	-moz-transition:opacity .3s ease .2s, -moz-transform .5s ease .2s;
+	transition:opacity .3s ease .2s, transform .5s ease .2s;
+}
+.morph-menu-wrapper-active .morph-by-bonfire ul li:nth-child(2) a {
+	-webkit-transition:opacity .3s ease .25s, -webkit-transform .5s ease .25s;
+	-moz-transition:opacity .3s ease .25s, -moz-transform .5s ease .25s;
+	transition:opacity .3s ease .25s, transform .5s ease .25s;
+}
+.morph-menu-wrapper-active .morph-by-bonfire ul li:nth-child(3) a {
+	-webkit-transition:opacity .3s ease .3s, -webkit-transform .5s ease .3s;
+	-moz-transition:opacity .3s ease .3s, -moz-transform .5s ease .3s;
+	transition:opacity .3s ease .3s, transform .5s ease .3s;
+}
+.morph-menu-wrapper-active .morph-by-bonfire ul li:nth-child(4) a {
+	-webkit-transition:opacity .3s ease .35s, -webkit-transform .5s ease .35s;
+	-moz-transition:opacity .3s ease .35s, -moz-transform .5s ease .35s;
+	transition:opacity .3s ease .35s, transform .5s ease .35s;
+}
+.morph-menu-wrapper-active .morph-by-bonfire ul li:nth-child(5) a {
+	-webkit-transition:opacity .3s ease .4s, -webkit-transform .5s ease .4s;
+	-moz-transition:opacity .3s ease .4s, -moz-transform .5s ease .4s;
+	transition:opacity .3s ease .4s, transform .5s ease .4s;
+}
+.morph-menu-wrapper-active .morph-by-bonfire ul li:nth-child(6) a {
+	-webkit-transition:opacity .3s ease .45s, -webkit-transform .5s ease .45s;
+	-moz-transition:opacity .3s ease .45s, -moz-transform .5s ease .45s;
+	transition:opacity .3s ease .45s, transform .5s ease .45s;
+}
+.morph-menu-wrapper-active .morph-by-bonfire ul li:nth-child(7) a {
+	-webkit-transition:opacity .3s ease .5s, -webkit-transform .5s ease .5s;
+	-moz-transition:opacity .3s ease .5s, -moz-transform .5s ease .5s;
+	transition:opacity .3s ease .5s, transform .5s ease .5s;
+}
+.morph-menu-wrapper-active .morph-by-bonfire ul li:nth-child(8) a {
+	-webkit-transition:opacity .3s ease .55s, -webkit-transform .5s ease .55s;
+	-moz-transition:opacity .3s ease .55s, -moz-transform .5s ease .55s;
+	transition:opacity .3s ease .55s, transform .5s ease .55s;
+}
+.morph-menu-wrapper-active .morph-by-bonfire ul li:nth-child(9) a {
+	-webkit-transition:opacity .3s ease .6s, -webkit-transform .5s ease .6s;
+	-moz-transition:opacity .3s ease .6s, -moz-transform .5s ease .6s;
+	transition:opacity .3s ease .6s, transform .5s ease .6s;
+}
+.morph-menu-wrapper-active .morph-by-bonfire ul li:nth-child(10) a {
+	-webkit-transition:opacity .3s ease .65s, -webkit-transform .5s ease .65s;
+	-moz-transition:opacity .3s ease .65s, -moz-transform .5s ease .65s;
+	transition:opacity .3s ease .65s, transform .5s ease .65s;
+}
+.morph-menu-wrapper-active .morph-by-bonfire ul li:nth-child(11) a {
+	-webkit-transition:opacity .3s ease .7s, -webkit-transform .5s ease .7s;
+	-moz-transition:opacity .3s ease .7s, -moz-transform .5s ease .7s;
+	transition:opacity .3s ease .7s, transform .5s ease .7s;
+}
+.morph-menu-wrapper-active .morph-by-bonfire ul li:nth-child(12) a {
+	-webkit-transition:opacity .3s ease .75s, -webkit-transform .5s ease .75s;
+	-moz-transition:opacity .3s ease .75s, -moz-transform .5s ease .75s;
+	transition:opacity .3s ease .75s, transform .5s ease .75s;
+}
+.morph-menu-wrapper-active .morph-by-bonfire ul li:nth-child(13) a {
+	-webkit-transition:opacity .3s ease .8s, -webkit-transform .5s ease .8s;
+	-moz-transition:opacity .3s ease .8s, -moz-transform .5s ease .8s;
+	transition:opacity .3s ease .8s, transform .5s ease .8s;
+}
+.morph-menu-wrapper-active .morph-by-bonfire ul li:nth-child(14) a {
+	-webkit-transition:opacity .3s ease .85s, -webkit-transform .5s ease .85s;
+	-moz-transition:opacity .3s ease .85s, -moz-transform .5s ease .85s;
+	transition:opacity .3s ease .85s, transform .5s ease .85s;
+}
+.morph-menu-wrapper-active .morph-by-bonfire ul li:nth-child(15) a {
+	-webkit-transition:opacity .3s ease .9s, -webkit-transform .5s ease .9s;
+	-moz-transition:opacity .3s ease .9s, -moz-transform .5s ease .9s;
+	transition:opacity .3s ease .9s, transform .5s ease .9s;
+}
+.morph-menu-wrapper-active .morph-by-bonfire ul li:nth-child(16) a {
+	-webkit-transition:opacity .3s ease .95s, -webkit-transform .5s ease .95s;
+	-moz-transition:opacity .3s ease .95s, -moz-transform .5s ease .95s;
+	transition:opacity .3s ease .95s, transform .5s ease .95s;
+}
+.morph-menu-wrapper-active .morph-by-bonfire ul li:nth-child(17) a {
+	-webkit-transition:opacity .3s ease 1s, -webkit-transform .5s ease 1s;
+	-moz-transition:opacity .3s ease 1s, -moz-transform .5s ease 1s;
+	transition:opacity .3s ease 1s, transform .5s ease 1s;
+}
+.morph-menu-wrapper-active .morph-by-bonfire ul li:nth-child(18) a {
+	-webkit-transition:opacity .3s ease 1.05s, -webkit-transform .5s ease 1.05s;
+	-moz-transition:opacity .3s ease 1.05s, -moz-transform .5s ease 1.05s;
+	transition:opacity .3s ease 1.05s, transform .5s ease 1.05s;
+}
+.morph-menu-wrapper-active .morph-by-bonfire ul li:nth-child(19) a {
+	-webkit-transition:opacity .3s ease 1.1s, -webkit-transform .5s ease 1.1s;
+	-moz-transition:opacity .3s ease 1.1s, -moz-transform .5s ease 1.1s;
+	transition:opacity .3s ease 1.1s, transform .5s ease 1.1s;
+}
+.morph-menu-wrapper-active .morph-by-bonfire ul li:nth-child(20) a {
+	-webkit-transition:opacity .3s ease 1.15s, -webkit-transform .5s ease 1.15s;
+	-moz-transition:opacity .3s ease 1.15s, -moz-transform .5s ease 1.15s;
+	transition:opacity .3s ease 1.15s, transform .5s ease 1.15s;
+}
+.morph-menu-wrapper-active .morph-by-bonfire ul li:nth-child(21) a {
+	-webkit-transition:opacity .3s ease 1.2s, -webkit-transform .5s ease 1.2s;
+	-moz-transition:opacity .3s ease 1.2s, -moz-transform .5s ease 1.2s;
+	transition:opacity .3s ease 1.2s, transform .5s ease 1.2s;
+}
+.morph-menu-wrapper-active .morph-by-bonfire ul li:nth-child(22) a {
+	-webkit-transition:opacity .3s ease 1.25s, -webkit-transform .5s ease 1.25s;
+	-moz-transition:opacity .3s ease 1.25s, -moz-transform .5s ease 1.25s;
+	transition:opacity .3s ease 1.25s, transform .5s ease 1.25s;
+}
+.morph-menu-wrapper-active .morph-by-bonfire ul li:nth-child(23) a {
+	-webkit-transition:opacity .3s ease 1.3s, -webkit-transform .5s ease 1.3s;
+	-moz-transition:opacity .3s ease 1.3s, -moz-transform .5s ease 1.3s;
+	transition:opacity .3s ease 1.3s, transform .5s ease 1.3s;
+}
+.morph-menu-wrapper-active .morph-by-bonfire ul li:nth-child(24) a {
+	-webkit-transition:opacity .3s ease 1.35s, -webkit-transform .5s ease 1.35s;
+	-moz-transition:opacity .3s ease 1.35s, -moz-transform .5s ease 1.35s;
+	transition:opacity .3s ease 1.35s, transform .5s ease 1.35s;
+}
+.morph-menu-wrapper-active .morph-by-bonfire ul li:nth-child(25) a {
+	-webkit-transition:opacity .3s ease 1.4s, -webkit-transform .5s ease 1.4s;
+	-moz-transition:opacity .3s ease 1.4s, -moz-transform .5s ease 1.4s;
+	transition:opacity .3s ease 1.4s, transform .5s ease 1.4s;
+}
+/* menu description */
+.morph-menu-item-description {
+    margin-top:4px;
+    margin-bottom:2px;
+	font-size:13px;
+	line-height:16px;
+	color:#A1A19E;
+    padding-right:12px;
+}
+
+
+/* SUB-MENU
+**************************************************/
+.morph-by-bonfire .menu {
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+.morph-by-bonfire ul.sub-menu {
+	list-style:none;
+	margin:0;
+	padding:0;
+	display:none;
+}
+/* sub-menu items */
+.morph-by-bonfire .sub-menu a {
+	color:#848482;
+	margin:0;
+}
+
+
+/* SECONDARY MENU
+**************************************************/
+.morph-secondary-menu-wrapper {
+	position:absolute;
+	z-index:9;
+    top:-5px;
+    right:-3px;
+	background-color:#fff;
+	border:1px solid #E2E2E2;
+	margin:0;
+	padding:7px 35px 6px 15px;
+	display:none;
+
+	-webkit-box-shadow:0px 0px 2px 0px rgba(0,0,0,0.35);
+	-moz-box-shadow:0px 0px 2px 0px rgba(0,0,0,0.35);
+	box-shadow:0px 0px 2px 0px rgba(0,0,0,0.35);
+}
+@-webkit-keyframes morph-secondary {
+	0% { -webkit-transform:translateY(-4px); }
+	40% { -webkit-transform:translateY(2px); }
+	100% { -webkit-transform:translateY(0); }
+}
+@keyframes morph-secondary {
+	0% { transform:translateY(-4px); }
+	40% { transform:translateY(2px); }
+	100% { transform:translateY(0); }
+}
+.morph-secondary-menu-wrapper-active {
+	display:inline;
+	
+	-webkit-animation-name:morph-secondary;
+	animation-name:morph-secondary;
+	
+	-webkit-animation-duration:.25s;
+	animation-duration:.25s;
+	
+	-webkit-animation-timing-function:ease-in-out;
+	animation-timing-function:ease-in-out;
+	
+	-webkit-animation-iteration-count:1;
+	animation-iteration-count:1;
+}
+/* secondary menu bottom border */
+.morph-secondary-menu-wrapper:after {
+	position:absolute;
+	width:100%;
+	padding:1px 1px 0 1px;
+	bottom:-2px;
+	content:'';
+	left:-1px;
+	background-color:#BABABA;
+	height:1px;
+}
+/* secondary menu item */
+.morph-secondary-menu-wrapper a {
+	font-family:'Roboto';
+	font-weight:500;
+	font-size:13px;
+	line-height:30px;
+	color:#7A7E86;
+	text-decoration:none;
+	white-space:nowrap;
+}
+.morph-secondary-menu-wrapper a:hover {
+	text-decoration:underline;
+}
+.morph-secondary-menu-wrapper ul,
+.morph-secondary-menu-wrapper li {
+	list-style-type:none;
+	margin:0;
+	padding:0;
+}
+/* secondary menu icon */
+.morph-secondary-menu-wrapper a i {
+	font-size:17px;
+	padding-right:10px;
+	text-align:left;
+	display:inline-block;
+}
+
+
+/* ACCORDION SUB-MENU ARROW
+**************************************************/
+/* sub-menu arrow */
+.morph-sub-arrow {
+    position:absolute;
+    cursor:pointer;
+    top:0;
+    right:0;
+    width:40px;
+    height:100%;
+    
+    /* remove the highlight of a tapped link when on a touch device */
+	-webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+.morph-sub-arrow-inner {
+    position:relative;
+    display:block;
+    top:10px;
+    right:0;
+    width:40px;
+    height:27px;
+    border-left:1px solid #DEDEDF;
+}
+.morph-sub-arrow-inner::before,
+.morph-sub-arrow-inner::after {
+    position:absolute;
+    content:'';
+    display:block;
+    top:13px;
+    width:7px;
+    height:2px;
+    background-color:#ADADAC;
+    
+    -webkit-transition:all .35s ease;
+	-moz-transition:all .35s ease;
+	transition:all .35s ease;
+}
+.morph-sub-arrow-inner::before {
+    left:12px;
+    -webkit-transform:rotate(45deg);
+	-moz-transform:rotate(45deg);
+	transform:rotate(45deg);
+}
+.morph-sub-arrow-inner::after {
+    left:16px;
+    -webkit-transform:rotate(-45deg);
+	-moz-transform:rotate(-45deg);
+	transform:rotate(-45deg);
+}
+.morph-by-bonfire span.morph-submenu-active span::before {
+    -webkit-transform:rotate(-45deg);
+	-moz-transform:rotate(-45deg);
+	transform:rotate(-45deg);
+}
+.morph-by-bonfire span.morph-submenu-active span::after {
+    -webkit-transform:rotate(45deg);
+	-moz-transform:rotate(45deg);
+	transform:rotate(45deg);
+}
+
+
+/* SEARCH
+**************************************************/
+/* search button */
+.morph-search-button {
+	position:absolute;
+	top:5px;
+	right:11px;
+	width:30px;
+	height:40px;
+	cursor:pointer;
+	opacity:1;
+	
+	-webkit-transform:scale(1);
+	-moz-transform:scale(1);
+	transform:scale(1);
+	
+	-webkit-transition:opacity .3s ease, -webkit-transform .3s ease 0s, top 0s ease .0s;
+	-moz-transition:opacity .3s ease, -moz-transform .3s ease 0s, top 0s ease .0s;
+	transition:opacity .3s ease, transform .3s ease 0s, top 0s ease .0s;
+    
+    /* remove the highlight of a tapped link when on a touch device */
+	-webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+/* when right positioning active */
+.morph-search-button-right {
+    left:5px;
+}
+.morph-search-button-hidden {
+	top:-1000px;
+	opacity:0;
+	
+	-webkit-transform:scale(.5);
+	-moz-transform:scale(.5);
+	transform:scale(.5);
+	
+	-webkit-transition:opacity .3s ease, -webkit-transform .3s ease 0s, top 0s ease .3s;
+	-moz-transition:opacity .3s ease, -moz-transform .3s ease 0s, top 0s ease .3s;
+	transition:opacity .3s ease, transform .3s ease 0s, top 0s ease .3s;
+}
+/* search button */
+.taptap-search-button {
+    position:relative;
+    width:12px;
+	height:12px;
+    top:13px;
+    left:11px;
+    margin:0;
+    padding:0;
+    border:2px solid #fff;
+    border-radius:50%;
+
+    box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    
+    -webkit-transition:all .25s ease;
+	-moz-transition:all .25s ease;
+	transition:all .25s ease;
+}
+.taptap-search-button::after {
+    content:'';
+    position:absolute;
+    top:9px;
+    left:7px;
+    width:7px;
+    height:2px;
+    background-color:#fff;
+    margin:0;
+    padding:0;
+    
+    -webkit-transform:rotate(45deg);
+	-moz-transform:rotate(45deg);
+	transform:rotate(45deg);
+    
+    -webkit-transition:all .25s ease;
+	-moz-transition:all .25s ease;
+	transition:all .25s ease;
+}
+/* search form */
+.morph-search-wrapper {
+	position:absolute;
+	top:-1000px;
+	right:10px;
+    width:210px;
+    width:calc(100% - 65px);
+	height:35px;
+	margin:0;
+	padding:0;
+	display:block;
+	opacity:0;
+    overflow:hidden;
+    
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+	
+	border-bottom:2px solid rgba(255,255,255,.6);
+	
+	-webkit-transform:scaleX(0);
+	-moz-transform:scaleX(0);
+	transform:scaleX(0);
+
+	-webkit-transform-origin:top right;
+	-moz-transform-origin:top right;
+	transform-origin:top right;
+	
+	-webkit-transition:opacity .2s ease, -webkit-transform .25s, top 0s ease .25s;
+	-moz-transition:opacity .2s ease, -moz-transform .25s, top 0s ease .25s;
+	transition:opacity .2s ease, transform .25s, top 0s ease .25s;
+}
+/* when right positioning active */
+.morph-search-wrapper-right {
+    left:10px;
+    width:175px;
+    width:calc(100% - 65px);
+    padding-left:35px;
+    
+    -webkit-transform-origin:top left;
+	-moz-transform-origin:top left;
+	transform-origin:top left;
+}
+.morph-search-wrapper-active {
+	top:11px !important;
+	opacity:1;
+	
+	-webkit-transform:scaleX(1);
+	-moz-transform:scaleX(1);
+	transform:scaleX(1);
+	
+	-webkit-transition:opacity .2s ease, -webkit-transform .25s, top 0s ease;
+	-moz-transition:opacity .2s ease, -moz-transform .25s, top 0s ease;
+	transition:opacity .2s ease, transform .25s, top 0s ease;
+}
+/* searchform input */
+.morph-search-wrapper #searchform input {
+	width:180px;
+	height:100%;
+	font-size:23px;
+	font-family:'Roboto';
+	font-weight:400;
+	color:#fff;
+	padding:2px 30px 4px 0;
+	margin:0;
+	letter-spacing:-0.1px;
+	border:0;
+	background:none;
+	
+	-webkit-border-radius:0;
+	-moz-border-radius:0;
+	border-radius:0;
+	
+	-webkit-transition:all .15s ease;
+	-moz-transition:all .15s ease;
+	transition:all .15s ease;
+}
+.morph-search-wrapper #searchform input:focus {
+	outline:0;
+}
+/* searchform placeholder */
+#searchform input::-webkit-input-placeholder { color:#7F848A !important; }
+#searchform input:-moz-placeholder { color:#7F848A !important; }
+#searchform input::-moz-placeholder { color:#7F848A !important; }
+#searchform input:-ms-input-placeholder { color:#7F848A !important; }
+/* search form close button wrapper */
+.morph-search-close-wrapper {
+	position:absolute;
+	z-index:10;
+	top:-1000px;
+	right:10px;
+	width:24px;
+	height:34px;
+	cursor:pointer;
+	display:block;
+	opacity:0;
+	
+	-webkit-transform:scale(.5);
+	-moz-transform:scale(.5);
+	transform:scale(.5);
+	
+	-webkit-transition:opacity .3s ease, -webkit-transform .3s ease, top 0s ease .3s;
+	-moz-transition:opacity .3s ease, -moz-transform .3s ease, top 0s ease .3s;
+	transition:opacity .3s ease, transform .3s ease, top 0s ease .3s;
+    
+    /* remove the highlight of a tapped link when on a touch device */
+	-webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+/* when right positioning active */
+.morph-search-close-wrapper-right {
+    left:12px;
+}
+.morph-search-close-wrapper-active {
+	top:10px;
+	opacity:1;
+	
+	-webkit-transform:scale(1);
+	-moz-transform:scale(1);
+	transform:scale(1);
+	
+	-webkit-transition:opacity .3s ease, -webkit-transform .3s ease, top 0s;
+	-moz-transition:opacity .3s ease, -moz-transform .3s ease, top 0s;
+	transition:opacity .3s ease, transform .3s ease, top 0s;
+}
+/* search form close button */
+.morph-search-close-button:before,
+.morph-search-close-button:after {
+    position:relative;
+    top:8px;
+    left:5px;
+	content:'';
+	display:block;
+	width:14px;
+	height:2px;
+	margin:0;
+	background-color:#fff;
+
+	-webkit-transition:all .2s ease;
+	-moz-transition:all .2s ease;
+	transition:all .2s ease;
+}
+.morph-search-close-button:before {	
+	-webkit-transform:translateY(6px) rotate(45deg);
+	-moz-transform:translateY(6px) rotate(45deg);
+	transform:translateY(6px) rotate(45deg);
+}
+.morph-search-close-button:after {	
+	-webkit-transform:translateY(4px) rotate(-45deg);
+	-moz-transform:translateY(4px) rotate(-45deg);
+	transform:translateY(4px) rotate(-45deg);
+}
+
+
+/* MAIN BACKGROUND
+**************************************************/
+/* main background */
+.morph-main-background {
+	position:fixed;
+	top:0;
+	left:0;
+	width:270px;
+	height:100%;
+    height:100vh;
+	margin:0;
+	padding:0;
+	background-color:#FBFBFB;
+	display:block;
+
+	-webkit-transition:all .5s ease;
+	-moz-transition:all .5s ease;
+	transition:all .5s ease;
+}
+/* the no-click area next to the menu */
+.morph-main-background-active::after {
+    content:'';
+    position:fixed;
+    right:-20px;
+    width:20px;
+    height:100%;
+}
+/* when right positioning active */
+.morph-main-background-right {
+	left:auto;
+    right:0;
+}
+.morph-main-background-active {
+	-webkit-transform:translateX(0) !important;
+	-moz-transform:translateX(0) !important;
+	transform:translateX(0) !important;
+    
+    -webkit-box-shadow:0px 0px 5px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow:0px 0px 5px 0px rgba(0,0,0,0.75);
+	box-shadow:0px 0px 5px 0px rgba(0,0,0,0.75);
+}
+
+
+/* MAIN WRAPPER
+**************************************************/
+/* main wrapper */
+.morph-main-wrapper {
+	position:fixed;
+	top:0;
+	left:0;
+	width:270px;
+	height:100%;
+	margin:0;
+	padding:0;
+	color:#767676;
+	overflow:hidden !important;
+	
+	-webkit-transition:all .5s ease;
+	-moz-transition:all .5s ease;
+	transition:all .5s ease;
+}
+/* when right positioning active */
+.morph-main-wrapper-right {
+    left:auto;
+    right:0;
+}
+.morph-main-wrapper-active {
+	-webkit-transform:translateX(0) !important;
+	-moz-transform:translateX(0) !important;
+	transform:translateX(0) !important;
+}
+/* main inner wrapper */
+.morph-main-wrapper-inner {
+	position:relative;
+	width:100%;
+	height:100%;
+	overflow-x:hidden;
+    overflow-y:auto;
+	/* smooth scroll on iOS */
+	-webkit-overflow-scrolling:touch;
+}
+/* give images/videos/embeds max width */
+.morph-main img,
+.morph-main iframe,
+.morph-main object,
+.morph-main embed { max-width:100%; height:auto; }
+/* background overlay */
+.morph-background-overlay {
+	position:fixed;
+	top:-1000%;
+	left:0;
+	right:0;
+	width:100%;
+	height:100%;
+    height:100vh;
+	background-color:#000;
+	opacity:0;
+	
+	-webkit-transition:top 0s ease .35s, opacity .35s ease;
+	-moz-transition:top 0s ease .35s, opacity .35s ease;
+	transition:top 0s ease .35s, opacity .35s ease;
+}
+.morph-background-overlay-active {
+	top:0;
+	opacity:.3;
+	
+	-webkit-transition:top 0s ease 0s, opacity .35s ease;
+	-moz-transition:top 0s ease 0s, opacity .35s ease;
+	transition:top 0s ease 0s, opacity .35s ease;
+}
+
+
+/* HEADING CONTENT + OVERLAY + IMAGE
+**************************************************/
+/* joint styles */
+.morph-heading-wrapper,
+.morph-heading-overlay,
+.morph-heading-image {
+	position:absolute;
+	width:100%;
+	height:200px;
+	margin:0;
+	padding:0;
+}
+/* heading wrapper */
+.morph-heading-wrapper {
+	z-index:9;
+	display:table;
+    border-bottom:3px solid #C6C6C6;
+}
+.morph-heading-inner {
+	display:table-cell;
+	vertical-align:bottom;
+	padding:0 60px 18px 18px;
+}
+/* heading text */
+.morph-heading-text {
+	width:100%;
+	color:#fff;
+	display:block;
+	margin:0 0 8px 0;
+	
+	font-family:'Roboto';
+	font-weight:500;
+	font-size:15px;
+	line-height:15px;
+	color:#fff;
+}
+/* subheading text */
+.morph-subheading-text {
+	width:100%;
+	color:#fff;
+	display:block;
+	margin:-6px 0 0 0;
+	
+	font-family:'Roboto';
+	font-weight:500;
+	font-size:12px;
+	line-height:13px;
+	color:#D3D3DA;
+}
+/* heading overlay */
+.morph-heading-overlay {
+	z-index:8;
+	background-color:#000;
+	opacity:.2;
+}
+/* heading image */
+.morph-heading-image {
+	z-index:7;
+	background-size:cover;
+    background-position:top center;
+	background-repeat:repeat;
+}
+
+
+/* WIDGETS
+**************************************************/
+.morph-widgets-wrapper {
+	margin:10px 0 0 0;
+	padding:0 16px;
+	max-width:100%;
+	opacity:0;
+	
+	-webkit-transition:opacity .25s ease 0s;
+	-moz-transition:opacity .25s ease 0s;
+	transition:opacity .25s ease 0s;
+}
+.morph-main-wrapper-active .morph-widgets-wrapper {
+	opacity:1;
+	
+	-webkit-transition:opacity 1s ease .25s;
+	-moz-transition:opacity 1s ease .25s;
+	transition:opacity 1s ease .25s;
+}
+.morph-widgets-wrapper .widget {
+	font-family:'Roboto',arial,tahoma,verdana;
+	font-weight:400;
+	font-size:14px;
+	line-height:19px;
+    text-transform:none;
+	color:#939398;
+	letter-spacing:0;
+	width:100%;
+	display:inline-block;
+	vertical-align:top;
+	background:none;
+	
+	margin:0;
+	padding:10px 0 15px 0;
+	word-wrap:break-word;
+	text-align:left;
+}
+.morph-widgets-wrapper .widget li {
+	list-style:none;
+	width:195px;
+	padding:5px 5px !important;
+	border:none;
+}
+.morph-widgets-wrapper .widget a {
+	color:#2380C8;
+	text-decoration:none;
+}
+.morph-widgets-wrapper .widget a:hover {
+	text-decoration:underline;
+}
+.morph-widgets-wrapper .widgettitle {
+	font-family:'Roboto',arial,tahoma,verdana;
+	font-weight:400;
+	font-size:14px;
+    line-height:17px;
+    text-transform:none;
+	color:#525458;
+	letter-spacing:0;
+	margin:20px 0 3px 5px;
+	padding:0;
+}
+.morph-widgets-wrapper .widget select {
+	width:100%;
+	max-width:200px;
+}
+/* recent posts */
+.morph-widgets-wrapper .widget_recent_entries li {
+	padding-top:5;
+	padding-bottom:10px;
+}
+/* text widget */
+.morph-widgets-wrapper .textwidget { margin-left:5px; }
+/* dates */
+.morph-widgets-wrapper .post-date,
+.morph-widgets-wrapper .rss-date {
+	font-size:12px;
+	color:#939398;
+	display:block;
+	margin-top:-2px;
+}
+/* widget archives */
+.morph-widgets-wrapper .widget_archive ul {
+	list-style-type:none;
+}
+.morph-widgets-wrapper .widget_archive li {
+	display:block;
+}
+/* widget categories */
+.morph-widgets-wrapper .widget_categories ul {
+	list-style-type:none;
+	padding:0;
+	margin:0;
+}
+.morph-widgets-wrapper .widget_categories li {
+	display:block;
+}
+/* widget recent comments */
+.morph-widgets-wrapper .widget_recent_comments li {
+	padding-top:10px;
+	padding-bottom:10px;
+}
+/* widget meta */
+.morph-widgets-wrapper .widget_meta ul {
+	list-style-type:none;
+	padding:0;
+	margin:0;
+}
+.morph-widgets-wrapper .widget_meta li {
+	display:block;
+}
+/* widget calendar */
+.morph-widgets-wrapper #wp-calendar { width:100%; }
+.morph-widgets-wrapper #wp-calendar caption {
+	font-family:'Roboto',arial,tahoma,verdana;
+	font-weight:500;
+	font-size:12px;
+	margin:0;
+}
+.morph-widgets-wrapper #wp-calendar tr { text-align:center; }
+.morph-widgets-wrapper #wp-calendar .pad { background:none; }
+.morph-widgets-wrapper #wp-calendar th { padding:0; margin:0; }
+.morph-widgets-wrapper #wp-calendar tr td { padding:0; margin:0; background:none; }
+/* widget search */
+.morph-widgets-wrapper .widget_search {
+	margin:2px 12px 0 0;
+}
+.morph-widgets-wrapper .widget_search input {
+	font-family:'Roboto',arial,tahoma,verdana;
+	font-weight:500;
+	font-size:14px;
+	color:#939398;
+	width:230px;
+	height:40px;
+	padding:0 0 0 5px;
+	margin:0;
+	border:0;
+	-webkit-appearance:none;
+	-webkit-border-radius:0;
+    border-radius:0;
+	border-bottom:2px solid #B1B1B1;
+	background:none;
+}
+.morph-widgets-wrapper .widget_search input::-webkit-input-placeholder { color:#717477; }
+.morph-widgets-wrapper .widget_search input:-moz-placeholder { color:#717477; }
+.morph-widgets-wrapper .widget_search input::-moz-placeholder { color:#717477; }
+.morph-widgets-wrapper .widget_search input:-ms-input-placeholder { color:#717477; }
+/* tag cloud */
+.morph-widgets-wrapper .tagcloud,
+.morph-widgets-wrapper .categories {
+	padding:10px 5px;
+}
+/* widget nav menu */
+.morph-widgets-wrapper .widget_nav_menu .sub-menu {
+	margin:5px 0 0 5px;
+	padding:0;
+	position:static;
+}
+.morph-widgets-wrapper .widget_nav_menu .menu li,
+.morph-widgets-wrapper .widget_nav_menu .menu li.sub {
+	margin:0 0 0 0;
+	padding:0;
+}
+.morph-widgets-wrapper .widget_nav_menu .menu li a,
+.morph-widgets-wrapper .widget_nav_menu .menu li.sub a {
+	text-decoration:none;
+	background:none;
+	margin:0;
+	padding:0;
+}
+
+
+/* Z-INDEXES
+**************************************************/
+.morph-header-bar { z-index:99995; }
+.morph-logo-wrapper { z-index:99996; }
+.morph-background-overlay { z-index:99996; }
+.morph-main-background { z-index:99997; }
+.morph-main-wrapper { z-index:99998; }
+.morph-main-menu-button-wrapper { z-index:99999; }
+
+
+/*
+MISC
+**************************************************/
+/* if absolute positioning active */
+.morph-absolute { position:absolute; }
+
+
+/* WORDPRESS TOOLBAR (IF WORDPRESS TOOLBAR ACTIVE, PUSH HEADER ELEMENTS DOWN A BIT)
+**************************************************/
+.wp-toolbar-active { margin-top:32px; }
+/* for the thicker, mobile admin bar */
+@media screen and (max-width: 782px) {
+	.wp-toolbar-active { margin-top:46px; }
+	#wpadminbar { position: fixed !important; }
+}
+/* if WordPress amin bar active, keep it above everything else */
+#wpadminbar { z-index:9999999999999999999999999999; }
+
+
+/* SCROLLBAR STYLING
+**************************************************/
+.scroll-wrapper {
+	overflow:hidden !important;
+	padding:0 !important;
+	position:relative;
+}
+.scroll-wrapper > .scroll-content {
+	border:none !important;
+	box-sizing:content-box !important;
+	height:auto;
+	left:0;
+	margin:0;
+	max-height:none !important;
+	max-width:none !important;
+	overflow:scroll !important;
+	position:relative !important;
+	top:0;
+	width:auto !important;
+}
+.scroll-wrapper > .scroll-content::-webkit-scrollbar {
+	height:0;
+	width:0;
+}
+.scroll-element {
+	display:none;
+}
+.scroll-element.scroll-x.scroll-scrollx_visible,
+.scroll-element.scroll-y.scroll-scrolly_visible {
+	display:block;
+}
+.morph-main-wrapper-inner > .scroll-element,
+.morph-main-wrapper-inner > .scroll-element div {
+	border:none;
+	margin:0;
+	padding:0;
+	position:absolute;
+	z-index:9999999999;
+}
+.morph-main-wrapper-inner > .scroll-element div {
+	display:block;
+	height:100%;
+	left:0;
+	top:0;
+	width:100%;
+}
+.morph-main-wrapper-inner > .scroll-element.scroll-x {
+	bottom:0;
+	height:8px;
+	left:0;
+	width:100%;
+}
+.morph-main-wrapper-inner > .scroll-element.scroll-y {
+	height:100%;
+	right:2px;
+	top:2px;
+    bottom:30px;
+	width:5px;
+}
+.morph-main-wrapper-inner > .scroll-element .scroll-element_outer {
+	overflow:hidden;
+}
+.morph-main-wrapper-inner > .scroll-element .scroll-element_outer,
+.morph-main-wrapper-inner > .scroll-element .scroll-element_track,
+.morph-main-wrapper-inner > .scroll-element .scroll-bar {
+	-webkit-border-radius:8px;
+	-moz-border-radius:8px;
+	border-radius:8px;
+}
+.morph-main-wrapper-inner > .scroll-element .scroll-element_track,
+.morph-main-wrapper-inner > .scroll-element .scroll-bar {
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+	filter:alpha(opacity=50);
+	opacity:0.5;
+}
+.morph-main-wrapper-inner > .scroll-element .scroll-element_track { background-color:#E7E7E7; }
+.morph-main-wrapper-inner > .scroll-element .scroll-bar { background-color:#c2c2c2; }
+.morph-main-wrapper-inner > .scroll-element:hover .scroll-bar { background-color:#919191; }
+.morph-main-wrapper-inner > .scroll-element.scroll-draggable .scroll-bar { background-color:#919191; }
+
+/* update scrollbar offset if both scrolls are visible */
+.morph-main-wrapper-inner > .scroll-element.scroll-x.scroll-scrolly_visible .scroll-element_track { left:-12px; }
+.morph-main-wrapper-inner > .scroll-element.scroll-y.scroll-scrollx_visible .scroll-element_track { top:-12px; }
+
+.morph-main-wrapper-inner > .scroll-element.scroll-x.scroll-scrolly_visible .scroll-element_size { left: -12px; }
+.morph-main-wrapper-inner > .scroll-element.scroll-y.scroll-scrollx_visible .scroll-element_size { top: -12px; }

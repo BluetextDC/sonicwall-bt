@@ -1,0 +1,227 @@
+// Product catalog
+.panel-prd-catalog {
+  .panel-heading .tit::before {
+    @include material-icons(developer_board)
+  }
+
+  // Sub Panel 2
+  .sub-panel-box {
+    background-color: $plugin-sub-sec-bg;
+    padding: $panel-body-padding;
+    margin-bottom: $form-group-space-bottom;
+    @include clearfix;
+    
+    .tit {
+      text-transform: uppercase;
+      margin-bottom: $general-margin*2; 
+    }
+
+    .sub-tit {
+      text-transform: none;
+      font-size: $sub-headings-font-size;
+    }
+
+    .radio {
+      text-align: left;
+      margin-right: $panel-body-padding;
+    }
+
+    .control-wrap,
+    .sub-form-group,
+    .panel-body {
+      padding: 0;
+    }
+    
+    .panel {
+      background-color: $panel-bg;
+      padding: $panel-body-padding*2;
+      @include shadow-z-1;
+
+      .multiple-fields-inline {
+        margin: $general-margin 0;
+        &:last-child {
+          margin: 0;
+          .control-label,
+          .control-wrap {
+            margin-top: $field-radio-space-Y;
+          }
+        }
+        &:first-child {
+          margin-top: 0;
+          .form-control {
+            margin-top: 0;
+          }
+        }
+      }
+    }
+  }
+  .new-fb-catalog {
+    .form-control {
+      width: 100%;
+    }
+    .control-label {
+      width: auto;
+      text-align: left;
+    }
+  }
+
+  .advanced-options {
+    .sub-tit {
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+  }
+
+  //Footer inside .panel-body
+  .panel-footer {
+    background-color: $panel-bg;
+    margin-top: 0px;
+    margin-right: -$panel-body-padding;
+    margin-bottom: -$panel-body-padding;
+    margin-left: -$panel-body-padding;
+  }
+
+  //toggle sub panel
+  .toggle-sub-panel {
+    .control-wrap {
+      @include flexbox;
+      padding-top: $mdb-input-padding-base-vertical;
+    }
+  }
+
+}// End Product catalog
+
+// Generate feed
+.panel-feed-created  {
+  .panel-heading .tit::before {
+    @include material-icons(developer_board)
+  }
+  &.form-horizontal {
+    .data-group {
+
+      .data {
+        width: auto;
+        margin-bottom: 0;
+        padding-right: 0;
+        padding-left: 0;
+        @media screen and (min-width: $screen-md-min) {
+          padding-left: $panel-body-padding;
+        }
+      }
+      .btn {
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+      &.with-actions {
+        .data,
+        .value {
+          display: inline-block;
+          float: none;
+        }
+        .value-info {
+          margin-right: $panel-body-padding;
+          &.text-status-pending,
+          &.text-danger {
+            a {
+              color: inherit;
+              border-bottom-style: dotted;
+              border-bottom-width: 1px;
+              &:hover {
+                border-bottom: 0;
+              }
+            }
+          }
+        }
+      }
+    }
+    .actions {
+      display: inline-block;
+    }
+    .multiple-fields-inline {
+      .btn {
+        margin-top: 0; 
+        margin-bottom: 0; 
+      }
+    }
+    .value {
+      width: auto;
+      display: inline-block;
+      padding-left: 0;
+      @media screen and (min-width: $screen-md-min) {
+        float: left;
+        padding-left: $panel-body-padding;
+      }
+    }
+  }
+  &.panel {
+    .prd-feed-number {
+      font-weight: $default-font-weight-semibold;
+    }
+  }
+  .form-group {
+    .set-refresh {
+      padding-right: $panel-body-padding;
+      padding-left: $panel-body-padding;
+      @media screen and (min-width: $screen-md-min) {
+        padding: 0;
+      }
+    }
+  }
+  .url-feed-alert {
+   &.loading-data {
+     &::after {
+      color: $black;
+      font-size: $headings-font-size;
+     }
+   }
+  }
+  .multiple-fields-inline {
+    small {
+      margin: 0 $general-margin;
+    }
+  }
+  .data-group-main {
+    .data,
+    .value {
+      font-size: 16px;
+    }
+  }
+  hr {
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+}
+
+// Product catalog Subheader after upgrade 
+.upgraded-product-catalog {
+  padding: 15px;
+  .jumbotron-body {
+    margin: 0px;
+  }
+  .tit {
+    font-size: $headings-font-size +2;
+    text-transform: uppercase;
+  }
+
+  p {
+    font-size: floor($font-size-base +2);
+  }
+  //dude prodouct catalog
+  &.dude-prd-catalog {
+    min-height: 1px;
+    $this__walter-W: 300px;
+    padding: $panel-body-padding ;
+    
+    @media screen and (min-width: $screen-md-min) {
+      min-height: 3;
+      padding-right: $this__walter-W;
+      &::before {
+        background: url('../img/walter-prd-catalog.png') no-repeat 50% 50%;
+        background-size: contain;
+        width: $this__walter-W;
+      }
+    }
+  }
+}

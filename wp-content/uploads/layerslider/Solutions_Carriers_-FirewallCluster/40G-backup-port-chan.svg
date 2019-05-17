@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="91px" height="32px" viewBox="0 0 91 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>40G backup port chan</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" font-family="Nunito-Bold, Nunito" font-size="14" font-weight="bold" line-spacing="16">
+        <g id="text" transform="translate(0.000000, -493.000000)" fill="#FFFFFF">
+            <text id="40G-backup-port-chan">
+                <tspan x="6.526" y="506">40G backup</tspan>
+                <tspan x="5" y="522">port channel</tspan>
+            </text>
+        </g>
+    </g>
+</svg>

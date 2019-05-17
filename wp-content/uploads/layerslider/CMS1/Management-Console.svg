@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="160px" height="18px" viewBox="0 0 160 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Management Console</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M-2551,-8087 L10272,-8087 L10272,5904 L-2551,5904 L-2551,-8087 Z" id="path-1"></path>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="12823" height="13991" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <use id="Rectangle-5" stroke="#979797" mask="url(#mask-2)" stroke-width="12" stroke-dasharray="15,15" xlink:href="#path-1"></use>
+        <g id="Group-21" transform="translate(-100.000000, -2.000000)" fill="#000000" font-family="Nunito-Regular, Nunito" font-size="16" font-weight="normal">
+            <text id="Management-Console">
+                <tspan x="102" y="16">Management Console</tspan>
+            </text>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 74 132" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;">
+    <g transform="matrix(1,0,0,1,-991,-771)">
+        <g transform="matrix(1,0,0,1,27,27)">
+            <g id="Mobile">
+                <path id="Fill-50" d="M1018.39,780.919C1026.23,780.919 1030.16,784.884 1030.16,792.802L1030.16,856.186C1030.16,864.116 1026.23,868.07 1018.39,868.07L991.36,868.07C983.517,868.07 979.785,864.116 979.785,856.186L979.785,792.802C979.785,784.884 983.517,780.919 991.36,780.919L1018.39,780.919ZM972,788.837L972,860.151C972,868.897 979.516,876 987.687,876L1022.31,876C1030.97,876 1038,868.903 1038,860.151L1038,788.837C1038,780.091 1030.97,773 1022.31,773L987.687,773C979.03,773 972,780.091 972,788.837Z" style="fill:rgb(99,101,105);"/>
+                <path id="Stroke-52" d="M987,778L987,767" style="fill:none;stroke:rgb(99,101,105);stroke-width:10.89px;"/>
+                <path id="Stroke-54" d="M988,790L1021,790" style="fill:none;stroke:rgb(99,101,105);stroke-width:6.71px;stroke-linejoin:round;"/>
+            </g>
+        </g>
+    </g>
+</svg>

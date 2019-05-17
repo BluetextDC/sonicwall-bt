@@ -1,0 +1,20 @@
+# Translation of Plugins - Lazy Load - Stable (latest release) in Spanish (Spain)
+# This file is distributed under the same license as the Plugins - Lazy Load - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2019-01-14 20:49:10+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: GlotPress/2.4.0-alpha\n"
+"Language: es\n"
+"Project-Id-Version: Plugins - Lazy Load - Stable (latest release)\n"
+
+#. Description of the plugin/theme
+msgid "Lazy load images to improve page load times. Uses jQuery.sonar to only load an image when it's visible in the viewport."
+msgstr "Difiere la carga de imágenes para mejorar los tiempos de carga. Utiliza jQuery.sonar para cargar cada imagen sólo cuando es visible."
+
+#. Plugin Name of the plugin/theme
+msgid "Lazy Load"
+msgstr "Lazy Load"

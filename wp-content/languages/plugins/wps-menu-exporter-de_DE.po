@@ -1,0 +1,36 @@
+# Translation of Plugins - WPS Menu Exporter - Stable (latest release) in German
+# This file is distributed under the same license as the Plugins - WPS Menu Exporter - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2019-03-21 15:41:11+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: GlotPress/2.4.0-alpha\n"
+"Language: de\n"
+"Project-Id-Version: Plugins - WPS Menu Exporter - Stable (latest release)\n"
+
+#. Author URI of the plugin
+msgid "https://wpserveur.net"
+msgstr "https://wpserveur.net"
+
+#. Author of the plugin
+msgid "WPServeur, NicolasKulka"
+msgstr "WPServeur, NicolasKulka"
+
+#. Description of the plugin
+msgid "WPS Menu Exporter permet d'exporter les menus WordPress."
+msgstr "WPS Menu Exporter ermöglicht das Exportieren von WordPress-Menüs."
+
+#. Plugin Name of the plugin
+msgid "WPS Menu Exporter"
+msgstr "WPS Menu Exporter"
+
+#: wps-menu-exporter.php:40
+msgid "Do you like plugin WPS Menu Exporter? <br> Thank you for taking a few seconds to note us on"
+msgstr "Gefällt dir WPS Menu Exporter? <br> Danke, dass du es uns kurz mitteilst"
+
+#: classes/plugin.php:54
+msgid "Export"
+msgstr "Export"

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 153 335" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;">
+    <g transform="matrix(1,0,0,1,-963,-53)">
+        <g>
+            <g transform="matrix(1,0,0,1,258.493,-618.266)">
+                <text x="728.382px" y="685.687px" style="font-family:'Nunito-Regular', 'Nunito';font-size:20px;fill:white;">Kno<tspan x="763.282px " y="685.687px ">w</tspan>n w<tspan x="813.362px " y="685.687px ">e</tspan>b</text>
+                <text x="705.462px" y="705.687px" style="font-family:'Nunito-Regular', 'Nunito';font-size:20px;fill:white;">thr<tspan x="730.482px " y="705.687px ">e</tspan>at pr<tspan x="782.082px 792.502px 802.662px " y="705.687px 705.687px 705.687px ">eve</tspan>ntion</text>
+            </g>
+            <g transform="matrix(1,0,0,1,258.193,-543.62)">
+                <text x="724.982px" y="685.687px" style="font-family:'Nunito-Regular', 'Nunito';font-size:20px;fill:white;">Anti-<tspan x="771.122px 781.542px 791.642px " y="685.687px 685.687px 685.687px ">eva</tspan>sion</text>
+                <text x="736.752px" y="705.687px" style="font-family:'Nunito-Regular', 'Nunito';font-size:20px;fill:white;">pr<tspan x="755.252px " y="705.687px ">o</tspan>tection</text>
+            </g>
+            <g transform="matrix(1,0,0,1,258.213,-470.119)">
+                <text x="709.802px" y="685.687px" style="font-family:'Nunito-Regular', 'Nunito';font-size:20px;fill:white;">Application load</text>
+                <text x="738.892px" y="705.687px" style="font-family:'Nunito-Regular', 'Nunito';font-size:20px;fill:white;">balancing</text>
+            </g>
+            <g transform="matrix(1,0,0,1,257.733,-395.953)">
+                <text x="760.572px" y="685.687px" style="font-family:'Nunito-Regular', 'Nunito';font-size:20px;fill:white;">Data</text>
+                <text x="736.752px" y="705.687px" style="font-family:'Nunito-Regular', 'Nunito';font-size:20px;fill:white;">pr<tspan x="755.252px " y="705.687px ">o</tspan>tection</text>
+            </g>
+            <g transform="matrix(1,0,0,1,257.733,-321.666)">
+                <text x="762.852px" y="685.687px" style="font-family:'Nunito-Regular', 'Nunito';font-size:20px;fill:white;">DoS</text>
+                <text x="736.752px" y="705.687px" style="font-family:'Nunito-Regular', 'Nunito';font-size:20px;fill:white;">pr<tspan x="755.252px " y="705.687px ">o</tspan>tection</text>
+            </g>
+        </g>
+    </g>
+</svg>

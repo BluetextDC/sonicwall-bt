@@ -1,0 +1,266 @@
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+	<link href="https://www.sonicwall.com/CMSPages/GetResource.ashx?stylesheetname=SWfoundation" type="text/css" rel="stylesheet"/>
+	<script>
+	$( function() {
+		$( "#slider-sites" ).slider({
+			range: "min",
+			min: 1,
+			max: 5000,
+			value: 1,
+			slide: function( event, ui ) {
+				$( "#amount-sites" ).val( ui.value );
+				trigger_calc();
+			}
+		});
+		$( "#amount-sites" ).val( $( "#slider-sites" ).slider( "value" ) );
+		trigger_calc();
+	} );
+	
+	$( function() {
+		$( "#slider-bandwidth" ).slider({
+			range: "min",
+			min: 1,
+			max: 200,
+			value: 1,
+			slide: function( event, ui ) {
+				$( "#amount-bandwidth" ).val( ui.value );
+				trigger_calc();
+			}
+		});
+		$( "#amount-bandwidth" ).val( $( "#slider-bandwidth" ).slider( "value" ) );
+		trigger_calc();
+	} );
+	
+	$( function() {
+		$( "#slider-month" ).slider({
+			range: "min",
+			min: 50,
+			max: 10000,
+			value: 50,
+			slide: function( event, ui ) {
+				$( "#amount-month" ).val( ui.value );
+				trigger_calc();
+			}
+		});
+		$( "#amount-month" ).val( $( "#slider-month" ).slider( "value" ) );
+		trigger_calc();
+	} );
+	
+	$( function() {
+		$( "#slider-internet" ).slider({
+			range: "min",
+			min: 1,
+			max: 1500,
+			value: 1,
+			slide: function( event, ui ) {
+				$( "#amount-internet" ).val( ui.value );
+				trigger_calc();
+			}
+		});
+		$( "#amount-internet" ).val( $( "#slider-internet" ).slider( "value" ) );
+		trigger_calc();
+	} );
+	
+	$( function() {
+		$( "#slider-month-internet" ).slider({
+			range: "min",
+			min: 0,
+			max: 1000,
+			value: 0,
+			slide: function( event, ui ) {
+				$( "#amount-month-internet" ).val( ui.value );
+				trigger_calc();
+			}
+		});
+		$( "#amount-month-internet" ).val( $( "#slider-month-internet" ).slider( "value" ) );
+		trigger_calc();
+	} );
+	
+	$( function() {
+		$( "#slider-MPLS" ).slider({
+			range: "min",
+			min: 0,
+			max: 100,
+			value: 100,
+			slide: function( event, ui ) {
+				$( "#amount-MPLS" ).val( ui.value );
+				trigger_calc();
+			}
+		});
+		$( "#amount-MPLS" ).val( $( "#slider-MPLS" ).slider( "value" ) );
+		trigger_calc();
+	} );
+	
+	trigger_calc = function(){
+		var amount_sites = parseInt($('#amount-sites').val());
+		var amount_bandwidth = parseInt($('#amount-bandwidth').val());
+		var amount_month = parseInt($('#amount-month').val());
+		var amount_internet = parseInt($('#amount-internet').val());
+		var amount_month_internet = parseInt($('#amount-month-internet').val())
+		var amount_MPLS = parseInt($('#amount-MPLS').val());
+		
+	
+		cmc = (amount_month + amount_month_internet) * amount_sites;
+		pmc = Math.round((amount_month*(100-amount_MPLS)/100 + amount_month_internet) * amount_sites);
+		
+		mcr = Math.round((cmc-pmc)/cmc *100);
+		tys = Math.round((cmc-pmc) * 36);
+		$('#CMC').val(cmc);
+		$('#PMC').val(pmc);
+		$('#MCR').val(mcr);
+		$('#TYS').val(tys);
+	
+	
+	}
+	
+	</script>
+
+<style type="text/css">
+  .gms-container{
+    border: 1px solid #ccc;
+    padding: 30px 60px 40px 60px;
+  }
+  .mb-40{
+    margin-bottom: 40px;
+  }
+  div#output-box {
+    margin-top: 30px;
+    background-color: #dbdfe1;
+  }
+  .gms-title {
+    margin: 10px 25px 25px;
+    font-size: 2rem;
+    font-weight: 300;
+    text-transform: capitalize;
+  }
+  #output-box input {
+    background-color: white;
+  }
+  .has-tip {
+    background: none;
+    border-radius: inherit;
+    height: inherit;
+    width: inherit;
+    text-transform: inherit;
+    font-size: 1rem;
+    margin-left: 5px;
+  }
+  [type='number'] {
+    background-color: #d9e0e2;
+    box-shadow: none;
+    border: none;
+    width: 100%;
+    padding: .5rem .5rem .5rem 1rem;
+    color: #12293a;
+  }
+  .defix:lang(de) {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  
+  
+  
+  
+  .questions p.one::before {
+		background: url(https://sonicwall-web.s3-accelerate.amazonaws.com/sonicwall.com/media/images/sd-wan-calculator/1.png) top left no-repeat;
+		background-size: contain;
+	}
+	
+	.questions p.two::before {
+		background: url(https://sonicwall-web.s3-accelerate.amazonaws.com/sonicwall.com/media/images/sd-wan-calculator/2.png) top left no-repeat;
+		background-size: contain;
+	}
+	
+	.questions p.three::before {
+		background: url(https://sonicwall-web.s3-accelerate.amazonaws.com/sonicwall.com/media/images/sd-wan-calculator/3.png) top left no-repeat;
+		background-size: contain;
+	}
+	
+	.questions p.four::before {
+		background: url(https://sonicwall-web.s3-accelerate.amazonaws.com/sonicwall.com/media/images/sd-wan-calculator/4.png) top left no-repeat;
+		background-size: contain;
+	}
+	
+	.questions p.five::before {
+		background: url(https://sonicwall-web.s3-accelerate.amazonaws.com/sonicwall.com/media/images/sd-wan-calculator/5.png) top left no-repeat;
+		background-size: contain;
+	}
+	
+	.questions p.six::before {
+		background: url(https://sonicwall-web.s3-accelerate.amazonaws.com/sonicwall.com/media/images/sd-wan-calculator/6.png) top left no-repeat;
+		background-size: contain;
+	}
+	
+	.questions p::before {
+		content: "";
+		width: 29px;
+		height: 29px;
+		display: inline-block;
+		vertical-align: top;
+		margin-right: 15px;
+
+	}
+	
+	.slider-row p a {
+		color: #CB1C22;
+		margin-left: 8px;
+	}
+
+	.fa-info-circle::before {
+		content: "f05a";
+        font: normal normal normal 14px/1 FontAwesome;
+	}
+  	.ui-slider-horizontal .ui-slider-handle {
+		border-radius: 200% !important;
+	}
+
+	.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active {
+		border: 3px solid #c5c5c5;
+		background: #fff;
+	}
+  
+  .q-val .unit {
+    font-size: 17px;
+    line-height: 32px;
+    max-width: 5%;
+    margin-left: 10px;
+    position: absolute;
+    left: 17px;
+    top: 3px;
+}
+  
+  .large-2 {
+		position: relative;
+	}
+  .sd-wan-calc{max-width:88rem;}
+  
+  .form input[type="text"], .form input[type="number"] {
+		padding: .5rem .5rem .5rem 1rem;
+		text-align: right;
+	}
+
+	.gms-container {
+		padding: 30px 10px 40px 10px;
+	}
+  
+  .ui-widget.ui-widget-content {
+		margin-top: 0.8rem;
+	}
+  
+  input[type="number"] {
+      -moz-appearance: textfield;
+      border-radius: 5px;
+  }
+  
+  input {
+    -webkit-appearance: textfield;
+    background-color: white;
+    -webkit-rtl-ordering: logical;
+    cursor: text;
+
+}
+  
+</style>
+

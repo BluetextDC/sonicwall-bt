@@ -1,0 +1,867 @@
+<Types>
+    <Type name="Firewall">
+        <Products>
+            <Product name="TZ 100 Series">
+                <UpgradeProducts>
+                    <UpgradeProduct>SOHO Series</UpgradeProduct>
+                    <UpgradeProduct>SOHO 250 Series</UpgradeProduct>
+                    <UpgradeProduct>TZ300 Series</UpgradeProduct>
+                    <UpgradeProduct>TZ350 Series</UpgradeProduct>
+                    <UpgradeProduct>TZ400 Series</UpgradeProduct>
+                    <UpgradeProduct>TZ500 Series</UpgradeProduct>
+                    <UpgradeProduct>TZ600 Series</UpgradeProduct>
+                </UpgradeProducts>
+            </Product>
+            <Product name="TZ 105 Series">
+                <UpgradeProducts>
+                    <UpgradeProduct>SOHO Series</UpgradeProduct>
+                    <UpgradeProduct>SOHO 250 Series</UpgradeProduct>
+                    <UpgradeProduct>TZ300 Series</UpgradeProduct>
+                    <UpgradeProduct>TZ350 Series</UpgradeProduct>
+                    <UpgradeProduct>TZ400 Series</UpgradeProduct>
+                    <UpgradeProduct>TZ500 Series</UpgradeProduct>
+                    <UpgradeProduct>TZ600 Series</UpgradeProduct>
+                </UpgradeProducts>
+            </Product>
+            <Product name="TZ 150 Series">
+                <UpgradeProducts>
+                    <UpgradeProduct>SOHO Series</UpgradeProduct>
+                    <UpgradeProduct>SOHO 250 Series</UpgradeProduct>
+                    <UpgradeProduct>TZ300 Series</UpgradeProduct>
+                    <UpgradeProduct>TZ350 Series</UpgradeProduct>
+                    <UpgradeProduct>TZ400 Series</UpgradeProduct>
+                    <UpgradeProduct>TZ500 Series</UpgradeProduct>
+                    <UpgradeProduct>TZ600 Series</UpgradeProduct>
+                </UpgradeProducts>
+            </Product>
+            <!--<Product name="TZ 150W Series">
+                <UpgradeProducts>
+                    <UpgradeProduct>SOHO Series</UpgradeProduct>
+                    <UpgradeProduct>TZ300 Series</UpgradeProduct>
+                    <UpgradeProduct>TZ400 Series</UpgradeProduct>
+                    <UpgradeProduct>TZ500 Series</UpgradeProduct>
+                </UpgradeProducts>
+            </Product>-->
+            <Product name="TZ 170 Series">
+                <UpgradeProducts>
+                    <UpgradeProduct>SOHO Series</UpgradeProduct>
+                    <UpgradeProduct>SOHO 250 Series</UpgradeProduct>
+                    <UpgradeProduct>TZ300 Series</UpgradeProduct>
+                    <UpgradeProduct>TZ350 Series</UpgradeProduct>
+                    <UpgradeProduct>TZ400 Series</UpgradeProduct>
+                    <UpgradeProduct>TZ500 Series</UpgradeProduct>
+                    <UpgradeProduct>TZ600 Series</UpgradeProduct>
+                </UpgradeProducts>
+            </Product>
+            <!--<Product name="TZ 170W Series">
+                <UpgradeProducts>
+                    <UpgradeProduct>SOHO Series</UpgradeProduct>
+                    <UpgradeProduct>TZ300 Series</UpgradeProduct>
+                    <UpgradeProduct>TZ400 Series</UpgradeProduct>
+                    <UpgradeProduct>TZ500 Series</UpgradeProduct>
+                </UpgradeProducts>
+            </Product>
+            <Product name="TZ 170SP Series">
+                <UpgradeProducts>
+                    <UpgradeProduct>SOHO Series</UpgradeProduct>
+                    <UpgradeProduct>TZ300 Series</UpgradeProduct>
+                    <UpgradeProduct>TZ400 Series</UpgradeProduct>
+                    <UpgradeProduct>TZ500 Series</UpgradeProduct>
+                </UpgradeProducts>
+            </Product>
+            <Product name="TZ 170SPW Series">
+                <UpgradeProducts>
+                    <UpgradeProduct>SOHO Series</UpgradeProduct>
+                    <UpgradeProduct>TZ300 Series</UpgradeProduct>
+                    <UpgradeProduct>TZ400 Series</UpgradeProduct>
+                    <UpgradeProduct>TZ500 Series</UpgradeProduct>
+                </UpgradeProducts>
+            </Product>-->
+            <Product name="TZ 180 Series">
+                <UpgradeProducts>
+                    <UpgradeProduct>SOHO Series</UpgradeProduct>
+                    <UpgradeProduct>SOHO 250 Series</UpgradeProduct>
+                    <UpgradeProduct>TZ300 Series</UpgradeProduct>
+                    <UpgradeProduct>TZ350 Series</UpgradeProduct>
+                    <UpgradeProduct>TZ400 Series</UpgradeProduct>
+                    <UpgradeProduct>TZ500 Series</UpgradeProduct>
+                    <UpgradeProduct>TZ600 Series</UpgradeProduct>
+                </UpgradeProducts>
+            </Product>
+            <!--<Product name="TZ 180W Series">
+                <UpgradeProducts>
+                    <UpgradeProduct>SOHO Series</UpgradeProduct>
+                    <UpgradeProduct>TZ300 Series</UpgradeProduct>
+                    <UpgradeProduct>TZ400 Series</UpgradeProduct>
+                    <UpgradeProduct>TZ500 Series</UpgradeProduct>
+                </UpgradeProducts>
+            </Product>-->
+            <Product name="TZ 190 Series">
+                <UpgradeProducts>
+                    <UpgradeProduct>SOHO Series</UpgradeProduct>
+                    <UpgradeProduct>SOHO 250 Series</UpgradeProduct>
+                    <UpgradeProduct>TZ300 Series</UpgradeProduct>
+                    <UpgradeProduct>TZ350 Series</UpgradeProduct>
+                    <UpgradeProduct>TZ400 Series</UpgradeProduct>
+                    <UpgradeProduct>TZ500 Series</UpgradeProduct>
+                    <UpgradeProduct>TZ600 Series</UpgradeProduct>
+                </UpgradeProducts>
+            </Product>
+            <!--<Product name="TZ 190W Series">
+                <UpgradeProducts>
+                    <UpgradeProduct>SOHO Series</UpgradeProduct>
+                    <UpgradeProduct>TZ300 Series</UpgradeProduct>
+                    <UpgradeProduct>TZ400 Series</UpgradeProduct>
+                    <UpgradeProduct>TZ500 Series</UpgradeProduct>
+                </UpgradeProducts>
+            </Product>-->
+            <Product name="TZ 200 Series">
+                <UpgradeProducts>
+                    <UpgradeProduct>SOHO Series</UpgradeProduct>
+                    <UpgradeProduct>SOHO 250 Series</UpgradeProduct>
+                    <UpgradeProduct>TZ300 Series</UpgradeProduct>
+                    <UpgradeProduct>TZ350 Series</UpgradeProduct>
+                    <UpgradeProduct>TZ400 Series</UpgradeProduct>
+                    <UpgradeProduct>TZ500 Series</UpgradeProduct>
+                    <UpgradeProduct>TZ600 Series</UpgradeProduct>
+                </UpgradeProducts>
+            </Product>
+            <Product name="TZ 205 Series">
+                <UpgradeProducts>
+                    <UpgradeProduct>SOHO Series</UpgradeProduct>
+                    <UpgradeProduct>SOHO 250 Series</UpgradeProduct>
+                    <UpgradeProduct>TZ300 Series</UpgradeProduct>
+                    <UpgradeProduct>TZ350 Series</UpgradeProduct>
+                    <UpgradeProduct>TZ400 Series</UpgradeProduct>
+                    <UpgradeProduct>TZ500 Series</UpgradeProduct>
+                    <UpgradeProduct>TZ600 Series</UpgradeProduct>
+                </UpgradeProducts>
+            </Product>
+            <Product name="TZ 210 Series">
+                <UpgradeProducts>
+                    <UpgradeProduct>SOHO Series</UpgradeProduct>
+                    <UpgradeProduct>SOHO 250 Series</UpgradeProduct>
+                    <UpgradeProduct>TZ300 Series</UpgradeProduct>
+                    <UpgradeProduct>TZ350 Series</UpgradeProduct>
+                    <UpgradeProduct>TZ400 Series</UpgradeProduct>
+                    <UpgradeProduct>TZ500 Series</UpgradeProduct>
+                    <UpgradeProduct>TZ600 Series</UpgradeProduct>
+                </UpgradeProducts>
+            </Product>
+            <Product name="TZ 215 Series">
+                <UpgradeProducts>
+                    <UpgradeProduct>SOHO Series</UpgradeProduct>
+                    <UpgradeProduct>SOHO 250 Series</UpgradeProduct>
+                    <UpgradeProduct>TZ300 Series</UpgradeProduct>
+                    <UpgradeProduct>TZ350 Series</UpgradeProduct>
+                    <UpgradeProduct>TZ400 Series</UpgradeProduct>
+                    <UpgradeProduct>TZ500 Series</UpgradeProduct>
+                    <UpgradeProduct>TZ600 Series</UpgradeProduct>
+                </UpgradeProducts>
+            </Product>
+            <Product name="TZ300 Series">
+                <UpgradeProducts>
+                    <UpgradeProduct>SOHO 250 Series</UpgradeProduct>
+                    <UpgradeProduct>TZ300 Series</UpgradeProduct>
+                    <UpgradeProduct>TZ350 Series</UpgradeProduct>
+                    <UpgradeProduct>TZ400 Series</UpgradeProduct>
+                    <UpgradeProduct>TZ500 Series</UpgradeProduct>
+                    <UpgradeProduct>TZ600 Series</UpgradeProduct>
+                </UpgradeProducts>
+            </Product>
+            <Product name="TZ400 Series">
+                <UpgradeProducts>
+                    <UpgradeProduct>SOHO 250 Series</UpgradeProduct>
+                    <UpgradeProduct>TZ300 Series</UpgradeProduct>
+                    <UpgradeProduct>TZ350 Series</UpgradeProduct>
+                    <UpgradeProduct>TZ400 Series</UpgradeProduct>
+                    <UpgradeProduct>TZ500 Series</UpgradeProduct>
+                    <UpgradeProduct>TZ600 Series</UpgradeProduct>
+                </UpgradeProducts>
+            </Product>
+            <Product name="TZ500 Series">
+                <UpgradeProducts>
+                    <UpgradeProduct>SOHO 250 Series</UpgradeProduct>
+                    <UpgradeProduct>TZ300 Series</UpgradeProduct>
+                    <UpgradeProduct>TZ350 Series</UpgradeProduct>
+                    <UpgradeProduct>TZ400 Series</UpgradeProduct>
+                    <UpgradeProduct>TZ500 Series</UpgradeProduct>
+                    <UpgradeProduct>TZ600 Series</UpgradeProduct>
+                </UpgradeProducts>
+            </Product>
+            <Product name="TZ600 Series">
+                <UpgradeProducts>
+                    <UpgradeProduct>SOHO 250 Series</UpgradeProduct>
+                    <UpgradeProduct>TZ300 Series</UpgradeProduct>
+                    <UpgradeProduct>TZ350 Series</UpgradeProduct>
+                    <UpgradeProduct>TZ400 Series</UpgradeProduct>
+                    <UpgradeProduct>TZ500 Series</UpgradeProduct>
+                    <UpgradeProduct>TZ600 Series</UpgradeProduct>
+                </UpgradeProducts>
+            </Product>
+            <Product name="TELE Series">
+                <UpgradeProducts>
+                    <UpgradeProduct>SOHO Series</UpgradeProduct>
+                    <UpgradeProduct>SOHO 250 Series</UpgradeProduct>
+                    <UpgradeProduct>TZ300 Series</UpgradeProduct>
+                    <UpgradeProduct>TZ350 Series</UpgradeProduct>
+                    <UpgradeProduct>TZ400 Series</UpgradeProduct>
+                    <UpgradeProduct>TZ500 Series</UpgradeProduct>
+                    <UpgradeProduct>TZ600 Series</UpgradeProduct>
+                </UpgradeProducts>
+            </Product>
+            <Product name="TELE2 Series">
+                <UpgradeProducts>
+                    <UpgradeProduct>SOHO Series</UpgradeProduct>
+                    <UpgradeProduct>SOHO 250 Series</UpgradeProduct>
+                    <UpgradeProduct>TZ300 Series</UpgradeProduct>
+                    <UpgradeProduct>TZ350 Series</UpgradeProduct>
+                    <UpgradeProduct>TZ400 Series</UpgradeProduct>
+                    <UpgradeProduct>TZ500 Series</UpgradeProduct>
+                    <UpgradeProduct>TZ600 Series</UpgradeProduct>
+                </UpgradeProducts>
+            </Product>
+            <Product name="TELE3 Series">
+                <UpgradeProducts>
+                    <UpgradeProduct>SOHO Series</UpgradeProduct>
+                    <UpgradeProduct>SOHO 250 Series</UpgradeProduct>
+                    <UpgradeProduct>TZ300 Series</UpgradeProduct>
+                    <UpgradeProduct>TZ350 Series</UpgradeProduct>
+                    <UpgradeProduct>TZ400 Series</UpgradeProduct>
+                    <UpgradeProduct>TZ500 Series</UpgradeProduct>
+                    <UpgradeProduct>TZ600 Series</UpgradeProduct>
+                </UpgradeProducts>
+            </Product>
+            <Product name="TELE3 SP Series">
+                <UpgradeProducts>
+                    <UpgradeProduct>SOHO Series</UpgradeProduct>
+                    <UpgradeProduct>SOHO 250 Series</UpgradeProduct>
+                    <UpgradeProduct>TZ300 Series</UpgradeProduct>
+                    <UpgradeProduct>TZ350 Series</UpgradeProduct>
+                    <UpgradeProduct>TZ400 Series</UpgradeProduct>
+                    <UpgradeProduct>TZ500 Series</UpgradeProduct>
+                    <UpgradeProduct>TZ600 Series</UpgradeProduct>
+                </UpgradeProducts>
+            </Product>
+            <Product name="SOHO Series">
+                <UpgradeProducts>
+                    <UpgradeProduct>SOHO Series</UpgradeProduct>
+                    <UpgradeProduct>SOHO 250 Series</UpgradeProduct>
+                    <UpgradeProduct>TZ300 Series</UpgradeProduct>
+                    <UpgradeProduct>TZ350 Series</UpgradeProduct>
+                    <UpgradeProduct>TZ400 Series</UpgradeProduct>
+                    <UpgradeProduct>TZ500 Series</UpgradeProduct>
+                    <UpgradeProduct>TZ600 Series</UpgradeProduct>
+                </UpgradeProducts>
+            </Product>
+            <Product name="SOHO2 Series">
+                <UpgradeProducts>
+                    <UpgradeProduct>SOHO Series</UpgradeProduct>
+                    <UpgradeProduct>SOHO 250 Series</UpgradeProduct>
+                    <UpgradeProduct>TZ300 Series</UpgradeProduct>
+                    <UpgradeProduct>TZ350 Series</UpgradeProduct>
+                    <UpgradeProduct>TZ400 Series</UpgradeProduct>
+                    <UpgradeProduct>TZ500 Series</UpgradeProduct>
+                    <UpgradeProduct>TZ600 Series</UpgradeProduct>
+                </UpgradeProducts>
+            </Product>
+            <Product name="SOHO3 Series">
+                <UpgradeProducts>
+                    <UpgradeProduct>SOHO Series</UpgradeProduct>
+                    <UpgradeProduct>SOHO 250 Series</UpgradeProduct>
+                    <UpgradeProduct>TZ300 Series</UpgradeProduct>
+                    <UpgradeProduct>TZ350 Series</UpgradeProduct>
+                    <UpgradeProduct>TZ400 Series</UpgradeProduct>
+                    <UpgradeProduct>TZ500 Series</UpgradeProduct>
+                    <UpgradeProduct>TZ600 Series</UpgradeProduct>
+                </UpgradeProducts>
+            </Product>
+            <Product name="SOHO TZW Series">
+                <UpgradeProducts>
+                    <UpgradeProduct>SOHO Series</UpgradeProduct>
+                    <UpgradeProduct>SOHO 250 Series</UpgradeProduct>
+                    <UpgradeProduct>TZ300 Series</UpgradeProduct>
+                    <UpgradeProduct>TZ350 Series</UpgradeProduct>
+                    <UpgradeProduct>TZ400 Series</UpgradeProduct>
+                    <UpgradeProduct>TZ500 Series</UpgradeProduct>
+                    <UpgradeProduct>TZ600 Series</UpgradeProduct>
+                </UpgradeProducts>
+            </Product>
+            <Product name="SOHO Telecommuter">
+                <UpgradeProducts>
+                    <UpgradeProduct>SOHO Series</UpgradeProduct>
+                    <UpgradeProduct>SOHO 250 Series</UpgradeProduct>
+                    <UpgradeProduct>TZ300 Series</UpgradeProduct>
+                    <UpgradeProduct>TZ350 Series</UpgradeProduct>
+                    <UpgradeProduct>TZ400 Series</UpgradeProduct>
+                    <UpgradeProduct>TZ500 Series</UpgradeProduct>
+                    <UpgradeProduct>TZ600 Series</UpgradeProduct>
+                </UpgradeProducts>
+            </Product>
+            <Product name="Plus">
+                <UpgradeProducts>
+                    <UpgradeProduct>SOHO Series</UpgradeProduct>
+                    <UpgradeProduct>SOHO 250 Series</UpgradeProduct>
+                    <UpgradeProduct>TZ300 Series</UpgradeProduct>
+                    <UpgradeProduct>TZ350 Series</UpgradeProduct>
+                    <UpgradeProduct>TZ400 Series</UpgradeProduct>
+                    <UpgradeProduct>TZ500 Series</UpgradeProduct>
+                    <UpgradeProduct>TZ600 Series</UpgradeProduct>
+                </UpgradeProducts>
+            </Product>
+            <Product name="DMZ">
+                <UpgradeProducts>
+                    <UpgradeProduct>SOHO Series</UpgradeProduct>
+                    <UpgradeProduct>SOHO 250 Series</UpgradeProduct>
+                    <UpgradeProduct>TZ300 Series</UpgradeProduct>
+                    <UpgradeProduct>TZ350 Series</UpgradeProduct>
+                    <UpgradeProduct>TZ400 Series</UpgradeProduct>
+                    <UpgradeProduct>TZ500 Series</UpgradeProduct>
+                    <UpgradeProduct>TZ600 Series</UpgradeProduct>
+                </UpgradeProducts>
+            </Product>
+            <Product name="XPRS Series">
+                <UpgradeProducts>
+                    <UpgradeProduct>SOHO Series</UpgradeProduct>
+                    <UpgradeProduct>SOHO 250 Series</UpgradeProduct>
+                    <UpgradeProduct>TZ300 Series</UpgradeProduct>
+                    <UpgradeProduct>TZ350 Series</UpgradeProduct>
+                    <UpgradeProduct>TZ400 Series</UpgradeProduct>
+                    <UpgradeProduct>TZ500 Series</UpgradeProduct>
+                    <UpgradeProduct>TZ600 Series</UpgradeProduct>
+                </UpgradeProducts>
+            </Product>
+            <Product name="XPRS2 Series">
+                <UpgradeProducts>
+                    <UpgradeProduct>SOHO Series</UpgradeProduct>
+                    <UpgradeProduct>SOHO 250 Series</UpgradeProduct>
+                    <UpgradeProduct>TZ300 Series</UpgradeProduct>
+                    <UpgradeProduct>TZ350 Series</UpgradeProduct>
+                    <UpgradeProduct>TZ400 Series</UpgradeProduct>
+                    <UpgradeProduct>TZ500 Series</UpgradeProduct>
+                    <UpgradeProduct>TZ600 Series</UpgradeProduct>
+                </UpgradeProducts>
+            </Product>
+            <Product name="PRO">
+                <UpgradeProducts>
+                    <UpgradeProduct>TZ600</UpgradeProduct>
+                    <UpgradeProduct>NS<i>a</i> 2650</UpgradeProduct>
+                    <UpgradeProduct default="true">NS<i>a</i> 3650</UpgradeProduct>
+                </UpgradeProducts>
+            </Product>
+            <Product name="PRO 100">
+                <UpgradeProducts>
+                    <UpgradeProduct>SOHO Series</UpgradeProduct>
+                    <UpgradeProduct>SOHO 250 Series</UpgradeProduct>
+                    <UpgradeProduct>TZ300 Series</UpgradeProduct>
+                    <UpgradeProduct>TZ350 Series</UpgradeProduct>
+                    <UpgradeProduct>TZ400 Series</UpgradeProduct>
+                    <UpgradeProduct>TZ500 Series</UpgradeProduct>
+                    <UpgradeProduct>TZ600 Series</UpgradeProduct>
+                </UpgradeProducts>
+            </Product>
+            <Product name="PRO 200">
+                <UpgradeProducts>
+                    <UpgradeProduct>TZ600</UpgradeProduct>
+                    <UpgradeProduct>NS<i>a</i> 2650</UpgradeProduct>
+                    <UpgradeProduct default="true">NS<i>a</i> 3650</UpgradeProduct>
+                </UpgradeProducts>
+            </Product>
+            <Product name="PRO 300">
+                <UpgradeProducts>
+                    <UpgradeProduct>NS<i>a</i> 2650</UpgradeProduct>
+                    <UpgradeProduct>NS<i>a</i> 3650</UpgradeProduct>
+                    <UpgradeProduct>NS<i>a</i> 4650</UpgradeProduct>
+                </UpgradeProducts>
+            </Product>
+            <Product name="PRO 330">
+                <UpgradeProducts>
+                    <UpgradeProduct>NS<i>a</i> 2650</UpgradeProduct>
+                    <UpgradeProduct>NS<i>a</i> 3650</UpgradeProduct>
+                    <UpgradeProduct>NS<i>a</i> 4650</UpgradeProduct>
+                </UpgradeProducts>
+            </Product>
+            <Product name="PRO 3060">
+                <UpgradeProducts>
+                    <UpgradeProduct>NS<i>a</i> 2650</UpgradeProduct>
+                    <UpgradeProduct>NS<i>a</i> 3650</UpgradeProduct>
+                    <UpgradeProduct>NS<i>a</i> 4650</UpgradeProduct>
+                </UpgradeProducts>
+            </Product>
+            <Product name="PRO 230">
+                <UpgradeProducts>
+                    <UpgradeProduct>TZ600 Series</UpgradeProduct>
+                    <UpgradeProduct>NS<i>a</i> 2650</UpgradeProduct>
+                    <UpgradeProduct default="true">NS<i>a</i> 3650</UpgradeProduct>
+                </UpgradeProducts>
+            </Product>
+            <Product name="PRO 1260">
+                <UpgradeProducts>
+                    <UpgradeProduct>TZ600</UpgradeProduct>
+                    <UpgradeProduct>NS<i>a</i> 2650</UpgradeProduct>
+                    <UpgradeProduct default="true">NS<i>a</i> 3650</UpgradeProduct>
+                </UpgradeProducts>
+            </Product>
+            <Product name="PRO 2040">
+                <UpgradeProducts>
+                    <UpgradeProduct>TZ600</UpgradeProduct>
+                    <UpgradeProduct>NS<i>a</i> 2650</UpgradeProduct>
+                    <UpgradeProduct default="true">NS<i>a</i> 3650</UpgradeProduct>
+                </UpgradeProducts>
+            </Product>
+            <Product name="PRO-VX">
+                <UpgradeProducts>
+                    <UpgradeProduct>NS<i>a</i> 2650</UpgradeProduct>
+                    <UpgradeProduct>NS<i>a</i> 3650</UpgradeProduct>
+                    <UpgradeProduct>NS<i>a</i> 4650</UpgradeProduct>
+                </UpgradeProducts>
+            </Product>
+            <Product name="PRO 4060">
+                <UpgradeProducts>
+                    <UpgradeProduct>NS<i>a</i> 2650</UpgradeProduct>
+                    <UpgradeProduct>NS<i>a</i> 3650</UpgradeProduct>
+                    <UpgradeProduct>NS<i>a</i> 4650</UpgradeProduct>
+                </UpgradeProducts>
+            </Product>
+            <Product name="PRO 4100">
+                <UpgradeProducts>
+                    <UpgradeProduct>NS<i>a</i> 2650</UpgradeProduct>
+                    <UpgradeProduct>NS<i>a</i> 3650</UpgradeProduct>
+                    <UpgradeProduct>NS<i>a</i> 4650</UpgradeProduct>
+                </UpgradeProducts>
+            </Product>
+            <Product name="PRO 5060c">
+                <UpgradeProducts>
+                    <UpgradeProduct>NS<i>a</i> 4650</UpgradeProduct>
+                    <UpgradeProduct>NS<i>a</i> 5650</UpgradeProduct>
+                    <UpgradeProduct default="true">NS<i>a</i> 6650</UpgradeProduct>
+                    <UpgradeProduct>NS<i>a</i> 9250</UpgradeProduct>
+                    <UpgradeProduct>NS<i>a</i> 9450</UpgradeProduct>
+                </UpgradeProducts>
+            </Product>
+            <Product name="PRO 5060f">
+                <UpgradeProducts>
+                    <UpgradeProduct>NS<i>a</i> 4650</UpgradeProduct>
+                    <UpgradeProduct>NS<i>a</i> 5650</UpgradeProduct>
+                    <UpgradeProduct default="true">NS<i>a</i> 6650</UpgradeProduct>
+                    <UpgradeProduct>NS<i>a</i> 9250</UpgradeProduct>
+                    <UpgradeProduct>NS<i>a</i> 9450</UpgradeProduct>
+                </UpgradeProducts>
+            </Product>
+            <Product name="GX250">
+                <UpgradeProducts>
+                    <UpgradeProduct>NS<i>a</i> 2650</UpgradeProduct>
+                    <UpgradeProduct>NS<i>a</i> 3650</UpgradeProduct>
+                    <UpgradeProduct>NS<i>a</i> 4650</UpgradeProduct>
+                </UpgradeProducts>
+            </Product>
+            <Product name="GX650">
+                <UpgradeProducts>
+                    <UpgradeProduct>NS<i>a</i> 4650</UpgradeProduct>
+                    <UpgradeProduct>NS<i>a</i> 5650</UpgradeProduct>
+                    <UpgradeProduct default="true">NS<i>a</i> 6650</UpgradeProduct>
+                    <UpgradeProduct>NS<i>a</i> 9250</UpgradeProduct>
+                    <UpgradeProduct>NS<i>a</i> 9450</UpgradeProduct>
+                </UpgradeProducts>
+            </Product>
+            <Product name="NSA 220 Series">
+                <UpgradeProducts>
+                    <UpgradeProducts>
+                        <UpgradeProduct>SOHO 250 Series</UpgradeProduct>
+                        <UpgradeProduct>TZ300 Series</UpgradeProduct>
+                        <UpgradeProduct>TZ350 Series</UpgradeProduct>
+                        <UpgradeProduct>TZ400 Series</UpgradeProduct>
+                        <UpgradeProduct>TZ500 Series</UpgradeProduct>
+                        <UpgradeProduct>TZ600 Series</UpgradeProduct>
+                        <UpgradeProduct>NS<i>a</i> 2650</UpgradeProduct>
+                    </UpgradeProducts>
+                </UpgradeProducts>
+            </Product>
+            <Product name="NSA 240 Series">
+                <UpgradeProducts>
+                    <UpgradeProduct>SOHO 250 Series</UpgradeProduct>
+                    <UpgradeProduct>TZ300 Series</UpgradeProduct>
+                    <UpgradeProduct>TZ350 Series</UpgradeProduct>
+                    <UpgradeProduct>TZ400 Series</UpgradeProduct>
+                    <UpgradeProduct>TZ500 Series</UpgradeProduct>
+                    <UpgradeProduct>TZ600 Series</UpgradeProduct>
+                    <UpgradeProduct>NS<i>a</i> 2650</UpgradeProduct>
+                </UpgradeProducts>
+            </Product>
+            <Product name="NSA 250M Series">
+                <UpgradeProducts>
+                    <UpgradeProducts>
+                        <UpgradeProduct>SOHO 250 Series</UpgradeProduct>
+                        <UpgradeProduct>TZ300 Series</UpgradeProduct>
+                        <UpgradeProduct>TZ350 Series</UpgradeProduct>
+                        <UpgradeProduct>TZ400 Series</UpgradeProduct>
+                        <UpgradeProduct>TZ500 Series</UpgradeProduct>
+                        <UpgradeProduct>TZ600 Series</UpgradeProduct>
+                        <UpgradeProduct>NS<i>a</i> 2650</UpgradeProduct>
+                    </UpgradeProducts>
+                </UpgradeProducts>
+            </Product>
+            <Product name="NSA 4500">
+                <UpgradeProducts>
+                    <UpgradeProduct>NS<i>a</i> 2650</UpgradeProduct>
+                    <UpgradeProduct>NS<i>a</i> 3650</UpgradeProduct>
+                    <UpgradeProduct>NS<i>a</i> 4650</UpgradeProduct>
+                    <UpgradeProduct>NS<i>a</i> 5650</UpgradeProduct>
+                    <UpgradeProduct default="true">NS<i>a</i> 6650</UpgradeProduct>
+                </UpgradeProducts>
+            </Product>
+            <Product name="NSA 4600">
+                <UpgradeProducts>
+                    <UpgradeProduct>NS<i>a</i> 2650</UpgradeProduct>
+                    <UpgradeProduct>NS<i>a</i> 3650</UpgradeProduct>
+                    <UpgradeProduct>NS<i>a</i> 4650</UpgradeProduct>
+                    <UpgradeProduct>NS<i>a</i> 5650</UpgradeProduct>
+                    <UpgradeProduct default="true">NS<i>a</i> 6650</UpgradeProduct>
+                </UpgradeProducts>
+            </Product>
+            <Product name="NSA 5000">
+                <UpgradeProducts>
+                    <UpgradeProduct>NS<i>a</i> 4650</UpgradeProduct>
+                    <UpgradeProduct>NS<i>a</i> 5650</UpgradeProduct>
+                    <UpgradeProduct>NS<i>a</i> 6650</UpgradeProduct>
+                    <UpgradeProduct>NS<i>a</i> 9250</UpgradeProduct>
+                    <UpgradeProduct>NS<i>a</i> 9450</UpgradeProduct>
+                    <UpgradeProduct default="true">NS<i>a</i> 9650</UpgradeProduct>
+                    <UpgradeProduct>SuperMassive 9800</UpgradeProduct>
+                </UpgradeProducts>
+            </Product>
+            <Product name="NSA E5500">
+                <UpgradeProducts>
+                    <UpgradeProduct>NS<i>a</i> 4650</UpgradeProduct>
+                    <UpgradeProduct>NS<i>a</i> 5650</UpgradeProduct>
+                    <UpgradeProduct>NS<i>a</i> 6650</UpgradeProduct>
+                    <UpgradeProduct>NS<i>a</i> 9250</UpgradeProduct>
+                    <UpgradeProduct>NS<i>a</i> 9450</UpgradeProduct>
+                    <UpgradeProduct default="true">NS<i>a</i> 9650</UpgradeProduct>
+                    <UpgradeProduct>SuperMassive 9800</UpgradeProduct>
+                </UpgradeProducts>
+            </Product>
+            <Product name="NSA 5600">
+                <UpgradeProducts>
+                    <UpgradeProduct>NS<i>a</i> 4650</UpgradeProduct>
+                    <UpgradeProduct>NS<i>a</i> 5650</UpgradeProduct>
+                    <UpgradeProduct>NS<i>a</i> 6650</UpgradeProduct>
+                    <UpgradeProduct>NS<i>a</i> 9250</UpgradeProduct>
+                    <UpgradeProduct>NS<i>a</i> 9450</UpgradeProduct>
+                    <UpgradeProduct default="true">NS<i>a</i> 9650</UpgradeProduct>
+                    <UpgradeProduct>SuperMassive 9800</UpgradeProduct>
+                </UpgradeProducts>
+            </Product>
+            <Product name="NSA E6500">
+                <UpgradeProducts>
+                    <UpgradeProduct>NS<i>a</i> 5650</UpgradeProduct>
+                    <UpgradeProduct>NS<i>a</i> 6650</UpgradeProduct>
+                    <UpgradeProduct>NS<i>a</i> 9250</UpgradeProduct>
+                    <UpgradeProduct>NS<i>a</i> 9450</UpgradeProduct>
+                    <UpgradeProduct default="true">NS<i>a</i> 9650</UpgradeProduct>
+                    <UpgradeProduct>SuperMassive 9800</UpgradeProduct>
+                </UpgradeProducts>
+            </Product>
+            <Product name="NSA 6600">
+                <UpgradeProducts>
+                    <UpgradeProduct>NS<i>a</i> 5650</UpgradeProduct>
+                    <UpgradeProduct>NS<i>a</i> 6650</UpgradeProduct>
+                    <UpgradeProduct>NS<i>a</i> 9250</UpgradeProduct>
+                    <UpgradeProduct>NS<i>a</i> 9450</UpgradeProduct>
+                    <UpgradeProduct default="true">NS<i>a</i> 9650</UpgradeProduct>
+                    <UpgradeProduct>SuperMassive 9800</UpgradeProduct>
+                </UpgradeProducts>
+            </Product>
+            <Product name="NSA E7500">
+                <UpgradeProducts>
+                    <UpgradeProduct>NS<i>a</i> 5650</UpgradeProduct>
+                    <UpgradeProduct>NS<i>a</i> 6650</UpgradeProduct>
+                    <UpgradeProduct>NS<i>a</i> 9250</UpgradeProduct>
+                    <UpgradeProduct>NS<i>a</i> 9450</UpgradeProduct>
+                    <UpgradeProduct default="true">NS<i>a</i> 9650</UpgradeProduct>
+                    <UpgradeProduct>SuperMassive 9800</UpgradeProduct>
+                </UpgradeProducts>
+            </Product>
+            <Product name="NSA E7510">
+                <UpgradeProducts>
+                    <UpgradeProduct>NS<i>a</i> 5650</UpgradeProduct>
+                    <UpgradeProduct>NS<i>a</i> 6650</UpgradeProduct>
+                    <UpgradeProduct>NS<i>a</i> 9250</UpgradeProduct>
+                    <UpgradeProduct>NS<i>a</i> 9450</UpgradeProduct>
+                    <UpgradeProduct default="true">NS<i>a</i> 9650</UpgradeProduct>
+                    <UpgradeProduct>SuperMassive 9800</UpgradeProduct>
+                </UpgradeProducts>
+            </Product>
+            <Product name="NSA E8500">
+                <UpgradeProducts>
+                    <UpgradeProduct>NS<i>a</i> 5650</UpgradeProduct>
+                    <UpgradeProduct>NS<i>a</i> 6650</UpgradeProduct>
+                    <UpgradeProduct>NS<i>a</i> 9250</UpgradeProduct>
+                    <UpgradeProduct>NS<i>a</i> 9450</UpgradeProduct>
+                    <UpgradeProduct default="true">NS<i>a</i> 9650</UpgradeProduct>
+                    <UpgradeProduct>SuperMassive 9800</UpgradeProduct>
+                </UpgradeProducts>
+            </Product>
+            <Product name="NSA E8510">
+                <UpgradeProducts>
+                    <UpgradeProduct>NS<i>a</i> 5650</UpgradeProduct>
+                    <UpgradeProduct>NS<i>a</i> 6650</UpgradeProduct>
+                    <UpgradeProduct>NS<i>a</i> 9250</UpgradeProduct>
+                    <UpgradeProduct>NS<i>a</i> 9450</UpgradeProduct>
+                    <UpgradeProduct default="true">NS<i>a</i> 9650</UpgradeProduct>
+                    <UpgradeProduct>SuperMassive 9800</UpgradeProduct>
+                </UpgradeProducts>
+            </Product>
+            <Product name="NSA 2400">
+                <UpgradeProducts>
+                    <UpgradeProduct>NS<i>a</i> 2650</UpgradeProduct>
+                    <UpgradeProduct>NS<i>a</i> 3650</UpgradeProduct>
+                    <UpgradeProduct>NS<i>a</i> 4650</UpgradeProduct>
+                </UpgradeProducts>
+            </Product>
+            <Product name="NSA 2600">
+                <UpgradeProducts>
+                    <UpgradeProduct>NS<i>a</i> 2650</UpgradeProduct>
+                    <UpgradeProduct>NS<i>a</i> 3650</UpgradeProduct>
+                    <UpgradeProduct>NS<i>a</i> 4650</UpgradeProduct>
+                </UpgradeProducts>
+            </Product>
+            <Product name="NSA 3500">
+                <UpgradeProducts>
+                    <UpgradeProduct>NS<i>a</i> 2650</UpgradeProduct>
+                    <UpgradeProduct>NS<i>a</i> 3650</UpgradeProduct>
+                    <UpgradeProduct>NS<i>a</i> 4650</UpgradeProduct>
+                </UpgradeProducts>
+            </Product>
+            <Product name="NSA 3600">
+                <UpgradeProducts>
+                    <UpgradeProduct>NS<i>a</i> 2650</UpgradeProduct>
+                    <UpgradeProduct>NS<i>a</i> 3650</UpgradeProduct>
+                    <UpgradeProduct>NS<i>a</i> 4650</UpgradeProduct>
+                </UpgradeProducts>
+            </Product>
+            <Product name="SuperMassive E10200">
+                <UpgradeProducts>
+                    <UpgradeProduct>NS<i>sp</i> 12400</UpgradeProduct>
+                    <UpgradeProduct>NS<i>sp</i> 12800</UpgradeProduct>
+                </UpgradeProducts>
+            </Product>
+            <Product name="SuperMassive E10400">
+                <UpgradeProducts>
+                    <UpgradeProduct>NS<i>sp</i> 12400</UpgradeProduct>
+                    <UpgradeProduct>NS<i>sp</i> 12800</UpgradeProduct>
+                </UpgradeProducts>
+            </Product>
+            <Product name="SuperMassive E10800">
+                <UpgradeProducts>
+                    <UpgradeProduct>NS<i>sp</i> 12400</UpgradeProduct>
+                    <UpgradeProduct>NS<i>sp</i> 12800</UpgradeProduct>
+                </UpgradeProducts>
+            </Product>
+        </Products>
+    </Type>
+    <Type name="SonicPoint">
+        <Products>
+            <Product name="SonicPoint">
+                <UpgradeProducts>
+                    <UpgradeProduct>SonicWave 432e</UpgradeProduct>
+                    <UpgradeProduct>SonicWave 432i</UpgradeProduct>
+                    <UpgradeProduct>SonicWave 432o</UpgradeProduct>
+                </UpgradeProducts>
+            </Product>
+            <Product name="SonicPoint A/B/G">
+                <UpgradeProducts>
+                    <UpgradeProduct>SonicWave 432e</UpgradeProduct>
+                    <UpgradeProduct>SonicWave 432i</UpgradeProduct>
+                    <UpgradeProduct>SonicWave 432o</UpgradeProduct>
+                </UpgradeProducts>
+            </Product>
+            <Product name="SonicPoint G">
+                <UpgradeProducts>
+                    <UpgradeProduct>SonicWave 432e</UpgradeProduct>
+                    <UpgradeProduct>SonicWave 432i</UpgradeProduct>
+                    <UpgradeProduct>SonicWave 432o</UpgradeProduct>
+                </UpgradeProducts>
+            </Product>
+            <Product name="SonicPoint-N Dual-Band">
+                <UpgradeProducts>
+                    <UpgradeProduct>SonicWave 432e</UpgradeProduct>
+                    <UpgradeProduct>SonicWave 432i</UpgradeProduct>
+                    <UpgradeProduct>SonicWave 432o</UpgradeProduct>
+                </UpgradeProducts>
+            </Product>
+            <Product name="SonicPoint-Ne Dual-Band">
+                <UpgradeProducts>
+                    <UpgradeProduct>SonicWave 432e</UpgradeProduct>
+                    <UpgradeProduct>SonicWave 432i</UpgradeProduct>
+                    <UpgradeProduct>SonicWave 432o</UpgradeProduct>
+                </UpgradeProducts>
+            </Product>
+            <Product name="SonicPoint-Ni Dual-Band">
+                <UpgradeProducts>
+                    <UpgradeProduct>SonicWave 432e</UpgradeProduct>
+                    <UpgradeProduct>SonicWave 432i</UpgradeProduct>
+                    <UpgradeProduct>SonicWave 432o</UpgradeProduct>
+                </UpgradeProducts>
+            </Product>
+            <Product name="SonicPoint-N Dual-Radio">
+                <UpgradeProducts>
+                    <UpgradeProduct>SonicWave 432e</UpgradeProduct>
+                    <UpgradeProduct>SonicWave 432i</UpgradeProduct>
+                    <UpgradeProduct>SonicWave 432o</UpgradeProduct>
+                </UpgradeProducts>
+            </Product>
+            <Product name="SonicPoint ACe">
+                <UpgradeProducts>
+                    <UpgradeProduct>SonicWave 432e</UpgradeProduct>
+                    <UpgradeProduct>SonicWave 432i</UpgradeProduct>
+                    <UpgradeProduct>SonicWave 432o</UpgradeProduct>
+                </UpgradeProducts>
+            </Product>
+            <Product name="SonicPoint ACi">
+                <UpgradeProducts>
+                    <UpgradeProduct>SonicWave 432e</UpgradeProduct>
+                    <UpgradeProduct>SonicWave 432i</UpgradeProduct>
+                    <UpgradeProduct>SonicWave 432o</UpgradeProduct>
+                </UpgradeProducts>
+            </Product>
+            <Product name="SonicPoint N2">
+                <UpgradeProducts>
+                    <UpgradeProduct>SonicWave 432e</UpgradeProduct>
+                    <UpgradeProduct>SonicWave 432i</UpgradeProduct>
+                    <UpgradeProduct>SonicWave 432o</UpgradeProduct>
+                </UpgradeProducts>
+            </Product>
+        </Products>
+    </Type>
+    <Type name="SRA/SMA">
+        <Products>
+            <Product name="SSLVPN 200">
+                <UpgradeProducts>
+                    <UpgradeProduct>SMA 200</UpgradeProduct>
+                </UpgradeProducts>
+            </Product>
+            <Product name="SSLVPN 2000">
+                <UpgradeProducts>
+                    <UpgradeProduct>SMA 200</UpgradeProduct>
+                    <UpgradeProduct>SMA 400</UpgradeProduct>
+                </UpgradeProducts>
+            </Product>
+            <Product name="SRA 1200">
+                <UpgradeProducts>
+                    <UpgradeProduct>SMA 200</UpgradeProduct>
+                    <UpgradeProduct>SMA 400</UpgradeProduct>
+                </UpgradeProducts>
+            </Product>
+            <Product name="SRA 1600">
+                <UpgradeProducts>
+                    <UpgradeProduct>SMA 200</UpgradeProduct>
+                    <UpgradeProduct>SMA 400</UpgradeProduct>
+                </UpgradeProducts>
+            </Product>
+            <Product name="SSLVPN 4000">
+                <UpgradeProducts>
+                    <UpgradeProduct>SMA 400</UpgradeProduct>
+                </UpgradeProducts>
+            </Product>
+            <Product name="SRA 4200">
+                <UpgradeProducts>
+                    <UpgradeProduct>SMA 400</UpgradeProduct>
+                </UpgradeProducts>
+            </Product>
+            <Product name="SRA 4600">
+                <UpgradeProducts>
+                    <UpgradeProduct>SMA 400</UpgradeProduct>
+                </UpgradeProducts>
+            </Product>
+            <Product name="EX6000">
+                <UpgradeProducts>
+                    <UpgradeProduct>SMA 6200</UpgradeProduct>
+                    <UpgradeProduct>SMA 7200</UpgradeProduct>
+                    <UpgradeProduct>SMA 8200v</UpgradeProduct>
+                </UpgradeProducts>
+            </Product>
+            <Product name="EX7000">
+                <UpgradeProducts>
+                    <UpgradeProduct>SMA 6200</UpgradeProduct>
+                    <UpgradeProduct>SMA 7200</UpgradeProduct>
+                    <UpgradeProduct>SMA 8200v</UpgradeProduct>
+                </UpgradeProducts>
+            </Product>
+        </Products>
+    </Type>
+    <Type name="EMS">
+        <Products>
+            <Product name="ESA 200">
+                <UpgradeProducts>
+                    <UpgradeProduct>ES 5000</UpgradeProduct>
+                    <UpgradeProduct>ES 7000</UpgradeProduct>
+                    <UpgradeProduct>ES Virtual Appliance</UpgradeProduct>
+                    <UpgradeProduct>ES Hosted Email Security</UpgradeProduct>
+                </UpgradeProducts>
+            </Product>
+            <Product name="ESA 300">
+                <UpgradeProducts>
+                    <UpgradeProduct>ES 5000</UpgradeProduct>
+                    <UpgradeProduct>ES 7000</UpgradeProduct>
+                    <UpgradeProduct>ES Virtual Appliance</UpgradeProduct>
+                    <UpgradeProduct>ES Hosted Email Security</UpgradeProduct>
+                </UpgradeProducts>
+            </Product>
+            <Product name="ESA 400">
+                <UpgradeProducts>
+                    <UpgradeProduct>ES 5000</UpgradeProduct>
+                    <UpgradeProduct>ES 7000</UpgradeProduct>
+                    <UpgradeProduct>ES Virtual Appliance</UpgradeProduct>
+                    <UpgradeProduct>ES Hosted Email Security</UpgradeProduct>
+                </UpgradeProducts>
+            </Product>
+            <Product name="ESA 500">
+                <UpgradeProducts>
+                    <UpgradeProduct>ES 7000</UpgradeProduct>
+                    <UpgradeProduct>ES 9000</UpgradeProduct>
+                    <UpgradeProduct>ES Virtual Appliance</UpgradeProduct>
+                    <UpgradeProduct>ES Hosted Email Security</UpgradeProduct>
+                </UpgradeProducts>
+            </Product>
+            <Product name="ESA 3300">
+                <UpgradeProducts>
+                    <UpgradeProduct>ES 5000</UpgradeProduct>
+                    <UpgradeProduct>ES 7000</UpgradeProduct>
+                    <UpgradeProduct>ES Virtual Appliance</UpgradeProduct>
+                    <UpgradeProduct>ES Hosted Email Security</UpgradeProduct>
+                </UpgradeProducts>
+            </Product>
+            <Product name="ESA 4300">
+                <UpgradeProducts>
+                    <UpgradeProduct>ES 7000</UpgradeProduct>
+                    <UpgradeProduct>ES 9000</UpgradeProduct>
+                    <UpgradeProduct>ES Virtual Appliance</UpgradeProduct>
+                    <UpgradeProduct>ES Hosted Email Security</UpgradeProduct>
+                </UpgradeProducts>
+            </Product>
+            <Product name="ESA 6000">
+                <UpgradeProducts>
+                    <UpgradeProduct>ES 7000</UpgradeProduct>
+                    <UpgradeProduct>ES 9000</UpgradeProduct>
+                    <UpgradeProduct>ES Virtual Appliance</UpgradeProduct>
+                    <UpgradeProduct>ES Hosted Email Security</UpgradeProduct>
+                </UpgradeProducts>
+            </Product>
+            <Product name="ESA 8000">
+                <UpgradeProducts>
+                    <UpgradeProduct>ES 9000</UpgradeProduct>
+                    <UpgradeProduct>ES Virtual Appliance</UpgradeProduct>
+                    <UpgradeProduct>ES Hosted Email Security</UpgradeProduct>
+                </UpgradeProducts>
+            </Product>
+            <Product name="ESA 8300">
+                <UpgradeProducts>
+                    <UpgradeProduct>ES 9000</UpgradeProduct>
+                    <UpgradeProduct>ES Virtual Appliance</UpgradeProduct>
+                    <UpgradeProduct>ES Hosted Email Security</UpgradeProduct>
+                </UpgradeProducts>
+            </Product>
+        </Products>
+    </Type>
+</Types>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>002_Microsoft Windows Updates</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M19.3333333,0 C22.5932877,9.96605396e-15 25.62786,3.47446815 29,5.56707979 C31.2480934,6.96215421 34.4703156,8.01941918 38.6666667,8.73887468 L38.6666667,22.3943075 C38.6666667,29.8401701 28.0580445,48 19.3333333,48 C10.6086222,48 -4.43134179e-15,29.8401701 0,22.3943075 L0,8.73887468 C4.19635109,8.01941918 7.41857331,6.96215421 9.66666667,5.56707979 C13.0388067,3.47446815 16.073379,9.96605396e-15 19.3333333,0 Z" id="path-1"></path>
+    </defs>
+    <g id="002_Microsoft-Windows-Updates" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-12" transform="translate(5.000000, 0.000000)">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <use id="Combined-Shape" fill="#D8D8D8" xlink:href="#path-1"></use>
+            <polygon id="Rectangle-6" fill="#FD2123" mask="url(#mask-2)" points="0 0 19.3333333 0 19.3333333 24.9350649 0 24.9350649"></polygon>
+            <polygon id="Rectangle-6-Copy-2" fill="#0F6AB2" mask="url(#mask-2)" points="0 24.9350649 19.3333333 24.9350649 19.3333333 49.8701299 0 49.8701299"></polygon>
+            <polygon id="Rectangle-6-Copy" fill="#44A235" mask="url(#mask-2)" points="19.3333333 0 38.6666667 0 38.6666667 24.9350649 19.3333333 24.9350649"></polygon>
+            <polygon id="Rectangle-6-Copy-3" fill="#FFDF16" mask="url(#mask-2)" points="19.3333333 24.9350649 38.6666667 24.9350649 38.6666667 49.8701299 19.3333333 49.8701299"></polygon>
+        </g>
+    </g>
+</svg>

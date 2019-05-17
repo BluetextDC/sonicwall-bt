@@ -1,0 +1,67 @@
+/* ICON FONTS */
+@font-face {
+    font-family: 'bold-builder';
+    src:
+        url('../fonts/bold-builder.ttf?kjfbnef') format('truetype'),
+        url('../fonts/bold-builder.woff?kjfbnef') format('woff'),
+        url('../fonts/bold-builder.svg?kjfbnef#bold-builder') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*  7-stroke (http://themes-pixeden.com/font-demos/7-stroke/index.html) */
+@font-face {
+    font-family: 'Icon7Stroke';
+    src:url('../fonts/Pe-icon-7-stroke.eot?d7yf1v');
+    src:url('../fonts/Pe-icon-7-stroke.eot?#iefixd7yf1v') format('embedded-opentype'),
+    url('../fonts/Pe-icon-7-stroke.woff?d7yf1v') format('woff'),
+    url('../fonts/Pe-icon-7-stroke.ttf?d7yf1v') format('truetype'),
+    url('../fonts/Pe-icon-7-stroke.svg?d7yf1v#Pe-icon-7-stroke') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}  
+
+* {
+	min-height: 0;
+	min-width: 0;
+}
+
+
+/* Variables */
+
+
+/* Border radius global */
+@set borderRadius 3px;
+@set borderRadiusUp 3px 3px 0 0;
+@set borderRadiusDown 0 0 3px 3px;
+@set borderRadiusLeft 3px 0 0 3px;
+@set borderRadiusRight 0 3px 3px 0;
+
+
+/* Colors */
+@set lightFontColor #222;
+@set darkFontColor #fff;
+@set accentColor #2196f3;
+@set accentBright #38a1f4;
+@set accentDark #0367B4;
+
+@set alternateColor #ff7f00;
+@set alternateBright #FFB918;
+@set alternateDark #F9AD00;
+
+@set contrastFontColor #fff;
+
+@set paleBgColor #f2f8ff;
+
+@set innerBorderColor #eee;
+
+@set dragColor #d4e7f6;
+
+@set iconCircle #b2b2b2;
+
+@set orderCircle #bbb;
+
+@set rowBorder #e0e0e0;
+
+@set foldedColor #eee;
+

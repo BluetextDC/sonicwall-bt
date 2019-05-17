@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="289px" height="289px" viewBox="0 0 289 289" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>circular security ball</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="RM-Composited" transform="translate(-992.000000, -2258.000000)">
+            <g id="Corporate-Ring" transform="translate(992.633860, 2258.976154)">
+                <g id="circular-security-ball">
+                    <circle id="Security-Ball" fill-opacity="0.38" fill="#00FFFF" cx="140" cy="22" r="20"></circle>
+                    <circle id="Security-Ball-Copy" fill-opacity="0.48" fill="#00FFFF" cx="140" cy="22" r="17"></circle>
+                    <circle id="Security-Ball-Copy-2" fill-opacity="0.88" fill="#00FFFF" cx="140" cy="22" r="13"></circle>
+                    <circle id="Oval" stroke-opacity="0.061792346" stroke="#000000" cx="143.5" cy="143.5" r="143.5"></circle>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

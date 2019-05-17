@@ -1,0 +1,96 @@
+# Translation of Plugins - Shortcoder - Stable (latest release) in Italian
+# This file is distributed under the same license as the Plugins - Shortcoder - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2019-01-11 11:05:17+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: GlotPress/2.4.0-alpha\n"
+"Language: it\n"
+"Project-Id-Version: Plugins - Shortcoder - Stable (latest release)\n"
+
+#. Author URI of the plugin/theme
+msgid "http://www.aakashweb.com/"
+msgstr "http://www.aakashweb.com/"
+
+#. Author of the plugin/theme
+msgid "Aakash Chakravarthy"
+msgstr "Aakash Chakravarthy"
+
+#. Description of the plugin/theme
+msgid "Shortcoder is a plugin which allows to create a custom shortcode and store HTML, Javascript and other snippets in it. So if that shortcode is used in any post or pages, then the code stored in the shortcode get exceuted in that place. You can create a shortcode for Youtube videos, adsense ads, buttons and more."
+msgstr "Shortcoder è un plugin che ti permette di creare shortcode personalizzati e memorizzare codice HTML, Javascript ed altro al suo interno. Quindi se questo shortcode è usato all'interno di qualsiasi articolo o pagina, sarà il codice memorizzato all'interno dello shortcode ad essere eseguito al suo posto. Puoi creare shortcode per video su YouTube, pubblicità di AdSense, pulsanti e molto altro."
+
+#. Plugin URI of the plugin/theme
+msgid "http://www.aakashweb.com"
+msgstr "http://www.aakashweb.com"
+
+#. Plugin Name of the plugin/theme
+msgid "Shortcoder"
+msgstr "Shortcoder"
+
+#: shortcoder.php:358
+msgid "Make Donations"
+msgstr "Fai una donazione"
+
+#: shortcoder.php:278
+msgid "Click to edit"
+msgstr "Fai clic per modificare"
+
+#: shortcoder.php:278
+msgid "Created Shortcodes"
+msgstr "Shortcode creati"
+
+#: shortcoder.php:266
+msgid "Disable this Shortcode to admins"
+msgstr "Disabilita questo shortcode per gli amministratori"
+
+#: shortcoder.php:265
+msgid "Temporarily disable this shortcode"
+msgstr "Disabilita temporaneamente questo shortcode"
+
+#: shortcoder.php:254
+msgid "Content:"
+msgstr "Contenuto:"
+
+#: shortcoder.php:248
+msgid "Title:"
+msgstr "Titolo:"
+
+#: shortcoder.php:243
+msgid "Back"
+msgstr "Indietro"
+
+#: shortcoder.php:223
+msgid "Shortcode deleted successfully !"
+msgstr "Shortcode eliminato con successo !"
+
+#: shortcoder.php:217
+msgid "Update Shortcode"
+msgstr "Aggiorna shortcode"
+
+#: shortcoder.php:216
+msgid "Edit this Shortcode - "
+msgstr "Modifica questo shortcode - "
+
+#: shortcoder.php:202
+msgid "Unable to create shortcode !"
+msgstr "Impossibile creare lo shortcode !"
+
+#: shortcoder.php:200
+msgid "Shortcode updated successfully !"
+msgstr "Shortcode aggiornato con successo !"
+
+#: shortcoder.php:174
+msgid "Create Shortcode"
+msgstr "Crea shortcode"
+
+#: shortcoder.php:173
+msgid "Create a Shortcode"
+msgstr "Crea uno shortcode"
+
+#: sc-insert.php:15
+msgid "You do not have permission to edit posts."
+msgstr "Non hai l'autorizzazione per modificare gli articoli."

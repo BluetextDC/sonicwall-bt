@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="156px" height="167px" viewBox="0 0 156 167" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.3 (67297) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 10</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard-Copy-28" transform="translate(-2022.000000, -1265.000000)">
+            <g id="Group-10" transform="translate(2022.000000, 1271.000000)">
+                <g id="System-Copy" transform="translate(0.000000, 11.000000)" fill="#636466">
+                    <path d="M129,0 L132,0 C145.254,0 156,10.746 156,24 L156,96 C156,109.254 145.254,120 132,120 L24,120 C10.746,120 0,109.254 0,96 L0,24 C0,11.502 10.752,0 24,0 L29,0 L29,11.9236297 C17.6666667,12.2371924 12,17.9660962 12,29.628 L12,90 C12,102 18,108 30,108 L126,108 C138,108 144,102 144,90 L144,29.628 C144,18.6735488 139,12.9540977 129,12.0405972 L129,0 Z" id="Combined-Shape" fill-rule="nonzero"></path>
+                    <path d="M48.126,128.304 C48.126,128.304 39.378,133.182 39.378,139.548 C39.378,145.056 44.34,150 49.842,150 C52.032,150 104.364,150 106.56,150 C111.684,150 116.514,145.134 116.514,139.788 C116.514,133.428 108.516,128.304 108.516,128.304 C108.516,128.304 108.252,138.096 99.498,138.096 C94.626,138.096 61.986,138.096 56.628,138.096 C47.634,138.096 48.126,128.304 48.126,128.304 Z" id="Path"></path>
+                </g>
+                <g id="Group-24" transform="translate(39.000000, 0.000000)" stroke="#47AFE8">
+                    <path d="M39,96 C39,96 78,81.1347562 78,47.9943607 L78,11.9967104 C78,11.9967104 60.5451128,0 39,0 C17.4586466,0 0,11.9967104 0,11.9967104 L0,47.9943607 C0,81.1347562 39,96 39,96 Z" id="Stroke-1" stroke-width="11" stroke-linejoin="round"></path>
+                    <polyline id="Stroke-3" stroke-width="10" points="65 30 50.0078329 45 34.9921671 60 20 45"></polyline>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

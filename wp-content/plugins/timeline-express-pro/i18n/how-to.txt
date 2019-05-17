@@ -1,0 +1,11 @@
+Timeline Express - Translation Help.
+
+1. Open timeline-express-pro.pot in Poedit <https://poedit.net/>.
+
+2. Click ‘Create New Translation’ at the bottom of Poedit and select the language you will be translating to in the dropdown. (eg: If you are translation to Spanish, set the language to Spanish)
+
+3. Select ‘File > Save As’ and set the file name to timeline-express-pro-locale.po. Example: For German (`de_DE`) it would be `timeline-express-pro-de_DE`. Note: When the file is saved the new `.po` file and an associated .mo file are generated - the `.mo` file is what is read by WordPress. All future changes for German should now be done inside of the `timeline-express-pro-de_DE.po` file. Each time this file is saved the associated `.mo` file is updated. This translation file should live inside of the `/i18n/` directory in the Timeline Express Pro plugin root (or in your theme root. See step 5).
+
+4. Once the .mo file is generated, the new translations should now load on your site. You can either issue a pull request on our free repository to have the translations included in the free version, or you can email us to include the translation file in the next Pro release, or new in 2.0, you can now host translation files in the root of your theme. This means that moving forward, your translations won't be removed with each update to Timeline Express Pro.
+
+5. Bonus: To host translations in your theme, you need to create a directory in your theme root `/wp-content/theme/timeline-express/i18n/` and add the files to the i18n directory you created in the previous steps. The plugin will first check if a file exists inside of your theme root, and if not will then check the plugin i18n directory. If a translation file is found in either of those places, it will be loaded. The theme root takes precedence over the plugin directory - so feel free to make translation files and host them inside of your theme root, and update the plugin as you please without fear of losing your translations. (However, keep in mind that if the translations change in future, you will also have to update your `.mo` file to keep up with the changes).

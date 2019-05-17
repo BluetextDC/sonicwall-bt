@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="68px" height="150px" viewBox="0 0 68 150" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 15</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M-2670,-9082 L10153,-9082 L10153,4909 L-2670,4909 L-2670,-9082 Z" id="path-1"></path>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="12823" height="13991" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <use id="Rectangle-5" stroke="#979797" mask="url(#mask-2)" stroke-width="12" stroke-dasharray="15,15" xlink:href="#path-1"></use>
+        <g id="Group-15" transform="translate(1.000000, 4.000000)">
+            <text id="Cell-phone" font-family="Nunito-Regular, Nunito" font-size="14" font-weight="normal" fill="#000000">
+                <tspan x="0" y="142">Cell phone</tspan>
+            </text>
+            <g id="Group-13" transform="translate(3.000000, 0.000000)" fill="#636569">
+                <path d="M41.6905349,6.94772946 C48.7344533,6.94772946 52.2669258,10.4267791 52.2669258,17.3745085 L52.2669258,72.9874535 C52.2669258,79.9455527 48.7344533,83.4142325 41.6905349,83.4142325 L17.3995298,83.4142325 C10.3503547,83.4142325 6.9966085,79.9455527 6.9966085,72.9874535 L6.9966085,17.3745085 C6.9966085,10.4267791 10.3503547,6.94772946 17.3995298,6.94772946 L41.6905349,6.94772946 Z M0,76.4665031 C0,84.1401147 6.75480234,90.3723317 14.0983501,90.3723317 L45.2177508,90.3723317 C52.997601,90.3723317 59.3161009,84.1452996 59.3161009,76.4665031 L59.3161009,13.8954589 C59.3161009,6.22184728 52.997601,0 45.2177508,0 L14.0983501,0 C6.31849994,0 0,6.22184728 0,13.8954589 L0,76.4665031 Z" id="Fill-50"></path>
+                <ellipse id="Oval-Copy" transform="translate(29.538462, 76.292929) rotate(90.000000) translate(-29.538462, -76.292929) " cx="29.5384615" cy="76.2929293" rx="4.61538462" ry="4.5959596"></ellipse>
+            </g>
+        </g>
+        <rect id="Rectangle" stroke="#46AFE8" stroke-width="4" x="-62" y="-63" width="792" height="244" rx="20"></rect>
+    </g>
+</svg>

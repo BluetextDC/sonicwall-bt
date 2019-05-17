@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="157px" height="172px" viewBox="0 0 157 172" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>7</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard-Copy-77" transform="translate(-895.000000, -190.000000)" fill-rule="nonzero">
+            <g id="7" transform="translate(895.000000, 194.000000)">
+                <path d="M2.86075103,95.9755649 C8.83185957,87.7348003 13.5002558,79.9292415 16.8659396,72.5588885 C21.8889872,36.8529628 39.1709999,19 68.7119777,19 C80.8932423,19 93.074507,19 105.255772,19 L105.255772,19 C124.585738,19 140.255772,34.6700338 140.255772,54 C140.255772,56.4534851 139.997791,58.9001699 139.486085,61.2997003 L129.323385,108.955414 C119.466002,119.363255 114.53731,129.505715 114.53731,139.382794 C114.53731,149.259872 114.53731,158.535269 114.53731,167.208984 L47.6626793,167.208984 L47.6626793,150.252259 L30.919402,150.252259 C21.5504271,147.194563 16.8659396,134.824132 16.8659396,113.140966 C8.05133676,113.140966 -6.09591178,108.336712 2.86075103,95.9755649 Z" id="Path-25" fill="#FF6C0A"></path>
+                <path d="M92,0 L145,0 C149.418278,-8.11624501e-16 153,3.581722 153,8 L153,78 C153,86.2842712 146.284271,93 138,93 L84,93 L84,8 C84,3.581722 87.581722,8.11624501e-16 92,0 Z" id="Rectangle" stroke="#FFFFFF" stroke-width="8" fill="#FFD34C"></path>
+                <rect id="Rectangle" fill="#FFFFFF" x="99" y="17" width="40" height="8"></rect>
+                <rect id="Rectangle-Copy-6" fill="#FFFFFF" x="99" y="31" width="22" height="8"></rect>
+                <path d="M141,69 C134.372583,69 129,74.372583 129,81 C129,87.627417 134.372583,93 141,93 L86,93 C79.372583,93 74,87.627417 74,81 C74,74.372583 79.372583,69 86,69 L141,69 Z" id="Combined-Shape" stroke="#FFFFFF" stroke-width="8" fill="#FFA20B"></path>
+            </g>
+        </g>
+    </g>
+</svg>

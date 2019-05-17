@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="142px" height="167px" viewBox="0 0 142 167" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 18</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M-3226,-9064 L9597,-9064 L9597,4927 L-3226,4927 L-3226,-9064 Z" id="path-1"></path>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="12823" height="13991" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <use id="Rectangle-5" stroke="#979797" mask="url(#mask-2)" stroke-width="12" stroke-dasharray="15,15" xlink:href="#path-1"></use>
+        <g id="Group-18" transform="translate(1.000000, 5.000000)">
+            <text id="Laptop" font-family="Nunito-Regular, Nunito" font-size="14" font-weight="normal" fill="#000000">
+                <tspan x="48" y="156">Laptop</tspan>
+            </text>
+            <g id="Host_Compter_GMS" fill="#636569" fill-rule="nonzero">
+                <g id="Computer" transform="translate(0.698445, 0.703947)">
+                    <path d="M109.30708,0 L34.3973329,0 C21.4027849,0 10.7013925,11.4627349 10.7013925,24.4538344 L10.7013925,73.3615032 C10.7013925,86.3526027 21.4027849,97.0511553 35.1617181,97.0511553 L110.071465,97.0511553 C123.066013,97.0511553 133.767406,86.3526027 133.767406,73.3615032 L133.767406,24.4538344 C133.767406,11.4627349 123.066013,0 109.30708,0 Z M125.359169,70.3047739 C125.359169,80.2391441 117.715317,87.8809674 107.77831,87.8809674 L37.4548736,87.8809674 C27.5178664,87.8809674 19.8740146,80.2391441 19.8740146,70.3047739 L19.8740146,25.982199 C19.8740146,16.0478288 27.5178664,8.40600557 37.4548736,8.40600557 L107.77831,8.40600557 C117.715317,8.40600557 125.359169,16.0478288 125.359169,25.982199 L125.359169,70.3047739 Z" id="Shape"></path>
+                    <path d="M122.420427,117.684078 L16.9352727,117.684078 C13.877732,117.684078 2.41195438,115.391531 0.118798855,110.806437 C-0.645586322,107.749708 2.41195438,106.985525 5.46949509,106.985525 L133.12182,106.985525 C136.17936,106.985525 140.001286,108.51389 138.472516,110.806437 C137.708131,115.391531 125.477968,117.684078 122.420427,117.684078" id="Shape"></path>
+                </g>
+            </g>
+        </g>
+        <rect id="Rectangle" stroke="#46AFE8" stroke-width="4" x="-618" y="-45" width="792" height="244" rx="20"></rect>
+    </g>
+</svg>

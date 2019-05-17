@@ -1,0 +1,352 @@
+.bt_bb_toolbar {
+	padding: 1.4em 1.5em 1.15em;
+	position: relative;
+	font-weight: bold;
+	border-radius: 3px;
+	.bt_bb_wrap:not(.bt_bb_width) > .bt_bb_item > & {
+		border-radius: 0;
+		border-top: 1px solid $(rowBorder);
+	}
+	&:after {
+		content: ' ';
+		display: table;
+		width: 100%;
+		clear: both;
+	}
+}
+
+.bt_bb_wrap:not(.bt_bb_width) > .bt_bb_item[data-base="bt_column"] .bt_bb_toolbar {
+	border-top: none;
+}
+
+.bt_bb_wrap:not(.bt_bb_width) > .bt_bb_item[data-base="bt_bb_column"] .bt_bb_toolbar {
+	border-top: none;
+}
+
+#bt_bb > .bt_bb_item_list > .bt_bb_wrap .bt_bb_wrap .bt_bb_wrap .bt_bb_toolbar {
+	border-top: none;
+}
+
+.bt_bb_alert {
+	color: rgba(200,0,0,1);
+}
+
+.bt_bb_toolbar_tools {
+	position: absolute;
+	top: 0em;
+	right: 0em;
+	left: auto;
+	margin: 0 0 0 -50em;
+	.rtl & {
+		left: 0em;
+		right: auto;
+		margin: 0 -50em 0 0;		
+	}
+	
+	border-radius: 2px;
+	white-space: nowrap;
+	background: #fff;
+	overflow: hidden;
+	opacity: 0;
+	pointer-events: none;
+	padding: 0.7em 0.3em 0.3em 0.7em;
+	box-shadow: 0 0 0.7em rgba(0,0,0,0.35);
+	transition: all 200ms ease;
+	.bt_bb_toolbar:hover & {	
+		pointer-events: auto;
+		opacity: 1;
+		box-shadow: 0 0 0.9em rgba(0,0,0,0.55);
+	}
+	i {
+		font-size: 1.15em;
+		display: inline-block;
+		letter-spacing: 0.7em;
+		&:after {
+			font: normal 1.25em/1 bold-builder;
+			display: block;
+			color: inherit;
+			float: right;
+		}
+	}
+}
+
+
+/* ToolBar Icons */
+
+
+/* Old GOOD set 
+.bt_bb_toggle:before {
+	content: '\e925';
+}
+
+.bt_bb_add:before {
+	content: '\e923';
+}
+
+.bt_bb_edit:before {
+	content: '\e922';
+}
+
+.bt_bb_clone:before {
+	content: '\e91d';
+}
+
+.bt_bb_copy:before {
+	content: '\e91e';
+}
+
+.bt_bb_copy_plus:before {
+	content: '\e91c';
+}
+
+.bt_bb_paste:before {
+	content: '\e921';
+}
+
+.bt_bb_delete:before {
+	content: '\e91f';
+} */
+
+
+/* New clumsy one */
+.bt_bb_toggle:after {
+	content: '\e957';
+	margin: 0;
+	.bt_bb_toggled & {
+		content: '\e958';
+	}
+}
+
+.bt_bb_add:after {
+	content: '\e934';
+}
+
+.bt_bb_edit:after {
+	content: '\e933';
+}
+
+.bt_bb_clone:after {
+	content: '\e935';
+}
+
+.bt_bb_copy:after {
+	content: '\e92d';
+}
+
+.bt_bb_copy_plus:after {
+	content: '\e932';
+}
+
+.bt_bb_paste:after {
+	content: '\e931';
+}
+
+.bt_bb_delete:after {
+	content: '\e94c';
+}
+
+/* / ToolBar Icons */
+
+/* ToolBar Icons seperators */
+.bt_bb_toggle ~ .bt_bb_add,.bt_bb_clone,.bt_bb_copy,.bt_bb_paste,.bt_bb_delete {
+	&:before {
+	    content: ' ';
+	    display: block;
+	    position: relative;
+	    float: left;
+	    height: 1.65em;
+	    width: 1px;
+	    background-color: rgba(0,0,0,0.1);
+	    margin: -0.23em 0.65em -2em 0;
+	}
+}
+
+
+.bt_bb_toolbar_tools i:hover {
+	color: $(accentColor);
+}
+
+.bt_bb_copy, .bt_bb_copy_plus, .bt_bb_paste {
+	font-style: normal;
+	font-weight: bold;
+}
+
+.bt_bb_content {
+	padding: 10px;
+	padding-top: 0px;
+	/*white-space: pre;*/
+}
+
+.bt_bb_content:empty {
+	padding: 0px;
+}
+
+.bt_bb_toggle {
+	overflow: hidden;
+	/*opacity: .5;*/
+}
+
+#bt_bb_add_root {
+	margin: 3em auto;
+	background-color: $(accentColor);
+	border-radius: 50%;
+	width: 4em;
+	height: 4em;
+	line-height: 3.9em;
+	text-align: center;
+	vertical-align: middle;
+	transform: rotate(45deg);
+	box-shadow: 0 1px 18px 0 rgba(0,0,0,0.4);
+	cursor: pointer;
+	transition: all 300ms ease;
+	&:hover {
+		box-shadow: 0 1px 18px 0 rgba(0,0,0,0.6);
+	}
+	i {
+		display: inline-block;
+		vertical-align: middle;
+		color: $(contrastFontColor);
+		cursor: pointer;
+		line-height: 1;
+		letter-spacing: 0;
+		&:after {
+			content: '\e900';
+			font: normal 1.5em/1 bold-builder;
+		}
+	}
+}
+
+
+#bt_bb_main_toolbar {
+	position: fixed;
+	line-height: 1;
+	left: 50%;
+	transform: translateX(-50%);
+	bottom: 0px;
+	background: rgba(255,255,255,1);
+	border-bottom: 0px;
+	z-index: 10000;
+	border-radius: 4px 4px 0 0;
+	padding: 0.6em 0.45em 0.3em;
+	box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+	i {
+		margin: 0px 5px 0px 5px;
+		cursor: pointer;
+		color: #444;
+		line-height: 1;
+		&:before {
+			font: normal 2em/1 bold-builder;
+			display: inline-block;
+			margin: 0;
+			padding: 0;
+		}
+		&.bt_bb_undo {&:before {content:'\e953';}}
+		&.bt_bb_redo {&:before {content:'\e954';}}
+		&.bt_bb_paste_root {&:before {content:'\e931';}}
+		&.bt_bb_manage_clipboard {&:before {content:'\e94f';}}
+		&.bt_bb_sc_mapper {&:before {content:'\e94e';}}
+		&.bt_bb_preview {&:before {content:'\e951';}}
+		&.bt_bb_save {&:before {content:'\e928';}}
+	}
+	span {line-height: 1;}
+	.bt_bb_separator {
+		margin: 0 5px;
+		display: inline-block;
+		font: normal 2em/1 bold-builder;
+		vertical-align: 15%;
+		opacity: 0.25;
+	}
+	.bt_bb_cb_items {
+	    font-size: 1em;
+	    line-height: 1.4;
+	    vertical-align: middle;
+	    margin: 0 0 0 -1.15em;
+	    position: absolute;
+	    width: 1.5em;
+	    height: 1.4em;
+	    display: inline-block;
+	    top: auto;
+	    left: auto;
+	    background: $(accentColor);
+	    text-align: center;
+	    color: #fff;
+	    border-radius: 0.3em;
+		pointer-events: none;
+	    &[style*=block] {display: inline-block !important;}
+	}
+}
+
+#bt_bb_main_toolbar i:hover {
+	cursor: pointer;
+	color: #777;
+}
+
+#bt_bb_editor_toolbar {
+	padding-top: 20px;
+	padding-bottom: 10px;
+}
+
+#wp-content-editor-tools {
+	padding-top: 10px !important;
+}
+
+#bt_bb_editor_toolbar.bt_bb_is_rc_editor {
+	padding-bottom: 0px;
+}
+
+.bt_bb_item {
+	position: relative;
+	.bt_bb_order {
+		display: flex;
+		flex-flow: row nowrap;
+		justify-content: center;
+		align-items: center;
+		align-content: center;
+		position: absolute;
+		left: 0;
+		top: -0.25em;
+		opacity: 1;
+		width: 2.12em;
+		height: 2.12em;
+		background-color: $(accentColor);
+		border-radius: 50%;
+		color: $(darkFontColor);
+		text-align: center;
+		transition: all 300ms ease;
+		&:before {
+			opacity: 1 !important;
+			display: inline-block !important;
+			content: '\e951' !important;
+			font: normal 1.4em/1.4 bold-builder !important;
+			padding: 0.085em 0 0 !important;
+		}
+		.bt_bb_order_inner {
+			position: absolute;
+			z-index: 2;
+			border-radius: 50%;
+			color: #fff;
+			transition: background-color 300ms ease, transform  300ms ease;
+			width: 1.4em;
+			height: 1.4em;	
+			font-weight: 700;	
+			line-height: 1.4em;
+			font-size: 1em;
+			text-align: center;
+			top: 0;
+			left: 0;
+			margin: -0.5em 0 0 1.5em;
+			background-color: $(iconCircle);
+			transition: all 300ms ease;
+		}
+		&:hover {
+			background-color: $(alternateColor);
+			.bt_bb_order_inner {background-color: $(lightFontColor);}
+		}
+	}
+}
+
+.bt_bb_item_list .bt_bb_wrap:last-child .bt_bb_item {
+	.bt_bb_order:after {
+		background-color: #fafafa;
+	}
+}

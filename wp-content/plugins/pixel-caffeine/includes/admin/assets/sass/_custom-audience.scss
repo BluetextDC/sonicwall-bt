@@ -1,0 +1,115 @@
+// CUSTOM AUDIENCE
+.panel-ca-list {
+  .panel-heading .tit::before {
+    @include material-icons(person)
+  }
+
+  .panel-footer {
+    text-align: center;
+  }
+
+  .table {
+    margin-bottom: 0;
+
+    .name {
+      max-width: 500px;
+      font-weight: $font-weight-bold;
+
+      .info-extra {
+        font-weight: normal;
+      }
+    }
+
+    @media screen and (min-width: $screen-md-max) {
+      .name {
+        width: auto;
+      }
+    }
+  }
+}
+
+.panel-ca-new {
+  .panel-heading .tit::before {
+    @include material-icons(person_add)
+  }
+}
+
+.panel-ca-filters {
+  .panel-heading .tit::before {
+    @include material-icons(filter_list)
+  }
+}
+
+.modal-ca-filter {
+  $this__padding-grid: $grid-gutter-width/4;
+
+  .btn-group {
+    padding-bottom: $form-group-space-bottom;
+  }
+
+  .form-radio {
+    .control-wrap {
+      @include make-md-column(12);
+      @include flexbox();
+      @include flex-wrap(wrap);
+    }
+
+    .radio {
+      @include flex(0 0 33%);
+      padding-right: $padding-large-horizontal * 2;
+    }
+  }
+
+  .form-user,
+  .multiple-fields {
+    padding-left: $this__padding-grid;
+    padding-right: $this__padding-grid;
+  }
+
+  .form-user .control-label,
+  .multiple-fields .control-wrap {
+    @include make-md-column(4);
+    padding-left: $this__padding-grid;
+    padding-right: $this__padding-grid;
+  }
+
+  .form-user .control-wrap,
+  .multiple-fields .control-wrap + .control-wrap {
+    @include make-md-column(8);
+    padding-left: $this__padding-grid;
+    padding-right: $this__padding-grid;
+  }
+
+  .multiple-fields {
+    &.multiple-three {
+      .control-wrap {
+        @include make-md-column(4);
+        padding-left: $this__padding-grid;
+        padding-right: $this__padding-grid;
+      }
+    }
+
+    &.can-add-fields {
+       padding-bottom: $form-group-space-bottom;
+
+      .form-group {
+        @include flexbox;
+        @include flexbox-align-items(center);
+        padding-bottom: $form-group-space-bottom/2;
+      }
+
+      .form-control {
+        margin-bottom: 0;
+      }
+
+      .control-wrap {
+        @include flex(1 1 auto);
+      }
+
+      .multiple-fields-actions {
+        margin-left: -$this__padding-grid;
+        margin-right: -$this__padding-grid;
+      }
+    }
+  }
+}

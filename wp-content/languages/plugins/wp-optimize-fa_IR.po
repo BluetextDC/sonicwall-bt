@@ -1,0 +1,1621 @@
+# Translation of Plugins - WP-Optimize - Stable (latest release) in Persian
+# This file is distributed under the same license as the Plugins - WP-Optimize - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2018-11-24 21:07:13+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: GlotPress/2.4.0-alpha\n"
+"Language: fa\n"
+"Project-Id-Version: Plugins - WP-Optimize - Stable (latest release)\n"
+
+#: wp-optimize.php:1199
+msgid "You have no permissions to manage WP-Optimize settings."
+msgstr "شما اجازه مدیریت تنظیمات افزونه را ندارید."
+
+#: wp-optimize.php:1192
+msgid "You have no permissions to run optimizations."
+msgstr "شما برای اجرای بهینه‌سازی مجوز ندارید."
+
+#: templates/take-a-backup.php:90
+msgid "UpdraftPlus is installed but currently not active. Follow this link to activate UpdraftPlus, to take a backup before optimization."
+msgstr "UpdraftPlus نصب شده‌است اما در حال حاضر فعال نیست. از این لینک برای فعال کردن UpdraftPlus استفاده کنید تا قبل از بهینه‌سازی یک پشتیبان داشته باشید."
+
+#: templates/status-box-contents.php:132
+msgid "Repair corrupted tables here."
+msgstr "تعمیر جداول خراب شده اینجا."
+
+#: templates/status-box-contents.php:131
+msgid "Your database has %s corrupted table."
+msgid_plural "Your database has %s corrupted tables."
+msgstr[0] "پایگاه داده شما %s خراب شده است."
+
+#: optimizations/transient.php:414
+msgid "Remove all transient options (not only expired)"
+msgstr "حذف همه گزینه‌های گذرا (نه فقط منقضی شده)"
+
+#: optimizations/transient.php:402
+msgid "%1$d of %2$d network-wide transient option found"
+msgid_plural "%1$d of %2$d network-wide transient options found"
+msgstr[0] "%1$d of %2$d network-wide transient options found"
+
+#: optimizations/transient.php:390
+msgid "across %d site"
+msgid_plural "across %d sites"
+msgstr[0] "در سراسر %d سایت"
+
+#: optimizations/transient.php:384
+msgid "%1$d of %2$d transient option expired"
+msgid_plural "%1$d of %2$d transient options expired"
+msgstr[0] "%1$d of %2$d transient options expired"
+
+#: optimizations/transient.php:142 optimizations/transient.php:148
+msgid "Value"
+msgstr "مقدار"
+
+#: optimizations/transient.php:141 optimizations/transient.php:147
+msgid "Name"
+msgstr "نام"
+
+#: optimizations/spam.php:90
+msgid "No spam or trashed comments found"
+msgstr "هیچ نظر اسپم یا پاک‌شده‌ای پیدا نشد"
+
+#: optimizations/postmeta.php:44
+msgid "Post ID"
+msgstr "شناسه نوشته"
+
+#: optimizations/pingbacks.php:51 optimizations/spam.php:84
+#: optimizations/trackbacks.php:52
+msgid "Comment"
+msgstr "دیدگاه"
+
+#: optimizations/pingbacks.php:50 optimizations/spam.php:83
+#: optimizations/trackbacks.php:51 optimizations/unapproved.php:66
+msgid "Author"
+msgstr "نویسنده"
+
+#: optimizations/commentmeta.php:75 optimizations/postmeta.php:46
+msgid "Meta Value"
+msgstr "مقدار متا"
+
+#: optimizations/commentmeta.php:74 optimizations/postmeta.php:45
+msgid "Meta Key"
+msgstr "کلید متا"
+
+#: optimizations/commentmeta.php:73
+msgid "Comment ID"
+msgstr "شناسه دیدگاه"
+
+#: optimizations/autodraft.php:68 optimizations/revisions.php:64
+#: optimizations/trash.php:79 optimizations/unapproved.php:67
+msgid "Date"
+msgstr "تاریخ"
+
+#: optimizations/autodraft.php:67 optimizations/revisions.php:63
+#: optimizations/trash.php:78
+msgid "Title"
+msgstr "عنوان"
+
+#: optimizations/autodraft.php:66 optimizations/commentmeta.php:72
+#: optimizations/pingbacks.php:49 optimizations/postmeta.php:43
+#: optimizations/revisions.php:62 optimizations/spam.php:82
+#: optimizations/trackbacks.php:50 optimizations/transient.php:140
+#: optimizations/transient.php:146 optimizations/trash.php:77
+#: optimizations/unapproved.php:65
+msgid "ID"
+msgstr "شناسه"
+
+#: optimizations/autodraft.php:54 optimizations/commentmeta.php:49
+#: optimizations/pingbacks.php:35 optimizations/revisions.php:50
+#: optimizations/spam.php:68 optimizations/trackbacks.php:36
+#: optimizations/trash.php:58 optimizations/unapproved.php:51
+msgid "no title"
+msgstr "بدون عنوان"
+
+#: includes/class-wp-optimization.php:452
+msgid "Preview found items"
+msgstr "پیش‌نمایش موارد یافت شد"
+
+#: includes/class-updraft-smush-task.php:238
+msgid "Successful"
+msgstr "موفق"
+
+#: includes/class-updraft-smush-task.php:237
+msgid "Saving optimised image"
+msgstr "در حال ذخیره تصویر بهینه شده"
+
+#: includes/class-updraft-smush-task.php:236
+msgid "Backing up original image"
+msgstr "پشتیبان گیری از تصویر اصلی"
+
+#: includes/class-updraft-smush-task.php:235
+msgid "Processing response"
+msgstr "پاسخ پردازش"
+
+#: includes/class-updraft-smush-task.php:234
+msgid "Connecting to API server"
+msgstr "اتصال به سرور API"
+
+#: includes/class-updraft-smush-task.php:215
+msgid "Failed with error code %s - %s"
+msgstr "شکست در کد خطای %s - %s"
+
+#: includes/class-updraft-smush-task.php:187
+msgid "The file was compressed from %s to %s saving %s percent using WP-Optimize"
+msgstr "The file was compressed from %s to %s saving %s percent using WP-Optimize"
+
+#: includes/class-updraft-smush-manager.php:454
+msgid "Compress Image"
+msgstr "فشرده‌سازی تصویر"
+
+#: includes/class-updraft-smush-manager.php:439
+msgid "There was an error connecting to the Smush API server, please try later"
+msgstr "هنگام اتصال به سرور API Smush یک خطا رخ داد لطفا بعدا امتحان کنید"
+
+#: includes/class-updraft-smush-manager.php:438
+msgid "Connecting to the Smush API server, please wait"
+msgstr "درحال اتصال به سرور API Smush لطفا صبر کنید"
+
+#: includes/class-updraft-smush-manager.php:437
+msgid "Please try again later."
+msgstr "لطفا بعدا دوباره امتحان کنید."
+
+#: includes/class-updraft-smush-manager.php:436
+msgid "Please wait. Compressing the selected image."
+msgstr "لطفا صبر کنید. تصویر انتخاب‌شده را فشرده‌سازی کنید."
+
+#: includes/class-updraft-smush-manager.php:435
+msgid "An unexpected response was received from the server."
+msgstr "پاسخ غیرمنتظره از سرور دریافت شد."
+
+#: includes/class-updraft-smush-manager.php:434
+msgid "All valid images are compresed now"
+msgstr "همه تصاویر معتبر در حال حاضر فشرده شده‌اند"
+
+#: includes/class-updraft-smush-manager.php:222
+msgid "Could not copy file, check your PHP error logs for details"
+msgstr "نمی توان فایل را کپی کرد، پیغام های خطای پی اچ پی را برای جزئیات بیشتر بررسی کنید"
+
+#: includes/class-updraft-smush-manager.php:216
+msgid "The destination could not be written to, please check your folder permissions"
+msgstr "مقصد را نمی توان نوشت، لطفا مجوز پوشه خود را بررسی کنید"
+
+#: includes/class-updraft-smush-manager.php:212
+msgid "Backup not found, it may have been deleted or already restored"
+msgstr "پشتیبان گیری یافت نشد، ممکن است حذف شده یا قبلا بازگردانده شده باشد"
+
+#: includes/class-updraft-smush-manager-commands.php:255
+msgid "Log file does not exist or cant be read"
+msgstr "فایل ورودی موجود نیست و یا نمی توان خواند"
+
+#: includes/class-updraft-smush-manager-commands.php:229
+msgid "Pending tasks cleared successfully"
+msgstr "وظایف معلق با موفقیت انجام شد"
+
+#: includes/class-updraft-smush-manager-commands.php:225
+msgid "Pending tasks could not be cleared"
+msgstr "وظایف معلق را نمی توان پاک کرد"
+
+#: includes/class-updraft-smush-manager-commands.php:191
+msgid "Stats cleared successfully"
+msgstr "آمار با موفقیت پاکسازی شد"
+
+#: includes/class-updraft-smush-manager-commands.php:187
+msgid "Stats could not be cleared"
+msgstr "آمار قابل حذف نیست"
+
+#: includes/class-updraft-smush-manager-commands.php:172
+msgid "Options updated successfully"
+msgstr "گزینه‌های با موفقیت به روز شدند"
+
+#: includes/class-updraft-smush-manager-commands.php:168
+msgid "Options could not be updated"
+msgstr "بروزرسانی گزینه‌ها ممکن نیست"
+
+#: includes/class-updraft-smush-manager-commands.php:144
+msgid "%d image(s) images were selected for compressing previously, but were not all processed. You can either complete them now or cancel and retry later."
+msgstr "%d image(s) images were selected for compressing previously, but were not all processed. You can either complete them now or cancel and retry later."
+
+#: includes/class-updraft-smush-manager-commands.php:143
+msgid "%d image(s) could not be compressed. Please see the logs for more information or try again later."
+msgstr "%d image(s) could not be compressed. Please see the logs for more information or try again later."
+
+#: includes/class-updraft-smush-manager-commands.php:142
+msgid "A total of %d image(s) were compressed on this site, saving appoximately %s of space at an average of %02d percent per image."
+msgstr "A total of %d image(s) were compressed on this site, saving appoximately %s of space at an average of %02d percent per image."
+
+#: includes/class-updraft-smush-manager-commands.php:111
+msgid "Image restored successfully"
+msgstr "تصویر با موفقیت بازیابی شد"
+
+#: includes/class-updraft-file-logger.php:32
+msgid "Log events into a log file"
+msgstr "Log events into a log file"
+
+#: templates/status-box-contents.php:30
+msgid "There was no scheduled optimization"
+msgstr "زمانبندی برای بهینه سازی نیست"
+
+#: templates/status-box-contents.php:25
+msgid "Last scheduled optimization was at"
+msgstr "آخرین زمانبندی بهینه سازی بود در"
+
+#: templates/may-also-like.php:54 templates/may-also-like.php:55
+msgid "Scheduled clean-ups"
+msgstr "زمانبندی پاکسازی شد"
+
+#: wp-optimize.php:614
+msgid "Repair"
+msgstr "تعمیر"
+
+#: wp-optimize.php:544
+msgid "%s was not repaired. For more details, please check your logs configured in logging destinations settings."
+msgstr "%s تعمیر نشد. برای جزئیات بیشتر، گزارشات را در پیکربندی تنظیمات گزارشات بررسی کنید."
+
+#: optimizations/repairtables.php:154
+msgid "Repair database tables"
+msgstr "تعمیر جداول پایگاه داده"
+
+#: optimizations/repairtables.php:144
+msgid "%s corrupted table found"
+msgid_plural "%s corrupted tables found"
+msgstr[0] "%s جدول خراب یافت شد"
+
+#: optimizations/repairtables.php:142
+msgid "No corrupted tables found"
+msgstr "جدول خرابی یافت نشد"
+
+#: optimizations/repairtables.php:72
+msgid "Repairing %s table was unsuccessful"
+msgid_plural "Repairing %s tables were unsuccessful"
+msgstr[0] "تعمیر %s جدول موفقیت آمیز نبود"
+
+#: optimizations/repairtables.php:69
+msgid "%s table repaired"
+msgid_plural "%s tables repaired"
+msgstr[0] "%s جدول تعمیر شد"
+
+#: wp-optimize.php:543
+msgid "Before saving, you need to complete the currently incomplete settings (or remove them)."
+msgstr "قبل از ذخیره کردن، شما باید تنظیمات ناقص کنونی را کامل کنید (یا حذفشان کنید)."
+
+#: wp-optimize.php:542
+msgid "Are you sure you want to remove this logging destination?"
+msgstr "آیا اطمینان دارید میخواهید مسیر گزارشات را حذف کنید؟"
+
+#: templates/admin-settings-logging.php:39
+msgid "Inactive"
+msgstr "غیرفعال"
+
+#: templates/admin-settings-logging.php:23
+msgid "Options"
+msgstr "گزینه‌ها"
+
+#: templates/admin-settings-logging.php:22
+msgid "Destination"
+msgstr "مقصد"
+
+#: templates/admin-settings-logging.php:11
+msgid "Remember to save your settings so that your changes take effect."
+msgstr "به یاد داشته باشید تنظیمات را ذخیره کنید که تغییرات اعمال شود."
+
+#: templates/admin-settings-logging.php:7
+msgid "Add logging destination"
+msgstr "افزودن مسیر گزارشات"
+
+#: templates/admin-settings-auto-cleanup.php:6
+msgid "Take control of clean-ups: Upgrade to Premium for a more powerful and flexible scheduler"
+msgstr "کنترل کردن تمیز کردن را انجام دهید: برای یک برنامه ریز قوی تر و انعطاف پذیر تر به نسخه پولی بروید"
+
+#: optimizations/orphandata.php:15
+msgid "%s orphaned meta data deleted"
+msgid_plural "%s orphaned meta data deleted"
+msgstr[0] "%s داده متای تنها حذف شد"
+
+#: optimizations/optimizetables.php:93
+msgid "Other tables will be optimized (%s)."
+msgstr "جداول دیگر بهینه سازی میشود (%s)."
+
+#: optimizations/autodraft.php:164
+msgid "Clean auto draft posts which are older than %s weeks"
+msgstr "حذف پیشنویس های خودکار قدیمی تر از %s هفته"
+
+#: includes/class-updraft-ring-logger.php:34
+msgid "How many last records store?"
+msgstr "چه تعداد رکورد نگهداری شود؟"
+
+#: includes/class-updraft-email-logger.php:37
+msgid "Enter email for logs here"
+msgstr "ایمیل خود را برای دریافت گزارش اینجا وارد کنید"
+
+#. Plugin URI of the plugin/theme
+msgid "https://getwpo.com"
+msgstr "https://getwpo.com"
+
+#: wp-optimize.php:1350
+msgid "go back"
+msgstr "برگرد"
+
+#: wp-optimize.php:1349
+msgid "Only Network Administrator can activate WP-Optimize plugin."
+msgstr "تنها مدیران شبکه می توانند افزونه WP-Optimize را فعال کنند."
+
+#: wp-optimize.php:720
+msgid "Read this page for a guide to possible causes and how to fix it."
+msgstr "این برگه را بخوانید برای راهنمایی رفع چگونگی مشکلات."
+
+#: wp-optimize.php:720
+msgid "WordPress has a number (%d) of scheduled tasks which are overdue. Unless this is a development site, this probably means that the scheduler in your WordPress install is not working."
+msgstr "WordPress has a number (%d) of scheduled tasks which are overdue. Unless this is a development site, this probably means that the scheduler in your WordPress install is not working."
+
+#: wp-optimize.php:720
+msgid "Warning"
+msgstr "اخطار"
+
+#: wp-optimize.php:541
+msgid "Please, select settings file."
+msgstr "لطفا پرونده تنظیمات را انتخاب کنید."
+
+#: wp-optimize.php:540
+msgid "Cancel"
+msgstr "انصراف"
+
+#: wp-optimize.php:539
+msgid "Run optimizations"
+msgstr "اجرای بهینه سازی"
+
+#: wp-optimize.php:536
+msgid "Automatic backup before optimizations"
+msgstr "پشتیبانگیری خودکار قبل از بهینه‌سازی"
+
+#: wp-optimize.php:394
+msgid "Premium / Plugin family"
+msgstr "پولی / خانواده افزونه"
+
+#: wp-optimize.php:279
+msgid "New feature: WP-Optimize Premium can now optimize all sites within a multisite install, not just the main one."
+msgstr "New feature: WP-Optimize Premium can now optimize all sites within a multisite install, not just the main one."
+
+#: wp-optimize.php:269
+msgid "WP-Optimize (Free) has been de-activated, because WP-Optimize Premium is active."
+msgstr "WP-Optimize (رایگان) غیرفعال شده است، زیرا WP-Optimize Premium فعال است."
+
+#: templates/tables.php:36
+msgid "Tables not found."
+msgstr "جداول یافت نشد."
+
+#: templates/tables.php:17
+msgid "Search for table"
+msgstr "جستجو برای جدول"
+
+#: templates/notices/thanks-for-using-main-dash.php:38
+msgid "Premium WooCommerce extensions"
+msgstr "افزودنی ووکامرس پولی"
+
+#: templates/notices/thanks-for-using-main-dash.php:34
+msgid "Add style and flare easily with beautifully-designed sliders with the #1 WP slider plugin"
+msgstr "Add style and flare easily with beautifully-designed sliders with the #1 WP slider plugin"
+
+#: templates/notices/thanks-for-using-main-dash.php:30
+msgid "Simple & secure login with a wave of your phone"
+msgstr "Simple & secure login with a wave of your phone"
+
+#: templates/notices/thanks-for-using-main-dash.php:30
+msgid "Keyy:"
+msgstr "کلید:"
+
+#: templates/notices/thanks-for-using-main-dash.php:26
+msgid "%s is a highly efficient way to manage, optimize, update and backup multiple websites from one place."
+msgstr "%s یک راه بسیار کارآمد برای مدیریت، بهینه سازی، به روز رسانی و پشتیبان گیری چندین وب سایت از یک مکان است."
+
+#: templates/notices/thanks-for-using-main-dash.php:22
+msgid "%s simplifies backups and restoration. It is the world’s highest ranking and most popular scheduled backup plugin, with over a million currently-active installs."
+msgstr "%s simplifies backups and restoration. It is the world’s highest ranking and most popular scheduled backup plugin, with over a million currently-active installs."
+
+#: templates/notices/thanks-for-using-main-dash.php:18
+msgid "WP-Optimize Premium:"
+msgstr "نسخه پولی:"
+
+#: templates/notices/thanks-for-using-main-dash.php:18
+msgid "%s offers powerful extra features and flexibility, and WordPress multisite support."
+msgstr "%s ویژگی های اضافی و انعطاف پذیری قدرتمند و پشتیبانی چندگانه وردپرس را ارائه می دهد."
+
+#: templates/notices/thanks-for-using-main-dash.php:14
+msgid "Super-charge and secure your WordPress site with our other top plugins:"
+msgstr "سوپر شارژ و ایمن کردن سایت وردپرسی خود با سایر افزونه‌های برتر ما:"
+
+#: templates/notices/thanks-for-using-main-dash.php:7
+msgid "Thank you for installing WP-Optimize!"
+msgstr "از شما برای نصب افزونه تشکر میکنیم‌!"
+
+#: templates/notices/horizontal-notice.php:41
+#: templates/notices/horizontal-notice.php:43
+msgid "Find out more."
+msgstr "اطلاعات بیشتر."
+
+#: templates/may-also-like.php:326
+msgid "Logging in with Keyy is simple. Once users have installed the app onto their smartphone and secured it using a fingerprint or 4-number pin, they just open the app, point it at the moving on-screen barcode and voila!"
+msgstr "Logging in with Keyy is simple. Once users have installed the app onto their smartphone and secured it using a fingerprint or 4-number pin, they just open the app, point it at the moving on-screen barcode and voila!"
+
+#: templates/may-also-like.php:323
+msgid "Using innovative RSA public-key cryptography, Keyy is highly secure and prevents password-based hacking risks such as brute-forcing, key-logging, shoulder-surfing and connection sniffing."
+msgstr "Using innovative RSA public-key cryptography, Keyy is highly secure and prevents password-based hacking risks such as brute-forcing, key-logging, shoulder-surfing and connection sniffing."
+
+#: templates/may-also-like.php:320
+msgid "Keyy is a unique 2-factor authentication plugin that allows you to log in to your website with just a wave of your smartphone. It represents the ultimate UX, doing away with the need for usernames, passwords and other 2FA tokens."
+msgstr "Keyy is a unique 2-factor authentication plugin that allows you to log in to your website with just a wave of your smartphone. It represents the ultimate UX, doing away with the need for usernames, passwords and other 2FA tokens."
+
+#: templates/may-also-like.php:317
+msgid "Keyy – instant &amp; secure logins with a wave of your phone"
+msgstr "Keyy – instant &amp; secure logins with a wave of your phone"
+
+#: templates/may-also-like.php:316
+msgid "Keyy Two Factor Authentication"
+msgstr "تایید دو مرحله‌ای هویت"
+
+#: templates/may-also-like.php:309
+msgid "Easily improve the look of your site, your conversion rate and bottom line."
+msgstr "Easily improve the look of your site, your conversion rate and bottom line."
+
+#: templates/may-also-like.php:306
+msgid "With Metaslider, creating them couldn’t be easier: simply select images from your WordPress Media Library, drag and drop them into place. You can then set the slide captions, links and SEO fields all from one page."
+msgstr "With Metaslider, creating them couldn’t be easier: simply select images from your WordPress Media Library, drag and drop them into place. You can then set the slide captions, links and SEO fields all from one page."
+
+#: templates/may-also-like.php:303
+msgid "Sliders instantly make a web-page more eye-catching and engaging."
+msgstr "Sliders instantly make a web-page more eye-catching and engaging."
+
+#: templates/may-also-like.php:300
+msgid "With Metaslider, WordPress’ most popular slider plugin, you can add unique, SEO-optimizing slideshow to your blog or website in a matter of seconds!"
+msgstr "With Metaslider, WordPress’ most popular slider plugin, you can add unique, SEO-optimizing slideshow to your blog or website in a matter of seconds!"
+
+#: templates/may-also-like.php:297
+msgid "MetaSlider - hold visitors’ attention to increase conversion and profits."
+msgstr "MetaSlider - hold visitors’ attention to increase conversion and profits."
+
+#: templates/may-also-like.php:296
+msgid "Meta Slider"
+msgstr "اسلایدر متا"
+
+#: templates/may-also-like.php:288
+msgid "With a wide range of useful features, including automated backup schedules and sophisticated one click updates, UpdraftCentral is sure to boost to your productivity and save you time."
+msgstr "With a wide range of useful features, including automated backup schedules and sophisticated one click updates, UpdraftCentral is sure to boost to your productivity and save you time."
+
+#: templates/may-also-like.php:285
+msgid "UpdraftCentral is a powerful tool that allows you to efficiently manage, update, backup and even restore multiple websites from just one location. You can also manage users and comments on all the sites at once, and through its central login feature, you can access each WP-dashboard with a single click."
+msgstr "UpdraftCentral is a powerful tool that allows you to efficiently manage, update, backup and even restore multiple websites from just one location. You can also manage users and comments on all the sites at once, and through its central login feature, you can access each WP-dashboard with a single click."
+
+#: templates/may-also-like.php:282
+msgid "If you manage a few WordPress sites, you need UpdraftCentral."
+msgstr "اگر شما تعداد کمی از سایت‌های وردپرسی را مدیریت می‌کنید به UpdraftCentral نیاز دارید."
+
+#: templates/may-also-like.php:279
+msgid "UpdraftCentral – save hours managing multiple WP sites from one place"
+msgstr "UpdraftCentral - صرفه جویی در زمان مدیریت چندین سایت وردپرسی از یک مکان"
+
+#: templates/may-also-like.php:277
+msgid "UpdraftCentral Dashboard\n"
+msgstr "پیشخوان Updraft\n"
+
+#: templates/may-also-like.php:271 templates/may-also-like.php:290
+#: templates/may-also-like.php:311 templates/may-also-like.php:328
+msgid "Try for free"
+msgstr "امتحانش مجانیه"
+
+#: templates/may-also-like.php:269
+msgid "With a long-standing reputation for excellence and outstanding reviews, it’s no wonder that UpdraftPlus is the world’s most popular WordPress backup plugin."
+msgstr "With a long-standing reputation for excellence and outstanding reviews, it’s no wonder that UpdraftPlus is the world’s most popular WordPress backup plugin."
+
+#: templates/may-also-like.php:266
+msgid "You can also migrate your website with few clicks without hassle."
+msgstr "شما همچنین می توانید از وب سایت خود را با چند کلیک بدون هیچ زحمتی مهاجرت کنید."
+
+#: templates/may-also-like.php:263
+msgid "With UpdraftPlus, you can rest assured that if the worst does happen, it's no big deal. rather than losing everything, you can simply restore the backup and be up and running again in no time at all."
+msgstr "With UpdraftPlus, you can rest assured that if the worst does happen, it's no big deal. rather than losing everything, you can simply restore the backup and be up and running again in no time at all."
+
+#: templates/may-also-like.php:260
+msgid "Hacking, server crashes, dodgy updates or simple user error can ruin everything."
+msgstr "Hacking, server crashes, dodgy updates or simple user error can ruin everything."
+
+#: templates/may-also-like.php:257
+msgid "If you’ve got a WordPress website, you need a backup."
+msgstr "اگر شما یک وبسایت وردپرس داشته باشید، به یک پشتیبان نیاز دارید."
+
+#: templates/may-also-like.php:254
+msgid "UpdraftPlus – the ultimate protection for your site, hard work and business"
+msgstr "UpdraftPlus – the ultimate protection for your site, hard work and business"
+
+#: templates/may-also-like.php:236
+msgid "Our other plugins"
+msgstr "دیگر افزونه‌های ما"
+
+#: templates/may-also-like.php:212
+msgid "Get your specific queries addressed directly by our experts"
+msgstr "پرسشهای خاص خود را که توسط کارشناسان ما به طور مستقیم مطرح شده است دریافت کنید"
+
+#: templates/may-also-like.php:210 templates/may-also-like.php:211
+msgid "Premium support"
+msgstr "پشتیبانی ویژه"
+
+#: templates/may-also-like.php:199
+msgid "Choose from a number of advanced options, like the ability to optimize individual DB tables"
+msgstr "Choose from a number of advanced options, like the ability to optimize individual DB tables"
+
+#: templates/may-also-like.php:197 templates/may-also-like.php:198
+msgid "More choice and flexibility"
+msgstr "انتخاب بیشتر و انعطاف پذیری"
+
+#: templates/may-also-like.php:186
+msgid "Send log messages to three additional locations: Slack, Syslog and Simple History"
+msgstr "Send log messages to three additional locations: Slack, Syslog and Simple History"
+
+#: templates/may-also-like.php:184 templates/may-also-like.php:185
+msgid "Enhanced logging and reporting"
+msgstr "ورود به سیستم پیشرفته و گزارش"
+
+#: templates/may-also-like.php:173
+msgid "Save time managing multiple sites from the WP command line"
+msgstr "صرفه جویی در زمان مدیریت سایت های چندگانه از خط فرمان وردپرس"
+
+#: templates/may-also-like.php:171 templates/may-also-like.php:172
+msgid "Control with WP-CLI"
+msgstr "کنترل با WP-CLI"
+
+#: templates/may-also-like.php:160
+msgid "A more advanced scheduling system to make regular routine optimizations whenever you prefer"
+msgstr "A more advanced scheduling system to make regular routine optimizations whenever you prefer"
+
+#: templates/may-also-like.php:159
+msgid "Sophisticated scheduling"
+msgstr "زمانبندی پیچیده"
+
+#: templates/may-also-like.php:147
+msgid "Remove images that have been orphaned or are no longer in use"
+msgstr "تصاویری را که مورد استفاده قرار نمی‌گیرند را حذف کنید"
+
+#: templates/may-also-like.php:145 templates/may-also-like.php:146
+msgid "Remove unwanted images"
+msgstr "پاک کردن تصاویر ناخواسته"
+
+#: templates/may-also-like.php:134
+msgid "Perform optimizations on single tables"
+msgstr "انجام بهینه سازی در جداول تنها"
+
+#: templates/may-also-like.php:132 templates/may-also-like.php:133
+msgid "Optimize individual tables"
+msgstr "بهینه سازی جداول جداگانه"
+
+#: templates/may-also-like.php:124 templates/may-also-like.php:137
+#: templates/may-also-like.php:150 templates/may-also-like.php:163
+#: templates/may-also-like.php:176 templates/may-also-like.php:189
+#: templates/may-also-like.php:202 templates/may-also-like.php:215
+msgid "No"
+msgstr "خیر"
+
+#: templates/may-also-like.php:121
+msgid "Optimize any site (or combination of sites) on your WordPress Multisite or network"
+msgstr "بهینه سازی هر سایت (یا ترکیبی از سایت‌ها) را در سایت چندگانه وردپرسی یا شبکه شما"
+
+#: templates/may-also-like.php:119 templates/may-also-like.php:120
+#: templates/may-also-like.php:158
+msgid "Multisite support"
+msgstr "پشتیبانی چندسایته"
+
+#: templates/may-also-like.php:108
+msgid "Automatically cleans up auto draft posts older than your chosen age"
+msgstr "به صورت خودکار پست‌های پیش نویس خودکار قدیمی تر از زمان انتخاب شده شما را پاک می کند"
+
+#: templates/may-also-like.php:106 templates/may-also-like.php:107
+msgid "Clean auto-draft posts"
+msgstr "پاکسازی همه پیشنویس‌ها"
+
+#: templates/may-also-like.php:95
+msgid "Choose how much historical data to retain, for extra safety."
+msgstr "انتخاب کنید که چقدر داده‌های تاریخی برای حفظ ایمنی بیشتر حفظ شوند."
+
+#: templates/may-also-like.php:93 templates/may-also-like.php:94
+msgid "Retains a set number of weeks' data during clean-ups"
+msgstr "تنظیم تعداد مجموعه داده هفته‌ها در حین پاک‌سازی"
+
+#: templates/may-also-like.php:82
+msgid "Enable or disable trackbacks and comments for all of your published posts"
+msgstr "بازتاب‌ها و نظرات را برای همه پست‌های منتشر شده خود فعال یا غیرفعال کنید"
+
+#: templates/may-also-like.php:80 templates/may-also-like.php:81
+msgid "Enables / disables trackbacks and comments"
+msgstr "فعال یا غیرفعال کردن بازتاب‌ها و نظرات"
+
+#: templates/may-also-like.php:69
+msgid "Displays database table statistics to show how much space can be cleared"
+msgstr "آمار جدول پایگاه داده را نشان می‌دهد تا نشان دهد که چقدر فضای را می‌توان پاک کرد"
+
+#: templates/may-also-like.php:67 templates/may-also-like.php:68
+msgid "Displays database table statistics"
+msgstr "نمایش آمار جدول پایگاه داده"
+
+#: templates/may-also-like.php:56
+msgid "Carries out scheduled clean-ups daily, weekly, fortnightly and monthly"
+msgstr "برنامه ریزی پاکسازی به صورت روزانه، هفتگی، هر دو هفته و ماهانه"
+
+#: templates/may-also-like.php:46 templates/may-also-like.php:49
+#: templates/may-also-like.php:59 templates/may-also-like.php:62
+#: templates/may-also-like.php:72 templates/may-also-like.php:75
+#: templates/may-also-like.php:85 templates/may-also-like.php:88
+#: templates/may-also-like.php:98 templates/may-also-like.php:101
+#: templates/may-also-like.php:111 templates/may-also-like.php:114
+#: templates/may-also-like.php:127 templates/may-also-like.php:140
+#: templates/may-also-like.php:153 templates/may-also-like.php:166
+#: templates/may-also-like.php:179 templates/may-also-like.php:192
+#: templates/may-also-like.php:205 templates/may-also-like.php:218
+msgid "Yes"
+msgstr "بله"
+
+#: templates/may-also-like.php:43
+msgid "Optimizes without the need for manual queries"
+msgstr "بدون نیاز به نمایش‌های دستی بهینه می شود"
+
+#: templates/may-also-like.php:41 templates/may-also-like.php:42
+msgid "Auto-optimize database"
+msgstr "بهینه‌سازی خودکار پایگاه داده"
+
+#: templates/may-also-like.php:35 templates/may-also-like.php:228
+msgid "Upgrade now"
+msgstr "اکنون ارتقاء دهید"
+
+#: templates/may-also-like.php:31 templates/may-also-like.php:224
+msgid "Installed"
+msgstr "نصب شده است"
+
+#: templates/may-also-like.php:23
+msgid "WP-Optimize Premium"
+msgstr "نسخه پولی"
+
+#: templates/may-also-like.php:20
+msgid "Free"
+msgstr "رایگان"
+
+#: templates/may-also-like.php:9
+msgid "Ask a pre-sales question"
+msgstr "سوالی درباره خرید دارید"
+
+#: templates/may-also-like.php:3
+msgid "WP-Optimize free / premium comparison"
+msgstr "مقایسه نسخه پولی و رایگان افزونه"
+
+#: templates/admin-settings-auto-cleanup.php:3
+msgid "Scheduled clean-up settings"
+msgstr "تنظیمات زمانبندی پاکسازی"
+
+#: templates/admin-page-header.php:5 templates/may-also-like.php:25
+msgid "Premium"
+msgstr "نسخه پولی"
+
+#: optimizations/trash.php:216
+msgid "Remove trashed posts"
+msgstr "حذف نوشته‌های زباله‌دان"
+
+#: optimizations/transient.php:405
+msgid "No site-wide transient options found"
+msgstr "No site-wide transient options found"
+
+#: optimizations/trash.php:206
+msgid "Clean all trashed posts"
+msgstr "پاکسازی همه نوشته‌های زباله‌دان"
+
+#: optimizations/optimizetables.php:98
+msgid "Warning: you should read the FAQ on the risks of this operation first."
+msgstr "هشدار: شما باید ابتدا سوالات متداول در مورد خطرات این عملیات را بخوانید."
+
+#: optimizations/optimizetables.php:98
+msgid "Optimize InnoDB tables anyway."
+msgstr "بهینه‌سازی تمام جداول InnoDB به هرطریق ممکن."
+
+#: optimizations/commentmeta.php:166
+msgid "No Akismet comment meta rows in your database"
+msgstr "No Akismet comment meta rows in your database"
+
+#: optimizations/commentmeta.php:164
+msgid "%s unused Akismet comment meta rows in your database"
+msgid_plural "%s unused Akismet meta rows in your database"
+msgstr[0] "%s unused Akismet meta rows in your database"
+
+#: optimizations/autodraft.php:177
+msgid "Remove auto-draft posts"
+msgstr "حذف پیشنویس خودکار"
+
+#: optimizations/autodraft.php:166
+msgid "Clean all auto-draft posts"
+msgstr "پاکسازی همه پیشنویس‌ها"
+
+#: optimizations/attachments.php:97 optimizations/attachments.php:107
+msgid "Remove orphaned attachments"
+msgstr "حذف پیوست‌های بدون استفاده"
+
+#: optimizations/attachments.php:69
+msgid "No orphaned attachments found"
+msgstr "پیوست بدون استفاده یافت نشد"
+
+#: optimizations/attachments.php:67
+msgid "%s orphaned attachment found"
+msgid_plural "%s orphaned attachments found"
+msgstr[0] "%s پیوست بدون استفاده یافت شد"
+
+#: optimizations/attachments.php:33 optimizations/attachments.php:73
+#: optimizations/autodraft.php:85 optimizations/autodraft.php:130
+#: optimizations/commentmeta.php:101 optimizations/commentmeta.php:170
+#: optimizations/orphandata.php:18 optimizations/orphandata.php:46
+#: optimizations/pingbacks.php:68 optimizations/pingbacks.php:107
+#: optimizations/postmeta.php:63 optimizations/postmeta.php:98
+#: optimizations/revisions.php:81 optimizations/revisions.php:125
+#: optimizations/spam.php:111 optimizations/spam.php:198
+#: optimizations/trackbacks.php:69 optimizations/trackbacks.php:109
+#: optimizations/transient.php:178 optimizations/trash.php:96
+#: optimizations/trash.php:169 optimizations/unapproved.php:84
+#: optimizations/unapproved.php:130
+msgid "across %s site"
+msgid_plural "across %s sites"
+msgstr[0] "در سراسر %s سایت"
+
+#: optimizations/attachments.php:30
+msgid "%s orphaned attachment deleted"
+msgid_plural "%s orphaned attachments deleted"
+msgstr[0] "%s پیوست بدون استفاده حذف شد"
+
+#: includes/wp-optimize-notices.php:202
+msgid "Summer sale - 20% off WP-Optimize Premium until July 31st"
+msgstr "فروش تابستانی - 20٪ تخفیف WP-Optimize Premium تا 31 ژوئیه"
+
+#: includes/wp-optimize-notices.php:189
+msgid "Spring sale - 20% off WP-Optimize Premium until April 30th"
+msgstr "فروش بهار - 20٪ تخفیف WP-Optimize Premium تا تاریخ 30 آوریل"
+
+#: includes/wp-optimize-notices.php:176
+msgid "Happy New Year - 20% off WP-Optimize Premium until January 14th"
+msgstr "سال نو مبارک - 20٪ تخفیف WP-Optimize Premium تا 14 ژانویه"
+
+#: includes/wp-optimize-notices.php:163
+msgid "Christmas sale - 20% off WP-Optimize Premium until December 25th"
+msgstr "فروش کریسمس - 20٪ تخفیف WP-Optimize Premium تا تاریخ 25 دسامبر"
+
+#: includes/wp-optimize-notices.php:151 includes/wp-optimize-notices.php:164
+#: includes/wp-optimize-notices.php:177 includes/wp-optimize-notices.php:190
+#: includes/wp-optimize-notices.php:203
+msgid "To benefit, use this discount code:"
+msgstr "برای بهره مندی از این کد تخفیف استفاده کنید:"
+
+#: includes/wp-optimize-notices.php:150
+msgid "Black Friday - 20% off WP-Optimize Premium until November 30th"
+msgstr "جمعه سیاه - 20% تخفیف نسخه پولی افزونه تا 30 نوامبر"
+
+#: includes/wp-optimize-notices.php:138
+msgid "With MetaSlider, you can easily add style and flare with beautifully-designed sliders."
+msgstr "با متااسلایدر، می توانید براحتی استایل اضافه کنید و با حالت نورانی زیبایی اسلایدر را طراحی کنید."
+
+#: includes/wp-optimize-notices.php:137
+msgid "MetaSlider: the world's #1 slider plugin from the makers of WP-Optimize"
+msgstr "متااسلایدر: اسلایدر شماره 1 افزونه وردپرس از سازنده های افزونه WP-Optimize"
+
+#: includes/wp-optimize-notices.php:127
+msgid "WP-Optimize Premium comes with a feature to easily remove orphaned images, or images that exceed a certain size from your website."
+msgstr "نسخه پولی دارای ویژگی آسان برای حذف تصاویر بلااستفاده یا تصاویری با اندازه های بزرگ و ناخواسته است."
+
+#: includes/wp-optimize-notices.php:126
+msgid "Remove unwanted images for better site performance."
+msgstr "حذف تصاویر ناخواسته برای بهبود عملکرد سایت."
+
+#: includes/wp-optimize-notices.php:116
+msgid "Upgrade today to combine over a dozen optimization options."
+msgstr "اکنون نسخه پولی را تهیه کنید تا از امکانات بسیاری برخوردار شوید."
+
+#: includes/wp-optimize-notices.php:115
+msgid "WP-Optimize Premium offers unparalleled choice and flexibility"
+msgstr "نسخه پولی شامل انتخاب بی نظیر و انعطاف پذیری بسیار است"
+
+#: includes/wp-optimize-notices.php:105
+msgid "WP-Optimize Premium's multisite feature includes a locking system that restricts optimization commands to users with the right permissions."
+msgstr "نسخه پولی افزونه شامل ویژگی محدود کردن سیستم است که برای کاربرانی که دسترسی کافی دارند محدودیت هایی را اعمال میکند."
+
+#: includes/wp-optimize-notices.php:104
+msgid "Manage a multisite installation? Need extra control?"
+msgstr "مدیریت یک نصب چند منظوره؟ آیا نیاز به کنترل بیشتری دارید؟"
+
+#: includes/wp-optimize-notices.php:94
+msgid "WP-Optimize Premium features an advanced scheduling system that allows you to run optimizations at the quietest time of day (or night)."
+msgstr "نسخه پولی شامل ویژگی زمانبندی است که به شما اجازه می دهد بهینه سازی سایت خود را در زمانی که بازدید سایت بسیار کم است در طول شبانه روز انجام دهد."
+
+#: includes/wp-optimize-notices.php:93
+msgid "Perform optimizations while your visitors sleep"
+msgstr "انجام بهینه سازی در حالی که بازدید کنندگان شما خواب هستند"
+
+#: includes/wp-optimize-notices.php:85
+msgid "Find out more about our revolutionary new WordPress plugin."
+msgstr "اطلاعات بیشتری درباره افزونه وردپرس جدید ما کسب کنید."
+
+#: includes/wp-optimize-notices.php:53
+msgid "UpdraftCentral is a highly efficient way to take backup, update and manage multiple WP sites from one location."
+msgstr "UpdraftCentral یک راه بسیار کارآمد برای تهیه پشتیبان، به روز رسانی و مدیریت چندین سایت WP از یک مکان است."
+
+#: includes/wp-optimize-notices.php:52
+msgid "Save Time and Money. Manage multiple WordPress sites from one location."
+msgstr "صرفه جویی در وقت و پول مدیریت چندین سایت وردپرس از یک مکان."
+
+#: templates/admin-settings-logging.php:39
+#: templates/admin-settings-logging.php:79
+msgid "Active"
+msgstr "فعال"
+
+#: includes/class-updraft-smush-task.php:233
+msgid "Initialised"
+msgstr "آغاز شده"
+
+#: includes/class-updraft-ring-logger.php:24
+msgid "Store the most recent log entries in the WordPress database"
+msgstr "آخرین گزارش های ورودی را در پایگاه داده وردپرس ذخیره کنید"
+
+#: includes/class-updraft-email-logger.php:26
+msgid "Log events to email"
+msgstr "ورود رویدادها به ایمیل"
+
+#: includes/class-commands.php:376 includes/class-commands.php:385
+msgid "Please upload a valid settings file."
+msgstr "لطفا فایل تنظیمات معتبر را آپلود کنید."
+
+#: wp-optimize.php:538
+msgid "Optimization complete"
+msgstr "بهینه سازی کامل است"
+
+#: wp-optimize.php:537
+msgid "An unexpected response was received."
+msgstr "پاسخ غیر منتظره دریافت شد"
+
+#: templates/optimize-table.php:26
+msgid "You may wish to run a backup before optimizing."
+msgstr "ممکن است بخواهید قبل از بهینه سازی نسخه پشتیبان تهیه کنید."
+
+#: templates/optimize-table.php:26
+msgid "Items marked in red perform more intensive database operations. In very rare cases, if your database server happened to crash or be forcibly powered down at the same time as an optimization operation was running, data might be corrupted. "
+msgstr "موارد مشخص شده با رنگ قرمز انجام عملیات فشرده تری انجام می شود. اگر پایگاه داده سرور شما خراب شده یا قدرتمند نباشد در هنگام انجام این عملیات ممکن است داده شما خراب شود."
+
+#: templates/take-a-backup.php:87
+msgid "Please update UpdraftPlus to the latest version."
+msgstr "لطفا UpdraftPlus را به جدیدترین نسخه بروزرسانی کنید."
+
+#: templates/take-a-backup.php:87
+msgid "UpdraftPlus needs to be updated to 1.12.33 or higher in order to backup the database before optimization."
+msgstr "UpdraftPlus نیازمند بروزرسانی به نسخه 1.12.33 یا جدیدتر است برای پشتیبان گیری از پایگاه داده شما."
+
+#: templates/take-a-backup.php:71
+msgid "Follow this link to install UpdraftPlus, to take a backup before optimization"
+msgstr "پیوند زیر را برای نصب UpdraftPlus دنبال کنید تا قبل از بهینه سازی پشتیبان گیری کنید."
+
+#: templates/take-a-backup.php:64
+msgid "Take a backup with UpdraftPlus before doing this"
+msgstr "قبل از بهینه سازی پشتیبانی از پایگاه داده با UpdraftPlus بگیرید."
+
+#: templates/take-a-backup.php:17
+msgid "Backup before running optimizations"
+msgstr "پشتیبان گیری قبل از اجرای بهینه سازی"
+
+#: templates/admin-settings-logging.php:3
+msgid "Logging settings"
+msgstr "تنظیمات ورود"
+
+#: templates/admin-settings-general.php:19
+msgid "Whether manually or on a schedule, these settings apply whenever a relevant optimization is run."
+msgstr "چه بصورت دستی یا زمانبندی شده این تنظیمات اعمال می شود وقتی یک بهینه سازی مرتبط اجرا شود."
+
+#: optimizations/spam.php:250 optimizations/spam.php:255
+msgid "Remove spam and trashed comments"
+msgstr "حذف اسپم و دیدگاه‌های زباله دان"
+
+#: optimizations/spam.php:248
+msgid "Remove spam and trashed comments which are older than %d weeks"
+msgstr "حذف اسپم و دیدگاه‌های زباله دان که قدیمی تر از %d هفته هستند"
+
+#: optimizations/optimizetables.php:101
+msgid "Tables will be optimized (%s)."
+msgstr "جدول بهینه سازی می شود (%s)."
+
+#: optimizations/optimizetables.php:70
+msgid "Optimizing Table:"
+msgstr "بهینه سازی جدول:"
+
+#: includes/class-wp-optimize-options.php:142
+msgid "Auto backup option updated."
+msgstr "تنظیمات پشتیبان گیری خودکار بروز شد."
+
+#: includes/class-updraft-php-logger.php:24
+msgid "Log events into the PHP error log"
+msgstr "گزارش رویدادها در گزارش خطای PHP"
+
+#: wp-optimize.php:576
+msgid "Optimize"
+msgstr "بهینه سازی"
+
+#: templates/optimize-table.php:17
+msgid "Run all selected optimizations"
+msgstr "اجرای تمام بهینه سازی انتخاب شده"
+
+#: templates/optimize-table.php:14
+msgid "Optimizations"
+msgstr "بهینه سازی"
+
+#: templates/optimizations-table.php:73
+msgid "Go"
+msgstr "برو"
+
+#: templates/optimizations-table.php:71
+msgid "Run optimization"
+msgstr "اجرای بهینه سازی"
+
+#: templates/optimizations-table.php:7
+msgid "Optimization"
+msgstr "بهينه سازي"
+
+#: templates/may-also-like.php:253
+msgid "UpdraftPlus"
+msgstr "UpdraftPlus"
+
+#: templates/notices/thanks-for-using-main-dash.php:5
+msgid "Dismiss (for %s months)"
+msgstr "ردکردن (برای %s ماه)"
+
+#: templates/notices/horizontal-notice.php:39
+msgid "Go there"
+msgstr "برو اونجا"
+
+#: templates/notices/horizontal-notice.php:37
+msgid "Sign up"
+msgstr "ثبت نام"
+
+#: templates/notices/horizontal-notice.php:35
+msgid "Get UpdraftPlus"
+msgstr "گرفتن UpdraftPlus"
+
+#: templates/notices/horizontal-notice.php:33
+msgid "Review WP-Optimize"
+msgstr "بررسی WP-Optimize"
+
+#: templates/notices/horizontal-notice.php:31
+msgid "Get UpdraftCentral"
+msgstr "گرفتن UpdraftCentral"
+
+#: templates/notices/horizontal-notice.php:16
+#: templates/notices/horizontal-notice.php:18
+msgid "Dismiss"
+msgstr "ردکردن"
+
+#: templates/notices/horizontal-notice.php:6
+msgid "notice image"
+msgstr "تصویر اعلان"
+
+#: templates/admin-settings-sidebar.php:25
+msgid "Use these buttons to enable or disable any future comments on all your previously published posts."
+msgstr "استفاده از این دکمه‌ها برای فعال یا غیرفعال کردن هر امکان دیدگاه در همه نوشته‌های منتشر شده قبلی."
+
+#: templates/admin-settings-sidebar.php:23
+msgid "Comments"
+msgstr "دیدگاه‌ها"
+
+#: templates/admin-settings-sidebar.php:12
+msgid "Use these buttons to enable or disable any future trackbacks on all your previously published posts."
+msgstr "استفاده از دکمه برای عال یا غرفعال کردن هر امکان trackbacks در همه نوسته‌های منتشر شده قبلی."
+
+#: templates/admin-settings-sidebar.php:9
+msgid "Trackbacks"
+msgstr "پیگیری ها"
+
+#: optimizations/spam.php:194
+msgid "No trashed comments found"
+msgstr "هیچ دیدگاه پاک شده ای یافت نشد"
+
+#: optimizations/spam.php:186
+msgid "%s trashed comment found"
+msgid_plural "%s trashed comments found"
+msgstr[0] "%s دیدگاه در زباله دان"
+
+#: optimizations/trash.php:85 optimizations/trash.php:165
+msgid "No trashed posts found"
+msgstr "نوشته ای در زباله دان یافت نشد"
+
+#: optimizations/trash.php:163
+msgid "%s trashed post in your database"
+msgid_plural "%s trashed posts in your database"
+msgstr[0] "%s نوشته زباله دان در پایگاه داده"
+
+#: includes/wp-optimize-notices.php:64
+msgid "Please help WP-Optimize by giving a positive review at wordpress.org."
+msgstr "لطفا به WP-Optimize کمک کنید با بررسی مثبت در wordpress.org."
+
+#: includes/wp-optimize-notices.php:63
+msgid "Like WP-Optimize and can spare one minute?"
+msgstr "می پسندید WP-Optimize و می توانید یک دقیقه بمانید؟"
+
+#: includes/wp-optimize-notices.php:42
+msgid "UpdraftPlus is the world's most trusted backup plugin from the owners of WP-Optimize"
+msgstr "UpdraftPlus قابل اعتمادترین افزونه پشتیبان گیری از مالکان WP-Optimize"
+
+#: includes/wp-optimize-notices.php:41
+msgid "Make sure you backup before you optimize your database"
+msgstr "اطمینان داشته باشید پشتیبان گیری پایگاه داده به خوبی بهینه سازی آن است"
+
+#: includes/class-wp-optimizer.php:466
+msgid "Trackbacks have now been enabled on all current and previously published posts."
+msgstr "Trackbacks فعال شده در همه نوشته های اخیر و گذشته."
+
+#: includes/class-wp-optimizer.php:463
+msgid "Trackbacks have now been disabled on all current and previously published posts."
+msgstr "Trackbacks غیرفعال شده در همه نوشته های اخیر و گذشته."
+
+#: includes/class-wp-optimizer.php:456
+msgid "Comments have now been enabled on all current and previously published posts."
+msgstr "دیدگاهه فعال است در همه نوشته های اخیر و گذشته."
+
+#: includes/class-wp-optimizer.php:453
+msgid "Comments have now been disabled on all current and previously published posts."
+msgstr "دیدگاه غیرفعال است در همه نوشته های اخیر و گذشته."
+
+#: includes/class-commands.php:180 includes/class-commands.php:224
+#: includes/class-commands.php:266
+msgid "No optimization was indicated."
+msgstr "بدون بهینه سازی"
+
+#. Author URI of the plugin/theme
+msgid "https://updraftplus.com"
+msgstr "http://updraftplus.com"
+
+#. Author of the plugin/theme
+msgid "David Anderson, Ruhani Rabin, Team Updraft"
+msgstr "Ruhani Rabin, Team Updraft | پشتیبانی فارسی: یوسف زاده"
+
+#. Description of the plugin/theme
+msgid "WP-Optimize is WordPress's #1 most installed optimization plugin. With it, you can clean up your database easily and safely, without manual queries."
+msgstr "WP-Optimize افزونه شماره یک و با بیشترین تعداد نصب در وردپرس می باشد. با این افزونه شما قادر خواهید بود پایگاه داده خود را به صورت ساده و ایمن از داده های اضافی پاک کنید، بدون نیاز به هیچ تخصصی."
+
+#: wp-optimize.php:787
+msgid "template not found"
+msgstr "پوسته یافت نشد"
+
+#: wp-optimize.php:787
+msgid "Error:"
+msgstr "خطا:"
+
+#: templates/status-box-contents.php:139
+msgid "Support is available here."
+msgstr "پشتیابی در اینجا در دسترس می باشد."
+
+#: templates/status-box-contents.php:138
+msgid "please tell us why at this link."
+msgstr "لطفا دلیل آن را از طریق این لینک به ما بگویید."
+
+#: templates/status-box-contents.php:138
+msgid "Or, if you did not like it,"
+msgstr "یا اگه ازش خوشتان نیامد،"
+
+#: templates/status-box-contents.php:138
+msgid "please give us a positive review, here."
+msgstr "لطفا یک امتیاز مثبت به ما بدهید،اینجا"
+
+#: templates/status-box-contents.php:138
+msgid "If you like WP-Optimize,"
+msgstr "اگه از WP-Optimize خوشتان آمد،"
+
+#: templates/status-box-contents.php:136
+msgid "Support and feedback"
+msgstr "بازخورد و پشتیبانی"
+
+#: templates/status-box-contents.php:104
+msgid "You can save around:"
+msgstr "شما می توانید ذخیره کنید چیزی در حدود:"
+
+#: templates/admin-settings-logging.php:24 templates/status-box-contents.php:11
+msgid "Status"
+msgstr "وضعیت"
+
+#: templates/admin-settings-auto-cleanup.php:28
+msgid "Monthly (approx. - every 30 days)"
+msgstr "ماهیانه (حدودا هر 30 روز)"
+
+#: templates/admin-settings-auto-cleanup.php:27
+msgid "Fortnightly"
+msgstr "دوهفتگی"
+
+#: templates/admin-settings-auto-cleanup.php:26
+msgid "Weekly"
+msgstr "هفتگی"
+
+#: templates/admin-settings-auto-cleanup.php:25
+msgid "Daily"
+msgstr "روزانه"
+
+#: templates/admin-settings-logging.php:96
+msgid "Save settings"
+msgstr "ذخیره تنظیمات"
+
+#: templates/admin-settings-general.php:42
+msgid "This option will put an WP-Optimize link on the top admin bar (default is off). Requires a second page refresh after saving the settings."
+msgstr "این گزینه لینک WP-Optimize را در بالای ادمین بار قرار می دهد (پیش فرض غیرفعال است). پس از ذخیره تنظیمات، نیاز است تا صفحه دوباره بارگذاری یا نوسازی شود."
+
+#: templates/admin-settings-general.php:34
+msgid "This will also affect Auto Clean-up process"
+msgstr "این گزینه همچنین بر روی عملیات پاکسازی خودکار اثر خواهد گذاشت"
+
+#: templates/admin-settings-general.php:34
+msgid "If the option is not active, then all garbage data will be removed."
+msgstr "اگر گزینه ای فعال نیست، بنابراین تمام داده های بی ارزش حذف خواهند شد ."
+
+#: templates/admin-settings-general.php:34
+msgid "This option will, where relevant, retain data from the chosen period, and remove any garbage data before that period."
+msgstr "این گزینه، داده هایی را که تا دوره زمانی معینی انتخاب شده اند را نگه میدارد، و بعد از این دوره تمامی داده های بی ارزش را حذف میکند."
+
+#: wp-optimize.php:394
+msgid "Table information"
+msgstr "اطلاعات جدول"
+
+#: templates/admin-page-header.php:27
+msgid "More plugins"
+msgstr "افزونه های بیشتر"
+
+#: templates/admin-page-header.php:25 templates/may-also-like.php:7
+msgid "FAQs"
+msgstr "پرسش و پاسخ"
+
+#: templates/admin-page-header.php:23
+msgid "Lead developer"
+msgstr "توسعه دهنده"
+
+#: templates/admin-page-header.php:21
+msgid "Newsletter sign-up"
+msgstr "ثبت نام در خبرنامه"
+
+#: templates/admin-page-header.php:19
+msgid "Support"
+msgstr "پشتیبانی"
+
+#: templates/admin-page-header.php:17
+msgid "Twitter"
+msgstr "توییتر"
+
+#: templates/admin-page-header.php:15
+msgid "News"
+msgstr "اخبار"
+
+#: templates/admin-page-header.php:11
+msgid "Home"
+msgstr "خانه"
+
+#: templates/status-box-contents.php:16
+msgid "running on:"
+msgstr "در حال اجرا:"
+
+#: optimizations/transient.php:463 optimizations/transient.php:467
+msgid "Remove expired transient options"
+msgstr "حذف انتخاب های منقضی شده موقت و گذرا"
+
+#: optimizations/transient.php:252
+msgid "%s network-wide transient option deleted"
+msgid_plural "%s network-wide transient options deleted"
+msgstr[0] "%s حذف گزینه حالت گذرای سایت"
+
+#: optimizations/optimizetables.php:90
+msgid "Tables using the InnoDB engine (%d) will not be optimized."
+msgstr "جداولی که از محرک InnoDB بهره میبرند، بهینه نخواهند شد (%d)."
+
+#: optimizations/optimizetables.php:85
+msgid "Total gain:"
+msgstr "مجموع به دست آوردن:"
+
+#: includes/class-wp-optimizer.php:115 includes/class-wp-optimizer.php:121
+msgid "No such optimization"
+msgstr "نیازی به بهینه سازی نیست"
+
+#: optimizations/orphandata.php:63
+msgid "Clean orphaned relationship data"
+msgstr "پاکسازی داده هایی که به هیچ جایی ارتباط داده نشده اند"
+
+#: optimizations/commentmeta.php:204 optimizations/commentmeta.php:208
+msgid "Clean comment meta data"
+msgstr "پاکسازی داده‌های متای دیدگاه"
+
+#: optimizations/postmeta.php:120
+msgid "Clean post meta data"
+msgstr "پاکسازی داده‌های متای نوشته"
+
+#: templates/optimize-table.php:6
+msgid "Warning: This operation is permanent. Continue?"
+msgstr "اخطار:این عملیات دائمی است. ادامه یابد؟"
+
+#: optimizations/orphandata.php:42
+msgid "No orphaned relationship data in your database"
+msgstr "هیچ داده ارتباط داده نشده ای در پایگاه داده شما وجود ندارد"
+
+#: optimizations/orphandata.php:40
+msgid "%s orphaned relationship data in your database"
+msgid_plural "%s orphaned relationship data in your database"
+msgstr[0] "%s داده‌های بدون ارتباط در پایگاه داده"
+
+#: optimizations/commentmeta.php:81 optimizations/commentmeta.php:160
+msgid "No orphaned comment meta data in your database"
+msgstr "هیچ داده های متای دیدگاه ارتباط داده نشده ای در پایگاه داده شما وجود ندارد"
+
+#: optimizations/commentmeta.php:158
+msgid "%s orphaned comment meta data in your database"
+msgid_plural "%s orphaned comment meta data in your database"
+msgstr[0] "%s داده متای دیدگاه تنها در پایگاه داده"
+
+#: optimizations/postmeta.php:60
+msgid "%s orphaned post meta data deleted"
+msgid_plural "%s orphaned post meta data deleted"
+msgstr[0] "%s داده متای تنها حذف شده"
+
+#: templates/admin-settings-general.php:28
+msgid "Keep last %s weeks data"
+msgstr "نگهداری داده های %s هفته اخیر"
+
+#: templates/status-box-contents.php:84
+msgid "Keeping last %s weeks data"
+msgstr "داده های نگهداری شده %s هفته اخیر"
+
+#: optimizations/trackbacks.php:103
+msgid "%s Trackback found"
+msgid_plural "%s Trackbacks found"
+msgstr[0] "%s Trackback یافت شد"
+
+#: optimizations/pingbacks.php:101
+msgid "%s pingback found"
+msgid_plural "%s pingbacks found"
+msgstr[0] "%s Pingback یافت شد"
+
+#: optimizations/trackbacks.php:66
+msgid "%s trackback deleted"
+msgid_plural "%s trackbacks deleted"
+msgstr[0] "%s trackback حذف شده"
+
+#: optimizations/pingbacks.php:65
+msgid "%s pingback deleted"
+msgid_plural "%s pingbacks deleted"
+msgstr[0] "%s pingback حذف شده"
+
+#. #-#-#-#-#  wp-optimize-code.pot (WP-Optimize 2.2.6)  #-#-#-#-#
+#. Plugin Name of the plugin/theme
+#: templates/may-also-like.php:20 templates/may-also-like.php:25
+msgid "WP-Optimize"
+msgstr "بهینه‌سازی وردپرس"
+
+#: templates/tables.php:52
+msgid "Total space saved:"
+msgstr "کل فضای بهینه شده:"
+
+#: templates/tables.php:48
+msgid "Optimization results:"
+msgstr "نتایج بهینه سازی:"
+
+#: templates/tables.php:37
+msgid "Total size of database:"
+msgstr "کل فضای پایگاه داده:"
+
+#: templates/tables-body.php:68
+msgid "%s Table"
+msgid_plural "%s Tables"
+msgstr[0] "%s جدول"
+
+#: templates/tables-body.php:67
+msgid "Total:"
+msgstr "مجموع:"
+
+#: templates/tables.php:27
+msgid "Overhead"
+msgstr "بالایی"
+
+#: templates/tables.php:26
+msgid "Type"
+msgstr "نوع"
+
+#: templates/tables.php:25
+msgid "Index Size"
+msgstr "اندازه شاخص"
+
+#: templates/tables.php:24
+msgid "Data Size"
+msgstr "اندازه داده"
+
+#: templates/tables.php:23
+msgid "Records"
+msgstr "سوابق"
+
+#: templates/tables.php:21
+msgid "No."
+msgstr "خیر."
+
+#: templates/tables.php:9
+msgid "Optimized all the tables found in the database."
+msgstr "بهینه‌سازی همه جداول یافت شده در پایگاه داده"
+
+#: templates/tables.php:3
+msgid "Database name:"
+msgstr "نام پایگاه داده:"
+
+#: optimizations/inactive-tags.php:21
+msgid "Remove unused tags"
+msgstr "حذف برچسب‌های استفاده نشده"
+
+#: optimizations/postmeta.php:129
+msgid "Remove orphaned post meta"
+msgstr "حذف متا های استفاده نشده در نوشته"
+
+#: optimizations/revisions.php:159
+msgid "Remove auto revisions"
+msgstr "حذف رونوشت های خودکار"
+
+#: templates/admin-settings-auto-cleanup.php:20
+msgid "Select schedule type (default is Weekly)"
+msgstr "انتخاب زمان بندی (پیشفرض هفتگی)"
+
+#: templates/admin-settings-auto-cleanup.php:12
+msgid "Enable scheduled clean-up and optimization (Beta feature)"
+msgstr "فعال کردن برنامه ریزی شده پاک کردن و بهینه سازی (ویژگی بتا)"
+
+#: templates/admin-settings-sidebar.php:15
+#: templates/admin-settings-sidebar.php:27
+msgid "Enable"
+msgstr "فعال سازی"
+
+#: templates/admin-settings-sidebar.php:17
+#: templates/admin-settings-sidebar.php:29
+msgid "Disable"
+msgstr "غیر فعال سازی"
+
+#: templates/admin-settings-sidebar.php:4
+msgid "Trackback/comments actions"
+msgstr "اعمال دیدگاه‌ها/Trackback"
+
+#: templates/admin-settings-general.php:39
+msgid "Enable admin bar link"
+msgstr "فعال سازی پیوند نوار مدیریت"
+
+#: templates/admin-settings-general.php:17
+msgid "General settings"
+msgstr "تنظیمات عمومی"
+
+#: includes/class-wp-optimize-options.php:248
+msgid "Settings updated."
+msgstr "تنظیمات بروزرسانی شد"
+
+#: templates/status-box-contents.php:117
+msgid "Total clean up overall:"
+msgstr "مجموع پاکسازی کلی:"
+
+#: templates/status-box-contents.php:93
+msgid "Current database size:"
+msgstr "فضای فعلی پایگاه داده"
+
+#: templates/status-box-contents.php:100
+msgid "You have saved:"
+msgstr "ذخیره کرده اید:"
+
+#: templates/status-box-contents.php:87
+msgid "Not keeping recent data"
+msgstr "نگه نداشتن داده‌های اخیر"
+
+#: templates/status-box-contents.php:77
+msgid "Scheduled cleaning disabled"
+msgstr "پاک‌سازی برنامه‌ریزی شده غیرفعال شد"
+
+#: templates/status-box-contents.php:73
+msgid "Refresh"
+msgstr "تازه‌سازی"
+
+#: templates/status-box-contents.php:68
+msgid "Next schedule:"
+msgstr "زمانبندی بعدی:"
+
+#: templates/status-box-contents.php:56
+msgid "Scheduled cleaning enabled"
+msgstr "پاک‌سازی برنامه‌ریزی شده فعال شد"
+
+#: templates/optimize-table.php:26
+msgid "Warning:"
+msgstr "هشدار :"
+
+#: templates/optimizations-table.php:8
+msgid "Notes"
+msgstr "یادداشت‌ها"
+
+#: optimizations/optimizetables.php:106 optimizations/optimizetables.php:110
+msgid "Optimize database tables"
+msgstr "بهینه سازی جداول پایگاه داده"
+
+#: templates/admin-settings-logging.php:25 templates/tables-body.php:81
+#: templates/tables.php:28
+msgid "Actions"
+msgstr "اعمال"
+
+#: optimizations/trackbacks.php:123
+msgid "Remove trackbacks"
+msgstr "حذف trackbacks"
+
+#: optimizations/pingbacks.php:129
+msgid "Remove pingbacks"
+msgstr "حذف pingbacks"
+
+#: optimizations/unapproved.php:160 optimizations/unapproved.php:165
+msgid "Remove unapproved comments"
+msgstr "حذف دیدگاه تایید نشده"
+
+#: optimizations/unapproved.php:158
+msgid "Remove unapproved comments which are older than %d weeks"
+msgstr "حذف دیدگاه تایید نشده که قدیمیتر از %d هفته هستند"
+
+#: optimizations/trash.php:204
+msgid "Clean trashed posts which are older than %d weeks"
+msgstr "پاکسازی نوشته‌های پیش نویس که قدیمیتر از %d هفته هستند"
+
+#: optimizations/revisions.php:154
+msgid "Clean all post revisions"
+msgstr "پاک کردن همه پیش نویس های ذخیره شده"
+
+#: optimizations/revisions.php:152
+msgid "Clean post revisions which are older than %d weeks"
+msgstr "پاکسازی نوشته‌های برای بازبینی که قدیمیتر از %d هفته هستند"
+
+#: optimizations/trackbacks.php:58 optimizations/trackbacks.php:105
+msgid "No trackbacks found"
+msgstr "trackbacks یافت نشد"
+
+#: optimizations/pingbacks.php:57 optimizations/pingbacks.php:103
+msgid "No pingbacks found"
+msgstr "pingbacks یافت نشد"
+
+#: optimizations/unapproved.php:73 optimizations/unapproved.php:126
+msgid "No unapproved comments found"
+msgstr "دیدگاه تائید نشده ای یافت نشد"
+
+#: optimizations/unapproved.php:124
+msgid "%s unapproved comment found"
+msgid_plural "%s unapproved comments found"
+msgstr[0] "%s دیدگاه تائید نشده یافت شد"
+
+#: optimizations/spam.php:182
+msgid "No spam comments found"
+msgstr "دیدگاه اسپمی یافت نشد"
+
+#: optimizations/spam.php:178 optimizations/spam.php:191
+msgid "Review"
+msgstr "بررسی"
+
+#: optimizations/spam.php:173
+msgid "%s spam comment found"
+msgid_plural "%s spam comments found"
+msgstr[0] "%s دیدگاه اسپم یافت شد"
+
+#: optimizations/autodraft.php:74 optimizations/autodraft.php:126
+msgid "No auto draft posts found"
+msgstr "پیشنویس خودکاری یافت نشد"
+
+#: optimizations/autodraft.php:124
+msgid "%s auto draft post in your database"
+msgid_plural "%s auto draft posts in your database"
+msgstr[0] "%s پیشنویس خودکار یافت شد"
+
+#: optimizations/revisions.php:70 optimizations/revisions.php:121
+msgid "No post revisions found"
+msgstr "رونوشتی یافت نشد"
+
+#: optimizations/revisions.php:119
+msgid "%s post revision in your database"
+msgid_plural "%s post revisions in your database"
+msgstr[0] "%s رونوشت یافت شد"
+
+#: optimizations/postmeta.php:52 optimizations/postmeta.php:94
+msgid "No orphaned post meta data in your database"
+msgstr "هیچ داده متای نوشته ارتباط داده نشده ای در پایگاه داده شما وجود ندارد"
+
+#: optimizations/postmeta.php:92
+msgid "%s orphaned post meta data in your database"
+msgid_plural "%s orphaned post meta data in your database"
+msgstr[0] "%s داده متای نوشته تنها در پایگاه داده"
+
+#: optimizations/transient.php:159 optimizations/transient.php:386
+msgid "No transient options found"
+msgstr "تنظیمات transient یافت نشد"
+
+#: optimizations/unapproved.php:81
+msgid "%s unapproved comment deleted"
+msgid_plural "%s unapproved comments deleted"
+msgstr[0] "%s دیدگاه تائید نشده حذف شد"
+
+#: optimizations/commentmeta.php:98
+msgid "%s unused akismet comment metadata item removed"
+msgid_plural "%s unused akismet comment metadata items removed"
+msgstr[0] "%s متای داده دیدگاه akismet بدون استفاده حذف شد"
+
+#: optimizations/commentmeta.php:97
+msgid "%s unused comment metadata item removed"
+msgid_plural "%s unused comment metadata items removed"
+msgstr[0] "%s متای داده دیدگاه بدون استفاده حذف شد"
+
+#: optimizations/spam.php:107
+msgid "%s comment removed from Trash"
+msgid_plural "%s comments removed from Trash"
+msgstr[0] "%s دیدگاه از زباله‌دان حذف شد"
+
+#: optimizations/spam.php:106
+msgid "%s spam comment deleted"
+msgid_plural "%s spam comments deleted"
+msgstr[0] "%s دیدگاه اسپم حذف شد"
+
+#: optimizations/trash.php:93
+msgid "%s post removed from Trash"
+msgid_plural "%s posts removed from Trash"
+msgstr[0] "%s مورد از زباله‌دان حذف شد"
+
+#: optimizations/autodraft.php:82
+msgid "%s auto draft deleted"
+msgid_plural "%s auto drafts deleted"
+msgstr[0] "%s پیشنویس خودکار حذف شد"
+
+#: optimizations/revisions.php:78
+msgid "%s post revision deleted"
+msgid_plural "%s post revisions deleted"
+msgstr[0] "%s رونوشت حذف شد"
+
+#: optimizations/transient.php:175
+msgid "%s transient option deleted"
+msgid_plural "%s transient options deleted"
+msgstr[0] "%s گزینه‌های گذرا حذف شد"
+
+#: wp-optimize.php:873
+msgid "bytes"
+msgstr "بایت"
+
+#: wp-optimize.php:871
+msgid "KB"
+msgstr "کیلوبایت"
+
+#: wp-optimize.php:869
+msgid "MB"
+msgstr "مگابایت"
+
+#: wp-optimize.php:867
+msgid "GB"
+msgstr "گیگابایت"
+
+#: wp-optimize.php:845
+msgid "WP-Optimize Plugin"
+msgstr "افزونه بهینه‌سازی وردپرس"
+
+#: wp-optimize.php:844
+msgid "Regards,"
+msgstr "با احترام،"
+
+#: wp-optimize.php:842
+msgid "You can safely delete this email."
+msgstr "شما با خیال راحت می توانید این ایمیل را حذف کنید."
+
+#: wp-optimize.php:841
+msgid "Scheduled optimization was executed at"
+msgstr "زمانبندی بهینه سازی اجرا شده"
+
+#: wp-optimize.php:839
+msgid "Automatic Operation Completed"
+msgstr "عملیات به صورت خودکار کامل شده است"
+
+#: templates/tables.php:22
+msgid "Table"
+msgstr "جدول"
+
+#: wp-optimize.php:394 wp-optimize.php:595
+msgid "Settings"
+msgstr "تنظیمات"
+
+#: templates/status-box-contents.php:16
+msgid "MySQL"
+msgstr "MYSQL"
+
+#: wp-optimize.php:598
+msgid "Optimizer"
+msgstr "بهینه ساز"

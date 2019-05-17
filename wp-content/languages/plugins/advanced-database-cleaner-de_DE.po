@@ -1,0 +1,880 @@
+# Translation of Plugins - Advanced Database Cleaner - Stable (latest release) in German
+# This file is distributed under the same license as the Plugins - Advanced Database Cleaner - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2018-04-05 17:01:29+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: GlotPress/2.4.0-alpha\n"
+"Language: de\n"
+"Project-Id-Version: Plugins - Advanced Database Cleaner - Stable (latest release)\n"
+
+#: advanced-db-cleaner.php:112
+msgid "Once weekly"
+msgstr "Einmal wöchentlich"
+
+#: advanced-db-cleaner.php:117
+msgid "Once monthly"
+msgstr "Einmal monatlich"
+
+#. Author of the plugin/theme
+msgid "Younes JFR."
+msgstr "Younes JFR."
+
+#. Plugin URI of the plugin/theme
+msgid "https://sigmaplugin.com/downloads/wordpress-advanced-database-cleaner"
+msgstr "https://sigmaplugin.com/downloads/wordpress-advanced-database-cleaner"
+
+#. Plugin Name of the plugin/theme
+msgid "Advanced Database Cleaner"
+msgstr "Advanced Database Cleaner"
+
+#: advanced-db-cleaner.php:227
+msgid "Welcome!"
+msgstr "Herzlich willkommen!"
+
+#: advanced-db-cleaner.php:229
+msgid "Before doing any clean-up, please make sure to always backup your database first."
+msgstr "Bevor du irgendwelche Reinigungen durchführst, stelle bitte sicher, dass du zunächst immer ein Backup deiner Datenbank erstellst."
+
+#: advanced-db-cleaner.php:238
+msgid "General clean-up"
+msgstr "Allgemeine Reinigung"
+
+#: advanced-db-cleaner.php:239 includes/class_optimize_tables.php:179
+msgid "Optimize"
+msgstr "Optimieren"
+
+#: advanced-db-cleaner.php:240 includes/class_clean_tables.php:20
+#: includes/class_optimize_tables.php:18
+msgid "Tables"
+msgstr "Tabellen"
+
+#: advanced-db-cleaner.php:241 includes/class_clean_options.php:20
+msgid "Options"
+msgstr "Optionen"
+
+#: advanced-db-cleaner.php:242
+msgid "Scheduled tasks"
+msgstr "Geplante Aufgaben"
+
+#: includes/class_clean_cron.php:19
+msgid "Task"
+msgstr "Aufgabe"
+
+#: includes/class_clean_cron.php:20
+msgid "Tasks"
+msgstr "Aufgaben"
+
+#: includes/class_clean_cron.php:57 includes/class_clean_options.php:58
+#: includes/class_clean_tables.php:59 includes/class_optimize_tables.php:124
+#: includes/custom-clean-view/class_clean_comment.php:53
+#: includes/custom-clean-view/class_clean_commentmeta.php:40
+#: includes/custom-clean-view/class_clean_dashboard_transient_feed.php:40
+#: includes/custom-clean-view/class_clean_draft_trash.php:56
+#: includes/custom-clean-view/class_clean_postmeta.php:40
+#: includes/custom-clean-view/class_clean_relationships.php:40
+#: includes/custom-clean-view/class_clean_revision.php:40
+msgid "Site id"
+msgstr "Website-ID"
+
+#: includes/class_clean_cron.php:58 includes/class_clean_options.php:59
+#: includes/class_clean_tables.php:60
+msgid "Belongs to"
+msgstr "Gehört zu"
+
+#: includes/class_clean_cron.php:111 includes/class_clean_options.php:113
+#: includes/class_clean_tables.php:115
+msgid "Delete"
+msgstr "Löschen"
+
+#: includes/class_clean_cron.php:119 includes/class_clean_options.php:121
+#: includes/class_clean_tables.php:123
+msgid "No tasks found!"
+msgstr "Keine Aufgaben gefunden!"
+
+#: includes/class_clean_cron.php:164
+msgid "Selected scheduled tasks cleaned successfully!"
+msgstr "Die ausgewählten geplanten Aufgaben wurden erfolgreich gereinigt!"
+
+#: includes/class_clean_cron.php:208
+msgid "Detect orphan tasks"
+msgstr "Nach verwaisten Aufgaben suchen"
+
+#: includes/class_clean_cron.php:214 includes/class_clean_options.php:216
+#: includes/class_clean_tables.php:199
+msgid "Please wait!"
+msgstr "Bitte warten!"
+
+#: includes/class_clean_cron.php:224
+msgid "Below the list of all your scheduled tasks. Please do not delete any task unless you really know what you are doing!"
+msgstr "Unterhalb die Liste aller geplanter Aufgaben. Bitte lösche keine Aufgaben, es sei denn, du weißt, was du tust!"
+
+#: includes/class_clean_cron.php:245 includes/class_clean_options.php:247
+#: includes/class_clean_tables.php:230 includes/class_general_cleanup.php:232
+#: includes/class_optimize_tables.php:283
+msgid "Action required"
+msgstr "Maßnahme erforderlich"
+
+#: includes/class_clean_cron.php:247 includes/class_clean_options.php:249
+#: includes/class_clean_tables.php:232 includes/class_general_cleanup.php:234
+#: includes/class_optimize_tables.php:285
+msgid "Please select an action!"
+msgstr "Bitte wähle eine Maßnahme aus!"
+
+#: includes/class_clean_options.php:19
+msgid "Option"
+msgstr "Option"
+
+#: includes/class_clean_options.php:55
+msgid "Option name"
+msgstr "Optionsname"
+
+#: includes/class_clean_options.php:56
+msgid "Value"
+msgstr "Wert"
+
+#: includes/class_clean_options.php:57
+#: includes/custom-clean-view/class_clean_dashboard_transient_feed.php:39
+msgid "Autoload"
+msgstr "Automatisches Laden"
+
+#: includes/class_clean_options.php:166
+msgid "Selected options cleaned successfully!"
+msgstr "Die ausgewählten Optionen wurden erfolgreich gereinigt!"
+
+#: includes/class_clean_options.php:210 includes/premium_page.php:11
+msgid "Detect orphan options"
+msgstr "Nach verwaisten Optionen suchen"
+
+#: includes/class_clean_options.php:226
+msgid "Below the list of all your options. Please do not delete any option unless you really know what you are doing!"
+msgstr "Unterhalb die Liste aller Optionen. Bitte lösche keine Optionen, es sei denn, du weißt, was du tust!"
+
+#: includes/class_clean_tables.php:19 includes/class_optimize_tables.php:17
+msgid "Table"
+msgstr "Tabelle"
+
+#: includes/class_clean_tables.php:55 includes/class_optimize_tables.php:122
+msgid "Prefix"
+msgstr "Präfix"
+
+#: includes/class_clean_tables.php:56 includes/class_optimize_tables.php:123
+msgid "Table name"
+msgstr "Tabellenname"
+
+#: includes/class_clean_tables.php:57
+msgid "Rows"
+msgstr "Zeilen"
+
+#: includes/class_clean_tables.php:58
+msgid "Size"
+msgstr "Größe"
+
+#: includes/class_clean_tables.php:149
+msgid "Selected tables cleaned successfully!"
+msgstr "Die ausgewählten Tabellen wurden erfolgreich gelöscht!"
+
+#: includes/class_clean_tables.php:193 includes/premium_page.php:12
+msgid "Detect orphan tables"
+msgstr "Nach verwaisten Tabellen suchen"
+
+#: includes/class_clean_tables.php:209
+msgid "Below the list of all your tables. Please do not delete any table unless you really know what you are doing!"
+msgstr "Unterhalb die Liste aller Tabellen. Bitte lösche keine Tabellen, es sei denn, du weißt, was du tust!"
+
+#: includes/class_general_cleanup.php:15
+msgid "Element"
+msgstr "Element"
+
+#: includes/class_general_cleanup.php:16
+msgid "Elements"
+msgstr "Elemente"
+
+#: includes/class_general_cleanup.php:28
+msgid "The clean-up schedule saved successfully!"
+msgstr "Der Reinigungsplan wurde erfolgreich gespeichert!"
+
+#: includes/class_general_cleanup.php:70
+msgid "Element to clean"
+msgstr "Zu bereinigendes Element"
+
+#: includes/class_general_cleanup.php:71
+msgid "Count"
+msgstr "Anzahl"
+
+#: includes/class_general_cleanup.php:72
+msgid "View"
+msgstr "Betrachten"
+
+#: includes/class_general_cleanup.php:128
+#: includes/class_general_cleanup.php:174
+msgid "Your database is clean!"
+msgstr "Deine Datenbank ist sauber!"
+
+#: includes/class_general_cleanup.php:149
+msgid "Selected elements successfully cleaned!"
+msgstr "Die ausgewählten Elemente wurden erfolgreich gereinigt!"
+
+#: includes/class_general_cleanup.php:177
+msgid "element(s) should be cleaned!"
+msgstr "Element(e) sollte(n) gereinigt werden!"
+
+#: includes/class_general_cleanup.php:181
+#: includes/class_optimize_tables.php:240
+msgid "Schedule"
+msgstr "Zeitplan"
+
+#: includes/class_general_cleanup.php:188
+#: includes/class_optimize_tables.php:247
+msgid "Not scheduled"
+msgstr "Nicht geplant"
+
+#: includes/class_general_cleanup.php:191
+msgid "Run clean-up hourly"
+msgstr "Reinigung stündlich ausführen"
+
+#: includes/class_general_cleanup.php:194
+msgid "Run clean-up twice a day"
+msgstr "Reinigung 2 mal am Tag ausführen"
+
+#: includes/class_general_cleanup.php:197
+msgid "Run clean-up daily"
+msgstr "Reinigung täglich ausführen"
+
+#: includes/class_general_cleanup.php:200
+msgid "Run clean-up weekly"
+msgstr "Reinigung wöchentlich ausführen"
+
+#: includes/class_general_cleanup.php:203
+msgid "Run clean-up monthly"
+msgstr "Reinigung monatlich ausführen"
+
+#: includes/class_general_cleanup.php:206
+#: includes/class_optimize_tables.php:265
+msgid "Save"
+msgstr "Speichern"
+
+#: includes/class_general_cleanup.php:209
+#: includes/class_optimize_tables.php:268
+msgid "Next run:"
+msgstr "Nächste Ausführung:"
+
+#: includes/class_general_cleanup.php:215
+#: includes/class_optimize_tables.php:274
+msgid "not set"
+msgstr "nicht gesetzt"
+
+#: includes/class_optimize_tables.php:30
+msgid "The optimization schedule saved successfully!"
+msgstr "Der Optimierungszeitplan wurde erfolgreich gespeichert!"
+
+#: includes/class_optimize_tables.php:118
+msgid "Indicates the total lost space in the table"
+msgstr "Zeigt den gesamten freigebbaren Speicherplatz der Tabelle an"
+
+#: includes/class_optimize_tables.php:125
+msgid "Lost"
+msgstr "Freigebbar"
+
+#: includes/class_optimize_tables.php:186
+msgid "All tables are optimized!"
+msgstr "Alle Tabellen sind optimiert!"
+
+#: includes/class_optimize_tables.php:207
+msgid "Selected tables successfully optimized!"
+msgstr "Die ausgewählten Tabellen wurden erfolgreich optimiert!"
+
+#: includes/class_optimize_tables.php:232
+msgid "Your database is optimized!"
+msgstr "Deine Datenbank ist optimiert!"
+
+#: includes/class_optimize_tables.php:235
+msgid "table(s) should be optimized!"
+msgstr "Tabelle(n) sollte(n) optimiert werden!"
+
+#: includes/class_optimize_tables.php:250
+msgid "Run optimization hourly"
+msgstr "Optimierung stündlich ausführen"
+
+#: includes/class_optimize_tables.php:253
+msgid "Run optimization twice a day"
+msgstr "Optimierung 2 mal am Tag ausführen"
+
+#: includes/class_optimize_tables.php:256
+msgid "Run optimization daily"
+msgstr "Optimierung täglich ausführen"
+
+#: includes/class_optimize_tables.php:259
+msgid "Run optimization weekly"
+msgstr "Optimierung wöchentlich ausführen"
+
+#: includes/class_optimize_tables.php:262
+msgid "Run optimization monthly"
+msgstr "Optimierung monatlich ausführen"
+
+#: includes/custom-clean-view/class_clean_comment.php:18
+msgid "Pending comment"
+msgstr "Ausstehender Kommentar"
+
+#: includes/custom-clean-view/class_clean_comment.php:19
+#: includes/functions.php:96
+msgid "Pending comments"
+msgstr "Ausstehende Kommentare"
+
+#: includes/custom-clean-view/class_clean_comment.php:21
+msgid "Spam comment"
+msgstr "Spam-Kommentar"
+
+#: includes/custom-clean-view/class_clean_comment.php:22
+msgid "Spam comments"
+msgstr "Spam-Kommentare"
+
+#: includes/functions.php:97
+msgid "Spam Comments"
+msgstr "Spam-Kommentare"
+
+#: includes/custom-clean-view/class_clean_comment.php:24
+msgid "Trash comment"
+msgstr "Kommentar im Papierkorb"
+
+#: includes/custom-clean-view/class_clean_comment.php:25
+#: includes/functions.php:98
+msgid "Trash comments"
+msgstr "Kommentare im Papierkorb"
+
+#: includes/custom-clean-view/class_clean_comment.php:49
+#: includes/custom-clean-view/class_clean_draft_trash.php:53
+#: includes/custom-clean-view/class_clean_revision.php:37
+msgid "ID"
+msgstr "ID"
+
+#: includes/custom-clean-view/class_clean_comment.php:50
+msgid "Author"
+msgstr "Autor"
+
+#: includes/custom-clean-view/class_clean_comment.php:51
+msgid "Content"
+msgstr "Inhalt"
+
+#: includes/custom-clean-view/class_clean_comment.php:52
+#: includes/custom-clean-view/class_clean_draft_trash.php:55
+#: includes/custom-clean-view/class_clean_revision.php:39
+msgid "Date"
+msgstr "Datum"
+
+#: includes/custom-clean-view/class_clean_comment.php:134
+#: includes/custom-clean-view/class_clean_draft_trash.php:136
+msgid "Custom cleaning : "
+msgstr "Benutzerdefiniertes Reinigen: "
+
+#: includes/custom-clean-view/class_clean_commentmeta.php:17
+msgid "Comment meta"
+msgstr "Kommentar-Metadaten"
+
+#: includes/custom-clean-view/class_clean_commentmeta.php:37
+#: includes/custom-clean-view/class_clean_postmeta.php:37
+msgid "Meta id"
+msgstr "Metadaten-ID"
+
+#: includes/custom-clean-view/class_clean_commentmeta.php:39
+#: includes/custom-clean-view/class_clean_postmeta.php:39
+msgid "Meta value"
+msgstr "Metadaten-Wert"
+
+#: includes/custom-clean-view/class_clean_commentmeta.php:120
+msgid "Custom cleaning : <b>Orphan commentmeta</b>"
+msgstr "Benutzerdefiniertes Reinigen : <b>Verwaiste Kommentar-Metadaten</b>"
+
+#: includes/custom-clean-view/class_clean_draft_trash.php:19
+msgid "Draft"
+msgstr "Entwurf"
+
+#: includes/custom-clean-view/class_clean_draft_trash.php:20
+#: includes/functions.php:93
+msgid "Drafts"
+msgstr "Entwürfe"
+
+#: includes/custom-clean-view/class_clean_draft_trash.php:21
+msgid "Draft title"
+msgstr "Entwurfstitel"
+
+#: includes/custom-clean-view/class_clean_draft_trash.php:23
+msgid "Auto draft"
+msgstr "Automatischer Entwurf"
+
+#: includes/custom-clean-view/class_clean_draft_trash.php:24
+msgid "Auto drafts"
+msgstr "Automatische Entwürfe"
+
+#: includes/custom-clean-view/class_clean_draft_trash.php:25
+msgid "Auto draft title"
+msgstr "Titel des automatischen Entwurfs"
+
+#: includes/custom-clean-view/class_clean_draft_trash.php:27
+msgid "Trash post"
+msgstr "Beitrag im Papierkorb"
+
+#: includes/custom-clean-view/class_clean_draft_trash.php:28
+#: includes/functions.php:95
+msgid "Trash posts"
+msgstr "Beiträge im Papierkorb"
+
+#: includes/custom-clean-view/class_clean_draft_trash.php:29
+msgid "Trash post title"
+msgstr "Titel des Beitrags im Papierkorb"
+
+#: includes/functions.php:94
+msgid "Auto Drafts"
+msgstr "Automatische Entwürfe"
+
+#: includes/custom-clean-view/class_clean_postmeta.php:17
+msgid "Post meta"
+msgstr "Beitrags-Metadaten"
+
+#: includes/custom-clean-view/class_clean_postmeta.php:120
+msgid "Custom cleaning : <b>Orphan postmeta</b>"
+msgstr "Benutzerdefiniertes Reinigen : <b>Verwaiste Beitrags-Metadaten</b>"
+
+#: includes/custom-clean-view/class_clean_relationships.php:17
+msgid "Relationship"
+msgstr "Bezugsinformation"
+
+#: includes/custom-clean-view/class_clean_relationships.php:18
+msgid "Relationships"
+msgstr "Bezugsdaten"
+
+#: includes/custom-clean-view/class_clean_relationships.php:120
+msgid "Custom cleaning : <b>Orphan relationships</b>"
+msgstr "Benutzerdefiniertes Reinigen : <b>Verwaiste Bezugsdaten</b>"
+
+#: includes/custom-clean-view/class_clean_revision.php:17
+msgid "Revision"
+msgstr "Revision"
+
+#: includes/custom-clean-view/class_clean_revision.php:18
+#: includes/functions.php:92
+msgid "Revisions"
+msgstr "Revisionen"
+
+#: includes/custom-clean-view/class_clean_revision.php:38
+msgid "Revision title"
+msgstr "Revisionstitel"
+
+#: includes/custom-clean-view/class_clean_revision.php:120
+msgid "Custom cleaning : <b>Revisions</b>"
+msgstr "Benutzerdefiniertes Reinigen : <b>Revisionen</b>"
+
+#: includes/functions.php:99
+msgid "Orphan Postmeta"
+msgstr "Verwaiste Beitrags-Metadaten"
+
+#: includes/functions.php:100
+msgid "Orphan Commentmeta"
+msgstr "Verwaiste Kommentar-Metadaten"
+
+#: includes/functions.php:101
+msgid "Orphan Relationships"
+msgstr "Verwaiste Bezugsdaten"
+
+#: includes/functions.php:161
+msgid "All tasks"
+msgstr "Alle Aufgaben"
+
+#: includes/functions.php:162
+msgid "Orphan tasks"
+msgstr "Verwaiste Aufgaben"
+
+#: includes/functions.php:171
+msgid "All options"
+msgstr "Alle Optionen"
+
+#: includes/functions.php:172
+msgid "Orphan options"
+msgstr "Verwaiste Optionen"
+
+#: includes/functions.php:181
+msgid "All tables"
+msgstr "Alle Tabellen"
+
+#: includes/functions.php:182
+msgid "Orphan tables"
+msgstr "Verwaiste Tabellen"
+
+#: includes/functions.php:183
+msgid "Plugins tables"
+msgstr "Plugin-Tabellen"
+
+#: includes/functions.php:184
+msgid "Themes tables"
+msgstr "Theme-Tabellen"
+
+#: includes/functions.php:185
+msgid "WP tables"
+msgstr "WP-Tabellen"
+
+#: includes/functions.php:390
+msgid "Unknown!"
+msgstr "Unbekannt!"
+
+#: includes/overview_settings.php:51
+msgid "Yes"
+msgstr "Ja"
+
+#: includes/overview_settings.php:54
+msgid "No"
+msgstr "Nein"
+
+#: includes/overview_settings.php:67
+msgid "Overview"
+msgstr "Überblick"
+
+#: includes/overview_settings.php:70
+msgid "WP Version"
+msgstr "WP-Version"
+
+#: includes/overview_settings.php:74
+msgid "Database size"
+msgstr "Datenbankgröße"
+
+#: includes/overview_settings.php:78
+msgid "Total unused data"
+msgstr "Anzahl ungenutzter Daten"
+
+#: includes/overview_settings.php:82
+msgid "Total tables"
+msgstr "Tabellenanzahl"
+
+#: includes/overview_settings.php:86
+msgid "Tables to optimize"
+msgstr "Zu optimierende Tabellen"
+
+#: includes/overview_settings.php:90
+msgid "Total options"
+msgstr "Anzahl der Optionen"
+
+#: includes/overview_settings.php:94
+msgid "Total cron tasks"
+msgstr "Anzahl der geplanten Aufgaben"
+
+#: includes/overview_settings.php:102
+msgid "Number of sites"
+msgstr "Anzahl der Websites"
+
+#: includes/overview_settings.php:106
+msgid "Script Max timeout"
+msgstr "Max. Zeitüberschreitung für Skripte"
+
+#: includes/overview_settings.php:107
+msgid "seconds"
+msgstr "Sekunden"
+
+#: includes/overview_settings.php:110
+msgid "Local time"
+msgstr "Lokale Zeit"
+
+#: includes/overview_settings.php:117
+msgid "Settings"
+msgstr "Einstellungen"
+
+#: includes/overview_settings.php:122
+msgid "Show plugin left menu"
+msgstr "Linkes Plugin-Menü anzeigen"
+
+#: includes/overview_settings.php:124
+msgid "Displays a menu at the left bar of your WP admin"
+msgstr "Zeigt ein Menü in der linken Leiste deines WP-Adminbereichs an"
+
+#: includes/overview_settings.php:129
+msgid "Show welcome message"
+msgstr "Willkommensnachricht anzeigen"
+
+#: includes/overview_settings.php:131
+msgid "Reminds you to make a backup of your database"
+msgstr "Erinnert dich daran, ein Backup deiner Datenbank zu erstellen"
+
+#: includes/overview_settings.php:135
+msgid "Save settings"
+msgstr "Einstellungen speichern"
+
+#: includes/sidebar.php:13
+msgid "Please rate us"
+msgstr "Bitte bewerte uns"
+
+#: includes/sidebar.php:35
+msgid "Developed by:"
+msgstr "Entwickelt von:"
+
+#: includes/custom-clean-view/class_clean_commentmeta.php:18
+msgid "Comments meta"
+msgstr "Kommentar-Metadaten"
+
+#: includes/custom-clean-view/class_clean_postmeta.php:18
+msgid "Posts meta"
+msgstr "Beitrags-Metadaten"
+
+#: advanced-db-cleaner.php:244
+msgid "Premium"
+msgstr "Premium"
+
+#: includes/premium_page.php:36
+msgid "Buy now!"
+msgstr "Jetzt kaufen!"
+
+#: includes/sidebar.php:24
+msgid "Having issues?"
+msgstr "Hast du Probleme?"
+
+#: includes/sidebar.php:28
+msgid "Create a ticket"
+msgstr "Erstelle ein Ticket"
+
+#: includes/premium_page.php:13
+msgid "Detect orphan cron tasks"
+msgstr "Nach verwaisten Aufgaben suchen"
+
+#: includes/class_clean_cron.php:121 includes/class_clean_options.php:123
+#: includes/class_clean_tables.php:125
+#: includes/custom-clean-view/class_clean_comment.php:114
+#: includes/custom-clean-view/class_clean_commentmeta.php:100
+#: includes/custom-clean-view/class_clean_dashboard_transient_feed.php:100
+#: includes/custom-clean-view/class_clean_draft_trash.php:116
+#: includes/custom-clean-view/class_clean_postmeta.php:100
+#: includes/custom-clean-view/class_clean_relationships.php:100
+#: includes/custom-clean-view/class_clean_revision.php:100
+#: includes/functions.php:191
+msgid "Available in Pro version!"
+msgstr "Erhältlich in der Pro-Version!"
+
+#: includes/premium_page.php:28
+msgid "No additional fees"
+msgstr "Keine zusätzlichen Gebühren"
+
+#: includes/premium_page.php:29
+msgid "Great support service"
+msgstr "Großartiger Support-Dienst"
+
+#: includes/premium_page.php:38
+msgid "Buy one time, get lifetime updates!"
+msgstr "Einmal kaufen und lebenslang Aktualisierungen erhalten!"
+
+#: includes/premium_page.php:3
+msgid "Need more features ?"
+msgstr "Benötigst du mehr Funktionen?"
+
+#: includes/sidebar.php:3
+msgid "By making a donation, you help me supporting this plugin!"
+msgstr "Mit einer Spende hilfst du mir, dieses Plugin zu unterstützen!"
+
+#: includes/class_clean_cron.php:25 includes/class_clean_cron.php:228
+#: includes/class_clean_options.php:25 includes/class_clean_options.php:230
+#: includes/class_clean_tables.php:25 includes/class_clean_tables.php:213
+#: includes/custom-clean-view/class_clean_comment.php:15
+#: includes/custom-clean-view/class_clean_commentmeta.php:14
+#: includes/custom-clean-view/class_clean_dashboard_transient_feed.php:14
+#: includes/custom-clean-view/class_clean_draft_trash.php:16
+#: includes/custom-clean-view/class_clean_postmeta.php:14
+#: includes/custom-clean-view/class_clean_relationships.php:14
+#: includes/custom-clean-view/class_clean_revision.php:14
+msgid "Please upgrade to pro version"
+msgstr "Bitte aktualisiere auf die Pro-Version"
+
+#: includes/premium_page.php:20
+msgid "We are available to support you!"
+msgstr "Wir stehen dir zur Verfügung!"
+
+#: includes/class_clean_tables.php:51
+msgid "Indicates the creator of the table. It can be a plugin name, a theme name or WordPress itself."
+msgstr "Zeigt den Ersteller der Tabelle an. Es kann ein Plugin-Name, ein Theme-Name oder WordPress selbst sein."
+
+#: includes/class_clean_options.php:51
+msgid "Indicates the creator of the option. It can be a plugin name, a theme name or WordPress itself."
+msgstr "Zeigt den Ersteller der Option an. Es kann ein Plugin-Name, ein Theme-Name oder WordPress selbst sein."
+
+#: includes/class_clean_cron.php:51
+msgid "Indicates the creator of the cron task. It can be a plugin name, a theme name or WordPress itself."
+msgstr "Zeigt den Ersteller der geplanten Aufgabe an. Es kann ein Plugin-Name, ein Theme-Name oder WordPress selbst sein."
+
+#: includes/class_clean_cron.php:24 includes/class_clean_cron.php:228
+#: includes/class_clean_options.php:24 includes/class_clean_options.php:230
+#: includes/class_clean_tables.php:24 includes/class_clean_tables.php:213
+#: includes/custom-clean-view/class_clean_comment.php:14
+#: includes/custom-clean-view/class_clean_commentmeta.php:13
+#: includes/custom-clean-view/class_clean_dashboard_transient_feed.php:13
+#: includes/custom-clean-view/class_clean_draft_trash.php:15
+#: includes/custom-clean-view/class_clean_postmeta.php:13
+#: includes/custom-clean-view/class_clean_relationships.php:13
+#: includes/custom-clean-view/class_clean_revision.php:13
+msgid "This feature is available in Pro version only."
+msgstr "Diese Funktion ist nur in der Pro-Version verfügbar."
+
+#: includes/premium_page.php:19
+msgid "Need support as well ?"
+msgstr "Benötigst du auch Support?"
+
+#: includes/functions.php:393
+msgid "One-off event"
+msgstr "Einmaliges Ereignis"
+
+#: includes/class_clean_cron.php:56
+msgid "Next run - Frequency"
+msgstr "Nächste Ausführung - Frequenz"
+
+#: includes/premium_page.php:10
+msgid "View items before cleaning"
+msgstr "Betrachte vor der Reinigung Einträge"
+
+#: includes/overview_settings.php:22
+msgid "Indicates the total number of rows in your option tables of all your network sites, including transients..."
+msgstr "Gibt für alle deine Netzwerk-Seiten die Gesamtanzahl der Zeilen in deiner Optionstabelle an, einschließlich transiente..."
+
+#: includes/overview_settings.php:27
+msgid "Indicates the total number of rows in your option table, including transients..."
+msgstr "Gibt die Gesamtanzahl der Zeilen in deiner Optionstabelle an, einschließlich transiente..."
+
+#: includes/custom-clean-view/class_clean_dashboard_transient_feed.php:38
+msgid "Feed name"
+msgstr "Feed-Name"
+
+#: includes/custom-clean-view/class_clean_dashboard_transient_feed.php:37
+msgid "Feed id"
+msgstr "Feed-ID"
+
+#: includes/custom-clean-view/class_clean_dashboard_transient_feed.php:18
+msgid "Dashboard transients feed"
+msgstr "Dashboard-Transienten-Feed"
+
+#: includes/functions.php:102
+msgid "Dashboard Transient Feed"
+msgstr "Dashboard-Transient-Feed"
+
+#: includes/custom-clean-view/class_clean_dashboard_transient_feed.php:17
+msgid "Dashboard transient feed"
+msgstr "Dashboard-Transient-Feed"
+
+#: includes/custom-clean-view/class_clean_dashboard_transient_feed.php:120
+msgid "Custom cleaning : <b>Dashboard transient feed</b>"
+msgstr "Benutzerdefiniertes Reinigen : <b>Dashboard-Transient-Feed</b>"
+
+#: includes/functions.php:165
+msgid "WP tasks"
+msgstr "WP-Aufgaben"
+
+#: includes/functions.php:175
+msgid "WP options"
+msgstr "WP-Optionen"
+
+#: includes/overview_settings.php:98
+msgid "WP multisite Enabled ?"
+msgstr "WP-Netzwerk aktiviert?"
+
+#: includes/functions.php:164
+msgid "Themes tasks"
+msgstr "Theme-Aufgaben"
+
+#: includes/functions.php:174
+msgid "Themes options"
+msgstr "Theme-Optionen"
+
+#: includes/custom-clean-view/class_clean_postmeta.php:38
+msgid "Post meta key"
+msgstr "Beitrags-Metaschlüssel"
+
+#: includes/functions.php:163
+msgid "Plugins tasks"
+msgstr "Plugin-Aufgaben"
+
+#: includes/functions.php:173
+msgid "Plugins options"
+msgstr "Plugin-Optionen"
+
+#: includes/custom-clean-view/class_clean_relationships.php:37
+msgid "Object id"
+msgstr "Objekt-ID"
+
+#: includes/premium_page.php:26
+msgid "Get lifetime support"
+msgstr "Lebenslangen Support erhalten"
+
+#: includes/premium_page.php:27
+msgid "Get technical support"
+msgstr "Technischen Support erhalten"
+
+#: includes/premium_page.php:4
+msgid "Find more advanced features!"
+msgstr "Entdecke weitere weitergehende Funktionen!"
+
+#: includes/custom-clean-view/class_clean_commentmeta.php:38
+msgid "Comment meta key"
+msgstr "Kommentar-Metaschlüssel"
+
+#. Author URI of the plugin/theme
+msgid "https://www.sigmaplugin.com"
+msgstr "https://sigmaplugin.com/"
+
+#. Description of the plugin/theme
+msgid "Clean database by deleting unused data such as 'old revisions', 'old drafts', 'orphan options', etc. Optimize database and more."
+msgstr "Reinige die Datenbank durch Löschen von unbenutzten Daten wie „alte Revisionen“, „alte Entwürfe“, „verwaiste Optionen“ usw. Optimierung der Datenbank und mehr."
+
+#: advanced-db-cleaner.php:231
+msgid "Once you read and understand this message, you can disable it from settings Tab."
+msgstr "Sobald du diese Nachricht gelesen und verstanden hast, kannst du sie auf der Registerkarte „Einstellungen“ deaktivieren."
+
+#: includes/class_clean_cron.php:55
+msgid "Hook name"
+msgstr "Hook-Name"
+
+#: includes/class_clean_cron.php:242 includes/class_clean_options.php:244
+#: includes/class_clean_tables.php:227 includes/class_general_cleanup.php:229
+msgid "Are you sure to continue?"
+msgstr "Bist du dir sicher?"
+
+#: includes/class_general_cleanup.php:121
+#: includes/custom-clean-view/class_clean_comment.php:107
+#: includes/custom-clean-view/class_clean_commentmeta.php:93
+#: includes/custom-clean-view/class_clean_dashboard_transient_feed.php:93
+#: includes/custom-clean-view/class_clean_draft_trash.php:109
+#: includes/custom-clean-view/class_clean_postmeta.php:93
+#: includes/custom-clean-view/class_clean_relationships.php:93
+#: includes/custom-clean-view/class_clean_revision.php:93
+msgid "Clean"
+msgstr "Bereinigen"
+
+#: includes/custom-clean-view/class_clean_relationships.php:39
+msgid "Term order"
+msgstr "Begriffsreihenfolge"
+
+#: includes/custom-clean-view/class_clean_relationships.php:38
+msgid "Term taxonomy id"
+msgstr "Begriffstaxonomie-ID"
+
+#: includes/overview_settings.php:61
+msgid "Settings saved successfully!"
+msgstr "Die Einstellungen wurden erfolgreich gespeichert!"
+
+#: includes/class_clean_cron.php:237 includes/class_clean_options.php:239
+#: includes/class_clean_tables.php:222 includes/class_general_cleanup.php:224
+msgid "Cleaning..."
+msgstr "Wird bereinigt..."
+
+#: advanced-db-cleaner.php:243
+msgid "Overview & Settings"
+msgstr "Einstellungen und Übersicht"
+
+#: includes/class_general_cleanup.php:226
+msgid "You are about to clean some of your unused data. This operation is irreversible. Don't forget to make a backup first."
+msgstr "Du bist im Begriff, einige deiner ungenutzten Daten zu bereinigen. Dieser Vorgang ist irreversibel. Vergiss nicht zunächst ein Backup durchzuführen."
+
+#: includes/class_clean_tables.php:224
+msgid "You are about to clean some of your tables. This operation is irreversible. Don't forget to make a backup first."
+msgstr "Du bist im Begriff, einige deiner Tabellen zu bereinigen. Dieser Vorgang ist irreversibel. Vergiss nicht zunächst ein Backup durchzuführen."
+
+#: includes/class_clean_cron.php:239
+msgid "You are about to clean some of your scheduled tasks. This operation is irreversible. Don't forget to make a backup first."
+msgstr "Du bist im Begriff, einige deiner geplanten Aufgaben zu bereinigen. Dieser Vorgang ist irreversibel. Vergiss nicht zunächst ein Backup durchzuführen."
+
+#: includes/class_clean_options.php:241
+msgid "You are about to clean some of your options. This operation is irreversible. Don't forget to make a backup first."
+msgstr "Du bist im Begriff, einige deiner Optionen zu löschen. Dieser Vorgang ist irreversibel. Vergiss nicht zunächst ein Backup durchzuführen."

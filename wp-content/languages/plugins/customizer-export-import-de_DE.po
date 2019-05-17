@@ -1,0 +1,76 @@
+# Translation of Plugins - Customizer Export/Import - Development (trunk) in German
+# This file is distributed under the same license as the Plugins - Customizer Export/Import - Development (trunk) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2017-01-03 12:19:40+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: GlotPress/2.4.0-alpha\n"
+"Language: de\n"
+"Project-Id-Version: Plugins - Customizer Export/Import - Development (trunk)\n"
+
+#. Author URI of the plugin/theme
+msgid "http://www.wpbeaverbuilder.com/?utm_source=external&utm_medium=customizer-export&utm_campaign=plugins-page"
+msgstr "http://www.wpbeaverbuilder.com/?utm_source=external&utm_medium=customizer-export&utm_campaign=plugins-page"
+
+#. Author of the plugin/theme
+msgid "The Beaver Builder Team"
+msgstr "The Beaver Builder Team"
+
+#. Description of the plugin/theme
+msgid "Adds settings export and import functionality to the WordPress customizer."
+msgstr "Ergänzt den WordPress-Customizer um eine Export-/Import-Funktion."
+
+#. Plugin URI of the plugin/theme
+msgid "http://www.wpbeaverbuilder.com/wordpress-customizer-export-import-plugin/?utm_source=external&utm_medium=customizer-export&utm_campaign=plugins-page"
+msgstr "http://www.wpbeaverbuilder.com/wordpress-customizer-export-import-plugin/?utm_source=external&utm_medium=customizer-export&utm_campaign=plugins-page"
+
+#. Plugin Name of the plugin/theme
+msgid "Customizer Export/Import"
+msgstr "Customizer Export/Import"
+
+#: includes/control.php:24
+msgid "Uploading..."
+msgstr "Hochladen …"
+
+#: includes/control.php:20
+msgid "Download and import image files?"
+msgstr "Bilddateien herunterladen und importieren?"
+
+#: includes/control.php:15
+msgid "Upload a file to import customization settings for this theme."
+msgstr "Lade eine Datei hoch, um Customizer-Einstellungen für dieses Theme zu importieren."
+
+#: includes/control.php:12 includes/control.php:25
+msgid "Import"
+msgstr "Importieren"
+
+#: includes/control.php:5
+msgid "Click the button below to export the customization settings for this theme."
+msgstr "Klicke den folgenden Button, um die Customizer-Einstellungen für diese Theme zu exportieren."
+
+#: includes/control.php:2 includes/control.php:7
+msgid "Export"
+msgstr "Exportieren"
+
+#: classes/class-cei-core.php:270
+msgid "Error importing settings! The settings you uploaded are not for the current theme."
+msgstr "Fehler beim Import der Einstellungen! Die Einstellungen, die du hochgeladen hast, sind nicht für das aktuelle Theme!"
+
+#: classes/class-cei-core.php:262 classes/class-cei-core.php:266
+msgid "Error importing settings! Please check that you uploaded a customizer export file."
+msgstr "Fehler beim Import der Einstellungen! Bitte stelle sicher, dass du eine Export-Datei dieses Plugins verwendest."
+
+#: classes/class-cei-core.php:249
+msgid "Error importing settings! Please try again."
+msgstr "Fehler beim Import der Einstellungen! Bitte versuche es noch einmal."
+
+#: classes/class-cei-core.php:114
+msgid "Export/Import"
+msgstr "Export/Import"
+
+#: classes/class-cei-core.php:87
+msgid "Please choose a file to import."
+msgstr "Bitte wähle eine Datei für den Import."

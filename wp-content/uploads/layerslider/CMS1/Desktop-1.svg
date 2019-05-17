@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="150px" height="180px" viewBox="0 0 150 180" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 17</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M-3003,-9052 L9820,-9052 L9820,4939 L-3003,4939 L-3003,-9052 Z" id="path-1"></path>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="12823" height="13991" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <use id="Rectangle-5" stroke="#979797" mask="url(#mask-2)" stroke-width="12" stroke-dasharray="15,15" xlink:href="#path-1"></use>
+        <g id="Group-17" transform="translate(2.333333, 2.000000)">
+            <text id="Desktop" font-family="Nunito-Regular, Nunito" font-size="14" font-weight="normal" fill="#000000">
+                <tspan x="48" y="171">Desktop</tspan>
+            </text>
+            <g id="Host_Home_Small_Office_LAN" fill="#636569">
+                <g id="Group-4" transform="translate(0.000000, 0.302924)">
+                    <path d="M123.584625,0 C135.9935,0 146.0575,10.0993123 146.0575,22.5517272 L146.0575,90.1929851 C146.0575,102.650041 135.9935,112.744712 123.584625,112.744712 L22.46825,112.744712 C10.059375,112.744712 0,102.650041 0,90.1929851 L0,22.5517272 C0,10.8047789 10.064,0 22.46825,0 L123.584625,0 Z M134.821987,84.5594625 L134.821987,27.834373 C134.821987,16.56083 129.202612,11.1909291 117.963862,11.1909291 L28.0908625,11.1909291 C16.8474875,11.1909291 11.2327375,16.56083 11.2327375,27.834373 L11.2327375,84.5594625 C11.2327375,95.8330054 16.8474875,101.472098 28.0908625,101.472098 L117.963862,101.472098 C129.202612,101.472098 134.821987,95.8330054 134.821987,84.5594625 Z" id="Combined-Shape"></path>
+                    <path d="M45.190875,120.67193 C45.190875,120.67193 37,125.257463 37,131.235365 C37,136.410334 41.6435,141.056204 46.79575,141.056204 L99.895375,141.056204 C104.6915,141.056204 109.219375,136.484594 109.219375,131.462785 C109.219375,125.484883 101.7315,120.67193 101.7315,120.67193 C101.7315,120.67193 101.48175,129.870844 93.28625,129.870844 L53.1505,129.870844 C44.72375,129.870844 45.190875,120.67193 45.190875,120.67193" id="Fill-32"></path>
+                </g>
+            </g>
+        </g>
+        <rect id="Rectangle" stroke="#46AFE8" stroke-width="4" x="-395" y="-33" width="792" height="244" rx="20"></rect>
+    </g>
+</svg>

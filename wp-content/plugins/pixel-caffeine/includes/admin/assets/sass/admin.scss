@@ -1,0 +1,36 @@
+/*!
+ * Admin pages common
+ */
+
+// Material Icons
+@import url( '//fonts.googleapis.com/icon?family=Material+Icons' );
+
+// Bootstrap variables
+@import "~bootstrap-sass/assets/stylesheets/bootstrap/variables";
+// Override Bootstrap variables
+@import "variables_bootstrap";
+// Bootstrap Mixins
+@import "~bootstrap-sass/assets/stylesheets/bootstrap/mixins";
+
+//*** ----------- DO NOT CHANGE FILE ORDER! ----------- ***//
+// Bootstrap Material Design Variables
+@import "~bootstrap-material-design/sass/variables";
+
+// AE Custom Variables (to override MD)
+@import "variables";
+
+// Bootstrap Material Design Style
+@import "~bootstrap-material-design/sass/_mixins";
+@import "~bootstrap-material-design/sass/shadows";
+
+// AE Custom Style
+@import "mixins";
+
+// This CSS is linked to class "pixel-caffeine-wrapper" that wraps only the Adespresso section (excludes WordPress menu)
+// Use always this file
+@import "pixel-caffeine-wrapper";
+
+// This CSS is linked to class pixel-caffeine that wraps all the page of Adespresso plugin (includes WordPress menu)
+// Use this section only if you work with class to the body or with elements outside of Adespresso section
+@import "pixel-caffeine-body";
+

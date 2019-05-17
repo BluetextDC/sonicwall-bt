@@ -1,0 +1,198 @@
+<!-- start Simple Custom CSS and JS -->
+<style type="text/css">
+#calculateSyslogDiv .row, #calc .row, #calc_output .row{
+	display:flex;
+}
+
+.column-1{
+	width:8.33%;
+}
+
+.column-2{
+	width:16.66%;
+}
+
+.column-3{
+	width:25%;
+}
+
+.column-4{
+	width:33.33%;
+}
+
+.column-5{
+	width:41.66%;
+}
+
+.column-6{
+	width:50%;
+}
+
+.column-7{
+	width:58.33%;
+}
+
+.column-8{
+	width:66.66%;
+}
+
+.column-9{
+	width:75%;
+}
+
+.column-10{
+	width:83.33%;
+}
+
+.column-11{
+	width:91.66%;
+}
+
+.column-12{
+	width:100%;
+}
+
+.c-unit{
+	padding-left:0.5em;
+}
+
+.c-ck{
+	padding-top:1em;
+	padding-left:0.5em;
+}
+
+.c-m{
+	padding-top:1em;
+	padding-left:0.5em;
+}
+
+.c-output{
+	padding-top:1em;
+	padding-left:0.5em;
+}
+
+#output-box .c-unit{
+	padding-top:1em;
+}
+
+#output-box{
+	width:100%;
+	padding:3em;
+	background-color: #CDCDCD;
+}
+
+.container-ckb{
+	display: block;
+	position: relative;
+	padding-left: 35px;
+	margin-bottom: 12px;
+	cursor: pointer;
+	font-size: 22px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.container-ckb input{
+	position: absolute;
+	opacity: 0;
+	cursor: pointer;
+	height: 0;
+	width: 0;
+}
+
+.container-ckb .checkmark{
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 25px;
+	width: 25px;
+	background-color: #fff;
+	border: solid 1px #ff791a;
+	border-radius: 3px;
+}
+
+.container-ckb:hover input ~ .checkmark{
+	background-color: #ff791a;
+}
+
+.container-ckb input:checked ~ .checkmark{
+	background-color: #ff791a;
+}
+
+.container-ckb .checkmark:after{
+	content: "";
+	position: absolute;
+	display: none;
+	left: 9px;
+	top: 5px;
+	width: 5px;
+	height: 10px;
+	border: solid white;
+	border-width: 0 3px 3px 0;
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+
+.container-ckb input:checked ~ .checkmark:after{
+	display: block;
+}
+
+.container-radio{
+	display: block;
+	position: relative;
+	padding-left: 35px;
+	margin-top: 6%;
+	cursor: pointer;
+	font-size: 22px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.container-radio input{
+	position: absolute;
+	opacity: 0;
+	cursor: pointer;
+}
+
+.container-radio .checkmark{
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 25px;
+	width: 25px;
+	background-color: #fff;
+	border-radius: 50%;
+	border: solid 1px #ff791a;
+}
+
+.container-radio:hover input ~ .checkmark{
+	background-color: #ccc;
+}
+
+.container-radio input:checked ~ .checkmark{
+	background-color: #ff791a;
+}
+
+.container-radio .checkmark:after{
+	content: "";
+	position: absolute;
+	display: none;
+	top: 7px;
+	left: 8px;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: white;
+}
+
+.container-radio input:checked ~ .checkmark:after{
+	display: block;
+}
+
+
+</style>
+<!-- end Simple Custom CSS and JS -->

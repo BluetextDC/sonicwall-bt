@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="347px" height="127px" viewBox="0 0 347 127" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>Group 72</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="100%" y1="2169.52882%" x2="0%" y2="2169.52882%" id="linearGradient-1">
+            <stop stop-color="#000000" offset="0%"></stop>
+            <stop stop-color="#F36E21" offset="19.4635116%"></stop>
+            <stop stop-color="#F36E21" offset="82.7786308%"></stop>
+            <stop stop-color="#000000" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="63.3549332%" y1="100%" x2="63.3549332%" y2="21.9709533%" id="linearGradient-2">
+            <stop stop-color="#4D220C" offset="0%"></stop>
+            <stop stop-color="#FF7832" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="35.582038%" x2="50%" y2="91.9504967%" id="linearGradient-3">
+            <stop stop-color="#1DDCD0" offset="0%"></stop>
+            <stop stop-color="#053832" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="29.3555816%" x2="50%" y2="100%" id="linearGradient-4">
+            <stop stop-color="#FE791A" offset="0%"></stop>
+            <stop stop-color="#000000" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="27.3098808%" x2="50%" y2="100%" id="linearGradient-5">
+            <stop stop-color="#0CB6A3" offset="0%"></stop>
+            <stop stop-color="#000000" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-17" transform="translate(-7.000000, -550.000000)">
+            <g id="Group-72" transform="translate(7.680000, 547.200000)">
+                <text id="Client-traffic" font-family="Helvetica" font-size="11.52" font-weight="normal" fill="#9B9B9B">
+                    <tspan x="17.28" y="11">CLIENT TRAFFIC</tspan>
+                </text>
+                <text id="--Last-24-hours" font-family="Helvetica" font-size="11.52" font-weight="normal" fill="#9B9B9B">
+                    <tspan x="112.32" y="11">- Last 24 hours</tspan>
+                </text>
+                <path d="M5.68434189e-14,128.64 L345.6,128.64" id="Path-Copy-7" stroke="url(#linearGradient-1)" stroke-width="0.576" stroke-linecap="round" fill-rule="nonzero"></path>
+                <g id="Group-3" transform="translate(18.240000, 96.000000)">
+                    <text id="Upload" font-family="Nunito-Regular, Nunito" font-size="9.6" font-weight="normal" fill="#9B9B9B">
+                        <tspan x="11.52" y="10">Upload</tspan>
+                    </text>
+                    <rect id="Rectangle" fill="#FF791A" fill-rule="nonzero" x="0" y="2.88" width="7.68" height="7.68"></rect>
+                </g>
+                <g id="Group-10" transform="translate(82.560000, 96.000000)">
+                    <text id="Download" font-family="Nunito-Regular, Nunito" font-size="9.6" font-weight="normal" fill="#9B9B9B">
+                        <tspan x="11.52" y="10.1718361">Download</tspan>
+                    </text>
+                    <rect id="Rectangle-Copy-6" fill="#0CB6A3" fill-rule="nonzero" x="0" y="3.05183609" width="7.68" height="7.68"></rect>
+                </g>
+                <text id="4.6-GB-/-6.9-GB" font-family="Nunito-Regular, Nunito" font-size="9.6" font-weight="normal" fill="#9B9B9B">
+                    <tspan x="242.88" y="106">4.6 GB / 6.9 GB</tspan>
+                </text>
+                <path d="M18.24,86.5718361 L205.671226,86.5718361 C200.574454,69.1777907 195.745419,59.2401486 191.184122,56.7589098 C184.342177,53.0370515 184.368468,62.8321476 177.050503,64.5406909 C165.844524,67.1569789 171.679665,75.1958027 160.693853,71.911218 C149.03276,68.4247351 140.255422,45.2211384 134.402377,46.3735569 C127.16387,47.7987622 131.066525,57.4422596 127.16387,58.7218679 C123.261215,60.0014762 120.853891,52.9570772 111.955613,56.7589098 C103.057335,60.5607424 88.4056259,65.2754172 85.7488383,68.9721945 C81.9523511,74.2548027 73.3678533,79.7769051 69.7992088,77.7536792 C63.0127123,73.9061074 62.0085875,59.8905112 59.8343215,60.4595176 C55.6146776,61.5638002 51.5377954,75.2769912 49.8839464,76.2988655 C46.1934275,78.57915 38.8539683,62.1453732 36.8505849,64.5406909 C34.6080698,67.2219232 28.4045415,74.5656383 18.24,86.5718361 Z" id="Path-2-Copy" stroke="#FF791A" stroke-width="0.768" fill-opacity="0.26" fill="url(#linearGradient-2)" fill-rule="nonzero"></path>
+                <path d="M18.3925961,86.5718361 L205.823822,86.5718361 C196.915628,52.6765038 191.051838,36.5356105 188.232454,38.1491563 C184.003378,40.5694749 184.003378,48.194782 183.30111,52.7389152 C181.979312,61.2918153 181.94457,67.2636511 174.626605,68.9721945 C163.420626,71.5884824 166.099272,34.347199 159.194886,34.347199 C152.530308,34.347199 156.780524,75.0086425 145.794711,71.7240578 C131.016066,67.3054759 131.533287,62.2868006 126.348262,71.7240578 C124.986151,74.2032327 117.464966,64.166029 115.722976,66.1576381 C113.980986,68.1492473 113.980986,70.6957574 112.108209,71.7240578 C104.519974,75.8905909 106.574681,44.7311126 102.020553,42.7711865 C99.3585963,41.6255802 98.0894003,62.0918027 93.2826839,71.7240578 C89.8659736,78.5708576 84.2475508,76.7886428 81.2718831,74.8646681 C78.2962154,72.9406934 72.8599672,44.3238058 69.7650141,46.4885863 C63.9247829,50.5735652 65.396187,58.4928489 64.6036857,62.8792078 C62.9290713,72.1479113 62.8866329,82.1866989 56.9376562,78.545803 C50.562386,74.6440067 53.1671632,66.1576381 48.5882897,66.1576381 C44.0094163,66.1576381 38.65703,70.7021836 37.003181,71.7240578 C33.3126622,74.0043423 27.7945183,69.3287401 25.7911349,71.7240578 C23.5486197,74.4052901 21.0824401,79.3545495 18.3925961,86.5718361 Z" id="Path-2" stroke="#0CB6A3" stroke-width="0.768" fill-opacity="0.26" fill="url(#linearGradient-3)" fill-rule="nonzero"></path>
+                <g id="Group" transform="translate(268.800000, 45.120000)" fill-rule="nonzero" stroke-linecap="round" stroke-width="5.76">
+                    <path d="M0.48,43.2 L0.48,14.4" id="Path-3" stroke="url(#linearGradient-4)"></path>
+                    <path d="M14.88,43.2 L14.88,3.19744231e-14" id="Path-3-Copy" stroke="url(#linearGradient-5)"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

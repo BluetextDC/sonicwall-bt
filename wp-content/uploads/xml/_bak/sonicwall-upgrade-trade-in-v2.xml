@@ -1,0 +1,1324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Types>
+  <Type name="Firewall">
+    <Brands>
+      <Brand name="Barracuda">
+        <Models>
+          <Model name="F10">
+            <Products>
+              <Product>TZ 300 Series</Product>
+              <Product>TZ 400 Series</Product>
+			  <Product>TZ 500 Series</Product>
+              <Product default="true">TZ 600</Product>
+            </Products>
+          </Model>
+          <Model name="F100">
+            <Products>
+              <Product>TZ 300 Series</Product>
+              <Product>TZ 400 Series</Product>
+			  <Product>TZ 500 Series</Product>
+              <Product default="true">TZ 600</Product>
+            </Products>
+          </Model>
+          <Model name="F200">
+            <Products>
+              <Product>TZ 300 Series</Product>
+              <Product>TZ 400 Series</Product>
+			  <Product>TZ 500 Series</Product>
+			  <Product>TZ 600</Product>
+              <Product default="true">NSA 2650</Product>
+            </Products>
+          </Model>
+          <Model name="F400">
+            <Products>
+              <Product>NSA 3600</Product>
+              <Product default="true">NSA 4600</Product>
+            </Products>
+          </Model>
+          <Model name="F600">
+            <Products>
+              <Product default="true">NSA 5600</Product>
+            </Products>
+          </Model>
+          <Model name="F800">
+            <Products>
+              <Product default="true">NSA 6600</Product>
+            </Products>
+          </Model>
+          <Model name="F900">
+            <Products>
+              <Product default="true">SuperMassive 9200</Product>
+            </Products>
+          </Model>
+          <Model name="SGS 400 Series">
+            <Products>
+              <Product>TZ 300 Series</Product>
+              <Product>TZ 400 Series</Product>
+			        <Product>TZ 500 Series</Product>
+              <Product default="true">TZ 600</Product>
+            </Products>
+          </Model>
+          <Model name="SGS 5620">
+            <Products>
+              <Product>NSA 3600</Product>
+              <Product default="true">NSA 4600</Product>
+            </Products>
+          </Model>
+          <Model name="SGS 5640">
+            <Products>
+              <Product default="true">NSA 5600</Product>
+            </Products>
+          </Model>
+          <Model name="SGS 5660">
+            <Products>
+              <Product default="true">NSA 6600</Product>
+            </Products>
+          </Model>
+          <Model name="X200">
+            <Products>
+              <Product>TZ 300 Series</Product>
+              <Product>TZ 400 Series</Product>
+			  <Product>TZ 500 Series</Product>
+              <Product default="true">TZ 600</Product>
+            </Products>
+          </Model>
+          <Model name="X201">
+            <Products>
+              <Product>TZ 300 Series</Product>
+              <Product>TZ 400 Series</Product>
+			  <Product>TZ 500 Series</Product>
+              <Product default="true">TZ 600</Product>
+            </Products>
+          </Model>
+          <Model name="X300">
+            <Products>
+              <Product>TZ 300 Series</Product>
+              <Product>TZ 400 Series</Product>
+			        <Product>TZ 500 Series</Product>
+			        <Product>TZ 600</Product>
+			        <Product>NSA 2650</Product>
+              <Product default="true">NSA 3600</Product>
+            </Products>
+          </Model>
+          <Model name="X400">
+            <Products>
+              <Product>NSA 3600</Product>
+              <Product default="true">NSA 4600</Product>
+            </Products>
+          </Model>
+          <Model name="X600">
+            <Products>
+              <Product default="true">NSA 5600</Product>
+            </Products>
+          </Model>
+        </Models>
+      </Brand>
+      <Brand name="Check Point">
+        <Models>
+          <Model name="FW-1 NG">
+            <Products>
+              <Product>SuperMassive 9200</Product>
+              <Product>SuperMassive 9400</Product>
+			  <Product>SuperMassive 9600</Product>
+              <Product default="true">SuperMassive 9800</Product>
+            </Products>
+          </Model>
+          <Model name="Safe@Office Series">
+            <Products>
+              <Product>TZ 300 Series</Product>
+              <Product>TZ 400 Series</Product>
+              <Product>TZ 500 Series</Product>
+              <Product default="true">TZ 600</Product>
+            </Products>
+          </Model>
+          <Model name="UTM-1 1050">
+            <Products>
+              <Product default="true">NSA 5600</Product>
+            </Products>
+          </Model>
+          <Model name="UTM 1450">
+            <Products>
+              <Product default="true">NSA 4600</Product>
+            </Products>
+          </Model>
+          <Model name="UTM-1 2050">
+            <Products>
+              <Product default="true">NSA 6600</Product>
+            </Products>
+          </Model>
+          <Model name="UTM-1 2205">
+            <Products>
+              <Product default="true">NSA 5600</Product>
+            </Products>
+          </Model>
+          <Model name="UTM-1 2207">
+            <Products>
+              <Product default="true">NSA 5600</Product>
+            </Products>
+          </Model>
+          <Model name="UTM-1 2208">
+            <Products>
+              <Product default="true">NSA 5600</Product>
+            </Products>
+          </Model>
+          <Model name="UTM-1 2210">
+            <Products>
+              <Product default="true">NSA 5600</Product>
+            </Products>
+          </Model>
+          <Model name="UTM-1 4200">
+            <Products>
+              <Product default="true">NSA 6600</Product>
+            </Products>
+          </Model>
+          <Model name="UTM 4600">
+            <Products>
+              <Product>SuperMassive 9200</Product>
+              <Product>SuperMassive 9400</Product>
+			  <Product>SuperMassive 9600</Product>
+              <Product default="true">SuperMassive 9800</Product>
+            </Products>
+          </Model>
+          <Model name="UTM-1 Edge Series">
+            <Products>
+              <Product>TZ 300 Series</Product>
+              <Product>TZ 400 Series</Product>
+              <Product>TZ 600 Series</Product>
+              <Product default="true">TZ 600</Product>
+            </Products>
+          </Model>
+          <Model name="VPN-1 NG">
+            <Products>
+              <Product>SuperMassive 9200</Product>
+              <Product>SuperMassive 9400</Product>
+			  <Product>SuperMassive 9600</Product>
+              <Product default="true">SuperMassive 9800</Product>
+            </Products>
+          </Model>
+        </Models>
+      </Brand>
+      <Brand name="Cisco/Meraki">
+        <Models>
+          <Model name="ASA 5505">
+            <Products>
+              <Product>TZ 300 Series</Product>
+              <Product>TZ 400 Series</Product>
+              <Product>TZ 500 Series</Product>
+              <Product default="true">TZ 600</Product>
+            </Products>
+          </Model>
+		  <Model name="ASA 5506/W and variants">
+            <Products>
+              <Product default="true">TZ400/W</Product>
+            </Products>
+          </Model>
+		  <Model name="ASA 5508">
+            <Products>
+              <Product default="true">NSA 2650/NSA 3600</Product>
+            </Products>
+          </Model>
+          <Model name="ASA 5510">
+            <Products>
+              <Product>TZ 300 Series</Product>
+              <Product>TZ 400 Series</Product>
+              <Product>TZ 500 Series</Product>
+              <Product>TZ 600</Product>
+              <Product>NSA 2650</Product>
+              <Product default="true">NSA 3600</Product>
+            </Products>
+          </Model>
+          <Model name="ASA 5512-X">
+            <Products>
+              <Product>TZ 300 Series</Product>
+              <Product>TZ 400 Series</Product>
+              <Product>TZ 500 Series</Product>
+              <Product>TZ 600</Product>
+              <Product default="true">NSA 3600</Product>
+            </Products>
+          </Model>
+          <Model name="ASA 5515-X">
+            <Products>
+              <Product>NSA 4600</Product>
+              <Product default="true">NSA 5600</Product>
+            </Products>
+          </Model>
+          <Model name="ASA 5516">
+            <Products>
+              <Product default="true">NSA 4600</Product>
+            </Products>
+          </Model>
+          <Model name="ASA 5520">
+            <Products>
+              <Product>NSA 3600</Product>
+			  <Product>NSA 4600</Product>
+              <Product default="true">NSA 5600</Product>
+            </Products>
+          </Model>
+          <Model name="ASA 5525-X">
+            <Products>
+              <Product>NSA 4600</Product>
+              <Product default="true">NSA 5600</Product>
+            </Products>
+          </Model>
+          <Model name="ASA 5540">
+            <Products>
+              <Product>NSA 3600</Product>
+              <Product>NSA 4600</Product>
+              <Product>NSA 5600</Product>
+              <Product>NSA 6600</Product>
+              <Product>SuperMassive 9200</Product>
+              <Product>SuperMassive 9400</Product>
+			  <Product>SuperMassive 9600</Product>
+              <Product default="true">SuperMassive 9800</Product>
+            </Products>
+          </Model>
+          <Model name="ASA 5545-X">
+            <Products>
+              <Product default="true">NSA 6600</Product>
+            </Products>
+          </Model>
+          <Model name="ASA 5550">
+            <Products>
+              <Product>NSA 5600</Product>
+              <Product>NSA 6600</Product>
+              <Product>SuperMassive 9200</Product>
+              <Product>SuperMassive 9400</Product>
+			  <Product>SuperMassive 9600</Product>
+              <Product default="true">SuperMassive 9800</Product>
+            </Products>
+          </Model>
+          <Model name="ASA 5585">
+            <Products>
+              <Product>SuperMassive 9200</Product>
+              <Product>SuperMassive 9400</Product>
+              <Product default="true">SuperMassive 9600</Product>
+            </Products>
+          </Model>
+          <Model name="ASA 5585-X">
+            <Products>
+              <Product>SuperMassive 9200</Product>
+              <Product>SuperMassive 9400</Product>
+			  <Product>SuperMassive 960</Product>
+              <Product default="true">SuperMassive 9800</Product>
+            </Products>
+          </Model>
+          <Model name="Meraki MX84">
+            <Products>
+              <Product default="true">NSA 2650</Product>
+            </Products>
+          </Model>
+          <Model name="Meraki MS350">
+            <Products>
+              <Product default="true"></Product>
+            </Products>
+          </Model>
+          <Model name="PIX 501">
+            <Products>
+              <Product>TZ 300 Series</Product>
+              <Product>TZ 400 Series</Product>
+              <Product>TZ 500 Series</Product>
+              <Product default="true">TZ 600</Product>
+            </Products>
+          </Model>
+          <Model name="PIX 506">
+            <Products>
+              <Product>TZ 300 Series</Product>
+              <Product>TZ 400 Series</Product>
+              <Product>TZ 500 Series</Product>
+              <Product>TZ 600</Product>
+              <Product default="true">NSA 3600</Product>
+            </Products>
+          </Model>
+          <Model name="PIX 515">
+            <Products>
+              <Product>NSA 3600</Product>
+              <Product default="true">NSA 4600</Product>
+            </Products>
+          </Model>
+          <Model name="PIX 535">
+            <Products>
+              <Product default="true">NSA 5600</Product>
+            </Products>
+          </Model>
+        </Models>
+      </Brand>
+      <Brand name="Fortinet">
+        <Models>
+		  <Model name="FG 90D Series">
+			<Products>
+              <Product>TZ 500 Series</Product>
+			  <Product default="true">TZ 600 Series</Product>
+            </Products>
+		  </Model>
+          <Model name="FG 110C">
+            <Products>
+              <Product default="true">NSA 2650</Product>
+            </Products>
+          </Model>
+          <Model name="FG 100">
+            <Products>
+              <Product>TZ 300 Series</Product>
+              <Product>TZ 400 Series</Product>
+              <Product>TZ 500 Series</Product>
+              <Product default="true">TZ 600</Product>
+            </Products>
+          </Model>
+          <Model name="FG 1000C">
+            <Products>
+              <Product default="true">NSA 6600</Product>
+            </Products>
+          </Model>
+          <Model name="FG 100A">
+            <Products>
+              <Product>TZ 300 Series</Product>
+              <Product>TZ 400 Series</Product>
+              <Product>TZ 500 Series</Product>
+              <Product>TZ 600</Product>
+              <Product default="true">NSA 2650</Product>
+            </Products>
+          </Model>
+          <Model name="FG 100D">
+            <Products>
+              <Product>TZ 300 Series</Product>
+              <Product>TZ 400 Series</Product>
+              <Product>TZ 500 Series</Product>
+              <Product>TZ 600</Product>
+              <Product default="true">NSA 2650</Product>
+            </Products>
+          </Model>
+          <Model name="FG 1240B">
+            <Products>
+              <Product>NSA 6600</Product>
+              <Product>SuperMassive 9200</Product>
+              <Product>SuperMassive 9400</Product>
+              <Product>SuperMassive 9600</Product>
+			  <Product default="true">SuperMassive 9800</Product>
+            </Products>
+          </Model>
+          <Model name="FG 200A">
+            <Products>
+              <Product>NSA 2650</Product>
+              <Product>NSA 3600</Product>
+              <Product default="true">NSA 4600</Product>
+            </Products>
+          </Model>
+          <Model name="FG 200B">
+            <Products>
+              <Product default="true">NSA 3600</Product>
+            </Products>
+          </Model>
+          <Model name="FG 300">
+            <Products>
+              <Product default="true">NSA 5600</Product>
+            </Products>
+          </Model>
+          <Model name="FG 300A">
+            <Products>
+              <Product>NSA 2650</Product>
+              <Product>NSA 4600</Product>
+              <Product default="true">NSA 5600</Product>
+            </Products>
+          </Model>
+          <Model name="FG 300C">
+            <Products>
+              <Product>NSA 4600</Product>
+              <Product default="true">NSA 5600</Product>
+            </Products>
+          </Model>
+          <Model name="FG 30B Series">
+            <Products>
+              <Product>TZ 300 Series</Product>
+              <Product>TZ 400 Series</Product>
+              <Product>TZ 500 Series</Product>
+              <Product default="true">TZ 600</Product>
+            </Products>
+          </Model>
+          <Model name="FG 310B">
+            <Products>
+              <Product>NSA 4600</Product>
+              <Product default="true">NSA 5600</Product>
+            </Products>
+          </Model>
+          <Model name="FG 400">
+            <Products>
+              <Product>NSA 3600</Product>
+              <Product default="true">NSA 5600</Product>
+            </Products>
+          </Model>
+          <Model name="FG 400A">
+            <Products>
+			  <Product>NSA 3600</Product>
+              <Product default="true">NSA 5600</Product>
+            </Products>
+          </Model>
+          <Model name="FG 4000">
+            <Products>
+              <Product default="true">NSA 6600</Product>
+            </Products>
+          </Model>
+          <Model name="FG 4010">
+            <Products>
+              <Product default="true">NSA 6600</Product>
+            </Products>
+          </Model>
+          <Model name="FG 40C Series">
+            <Products>
+              <Product>TZ 300 Series</Product>
+              <Product>TZ 400 Series</Product>
+              <Product>TZ 500 Series</Product>
+              <Product default="true">TZ 600</Product>
+            </Products>
+          </Model>
+          <Model name="FG 500">
+            <Products>
+              <Product default="true">NSA 4600</Product>
+            </Products>
+          </Model>
+          <Model name="FG 500A">
+            <Products>
+              <Product default="true">NSA 4600</Product>
+            </Products>
+          </Model>
+          <Model name="FG 50B Series">
+            <Products>
+			  <Product>TZ 300 Series</Product>
+              <Product>TZ 400 Series</Product>
+              <Product>TZ 500 Series</Product>
+              <Product default="true">TZ 600</Product>
+            </Products>
+          </Model>
+          <Model name="FG 60 Series">
+            <Products>
+			  <Product>TZ 300 Series</Product>
+              <Product>TZ 400 Series</Product>
+              <Product>TZ 500 Series</Product>
+              <Product default="true">TZ 600</Product>
+            </Products>
+          </Model>
+          <Model name="FG 600C">
+            <Products>
+              <Product>NSA 4600</Product>
+              <Product>NSA 5600</Product>
+              <Product default="true">NSA 6600</Product>
+            </Products>
+          </Model>
+          <Model name="FG 60B Series">
+            <Products>
+			  <Product>TZ 300 Series</Product>
+              <Product>TZ 400 Series</Product>
+              <Product>TZ 500 Series</Product>
+              <Product default="true">TZ 600</Product>
+            </Products>
+          </Model>
+          <Model name="FG 60C Series">
+            <Products>
+			  <Product>TZ 300 Series</Product>
+              <Product>TZ 400 Series</Product>
+              <Product>TZ 500 Series</Product>
+              <Product default="true">TZ 600</Product>
+            </Products>
+          </Model>
+          <Model name="FG 800">
+            <Products>
+              <Product default="true">NSA 5600</Product>
+            </Products>
+          </Model>
+          <Model name="FG 800C">
+            <Products>
+              <Product>NSA 4600</Product>
+              <Product default="true">NSA 5600</Product>
+            </Products>
+          </Model>
+          <Model name="FG 80C Series">
+            <Products>
+			  <Product>TZ 300 Series</Product>
+              <Product>TZ 400 Series</Product>
+              <Product>TZ 500 Series</Product>
+              <Product default="true">TZ 600</Product>
+            </Products>
+          </Model>
+          <Model name="FG1240B">
+            <Products>
+              <Product>NSA 6600</Product>
+              <Product>SuperMassive 9200</Product>
+			  <Product>SuperMassive 9400</Product>
+              <Product>SuperMassive 9600</Product>
+              <Product default="true">SuperMassive 9800</Product>
+            </Products>
+          </Model>
+          <Model name="FG3000">
+            <Products>
+			  <Product>NSA 6600</Product>
+              <Product>SuperMassive 9200</Product>
+              <Product>SuperMassive 9400</Product>
+              <Product>SuperMassive 9600</Product>
+              <Product default="true">SuperMassive 9800</Product>
+            </Products>
+          </Model>
+          <Model name="FG3016B">
+            <Products>
+			  <Product>NSA 6600</Product>
+              <Product>SuperMassive 9200</Product>
+              <Product>SuperMassive 9400</Product>
+              <Product>SuperMassive 9600</Product>
+              <Product default="true">SuperMassive 9800</Product>
+            </Products>
+          </Model>
+          <Model name="FG3810A">
+            <Products>
+              <Product>SuperMassive 9200</Product>
+              <Product>SuperMassive 9400</Product>
+              <Product>SuperMassive 9600</Product>
+              <Product default="true">SuperMassive 9800</Product>
+            </Products>
+          </Model>
+          <Model name="FG4000P/S">
+            <Products>
+              <Product default="true">NSA 6600</Product>
+            </Products>
+          </Model>
+          <Model name="FG4010B">
+            <Products>
+              <Product default="true">NSA 6600</Product>
+            </Products>
+          </Model>
+          <Model name="FG5000">
+            <Products>
+              <Product default="true">NSA 6600</Product>
+            </Products>
+          </Model>
+        </Models>
+      </Brand>
+      <Brand name="Juniper">
+        <Models>
+          <Model name="NetScreen 5GT">
+            <Products>
+			  <Product>TZ 300 Series</Product>
+              <Product>TZ 400 Series</Product>
+              <Product>TZ 500 Series</Product>
+              <Product default="true">TZ 600</Product>
+            </Products>
+          </Model>
+          <Model name="NS 50">
+            <Products>
+              <Product default="true">NSA 3600</Product>
+            </Products>
+          </Model>
+          <Model name="NS-1000">
+            <Products>
+              <Product default="true">NSA 6600</Product>
+            </Products>
+          </Model>
+          <Model name="NS-204">
+            <Products>
+              <Product>NSA 3600</Product>
+              <Product default="true">NSA 4600</Product>
+            </Products>
+          </Model>
+          <Model name="NS-208">
+            <Products>
+              <Product default="true">NSA 5600</Product>
+            </Products>
+          </Model>
+          <Model name="NS-240">
+            <Products>
+              <Product default="true">NSA 3600</Product>
+            </Products>
+          </Model>
+          <Model name="NS-25">
+            <Products>
+              <Product>TZ 300 Series</Product>
+              <Product>TZ 400 Series</Product>
+              <Product>TZ 500 Series</Product>
+              <Product>TZ 600</Product>
+              <Product default="true">NSA 2650</Product>
+            </Products>
+          </Model>
+          <Model name="NS-500">
+            <Products>
+              <Product default="true">NSA 5600</Product>
+            </Products>
+          </Model>
+          <Model name="ISG 1000">
+            <Products>
+              <Product>SuperMassive 9200</Product>
+              <Product>SuperMassive 9400</Product>
+			  <Product>SuperMassive 9600</Product>
+              <Product default="true">SuperMassive 9800</Product>
+            </Products>
+          </Model>
+          <Model name="ISG 2000">
+            <Products>
+              <Product>SuperMassive 9200</Product>
+              <Product>SuperMassive 9400</Product>
+			  <Product>SuperMassive 9600</Product>
+              <Product default="true">SuperMassive 9800</Product>
+            </Products>
+          </Model>
+          <Model name="SRX 220">
+            <Products>
+              <Product default="true">NSA 3600</Product>
+            </Products>
+          </Model>
+          <Model name="SRX 550">
+            <Products>
+              <Product>NSA 3600</Product>
+              <Product default="true">NSA 4600</Product>
+            </Products>
+          </Model>
+          <Model name="SRX 650">
+            <Products>
+              <Product>NSA 5600</Product>
+              <Product>SuperMassive 9200</Product>
+              <Product>SuperMassive 9400</Product>
+              <Product>SuperMassive 9600</Product>
+              <Product default="true">SuperMassive 9800</Product>
+            </Products>
+          </Model>
+          <Model name="SRX-100 Series">
+            <Products>
+			  <Product>TZ 300 Series</Product>
+              <Product>TZ 400 Series</Product>
+              <Product>TZ 500 Series</Product>
+              <Product default="true">TZ 600</Product>
+            </Products>
+          </Model>
+          <Model name="SRX-110 Series">
+            <Products>
+			  <Product>TZ 300 Series</Product>
+              <Product>TZ 400 Series</Product>
+              <Product>TZ 500 Series</Product>
+              <Product default="true">TZ 600</Product>
+            </Products>
+          </Model>
+          <Model name="SRX-210 Series">
+            <Products>
+			  <Product>TZ 300 Series</Product>
+              <Product>TZ 400 Series</Product>
+              <Product>TZ 500 Series</Product>
+              <Product default="true">TZ 600</Product>
+            </Products>
+          </Model>
+          <Model name="SRX-220 Series">
+            <Products>
+			  <Product>TZ 300 Series</Product>
+              <Product>TZ 400 Series</Product>
+              <Product>TZ 500 Series</Product>
+              <Product default="true">TZ 600</Product>
+            </Products>
+          </Model>
+          <Model name="SRX-240 Series">
+            <Products>
+			  <Product>TZ 300 Series</Product>
+              <Product>TZ 400 Series</Product>
+              <Product>TZ 500 Series</Product>
+              <Product default="true">TZ 600</Product>
+            </Products>
+          </Model>
+          <Model name="SSG-140">
+            <Products>
+              <Product default="true">NSA 3600</Product>
+            </Products>
+          </Model>
+          <Model name="SSG-20 Series">
+            <Products>
+			  <Product>TZ 300 Series</Product>
+              <Product>TZ 400 Series</Product>
+              <Product>TZ 500 Series</Product>
+              <Product default="true">TZ 600</Product>
+            </Products>
+          </Model>
+          <Model name="SSG-320">
+            <Products>
+              <Product>NSA 3600</Product>
+              <Product default="true">NSA 4600</Product>
+            </Products>
+          </Model>
+          <Model name="SSG-5 Series">
+            <Products>
+			  <Product>TZ 300 Series</Product>
+              <Product>TZ 400 Series</Product>
+              <Product>TZ 500 Series</Product>
+              <Product default="true">TZ 600</Product>
+            </Products>
+          </Model>
+          <Model name="SSG-520">
+            <Products>
+              <Product>NSA 5600</Product>
+              <Product default="true">NSA 6600</Product>
+            </Products>
+          </Model>
+        </Models>
+      </Brand>
+      <Brand name="Palo Alto Networks">
+        <Models>
+          <Model name="PA-200">
+            <Products>
+              <Product>TZ 300 Series</Product>
+              <Product>TZ 400 Series</Product>
+              <Product>TZ 500 Series</Product>
+              <Product>TZ 600</Product>
+              <Product default="true">NSA 2650</Product>
+            </Products>
+          </Model>
+          <Model name="PA-2020">
+            <Products>
+              <Product>TZ 300 Series</Product>
+              <Product>TZ 400 Series</Product>
+              <Product>TZ 500 Series</Product>
+              <Product>TZ 600</Product>
+              <Product>NSA 3600</Product>
+              <Product default="true">NSA 5600</Product>
+            </Products>
+          </Model>
+          <Model name="PA-2050">
+            <Products>
+              <Product>NSA 4600</Product>
+              <Product default="true">NSA 6600</Product>
+            </Products>
+          </Model>
+          <Model name="PA-3020">
+            <Products>
+              <Product>NSA 5600</Product>
+              <Product default="true">NSA 6600</Product>
+            </Products>
+          </Model>
+          <Model name="PA-3050">
+            <Products>
+              <Product>SuperMassive 9200</Product>
+              <Product>SuperMassive 9400</Product>
+			  <Product>SuperMassive 9600</Product>
+              <Product default="true">SuperMassive 9800</Product>
+            </Products>
+          </Model>
+          <Model name="PA-4020">
+            <Products>
+              <Product>NSA 5600</Product>
+              <Product>SuperMassive 9200</Product>
+              <Product>SuperMassive 9400</Product>
+			  <Product>SuperMassive 9600</Product>
+              <Product default="true">SuperMassive 9800</Product>
+            </Products>
+          </Model>
+          <Model name="PA-4050">
+            <Products>
+              <Product>NSA 6600</Product>
+              <Product>SuperMassive 9600</Product>
+              <Product default="true">SuperMassive 9800</Product>
+            </Products>
+          </Model>
+          <Model name="PA-4060">
+            <Products>
+			  <Product>SuperMassive 9200</Product>
+              <Product>SuperMassive 9400</Product>
+			  <Product>SuperMassive 9600</Product>
+              <Product default="true">SuperMassive 9800</Product>
+            </Products>
+          </Model>
+          <Model name="PA-500">
+            <Products>
+              <Product>TZ 300 Series</Product>
+              <Product>TZ 400 Series</Product>
+              <Product>TZ 500 Series</Product>
+              <Product>TZ 600</Product>
+              <Product>NSA 3600</Product>
+              <Product default="true">NSA 4600</Product>
+            </Products>
+          </Model>
+          <Model name="PA-5020">
+            <Products>
+			  <Product>SuperMassive 9200</Product>
+              <Product>SuperMassive 9400</Product>
+			  <Product>SuperMassive 9600</Product>
+              <Product default="true">SuperMassive 9800</Product>
+            </Products>
+          </Model>
+          <Model name="PA-5050">
+            <Products>
+			  <Product>SuperMassive 9600</Product>
+              <Product default="true">SuperMassive 9800</Product>
+            </Products>
+          </Model>
+        </Models>
+      </Brand>
+      <Brand name="Symantec">
+        <Models>
+          <Model name="SGS 400">
+            <Products>
+			        <Product>TZ 300 Series</Product>
+              <Product>TZ 400 Series</Product>
+              <Product>TZ 500 Series</Product>
+              <Product default="true">TZ 600</Product>
+            </Products>
+          </Model>
+          <Model name="SGS 5620">
+            <Products>
+              <Product>NSA 3600</Product>
+              <Product default="true">NSA 4600</Product>
+            </Products>
+          </Model>
+          <Model name="SGS 5640">
+            <Products>
+              <Product default="true">NSA 5600</Product>
+            </Products>
+          </Model>
+          <Model name="SGS 5660">
+            <Products>
+              <Product default="true">NSA 6600</Product>
+            </Products>
+          </Model>
+        </Models>
+      </Brand>
+      <Brand name="WatchGuard">
+        <Models>
+          <Model name="SOHO6 Series">
+            <Products>
+			        <Product>TZ 300 Series</Product>
+              <Product>TZ 400 Series</Product>
+              <Product>TZ 500 Series</Product>
+              <Product default="true">TZ 600</Product>
+            </Products>
+          </Model>
+          <Model name="X1000">
+            <Products>
+              <Product default="true">NSA 3600</Product>
+            </Products>
+          </Model>
+          <Model name="X1000e">
+            <Products>
+              <Product default="true">NSA 3600</Product>
+            </Products>
+          </Model>
+          <Model name="X1250e">
+            <Products>
+              <Product default="true">NSA 3600</Product>
+            </Products>
+          </Model>
+          <Model name="X2500e">
+            <Products>
+              <Product default="true">NSA 4600</Product>
+            </Products>
+          </Model>
+          <Model name="X500">
+            <Products>
+              <Product>TZ 300 Series</Product>
+              <Product>TZ 400 Series</Product>
+              <Product>TZ 500 Series</Product>
+              <Product>TZ 600</Product>
+              <Product default="true">NSA 2650</Product>
+            </Products>
+          </Model>
+          <Model name="X5000">
+            <Products>
+              <Product default="true">NSA 4600</Product>
+            </Products>
+          </Model>
+          <Model name="X5500e">
+            <Products>
+              <Product default="true">NSA 4600</Product>
+            </Products>
+          </Model>
+          <Model name="X550e">
+            <Products>
+              <Product>TZ 300 Series</Product>
+              <Product>TZ 400 Series</Product>
+              <Product>TZ 500 Series</Product>
+              <Product>TZ 600</Product>
+              <Product default="true">NSA 2650</Product>
+            </Products>
+          </Model>
+          <Model name="X6000">
+            <Products>
+              <Product>NSA 4600</Product>
+              <Product default="true">NSA 5600</Product>
+            </Products>
+          </Model>
+          <Model name="X6500e">
+            <Products>
+              <Product>NSA 4600</Product>
+              <Product default="true">NSA 5600</Product>
+            </Products>
+          </Model>
+          <Model name="X700">
+            <Products>
+              <Product>TZ 300 Series</Product>
+              <Product>TZ 400 Series</Product>
+              <Product>TZ 500 Series</Product>
+              <Product>TZ 600</Product>
+              <Product default="true">NSA 2650</Product>
+            </Products>
+          </Model>
+          <Model name="X750e">
+            <Products>
+              <Product>TZ 300 Series</Product>
+              <Product>TZ 400 Series</Product>
+              <Product>TZ 500 Series</Product>
+              <Product>TZ 600</Product>
+              <Product default="true">NSA 2650</Product>
+            </Products>
+          </Model>
+          <Model name="X8000">
+            <Products>
+              <Product default="true">NSA 6600</Product>
+            </Products>
+          </Model>
+          <Model name="X8500e">
+            <Products>
+              <Product default="true">NSA 6600</Product>
+            </Products>
+          </Model>
+          <Model name="X8500e-F">
+            <Products>
+			  <Product>SuperMassive 9200</Product>
+              <Product>SuperMassive 9400</Product>
+			  <Product>SuperMassive 9600</Product>
+              <Product default="true">SuperMassive 9800</Product>
+            </Products>
+          </Model>
+          <Model name="X-Edge Series">
+            <Products>
+			  <Product>TZ 300 Series</Product>
+              <Product>TZ 400 Series</Product>
+              <Product>TZ 500 Series</Product>
+              <Product default="true">TZ 600</Product>
+            </Products>
+          </Model>
+          <Model name="XTM 1050">
+            <Products>
+			  <Product>SuperMassive 9200</Product>
+              <Product>SuperMassive 9400</Product>
+			  <Product>SuperMassive 9600</Product>
+              <Product default="true">SuperMassive 9800</Product>
+            </Products>
+          </Model>
+          <Model name="XTM 115">
+            <Products>
+			  <Product>TZ 300 Series</Product>
+              <Product>TZ 400 Series</Product>
+              <Product>TZ 500 Series</Product>
+              <Product default="true">TZ 600</Product>
+            </Products>
+          </Model>
+          <Model name="XTM 1520">
+            <Products>
+              <Product>SuperMassive 9200</Product>
+              <Product default="true">SuperMassive 9400</Product>
+            </Products>
+          </Model>
+          <Model name="XTM 1525">
+            <Products>
+              <Product>SuperMassive 9200</Product>
+              <Product default="true">SuperMassive 9400</Product>
+            </Products>
+          </Model>
+          <Model name="XTM 2050">
+            <Products>
+			  <Product>SuperMassive 9600</Product>
+              <Product default="true">SuperMassive 9800</Product>
+            </Products>
+          </Model>
+          <Model name="XTM 22">
+            <Products>
+			  <Product>TZ 300 Series</Product>
+              <Product>TZ 400 Series</Product>
+              <Product>TZ 500 Series</Product>
+              <Product default="true">TZ 600</Product>
+            </Products>
+          </Model>
+          <Model name="XTM 23">
+            <Products>
+			  <Product>TZ 300 Series</Product>
+              <Product>TZ 400 Series</Product>
+              <Product>TZ 500 Series</Product>
+              <Product default="true">TZ 600</Product>
+            </Products>
+          </Model>
+          <Model name="XTM 25">
+            <Products>
+			  <Product>TZ 300 Series</Product>
+              <Product>TZ 400 Series</Product>
+              <Product>TZ 500 Series</Product>
+              <Product default="true">TZ 600</Product>
+            </Products>
+          </Model>
+          <Model name="XTM 26">
+            <Products>
+			  <Product>TZ 300 Series</Product>
+              <Product>TZ 400 Series</Product>
+              <Product>TZ 500 Series</Product>
+              <Product default="true">TZ 600</Product>
+            </Products>
+          </Model>
+          <Model name="XTM 33">
+            <Products>
+			  <Product>TZ 300 Series</Product>
+              <Product>TZ 400 Series</Product>
+              <Product>TZ 500 Series</Product>
+              <Product default="true">TZ 600</Product>
+            </Products>
+          </Model>
+          <Model name="XTM 330">
+            <Products>
+			  <Product>TZ 300 Series</Product>
+              <Product>TZ 400 Series</Product>
+              <Product>TZ 500 Series</Product>
+              <Product default="true">TZ 600</Product>
+            </Products>
+          </Model>
+          <Model name="XTM 510">
+            <Products>
+              <Product default="true">NSA 3600</Product>
+            </Products>
+          </Model>
+          <Model name="XTM 530">
+            <Products>
+              <Product default="true">NSA 4600</Product>
+            </Products>
+          </Model>
+          <Model name="XTM 545">
+            <Products>
+              <Product default="true">NSA 3600</Product>
+            </Products>
+          </Model>
+          <Model name="XTM 810">
+            <Products>
+              <Product>NSA 4600</Product>
+              <Product default="true">NSA 5600</Product>
+            </Products>
+          </Model>
+          <Model name="XTM 820">
+            <Products>
+              <Product>NSA 5600</Product>
+              <Product default="true">NSA 6600</Product>
+            </Products>
+          </Model>
+          <Model name="XTM 850">
+            <Products>
+              <Product>NSA 4600</Product>
+              <Product default="true">NSA 5600</Product>
+            </Products>
+          </Model>
+          <Model name="XTM 860">
+            <Products>
+              <Product default="true">NSA 5600</Product>
+            </Products>
+          </Model>
+          <Model name="XTM 870">
+            <Products>
+              <Product default="true">NSA 6600</Product>
+            </Products>
+          </Model>
+          <Model name="XTM520">
+            <Products>
+              <Product default="true">NSA 3600</Product>
+            </Products>
+          </Model>
+          <Model name="XTM525">
+            <Products>
+              <Product>TZ 300 Series</Product>
+              <Product>TZ 400 Series</Product>
+              <Product>TZ 500 Series</Product>
+              <Product>TZ 600</Product>
+              <Product default="true">NSA 2650</Product>
+            </Products>
+          </Model>
+          <Model name="XTM535">
+            <Products>
+              <Product>TZ 300 Series</Product>
+              <Product>TZ 400 Series</Product>
+              <Product>TZ 500 Series</Product>
+              <Product>TZ 600</Product>
+              <Product>NSA 2650</Product>
+              <Product default="true">NSA 3600</Product>
+            </Products>
+          </Model>
+          <Model name="XTM545">
+            <Products>
+			  <Product>NSA 3600</Product>
+              <Product default="true">NSA 4600</Product>
+            </Products>
+          </Model>
+        </Models>
+      </Brand>
+    </Brands>
+  </Type>
+  <Type name="SRA">
+    <Brands>
+      <Brand name="Barracuda">
+        <Models>
+          <Model name="280">
+            <Products>
+              <Product default="true">SRA 1600</Product>
+              <Product>SRA 4600</Product>
+            </Products>
+          </Model>
+          <Model name="380">
+            <Products>
+              <Product default="true">SRA 1600</Product>
+              <Product>SRA 4600</Product>
+            </Products>
+          </Model>
+          <Model name="480">
+            <Products>
+              <Product default="true">SRA 1600</Product>
+              <Product>SRA 4600</Product>
+            </Products>
+          </Model>
+        </Models>
+      </Brand>
+      <Brand name="Cisco">
+        <Models>
+          <Model name="5505">
+            <Products>
+              <Product default="true">SRA 1600</Product>
+              <Product>SRA 4600</Product>
+            </Products>
+          </Model>
+          <Model name="5510">
+            <Products>
+              <Product default="true">SRA EX6000</Product>
+            </Products>
+          </Model>
+          <Model name="5520">
+            <Products>
+              <Product default="true">SRA EX6000</Product>
+            </Products>
+          </Model>
+          <Model name="5550">
+            <Products>
+              <Product default="true">SRA EX7000</Product>
+            </Products>
+          </Model>
+          <Model name="5580">
+            <Products>
+              <Product default="true">SRA EX6000</Product>
+            </Products>
+          </Model>
+        </Models>
+      </Brand>
+      <Brand name="Citrix">
+        <Models>
+          <Model name="2010">
+            <Products>
+              <Product default="true">SRA 1600</Product>
+              <Product>SRA 4600</Product>
+            </Products>
+          </Model>
+          <Model name="7000">
+            <Products>
+              <Product default="true">SRA EX6000</Product>
+            </Products>
+          </Model>
+          <Model name="9000">
+            <Products>
+              <Product default="true">SRA EX7000</Product>
+            </Products>
+          </Model>
+        </Models>
+      </Brand>
+      <Brand name="Juniper">
+        <Models>
+          <Model name="700">
+            <Products>
+              <Product default="true">SRA 1600</Product>
+              <Product>SRA 4600</Product>
+            </Products>
+          </Model>
+          <Model name="2500">
+            <Products>
+              <Product default="true">SRA EX6000</Product>
+            </Products>
+          </Model>
+          <Model name="2600">
+            <Products>
+              <Product default="true">SRA 1600</Product>
+              <Product>SRA 4600</Product>
+            </Products>
+          </Model>
+          <Model name="4500">
+            <Products>
+              <Product default="true">SRA EX7000</Product>
+            </Products>
+          </Model>
+        </Models>
+      </Brand>
+    </Brands>
+  </Type>
+  <Type name="EMS">
+    <Brands>
+      <Brand name="Astaro">
+        <Products>
+          <Product default="true">ES 3300</Product>
+          <Product>ES 4300</Product>
+          <Product>ES 8300</Product>
+        </Products>
+      </Brand>
+      <Brand name="Barracuda">
+        <Products>
+          <Product default="true">ES 3300</Product>
+          <Product>ES 4300</Product>
+          <Product>ES 8300</Product>
+        </Products>
+      </Brand>
+      <Brand name="Cisco IronPort">
+        <Products>
+          <Product default="true">ES 3300</Product>
+          <Product>ES 4300</Product>
+          <Product>ES 8300</Product>
+        </Products>
+      </Brand>
+      <Brand name="Eleven">
+        <Products>
+          <Product default="true">ES 3300</Product>
+          <Product>ES 4300</Product>
+          <Product>ES 8300</Product>
+        </Products>
+      </Brand>
+      <Brand name="FortiMail">
+        <Products>
+          <Product default="true">ES 3300</Product>
+          <Product>ES 4300</Product>
+          <Product>ES 8300</Product>
+        </Products>
+      </Brand>
+      <Brand name="Juniper">
+      
+      </Brand>
+      <Brand name="MailFrontier">
+        <Products>
+          <Product default="true">ES 3300</Product>
+          <Product>ES 4300</Product>
+          <Product>ES 8300</Product>
+        </Products>
+      </Brand>
+      <Brand name="MX Logic">
+        <Products>
+          <Product default="true">ES 3300</Product>
+          <Product>ES 4300</Product>
+          <Product>ES 8300</Product>
+        </Products>
+      </Brand>
+      <Brand name="Postini">
+        <Products>
+          <Product default="true">ES 3300</Product>
+          <Product>ES 4300</Product>
+          <Product>ES 8300</Product>
+        </Products>
+      </Brand>
+      <Brand name="Symantec BrightMail">
+        <Products>
+          <Product default="true">ES 3300</Product>
+          <Product>ES 4300</Product>
+          <Product>ES 8300</Product>
+        </Products>
+      </Brand>
+      <Brand name="Other">
+        <Products>
+          <Product default="true">ES 3300</Product>
+          <Product>ES 4300</Product>
+          <Product>ES 8300</Product>
+        </Products>
+      </Brand>
+    </Brands>
+  </Type>
+</Types>

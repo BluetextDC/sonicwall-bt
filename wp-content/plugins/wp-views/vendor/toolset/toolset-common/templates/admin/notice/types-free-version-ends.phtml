@@ -1,0 +1,61 @@
+<?php
+/**
+ * Template File
+ * This file is only build for classes which implements Toolset_Admin_Notice_Interface
+ *
+ * @var Toolset_Admin_Notice_Interface $this
+ *
+ * @since Types 2.2.21
+ */
+?>
+
+    <p>
+        <b>
+			<?php printf( __( 'Development of Toolset Types is moving into the complete %sToolset%s package.', 'wpcf' ),
+				'<a class="toolset-link" target="_blank" href="https://wp-types.com/?utm_source=typesplugin&utm_campaign=moving-types-to-toolset&utm_medium=admin-message&utm_term=toolset">',
+				'</a>' ); ?>
+        </b>
+    </p>
+
+    <p>
+		<?php _e( 'You will get the most advanced features in WordPress for custom post types, taxonomies and fields, but it’s going to be a paid plugin.',
+			'wpcf' ) ?>
+    </p>
+
+    <p class="toolset-list-title">
+		<?php _e( 'New versions will include:', 'wpcf' ); ?>
+    </p>
+
+    <ul class="toolset-list">
+        <li><?php _e( 'Repeating and nested field groups', 'wpcf' ) ?></li>
+        <li><?php _e( 'Post reference fields', 'wpcf' ); ?></li>
+        <li><?php _e( 'Many-to-many post relationships', 'wpcf' ); ?></li>
+        <li><?php _e( 'And more...', 'wpcf' ); ?></li>
+    </ul>
+
+    <p>
+		<?php _e( 'This free version of Types will continue to receive bug fixes, security updates and compatibility updates through 2018.',
+			'wpcf' ); ?>
+    </p>
+
+<?php
+// Button "See details and leave your feedback"
+echo Toolset_Admin_Notices_Manager::tpl_button_primary(
+	__( 'See details and leave your feedback', 'wpcf' ),
+	'https://wp-types.com/2017/11/types-plugin-is-moving-to-be-a-part-of-the-complete-toolset-package/' .
+	'?utm_source=typesplugin' .
+	'&utm_campaign=moving-types-to-toolset' .
+	'&utm_medium=admin-message' .
+	'&utm_term=details-about-moving-types-to-toolset'
+);
+
+// Button "Pricing"
+echo Toolset_Admin_Notices_Manager::tpl_button_primary(
+	__( 'Pricing', 'wpcf' ),
+	'https://wp-types.com/buy/' .
+	'?utm_source=typesplugin' .
+	'&utm_campaign=moving-types-to-toolset' .
+	'&utm_medium=admin-message' .
+	'&utm_term=pricing'
+);
+?>

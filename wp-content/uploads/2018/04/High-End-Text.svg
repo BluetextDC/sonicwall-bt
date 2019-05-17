@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="569px" height="230px" viewBox="0 0 569 230" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>High End Text</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" font-family="Nunito-SemiBold, Nunito" font-size="20" font-weight="500">
+        <g id="High-End-Text" transform="translate(0.000000, -5.000000)" fill="#969696">
+            <text id="Reassembly-Free-Deep">
+                <tspan x="0" y="20">Reassembly-Free Deep Packet Inspection engine</tspan>
+            </text>
+            <text id="Extensible-architect">
+                <tspan x="0" y="60">Extensible architecture for extreme scalability and performance</tspan>
+            </text>
+            <text id="Capture-Labs">
+                <tspan x="0" y="104">Capture Labs</tspan>
+            </text>
+            <text id="Advanced-threat-prot">
+                <tspan x="0" y="146">Advanced threat protection</tspan>
+            </text>
+            <text id="Application-intellig">
+                <tspan x="0" y="187">Application intelligence and control</tspan>
+            </text>
+            <text id="Global-management-an">
+                <tspan x="0" y="231">Global management and reporting</tspan>
+            </text>
+        </g>
+    </g>
+</svg>

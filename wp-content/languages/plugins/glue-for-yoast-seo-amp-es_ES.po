@@ -1,0 +1,197 @@
+# Translation of Plugins - Glue for Yoast SEO &amp; AMP - Stable (latest release) in Spanish (Spain)
+# This file is distributed under the same license as the Plugins - Glue for Yoast SEO &amp; AMP - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2017-04-06 14:32:48+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: GlotPress/2.4.0-alpha\n"
+"Language: es\n"
+"Project-Id-Version: Plugins - Glue for Yoast SEO &amp; AMP - Stable (latest release)\n"
+
+#. Author URI of the plugin/theme
+msgid "https://yoast.com"
+msgstr "https://yoast.com"
+
+#. Author of the plugin/theme
+msgid "Joost de Valk"
+msgstr "Joost de Valk"
+
+#. Plugin URI of the plugin/theme
+msgid "https://wordpress.org/plugins/glue-for-yoast-seo-amp/"
+msgstr "https://wordpress.org/plugins/glue-for-yoast-seo-amp/"
+
+#. Plugin Name of the plugin/theme
+msgid "Glue for Yoast SEO & AMP"
+msgstr "Glue for Yoast SEO & AMP"
+
+#: classes/views/admin-page.php:140
+msgid "Optionally add a valid google analytics tracking code."
+msgstr "Opcionalmente añade un código de seguimiento de google analytics válido."
+
+#: classes/views/admin-page.php:135 classes/views/admin-page.php:141
+msgid "Analytics code"
+msgstr "Código de analytics"
+
+#: classes/views/admin-page.php:134
+msgid "Optionally you can override the default AMP tracking code with your own by putting it below:"
+msgstr "Opcionalmente puedes saltarte el código de seguimiento por defecto de AMP con el tuyo propio poniéndolo a continuación:"
+
+#: classes/views/admin-page.php:129
+msgid "Pageviews will be tracked using the following account: %s."
+msgstr "Las páginas vistas se pueden analizar usando la siguiente cuenta: %s"
+
+#. Description of the plugin/theme
+msgid "Makes sure the default WordPress AMP plugin uses the proper Yoast SEO metadata"
+msgstr "Se asegura de que el plugin AMP WordPress por defecto utilice los metadatos adecuados de Yoast SEO"
+
+#: classes/views/admin-page.php:120
+msgid "AMP Analytics"
+msgstr "AMP Analytics"
+
+#: classes/views/admin-page.php:112
+msgid "Extra code"
+msgstr "Código extra"
+
+#: classes/views/admin-page.php:111
+msgid "Only %s and %s tags are allowed, other tags will be removed automatically."
+msgstr "Solo se permiten las etiquetas %s y %s, el resto de etiquetas se eliminarán automáticamente."
+
+#: classes/views/admin-page.php:110
+msgid "Extra code in %s"
+msgstr "Código extra en %s"
+
+#: classes/views/admin-page.php:102 classes/views/admin-page.php:103
+msgid "Extra CSS"
+msgstr "CSS extra"
+
+#: classes/views/admin-page.php:98
+msgid "Border color"
+msgstr "Color del borde"
+
+#: classes/views/admin-page.php:97
+msgid "Background color"
+msgstr "Color de fondo"
+
+#: classes/views/admin-page.php:94
+msgid "Blockquotes"
+msgstr "Citas"
+
+#: classes/views/admin-page.php:89
+msgid "No underline"
+msgstr "Sin subrayado"
+
+#: classes/views/admin-page.php:87 classes/views/admin-page.php:88
+msgid "Underline"
+msgstr "Subrayado"
+
+#: classes/views/admin-page.php:84
+msgid "Hover color"
+msgstr "Color al pasar el cursor"
+
+#: classes/views/admin-page.php:81
+msgid "Links"
+msgstr "Enlaces"
+
+#: classes/views/admin-page.php:77
+msgid "Post meta info color"
+msgstr "Color de información del meta de la entrada"
+
+#: classes/views/admin-page.php:76 classes/views/admin-page.php:83
+#: classes/views/admin-page.php:96
+msgid "Text color"
+msgstr "Color del texto"
+
+#: classes/views/admin-page.php:75
+msgid "Title color"
+msgstr "Color del título"
+
+#: classes/views/admin-page.php:74
+msgid "AMP Header color"
+msgstr "Color de la cabecera AMP"
+
+#: classes/views/admin-page.php:71
+msgid "Content colors"
+msgstr "Colores del contenido"
+
+#: classes/views/admin-page.php:68
+msgid "The image must be at least 696px wide."
+msgstr "La imagen debe tener al menos 696 px de ancho."
+
+#: classes/views/admin-page.php:67
+msgid "Used when a post doesn't have an image associated with it."
+msgstr "Se utiliza cuando una entrada no tiene un imagen asociada."
+
+#: classes/views/admin-page.php:66
+msgid "Default image"
+msgstr "Imagen por defecto"
+
+#: classes/views/admin-page.php:62
+msgid "Must be at least 32px &times; 32px"
+msgstr "Debe ser de al menos 32 px &times; 32 px"
+
+#: classes/views/admin-page.php:61
+msgid "AMP icon"
+msgstr "Icono AMP"
+
+#: classes/views/admin-page.php:58
+msgid "Images"
+msgstr "Imágenes"
+
+#: classes/views/admin-page.php:50
+msgid "Currently pages are not supported by the AMP plugin."
+msgstr "Actualmente las páginas no son compatibles con el plugin AMP."
+
+#: classes/views/admin-page.php:49
+msgid "Please note:"
+msgstr "Por favor, ten en cuenta:"
+
+#: classes/views/admin-page.php:39
+msgid "Disabled"
+msgstr "Desactivado"
+
+#: classes/views/admin-page.php:38
+msgid "Enabled"
+msgstr "Activado"
+
+#: classes/views/admin-page.php:25
+msgid "Post is enabled by default, feel free to enable any of them."
+msgstr "Las entradas están activas por defecto, decide por tu cuenta activar cualquiera."
+
+#: classes/views/admin-page.php:24
+msgid "Generally you'd want this to be your news post types."
+msgstr "Normalmente querrás que esto sea tus tipos de entrada de noticias."
+
+#: classes/views/admin-page.php:23
+msgid "Post types that have AMP support"
+msgstr "Tipos de contenido compatibles con AMP"
+
+#: classes/views/admin-page.php:17
+msgid "Analytics"
+msgstr "Analytics"
+
+#: classes/views/admin-page.php:16
+msgid "Design"
+msgstr "Diseño"
+
+#: classes/views/admin-page.php:15
+msgid "Post types"
+msgstr "Tipos de contenido"
+
+#: classes/class-backend.php:105
+msgid "Use Logo"
+msgstr "Logotipo"
+
+#: classes/class-backend.php:61 classes/class-backend.php:62
+msgid "AMP"
+msgstr "AMP"
+
+#: classes/views/admin-page.php:124
+msgid "Because your Google Analytics plugin by Yoast is active, your AMP pages will also be tracked."
+msgstr "Debido a que tu plugin de Google Analytics de Yoast está activo tus páginas AMP también tendrán seguimiento."
+
+#: classes/views/admin-page.php:127
+msgid "Make sure to connect your Google Analytics plugin properly."
+msgstr "Se asegura de conectar tu plugin de Google Analytics correctamente."

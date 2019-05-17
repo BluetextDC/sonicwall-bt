@@ -1,0 +1,30 @@
+{
+  "entrypoints": {
+    "otgs-switcher": {
+      "js": [
+        "js/otgs-switcher.js?ver=4d513c794ec7f885c8c285cd5c88b57f"
+      ],
+      "css": [
+        "css/otgs-switcher.css?ver=4d513c794ec7f885c8c2"
+      ]
+    },
+    "otgs-popover-tooltip": {
+      "js": [
+        "js/otgs-popover-tooltip.js?ver=ab473abd04c6a8d156174f48d2a369c6"
+      ],
+      "css": [
+        "css/otgs-popover-tooltip.css?ver=ab473abd04c6a8d15617"
+      ]
+    },
+    "otgs-table-sticky-header": {
+      "js": [
+        "js/otgs-table-sticky-header.js?ver=08107d436aed9500f40147d4e7968c39"
+      ]
+    }
+  },
+  "otgs-popover-tooltip.css": "css/otgs-popover-tooltip.css?ver=ab473abd04c6a8d15617",
+  "otgs-popover-tooltip.js": "js/otgs-popover-tooltip.js?ver=ab473abd04c6a8d156174f48d2a369c6",
+  "otgs-switcher.css": "css/otgs-switcher.css?ver=4d513c794ec7f885c8c2",
+  "otgs-switcher.js": "js/otgs-switcher.js?ver=4d513c794ec7f885c8c285cd5c88b57f",
+  "otgs-table-sticky-header.js": "js/otgs-table-sticky-header.js?ver=08107d436aed9500f40147d4e7968c39"
+}

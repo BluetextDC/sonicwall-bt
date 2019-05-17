@@ -1,0 +1,193 @@
+
+/* Custom elements table styles */
+.wp-list-table .column-id { width: 10%; }
+.wp-list-table .column-font_weight { width: 20%; }
+.wp-list-table .column-custom_elements { width: 58%; }
+.wp-list-table .column-important { width: 12%;}
+
+
+/* Validate inputs */
+input.valid {
+    color: green;
+}
+input.error {
+    color: red;
+}
+.validate {
+  position: relative;
+}
+
+input.valid + span,
+input.error + span {
+  font-weight: bold;
+  font-size: 18px;
+  display: block;
+  position: absolute;
+  top: 10%;
+}
+
+input.valid.rtl + span,
+input.error.rtl + span {
+  left: 2%;
+}
+
+input.valid.ltr + span,
+input.error.ltr + span {
+  right: 2%;
+}
+
+input.valid + span:after {
+  content: "\2713";
+  color: green;
+}
+
+input.error + span:after {
+  content: "\2715";
+  color: red;
+}
+
+label.required:after { 
+    color: #d00;
+    content: "*";
+    margin: 0 5px;
+    font-size: 17px;
+}
+
+/* Back to top styles */
+.go-top, .go-top:focus {
+    position: fixed;
+    bottom: 2em;
+    text-decoration: none;
+    font-size: 12px;
+    display: none;
+    z-index: 999999;
+    opacity: 0.4;
+    transition: opacity .25s ease-in-out;
+    -moz-transition: opacity .25s ease-in-out;
+    -webkit-transition: opacity .25s ease-in-out;
+    box-shadow: none;
+    width: 48px;
+    height: 48px;
+    background-image: url(../images/back-top.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right top;
+    border-radius: 10px;
+}
+
+.go-top.rtl{
+	left: 2em;
+}
+
+.go-top.ltr{
+	right: 2em;
+}
+
+.go-top:hover {
+	opacity: 0.6;
+}
+
+/* Upload fonts section styles */
+.remove_button, .remove_button:hover, .remove_button:active, .remove_button:focus{
+	color: red;
+	text-decoration: none;
+	box-shadow: none;
+}
+.add_button, .add_button:hover, .add_button:active, .add_button:focus{
+	color: green;
+	text-decoration: none;
+	box-shadow: none;
+}
+
+/* Custom Elements Section */
+.fo_info, .fo_success, .fo_warning, .fo_error {
+  margin: 10px 0px;
+}
+.fo_info {
+    color: #00529B;
+    background-color: #BDE5F8;
+}
+.fo_success {
+    color: #4F8A10;
+    background-color: #DFF2BF;
+}
+.fo_warning {
+    color: #9F6000;
+    background-color: #FEEFB3;
+}
+.fo_error {
+    color: #D8000C;
+    background-color: #FFBABA;
+}
+.fo_info i, .fo_success i, .fo_warning i, .fo_error i {
+    margin:10px 22px;
+    font-size:2em;
+    vertical-align:middle;
+}
+
+/* Fonts Preview */
+#font_preview_demo{
+  font-size: 14px;
+  color: black;
+  font-weight: normal;
+  line-height: 20px;
+  border: 1px solid black;
+  text-align: center;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+
+/* Tabs */
+#tabs{
+  background: transparent; 
+  border: none;
+  width: 100%;
+}
+
+#tabs.rtl{
+  float: right;
+}
+
+#tabs.ltr{
+  float: left;
+}
+
+ul.tabs{
+  margin: 0px;
+  padding: 0px;
+  border-bottom: 1px solid #ccc;
+}
+ul.tabs li{
+  background: none;
+  color: #222;
+  display: inline-block;
+  padding: 10px 0px;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  background: #e5e5e5;
+  margin-bottom: 0;
+}
+
+ul.tabs li.ui-state-active{
+  border-bottom: 1px solid #f1f1f1;
+}
+
+ul.tabs li a {
+    padding: 10px 10px;
+    text-decoration: none;
+    font-size: 15px;
+    color: #555;
+    font-weight: 500;
+}
+
+ul.tabs li.ui-state-active a {
+  color: black;
+}
+
+/* CSS editor */
+div#editor {
+    display: block;
+    width: 100%;
+    min-width: 100px;
+    min-height: 165px;
+}

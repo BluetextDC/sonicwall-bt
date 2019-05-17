@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="166px" height="164px" viewBox="0 0 166 164" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.3 (67297) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 11</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard-Copy-28" transform="translate(-2017.000000, -934.000000)" fill-rule="nonzero">
+            <g id="Group-11" transform="translate(2017.000000, 940.000000)">
+                <path d="M142,44 L142,144 C142,148.418278 138.418278,152 134,152 L32,152 C27.581722,152 24,148.418278 24,144 L24,44" id="Path" stroke="#CC0000" stroke-width="12"></path>
+                <rect id="Rectangle-Copy" stroke="#CC0000" stroke-width="12" x="6" y="26" width="154" height="24" rx="8"></rect>
+                <path d="M93.4377608,71.8790294 C92.5722615,70.2674878 91.2813067,68.9242196 89.7053983,67.9954203 C84.9474363,65.1912018 78.8170776,66.7750238 76.0128591,71.5329859 L53.3870745,109.922513 C52.4803387,111.460986 52.0021268,113.214204 52.0021268,115 C52.0021268,120.522847 56.4792793,125 62.0021268,125 L105.245502,125 C106.896722,125 108.522246,124.591114 109.976946,123.809849 C114.842491,121.196745 116.668456,115.134102 114.055352,110.268557 L93.4377608,71.8790294 Z" id="Rectangle" stroke="#CC0000" stroke-width="12"></path>
+                <rect id="Rectangle" fill="#CC0000" x="78" y="87" width="12" height="16" rx="6"></rect>
+                <rect id="Rectangle-Copy-3" fill="#CC0000" x="78" y="107" width="12" height="9" rx="4.5"></rect>
+                <path d="M53,20 L53,6 C53,2.6862915 55.6862915,6.08718376e-16 59,0 L107,0 C110.313708,-6.08718376e-16 113,2.6862915 113,6 L113,20 C113,23.3137085 110.313708,26 107,26 L59,26 C55.6862915,26 53,23.3137085 53,20 Z" id="Path" stroke="#CC0000" stroke-width="12"></path>
+            </g>
+        </g>
+    </g>
+</svg>

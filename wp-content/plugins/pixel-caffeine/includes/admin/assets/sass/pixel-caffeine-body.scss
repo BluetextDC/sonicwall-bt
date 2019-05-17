@@ -1,0 +1,18 @@
+.pixel-caffeine {
+
+  // Plugin style: this plugin adds some elements outside of Adespresso section
+  @import "select2-v3.5.4";
+
+  // AE Custom Style
+  @import "select2-custom";
+
+  // FIX  Bootstrap modal
+  &.modal-open {
+    overflow: hidden;
+    .modal {
+      overflow-x: hidden;
+      overflow-y: auto;
+    }
+  }
+
+}

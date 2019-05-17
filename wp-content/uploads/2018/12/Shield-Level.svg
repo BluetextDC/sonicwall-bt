@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="180px" height="41px" viewBox="0 0 180 41" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>Shield-Level</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Shield-Level" fill="#FF7918">
+            <rect id="Shield-1" x="0" y="0" width="9" height="41" rx="4"></rect>
+            <rect id="Shield-2" x="19" y="0" width="9" height="41" rx="4"></rect>
+            <rect id="Shield-3" x="38" y="0" width="9" height="41" rx="4"></rect>
+            <rect id="Shield-4" x="57" y="0" width="9" height="41" rx="4"></rect>
+            <rect id="Shield-5" x="76" y="0" width="9" height="41" rx="4"></rect>
+            <rect id="Shield-6" x="95" y="0" width="9" height="41" rx="4"></rect>
+            <rect id="Shield-7" x="114" y="0" width="9" height="41" rx="4"></rect>
+            <rect id="Shield-8" x="133" y="0" width="9" height="41" rx="4"></rect>
+            <rect id="Shield-9" x="152" y="0" width="9" height="41" rx="4"></rect>
+            <rect id="Shield-10" x="171" y="0" width="9" height="41" rx="4"></rect>
+        </g>
+    </g>
+</svg>

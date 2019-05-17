@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="81px" height="139px" viewBox="0 0 81 139" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Secure_Wireless_Zone</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Secure_Wireless_Zone" transform="translate(0.000000, 6.000000)">
+            <path d="M56.9311414,18.5329891 C66.5500709,18.5329891 71.3738922,23.3065978 71.3738922,32.8395869 L71.3738922,109.146185 C71.3738922,118.693402 66.5500709,123.452783 56.9311414,123.452783 L23.7601914,123.452783 C14.1340837,123.452783 9.55432471,118.693402 9.55432471,109.146185 L9.55432471,32.8395869 C9.55432471,23.3065978 14.1340837,18.5329891 23.7601914,18.5329891 L56.9311414,18.5329891 Z M0,28.0659782 L0,113.919793 C0,124.448766 9.22412265,133 19.2522155,133 L61.7477845,133 C72.3716767,133 81,124.455881 81,113.919793 L81,28.0659782 C81,17.5370052 72.3716767,9 61.7477845,9 L19.2522155,9 C8.62832329,9 0,17.5370052 0,28.0659782 Z" id="Fill-50" fill="#FFFFFF"></path>
+            <path d="M19,13 L19,0" id="Stroke-52" stroke="#FFFFFF" stroke-width="10.89" stroke-linecap="round"></path>
+            <path d="M21,29 L61,29" id="Stroke-54" stroke="#FFFFFF" stroke-width="6.705" stroke-linecap="round" stroke-linejoin="round"></path>
+        </g>
+    </g>
+</svg>

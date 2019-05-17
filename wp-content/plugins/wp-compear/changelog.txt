@@ -1,0 +1,18 @@
+V 1.1.1
+	- Fixed bug with yes/no in drag n drop
+	- added mising clear style to drag and drop tool
+
+V 1.1.0
+	- Fixed bug with saving custom spec to make draggable in dran and drop tool
+	- Fixed bug with star ratings display
+
+V 1.0.9
+	- Fixed new bug causing Yoast not to work on "posts"
+	- Fixed bug of shortcode displaying in admin columns on all posts
+	- Added all Decimal points to star rating, Star icons in between halves are not available
+	- Added "No Ratings Yet" to star rating field
+	- Added vertical alignment to sortable tables
+	- Added changelog.txt to plugin
+	- Made media buttons & editor buttons smaller in WYSIWYG fields for better display
+	- Widened WYSIWYG field in products admin table for better display
+	- Added toggle to collapse/expand product rows for easier sorting of products

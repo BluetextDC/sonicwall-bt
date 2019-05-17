@@ -1,0 +1,86 @@
+// COLORS
+$wp-admin-text-color: #444;
+
+$black: $wp-admin-text-color;
+$blue: #4C70BA;
+$blue-light: #a1b4dc;
+$green: #68AA20;
+$grey-light: #CCC; //WP light grey
+$grey-light-2: #EEE;
+$orange: #FD9C00;
+$red: #E15667;
+$white: #FFF;
+
+//OVERWRITE MATERIAL DESIGN COLORS
+$brand-primary: $blue;
+$brand-success: $green;
+$brand-warning: $orange;
+$brand-danger: $red;
+
+
+
+// LAYOUT
+$plugin-sec-bg: darken($white, 2%);
+$plugin-sub-sec-bg: darken($white, 4%);
+$sidebar-W: 250px;
+$general-margin: 10px;
+$field-bg: lighten($blue,45%);
+$field-bg-hover: darken($field-bg,3%);
+$field-disabled-bg: desaturate($field-bg,100%);
+$field-disabled-color: $mdb-input-placeholder-color;
+$control-label-color: lighten($black,30%);
+$select-dropdown-bg: darken($field-bg,5%);
+$select-option-bg-hover: darken($select-dropdown-bg,20%);
+
+$form-group-space-top:              0px;
+$form-group-space-bottom:           20px;
+$form-group-space-bottom-small:     8px;
+$field-radio-space-Y:               10px;
+
+$modal-padding: 24px;
+
+$mdb-checkbox-checked-color: $brand-primary;
+$mdb-radio-color-on: $brand-primary;
+
+$z-index-modal:           9990;
+$z-index-loading-overlay: 10;
+$z-index-loading-loader:  $z-index-loading-overlay + 1;
+$z-index-alert-fixed:     $z-index-loading-overlay + 2;
+
+// BTN
+//btn-mini
+$mdb-btn-mini-font-size: 16px;
+$mdb-btn-mini-width: 28px;
+
+
+$mdb-btn-fab-size: 40px;
+$mdb-btn-fab-size-mini: $mdb-btn-mini-width;
+$mdb-btn-icon-size: 32px;
+
+$btn-fab-font-size-mini: $mdb-btn-mini-font-size;
+
+$btn-fb-connect-icon-W: 20px;
+$btn-fb-connect-avatar-W: 50px;
+$btn-default-bg: lighten($grey-light,15%);
+
+$btn-padding-vertical: 8px; // material design standard value
+$btn-padding-horizontal: 30px; // material design standard value
+$btn-margin-vertical: 10px; // material design standard value
+$btn-margin-horizontal: 1px; // material design standard value
+
+
+
+
+//TYPOGRAPHY
+// default font is meant to be Open Sans
+$mdb-input-font-size-base: $font-size-base;
+
+$default-font-weight-light: 300;
+$default-font-weight-normal: 400;
+$default-font-weight-semibold: 600;
+$default-font-weight-bold: 700;
+
+$font-weight-bold: $default-font-weight-semibold;
+$headings-font-weight: $default-font-weight-bold;
+$headings-font-size: 24px;
+$sub-headings-font-size: 20px;

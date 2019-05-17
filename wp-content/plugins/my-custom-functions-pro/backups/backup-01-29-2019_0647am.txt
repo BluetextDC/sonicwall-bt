@@ -1,0 +1,216 @@
+
+/* Enfold 1/6 Block
+ ------------------------- */
+/* Enter your custom functions here */
+
+// Turn on Debug Mode
+add_action( 'admin_head', 'ava_custom_admin_style' );
+function ava_custom_admin_style() {
+	$output  = '<style type="text/css">';
+	$output .= '.avia_layout_builder .av_one_sixth{width:14%;}';
+	$output .= '</style>';
+	echo $output;
+}
+
+
+/* Enfold Turn on Debug Mode
+ ------------------------- */
+//set builder mode to debug
+add_action('avia_builder_mode', "builder_set_debug");
+function builder_set_debug()
+{
+	return "debug";
+}
+
+
+/* Enfold Add Advanced Editor to Custom Types
+ ------------------------- */
+// add Enfold Advanced Editor to all Types
+add_filter('avf_builder_boxes', 'add_builder_to_posttype');
+
+function add_builder_to_posttype($metabox)
+{
+  foreach($metabox as &$meta)
+  {
+    if($meta['id'] == 'avia_builder' || $meta['id'] == 'layout')
+    {
+      $meta['page'][] = 'executive'; /*instead add the name of the custom post type here*/
+      $meta['page'][] = 'award';
+      $meta['page'][] = 'leadership';
+    }
+  }
+  
+
+  return $metabox;
+}
+
+
+/* Switch Images with Fixed URL to Relative
+ ------------------------- */
+function switch_to_relative_url($html, $id, $caption, $title, $align, $url, $size, $alt)
+{
+$imageurl = wp_get_attachment_image_src($id, $size);
+$relativeurl = wp_make_link_relative($imageurl[0]);   
+$html = str_replace($imageurl[0],$relativeurl,$html);
+      
+return $html;
+}
+add_filter('image_send_to_editor','switch_to_relative_url',10,8);
+
+
+/* Enfold Reverse Post Nav Next Previous
+ ------------------------- */
+add_filter('avia_post_nav_entries', 'avia_apply_custom_sort_order_to_post_nav', 10, 2);
+function avia_apply_custom_sort_order_to_post_nav($entries, $settings)
+{
+    $temp_prev = $entries['prev'];
+    $temp_next = $entries['next'];
+    $entries['prev'] = $entries['next'] = "";
+    if(!empty($temp_next)) $entries['prev'] = $temp_next;
+    if(!empty($temp_prev)) $entries['next'] = $temp_prev;
+    return $entries;
+}
+
+
+/* Enfold Post Nav only Specific Post
+ ------------------------- */
+function category_specific_post_nav($settings)
+  {
+      if($settings['taxonomy'] == 'portfolio_entries')  $settings['same_category'] = true;  
+      return $settings;
+  }
+
+  add_filter('avia_post_nav_settings','category_specific_post_nav', 10);
+
+
+/* Enfold Post Nav Reverse - not working
+ ------------------------- */
+apply_filter('avia_post_nav_entries', 'avia_apply_custom_sort_order_to_post_nav', 10, 2);
+function avia_apply_custom_sort_order_to_post_nav($entries, $settings)
+{
+	if(!empty($entries['prev'])) $temp = $entries['prev'];
+	if(!empty($entries['next'])) $entries['prev'] = $entries['next'];
+	if(!empty($temp)) $entries['next'] = $temp;
+	return $entries;
+} 
+
+
+/* Enfold Post Nav Reverse  - replacement function
+ ------------------------- */
+function avia_post_nav($same_category = false, $taxonomy = 'category')
+	{
+		global $wp_version;
+	        $settings = array();
+	        $settings['same_category'] = $same_category;
+	        $settings['excluded_terms'] = '';
+			$settings['wpversion'] = $wp_version;
+        
+		//dont display if a fullscreen slider is available since they overlap 
+		if((class_exists('avia_sc_layerslider') && !empty(avia_sc_layerslider::$slide_count)) || 
+			class_exists('avia_sc_slider_full') && !empty(avia_sc_slider_full::$slide_count) ) $settings['is_fullwidth'] = true;
+
+		$settings['type'] = get_post_type();
+		$settings['taxonomy'] = ($settings['type'] == 'portfolio') ? 'portfolio_entries' : $taxonomy;
+
+		if(!is_singular() || is_post_type_hierarchical($settings['type'])) $settings['is_hierarchical'] = true;
+		if($settings['type'] === 'topic' || $settings['type'] === 'reply') $settings['is_bbpress'] = true;
+
+	        $settings = apply_filters('avia_post_nav_settings', $settings);
+	        if(!empty($settings['is_bbpress']) || !empty($settings['is_hierarchical']) || !empty($settings['is_fullwidth'])) return;
+	
+	        if(version_compare($settings['wpversion'], '3.8', '>=' ))
+	        {
+	            $entries['prev'] = get_previous_post($settings['same_category'], $settings['excluded_terms'], $settings['taxonomy']);
+	            $entries['next'] = get_next_post($settings['same_category'], $settings['excluded_terms'], $settings['taxonomy']);
+	        }
+	        else
+	        {
+	            $entries['prev'] = get_previous_post($settings['same_category']);
+	            $entries['next'] = get_next_post($settings['same_category']);
+	        }
+	        
+		$entries = apply_filters('avia_post_nav_entries', $entries, $settings);
+        $output = "";
+
+
+		foreach ($entries as $key => $entry)
+		{
+            if(empty($entry)) continue;
+			$the_title 	= isset($entry->av_custom_title) ? $entry->av_custom_title : avia_backend_truncate(get_the_title($entry->ID),75," ");
+			$link 		= isset($entry->av_custom_link)  ? $entry->av_custom_link  : get_permalink($entry->ID);
+			$image 		= isset($entry->av_custom_image) ? $entry->av_custom_image : get_the_post_thumbnail($entry->ID, 'thumbnail');
+			
+            $tc1   = $tc2 = "";
+            $class = $image ? "with-image" : "without-image";
+
+            $output .= "<a class='avia-post-nav avia-post-{$key} {$class}' href='{$link}' >";
+		    $output .= "    <span class='label iconfont' ".av_icon_string($key)."></span>";
+		    $output .= "    <span class='entry-info-wrap'>";
+		    $output .= "        <span class='entry-info'>";
+		    $tc1     = "            <span class='entry-title'>{$the_title}</span>";
+if($image)  $tc2     = "            <span class='entry-image'>{$image}</span>";
+            $output .= $key == 'prev' ?  $tc1.$tc2 : $tc2.$tc1;
+            $output .= "        </span>";
+            $output .= "    </span>";
+		    $output .= "</a>";
+		}
+		return $output;
+	}
+
+
+/* Stop script tags being removed
+ ------------------------- */
+function allow_script_tags( $allowedposttags ){
+    $allowedposttags['script'] = array(
+        'type' => true,
+        'src' => true,
+        'height' => true,
+        'width' => true,
+    );   
+    return $allowedposttags;
+}
+add_filter('wp_kses_allowed_html','allow_script_tags', 1);
+
+
+/* Stop HTML tags being removed
+ ------------------------- */
+function allow_HTML_tags( $allowedposttags ){
+	$allowedposttags['style'] = array(
+        'type' => true,
+    );
+    
+    $allowedposttags['a'] = array(
+        'href' => true,
+        'onclick' => true,
+        'target' => true,
+    );
+    $allowedposttags['span'] = array(
+        'id' => true,
+        'onclick' => true,
+        'class' => true,
+    );
+        
+	$allowedposttags['input'] = array(
+        'id' => true,
+        'name' => true,
+        'type' => true,
+        'class' => true,
+    );
+    $allowedposttags['select'] = array(
+        'id' => true,
+        'name' => true,
+        'type' => true,
+        'class' => true,
+    );
+    $allowedposttags['option'] = array(
+        'value' => true,
+    );
+    return $allowedposttags;
+}
+add_filter('wp_kses_allowed_html','allow_HTML_tags', 1);
+
+
+/* Simple Ordering Leaderships
+ ------------------------- */
+add_post_type_support( 'leaderships', 'page-attributes' );
+

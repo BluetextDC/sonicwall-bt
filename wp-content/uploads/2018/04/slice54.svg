@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 136 123" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;">
+    <g transform="matrix(1,0,0,1,-546,-320)">
+        <g transform="matrix(1,0,0,1,-0.684275,0)">
+            <g>
+                <g transform="matrix(0.880615,0,0,0.880615,122.714,66.1152)">
+                    <text x="479.821px" y="396.579px" style="font-family:'Nunito-Regular', 'Nunito';font-size:24px;fill:rgb(99,101,105);">Deep Learning</text>
+                    <text x="499.153px" y="422.579px" style="font-family:'Nunito-Regular', 'Nunito';font-size:24px;fill:rgb(99,101,105);">Algorithms</text>
+                </g>
+                <g transform="matrix(1,0,0,1,9.98701,13.8712)">
+                    <text x="549.332px" y="323.925px" style="font-family:'Nunito-SemiBold', 'Nunito';font-weight:600;font-size:24px;fill:rgb(99,101,105);">MA<tspan x="586.58px " y="323.925px ">C</tspan>HINE</text>
+                    <text x="544.076px" y="349.925px" style="font-family:'Nunito-SemiBold', 'Nunito';font-weight:600;font-size:24px;fill:rgb(99,101,105);">LE<tspan x="570.932px " y="349.925px ">A</tspan>RNING</text>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

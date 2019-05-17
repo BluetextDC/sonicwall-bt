@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 852 71" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;">
+    <g transform="matrix(1,0,0,1,-213,-594)">
+        <g id="orange" transform="matrix(5.07997,0,0,1.01515,-5187.01,70.571)">
+            <path d="M1230.68,521.513C1230.68,518.419 1230.18,515.907 1229.56,515.907L1064.15,515.907C1063.54,515.907 1063.03,518.419 1063.03,521.513L1063.03,579.065C1063.03,582.158 1063.54,584.67 1064.15,584.67L1229.56,584.67C1230.18,584.67 1230.68,582.158 1230.68,579.065L1230.68,521.513Z" style="fill:rgb(255,153,0);"/>
+            <clipPath id="_clip1">
+                <path d="M1230.68,521.513C1230.68,518.419 1230.18,515.907 1229.56,515.907L1064.15,515.907C1063.54,515.907 1063.03,518.419 1063.03,521.513L1063.03,579.065C1063.03,582.158 1063.54,584.67 1064.15,584.67L1229.56,584.67C1230.18,584.67 1230.68,582.158 1230.68,579.065L1230.68,521.513Z"/>
+            </clipPath>
+            <g clip-path="url(#_clip1)">
+                <g transform="matrix(0.196852,0,0,0.985078,1056.32,-71.2975)">
+                    <text x="286.149px" y="637.074px" style="font-family:'Nunito-Regular', 'Nunito';font-size:23px;fill:rgb(229,237,255);">SonicW<tspan x="366.557px " y="637.074px ">a</tspan>ll C<tspan x="410.694px " y="637.074px ">a</tspan>ptur<tspan x="464.859px " y="637.074px ">e</tspan> Client Plat<tspan x="588.53px 595.959px " y="637.074px 637.074px ">fo</tspan>rm</text>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

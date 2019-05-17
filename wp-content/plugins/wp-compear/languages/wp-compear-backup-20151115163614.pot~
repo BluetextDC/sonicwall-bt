@@ -1,0 +1,333 @@
+# Loco Gettext template
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: WP Compear\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: Sun Nov 15 2015 11:32:12 GMT-0500 (Eastern Standard Time)\n"
+"POT-Revision-Date: Sun Nov 15 2015 11:34:50 GMT-0500 (Eastern Standard Time)\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: ..\n"
+"X-Poedit-KeywordsList: _:1;gettext:1;dgettext:2;ngettext:1,2;dngettext:2,3;"
+"__:1;_e:1;_c:1;_n:1,2;_n_noop:1,2;_nc:1,2;__ngettext:1,2;__ngettext_noop:1,2;"
+"_x:1,2c;_ex:1,2c;_nx:1,2,4c;_nx_noop:1,2,3c;_n_js:1,2;_nx_js:1,2,3c;"
+"esc_attr__:1;esc_html__:1;esc_attr_e:1;esc_html_e:1;esc_attr_x:1,2c;"
+"esc_html_x:1,2c;comments_number_link:2,3;t:1;st:1;trans:1;transChoice:1,2\n"
+"X-Generator: Loco - https://localise.biz/"
+
+#. Description of the plugin
+msgid ""
+"Increase visitor stickiness with best selling product sliders, sortable "
+"tables, drag-and-drop comparison tools. Add custom product specs, affiliate "
+"links, and more."
+msgstr ""
+
+#: ../admin/class-wp-compear-admin.php:145
+msgid "ComPEAR Lists"
+msgstr ""
+
+#: ../admin/class-wp-compear-admin.php:146
+msgid "ComPEAR List"
+msgstr ""
+
+#: ../admin/class-wp-compear-admin.php:147
+msgid "Add New"
+msgstr ""
+
+#: ../admin/class-wp-compear-admin.php:148
+msgid "Add New ComPEAR List"
+msgstr ""
+
+#: ../admin/class-wp-compear-admin.php:149
+msgid "Edit"
+msgstr ""
+
+#: ../admin/class-wp-compear-admin.php:150
+msgid "Edit ComPEAR List"
+msgstr ""
+
+#: ../admin/class-wp-compear-admin.php:151
+msgid "New ComPEAR List"
+msgstr ""
+
+#: ../admin/class-wp-compear-admin.php:152
+msgid "View"
+msgstr ""
+
+#: ../admin/class-wp-compear-admin.php:153
+msgid "View ComPEAR List"
+msgstr ""
+
+#: ../admin/class-wp-compear-admin.php:154
+msgid "Search ComPEAR Lists"
+msgstr ""
+
+#: ../admin/class-wp-compear-admin.php:155
+msgid "No ComPEAR List"
+msgstr ""
+
+#: ../admin/class-wp-compear-admin.php:156
+msgid "No ComPEAR List found in Trash"
+msgstr ""
+
+#: ../admin/class-wp-compear-admin.php:157
+msgid "Parent ComPEAR List"
+msgstr ""
+
+#: ../admin/class-wp-compear-admin.php:182
+msgid "WP ComPEAR Plugin"
+msgstr ""
+
+#: ../admin/class-wp-compear-admin.php:234
+msgid "Enter your license key here"
+msgstr ""
+
+#: ../admin/class-wp-compear-admin.php:248
+msgid "Deactivate License"
+msgstr ""
+
+#: ../admin/class-wp-compear-admin.php:249
+msgid "Your license is active"
+msgstr ""
+
+#: ../admin/class-wp-compear-admin.php:251 ../admin/class-wp-compear-admin.php:
+#: 258 ../admin/class-wp-compear-admin.php:267
+msgid "Clear License"
+msgstr ""
+
+#: ../admin/class-wp-compear-admin.php:255 ../admin/class-wp-compear-admin.php:
+#: 263 ../admin/class-wp-compear-admin.php:271
+msgid "Activate License"
+msgstr ""
+
+#: ../admin/class-wp-compear-admin.php:256
+msgid "Your license is invalid"
+msgstr ""
+
+#: ../admin/class-wp-compear-admin.php:265
+msgid "Your license has been deactivated"
+msgstr ""
+
+#: ../admin/class-wp-compear-admin.php:464
+msgid "copy shortcode"
+msgstr ""
+
+#: ../admin/class-wp-compear-admin.php:473
+msgid "Your shortcode will appear here after you save a draft or publish this page."
+msgstr ""
+
+#: ../admin/class-wp-compear-admin.php:507
+msgid "WP ComPEAR List Type"
+msgstr ""
+
+#: ../admin/class-wp-compear-admin.php:535
+msgid "WP ComPEAR List Theme"
+msgstr ""
+
+#: ../admin/class-wp-compear-admin.php:565
+msgid ""
+"Create or edit your custom specifications first, then publish or save a "
+"draft of this page. After that you will see your new specifications in the "
+"\"Products\" section below. After making any changes here, update this page to "
+"see them reflected in the products below."
+msgstr ""
+
+#: ../admin/class-wp-compear-admin.php:571
+msgid "Name"
+msgstr ""
+
+#: ../admin/class-wp-compear-admin.php:572
+msgid "Type"
+msgstr ""
+
+#: ../admin/class-wp-compear-admin.php:573 ../admin/class-wp-compear-admin.php:706
+msgid "Actions"
+msgstr ""
+
+#: ../admin/class-wp-compear-admin.php:598
+msgid "Plain Text"
+msgstr ""
+
+#: ../admin/class-wp-compear-admin.php:601
+msgid "Paragraph"
+msgstr ""
+
+#: ../admin/class-wp-compear-admin.php:604
+msgid "Image"
+msgstr ""
+
+#: ../admin/class-wp-compear-admin.php:607
+msgid "Star Rating"
+msgstr ""
+
+#: ../admin/class-wp-compear-admin.php:610
+msgid "WYSIWYG"
+msgstr ""
+
+#: ../admin/class-wp-compear-admin.php:694
+msgid ""
+"Create or edit your custom specifications above first, then publish or save "
+"a draft of this page. After that you will see your new specifications in "
+"this section."
+msgstr ""
+
+#: ../admin/class-wp-compear-admin.php:933
+msgid "Settings for All Screen Sizes"
+msgstr ""
+
+#: ../admin/class-wp-compear-admin.php:937 ../admin/class-wp-compear-admin.php:947
+msgid "On"
+msgstr ""
+
+#: ../admin/class-wp-compear-admin.php:938 ../admin/class-wp-compear-admin.php:948
+msgid "Off"
+msgstr ""
+
+#: ../admin/class-wp-compear-admin.php:942
+msgid "Previous &amp; Next Buttons"
+msgstr ""
+
+#: ../admin/class-wp-compear-admin.php:952
+msgid "Slide Counter"
+msgstr ""
+
+#: ../admin/class-wp-compear-admin.php:957 ../admin/class-wp-compear-admin.php:
+#: 1156 ../admin/class-wp-compear-admin.php:1168
+msgid "Yes"
+msgstr ""
+
+#: ../admin/class-wp-compear-admin.php:958 ../admin/class-wp-compear-admin.php:
+#: 1157 ../admin/class-wp-compear-admin.php:1169
+msgid "No"
+msgstr ""
+
+#: ../admin/class-wp-compear-admin.php:962
+msgid "Show Specification Name in Slider"
+msgstr ""
+
+#: ../admin/class-wp-compear-admin.php:969 ../admin/class-wp-compear-admin.php:
+#: 1245 ../admin/class-wp-compear-admin.php:1254 ../admin/class-wp-compear-admin.
+#: php:1314 ../admin/class-wp-compear-admin.php:1389
+msgid "Left"
+msgstr ""
+
+#: ../admin/class-wp-compear-admin.php:970 ../admin/class-wp-compear-admin.php:
+#: 1246 ../admin/class-wp-compear-admin.php:1255 ../admin/class-wp-compear-admin.
+#: php:1315 ../admin/class-wp-compear-admin.php:1390
+msgid "Center"
+msgstr ""
+
+#: ../admin/class-wp-compear-admin.php:971 ../admin/class-wp-compear-admin.php:
+#: 1247 ../admin/class-wp-compear-admin.php:1256 ../admin/class-wp-compear-admin.
+#: php:1316 ../admin/class-wp-compear-admin.php:1391
+msgid "Right"
+msgstr ""
+
+#: ../admin/class-wp-compear-admin.php:975
+msgid "Slide Alignment"
+msgstr ""
+
+#: ../admin/class-wp-compear-admin.php:984
+msgid "Settings for Large Screen Sizes (laptops &amp; desktop screens)"
+msgstr ""
+
+#: ../admin/class-wp-compear-admin.php:997 ../admin/class-wp-compear-admin.php:1055
+msgid "Number of Slides to Show"
+msgstr ""
+
+#: ../admin/class-wp-compear-admin.php:1011 ../admin/class-wp-compear-admin.php:
+#: 1069
+msgid "Number of Slides to Scroll"
+msgstr ""
+
+#: ../admin/class-wp-compear-admin.php:1042
+msgid "Settings for Medium Screen Sizes (tablets)"
+msgstr ""
+
+#: ../admin/class-wp-compear-admin.php:1100
+msgid "Settings for Small Screen Sizes (mobile devices)"
+msgstr ""
+
+#: ../admin/class-wp-compear-admin.php:1101
+msgid ""
+"There are not currently any settings supported for smaller screen sizes. The "
+"slider is already optimized for this."
+msgstr ""
+
+#: ../admin/class-wp-compear-admin.php:1152
+msgid "Choose whether or not this table is sortable"
+msgstr ""
+
+#: ../admin/class-wp-compear-admin.php:1161
+msgid "Make Table Sortable"
+msgstr ""
+
+#: ../admin/class-wp-compear-admin.php:1173
+msgid "Give Table Rows Background Color on Hover"
+msgstr ""
+
+#: ../admin/class-wp-compear-admin.php:1184
+#, php-format
+msgid ""
+"Set the width of each column in your table. Make sure they add up to 100% or "
+"your table will not work properly."
+msgstr ""
+
+#: ../admin/class-wp-compear-admin.php:1190
+msgid "Column Title"
+msgstr ""
+
+#: ../admin/class-wp-compear-admin.php:1191
+msgid "Width"
+msgstr ""
+
+#: ../admin/class-wp-compear-admin.php:1192
+msgid "Alignment"
+msgstr ""
+
+#: ../admin/class-wp-compear-admin.php:1364
+msgid ""
+"The drag and drop comparison tool will work with up to 20 custom "
+"specifications, but likely will be too tall. I recommend using no more than "
+"8-10 specifications."
+msgstr ""
+
+#: ../admin/class-wp-compear-admin.php:1366
+msgid ""
+"Choose which custom specification you would like to use as the draggable "
+"item list."
+msgstr ""
+
+#: ../admin/class-wp-compear-admin.php:1395
+msgid "Drag and Drop Alignment"
+msgstr ""
+
+#: ../admin/class-wp-compear-admin.php:1863 ../admin/class-wp-compear-admin.php:
+#: 1910
+msgid "Insert WP ComPEAR Shortcode"
+msgstr ""
+
+#: ../admin/class-wp-compear-admin.php:1894
+msgid "Choose a WP ComPEAR List to embed"
+msgstr ""
+
+#: ../admin/class-wp-compear-admin.php:1906
+msgid "You have not created any WP ComPEAR Lists yet. Go ahead and add one!"
+msgstr ""
+
+#: ../admin/partials/wp-compear-admin-display.php:22
+msgid "WP ComPEAR Settings"
+msgstr ""
+
+#: ../admin/partials/wp-compear-admin-display.php:30
+msgid "WP ComPEAR License Key"
+msgstr ""

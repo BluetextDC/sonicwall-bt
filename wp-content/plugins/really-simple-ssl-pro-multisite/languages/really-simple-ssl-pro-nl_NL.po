@@ -1,0 +1,466 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Really Simple SSL pro\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-03-23 09:01+0000\n"
+"PO-Revision-Date: 2017-03-23 09:33+0000\n"
+"Last-Translator: rogier <rogierlankhorst@gmail.com>\n"
+"Language-Team: Dutch\n"
+"Language: nl-NL\n"
+"Plural-Forms: nplurals=2; plural=n != 1\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco - https://localise.biz/"
+
+#: class-licensing.php:94
+msgid ""
+"You haven't activated your Really Simple SSL pro license yet on your main "
+"site. To get all future updates, enter your license on the settings page of "
+"your main site."
+msgstr ""
+"Je hebt je licentie nog niet geactiveerd. Voer je licentie in om verzekerd "
+"te zijn van toekomstige updates."
+
+#: class-premium-options.php:10 class-scan.php:35
+#, php-format
+msgid "%s is a singleton class and you cannot create a second instance."
+msgstr ""
+"%s is een singleton class en daar kan je geen tweede instantie van creëren."
+
+#: class-premium-options.php:60
+msgid "Turn HTTP Strict Transport Security on"
+msgstr "Activeer HTTP Strict Transport Security"
+
+#: class-premium-options.php:85
+msgid "Configure your site for the HSTS preload list"
+msgstr "Configureer je site voor de HTST preload lijst"
+
+#: class-premium-options.php:88
+msgid "Enable the mixed content fixer on the WordPress back-end"
+msgstr "Activeer de mixed content fixer in de WordPress back-end"
+
+#: class-premium-options.php:111
+msgid ""
+"The free version of Really Simple SSL should be updated to make the pro "
+"version work fully."
+msgstr ""
+"De gratis versie van Really Simple SSL moet geüpdatet worden om de pro "
+"versie volledig te laten werken"
+
+#: class-premium-options.php:127
+msgid "HTTP Strict Transport Security was set in the .htaccess"
+msgstr "HTTP Strict Transport Security is ingesteld in de .htaccess"
+
+#: class-premium-options.php:129
+msgid ""
+"<a href=\"https://en.wikipedia.org/wiki/HTTP_Strict_Transport_Security\" "
+"target=\"_blank\">HTTP Strict Transport Security</a> was not set in your ."
+"htaccess."
+msgstr "HTTP Strict Transport Security is niet ingesteld in de .htaccess"
+
+#: class-premium-options.php:131
+msgid "Enable HSTS"
+msgstr "Activeer HSTS"
+
+#: class-premium-options.php:147
+msgid ""
+"Your site has been configured for the HSTS preload list. If you have "
+"submitted your site, it will be preloaded."
+msgstr ""
+"Je site is geconfigureerd voor de HSTS preload list. Je site wordt gepreload "
+"wanneer uw site aangemeld is."
+
+#: class-premium-options.php:148
+msgid "Click"
+msgstr "Klik"
+
+#: class-premium-options.php:148
+msgid "here"
+msgstr "hier"
+
+#: class-premium-options.php:148
+msgid "to submit."
+msgstr "om in te dienen"
+
+#: class-premium-options.php:150
+msgid ""
+"Your site is not yet configured for the <a href=\"https://hstspreload."
+"appspot.com\" target=\"_blank\">HSTS preload list</a>. Read the "
+"documentation carefully before you do!"
+msgstr ""
+"Je site is nog niet geconfigureerd voor de <a href=\"https://hstspreload."
+"appspot.com\" target=\"_blank\">HSTS preload lijst</a>. Lees de documentatie "
+"goed door voor je je aanmeldt. "
+
+#: class-premium-options.php:152
+msgid "Enable the preload list"
+msgstr "Schakel de preload lijst in"
+
+#: class-premium-options.php:168
+msgid "You have the mixed content fixer activated on your admin panel."
+msgstr "Je hebt de mixed content fixer geactiveerd in uw admin panel. "
+
+#: class-premium-options.php:193
+msgid ""
+"Are you sure? Your visitors will keep going to a https site for a year after "
+"you turn this off."
+msgstr ""
+"Weet je dit zeker? Je bezoekers blijven tot een jaar lang naar de https site "
+"gaan nadat je dit hebt uitgeschakeld. "
+
+#: class-premium-options.php:195
+msgid ""
+"You cannot use this option when .htaccess is not writable, or 'stop editing "
+"the .htaccess file' is enabled."
+msgstr ""
+"Je kunt deze optie niet gebruiken wanneer .htaccess niet schrijfbaar is, of "
+"'stop verandering aan .htaccess' is ingeschakeld."
+
+#: class-premium-options.php:214
+msgid "Did you read the information on the preload list site?"
+msgstr "Heb je de informatie op de preload lijst site gelezen?"
+
+#: class-premium-options.php:216
+msgid ""
+"Please note that all subdomains, and both www and non-www domain need to be "
+"https!"
+msgstr ""
+"Let er op dat alle subdomeinen en de www en niet-www domeinen https moeten "
+"zijn!"
+
+#: class-premium-options.php:218
+msgid "After enabling this option, you have to "
+msgstr "Na het inschakelen van deze optie dien je"
+
+#: class-premium-options.php:219
+msgid "submit"
+msgstr "indienen"
+
+#: class-premium-options.php:220
+msgid "your site."
+msgstr "je site."
+
+#: class-premium-options.php:222
+msgid ""
+"Before submitting, please read the <a href=\"https://hstspreload.appspot."
+"com/\" target=\"_blank\">information</a>."
+msgstr ""
+"Lees alsjeblieft de <a href=\"https://hstspreload.appspot.com/\" "
+"target=\"_blank\">informatie</a> voor het indienen."
+
+#: class-scan.php:102
+msgid "Generating list of website pages"
+msgstr "Bezig met het genereren van een lijst met websitepagina's"
+
+#: class-scan.php:133 class-scan.php:1212
+msgid "Never"
+msgstr "Nooit"
+
+#: class-scan.php:143
+msgid "For best results, deactivate caching and/or security plugins."
+msgstr ""
+"Voor de beste resultaten, deactiveer caching- en/of beveiligingsplugins."
+
+#: class-scan.php:144
+msgid ""
+"If your scan freezes, try disabling curl or brute force database search."
+msgstr ""
+"Als je scan vastloopt, probeer curl of brute force database scan te "
+"deactiveren."
+
+#: class-scan.php:146
+msgid "Disable brute force database search."
+msgstr "Deactiveer brute force database scan."
+
+#: class-scan.php:148
+msgid "Disable curl."
+msgstr "Deactiveer curl."
+
+#: class-scan.php:154
+msgid "Scan"
+msgstr "Scan"
+
+#: class-scan.php:156
+msgid "Quick scan"
+msgstr "Snelle scan"
+
+#: class-scan.php:157
+msgid "Full scan"
+msgstr "Volledige scan"
+
+#: class-scan.php:180 class-scan.php:194
+msgid "Plugin dependency error."
+msgstr "Plugin afhankelijkheid fout."
+
+#: class-scan.php:181
+msgid ""
+"Really Simple SSL pro is an add-on for Really Simple SSL, and cannot do it "
+"on its own :("
+msgstr ""
+"Really Simple SSL pro is een add-on voor Really Simple SSL en kan dit helaas "
+"niet alleen :("
+
+#: class-scan.php:182
+msgid ""
+"Please install and activate Really Simple SSL before activating this add-on."
+msgstr ""
+"Installeer en activeer alsjeblieft Really Simple SSL voordat u deze add-on "
+"activeert."
+
+#: class-scan.php:196
+msgid "Please upgrade to the latest version before installing this add on."
+msgstr ""
+"Upgrade alsjeblieft naar de laatste versie voordat u deze add-on installeert."
+
+#: class-scan.php:224
+msgid "Searching for js and css files and external resources in website"
+msgstr "Zoeken naar js en css bestanden en externe bronnen."
+
+#: class-scan.php:268
+msgid "Generating file list"
+msgstr "Bestandenlijst genereren"
+
+#: class-scan.php:282
+msgid "Checking which posts contain external resources"
+msgstr "Uitzoeken welke posts externe bronnen bevatten"
+
+#: class-scan.php:346
+msgid "Looking up blocked resources in posts"
+msgstr "Zoeken naar geblokkeerde bronnen in posts"
+
+#: class-scan.php:1008
+msgid "Fix these issues before migrating to SSL"
+msgstr "Repareer deze issues voor de migratie naar SSL"
+
+#: class-scan.php:1009
+msgid "Blocked urls"
+msgstr "Geblokkeerde urls"
+
+#: class-scan.php:1010
+msgid ""
+"These files contain references to other websites that will get blocked on a "
+"https website because they do not have an SSL certificate."
+msgstr ""
+"Deze bestanden bevatten referenties naar andere websites die geblokkeerd "
+"worden op een https website omdat ze geen SSL certificaat hebben."
+
+#: class-scan.php:1011 class-scan.php:1048 class-scan.php:1082
+#: class-scan.php:1107 class-scan.php:1126 class-scan.php:1153
+msgid "To fix, follow these"
+msgstr "Volg deze instructies om te repareren"
+
+#: class-scan.php:1011 class-scan.php:1048 class-scan.php:1082
+#: class-scan.php:1107 class-scan.php:1126 class-scan.php:1153
+msgid "instructions"
+msgstr "instructies"
+
+#: class-scan.php:1035
+msgid "Url cannot load over https"
+msgstr "Url kan niet laden over https"
+
+#: class-scan.php:1042
+msgid "No references to domains without ssl certificate found."
+msgstr "Geen referenties naar domeinen zonder ssl certificaat gevonden."
+
+#: class-scan.php:1046
+msgid "CSS and JS files with mixed content"
+msgstr "CSS en JS bestanden met mixed content"
+
+#: class-scan.php:1047
+msgid "These files contain http links, which causes mixed content."
+msgstr "Deze bestanden bevatten http links, wat zorgt voor mixed content"
+
+#: class-scan.php:1070 class-scan.php:1094
+msgid "http link"
+msgstr "http link"
+
+#: class-scan.php:1077
+msgid "No CSS and JS files with mixed content found."
+msgstr "Geen CSS en JS bestanden gevonden met mixed content."
+
+#: class-scan.php:1081
+msgid "CSS and JS files from other domains with mixed content."
+msgstr "CSS en JS bestanden van andere domeinen met mixed content."
+
+#: class-scan.php:1090
+msgid "File containing this url: "
+msgstr "Bestand bevat deze url:"
+
+#: class-scan.php:1101
+msgid "No CSS and JS files from on other domains with mixed content."
+msgstr "Geen CSS en JS bestanden van andere domeinen met mixed content."
+
+#: class-scan.php:1105
+msgid "Posts with blocked resources."
+msgstr "Posts met geblokkeerde bronnen."
+
+#: class-scan.php:1106
+msgid "These posts contain resources that could not load over https."
+msgstr "Deze posts bevatten bronnen die niet over https kunnen laden."
+
+#: class-scan.php:1112 class-scan.php:1137 class-scan.php:1166
+msgid "edit"
+msgstr "bewerk"
+
+#: class-scan.php:1115
+msgid "blocked url"
+msgstr "geblokkeerde url"
+
+#: class-scan.php:1121
+msgid ""
+"No posts found that contain references to domains without an SSL certificate."
+msgstr ""
+"Geen posts gevonden die referenties naar een domein zonder SSL certificaat "
+"bevatten."
+
+#: class-scan.php:1125
+msgid ""
+"These blocked resources were found on your website, but weren't found in the "
+"database or files."
+msgstr ""
+"Deze geblokkeerde bronnen zijn gevonden op uw website, maar niet in de "
+"database of bestanden."
+
+#: class-scan.php:1152
+msgid ""
+"These blocked resources were found on your website, but couldn't be traced "
+"to the source."
+msgstr ""
+"Deze geblokkeerde bronnen zijn gevonden op uw website, maar de bron kon niet "
+"achterhaald worden."
+
+#: class-scan.php:1189
+msgid "No blocked urls found"
+msgstr "Geen geblokkeerde urls gevonden"
+
+#: class-scan.php:1190
+msgid "No .js or .css files with http:// urls found."
+msgstr "Geen .js of .css bestanden met https:// urls gevonden."
+
+#: class-scan.php:1191
+msgid "No .js or .css files on other domains with http:// urls found."
+msgstr ""
+"Geen .js of .css bestanden met https:// urls gevonden op andere domeinen."
+
+#: class-scan.php:1192
+msgid ""
+"No posts in your database found with links to blocked remote urls found."
+msgstr ""
+"Geen posts in uw database gevonden met links naar geblokkeerde externe urls."
+
+#: class-scan.php:1354
+msgid "Plugin not found"
+msgstr "Plugin niet gevonden"
+
+#: class-scan.php:1382
+msgid "The native Wordpress function is_ssl() returned true"
+msgstr "De eigen Wordpress functie is_ssl() geeft true"
+
+#: class-scan.php:1384
+msgid "The native Wordpress function is_ssl() returned false"
+msgstr "De eigen Wordpress functie is_ssl() geeft false"
+
+#: class-scan.php:1391 class-scan.php:1399
+msgid "Great! Your scan last completed without errors."
+msgstr "Super! De laatste scan is uitgevoerd zonder fouten."
+
+#: class-scan.php:1393
+msgid ""
+"The last scan was completed with errors. Only migrate if you are sure the "
+"found errors are not a problem for your site."
+msgstr ""
+"De laatste scan is uitgevoerd met fouten. Migreer alleen als u er zeker van "
+"bent dat de gevonden fouten geen problemen opleveren voor uw site."
+
+#: class-scan.php:1395
+msgid ""
+"You haven't scanned the site yet, you should scan your site to check for "
+"possible issues before migrating to ssl."
+msgstr ""
+"Je hebt de site nog niet gescand, je zou de site moeten scannen op mogelijke "
+"fouten voordat je migreert naar ssl."
+
+#: class-scan.php:1401
+msgid ""
+"The last scan was completed with errors. Are you sure these issues don't "
+"impact your site?."
+msgstr ""
+"De laatste scan is uitgevoerd met fouten. Ben je er zeker van dat deze "
+"fouten geen invloed hebben op je site?"
+
+#: class-scan.php:1403
+msgid ""
+"You haven't scanned the site yet, you should scan your site to check for "
+"possible issues."
+msgstr ""
+"Je hebt de site nog niet gescand. Doe de scan om mogelijke fouten op te "
+"sporen."
+
+#: class-scan.php:1411
+msgid "Scan for issues"
+msgstr "Scan op fouten"
+
+#: class-scan.php:1423
+msgid ""
+"No SSL was detected. If you do have an ssl certificate, try to change your "
+"current url in the browser address bar to https."
+msgstr ""
+"SSL is niet gedetecteerd. Als je een ssl certificaat hebt, probeer de url in "
+"je browser te veranderen naar https."
+
+#: class-scan.php:1425
+msgid "Prepare for your ssl migration by checking your site with the scan"
+msgstr ""
+"Bereid je goed voor op een ssl migratie door eerst je site te controleren "
+"met de scan"
+
+#: class-scan.php:1432
+msgid "Almost ready to migrate to SSL!"
+msgstr "Bijna klaar om te migreren naar SSL!"
+
+#: class-scan.php:1437
+msgid ""
+"No scan completed yet. Before migrating to SSL, you should do a <a "
+"href=\"options-general.php?page=rlrsssl_really_simple_ssl&tab=scan\">scan</a>"
+msgstr ""
+"Nog geen scan gedaan. Voordat je migreert naar SSL, zou je een <a "
+"href=\"options-general.php?page=rlrsssl_really_simple_ssl&tab=scan\">scan</a>"
+" moeten doen"
+
+#: class-licensing.php:42
+msgid ""
+"You haven't activated your Really Simple SSL pro license yet. To get all "
+"future updates, enter your license on the settings page."
+msgstr ""
+"Jouw Really Simple SSL pro licentie is nog niet geactiveerd. Voer je "
+"licentie in op de settings pagina om toegang te krijgen tot toekomstige "
+"updates."
+
+#: class-licensing.php:43 class-licensing.php:95
+msgid "Go to the settings page"
+msgstr "Ga naar de settings pagina"
+
+#: class-licensing.php:122
+msgid "License"
+msgstr "Licentie"
+
+#. Name of the plugin
+msgid "Really Simple SSL pro"
+msgstr "Really Simple SSL pro"
+
+#. Description of the plugin
+msgid "Add on for Really Simple SSL"
+msgstr "Add on voor Really Simple SSL"
+
+#. URI of the plugin
+msgid "https://www.really-simple-ssl.com/pro"
+msgstr "https://www.really-simple-ssl.com/pro"
+
+#. Author of the plugin
+msgid "Rogier Lankhorst"
+msgstr "Rogier Lankhorst"
+
+#. Author URI of the plugin
+msgid "https://www.rogierlankhorst.com"
+msgstr "https://www.rogierlankhorst.com"

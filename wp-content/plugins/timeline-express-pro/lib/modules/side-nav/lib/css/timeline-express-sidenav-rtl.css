@@ -1,0 +1,129 @@
+/*--------------------------------------------------------------
+* Timeline Express - Sidenav Add-On
+* @author Code Parrots <support@codeparrots.com>
+* Copyright © 2017 Code Parrots. All Rights Reserved.
+----------------------------------------------------------------
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Sidenav Styles
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Sidenav Styles
+--------------------------------------------------------------*/
+/**
+ * Logged in users, offset the admin bar
+ */
+body.admin-bar .timeline-express-sidenav.full {
+  padding-top: 32px; }
+
+/**
+ * Sidenav styles
+ */
+.timeline-express-sidenav {
+  position: fixed;
+  top: 50%;
+  z-index: 999;
+  width: 100%;
+  max-width: 160px;
+  top: 50%;
+  transform: translate(0%, -50%);
+  transform: -webkit-translate(0%, -50%);
+  transform: -moz-translate(0%, -50%);
+  transform: -ms-translate(0%, -50%);
+  /**
+	 * Themes
+	 */ }
+  .timeline-express-sidenav.light {
+    background: #fefefe; }
+  .timeline-express-sidenav.dark {
+    background: #383838; }
+  .timeline-express-sidenav.open {
+    box-shadow: -1px 2px 15px rgba(0, 0, 0, 0.15); }
+    .timeline-express-sidenav.open .sidenav-toggle {
+      box-shadow: none !important; }
+  .timeline-express-sidenav .timeline-express-sidenav-wrapper {
+    padding: 15px 25px; }
+    .timeline-express-sidenav .timeline-express-sidenav-wrapper h3.title,
+    .timeline-express-sidenav .timeline-express-sidenav-wrapper p.description {
+      margin: 0 0 8px 0; }
+    .timeline-express-sidenav .timeline-express-sidenav-wrapper ul {
+      list-style: none !important;
+      padding: 0 !important;
+      margin: 0; }
+      .timeline-express-sidenav .timeline-express-sidenav-wrapper ul li a {
+        text-decoration: none;
+        border: none;
+        box-shadow: none; }
+  .timeline-express-sidenav.right {
+    left: 0; }
+    .timeline-express-sidenav.right .sidenav-toggle {
+      border-radius: 0 3px 3px 0; }
+  .timeline-express-sidenav.left {
+    right: 0; }
+    .timeline-express-sidenav.left .sidenav-toggle {
+      border-radius: 3px 0 0 3px; }
+  .timeline-express-sidenav.offscreen .sidenav-toggle:hover {
+    cursor: pointer; }
+  .timeline-express-sidenav.offscreen .sidenav-toggle {
+    z-index: 999;
+    position: absolute;
+    font-size: 18px;
+    content: "\f0c9";
+    font-family: "FontAwesome";
+    padding: 9px 11px;
+    box-shadow: -2px 1px 15px rgba(86, 86, 86, 0.15);
+    background: inherit; }
+  .timeline-express-sidenav.full {
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    transform: none;
+    overflow: visible; }
+    .timeline-express-sidenav.full .timeline-express-sidenav-wrapper {
+      overflow-y: auto;
+      height: 100%;
+      width: 100%; }
+    .timeline-express-sidenav.full.offscreen .sidenav-toggle {
+      top: 50%; }
+  .timeline-express-sidenav .year-scroller {
+    font-size: 18px;
+    margin: 5px 0;
+    position: relative;
+    width: 100%; }
+    .timeline-express-sidenav .year-scroller:before {
+      content: "\f10c";
+      font-family: "FontAwesome";
+      font-size: 15px;
+      position: absolute;
+      top: 3px;
+      right: 0; }
+    .timeline-express-sidenav .year-scroller.selected:before, .timeline-express-sidenav .year-scroller:hover:before {
+      content: "\f192"; }
+    .timeline-express-sidenav .year-scroller a {
+      padding-right: 18px; }
+
+/**
+ * Mobile Styles
+ */
+@media only screen and (max-width: 821px) {
+  .timeline-express-sidenav:not(.full) {
+    display: inline-block;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: auto;
+    bottom: 0;
+    top: auto;
+    transform: none;
+    box-shadow: -2px 1px 25px rgba(86, 86, 86, 0.15); }
+    .timeline-express-sidenav:not(.full) .timeline-express-sidenav-wrapper {
+      padding: 15px 20px;
+      width: auto;
+      white-space: nowrap; }
+    .timeline-express-sidenav:not(.full) ul {
+      display: inline-block; }
+      .timeline-express-sidenav:not(.full) ul .year-scroller {
+        font-size: 20px;
+        display: inline-block;
+        margin: 0 0 0 .75em; } }

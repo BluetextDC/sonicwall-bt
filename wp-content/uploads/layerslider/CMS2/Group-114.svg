@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="106px" height="106px" viewBox="0 0 106 106" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 114</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="clock1" transform="translate(3.000000, 3.000000)" fill="#47AFE8">
+            <g id="Group-114" transform="translate(-3.000000, -3.000000)">
+                <path d="M53,106 C23.7289083,106 0,82.2710917 0,53 C0,23.7289083 23.7289083,0 53,0 C82.2710917,0 106,23.7289083 106,53 C106,82.2710917 82.2710917,106 53,106 Z M53,100 C78.9573832,100 100,78.9573832 100,53 C100,27.0426168 78.9573832,6 53,6 C27.0426168,6 6,27.0426168 6,53 C6,78.9573832 27.0426168,100 53,100 Z" id="Oval-14" fill-rule="nonzero"></path>
+                <circle id="Oval-14" cx="53.4166667" cy="53.4166667" r="5.41666667"></circle>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="551px" height="49px" viewBox="0 0 551 49" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>SSL Inspection — Cli</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M-2528,-15821 L10295,-15821 L10295,1534 L-2528,1534 L-2528,-15821 Z" id="path-1"></path>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="12823" height="17355" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <use id="Rectangle-5" stroke="#979797" mask="url(#mask-2)" stroke-width="12" stroke-dasharray="15,15" xlink:href="#path-1"></use>
+        <g id="Group-123" transform="translate(2.000000, -623.000000)"></g>
+        <text id="SSL-Inspection-—-Cli" font-family="Nunito-Bold, Nunito" font-size="28" font-weight="bold" letter-spacing="-0.492800087" fill="#F86C08">
+            <tspan x="8" y="29">SSL Inspection — Client Deployment Mode</tspan>
+        </text>
+    </g>
+</svg>

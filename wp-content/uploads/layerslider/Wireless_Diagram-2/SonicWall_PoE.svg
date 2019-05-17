@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="50px" height="30px" viewBox="0 0 50 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50 (54983) - http://www.bohemiancoding.com/sketch -->
+    <title>SonicWall_PoE</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M50,3.7253972 C49.9862524,1.66706189 48.3392906,0 45.9472092,0 L45.3148199,0 L4.68518009,0 L4.05554028,0 C1.66070938,0 0.0137475942,1.66706189 0,3.7253972 L0,3.74436803 L0,3.7514821 L0,16.1726346 L0,26.2485179 C0,28.3210813 1.94665933,30 4.34698928,30 L24.9986252,29.9952573 L45.6530107,30 C48.0533407,30 50,28.3210813 50,26.2485179 L50,16.1726346 L50,3.7514821 L50,3.74436803 L50,3.7253972" id="SonicWall_PoE" fill="#636569"></path>
+    </g>
+</svg>

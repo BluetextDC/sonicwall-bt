@@ -1,0 +1,1923 @@
+# Translation of Plugins - WP-Optimize - Stable (latest release) in Spanish (Spain)
+# This file is distributed under the same license as the Plugins - WP-Optimize - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2019-02-09 01:49:29+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: GlotPress/2.4.0-alpha\n"
+"Language: es\n"
+"Project-Id-Version: Plugins - WP-Optimize - Stable (latest release)\n"
+
+#: optimizations/orphandata.php:17
+msgid "%s orphaned relationship data deleted"
+msgid_plural "%s orphaned relationship data deleted"
+msgstr[0] "%s relación de datos huérfanos borrada"
+msgstr[1] "%s relaciones de datos huérfanos borradas"
+
+#: templates/settings/may-also-like.php:198
+msgid "Preview, select and remove data and records available for optimization from the database"
+msgstr "Previsualiza, selecciona y borra datos y registros disponibles para optimizar en la base de datos"
+
+#: templates/settings/may-also-like.php:196
+#: templates/settings/may-also-like.php:197
+msgid "Optimization Preview"
+msgstr "Vista previa de optimización"
+
+#: templates/settings/may-also-like.php:185
+msgid "Make your site run faster by only loading parts of a web-page when it is visible to the user"
+msgstr "Haz que tu sitio vaya más rápido cargando partes de una página web solo cuando estén visibles para el usuario"
+
+#: templates/settings/may-also-like.php:183
+#: templates/settings/may-also-like.php:184
+msgid "Lazy Loading"
+msgstr "Carga diferida"
+
+#: wp-optimize.php:782
+msgid "%s was not repaired. For more details, please check the logs (configured in your logging destinations settings)."
+msgstr "%s no se reparó. Para más detalles, por favor, revisa los registros (configurados en tus ajustes de destino de registro)."
+
+#: templates/cache/browser-cache.php:48
+msgid "Click to read the article about how to enable browser cache with your server software."
+msgstr "Haz clic aquí para leer el artículo sobre cómo habilitar la caché del navegador con el software de tu servidor."
+
+#: templates/cache/browser-cache.php:44
+msgid "Make the time empty or zero to disable the headers."
+msgstr "Deja el tiempo esté vacío o a cero para desactivar las cabeceras."
+
+#: templates/cache/browser-cache.php:39
+msgid "hour(s)"
+msgstr "hora(s)"
+
+#: templates/cache/browser-cache.php:37
+msgid "day(s)"
+msgstr "día(s)"
+
+#: templates/cache/browser-cache.php:35
+msgid "Expiration time:"
+msgstr "Hora de caducidad:"
+
+#: templates/cache/browser-cache.php:23
+msgid "disabled"
+msgstr "deshabilitadas"
+
+#: templates/cache/browser-cache.php:22 templates/cache/browser-cache.php:23
+msgid "Browser static file caching headers are currently %s."
+msgstr "Las cabeceras estáticas de almacenamiento en caché de archivos del navegador están %s."
+
+#: templates/cache/browser-cache.php:19
+msgid "Follow this link to get more information."
+msgstr "Sigue este enlace para obtener más información."
+
+#: templates/cache/browser-cache.php:19
+msgid "Browser static file caching uses HTTP response headers to advise a visitor's browser to cache non-changing files for a while, so that it doesn’t need to retrieve them upon every visit."
+msgstr "El almacenamiento estático de archivos en caché del navegador utiliza encabezados de respuesta HTTP para aconsejar al navegador de un visitante que almacene en caché archivos no cambiantes durante un tiempo, de modo que no sea necesario recuperarlos en cada visita."
+
+#: templates/cache/browser-cache.php:4
+msgid "Browser static file caching settings"
+msgstr "Configuración de caché de archivos estáticos del navegador"
+
+#: templates/cache/gzip-compression.php:54
+msgid "Follow this link to read the article about how to enable Gzip compression with your server software."
+msgstr "Sigue este enlace para leer el artículo sobre cómo habilitar la compresión Gzip con el software de tu servidor."
+
+#: templates/cache/gzip-compression.php:34
+msgid "Gzip compression is currently DISABLED."
+msgstr "La compresión Gzip está DESACTIVADA."
+
+#: templates/cache/gzip-compression.php:33
+msgid "Gzip compression is currently ENABLED."
+msgstr "La compresión Gzip está HABILITADA."
+
+#: templates/cache/gzip-compression.php:29
+msgid "Follow this link to get more information about Gzip compression."
+msgstr "Sigue este enlace para obtener más información sobre la compresión Gzip."
+
+#: templates/cache/gzip-compression.php:27
+msgid "Gzip compression improves the performance of your website and decreases its loading time. When a visitor makes a request for your website, the server compresses the requested page and transfers it to the customer's computer."
+msgstr "La compresión Gzip mejora el rendimiento de tu web y disminuye su tiempo de carga. Cuando un visitante hace una solicitud para tu web, el servidor comprime la página solicitada y la transfiere al ordenador del cliente."
+
+#: templates/cache/gzip-compression.php:20
+msgid "GZip compression has been enabled by something other than WP-Optimize."
+msgstr "La compresión GZip ha sido habilitada por algo distinto a WP-Optimize."
+
+#: templates/pages-menu.php:5 templates/admin-page-header-tabs.php:30
+msgid "Menu"
+msgstr "Menú"
+
+#: templates/settings/status-box-contents.php:58
+#: templates/cache/browser-cache.php:22
+msgid "enabled"
+msgstr "habilitadas"
+
+#: templates/settings/status-box-contents.php:57
+msgid "Scheduled cleaning"
+msgstr "Limpieza programada"
+
+#: templates/settings/support-and-faqs.php:6
+msgid "Read our FAQ here"
+msgstr "Lee nuestras preguntas frecuentes aquí"
+
+#: templates/database/tables-body.php:41
+msgid "inactive"
+msgstr "inactivo"
+
+#: templates/database/tables-body.php:39
+msgid "not installed"
+msgstr "no Instalado"
+
+#: templates/database/tables-body.php:32
+msgid "Belongs to:"
+msgstr "Pertenece a:"
+
+#: templates/database/tables.php:18
+msgid "Refresh tables"
+msgstr "Actualizar tablas"
+
+#: templates/database/tables.php:16
+msgid "Take a backup with UpdraftPlus before any actions upon tables (recommended)."
+msgstr "Haz una copia de seguridad con UpdraftPlus antes de realizar cualquier acción sobre las tablas (recomendado)."
+
+#: templates/admin-page-header.php:31
+msgid "The #1 optimization plugin!"
+msgstr "¡El plugin de optimización número 1!"
+
+#: templates/pages-menu.php:37 templates/admin-page-header.php:18
+msgid "Team lead"
+msgstr "Líder del proyecto"
+
+#: templates/pages-menu.php:24 templates/admin-page-header.php:5
+msgid "Useful links"
+msgstr "Enlaces útiles"
+
+#: wp-optimize.php:1083 wp-optimize.php:1084
+msgid "Cache"
+msgstr "Caché"
+
+#: wp-optimize.php:1062
+msgid "Help"
+msgstr "Ayuda"
+
+#: wp-optimize.php:1061
+msgid "Support & FAQs"
+msgstr "Soporte y preguntas frecuentes"
+
+#: wp-optimize.php:1047 wp-optimize.php:1048
+msgid "Database"
+msgstr "Base de datos"
+
+#: wp-optimize.php:886
+msgid "Remove"
+msgstr "Eliminar"
+
+#: templates/cache/browser-cache.php:32 wp-optimize.php:788
+msgid "Update"
+msgstr "Actualizar"
+
+#: wp-optimize.php:786
+msgid "Please use valid values."
+msgstr "Por favor, utiliza valores válidos."
+
+#: wp-optimize.php:783
+msgid "Are you sure you want to remove this table?"
+msgstr "¿Estás seguro de que quieres eliminar esta tabla?"
+
+#: wp-optimize.php:785
+msgid "Please use positive integers."
+msgstr "Por favor, utiliza números enteros positivos."
+
+#: wp-optimize.php:491
+msgid "Support / FAQs"
+msgstr "Soporte y preguntas frecuentes"
+
+#: wp-optimize.php:489
+msgid "Static file caching"
+msgstr "Caché de archivos estáticos"
+
+#: wp-optimize.php:488
+msgid "Gzip compression"
+msgstr "Compresión Gzip"
+
+#: wp-optimize.php:486
+msgid "Tables"
+msgstr "Tablas"
+
+#: optimizations/orphanedtables.php:131
+msgid "Delete orphaned database tables"
+msgstr "Eliminar tablas huérfanas de la bases de datos"
+
+#: optimizations/orphanedtables.php:57
+msgid "Deleting %s orphaned table was unsuccessful"
+msgid_plural "Repairing %s orphaned tables were unsuccessful"
+msgstr[0] "El borrado de %s tabla huérfana ha fallado"
+msgstr[1] "El borrado de %s tablas huérfanas ha fallado"
+
+#: optimizations/orphanedtables.php:54
+msgid "%s orphaned table deleted"
+msgid_plural "%s orphaned tables deleted"
+msgstr[0] "%s tablas huérfanas eliminadas"
+msgstr[1] ""
+
+#: includes/class-wp-optimize-gzip-compression.php:114
+msgid "We successfully added Gzip compression settings into .htaccess file. But it seems one of Apache modules - mod_filter or mod_deflate is not active."
+msgstr "Hemos añadido con éxito la configuración de compresión Gzip al archivo .htaccess. Pero parece que uno de los módulos de Apache - mod_filter o mod_deflate no está activo."
+
+#: includes/class-wp-optimize-gzip-compression.php:84
+#: includes/class-wp-optimize-gzip-compression.php:88
+msgid "We can't definitely determine Gzip status as API doesn't return correct answer."
+msgstr "No podemos determinar definitivamente el estado de Gzip ya que la API no devuelve la respuesta correcta."
+
+#: templates/database/tables-body.php:33 wp-optimize.php:882
+#: includes/wp-optimize-database-information.php:411
+#: includes/wp-optimize-database-information.php:456
+msgid "WordPress core"
+msgstr "Núcleo de WordPress"
+
+#: includes/class-wp-optimize-browser-cache.php:168
+#: includes/class-wp-optimize-gzip-compression.php:186
+msgid "We can't update your %s file. Please try to remove following lines manually:"
+msgstr "No podemos actualizar tu archivo %s. Por favor, intenta eliminar manualmente las siguientes líneas:"
+
+#: includes/class-wp-optimize-browser-cache.php:163
+#: includes/class-wp-optimize-gzip-compression.php:188
+msgid "We can't update your %s file. Please try to add following lines manually:"
+msgstr "No podemos actualizar tu archivo %s. Por favor, intenta añadir las siguientes líneas manualmente:"
+
+#: includes/class-wp-optimize-browser-cache.php:156
+msgid "We successfully updated your .htaccess file."
+msgstr "Hemos actualizado con éxito tu archivo .htaccess."
+
+#: includes/class-wp-optimize-browser-cache.php:113
+msgid "Browser static caching settings already exists in the .htaccess file"
+msgstr "La configuración de caché estática del navegador ya existe en el archivo.htaccess"
+
+#: includes/class-wp-optimize-browser-cache.php:59
+msgid "We successfully updated your .htaccess file. But it seems one of Apache modules - mod_expires or mod_headers is not active."
+msgstr "Hemos actualizado con éxito tu archivo.htaccess. Pero parece que uno de los módulos de Apache - mod_expires o mod_headers no está activo."
+
+#: wp-optimize.php:1560
+msgid "You have no permissions to manage WP-Optimize settings."
+msgstr "No tienes permisos para gestionar los ajustes de WP-Optimize."
+
+#: wp-optimize.php:1553
+msgid "You have no permissions to run optimizations."
+msgstr "No tienes permisos para ejecutar optimizaciones."
+
+#: templates/take-a-backup.php:94
+msgid "UpdraftPlus is installed but currently not active. Follow this link to activate UpdraftPlus, to take a backup before optimization."
+msgstr "UpdraftPlus está instalado pero no está activado en este momento. Sigue este enlace para activar UpdraftPlus, para realizar una copia de seguridad antes de la optimización."
+
+#: templates/settings/status-box-contents.php:134
+msgid "Repair corrupted tables here."
+msgstr "Reparar las tablas corruptas aquí."
+
+#: templates/settings/status-box-contents.php:133
+msgid "Your database has %s corrupted table."
+msgid_plural "Your database has %s corrupted tables."
+msgstr[0] "Tu base de datos tiene %s tabla corrupta."
+msgstr[1] "Tu base de datos tiene %s tablas corruptas."
+
+#: optimizations/transient.php:416
+msgid "Remove all transient options (not only expired)"
+msgstr "Eliminar todas las opciones transitorias (no solo las caducadas)"
+
+#: optimizations/transient.php:404
+msgid "%1$d of %2$d network-wide transient option found"
+msgid_plural "%1$d of %2$d network-wide transient options found"
+msgstr[0] "%1$d de %2$d opciones transitorias de red encontrada"
+msgstr[1] "%1$d de %2$d opciones transitorias de red encontradas"
+
+#: optimizations/transient.php:392
+msgid "across %d site"
+msgid_plural "across %d sites"
+msgstr[0] "en %d sitio"
+msgstr[1] "en %d sitios"
+
+#: optimizations/transient.php:386
+msgid "%1$d of %2$d transient option expired"
+msgid_plural "%1$d of %2$d transient options expired"
+msgstr[0] "%1$d de %2$d opciones transitorias caducada"
+msgstr[1] "%1$d de %2$d opciones transitorias caducadas"
+
+#: optimizations/transient.php:144 optimizations/transient.php:150
+msgid "Value"
+msgstr "Valor"
+
+#: optimizations/transient.php:143 optimizations/transient.php:149
+msgid "Name"
+msgstr "Nombre"
+
+#: optimizations/spam.php:90
+msgid "No spam or trashed comments found"
+msgstr "No se han encontrado comentarios spam ni en la papelera"
+
+#: optimizations/postmeta.php:46
+msgid "Post ID"
+msgstr "ID de la entrada"
+
+#: optimizations/spam.php:84 optimizations/pingbacks.php:53
+#: optimizations/trackbacks.php:54
+msgid "Comment"
+msgstr "Comentario"
+
+#: optimizations/spam.php:83 optimizations/pingbacks.php:52
+#: optimizations/unapproved.php:66 optimizations/trackbacks.php:53
+msgid "Author"
+msgstr "Autor"
+
+#: optimizations/postmeta.php:48 optimizations/commentmeta.php:77
+msgid "Meta Value"
+msgstr "Valor meta"
+
+#: optimizations/postmeta.php:47 optimizations/commentmeta.php:76
+msgid "Meta Key"
+msgstr "Clave meta"
+
+#: optimizations/commentmeta.php:75
+msgid "Comment ID"
+msgstr "ID del comentario"
+
+#: optimizations/revisions.php:64 optimizations/trash.php:79
+#: optimizations/unapproved.php:67 optimizations/autodraft.php:68
+msgid "Date"
+msgstr "Fecha"
+
+#: optimizations/revisions.php:63 optimizations/trash.php:78
+#: optimizations/autodraft.php:67
+msgid "Title"
+msgstr "Título"
+
+#: optimizations/spam.php:82 optimizations/transient.php:142
+#: optimizations/transient.php:148 optimizations/revisions.php:62
+#: optimizations/postmeta.php:45 optimizations/trash.php:77
+#: optimizations/pingbacks.php:51 optimizations/unapproved.php:65
+#: optimizations/autodraft.php:66 optimizations/trackbacks.php:52
+#: optimizations/commentmeta.php:74
+msgid "ID"
+msgstr "ID"
+
+#: optimizations/spam.php:68 optimizations/revisions.php:50
+#: optimizations/trash.php:58 optimizations/pingbacks.php:37
+#: optimizations/unapproved.php:51 optimizations/autodraft.php:54
+#: optimizations/trackbacks.php:38 optimizations/commentmeta.php:51
+msgid "no title"
+msgstr "sin título"
+
+#: includes/class-wp-optimization.php:452
+msgid "Preview found items"
+msgstr "Previsualizar los elementos encontrados"
+
+#: includes/class-updraft-smush-task.php:238
+msgid "Successful"
+msgstr "Completado con éxito"
+
+#: includes/class-updraft-smush-task.php:237
+msgid "Saving optimized image"
+msgstr "Guardando imagen optimizada"
+
+#: includes/class-updraft-smush-task.php:236
+msgid "Backing up original image"
+msgstr "Haciendo copia de seguridad de la imagen original"
+
+#: includes/class-updraft-smush-task.php:235
+msgid "Processing response"
+msgstr "Respuesta del proceso"
+
+#: includes/class-updraft-smush-task.php:234
+msgid "Connecting to API server"
+msgstr "Conectando al servidor API"
+
+#: includes/class-updraft-smush-task.php:215
+msgid "Failed with error code %s - %s"
+msgstr "Ha fallado con el código error %s - %s"
+
+#: includes/class-updraft-smush-task.php:187
+msgid "The file was compressed from %s to %s saving %s percent using WP-Optimize"
+msgstr "El archivo ha sido comprimido de %s a %s ahorrando un %s por ciento utilizando WP-Optimize"
+
+#: includes/class-updraft-smush-manager.php:454
+msgid "Compress Image"
+msgstr "Comprimir imagen"
+
+#: includes/class-updraft-smush-manager.php:439
+msgid "There was an error connecting to the Smush API server, please try later"
+msgstr "Hubo un error conectando al servidor API de Smush, inténtalo de nuevo más tarde por favor"
+
+#: includes/class-updraft-smush-manager.php:438
+msgid "Connecting to the Smush API server, please wait"
+msgstr "Conectando al servidor API de Smush, espera por favor"
+
+#: includes/class-updraft-smush-manager.php:437
+msgid "Please try again later."
+msgstr "Por favor, inténtalo de nuevo más tarde."
+
+#: includes/class-updraft-smush-manager.php:436
+msgid "Please wait. Compressing the selected image."
+msgstr "Espera por favor. Comprimiendo la imagen seleccionada."
+
+#: includes/class-updraft-smush-manager.php:435
+msgid "An unexpected response was received from the server."
+msgstr "Se ha recibido una respuesta inesperada del servidor."
+
+#: includes/class-updraft-smush-manager.php:434
+msgid "All valid images are compressed now"
+msgstr "Ahora están comprimidas todas las imágenes válidas"
+
+#: includes/class-updraft-smush-manager.php:222
+msgid "Could not copy file, check your PHP error logs for details"
+msgstr "No se pudo copiar el archivo, verifica tu registro de errores de PHP para más información"
+
+#: includes/class-updraft-smush-manager.php:216
+msgid "The destination could not be written to, please check your folder permissions"
+msgstr "No se pudo escribir en el destino, comprueba los permisos de tu carpeta"
+
+#: includes/class-updraft-smush-manager.php:212
+msgid "Backup not found, it may have been deleted or already restored"
+msgstr "No se ha encontrado la copia de seguridad, tal vez ya ha sido borrada o reestablecida"
+
+#: includes/class-updraft-smush-manager-commands.php:255
+msgid "Log file does not exist or could not be read"
+msgstr "El archivo de registro no existe o no puede ser leído"
+
+#: includes/class-updraft-smush-manager-commands.php:229
+msgid "Pending tasks cleared successfully"
+msgstr "Las tareas pendientes han sido vaciadas con éxito"
+
+#: includes/class-updraft-smush-manager-commands.php:225
+msgid "Pending tasks could not be cleared"
+msgstr "Las tareas pendientes no se han podido vaciar"
+
+#: includes/class-updraft-smush-manager-commands.php:191
+msgid "Stats cleared successfully"
+msgstr "Estadísticas vaciadas con éxito"
+
+#: includes/class-updraft-smush-manager-commands.php:187
+msgid "Stats could not be cleared"
+msgstr "Las estadísticas no se han podido vaciar"
+
+#: includes/class-updraft-smush-manager-commands.php:172
+msgid "Options updated successfully"
+msgstr "Opciones actualizadas con éxito"
+
+#: includes/class-updraft-smush-manager-commands.php:168
+msgid "Options could not be updated"
+msgstr "Las opciones no se han podido actualizar"
+
+#: includes/class-updraft-smush-manager-commands.php:144
+msgid "%d image(s) images were selected for compressing previously, but were not all processed. You can either complete them now or cancel and retry later."
+msgstr "Se han seleccionado %d imágenes para ser comprimidas, pero no se han procesado todas. Puedes completarlas ahora o cancelar y reintentarlo más tarde."
+
+#: includes/class-updraft-smush-manager-commands.php:143
+msgid "%d image(s) could not be compressed. Please see the logs for more information or try again later."
+msgstr "%d imágenes no han podido ser comprimidas. Para más información mira los logs por favor o inténtalo de nuevo más tarde."
+
+#: includes/class-updraft-smush-manager-commands.php:142
+msgid "A total of %d image(s) were compressed on this site, saving approximately %s of space at an average of %02d percent per image."
+msgstr "Se han comprimido un total de %d imágenes en este sitio, ahorrando aproximadamente %s de espacio con un promedio de %02d por ciento por imagen."
+
+#: includes/class-updraft-smush-manager-commands.php:111
+msgid "Image restored successfully"
+msgstr "Imagen reestablecida con éxito"
+
+#: includes/class-updraft-file-logger.php:32
+msgid "Log events into a log file"
+msgstr "Log de eventos en un archivo log"
+
+#: templates/settings/status-box-contents.php:31
+msgid "There was no scheduled optimization"
+msgstr "No había una optimización programada"
+
+#: templates/settings/status-box-contents.php:26
+msgid "Last scheduled optimization was at"
+msgstr "La última optimización programada fue el"
+
+#: templates/settings/may-also-like.php:53
+#: templates/settings/may-also-like.php:54
+msgid "Scheduled clean-ups"
+msgstr "Limpiezas programadas"
+
+#: wp-optimize.php:875
+msgid "Repair"
+msgstr "Reparar"
+
+#: wp-optimize.php:784
+msgid "%s was not deleted. For more details, please check your logs configured in logging destinations settings."
+msgstr "%s no se ha reparado. Para más información, por favor, comprueba tus registros en los ajustes de destino de registros. "
+
+#: optimizations/repairtables.php:154
+msgid "Repair database tables"
+msgstr "Reparar tablas de la base de datos"
+
+#: optimizations/repairtables.php:144 optimizations/orphanedtables.php:121
+msgid "%s corrupted table found"
+msgid_plural "%s corrupted tables found"
+msgstr[0] "%s  tabla corrupta encontradas"
+msgstr[1] "%s tablas corruptas encontradas"
+
+#: optimizations/repairtables.php:142 optimizations/orphanedtables.php:119
+msgid "No corrupted tables found"
+msgstr "No se encontraron tablas corruptas"
+
+#: optimizations/repairtables.php:72
+msgid "Repairing %s table was unsuccessful"
+msgid_plural "Repairing %s tables were unsuccessful"
+msgstr[0] "La reparación de la tabla %s ha fallado"
+msgstr[1] "Las reparaciones de las tablas %s han fallado"
+
+#: optimizations/repairtables.php:69
+msgid "%s table repaired"
+msgid_plural "%s tables repaired"
+msgstr[0] "%s tabla reparada"
+msgstr[1] "%s tablas reparadas"
+
+#: wp-optimize.php:781
+msgid "Before saving, you need to complete the currently incomplete settings (or remove them)."
+msgstr "Antes de guardar, debes completar los ajustes que están incompletos (o eliminarlos)."
+
+#: wp-optimize.php:780
+msgid "Are you sure you want to remove this logging destination?"
+msgstr "¿Estás seguro de que quieres borrar este destino de registro? "
+
+#: templates/settings/settings-logging.php:39
+msgid "Inactive"
+msgstr "Inactiva"
+
+#: templates/settings/settings-logging.php:23
+msgid "Options"
+msgstr "Opciones"
+
+#: templates/settings/settings-logging.php:22
+msgid "Destination"
+msgstr "Destino"
+
+#: templates/settings/settings-logging.php:11
+msgid "Remember to save your settings so that your changes take effect."
+msgstr "Recuerda guardar tus ajustes para que los cambios tengan efecto."
+
+#: templates/settings/settings-logging.php:7
+msgid "Add logging destination"
+msgstr "Añadir destino del inicio de sesión"
+
+#: templates/settings/settings-auto-cleanup.php:6
+msgid "Take control of clean-ups: Upgrade to Premium for a more powerful and flexible scheduler"
+msgstr "Toma el control de la limpieza: Adquiere la versión Premium para una organización de tareas más potente y flexible."
+
+#: optimizations/optimizetables.php:93
+msgid "Other tables will be optimized (%s)."
+msgstr "Se optimizarán otras tablas (%s)."
+
+#: optimizations/autodraft.php:164
+msgid "Clean auto draft posts which are older than %s weeks"
+msgstr "Autolimpieza de borradores (entradas o páginas) más antiguos de %s semanas."
+
+#: includes/class-updraft-ring-logger.php:34
+msgid "How many last records store?"
+msgstr "¿Cuántos registros se guardan?"
+
+#: includes/class-updraft-email-logger.php:37
+msgid "Enter email for logs here"
+msgstr "Introduce aquí un correo electrónico para los registros"
+
+#. Plugin URI of the plugin
+msgid "https://getwpo.com"
+msgstr "https://getwpo.com"
+
+#: wp-optimize.php:1711
+msgid "go back"
+msgstr "volver"
+
+#: wp-optimize.php:1710
+msgid "Only Network Administrator can activate WP-Optimize plugin."
+msgstr "Sólo el administrador de red puede activar el plugin WP-Optimize."
+
+#: wp-optimize.php:993
+msgid "Read this page for a guide to possible causes and how to fix it."
+msgstr "Lee en esta página una guía sobre causas posibles y cómo solucionarlo."
+
+#: wp-optimize.php:993
+msgid "WordPress has a number (%d) of scheduled tasks which are overdue. Unless this is a development site, this probably means that the scheduler in your WordPress install is not working."
+msgstr "WordPress tiene algunas (%d) tareas programadas atrasadas. A no ser que este sea un sitio en desarrollo, probablemente esto significa que el programador de tareas de tu instalación de WordPress no funciona."
+
+#: wp-optimize.php:993
+msgid "Warning"
+msgstr "Advertencia"
+
+#: wp-optimize.php:779
+msgid "Please, select settings file."
+msgstr "Elige el fichero de ajustes, por favor."
+
+#: wp-optimize.php:776
+msgid "Cancel"
+msgstr "Cancelar"
+
+#: wp-optimize.php:775
+msgid "Run optimizations"
+msgstr "Ejecutar optimizaciones"
+
+#: wp-optimize.php:772
+msgid "Automatic backup before optimizations"
+msgstr "Copia de seguridad automática antes de las optimizaciones"
+
+#: wp-optimize.php:492
+msgid "Premium / Plugin family"
+msgstr "Premium / Familia de plugins"
+
+#: wp-optimize.php:362
+msgid "New feature: WP-Optimize Premium can now optimize all sites within a multisite install, not just the main one."
+msgstr "Nueva característica: WP-Optimize Premium ahora puede optimizar todos los sitios dentro de una instalación multisitio, no sólo el principal."
+
+#: wp-optimize.php:352
+msgid "WP-Optimize (Free) has been de-activated, because WP-Optimize Premium is active."
+msgstr "WP-Optimize (Free) ha sido desactivado porque WP-Optimize Premium está activo."
+
+#: templates/database/tables.php:36
+msgid "Tables not found."
+msgstr "Tablas no encontradas."
+
+#: templates/database/tables.php:18
+msgid "Search for table"
+msgstr "Buscar tabla"
+
+#: templates/notices/thanks-for-using-main-dash.php:38
+msgid "Premium WooCommerce extensions"
+msgstr "Extensiones premium de WooCommerce"
+
+#: templates/notices/thanks-for-using-main-dash.php:34
+msgid "Add style and flare easily with beautifully-designed sliders with the #1 WP slider plugin"
+msgstr "Añade estilo y luminosidad fácilmente con carruseles maravillosamente diseñados con el plugin de carrusel #1 de WP"
+
+#: templates/notices/thanks-for-using-main-dash.php:30
+msgid "Simple & secure login with a wave of your phone"
+msgstr "Inicio de sesión fácil y seguro con una sacudida de tu teléfono "
+
+#: templates/notices/thanks-for-using-main-dash.php:30
+msgid "Keyy:"
+msgstr "Keyy: "
+
+#: templates/notices/thanks-for-using-main-dash.php:26
+msgid "%s is a highly efficient way to manage, optimize, update and backup multiple websites from one place."
+msgstr "%s es una forma altamente eficiente de administrar, optimiza, actualizar y realizar copias de seguridad de varias webs desde el mismo sitio."
+
+#: templates/notices/thanks-for-using-main-dash.php:22
+msgid "%s simplifies backups and restoration. It is the world’s highest ranking and most popular scheduled backup plugin, with over a million currently-active installs."
+msgstr "%s simplifica las copias de seguridad y restauración. Con más de un millón de instalaciones activas en este momento, es el plugin de copias de seguridad programadas más popular y con la clasificación más alta. "
+
+#: templates/notices/thanks-for-using-main-dash.php:18
+msgid "WP-Optimize Premium:"
+msgstr "WP-Optimize Premium:"
+
+#: templates/notices/thanks-for-using-main-dash.php:18
+msgid "%s offers powerful extra features and flexibility, and WordPress multisite support."
+msgstr "%s ofrece potentes características adicionales, flexibilidad y soporte multisitio de WordPress."
+
+#: templates/notices/thanks-for-using-main-dash.php:14
+msgid "Super-charge and secure your WordPress site with our other top plugins:"
+msgstr "Potencia y protege tu sitio WordPress con nuestros otros plugins:"
+
+#: templates/notices/thanks-for-using-main-dash.php:7
+msgid "Thank you for installing WP-Optimize!"
+msgstr "¡Gracias por instalar WP-Optimize!"
+
+#: templates/notices/horizontal-notice.php:41
+#: templates/notices/horizontal-notice.php:43
+msgid "Find out more."
+msgstr "Saber más."
+
+#: templates/settings/may-also-like.php:343
+msgid "Logging in with Keyy is simple. Once users have installed the app onto their smartphone and secured it using a fingerprint or 4-number pin, they just open the app, point it at the moving on-screen barcode and voila!"
+msgstr "Acceder con Keyy es sencillo. Una vez que los usuarios hayan instalado la app en su telefóno móvil y configurado usando una huella dactilar o número pin de 4 cifras, solo abre la aplicación, toca en el código de barras de la pantalla y voila!"
+
+#: templates/settings/may-also-like.php:340
+msgid "Using innovative RSA public-key cryptography, Keyy is highly secure and prevents password-based hacking risks such as brute-forcing, key-logging, shoulder-surfing and connection sniffing."
+msgstr "Usando una innovadora criptografia de clave pública RSA, Keyy is muy segura y previene riesgos de ataques de fuerza bruta, key-logging, miradas por encima del hombro o analizadores de conexión."
+
+#: templates/settings/may-also-like.php:337
+msgid "Keyy is a unique 2-factor authentication plugin that allows you to log in to your website with just a wave of your smartphone. It represents the ultimate UX, doing away with the need for usernames, passwords and other 2FA tokens."
+msgstr "Keyy es un único plugin de autenticación de 2 factores (AF2) que te permite acceder a tu página web con solo un movimiento de tu teléfono móvil. Es la experiencia de usuario definitiva, eliminando la necesidad de nombres de usuario, contraseñas u otros tokens A2F."
+
+#: templates/settings/may-also-like.php:334
+msgid "Keyy – instant &amp; secure logins with a wave of your phone"
+msgstr "Keyy - instantaneo y seguro acceso con un movimiento de tu teléfono"
+
+#: templates/settings/may-also-like.php:333
+msgid "Keyy Two Factor Authentication"
+msgstr "Keyy autenticación de dos factores"
+
+#: templates/settings/may-also-like.php:328
+msgid "Easily improve the look of your site, your conversion rate and bottom line."
+msgstr "Mejora fácilmente el aspecto de tu sitio, tu tasa de conversión y el resultado final."
+
+#: templates/settings/may-also-like.php:325
+msgid "With Metaslider, creating them couldn’t be easier: simply select images from your WordPress Media Library, drag and drop them into place. You can then set the slide captions, links and SEO fields all from one page."
+msgstr "Con Metaslider, crearlos no puede ser más sencillo: simplemente selecciona imágenes de tu bliblioteca de médios de WordPress, arrástralas y sueltalas en su lugar. Puedes, después, añadir los títulos, enlaces y campos SEO todo desde la misma página."
+
+#: templates/settings/may-also-like.php:322
+msgid "Sliders instantly make a web-page more eye-catching and engaging."
+msgstr "Los carruseles hacen una página web más atractiva instantaneamente. "
+
+#: templates/settings/may-also-like.php:319
+msgid "With Metaslider, WordPress’ most popular slider plugin, you can add unique, SEO-optimizing slideshow to your blog or website in a matter of seconds!"
+msgstr "Con Metaslider, el plugin de carruseles más popular de WordPress, puedes añadir carruseles únicos y optimizados para SEO a tu blog o página web en cuestión de segundos."
+
+#: templates/settings/may-also-like.php:316
+msgid "MetaSlider - hold visitors’ attention to increase conversion and profits."
+msgstr "MetaSlider - manten la atención de tus visitantes para aumentar la conversión y beneficio."
+
+#: templates/settings/may-also-like.php:315
+msgid "Meta Slider"
+msgstr "Meta Slider"
+
+#: templates/settings/may-also-like.php:309
+msgid "With a wide range of useful features, including automated backup schedules and sophisticated one click updates, UpdraftCentral is sure to boost to your productivity and save you time."
+msgstr "Con una gran variedad de características, incluidas copias de seguridad automatizadas y actualizaciones en un click, UpdraftCentral seguro que mejorará tu productividad y te ahorrará tiempo."
+
+#: templates/settings/may-also-like.php:306
+msgid "UpdraftCentral is a powerful tool that allows you to efficiently manage, update, backup and even restore multiple websites from just one location. You can also manage users and comments on all the sites at once, and through its central login feature, you can access each WP-dashboard with a single click."
+msgstr "UpdraftCentral es una potente herramienta que permite gestionar, actualizar, hacer copias de seguridad y restaurar multiples páginas web desde el mismo lugar. Puedes, también, gestionar usuarios y comentarios en todos los sitios a la vez y a traves de su acceso único puedes acceder a cada escritorio WordPress con un solo clic. "
+
+#: templates/settings/may-also-like.php:303
+msgid "If you manage a few WordPress sites, you need UpdraftCentral."
+msgstr "Si gestionas algunos sitios de WordPress, necesitas UpdraftCentral."
+
+#: templates/settings/may-also-like.php:300
+msgid "UpdraftCentral – save hours managing multiple WP sites from one place"
+msgstr "UpdraftCentral – ahorra horas gestionando múltiples sitios WP desde un solo lugar"
+
+#: templates/settings/may-also-like.php:298
+msgid "UpdraftCentral Dashboard\n"
+msgstr "Escritorio UpdraftCentral\n"
+
+#: templates/settings/may-also-like.php:294
+#: templates/settings/may-also-like.php:311
+#: templates/settings/may-also-like.php:330
+#: templates/settings/may-also-like.php:345
+msgid "Try for free"
+msgstr "Pruébalo gratis"
+
+#: templates/settings/may-also-like.php:292
+msgid "With a long-standing reputation for excellence and outstanding reviews, it’s no wonder that UpdraftPlus is the world’s most popular WordPress backup plugin."
+msgstr "Con una larga reputación de excelencia y buenas valoraciones no es una sorpresa que UpdraftPlus sea el plugin de copia de seguridad más popular del mundo WordPress."
+
+#: templates/settings/may-also-like.php:289
+msgid "You can also migrate your website with few clicks without hassle."
+msgstr "También puedes migrar tu web con unos pocos clics sin problemas."
+
+#: templates/settings/may-also-like.php:286
+msgid "With UpdraftPlus, you can rest assured that if the worst does happen, it's no big deal. rather than losing everything, you can simply restore the backup and be up and running again in no time at all."
+msgstr "Con UpdraftPlus puedes descansar tranquilo, si lo peor ocurre no será un gran problema. En vez de perder todo puedes, simplemente, restarurar la copia de seguridad y volver a funcionar en nada de tiempo."
+
+#: templates/settings/may-also-like.php:283
+msgid "Hacking, server crashes, dodgy updates or simple user error can ruin everything."
+msgstr "Un ataque, un servidor roto, actualizaciones defectuosas o un simple error pueden estropearlo todo."
+
+#: templates/settings/may-also-like.php:280
+msgid "If you’ve got a WordPress website, you need a backup."
+msgstr "Si tienes una web de WordPress, necesitas una copia de seguridad."
+
+#: templates/settings/may-also-like.php:277
+msgid "UpdraftPlus – the ultimate protection for your site, hard work and business"
+msgstr "UpdraftPlus: la máxima protección para tu sitio, trabajo duro y negocios"
+
+#: templates/settings/may-also-like.php:260
+msgid "Our other plugins"
+msgstr "Nuestros otros plugins"
+
+#: templates/settings/may-also-like.php:237
+msgid "Get your specific queries addressed directly by our experts"
+msgstr "Obten respuestas a tus preguntas directamente de nuestros expertos."
+
+#: templates/settings/may-also-like.php:235
+#: templates/settings/may-also-like.php:236
+msgid "Premium support"
+msgstr "Soporte premium"
+
+#: templates/settings/may-also-like.php:224
+msgid "Choose from a number of advanced options, like the ability to optimize individual DB tables"
+msgstr "Elije entre una serie de opciones avanzadas, como la capacidad de optimizar tablas de BBDD individuales"
+
+#: templates/settings/may-also-like.php:222
+#: templates/settings/may-also-like.php:223
+msgid "More choice and flexibility"
+msgstr "Más opciones y flexibilidad"
+
+#: templates/settings/may-also-like.php:211
+msgid "Send log messages to three additional locations: Slack, Syslog and Simple History"
+msgstr "Envía mensajes de registro a tres destinos adicionales: Slack, Syslog y Simple History."
+
+#: templates/settings/may-also-like.php:209
+#: templates/settings/may-also-like.php:210
+msgid "Enhanced logging and reporting"
+msgstr "Informes y registro mejorados"
+
+#: templates/settings/may-also-like.php:172
+msgid "Save time managing multiple sites from the WP command line"
+msgstr "Ahorra tiempo gestionando múltiples sitios desde la línea de comando de WP"
+
+#: templates/settings/may-also-like.php:170
+#: templates/settings/may-also-like.php:171
+msgid "Control with WP-CLI"
+msgstr "Control con WP-CLI"
+
+#: templates/settings/may-also-like.php:159
+msgid "A more advanced scheduling system to make regular routine optimizations whenever you prefer"
+msgstr "Un sistema de programación más avanzado para realizar optimizaciones de rutina periódicas cuando tú prefieras"
+
+#: templates/settings/may-also-like.php:158
+msgid "Sophisticated scheduling"
+msgstr "Programación sofisticada"
+
+#: templates/settings/may-also-like.php:146
+msgid "Remove images that have been orphaned or are no longer in use"
+msgstr "Eliminar imágenes que han quedado huérfanas o que ya no están en uso"
+
+#: templates/settings/may-also-like.php:144
+#: templates/settings/may-also-like.php:145
+msgid "Remove unwanted images"
+msgstr "Eliminar imágenes no deseadas"
+
+#: templates/settings/may-also-like.php:133
+msgid "Perform optimizations on single tables"
+msgstr "Realiza optimizaciones en tablas individuales"
+
+#: templates/settings/may-also-like.php:131
+#: templates/settings/may-also-like.php:132
+msgid "Optimize individual tables"
+msgstr "Optimizar tablas individuales"
+
+#: templates/settings/may-also-like.php:123
+#: templates/settings/may-also-like.php:136
+#: templates/settings/may-also-like.php:149
+#: templates/settings/may-also-like.php:162
+#: templates/settings/may-also-like.php:175
+#: templates/settings/may-also-like.php:188
+#: templates/settings/may-also-like.php:201
+#: templates/settings/may-also-like.php:214
+#: templates/settings/may-also-like.php:227
+#: templates/settings/may-also-like.php:240
+msgid "No"
+msgstr "No"
+
+#: templates/settings/may-also-like.php:120
+msgid "Optimize any site (or combination of sites) on your WordPress Multisite or network"
+msgstr "Optimiza cualquier sitio (o combinación de sitios) en tu WordPress multisito o red"
+
+#: templates/settings/may-also-like.php:118
+#: templates/settings/may-also-like.php:119
+#: templates/settings/may-also-like.php:157
+msgid "Multisite support"
+msgstr "Compatibilidad con multisitio"
+
+#: templates/settings/may-also-like.php:107
+msgid "Automatically cleans up auto draft posts older than your chosen age"
+msgstr "Automáticamente elimina los borradores anteriores al momento elegido"
+
+#: templates/settings/may-also-like.php:105
+#: templates/settings/may-also-like.php:106
+msgid "Clean auto-draft posts"
+msgstr "Eliminar borradores automáticos"
+
+#: templates/settings/may-also-like.php:94
+msgid "Choose how much historical data to retain, for extra safety."
+msgstr "Elige cuanto histórico de información quieres mantener por seguridad extra."
+
+#: templates/settings/may-also-like.php:92
+#: templates/settings/may-also-like.php:93
+msgid "Retains a set number of weeks' data during clean-ups"
+msgstr "Mantiene un número de semanas de información durante la limpieza"
+
+#: templates/settings/may-also-like.php:81
+msgid "Enable or disable trackbacks and comments for all of your published posts"
+msgstr "Activar o desactivar trackbacks y comentarios para todas las entradas publicadas"
+
+#: templates/settings/may-also-like.php:79
+#: templates/settings/may-also-like.php:80
+msgid "Enables / disables trackbacks and comments"
+msgstr "Activa / desactiva trackbacks y comentarios"
+
+#: templates/settings/may-also-like.php:68
+msgid "Displays database table statistics to show how much space can be cleared"
+msgstr "Muestra las estadísticas de la tabla de la base de datos para mostrar cuánto espacio se puede vaciar"
+
+#: templates/settings/may-also-like.php:66
+#: templates/settings/may-also-like.php:67
+msgid "Displays database table statistics"
+msgstr "Muestra las estadísticas de la tabla de la base de datos"
+
+#: templates/settings/may-also-like.php:55
+msgid "Carries out scheduled clean-ups daily, weekly, fortnightly and monthly"
+msgstr "Lleva a cabo limpiezas programadas diariamente, semanalmente, quincenalmente y mensualmente"
+
+#: templates/settings/may-also-like.php:45
+#: templates/settings/may-also-like.php:48
+#: templates/settings/may-also-like.php:58
+#: templates/settings/may-also-like.php:61
+#: templates/settings/may-also-like.php:71
+#: templates/settings/may-also-like.php:74
+#: templates/settings/may-also-like.php:84
+#: templates/settings/may-also-like.php:87
+#: templates/settings/may-also-like.php:97
+#: templates/settings/may-also-like.php:100
+#: templates/settings/may-also-like.php:110
+#: templates/settings/may-also-like.php:113
+#: templates/settings/may-also-like.php:126
+#: templates/settings/may-also-like.php:139
+#: templates/settings/may-also-like.php:152
+#: templates/settings/may-also-like.php:165
+#: templates/settings/may-also-like.php:178
+#: templates/settings/may-also-like.php:191
+#: templates/settings/may-also-like.php:204
+#: templates/settings/may-also-like.php:217
+#: templates/settings/may-also-like.php:230
+#: templates/settings/may-also-like.php:243
+msgid "Yes"
+msgstr "Sí"
+
+#: templates/settings/may-also-like.php:42
+msgid "Optimizes without the need for manual queries"
+msgstr "Optimiza sin la necesidad de consultas manuales"
+
+#: templates/settings/may-also-like.php:40
+#: templates/settings/may-also-like.php:41
+msgid "Auto-optimize database"
+msgstr "Optimización automática de la base de datos"
+
+#: templates/settings/may-also-like.php:35
+#: templates/settings/may-also-like.php:252
+msgid "Upgrade now"
+msgstr "Actualizar ahora"
+
+#: templates/settings/may-also-like.php:32
+#: templates/settings/may-also-like.php:249
+msgid "Installed"
+msgstr "Instalado"
+
+#: templates/settings/may-also-like.php:24
+msgid "WP-Optimize Premium"
+msgstr "WP-Optimize Premium"
+
+#: templates/settings/may-also-like.php:21
+msgid "Free"
+msgstr "Gratis"
+
+#: templates/settings/may-also-like.php:10
+msgid "Ask a pre-sales question"
+msgstr "Haz una pregunta de pre-venta"
+
+#: templates/settings/may-also-like.php:4
+msgid "WP-Optimize free / premium comparison"
+msgstr "Comparativa de WP-Optimize free / premium"
+
+#: templates/settings/settings-auto-cleanup.php:3
+msgid "Scheduled clean-up settings"
+msgstr "Ajustes de la limpieza programada"
+
+#: templates/settings/may-also-like.php:26 templates/admin-page-header.php:29
+msgid "Premium"
+msgstr "Premium"
+
+#: optimizations/trash.php:216
+msgid "Remove trashed posts"
+msgstr "Eliminar entradas de la papelera"
+
+#: optimizations/transient.php:407
+msgid "No site-wide transient options found"
+msgstr "No se han encontrado datos transitorios del sitio"
+
+#: optimizations/trash.php:206
+msgid "Clean all trashed posts"
+msgstr "Limpiar todas las entradas de la papelera"
+
+#: optimizations/optimizetables.php:98
+msgid "Warning: you should read the FAQ on the risks of this operation first."
+msgstr "Advertencia: deberias leer primero las FAQ sobre los riesgos de esta operación."
+
+#: optimizations/optimizetables.php:98
+msgid "Optimize InnoDB tables anyway."
+msgstr "Optimizar las tablas InnoDB de todos modos."
+
+#: optimizations/commentmeta.php:168
+msgid "No Akismet comment meta rows in your database"
+msgstr "No se han encontrado filas comment meta de Akismet en tu base de datos"
+
+#: optimizations/commentmeta.php:166
+msgid "%s unused Akismet comment meta rows in your database"
+msgid_plural "%s unused Akismet meta rows in your database"
+msgstr[0] "%s fila comment meta de Akismete sin uso en tu base de datos "
+msgstr[1] "%s filas comment meta de Akismete sin uso en tu base de datos "
+
+#: optimizations/autodraft.php:177
+msgid "Remove auto-draft posts"
+msgstr "Eliminar borradores automáticos"
+
+#: optimizations/autodraft.php:166
+msgid "Clean all auto-draft posts"
+msgstr "Limpiar todos los borradores automáticos"
+
+#: optimizations/attachments.php:97 optimizations/attachments.php:107
+msgid "Remove orphaned attachments"
+msgstr "Eliminar adjuntos huérfanos"
+
+#: optimizations/attachments.php:69
+msgid "No orphaned attachments found"
+msgstr "No se encontraron adjuntos huérfanos"
+
+#: optimizations/attachments.php:67
+msgid "%s orphaned attachment found"
+msgid_plural "%s orphaned attachments found"
+msgstr[0] "%s adjunto huérfano encontrado"
+msgstr[1] "%s adjuntos huérfanos encontrados"
+
+#: optimizations/spam.php:111 optimizations/spam.php:198
+#: optimizations/transient.php:180 optimizations/orphandata.php:20
+#: optimizations/orphandata.php:48 optimizations/revisions.php:81
+#: optimizations/revisions.php:125 optimizations/postmeta.php:65
+#: optimizations/postmeta.php:100 optimizations/trash.php:96
+#: optimizations/trash.php:169 optimizations/pingbacks.php:70
+#: optimizations/pingbacks.php:109 optimizations/unapproved.php:84
+#: optimizations/unapproved.php:130 optimizations/autodraft.php:85
+#: optimizations/autodraft.php:130 optimizations/trackbacks.php:71
+#: optimizations/trackbacks.php:111 optimizations/attachments.php:33
+#: optimizations/attachments.php:73 optimizations/commentmeta.php:103
+#: optimizations/commentmeta.php:172
+msgid "across %s site"
+msgid_plural "across %s sites"
+msgstr[0] "en %s sitio"
+msgstr[1] "en %s sitios"
+
+#: optimizations/attachments.php:30
+msgid "%s orphaned attachment deleted"
+msgid_plural "%s orphaned attachments deleted"
+msgstr[0] "%s adjunto huérfano eliminado"
+msgstr[1] "%s adjuntos huérfanos eliminados"
+
+#: includes/wp-optimize-notices.php:202
+msgid "Summer sale - 20% off WP-Optimize Premium until July 31st"
+msgstr "Oferta de verano: 20% de descuento en WP-Optimize Premium hasta el 31 de julio"
+
+#: includes/wp-optimize-notices.php:189
+msgid "Spring sale - 20% off WP-Optimize Premium until April 30th"
+msgstr "Oferta de primavera: 20% de descuento en WP-Optimize Premium hasta el 31 de abril"
+
+#: includes/wp-optimize-notices.php:176
+msgid "Happy New Year - 20% off WP-Optimize Premium until January 14th"
+msgstr "Feliz año nuevo - 20% de descuento en WP-Optimize Premium hasta el 14 de enero"
+
+#: includes/wp-optimize-notices.php:163
+msgid "Christmas sale - 20% off WP-Optimize Premium until December 25th"
+msgstr "Oferta de Navidad: 20% de descuento en WP-Optimize Premium hasta el 25 de diciembre"
+
+#: includes/wp-optimize-notices.php:151 includes/wp-optimize-notices.php:164
+#: includes/wp-optimize-notices.php:177 includes/wp-optimize-notices.php:190
+#: includes/wp-optimize-notices.php:203
+msgid "To benefit, use this discount code:"
+msgstr "Para beneficiarte, usa este código de descuento:"
+
+#: includes/wp-optimize-notices.php:150
+msgid "Black Friday - 20% off WP-Optimize Premium until November 30th"
+msgstr "Black Friday: 20% de descuento en WP-Optimize Premium hasta el 30 de noviembre"
+
+#: includes/wp-optimize-notices.php:138
+msgid "With MetaSlider, you can easily add style and flare with beautifully-designed sliders."
+msgstr "Con MetaSlider puedes añadir facilmente estilo y brillo con bonitos carruseles."
+
+#: includes/wp-optimize-notices.php:137
+msgid "MetaSlider: the world's #1 slider plugin from the makers of WP-Optimize"
+msgstr "MetaSlider: el plugin de carruseles nº1 del mundo de los creadores de WP-Optimize"
+
+#: includes/wp-optimize-notices.php:127
+msgid "WP-Optimize Premium comes with a feature to easily remove orphaned images, or images that exceed a certain size from your website."
+msgstr "WP-Optimize Premium viene con una característica para eliminar fácilmente imágenes huérfanas, o imágenes que excedan un cierto tamaño de tu web."
+
+#: includes/wp-optimize-notices.php:126
+msgid "Remove unwanted images for better site performance."
+msgstr "Elimina imágenes no deseadas para un mejor rendimiento del sitio."
+
+#: includes/wp-optimize-notices.php:116
+msgid "Upgrade today to combine over a dozen optimization options."
+msgstr "Mejora hoy para combinar más de una docena de opciones de optimización."
+
+#: includes/wp-optimize-notices.php:115
+msgid "WP-Optimize Premium offers unparalleled choice and flexibility"
+msgstr "WP-Optimize Premium ofrece opciones y flexibilidad inigualables."
+
+#: includes/wp-optimize-notices.php:105
+msgid "WP-Optimize Premium's multisite feature includes a locking system that restricts optimization commands to users with the right permissions."
+msgstr "Las características Premium multisite de WP-Optimize incluyen un sistema de bloqueo que restinge las opciones de optimización a usuarios con permisos oportunos."
+
+#: includes/wp-optimize-notices.php:104
+msgid "Manage a multisite installation? Need extra control?"
+msgstr "¿Gestionas una instalación multisitio? ¿Necesitas control adicional?"
+
+#: includes/wp-optimize-notices.php:94
+msgid "WP-Optimize Premium features an advanced scheduling system that allows you to run optimizations at the quietest time of day (or night)."
+msgstr "WP-Optimize Premium presenta un sistema de programación avanzado que te permite ejecutar optimizaciones en el momento más silencioso del día (o de la noche)."
+
+#: includes/wp-optimize-notices.php:93
+msgid "Perform optimizations while your visitors sleep"
+msgstr "Realizar optimizaciones mientras tus visitantes duermen"
+
+#: includes/wp-optimize-notices.php:85
+msgid "Find out more about our revolutionary new WordPress plugin."
+msgstr "Descubre más acerca de nuestro nuevo y revolucionario plugin WordPress."
+
+#: includes/wp-optimize-notices.php:53
+msgid "UpdraftCentral is a highly efficient way to take backup, update and manage multiple WP sites from one location."
+msgstr "UpdraftCentral es una forma altamente eficiente de realizar copias de seguridad, actualizar y gestionar múltiples sitios WP desde una ubicación."
+
+#: includes/wp-optimize-notices.php:52
+msgid "Save Time and Money. Manage multiple WordPress sites from one location."
+msgstr "Ahorra Tiempo y Dinero. Gestiona múltiples sitios de WordPress desde un lugar."
+
+#: templates/settings/settings-logging.php:39
+#: templates/settings/settings-logging.php:79
+msgid "Active"
+msgstr "Activo"
+
+#: includes/class-updraft-smush-task.php:233
+msgid "Initialised"
+msgstr "Inicializados"
+
+#: includes/class-updraft-ring-logger.php:24
+msgid "Store the most recent log entries in the WordPress database"
+msgstr "Almacena el registro de entradas más reciente en la base de datos de WordPress"
+
+#: includes/class-updraft-email-logger.php:26
+msgid "Log events to email"
+msgstr "Registro de eventos al correo electrónico"
+
+#: includes/class-commands.php:401 includes/class-commands.php:411
+msgid "Please upload a valid settings file."
+msgstr "Por favor, sube un archivo de ajustes válido"
+
+#: wp-optimize.php:774
+msgid "Optimization complete"
+msgstr "Optimización completa"
+
+#: wp-optimize.php:773
+msgid "An unexpected response was received."
+msgstr "Se ha recibido una respuesta inesperada."
+
+#: templates/database/optimize-table.php:38
+msgid "You may wish to run a backup before optimizing."
+msgstr "Es posible que quieras realizar una copia de seguridad antes de ejecutar la optimización."
+
+#: templates/database/optimize-table.php:38
+msgid "Items marked with this icon perform more intensive database operations. In very rare cases, if your database server happened to crash or be forcibly powered down at the same time as an optimization operation was running, data might be corrupted. "
+msgstr "Los elementos en rojo desempeñan operaciones más intensivas en las bases de datos. En casos muy infrecuentes, si el servidor de tu base de datos se cuelga o le quitan la alimentación mientras se lleva a cabo una operación de optimización, los datos pueden corromperse. "
+
+#: templates/take-a-backup.php:91
+msgid "Please update UpdraftPlus to the latest version."
+msgstr "Actualiza UpdraftPlus a la última versión, por favor."
+
+#: templates/take-a-backup.php:91
+msgid "UpdraftPlus needs to be updated to 1.12.33 or higher in order to backup the database before optimization."
+msgstr "UpdraftPlus debe ser actualizado a 1.12.33 o superior para hacer una copia de la base de datos antes de la optimización."
+
+#: templates/take-a-backup.php:75
+msgid "Follow this link to install UpdraftPlus, to take a backup before optimization"
+msgstr "Sigue este enlace para instalar UpdraftPlus, para hacer una copia de seguridad antes de la optimización"
+
+#: templates/take-a-backup.php:62
+msgid "Take a backup with UpdraftPlus before doing this"
+msgstr "Haz una copia de seguridad con UpdraftPlus antes de hacer esto"
+
+#: templates/take-a-backup.php:17
+msgid "Backup before running optimizations"
+msgstr "Copia de seguridad antes de realizar optimizaciones"
+
+#: templates/settings/settings-logging.php:3
+msgid "Logging settings"
+msgstr "Ajustes de registro"
+
+#: templates/settings/settings-general.php:6
+msgid "Whether manually or on a schedule, these settings apply whenever a relevant optimization is run."
+msgstr "Ya sea manualmente o de forma programada, estos ajustes se aplican cada vez que se ejecuta una optimización relevante."
+
+#: optimizations/spam.php:250 optimizations/spam.php:255
+msgid "Remove spam and trashed comments"
+msgstr "Eliminar spam y comentarios en la papelera"
+
+#: optimizations/spam.php:248
+msgid "Remove spam and trashed comments which are older than %d weeks"
+msgstr "Elimina el spam y los comentarios en la papelera que son anteriores a %d semanas"
+
+#: optimizations/optimizetables.php:101
+msgid "Tables will be optimized (%s)."
+msgstr "Las tablas se optimizarán (%s)."
+
+#: optimizations/optimizetables.php:70
+msgid "Optimizing Table:"
+msgstr "Optimizando tabla:"
+
+#: includes/class-wp-optimize-options.php:142
+msgid "Auto backup option updated."
+msgstr "Opción de copia de seguridad automática actualizada."
+
+#: includes/class-updraft-php-logger.php:24
+msgid "Log events into the PHP error log"
+msgstr "Registro de eventos dentro del registro de errores de PHP"
+
+#: templates/database/optimize-table.php:29
+msgid "Run all selected optimizations"
+msgstr "Ejecuta todas las optimizaciones seleccionadas"
+
+#: templates/database/optimize-table.php:25 wp-optimize.php:486
+msgid "Optimizations"
+msgstr "Optimizaciones"
+
+#: templates/database/optimizations-table.php:81
+msgid "Go"
+msgstr "Adelante"
+
+#: templates/database/optimizations-table.php:79
+msgid "Run optimization"
+msgstr "Ejecutar optimización"
+
+#: templates/database/optimizations-table.php:7
+msgid "Optimization"
+msgstr "Optimización"
+
+#: templates/settings/may-also-like.php:276
+msgid "UpdraftPlus"
+msgstr "UpdraftPlus"
+
+#: templates/pages-menu.php:35 templates/admin-page-header.php:16
+msgid "Newsletter"
+msgstr "Boletín"
+
+#: templates/notices/thanks-for-using-main-dash.php:5
+msgid "Dismiss (for %s months)"
+msgstr "Descartar (durante %s meses)"
+
+#: templates/notices/horizontal-notice.php:39
+msgid "Go there"
+msgstr "Ir allí"
+
+#: templates/notices/horizontal-notice.php:37
+msgid "Sign up"
+msgstr "Registro"
+
+#: templates/notices/horizontal-notice.php:35
+msgid "Get UpdraftPlus"
+msgstr "Consigue UpdraftPlus"
+
+#: templates/notices/horizontal-notice.php:33
+msgid "Review WP-Optimize"
+msgstr "Valorar WP-Optimize"
+
+#: templates/notices/horizontal-notice.php:31
+msgid "Get UpdraftCentral"
+msgstr "Consigue UpdraftCentral"
+
+#: templates/notices/horizontal-notice.php:16
+#: templates/notices/horizontal-notice.php:18
+msgid "Dismiss"
+msgstr "Descartar"
+
+#: templates/notices/horizontal-notice.php:6
+msgid "notice image"
+msgstr "imagen de aviso"
+
+#: templates/settings/settings-trackback-and-comments.php:27
+msgid "Use these buttons to enable or disable any future comments on all your previously published posts."
+msgstr "Usa estos botones para activar o desactivar cualquier comentario futuro en todas tus entradas publicadas anteriormente."
+
+#: templates/settings/settings-trackback-and-comments.php:23
+msgid "Comments"
+msgstr "Comentarios"
+
+#: templates/settings/settings-trackback-and-comments.php:10
+msgid "Use these buttons to enable or disable any future trackbacks on all your previously published posts."
+msgstr "Usa estos botones para activar o desactivar cualquier trackback futuro en todas tus entradas publicadas anteriormente."
+
+#: templates/settings/settings-trackback-and-comments.php:5
+msgid "Trackbacks"
+msgstr "Trackbacks"
+
+#: optimizations/spam.php:194
+msgid "No trashed comments found"
+msgstr "No se encontraron comentarios en la papelera"
+
+#: optimizations/spam.php:186
+msgid "%s trashed comment found"
+msgid_plural "%s trashed comments found"
+msgstr[0] "%s comentario encontrado en la papelera"
+msgstr[1] "%s comentarios encontrados en la papelera"
+
+#: optimizations/trash.php:85 optimizations/trash.php:165
+msgid "No trashed posts found"
+msgstr "No se encontraron entradas en la papelera"
+
+#: optimizations/trash.php:163
+msgid "%s trashed post in your database"
+msgid_plural "%s trashed posts in your database"
+msgstr[0] "%s entrada en la papelera en tu base de datos"
+msgstr[1] "%s entradas en la papelera en tu base de datos"
+
+#: includes/wp-optimize-notices.php:64
+msgid "Please help WP-Optimize by giving a positive review at wordpress.org."
+msgstr "Por favor, ayuda a WP-Optimize con una reseña positiva en wordpress.org."
+
+#: includes/wp-optimize-notices.php:63
+msgid "Like WP-Optimize and can spare one minute?"
+msgstr "¿Te gusta WP-Optimize y puedes dedicarle un minuto?"
+
+#: includes/wp-optimize-notices.php:42
+msgid "UpdraftPlus is the world's most trusted backup plugin from the owners of WP-Optimize"
+msgstr "UpdraftPlus es el mejor plugin del mundo para hacer copias de seguridad de los propietarios de WP-Optimize"
+
+#: includes/wp-optimize-notices.php:41
+msgid "Make sure you backup before you optimize your database"
+msgstr "Asegúrate de hacer una copia de seguridad antes de optimizar tu base de datos"
+
+#: includes/class-wp-optimizer.php:488
+msgid "Trackbacks have now been enabled on all current and previously published posts."
+msgstr "Los Trackbacks se han activado en todas las entradas, tanto las que ya están publicadas como las que se publiquen."
+
+#: includes/class-wp-optimizer.php:485
+msgid "Trackbacks have now been disabled on all current and previously published posts."
+msgstr "Los Trackbacks se han desactivado en todas las entradas, tanto las que ya están publicadas como las que se publiquen."
+
+#: includes/class-wp-optimizer.php:478
+msgid "Comments have now been enabled on all current and previously published posts."
+msgstr "Los comentarios se han activado en todas las entradas, tanto las que ya están publicadas como las que se publiquen."
+
+#: includes/class-wp-optimizer.php:475
+msgid "Comments have now been disabled on all current and previously published posts."
+msgstr "Los comentarios han sido desactivados en todas las entradas, tanto las que ya están publicadas como las que se publiquen."
+
+#: includes/class-commands.php:184 includes/class-commands.php:228
+#: includes/class-commands.php:270
+msgid "No optimization was indicated."
+msgstr "No se indicó ninguna optimización."
+
+#. Author URI of the plugin
+msgid "https://updraftplus.com"
+msgstr "https://updraftplus.com"
+
+#. Author of the plugin
+msgid "David Anderson, Ruhani Rabin, Team Updraft"
+msgstr "David Anderson, Ruhani Rabin, Team Updraft"
+
+#. Description of the plugin
+msgid "WP-Optimize is WordPress's #1 most installed optimization plugin. With it, you can clean up your database easily and safely, without manual queries."
+msgstr "WP-Optimize en el plugin número 1 de optimización para WordPress's más instalado. Con él, tu puedes limpiar tu base de datos fácil y seguro, sin usar consultas manálmente"
+
+#: wp-optimize.php:1146
+msgid "template not found"
+msgstr "plantilla no encontrada"
+
+#: wp-optimize.php:1146
+msgid "Error:"
+msgstr "Error:"
+
+#: templates/settings/support-and-faqs.php:7
+msgid "Support is available here."
+msgstr "Soporte disponible aquí."
+
+#: templates/settings/support-and-faqs.php:8
+msgid "please tell us why at this link."
+msgstr "por favor, dinos por qué en este enlace."
+
+#: templates/settings/support-and-faqs.php:8
+msgid "Or, if you did not like it,"
+msgstr "O si no te gustó,"
+
+#: templates/settings/support-and-faqs.php:8
+msgid "please give us a positive review, here."
+msgstr "por favor, danos una revisión positiva aquí."
+
+#: templates/settings/support-and-faqs.php:8
+msgid "If you like WP-Optimize,"
+msgstr "Si te gusta WP-Optimize,"
+
+#: templates/settings/support-and-faqs.php:3
+msgid "Support and feedback"
+msgstr "Soporte y respuestas"
+
+#: templates/settings/status-box-contents.php:106
+msgid "You can save around:"
+msgstr "Tu puedes ahorrar aproximadamente:"
+
+#: templates/settings/status-box-contents.php:11
+#: templates/settings/settings-logging.php:24
+msgid "Status"
+msgstr "Estado"
+
+#: templates/settings/settings-auto-cleanup.php:30
+msgid "Monthly (approx. - every 30 days)"
+msgstr "Mensualmente (aproximadamente, cada 30 días)"
+
+#: templates/settings/settings-auto-cleanup.php:29
+msgid "Fortnightly"
+msgstr "Quincenalmente"
+
+#: templates/settings/settings-auto-cleanup.php:28
+msgid "Weekly"
+msgstr "Semanalmente"
+
+#: templates/settings/settings-auto-cleanup.php:27
+msgid "Daily"
+msgstr "Diariamente"
+
+#: templates/settings/settings.php:20
+msgid "Save settings"
+msgstr "Guardar ajustes"
+
+#: templates/settings/settings-general.php:29
+msgid "This option will put an WP-Optimize link on the top admin bar (default is off). Requires a second page refresh after saving the settings."
+msgstr "Esta opción pondrá un enlace a WP-Optimze en la barra de administración superior (por defecto deshabilitado). Requiere refrescar en la segunda página después de guardar los ajustes."
+
+#: templates/settings/settings-general.php:21
+msgid "This will also affect Auto Clean-up process"
+msgstr "Esto afectará también al proceso de auto-limpieza"
+
+#: templates/settings/settings-general.php:21
+msgid "If the option is not active, then all garbage data will be removed."
+msgstr "Si esta opción no está activa, entonces todos los datos desechables serán eliminados."
+
+#: templates/settings/settings-general.php:21
+msgid "This option will, where relevant, retain data from the chosen period, and remove any garbage data before that period."
+msgstr "Esta opción, donde sea importante, mantendrá todos los datos del periodo seleccionado, y eliminará todos los datos desechables anteriores a ese periodo."
+
+#: templates/pages-menu.php:41 templates/admin-page-header.php:22
+#: wp-optimize.php:1070 wp-optimize.php:1071
+msgid "More plugins"
+msgstr "Más plugins"
+
+#: templates/pages-menu.php:39 templates/settings/may-also-like.php:8
+#: templates/admin-page-header.php:20
+msgid "FAQs"
+msgstr "Preguntas frecuentes"
+
+#: templates/pages-menu.php:33 templates/admin-page-header.php:14
+msgid "Support"
+msgstr "Soporte"
+
+#: templates/pages-menu.php:31 templates/admin-page-header.php:12
+msgid "Twitter"
+msgstr "Twitter"
+
+#: templates/pages-menu.php:29 templates/admin-page-header.php:10
+msgid "News"
+msgstr "Noticias"
+
+#: templates/pages-menu.php:25 templates/admin-page-header.php:6
+msgid "Home"
+msgstr "Sitio web"
+
+#: templates/settings/status-box-contents.php:17
+msgid "running on:"
+msgstr "Ejecutando sobre:"
+
+#: optimizations/transient.php:465 optimizations/transient.php:469
+msgid "Remove expired transient options"
+msgstr "Eliminar opciones temporales caducadas"
+
+#: optimizations/transient.php:254
+msgid "%s network-wide transient option deleted"
+msgid_plural "%s network-wide transient options deleted"
+msgstr[0] "%s opción del sitio eliminada"
+msgstr[1] "%s opciones del sitio eliminadas"
+
+#: optimizations/optimizetables.php:90
+msgid "Tables using the InnoDB engine (%d) will not be optimized."
+msgstr "Tablas usando el motor InnoDB (%d) no serán optimizadas"
+
+#: optimizations/optimizetables.php:85
+msgid "Total gain:"
+msgstr "Ganancia total:"
+
+#: includes/class-wp-optimizer.php:115 includes/class-wp-optimizer.php:121
+msgid "No such optimization"
+msgstr "No hay optimización"
+
+#: optimizations/orphandata.php:65
+msgid "Clean orphaned relationship data"
+msgstr "Limpiar datos de relaciones huérfanos"
+
+#: optimizations/commentmeta.php:206 optimizations/commentmeta.php:210
+msgid "Clean comment meta data"
+msgstr "Limpiar metadatos de comentarios"
+
+#: optimizations/postmeta.php:122
+msgid "Clean post meta data"
+msgstr "Limpiar metadatos de entradas"
+
+#: templates/database/optimize-table.php:21
+msgid "Warning: This operation is permanent. Continue?"
+msgstr "AVISO: Esta operación es permanente. ¿Continuar?"
+
+#: optimizations/orphandata.php:44
+msgid "No orphaned relationship data in your database"
+msgstr "No hay datos de relaciones huérfanos en tu base de datos"
+
+#: optimizations/orphandata.php:42
+msgid "%s orphaned relationship data in your database"
+msgid_plural "%s orphaned relationship data in your database"
+msgstr[0] "%d dato de relaciones huérfano en tu base de datos"
+msgstr[1] "%d datos de relaciones huérfanos en tu base de datos"
+
+#: optimizations/commentmeta.php:83 optimizations/commentmeta.php:162
+msgid "No orphaned comment meta data in your database"
+msgstr "No hay metadatos de comentarios huérfanos en tu base de datos"
+
+#: optimizations/commentmeta.php:160
+msgid "%s orphaned comment meta data in your database"
+msgid_plural "%s orphaned comment meta data in your database"
+msgstr[0] "%d metadato de comentario huérfano en tu base de datos"
+msgstr[1] "%d metadatos de comentarios huérfanos en tu base de datos"
+
+#: optimizations/postmeta.php:62
+msgid "%s orphaned post meta data deleted"
+msgid_plural "%s orphaned post meta data deleted"
+msgstr[0] "%d metadato huérfano eliminado"
+msgstr[1] "%d metadatos huérfanos eliminados"
+
+#: templates/settings/settings-general.php:15
+msgid "Keep last %s weeks data"
+msgstr "Mantener los datos de las últimas %s semanas"
+
+#: templates/settings/status-box-contents.php:86
+msgid "Keeping last %s weeks data"
+msgstr "Manteniendo los datos de las últimas %s semanas"
+
+#: optimizations/trackbacks.php:105
+msgid "%s Trackback found"
+msgid_plural "%s Trackbacks found"
+msgstr[0] "%d trackback encontrado"
+msgstr[1] "%d trackbacks encontrados"
+
+#: optimizations/pingbacks.php:103
+msgid "%s pingback found"
+msgid_plural "%s pingbacks found"
+msgstr[0] "%d pingback encontrado"
+msgstr[1] "%d pingbacks encontrados"
+
+#: optimizations/trackbacks.php:68
+msgid "%s trackback deleted"
+msgid_plural "%s trackbacks deleted"
+msgstr[0] "%d trackback eliminado"
+msgstr[1] "%d trackbacks eliminados"
+
+#: optimizations/pingbacks.php:67
+msgid "%s pingback deleted"
+msgid_plural "%s pingbacks deleted"
+msgstr[0] "%d pingback eliminado"
+msgstr[1] "%d pingbacks eliminados"
+
+#. Plugin Name of the plugin
+#: templates/settings/may-also-like.php:21
+#: templates/settings/may-also-like.php:26
+msgid "WP-Optimize"
+msgstr "WP-Optimize"
+
+#: templates/database/tables.php:52
+msgid "Total space saved:"
+msgstr "Espacio total ahorrado:"
+
+#: templates/database/tables.php:48
+msgid "Optimization results:"
+msgstr "Resultados de la optimización:"
+
+#: templates/database/tables.php:37
+msgid "Total size of database:"
+msgstr "Tamaño total de la base de datos:"
+
+#: templates/database/tables-body.php:90
+msgid "%s Table"
+msgid_plural "%s Tables"
+msgstr[0] "%d tabla"
+msgstr[1] "%d tablas"
+
+#: templates/database/tables-body.php:89
+msgid "Total:"
+msgstr "Total:"
+
+#: templates/database/tables-body.php:55 templates/database/tables-body.php:67
+#: templates/database/tables.php:28
+msgid "Overhead"
+msgstr "Excedente"
+
+#: templates/database/tables-body.php:53 templates/database/tables-body.php:66
+#: templates/database/tables.php:27
+msgid "Type"
+msgstr "Tipo"
+
+#: templates/database/tables-body.php:50 templates/database/tables.php:26
+msgid "Index Size"
+msgstr "Tamaño del índice"
+
+#: templates/database/tables-body.php:49 templates/database/tables.php:25
+msgid "Data Size"
+msgstr "Tamaño de los datos"
+
+#: templates/database/tables-body.php:48 templates/database/tables.php:24
+msgid "Records"
+msgstr "Registros"
+
+#: templates/database/tables-body.php:28 templates/database/tables.php:22
+msgid "No."
+msgstr "No."
+
+#: templates/database/tables.php:7
+msgid "Optimized all the tables found in the database."
+msgstr "Optimizadas todas las tablas encontradas en la base de datos."
+
+#: templates/database/tables.php:18
+msgid "Database name:"
+msgstr "Nombre de la base de datos:"
+
+#: optimizations/inactive-tags.php:21
+msgid "Remove unused tags"
+msgstr "Eliminar etiquetas sin usar"
+
+#: optimizations/postmeta.php:131
+msgid "Remove orphaned post meta"
+msgstr "Eliminar metadatos de entradas huérfanos"
+
+#: optimizations/revisions.php:159
+msgid "Remove auto revisions"
+msgstr "Eliminar revisiones automáticas"
+
+#: templates/settings/settings-auto-cleanup.php:22
+msgid "Select schedule type (default is Weekly)"
+msgstr "Selecciona el tipo de programación (por defecto es semanal)"
+
+#: templates/settings/settings-auto-cleanup.php:14
+msgid "Enable scheduled clean-up and optimization (Beta feature)"
+msgstr "Habilitar limpieza programada y optimización (¡característica beta!)"
+
+#: templates/settings/settings-trackback-and-comments.php:13
+#: templates/settings/settings-trackback-and-comments.php:29
+#: templates/cache/browser-cache.php:32 templates/cache/gzip-compression.php:43
+#: wp-optimize.php:777 wp-optimize.php:787
+msgid "Enable"
+msgstr "Habilitar"
+
+#: templates/settings/settings-trackback-and-comments.php:15
+#: templates/settings/settings-trackback-and-comments.php:31
+#: templates/cache/gzip-compression.php:43 wp-optimize.php:778
+msgid "Disable"
+msgstr "Deshabilitar"
+
+#: templates/settings/settings-trackback-and-comments.php:2
+msgid "Trackback/comments actions"
+msgstr "Acciones para trackback/comentarios"
+
+#: templates/settings/settings-general.php:26
+msgid "Enable admin bar link"
+msgstr "Habilitar enlace en la barra de administración"
+
+#: templates/settings/settings-general.php:3
+msgid "General settings"
+msgstr "Ajustes generales"
+
+#: includes/class-wp-optimize-options.php:251
+msgid "Settings updated."
+msgstr "Ajustes actualizados"
+
+#: templates/settings/status-box-contents.php:119
+msgid "Total clean up overall:"
+msgstr "Total general de la limpieza: "
+
+#: templates/settings/status-box-contents.php:95
+msgid "Current database size:"
+msgstr "Tamaño actual de la base de datos:"
+
+#: templates/settings/status-box-contents.php:102
+msgid "You have saved:"
+msgstr "Has ahorrado:"
+
+#: templates/settings/status-box-contents.php:89
+msgid "Not keeping recent data"
+msgstr "No mantener datos recientes"
+
+#: templates/settings/status-box-contents.php:79
+msgid "Scheduled cleaning disabled"
+msgstr "Limpieza programada deshabilitada"
+
+#: templates/settings/status-box-contents.php:75
+msgid "Refresh"
+msgstr "Actualizar"
+
+#: templates/settings/status-box-contents.php:70
+msgid "Next schedule:"
+msgstr "Próxima programación:"
+
+#: templates/database/optimize-table.php:38
+msgid "Warning:"
+msgstr "Aviso:"
+
+#: optimizations/optimizetables.php:106 optimizations/optimizetables.php:110
+msgid "Optimize database tables"
+msgstr "Optimizar tablas de la base de datos"
+
+#: templates/settings/settings-logging.php:25
+#: templates/database/tables-body.php:74 templates/database/tables-body.php:103
+#: templates/database/tables.php:29
+msgid "Actions"
+msgstr "Acciones"
+
+#: optimizations/trackbacks.php:125
+msgid "Remove trackbacks"
+msgstr "Eliminar trackbacks"
+
+#: optimizations/pingbacks.php:131
+msgid "Remove pingbacks"
+msgstr "Eliminar pingbacks"
+
+#: optimizations/unapproved.php:160 optimizations/unapproved.php:165
+msgid "Remove unapproved comments"
+msgstr "Eliminar comentarios sin aprobar"
+
+#: optimizations/unapproved.php:158
+msgid "Remove unapproved comments which are older than %d weeks"
+msgstr "Eliminar comentarios sin aprobar más antiguos que %d semanas"
+
+#: optimizations/trash.php:204
+msgid "Clean trashed posts which are older than %d weeks"
+msgstr "Limpiar borradores automáticos de entradas que sean más antiguos que %d semanas"
+
+#: optimizations/revisions.php:154
+msgid "Clean all post revisions"
+msgstr "Limpiar todas las revisiones de entradas"
+
+#: optimizations/revisions.php:152
+msgid "Clean post revisions which are older than %d weeks"
+msgstr "Limpiar revisiones de entradas que sean más antiguas que %d semanas"
+
+#: optimizations/trackbacks.php:60 optimizations/trackbacks.php:107
+msgid "No trackbacks found"
+msgstr "No se encontraron trackbacks"
+
+#: optimizations/pingbacks.php:59 optimizations/pingbacks.php:105
+msgid "No pingbacks found"
+msgstr "No se encontraron pingbacks"
+
+#: optimizations/unapproved.php:73 optimizations/unapproved.php:126
+msgid "No unapproved comments found"
+msgstr "No se encontraron comentarios sin aprobar"
+
+#: optimizations/unapproved.php:124
+msgid "%s unapproved comment found"
+msgid_plural "%s unapproved comments found"
+msgstr[0] "%d comentario sin aprobar encontrado"
+msgstr[1] "%d comentarios sin aprobar encontrados"
+
+#: optimizations/spam.php:182
+msgid "No spam comments found"
+msgstr "No se encontraron comentarios de spam"
+
+#: optimizations/spam.php:178 optimizations/spam.php:191
+msgid "Review"
+msgstr "Revisar"
+
+#: optimizations/spam.php:173
+msgid "%s spam comment found"
+msgid_plural "%s spam comments found"
+msgstr[0] "%d comentario de spam encontrado"
+msgstr[1] "%d comentarios de spam encontrados"
+
+#: optimizations/autodraft.php:74 optimizations/autodraft.php:126
+msgid "No auto draft posts found"
+msgstr "No se encontraron borradores automáticos de entradas"
+
+#: optimizations/autodraft.php:124
+msgid "%s auto draft post in your database"
+msgid_plural "%s auto draft posts in your database"
+msgstr[0] "%d borrador automático de entrada en tu base de datos"
+msgstr[1] "%d borradores automáticos de entradas en tu base de datos"
+
+#: optimizations/revisions.php:70 optimizations/revisions.php:121
+msgid "No post revisions found"
+msgstr "No se encontraron revisiones de entradas"
+
+#: optimizations/revisions.php:119
+msgid "%s post revision in your database"
+msgid_plural "%s post revisions in your database"
+msgstr[0] "%d revisión de entrada en tu base de datos"
+msgstr[1] "%d revisiones de entradas en tu base de datos"
+
+#: optimizations/postmeta.php:54 optimizations/postmeta.php:96
+msgid "No orphaned post meta data in your database"
+msgstr "No hay metadatos de entradas huérfanos en tu base de datos"
+
+#: optimizations/postmeta.php:94
+msgid "%s orphaned post meta data in your database"
+msgid_plural "%s orphaned post meta data in your database"
+msgstr[0] "%d metadato de entrada huérfano en tu base de datos"
+msgstr[1] "%d metadatos de entrada huérfanos en tu base de datos"
+
+#: optimizations/transient.php:161 optimizations/transient.php:388
+msgid "No transient options found"
+msgstr "No se encontraron opciones transitorias"
+
+#: optimizations/unapproved.php:81
+msgid "%s unapproved comment deleted"
+msgid_plural "%s unapproved comments deleted"
+msgstr[0] "%d comentario no aprobado eliminado"
+msgstr[1] "%d comentarios no aprobados eliminados"
+
+#: optimizations/commentmeta.php:100
+msgid "%s unused akismet comment metadata item removed"
+msgid_plural "%s unused akismet comment metadata items removed"
+msgstr[0] "%d elemento de metadata de comentario de Akismet sin utilizar eliminado"
+msgstr[1] "%d elementos de metadata de comentarios de Akismet sin utilizar eliminados"
+
+#: optimizations/commentmeta.php:99
+msgid "%s unused comment metadata item removed"
+msgid_plural "%s unused comment metadata items removed"
+msgstr[0] "%d elemento de metadata de comentario sin utilizar eliminado"
+msgstr[1] "%d elementos de metadata de comentarios sin utilizar eliminados"
+
+#: optimizations/spam.php:107
+msgid "%s comment removed from Trash"
+msgid_plural "%s comments removed from Trash"
+msgstr[0] "%d comentario eliminado de la papelera"
+msgstr[1] "%d comentarios eliminados de la papelera"
+
+#: optimizations/spam.php:106
+msgid "%s spam comment deleted"
+msgid_plural "%s spam comments deleted"
+msgstr[0] "%d comentario de spam eliminado"
+msgstr[1] "%d comentarios de spam eliminados"
+
+#: optimizations/trash.php:93
+msgid "%s post removed from Trash"
+msgid_plural "%s posts removed from Trash"
+msgstr[0] "%d elemento eliminado de la papelera"
+msgstr[1] "%d elementos eliminados de la papelera"
+
+#: optimizations/autodraft.php:82
+msgid "%s auto draft deleted"
+msgid_plural "%s auto drafts deleted"
+msgstr[0] "%d borrador automático eliminado"
+msgstr[1] "%d borradores automáticos eliminados"
+
+#: optimizations/revisions.php:78
+msgid "%s post revision deleted"
+msgid_plural "%s post revisions deleted"
+msgstr[0] "%d revisión de entrada eliminada"
+msgstr[1] "%d revisiones de entradas eliminadas"
+
+#: optimizations/transient.php:177
+msgid "%s transient option deleted"
+msgid_plural "%s transient options deleted"
+msgstr[0] "%d opción transitoria eliminada"
+msgstr[1] "%d opciones transitorias eliminadas"
+
+#: wp-optimize.php:1232
+msgid "bytes"
+msgstr "bytes"
+
+#: wp-optimize.php:1230
+msgid "KB"
+msgstr "KB"
+
+#: wp-optimize.php:1228
+msgid "MB"
+msgstr "MB"
+
+#: wp-optimize.php:1226
+msgid "GB"
+msgstr "GB"
+
+#: wp-optimize.php:1204
+msgid "WP-Optimize Plugin"
+msgstr "El plugin WP-Optimize"
+
+#: wp-optimize.php:1203
+msgid "Regards,"
+msgstr "Saludos,"
+
+#: wp-optimize.php:1201
+msgid "You can safely delete this email."
+msgstr "Puedes eliminar este correo electrónico sin problema."
+
+#: wp-optimize.php:1200
+msgid "Scheduled optimization was executed at"
+msgstr "La optimización programada fue ejecutada con fecha"
+
+#: wp-optimize.php:1198
+msgid "Automatic Operation Completed"
+msgstr "Operación automática completada"
+
+#: templates/database/tables-body.php:29 templates/database/tables.php:23
+msgid "Table"
+msgstr "Tabla"
+
+#: wp-optimize.php:483 wp-optimize.php:856 wp-optimize.php:1033
+#: wp-optimize.php:1034
+msgid "Settings"
+msgstr "Ajustes"
+
+#: templates/settings/status-box-contents.php:17
+msgid "MySQL"
+msgstr "MySQL"
+
+#: wp-optimize.php:859
+msgid "Optimizer"
+msgstr "Optimizador"

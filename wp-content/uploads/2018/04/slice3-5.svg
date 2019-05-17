@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 96 114" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;">
+    <g transform="matrix(1,0,0,1,-253,0)">
+        <g id="Group-2">
+            <path id="Rectangle-2-Copy-2" d="M348.5,3.5C348.5,1.844 347.156,0.5 345.5,0.5L256.5,0.5C254.844,0.5 253.5,1.844 253.5,3.5L253.5,92.5C253.5,94.156 254.844,95.5 256.5,95.5L345.5,95.5C347.156,95.5 348.5,94.156 348.5,92.5L348.5,3.5Z" style="fill:none;stroke:rgb(255,121,26);stroke-width:1px;"/>
+            <g transform="matrix(1,0,0,1,273.871,109.013)">
+                <g id="Analytics">
+                    <text x="0px" y="0px" style="font-family:'Nunito-Regular', 'Nunito';font-size:13px;fill:rgb(115,115,115);">A<tspan x="9.581px 17.094px 24.114px 27.259px 34.214px 38.763px 41.909px 48.266px " y="0px 0px 0px 0px 0px 0px 0px 0px ">nalytics</tspan></text>
+                </g>
+            </g>
+            <g id="Icon_Service_Analytics_Color" transform="matrix(1,0,0,1,276,23)">
+                <g id="chart">
+                    <path id="Combined-Shape" d="M16.018,16.118C13.422,18.997 11.839,22.819 11.839,27.015C11.839,28.364 12.003,29.674 12.311,30.927L8.88,30.927L8.88,4.099L16.018,4.099L16.018,16.118Z" style="fill:rgb(255,141,32);"/>
+                    <rect id="Rectangle-4" x="0" y="12.669" width="7.139" height="18.258" style="fill:rgb(83,83,90);"/>
+                    <path id="Combined-Shape1" d="M33.963,11.982C32.09,11.212 30.041,10.787 27.894,10.787C27.534,10.787 27.177,10.799 26.824,10.823L26.824,7.452L33.963,7.452L33.963,11.982Z" style="fill:rgb(83,83,90);"/>
+                    <path id="Combined-Shape2" d="M24.898,11.068C22.226,11.576 19.787,12.75 17.759,14.412L17.759,0L24.898,0L24.898,11.068Z" style="fill:rgb(83,83,90);"/>
+                </g>
+                <g id="Shape" transform="matrix(1,0,0,1,38,37)">
+                    <path d="M12.492,7.861L5.802,1.172C5.341,0.709 4.591,0.709 4.129,1.172L3.771,1.529L2.382,0.14C1.69,1.034 0.913,1.858 0.049,2.586L1.381,3.918L1.024,4.277C0.562,4.738 0.562,5.487 1.024,5.95L7.714,12.639C8.176,13.102 8.924,13.102 9.386,12.639L12.492,9.534C12.954,9.071 12.954,8.323 12.492,7.861" style="fill:rgb(83,83,90);"/>
+                </g>
+                <g id="Shape1" serif:id="Shape" transform="matrix(1,0,0,1,14,12)">
+                    <path d="M21.86,21.749C25.989,17.62 25.989,10.926 21.86,6.797C17.731,2.669 11.038,2.669 6.909,6.797C2.78,10.926 2.78,17.62 6.909,21.749C11.038,25.878 17.731,25.878 21.86,21.749M24.585,24.698C18.963,30.321 9.848,30.321 4.226,24.698C-1.397,19.077 -1.397,9.961 4.226,4.339C9.848,-1.282 18.963,-1.282 24.585,4.339C30.207,9.961 30.207,19.077 24.585,24.698" style="fill:rgb(128,128,138);"/>
+                </g>
+                <g id="Shape2" serif:id="Shape" transform="matrix(1,0,0,1,21,23)">
+                    <path d="M7.335,9.856C7.335,9.856 1.581,7.849 0.313,4.509C-1.108,0.77 4.159,-0.083 9.547,0.065C12.45,0.145 15.999,0.573 15.999,0.573C15.999,0.573 7.615,1.607 4.586,3.975C1.628,6.288 7.335,9.856 7.335,9.856" style="fill:rgb(255,108,12);"/>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

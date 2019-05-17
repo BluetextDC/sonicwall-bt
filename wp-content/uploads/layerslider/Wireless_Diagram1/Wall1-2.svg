@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="337px" height="267px" viewBox="0 0 337 267" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Wall1</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-79" transform="translate(-372.000000, -9.000000)" fill="#D3D3D3" fill-rule="nonzero">
+            <path d="M372,275.299731 L372,267.299731 L440.334831,267.299731 C465.884244,267.299731 490.617145,264.422858 514.004114,258.734483 C546.688381,250.784743 576.437752,237.420878 602.046411,219.079809 C664.810072,174.128113 700.167969,101.560226 700.167969,9 L708.167969,9 C708.167969,104.079705 671.61933,179.091447 606.704581,225.583765 C580.245179,244.534142 549.554473,258.320868 515.894817,266.507851 C491.879491,272.34906 466.512135,275.299731 440.334831,275.299731 L372,275.299731 Z" id="Wall1"></path>
+        </g>
+    </g>
+</svg>

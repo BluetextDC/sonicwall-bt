@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 219 367" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;">
+    <g transform="matrix(1,0,0,1,-930,-37)">
+        <g>
+            <g>
+                <g id="DoS-Protection" serif:id="DoS Protection" transform="matrix(1,0,0,1,0,-1.16066)">
+                    <path d="M1145.31,404.987L934.116,404.987C932.267,404.987 930.766,403.487 930.766,401.638L930.766,338.322C930.766,336.473 932.267,334.972 934.116,334.972L1145.31,334.972C1147.16,334.972 1148.66,336.473 1148.66,338.322L1148.66,401.638C1148.66,403.486 1147.16,404.987 1145.31,404.987Z" style="fill:rgb(255,108,16);"/>
+                </g>
+                <g id="Data-protection" serif:id="Data protection" transform="matrix(1,0,0,1,0,148.62)">
+                    <path d="M1145.31,110.799C1147.16,110.8 1148.66,112.3 1148.66,114.149L1148.66,177.465C1148.66,179.314 1147.16,180.815 1145.31,180.815L934.116,180.815C932.267,180.815 930.766,179.314 930.766,177.465L930.766,114.149C930.766,112.3 932.267,110.8 934.116,110.799L1145.31,110.799Z" style="fill:rgb(255,108,16);"/>
+                </g>
+                <g id="Application-Load-Balancing" serif:id="Application Load Balancing" transform="matrix(1,0,0,1,0,148.62)">
+                    <path d="M1145.31,36.7C1147.16,36.701 1148.66,38.202 1148.66,40.05L1148.66,103.366C1148.66,105.215 1147.16,106.716 1145.31,106.716L934.116,106.716C932.267,106.716 930.766,105.215 930.766,103.366L930.766,40.05C930.766,38.202 932.267,36.701 934.116,36.7L1145.31,36.7Z" style="fill:rgb(255,108,16);"/>
+                </g>
+                <g id="Anti-evasion-protection" serif:id="Anti-evasion protection" transform="matrix(1,0,0,1,0,1)">
+                    <path d="M1145.31,110.799C1147.16,110.8 1148.66,112.3 1148.66,114.149L1148.66,177.465C1148.66,179.314 1147.16,180.815 1145.31,180.815L934.116,180.815C932.267,180.815 930.766,179.314 930.766,177.465L930.766,114.149C930.766,112.3 932.267,110.8 934.116,110.799L1145.31,110.799Z" style="fill:rgb(255,108,16);"/>
+                </g>
+                <g id="Known-web-theat-protection" serif:id="Known web theat protection" transform="matrix(1,0,0,1,0,1)">
+                    <path d="M1145.31,36.7C1147.16,36.701 1148.66,38.202 1148.66,40.05L1148.66,103.366C1148.66,105.215 1147.16,106.716 1145.31,106.716L934.116,106.716C932.267,106.716 930.766,105.215 930.766,103.366L930.766,40.05C930.766,38.202 932.267,36.701 934.116,36.7L1145.31,36.7Z" style="fill:rgb(255,108,16);"/>
+                </g>
+            </g>
+            <g>
+                <g transform="matrix(1,0,0,1,258.493,-618.266)">
+                    <text x="728.382px" y="685.687px" style="font-family:'Nunito-Regular', 'Nunito';font-size:20px;fill:white;">Kno<tspan x="763.282px " y="685.687px ">w</tspan>n w<tspan x="813.362px " y="685.687px ">e</tspan>b</text>
+                    <text x="705.462px" y="705.687px" style="font-family:'Nunito-Regular', 'Nunito';font-size:20px;fill:white;">thr<tspan x="730.482px " y="705.687px ">e</tspan>at pr<tspan x="782.082px 792.502px 802.662px " y="705.687px 705.687px 705.687px ">eve</tspan>ntion</text>
+                </g>
+                <g transform="matrix(1,0,0,1,258.193,-543.62)">
+                    <text x="724.982px" y="685.687px" style="font-family:'Nunito-Regular', 'Nunito';font-size:20px;fill:white;">Anti-<tspan x="771.122px 781.542px 791.642px " y="685.687px 685.687px 685.687px ">eva</tspan>sion</text>
+                    <text x="736.752px" y="705.687px" style="font-family:'Nunito-Regular', 'Nunito';font-size:20px;fill:white;">pr<tspan x="755.252px " y="705.687px ">o</tspan>tection</text>
+                </g>
+                <g transform="matrix(1,0,0,1,258.213,-470.119)">
+                    <text x="709.802px" y="685.687px" style="font-family:'Nunito-Regular', 'Nunito';font-size:20px;fill:white;">Application load</text>
+                    <text x="738.892px" y="705.687px" style="font-family:'Nunito-Regular', 'Nunito';font-size:20px;fill:white;">balancing</text>
+                </g>
+                <g transform="matrix(1,0,0,1,257.733,-395.953)">
+                    <text x="760.572px" y="685.687px" style="font-family:'Nunito-Regular', 'Nunito';font-size:20px;fill:white;">Data</text>
+                    <text x="736.752px" y="705.687px" style="font-family:'Nunito-Regular', 'Nunito';font-size:20px;fill:white;">pr<tspan x="755.252px " y="705.687px ">o</tspan>tection</text>
+                </g>
+                <g transform="matrix(1,0,0,1,257.733,-321.666)">
+                    <text x="762.852px" y="685.687px" style="font-family:'Nunito-Regular', 'Nunito';font-size:20px;fill:white;">DoS</text>
+                    <text x="736.752px" y="705.687px" style="font-family:'Nunito-Regular', 'Nunito';font-size:20px;fill:white;">pr<tspan x="755.252px " y="705.687px ">o</tspan>tection</text>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

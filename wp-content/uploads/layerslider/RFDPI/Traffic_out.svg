@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="303px" height="28px" viewBox="0 0 303 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Traffic_out</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Traffic_out" fill="#FFCC01">
+            <g id="Group-53">
+                <path d="M0,10 L296,10 C298.209139,10 300,11.790861 300,14 L300,14 C300,16.209139 298.209139,18 296,18 L0,18 L0,10 Z" id="Rectangle-16"></path>
+                <polygon id="Path-60-Copy-3" points="291.359799 14 279 0 291.359799 0 303 14"></polygon>
+                <polygon id="Path-60-Copy-6" transform="translate(291.000000, 21.000000) scale(1, -1) translate(-291.000000, -21.000000) " points="291.359799 28 279 14 291.359799 14 303 28"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

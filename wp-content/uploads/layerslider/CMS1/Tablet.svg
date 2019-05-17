@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="124px" height="148px" viewBox="0 0 124 148" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 16</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M-2810,-9081 L10013,-9081 L10013,4910 L-2810,4910 L-2810,-9081 Z" id="path-1"></path>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="12823" height="13991" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <use id="Rectangle-5" stroke="#979797" mask="url(#mask-2)" stroke-width="12" stroke-dasharray="15,15" xlink:href="#path-1"></use>
+        <g id="Group-16" transform="translate(1.666667, 1.000000)">
+            <text id="Tablet" font-family="Nunito-Regular, Nunito" font-size="14" font-weight="normal" fill="#000000">
+                <tspan x="40" y="143">Tablet</tspan>
+            </text>
+            <g id="Group-14" fill="#636569">
+                <g id="Host_Home_Small_Office_LAN-Copy" transform="translate(60.000000, 47.000000) rotate(180.000000) translate(-60.000000, -47.000000) ">
+                    <g id="Group-4" transform="translate(0.000000, 0.248255)">
+                        <path d="M101.045798,0 C111.191597,0 119.420168,8.27668138 119.420168,18.4817991 L119.420168,73.9157855 C119.420168,84.1247068 111.191597,92.3975846 101.045798,92.3975846 L18.3705882,92.3975846 C8.22478992,92.3975846 0,84.1247068 0,73.9157855 L0,18.4817991 C0,8.85483192 8.22857143,0 18.3705882,0 L101.045798,0 Z M110.233739,69.2989492 L110.233739,22.8110816 C110.233739,13.5720839 105.639202,9.17129327 96.4501261,9.17129327 L22.9677731,9.17129327 C13.774916,9.17129327 9.18415966,13.5720839 9.18415966,22.8110816 L9.18415966,69.2989492 C9.18415966,78.5379469 13.774916,83.1593476 22.9677731,83.1593476 L96.4501261,83.1593476 C105.639202,83.1593476 110.233739,78.5379469 110.233739,69.2989492 Z" id="Combined-Shape"></path>
+                    </g>
+                </g>
+                <circle id="Oval" transform="translate(101.000000, 47.000000) rotate(90.000000) translate(-101.000000, -47.000000) " cx="101" cy="47" r="5"></circle>
+            </g>
+        </g>
+        <rect id="Rectangle" stroke="#46AFE8" stroke-width="4" x="-202" y="-62" width="792" height="244" rx="20"></rect>
+    </g>
+</svg>

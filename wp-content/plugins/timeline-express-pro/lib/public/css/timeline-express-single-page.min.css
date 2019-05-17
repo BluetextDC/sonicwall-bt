@@ -1,0 +1,8 @@
+/*
+ * @Plugin Timeline Express Pro
+ * @Author Code Parrots
+ * @Site https://www.wp-timelineexpress.com
+ * @Version 2.2.7
+ * @Build 11-03-2018
+ */
+body.single-te_announcements span.timeline-express-tax-container{display:block;width:100%;margin:10px 0}body.single-te_announcements .announcement-banner .mejs-container,body.single-te_announcements .announcement-banner .mejs-overlay.load,body.single-te_announcements .announcement-banner .wp-video,body.single-te_announcements .announcement-banner video.wp-video-shortcode{width:100%!important;height:100%!important}body.single-te_announcements .announcement-banner .mejs-container,body.single-te_announcements .announcement-banner .mejs-container iframe{margin-bottom:0!important}body.single-te_announcements .announcement-banner .mejs-container{padding-top:56.25%}body.single-te_announcements .announcement-banner .wp-video,body.single-te_announcements .announcement-banner video.wp-video-shortcode{max-width:100%!important}body.single-te_announcements .announcement-banner video.wp-video-shortcode{position:relative}body.single-te_announcements .announcement-banner .mejs-mediaelement{position:absolute;top:0;right:0;bottom:0;left:0}body.single-te_announcements .announcement-banner .mejs-controls{display:none}body.single-te_announcements .announcement-banner .mejs-overlay-play{top:0;right:0;bottom:0;left:0;width:auto!important;height:auto!important}body.single-te_announcements .timeline-express-tax-container{font-size:16px;font-weight:400;line-height:18px}body.single-te_announcements .timeline-express-tax-container .pre-text{font-weight:700}body.single-te_announcements li[typeof="v:Breadcrumb"] .timeline-express-tax-container{display:none!important}

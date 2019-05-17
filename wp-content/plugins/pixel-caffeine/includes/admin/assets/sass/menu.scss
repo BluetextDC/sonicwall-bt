@@ -1,0 +1,15 @@
+/*!
+ * Style for WordPress admin menu
+ */
+
+@import "font-icons";
+
+
+// Admin menu icon
+#adminmenu {
+	#toplevel_page_aepc-settings {
+		.menu-icon-generic div.wp-menu-image::before {
+			@include pc-icon('\e800');
+		}
+	}
+}

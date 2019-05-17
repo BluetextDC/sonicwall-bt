@@ -1,0 +1,7 @@
+{
+    "require": {
+        "aws/aws-sdk-php": "^3.82",
+        "phpoffice/phpspreadsheet": "^1.6",
+        "theiconic/php-ga-measurement-protocol": "^2.7"
+    }
+}

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="62px" height="30px" viewBox="0 0 62 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50 (54983) - http://www.bohemiancoding.com/sketch -->
+    <title>Switch C VLAN 11 Copy</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M-4350,-15707 L8473,-15707 L8473,1023 L-4350,1023 L-4350,-15707 Z" id="path-1"></path>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="12823" height="16730" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <use id="Rectangle-5" stroke="#979797" mask="url(#mask-2)" stroke-width="12" stroke-dasharray="15,15" xlink:href="#path-1"></use>
+        <text id="Switch-C-VLAN-11-Copy" font-family="Nunito-Bold, Nunito" font-size="14" font-weight="bold" line-spacing="16" fill="#4A4A4A">
+            <tspan x="1.63" y="13">Switch C</tspan>
+            <tspan x="1" y="29">VLAN 11</tspan>
+        </text>
+    </g>
+</svg>

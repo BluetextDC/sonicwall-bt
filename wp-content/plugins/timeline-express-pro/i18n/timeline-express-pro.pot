@@ -1,0 +1,1924 @@
+# Copyright (c) 2017 Code Parrots. All Rights Reserved.
+msgid ""
+msgstr ""
+"Project-Id-Version: Timeline Express Pro 2.0.4\n"
+"Report-Msgid-Bugs-To: https://github.com/EvanHerman/Timeline-Express/issues\n"
+"POT-Creation-Date: 2017-12-06 15:43:31+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2017-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"X-Generator: grunt-wp-i18n 0.5.4\n"
+"X-Poedit-KeywordsList: "
+"__;_e;_x:1,2c;_ex:1,2c;_n:1,2;_nx:1,2,4c;_n_noop:1,2;_nx_noop:1,2,3c;esc_"
+"attr__;esc_html__;esc_attr_e;esc_html_e;esc_attr_x:1,2c;esc_html_x:1,2c;\n"
+
+#: lib/admin/cpt/cpt.announcements.php:24
+msgid "announcement"
+msgstr ""
+
+#: lib/admin/cpt/cpt.announcements.php:29
+#: lib/admin/metaboxes/metaboxes.announcements.php:8
+#: lib/admin/pages/page.options.php:36
+#: lib/modules/banner-popups/banner-popups.php:79
+#: lib/modules/extra-content/lib/metabox.php:8
+msgid "Announcement"
+msgstr ""
+
+#: lib/admin/cpt/cpt.announcements.php:34 lib/admin/pages/page.options.php:37
+msgid "Announcements"
+msgstr ""
+
+#: lib/admin/cpt/cpt.announcements.php:40
+#. translators: Plural custom post type name (ie: Announcements)
+msgid "Timeline Express %s"
+msgstr ""
+
+#: lib/admin/cpt/cpt.announcements.php:42 lib/helpers.php:1232
+msgid "Timeline Express"
+msgstr ""
+
+#: lib/admin/cpt/cpt.announcements.php:43
+msgid "Timeline Express:"
+msgstr ""
+
+#: lib/admin/cpt/cpt.announcements.php:44
+#: lib/admin/cpt/cpt.announcements.php:114
+#: lib/admin/cpt/cpt.announcements.php:140
+#. translators: Plural custom post type name (ie: Announcements)
+#. translators: Plural category name (ie: Categories)
+#. translators: Plural timeline name (ie: Timelines)
+msgid "All %s"
+msgstr ""
+
+#: lib/admin/cpt/cpt.announcements.php:45
+#. translators: Plural custom post type name (ie: Announcements)
+msgid "View %s"
+msgstr ""
+
+#: lib/admin/cpt/cpt.announcements.php:46
+#: lib/admin/cpt/cpt.announcements.php:47
+#: lib/admin/cpt/cpt.announcements.php:120
+#. translators: Singular custom post type name (ie: Announcement)
+#. translators: Singular category name (ie: Category)
+msgid "New %s"
+msgstr ""
+
+#: lib/admin/cpt/cpt.announcements.php:48
+#: lib/admin/cpt/cpt.announcements.php:117
+#: lib/admin/cpt/cpt.announcements.php:143
+#. translators: Singular custom post type name (ie: Announcement)
+#. translators: Singular category name (ie: Category)
+#. translators: Singular timeline name (ie: Timeline)
+msgid "Edit %s"
+msgstr ""
+
+#: lib/admin/cpt/cpt.announcements.php:49
+#: lib/admin/cpt/cpt.announcements.php:118
+#: lib/admin/cpt/cpt.announcements.php:144
+#. translators: Singular custom post type name (ie: Announcement)
+#. translators: Singular category name (ie: Category)
+#. translators: Singular timeline name (ie: Timeline)
+msgid "Update %s"
+msgstr ""
+
+#: lib/admin/cpt/cpt.announcements.php:50
+#: lib/admin/cpt/cpt.announcements.php:113
+#: lib/admin/cpt/cpt.announcements.php:139
+#. translators: Plural custom post type name (ie: Announcements)
+#. translators: Plural category name (ie: Categories)
+#. translators: Plural timeline name (ie: Timelines)
+msgid "Search %s"
+msgstr ""
+
+#: lib/admin/cpt/cpt.announcements.php:51
+#. translators: Singular custom post type name (ie: Announcement)
+msgid "No Timeline Express %s Found"
+msgstr ""
+
+#: lib/admin/cpt/cpt.announcements.php:52
+#. translators: Plural custom post type name (ie: Announcements)
+msgid "No Timeline Express %s in Trash"
+msgstr ""
+
+#: lib/admin/cpt/cpt.announcements.php:75
+#. translators: Plural custom post type name (ie: Announcements)
+msgid "Post type for adding timeline express %s to the site"
+msgstr ""
+
+#: lib/admin/cpt/cpt.announcements.php:106
+#: lib/admin/cpt/cpt.announcements.php:112
+msgid "Category"
+msgstr ""
+
+#: lib/admin/cpt/cpt.announcements.php:107
+msgid "Categories"
+msgstr ""
+
+#: lib/admin/cpt/cpt.announcements.php:115
+#: lib/admin/cpt/cpt.announcements.php:141
+#. translators: Singular category name (ie: Category)
+#. translators: Singular timeline name (ie: Timeline)
+msgid "Parent %s"
+msgstr ""
+
+#: lib/admin/cpt/cpt.announcements.php:116
+#: lib/admin/cpt/cpt.announcements.php:142
+#. translators: Singular category name (ie: Category)
+#. translators: Singular timeline name (ie: Timeline)
+msgid "Parent %s:"
+msgstr ""
+
+#: lib/admin/cpt/cpt.announcements.php:119
+#: lib/admin/cpt/cpt.announcements.php:145
+#. translators: Singular category name (ie: Category)
+#. translators: Singular timeline name (ie: Timeline)
+msgid "Add New %s"
+msgstr ""
+
+#: lib/admin/cpt/cpt.announcements.php:133
+msgid "Timeline"
+msgstr ""
+
+#: lib/admin/cpt/cpt.announcements.php:134
+#: lib/classes/class-timeline-express-tinymce.php:225
+msgid "Timelines"
+msgstr ""
+
+#: lib/admin/cpt/cpt.announcements.php:146
+#. translators: Singular timeline name (ie: Timeline)
+msgid "New %s Name"
+msgstr ""
+
+#: lib/admin/cpt/timeline-express-admin-columns.php:40
+#. translators: Singular announcement name (ie: Announcement)
+msgid "%s Name"
+msgstr ""
+
+#: lib/admin/cpt/timeline-express-admin-columns.php:41
+#: lib/modules/styles/lib/partials/cmb2-fields/container-date-styles.php:125
+#: lib/modules/styles/lib/partials/cmb2-fields/container-excerpt-styles.php:125
+#: lib/modules/styles/lib/partials/cmb2-fields/container-shadow.php:68
+#: lib/modules/styles/lib/partials/cmb2-fields/container-title-styles.php:125
+msgid "Color"
+msgstr ""
+
+#: lib/admin/cpt/timeline-express-admin-columns.php:46
+msgid "Icon"
+msgstr ""
+
+#: lib/admin/cpt/timeline-express-admin-columns.php:50
+#: lib/admin/metaboxes/metaboxes.announcements.php:49
+#. translators: Singular announcement name (ie: Announcement)
+#. translators: Timeline Express singular post type name (eg: Announcement)
+msgid "%s Date"
+msgstr ""
+
+#: lib/admin/cpt/timeline-express-admin-columns.php:51
+msgid "Image"
+msgstr ""
+
+#: lib/admin/cpt/timeline-express-admin-columns.php:52
+#. translators: Singular announcement name (ie: Announcement)
+msgid "%s Past?"
+msgstr ""
+
+#: lib/admin/cpt/timeline-express-admin-columns.php:53
+msgid "Published Date"
+msgstr ""
+
+#: lib/admin/cpt/timeline-express-admin-columns.php:102
+msgid "not set"
+msgstr ""
+
+#: lib/admin/cpt/timeline-express-admin-columns.php:116
+#. translators: Singular announcement name (ie: Announcement)
+msgid "%s has past."
+msgstr ""
+
+#: lib/admin/metaboxes/metaboxes.announcements.php:16
+#: lib/modules/extra-content/lib/metabox.php:16
+#. translators: Timeline Express singular post type name (eg: Announcement)
+msgid "%s Info."
+msgstr ""
+
+#: lib/admin/metaboxes/metaboxes.announcements.php:27
+#. translators: Timeline Express singular post type name (eg: Announcement)
+msgid "%s Color"
+msgstr ""
+
+#: lib/admin/metaboxes/metaboxes.announcements.php:28
+#. translators: Timeline Express singular post type name - lowercase (eg:
+#. announcement)
+msgid "Select the color for this %s."
+msgstr ""
+
+#: lib/admin/metaboxes/metaboxes.announcements.php:38
+#. translators: Timeline Express singular post type name (eg: Announcement)
+msgid "%s Icon"
+msgstr ""
+
+#: lib/admin/metaboxes/metaboxes.announcements.php:39
+#. translators: Timeline Express singular post type name - lowercase (eg:
+#. announcement)
+msgid ""
+"Select an icon from the drop down above. This is used for the icon "
+"associated with the %s."
+msgstr ""
+
+#: lib/admin/metaboxes/metaboxes.announcements.php:50
+#. translators: Timeline Express singular post type name - lowercase (eg:
+#. announcement)
+msgid ""
+"Enter the date of the %s. Announcements will appear in chronological order "
+"according to this date."
+msgstr ""
+
+#: lib/admin/metaboxes/metaboxes.announcements.php:61
+#. translators: Timeline Express singular post type name (eg: Announcement)
+msgid "%s Banner"
+msgstr ""
+
+#: lib/admin/metaboxes/metaboxes.announcements.php:62
+#. translators: Timeline Express singular post type name - lowercase (eg:
+#. announcement)
+msgid ""
+"Select a banner image/video for this %s (optional). (recommended 650px wide "
+"or larger)"
+msgstr ""
+
+#: lib/admin/metaboxes/metaboxes.announcements.php:71
+msgid "Associated Timeline"
+msgstr ""
+
+#: lib/admin/metaboxes/metaboxes.announcements.php:72
+msgid "Select a timeline to assign this announcement to."
+msgstr ""
+
+#: lib/admin/metaboxes/metaboxes.announcements.php:78
+msgid "No timelines found."
+msgstr ""
+
+#: lib/admin/metaboxes/metaboxes.announcements.php:95
+msgid "Announcement Container Info."
+msgstr ""
+
+#: lib/admin/metaboxes/metaboxes.announcements.php:106
+msgid "Custom Container Class"
+msgstr ""
+
+#: lib/admin/metaboxes/metaboxes.announcements.php:107
+msgid ""
+"Enter the class that you would like added to the announcement container on "
+"the timeline."
+msgstr ""
+
+#: lib/admin/metaboxes/metaboxes.announcements.php:124
+#: lib/admin/pages/page.options.php:476
+msgid "Help & Documentation"
+msgstr ""
+
+#: lib/admin/pages/page.addons.php:33
+msgid "Are you sure you want to install this add-on?"
+msgstr ""
+
+#: lib/admin/pages/page.addons.php:34 lib/admin/pages/page.addons.php:267
+msgid "Install"
+msgstr ""
+
+#: lib/admin/pages/page.addons.php:35 lib/admin/pages/page.addons.php:267
+#: lib/admin/pages/page.addons.php:285
+msgid "Activate"
+msgstr ""
+
+#: lib/admin/pages/page.addons.php:36 lib/admin/pages/page.addons.php:267
+#: lib/admin/pages/page.addons.php:285
+msgid "Active"
+msgstr ""
+
+#: lib/admin/pages/page.addons.php:47
+msgid "Timeline Express - HTML Excerpts"
+msgstr ""
+
+#: lib/admin/pages/page.addons.php:52
+msgid "Timeline Express - Single Column"
+msgstr ""
+
+#: lib/admin/pages/page.addons.php:55
+msgid "Timeline Express - No Icons"
+msgstr ""
+
+#: lib/admin/pages/page.addons.php:61
+msgid "Timeline Express - White Label Branding"
+msgstr ""
+
+#: lib/admin/pages/page.addons.php:63
+msgid ""
+"Remove any and all references to our branding, Code Parrots. This add-on "
+"removes links, metaboxes, menu items and any association to Code Parrots so "
+"your clients won’t get confused with the mixed branding across their "
+"dashboard."
+msgstr ""
+
+#: lib/admin/pages/page.addons.php:69
+msgid "Timeline Express - Post Types"
+msgstr ""
+
+#: lib/admin/pages/page.addons.php:71
+msgid ""
+"Generate timelines using posts, pages or any other custom post type on your "
+"site with this add-on. Powerful, flexible and simple to use – now users can "
+"generate highly customized timelines without altering any code."
+msgstr ""
+
+#: lib/admin/pages/page.addons.php:78
+msgid "Timeline Express - Historical Dates"
+msgstr ""
+
+#: lib/admin/pages/page.addons.php:80
+msgid ""
+"Due to a limitation with PHP, storing dates prior to 1970 has been a "
+"recurring problem of Timeline Express. This add-on enables date ranges "
+"between the years 1000 to 9999 on all announcements."
+msgstr ""
+
+#: lib/admin/pages/page.addons.php:87
+msgid "Timeline Express - AJAX Limits"
+msgstr ""
+
+#: lib/admin/pages/page.addons.php:89
+msgid ""
+"Limit your Timeline to a set number of announcements, and display a ‘Load "
+"More’ button beneath, allowing users to load more announcements onto the "
+"timeline. This prevents your pages from becoming unruly in length if you "
+"display many announcements."
+msgstr ""
+
+#: lib/admin/pages/page.addons.php:96
+msgid "Timeline Express - Twitter Feed"
+msgstr ""
+
+#: lib/admin/pages/page.addons.php:98
+msgid ""
+"Display twitter feeds in a Timeline for users, search terms and by "
+"gelocation using our Twitter Feed Add-On. Twitter feeds can be set to live "
+"update, so every 30 seconds the feed is updated with new, fresh, tweets."
+msgstr ""
+
+#: lib/admin/pages/page.addons.php:104
+msgid "Timeline Express - Toolbox"
+msgstr ""
+
+#: lib/admin/pages/page.addons.php:106
+msgid ""
+"Customize many aspects of Timeline Express (image size, date format, "
+"announcement slug etc.) without ever writing any code, using an admin "
+"interface."
+msgstr ""
+
+#: lib/admin/pages/page.addons.php:113
+msgid "Timeline Express - Popups"
+msgstr ""
+
+#: lib/admin/pages/page.addons.php:115
+msgid ""
+"Display announcement content in an elegant popup, on the same page as your "
+"timeline, when a user clicks the \"Read More\" link."
+msgstr ""
+
+#: lib/admin/pages/page.addons.php:127
+msgid "Timeline Express - Product Bundle"
+msgstr ""
+
+#: lib/admin/pages/page.addons.php:141
+#. translators: Integer value for the number of add-ons in the add-on list.
+#. (eg: 6)
+msgid "Timeline Express Add-Ons"
+msgstr ""
+
+#: lib/admin/pages/page.addons.php:146
+msgid ""
+"Extend the base Timeline Express functionality with our powerful add-ons. "
+"We're constantly looking to build out additional add-ons. If you have a "
+"great idea for a new add-on, get in contact with us!"
+msgstr ""
+
+#: lib/admin/pages/page.addons.php:151
+msgid "Free Add-Ons"
+msgstr ""
+
+#: lib/admin/pages/page.addons.php:153
+msgid ""
+"Download and install any of our free Timeline Express add-ons from the "
+"WordPress.org plugin directory."
+msgstr ""
+
+#: lib/admin/pages/page.addons.php:182
+msgid "Premium Add-Ons"
+msgstr ""
+
+#: lib/admin/pages/page.addons.php:184
+msgid ""
+"Premium add-ons bring enhanced features to Timeline Express. Browse through "
+"some of our premium add-ons below."
+msgstr ""
+
+#: lib/admin/pages/page.addons.php:285
+msgid "View Add-On"
+msgstr ""
+
+#: lib/admin/pages/page.addons.php:365
+#. translators: 1. The name of the add-on.
+msgid "Install %s now"
+msgstr ""
+
+#: lib/admin/pages/page.addons.php:389
+#. translators: Plugin author name.
+msgid "By %s"
+msgstr ""
+
+#: lib/admin/pages/page.addons.php:485
+#. translators: 1. The rating. 2. The number of ratings.
+msgid "%1$s rating based on %2$s ratings"
+msgstr ""
+
+#: lib/admin/pages/page.addons.php:510
+#. translators: The last time the plugin was updated
+msgid "%s ago"
+msgstr ""
+
+#: lib/admin/pages/page.addons.php:534
+#. translators: 1. Number of active installs string( eg. 1+ Million).
+msgid "%s Active Installs"
+msgstr ""
+
+#: lib/admin/pages/page.addons.php:546
+msgid "Untested with your version of WordPress"
+msgstr ""
+
+#: lib/admin/pages/page.addons.php:552 lib/admin/pages/page.addons.php:560
+#. translators: 'Incompatible' wrapped in <strong> tags.
+#. translators: 'Compatible' wrapped in <strong> tags.
+msgid "%s with your version of WordPress"
+msgstr ""
+
+#: lib/admin/pages/page.addons.php:553
+msgid "Incompatible"
+msgstr ""
+
+#: lib/admin/pages/page.addons.php:561
+msgid "Compatible"
+msgstr ""
+
+#: lib/admin/pages/page.license.php:29
+msgid "Timeline Express Pro &amp; Add-On Licenses"
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+msgid "Timeline Express Pro"
+msgstr ""
+
+#: lib/admin/pages/page.license.php:57
+msgid "Timeline Express Pro License"
+msgstr ""
+
+#: lib/admin/pages/page.license.php:59
+msgid "Thank you for purchasing the pro version!"
+msgstr ""
+
+#: lib/admin/pages/page.license.php:60
+msgid ""
+"If you run into any issues, or need support, feel free to submit a support "
+"ticket via the contact form below."
+msgstr ""
+
+#: lib/admin/pages/page.license.php:66
+#. translators: HTML anchor linking back to the Timeline Express documentation
+msgid ""
+"Please enter your license key in the field below. Your license key will "
+"grant you access to updates and priority support. Don't forget to check out "
+"our awesome %s."
+msgstr ""
+
+#: lib/admin/pages/page.license.php:67
+msgid "Timeline Express Documentation"
+msgstr ""
+
+#: lib/admin/pages/page.license.php:67
+#: lib/classes/class-timeline-express-tinymce.php:72
+msgid "documentation"
+msgstr ""
+
+#: lib/admin/pages/page.license.php:85
+msgid "Support License Key"
+msgstr ""
+
+#: lib/admin/pages/page.license.php:90
+msgid "Support license key"
+msgstr ""
+
+#: lib/admin/pages/page.license.php:100
+msgid "An unknown error occured."
+msgstr ""
+
+#: lib/admin/pages/page.license.php:105
+msgid ""
+"The license key you entered does not appear to be for this product. Please "
+"double check your license key."
+msgstr ""
+
+#: lib/admin/pages/page.license.php:110
+#. translators: Anchor tag linking to user account, to upgrade the plugin
+#. license.
+msgid ""
+"You have reached the limit on the number of sites this license key can be "
+"active on. Please %s."
+msgstr ""
+
+#: lib/admin/pages/page.license.php:110
+msgid "upgrade your license"
+msgstr ""
+
+#: lib/admin/pages/page.license.php:115
+msgid ""
+"Your license key appears to be invalid. Please double check that you have "
+"entered a valid license key."
+msgstr ""
+
+#: lib/admin/pages/page.license.php:130
+msgid "Valid and Active License"
+msgstr ""
+
+#: lib/admin/pages/page.license.php:131
+msgid "Active License"
+msgstr ""
+
+#: lib/admin/pages/page.license.php:140
+msgid "Purchase a Support License Now"
+msgstr ""
+
+#: lib/admin/pages/page.license.php:141
+msgid "Purchase a License"
+msgstr ""
+
+#: lib/admin/pages/page.license.php:143 lib/admin/pages/page.license.php:144
+msgid "Retrieve License"
+msgstr ""
+
+#: lib/admin/pages/page.license.php:157
+msgid "Deactivate License"
+msgstr ""
+
+#: lib/admin/pages/page.license.php:160 lib/admin/pages/page.license.php:166
+msgid "Save and Activate License"
+msgstr ""
+
+#: lib/admin/pages/page.license.php:188
+msgid "License Info."
+msgstr ""
+
+#: lib/admin/pages/page.license.php:197
+msgid "License Holder"
+msgstr ""
+
+#: lib/admin/pages/page.license.php:202
+msgid "Sites Active/Limit"
+msgstr ""
+
+#: lib/admin/pages/page.license.php:207
+msgid "License Expires"
+msgstr ""
+
+#: lib/admin/pages/page.license.php:224
+msgid "Premium Support Ticketing"
+msgstr ""
+
+#: lib/admin/pages/page.license.php:233
+msgid ""
+"It looks like you recently sent us a support request. We limit the number "
+"of support requests to 1 per hour, to prevent spam. Sorry for the "
+"inconvinience, and thank you for understanding."
+msgstr ""
+
+#: lib/admin/pages/page.options.php:101
+msgid "Time Frame"
+msgstr ""
+
+#: lib/admin/pages/page.options.php:104
+msgid "Future Events"
+msgstr ""
+
+#: lib/admin/pages/page.options.php:105
+msgid "All Events (past+future)"
+msgstr ""
+
+#: lib/admin/pages/page.options.php:106
+msgid "Past Events"
+msgstr ""
+
+#: lib/admin/pages/page.options.php:109
+#. translators: Timeline Express plural name - lowercase (eg: announcements)
+msgid "Select the time frame to query %s from."
+msgstr ""
+
+#: lib/admin/pages/page.options.php:116
+msgid "Display Order"
+msgstr ""
+
+#: lib/admin/pages/page.options.php:119
+msgid "Ascending"
+msgstr ""
+
+#: lib/admin/pages/page.options.php:120
+msgid "Descending"
+msgstr ""
+
+#: lib/admin/pages/page.options.php:123
+#. translators: Timeline Express plural name - lowercase (eg: announcements)
+msgid "Select the order you would like the %s to display."
+msgstr ""
+
+#: lib/admin/pages/page.options.php:126
+#. translators: Timeline Express singular name - lowercase (eg: announcement)
+msgid "Ascending: Chronological order by %s date."
+msgstr ""
+
+#: lib/admin/pages/page.options.php:127
+#. translators: Timeline Express singular name - lowercase (eg: announcement)
+msgid "Descending: Reverse chronological order by %s date."
+msgstr ""
+
+#: lib/admin/pages/page.options.php:136
+#. translators: Timeline Express singular name (eg: Announcement)
+msgid "%s Excerpt Length"
+msgstr ""
+
+#: lib/admin/pages/page.options.php:144
+msgid "random length"
+msgstr ""
+
+#: lib/admin/pages/page.options.php:148
+#. translators: Timeline Express singular name - lowercase (eg: announcement)
+msgid "Set the length of the excerpt for each %s."
+msgstr ""
+
+#: lib/admin/pages/page.options.php:151
+msgid "Minimum Length: 25; 50 = 50 character excerpt length."
+msgstr ""
+
+#: lib/admin/pages/page.options.php:158
+msgid "Date Visibility"
+msgstr ""
+
+#: lib/admin/pages/page.options.php:161 lib/admin/pages/page.options.php:175
+msgid "Visible"
+msgstr ""
+
+#: lib/admin/pages/page.options.php:162 lib/admin/pages/page.options.php:176
+msgid "Hidden"
+msgstr ""
+
+#: lib/admin/pages/page.options.php:165
+#. translators: Timeline Express singular name - lowercase (eg: announcement)
+msgid "Toggle the visibility of the date for the %s."
+msgstr ""
+
+#: lib/admin/pages/page.options.php:172
+msgid "Read More Visibility"
+msgstr ""
+
+#: lib/admin/pages/page.options.php:179
+#. translators: Timeline Express singular name - lowercase (eg: announcement)
+msgid ""
+"Toggle the visibility of the read more button. Hide to prevent users from "
+"viewing the full %s."
+msgstr ""
+
+#: lib/admin/pages/page.options.php:186
+msgid "Default Icon"
+msgstr ""
+
+#: lib/admin/pages/page.options.php:199
+#. translators: Timeline Express plural name - lowercase (eg: announcements)
+msgid ""
+"Select the font-awesome icon that you would like to use as a default icon "
+"for new %s."
+msgstr ""
+
+#: lib/admin/pages/page.options.php:201
+msgid "cheat sheet"
+msgstr ""
+
+#: lib/admin/pages/page.options.php:211
+#. translators: Timeline Express singular name - uppercase (eg: Announcement)
+msgid "Default %s Color"
+msgstr ""
+
+#: lib/admin/pages/page.options.php:217
+#. translators: Timeline Express plural name - lowercase (eg: announcements)
+msgid "Set the default color for all new %s."
+msgstr ""
+
+#: lib/admin/pages/page.options.php:220
+#. translators: Timeline Express singular name - lowercase (eg: announcement)
+msgid "Note: You can override this setting within each %s."
+msgstr ""
+
+#: lib/admin/pages/page.options.php:229
+#. translators: Timeline Express singular name - uppercase (eg: Announcement)
+msgid "%s Container Background Color"
+msgstr ""
+
+#: lib/admin/pages/page.options.php:235
+#. translators: Timeline Express singular name - lowercase (eg: announcement)
+msgid "Set the background color of the %s container on the timeline."
+msgstr ""
+
+#: lib/admin/pages/page.options.php:244
+#. translators: Timeline Express singular name - uppercase (eg: Announcement)
+msgid "%s Shadow Color"
+msgstr ""
+
+#: lib/admin/pages/page.options.php:250
+#. translators: Timeline Express singular name - lowercase (eg: announcement)
+msgid "Set the shadow color for the %s container on the timeline."
+msgstr ""
+
+#: lib/admin/pages/page.options.php:259
+msgid "Timeline Background Line Color"
+msgstr ""
+
+#: lib/admin/pages/page.options.php:265
+msgid "Select the color of the line in the background of the timeline."
+msgstr ""
+
+#: lib/admin/pages/page.options.php:272
+msgid "Pagination Background Color"
+msgstr ""
+
+#: lib/admin/pages/page.options.php:276
+msgid "Select the background color of the pagination links."
+msgstr ""
+
+#: lib/admin/pages/page.options.php:283
+msgid "Pagination Text Color"
+msgstr ""
+
+#: lib/admin/pages/page.options.php:287
+msgid "Select the color of the pagination text."
+msgstr ""
+
+#: lib/admin/pages/page.options.php:294
+msgid "Pagination Hover Background Color"
+msgstr ""
+
+#: lib/admin/pages/page.options.php:298
+msgid "Select the background color of the pagination links on hover."
+msgstr ""
+
+#: lib/admin/pages/page.options.php:305
+msgid "Pagination Hover Text Color"
+msgstr ""
+
+#: lib/admin/pages/page.options.php:309
+msgid "Select the color of the pagination text on hover."
+msgstr ""
+
+#: lib/admin/pages/page.options.php:318
+#. translators: Timeline Express plural name (eg: Announcements)
+msgid "No %s Message"
+msgstr ""
+
+#: lib/admin/pages/page.options.php:328
+#. translators: Timeline Express plural name - lowercase (eg: announcements)
+msgid "Set the message that will display when no %s are found."
+msgstr ""
+
+#: lib/admin/pages/page.options.php:337
+#. translators: Timeline Express plural name (eg: announcements)
+msgid "Exclude %s from Site Searches"
+msgstr ""
+
+#: lib/admin/pages/page.options.php:342
+msgid "True"
+msgstr ""
+
+#: lib/admin/pages/page.options.php:343
+msgid "False"
+msgstr ""
+
+#: lib/admin/pages/page.options.php:346
+#. translators: Timeline Express plural name - lowercase (eg: announcements)
+msgid ""
+"Set to true to exclude %1$s from site searches. False will include %1$s in "
+"site searches."
+msgstr ""
+
+#: lib/admin/pages/page.options.php:355
+msgid "Disable Timeline Animations"
+msgstr ""
+
+#: lib/admin/pages/page.options.php:361
+msgid "Check this option off to disable the timeline animations while scrolling."
+msgstr ""
+
+#: lib/admin/pages/page.options.php:368
+msgid "Enable Legacy Support?"
+msgstr ""
+
+#: lib/admin/pages/page.options.php:372
+msgid ""
+"Timeline Express Pro v1.2 comes with a few style and JavaScript "
+"enhancements. If you notice anything weird or would like to fall back to "
+"the old appearance, enable this option."
+msgstr ""
+
+#: lib/admin/pages/page.options.php:379
+msgid "Enable Announcement Comments?"
+msgstr ""
+
+#: lib/admin/pages/page.options.php:383
+msgid ""
+"Enable comments on announcement templates. Once enabled, you can "
+"enable/disable on each announcement individually."
+msgstr ""
+
+#: lib/admin/pages/page.options.php:392
+#. translators: Timeline Express plural name (eg: announcements)
+msgid "Delete %s On Uninstall"
+msgstr ""
+
+#: lib/admin/pages/page.options.php:398
+#. translators: Timeline Express plural name - lowercase (eg: announcements)
+msgid ""
+"Check this option to delete all %1$s from the database on plugin uninstall. "
+"This can not be undone. If you want to back them up, it is recommended you "
+"%2$s before uninstalling."
+msgstr ""
+
+#: lib/admin/pages/page.options.php:398
+#. translators: Timeline Express plural name - lowercase (eg: announcements)
+msgid "export your %s"
+msgstr ""
+
+#: lib/admin/pages/page.options.php:408
+msgid "Save Settings"
+msgstr ""
+
+#: lib/admin/pages/page.options.php:459
+msgid "Support Timeline Express"
+msgstr ""
+
+#: lib/admin/pages/page.options.php:462
+msgid "Leave A Review"
+msgstr ""
+
+#: lib/admin/pages/page.options.php:465
+msgid "Tweet About It"
+msgstr ""
+
+#: lib/admin/pages/page.options.php:478
+msgid ""
+"If you need help, or run into any issues, you can reach out for support in "
+"the WordPress.org support forums. Additionally, please see our "
+"documentation for tutorials, frequent issues and how-tos."
+msgstr ""
+
+#: lib/admin/pages/page.options.php:482
+msgid "Support Forums"
+msgstr ""
+
+#: lib/admin/pages/page.options.php:483 lib/admin/pages/page.welcome.php:202
+#: lib/classes/class-timeline-express-admin.php:381
+msgid "Documentation"
+msgstr ""
+
+#: lib/admin/pages/page.welcome.php:33
+#. translators: Integer value, representing the plugin version number.
+msgid "Welcome to Timeline Express v%s"
+msgstr ""
+
+#: lib/admin/pages/page.welcome.php:36
+msgid ""
+"Thank you for choosing Timeline Express - the most beginner friendly, "
+"attractive and powerful WordPress Timeline plugin. Here's how to get "
+"started."
+msgstr ""
+
+#: lib/admin/pages/page.welcome.php:56
+msgid "Getting Started"
+msgstr ""
+
+#: lib/admin/pages/page.welcome.php:71 lib/admin/pages/page.welcome.php:239
+msgid "About Code Parrots"
+msgstr ""
+
+#: lib/admin/pages/page.welcome.php:79
+msgid ""
+"Use the tips below to get started using Timeline Express. You will be up "
+"and running in no time!"
+msgstr ""
+
+#: lib/admin/pages/page.welcome.php:88
+msgid "Creating Your First Announcement"
+msgstr ""
+
+#: lib/admin/pages/page.welcome.php:98
+#. translators: Anchor tag linking back to the Timeline Express documentation.
+msgid ""
+"Timeline Express makes it easy to create and display a beautiful and "
+"animated timeline in WordPress. Feel free to read our support article, %s."
+msgstr ""
+
+#: lib/admin/pages/page.welcome.php:100
+#. translators: Anchor tag linking to create a new announcement.
+msgid "The process is so intuitive that you can jump right in by going to %s."
+msgstr ""
+
+#: lib/admin/pages/page.welcome.php:100
+msgid "Timeline Express &#8594; New Announcement"
+msgstr ""
+
+#: lib/admin/pages/page.welcome.php:102
+msgid "Announcement Images"
+msgstr ""
+
+#: lib/admin/pages/page.welcome.php:104
+msgid ""
+"Adding images to your announcements is as easy as adding images to standard "
+"posts in WordPress. When you add images to your announcements, they will "
+"appear both on the timeline and on the single announcement templates."
+msgstr ""
+
+#: lib/admin/pages/page.welcome.php:114
+msgid "Setup Timeline Express"
+msgstr ""
+
+#: lib/admin/pages/page.welcome.php:119
+msgid "Timeline Express Settings Page"
+msgstr ""
+
+#: lib/admin/pages/page.welcome.php:124
+#. translators: Anchor tag linking back to the Timeline Express settings page.
+msgid ""
+"Head into the %s to tweak how the Timeline is going to function and display "
+"on your site. You can tweak the visual appearance of the timeline, and the "
+"order and time period from which announcements should disdplay."
+msgstr ""
+
+#: lib/admin/pages/page.welcome.php:124
+msgid "Settings Page"
+msgstr ""
+
+#: lib/admin/pages/page.welcome.php:126
+#. translators: HTML markup (strong tags) surrounding the words "Pro Tip"
+msgid ""
+"%s: If you ever notice something doesn't look correct or function properly "
+"on the timeline, double check that your settings are correct."
+msgstr ""
+
+#: lib/admin/pages/page.welcome.php:126
+msgid "Pro Tip"
+msgstr ""
+
+#: lib/admin/pages/page.welcome.php:136
+msgid "Powerful &amp; Flexible"
+msgstr ""
+
+#: lib/admin/pages/page.welcome.php:146
+msgid ""
+"Out of the box, Timeline Express is both attractive and powerful. However, "
+"some projects require an additional level of customization to fit the "
+"existing look and feel of the site."
+msgstr ""
+
+#: lib/admin/pages/page.welcome.php:148
+msgid ""
+"Users with even a little bit of knowledge customizing WordPress templates "
+"will feel right at home. In the latest release, users can now copy over any "
+"of the bundled templates and customize them as needed!"
+msgstr ""
+
+#: lib/admin/pages/page.welcome.php:150
+msgid "View Customization Articles"
+msgstr ""
+
+#: lib/admin/pages/page.welcome.php:160
+msgid "Feature Packed"
+msgstr ""
+
+#: lib/admin/pages/page.welcome.php:170
+msgid ""
+"Timeline Express is the number one rated Timline plugin for WordPress, and "
+"for good reason!"
+msgstr ""
+
+#: lib/admin/pages/page.welcome.php:172
+msgid ""
+"It is both easy to use and extremely powerful. On top of the visible "
+"features, we have a ton of additional features built in under the hood - to "
+"allow beginners and seasoned developers to elevate their timeline to new "
+"heights."
+msgstr ""
+
+#: lib/admin/pages/page.welcome.php:174
+msgid ""
+"If you need something custom, take a look at the developer documentation. "
+"If you need help beyond that, you can always reach out to our support staff!"
+msgstr ""
+
+#: lib/admin/pages/page.welcome.php:176
+msgid "See all Features"
+msgstr ""
+
+#: lib/admin/pages/page.welcome.php:186 lib/admin/pages/page.welcome.php:196
+msgid "Plugin Support & Documentation"
+msgstr ""
+
+#: lib/admin/pages/page.welcome.php:198
+msgid ""
+"Got stuck on something? Run into an issue? Not to worry, our knowledgeable "
+"support staff is equipped to help resolve any issues you may encounter."
+msgstr ""
+
+#: lib/admin/pages/page.welcome.php:201
+msgid "Support"
+msgstr ""
+
+#: lib/admin/pages/page.welcome.php:213
+msgid "Add-Ons"
+msgstr ""
+
+#: lib/admin/pages/page.welcome.php:223
+msgid ""
+"We have built out both free and premium add-ons for Timeline Express. Our "
+"add-ons extend Timeline Express beyond what it can do out of the box, and "
+"enable advanced features such as - enabling HTML in announcement excerpts, "
+"allowing for date ranges between the year 1000-9999 to be used, loading "
+"more announcements on your timeline via ajax and more. If you're looking "
+"for additionality functionality, take a peak at our full list of add-ons."
+msgstr ""
+
+#: lib/admin/pages/page.welcome.php:226
+msgid "View Add-Ons"
+msgstr ""
+
+#: lib/admin/pages/page.welcome.php:252
+msgid ""
+"Coming together in 2015, Code Parrots is a fanatical WordPress plugin "
+"development shop. We pride ourselves on our high quality of code and our "
+"unmatched level of support. As developers we've been building powerful "
+"WordPress products since 2012, and have provided some of the best solutions "
+"around."
+msgstr ""
+
+#: lib/admin/pages/page.welcome.php:254
+msgid ""
+"When you purchase a product from Code Parrots, you know you're getting a "
+"great product running top quality code with a knowledgable team that stands "
+"behind it's products."
+msgstr ""
+
+#: lib/classes/class-timeline-express-admin.php:122
+msgid "Timeline ID"
+msgstr ""
+
+#: lib/classes/class-timeline-express-admin.php:160
+msgid "Category ID"
+msgstr ""
+
+#: lib/classes/class-timeline-express-admin.php:225
+msgid "Timeline Express Settings"
+msgstr ""
+
+#: lib/classes/class-timeline-express-admin.php:226
+#: lib/classes/class-timeline-express-admin.php:379
+msgid "Settings"
+msgstr ""
+
+#: lib/classes/class-timeline-express-admin.php:235
+msgid "Timeline Express Add-ons"
+msgstr ""
+
+#: lib/classes/class-timeline-express-admin.php:236
+#: lib/classes/class-timeline-express-admin.php:380
+msgid "Add-ons"
+msgstr ""
+
+#: lib/classes/class-timeline-express-admin.php:245
+msgid "Timeline Express Welcome"
+msgstr ""
+
+#: lib/classes/class-timeline-express-admin.php:246
+msgid "Welcome"
+msgstr ""
+
+#: lib/classes/class-timeline-express-admin.php:256
+#: lib/classes/class-timeline-express-admin.php:257
+msgid "License"
+msgstr ""
+
+#: lib/classes/class-timeline-express-admin.php:354
+msgid "Timeline Express settings saved successfully!"
+msgstr ""
+
+#: lib/classes/class-timeline-express-admin.php:476
+#: lib/classes/class-timeline-express-hooks.php:62
+#. translators: The announcement date.
+msgid "Announcement Date: %s"
+msgstr ""
+
+#: lib/classes/class-timeline-express-admin.php:597
+msgid "Sorry, you are not allowed to install plugins on this site."
+msgstr ""
+
+#: lib/classes/class-timeline-express-admin.php:604
+#: lib/classes/class-timeline-express-admin.php:686
+msgid "Error - unable to verify nonce, please try again."
+msgstr ""
+
+#: lib/classes/class-timeline-express-admin.php:679
+msgid "Sorry, you are not allowed to activate plugins on this site."
+msgstr ""
+
+#: lib/classes/class-timeline-express-admin.php:707
+#. translators: The name of the add-on or plugin.
+msgid "Failed to activate %s."
+msgstr ""
+
+#: lib/classes/class-timeline-express-admin.php:720
+#: lib/classes/class-timeline-express-admin.php:767
+#. translators: The name of the add-on or plugin.
+msgid "%s successfully activated."
+msgstr ""
+
+#: lib/classes/class-timeline-express-admin.php:778
+#. translators: The name of the add-on or plugin.
+msgid "There was an error activating %s."
+msgstr ""
+
+#: lib/classes/class-timeline-express-base.php:119
+msgid ""
+"Sorry, the nonce security check did not pass. Please go back to the "
+"settings page, refresh the page and try to save your settings again."
+msgstr ""
+
+#: lib/classes/class-timeline-express-base.php:120
+msgid "Failed Nonce Security Check"
+msgstr ""
+
+#: lib/classes/class-timeline-express-filter-widget.php:11
+msgid "Timeline Express Filters"
+msgstr ""
+
+#: lib/classes/class-timeline-express-filter-widget.php:13
+msgid "Display the Timeline Express filtering options in your sidebar."
+msgstr ""
+
+#: lib/classes/class-timeline-express-filter-widget.php:71
+msgid "Title:"
+msgstr ""
+
+#: lib/classes/class-timeline-express-hooks.php:82
+msgid "Timelines:"
+msgstr ""
+
+#: lib/classes/class-timeline-express-hooks.php:93
+msgid "Categories:"
+msgstr ""
+
+#: lib/classes/class-timeline-express-tinymce.php:68
+#. translators: 1. string 'documentation' wrapped in an anchor tag.
+msgid "If you need help please see our %s."
+msgstr ""
+
+#: lib/classes/class-timeline-express-tinymce.php:219
+msgid "Use the fields below to generate your timeline shortcode."
+msgstr ""
+
+#: lib/classes/class-timeline-express-tinymce.php:229
+msgid "Select the timelines to display."
+msgstr ""
+
+#: lib/classes/class-timeline-express-tinymce.php:233
+msgid "Timeline Categories"
+msgstr ""
+
+#: lib/classes/class-timeline-express-tinymce.php:237
+msgid "Select the timeline categories to display."
+msgstr ""
+
+#: lib/classes/class-timeline-express-tinymce.php:242
+msgid "Display Filters"
+msgstr ""
+
+#: lib/classes/class-timeline-express-tinymce.php:244
+msgid "Display the timeline filters."
+msgstr ""
+
+#: lib/classes/class-timeline-express-tinymce.php:249
+msgid "Horizontal Timeline"
+msgstr ""
+
+#: lib/classes/class-timeline-express-tinymce.php:251
+msgid "Display the timeline in a horizontal layout."
+msgstr ""
+
+#: lib/classes/class-timeline-express-tinymce.php:303
+msgid "Insert Timeline"
+msgstr ""
+
+#: lib/classes/usage-tracking/class-wp-plugin-usage-tracker.php:156
+#. translators: The plugin name.
+msgid ""
+"Allow %1$s to track plugin usage? Tracking will help improve %1$s by "
+"allowing us to gather anonymous usage data so we know which configurations, "
+"plugins and themes to test with. No sensitive data is tracked."
+msgstr ""
+
+#: lib/classes/usage-tracking/class-wp-plugin-usage-tracker.php:160
+msgid "Allow"
+msgstr ""
+
+#: lib/classes/usage-tracking/class-wp-plugin-usage-tracker.php:162
+msgid "Do not allow"
+msgstr ""
+
+#: lib/helpers.php:78
+msgid "No announcements found"
+msgstr ""
+
+#: lib/helpers.php:250
+msgid "There was an error processing the bootstrap icons."
+msgstr ""
+
+#: lib/helpers.php:896
+msgid "Read more"
+msgstr ""
+
+#: lib/helpers.php:953
+msgid "You forgot to include the announcement ID."
+msgstr ""
+
+#: lib/helpers.php:960
+msgid "You forgot to include the meta key."
+msgstr ""
+
+#: lib/helpers.php:1195
+msgid "Timeline Express Pro Settings"
+msgstr ""
+
+#: lib/helpers.php:1199
+msgid ""
+"Alter your timeline settings here. You can adjust some of the visual "
+"settings as well as the display order, below."
+msgstr ""
+
+#: lib/modules/banner-popups/banner-popups.php:84
+#. translators: Timeline Express singular post type name (eg: Announcement)
+msgid "%s Banner Popup"
+msgstr ""
+
+#: lib/modules/banner-popups/banner-popups.php:89
+#. translators: Timeline Express singular post type name - lowercase (eg:
+#. announcement)
+msgid "Preview the %s banner in a popup window."
+msgstr ""
+
+#: lib/modules/extra-content/lib/metabox.php:27
+msgid "Before Content"
+msgstr ""
+
+#: lib/modules/extra-content/lib/metabox.php:30
+#. translators: 1. Timeline Express singular post type name - lowercase (eg:
+#. announcement) 2. Additional notes markup.
+msgid "Add content before this %1$s on the timeline. %2$s"
+msgstr ""
+
+#: lib/modules/extra-content/lib/metabox.php:35
+#. translators: 1. Additional notes markup.
+msgid "<strong>Note:</strong> This will not be visible on horizontal timelines."
+msgstr ""
+
+#: lib/modules/extra-content/lib/metabox.php:46
+msgid "After Content"
+msgstr ""
+
+#: lib/modules/extra-content/lib/metabox.php:49
+#. translators: Timeline Express singular post type name - lowercase (eg:
+#. announcement)
+msgid "Add content after this %s on the timeline."
+msgstr ""
+
+#: lib/modules/side-nav/lib/class-tinymce.php:27
+msgid "Display Side Navigation"
+msgstr ""
+
+#: lib/modules/side-nav/lib/class-tinymce.php:29
+msgid "Display the side navigation for this timeline."
+msgstr ""
+
+#: lib/modules/styles/lib/partials/cmb2-fields/container-background-color.php:22
+#: lib/modules/styles/lib/partials/cmb2-fields/container-border.php:25
+#: lib/modules/styles/lib/partials/cmb2-fields/container-date-styles.php:27
+#: lib/modules/styles/lib/partials/cmb2-fields/container-excerpt-styles.php:27
+#: lib/modules/styles/lib/partials/cmb2-fields/container-shadow.php:28
+#: lib/modules/styles/lib/partials/cmb2-fields/container-style-two.php:63
+#: lib/modules/styles/lib/partials/cmb2-fields/container-title-styles.php:27
+msgid "Inherit"
+msgstr ""
+
+#: lib/modules/styles/lib/partials/cmb2-fields/container-background-color.php:28
+msgid "Background Color"
+msgstr ""
+
+#: lib/modules/styles/lib/partials/cmb2-fields/container-background-color.php:44
+msgid "Select the background color for this container."
+msgstr ""
+
+#: lib/modules/styles/lib/partials/cmb2-fields/container-border.php:33
+msgid "Border Style"
+msgstr ""
+
+#: lib/modules/styles/lib/partials/cmb2-fields/container-border.php:70
+msgid "Border Width (px)"
+msgstr ""
+
+#: lib/modules/styles/lib/partials/cmb2-fields/container-border.php:78
+msgid "Border Radius (px)"
+msgstr ""
+
+#: lib/modules/styles/lib/partials/cmb2-fields/container-border.php:86
+msgid "Border Color"
+msgstr ""
+
+#: lib/modules/styles/lib/partials/cmb2-fields/container-border.php:104
+msgid "Customize the border for this container."
+msgstr ""
+
+#: lib/modules/styles/lib/partials/cmb2-fields/container-date-styles.php:35
+#: lib/modules/styles/lib/partials/cmb2-fields/container-excerpt-styles.php:35
+#: lib/modules/styles/lib/partials/cmb2-fields/container-title-styles.php:35
+msgid "Size (px)"
+msgstr ""
+
+#: lib/modules/styles/lib/partials/cmb2-fields/container-date-styles.php:35
+#: lib/modules/styles/lib/partials/cmb2-fields/container-excerpt-styles.php:35
+#: lib/modules/styles/lib/partials/cmb2-fields/container-title-styles.php:35
+msgid "Note: Set this value to 0 to inherit the font size from the current theme."
+msgstr ""
+
+#: lib/modules/styles/lib/partials/cmb2-fields/container-date-styles.php:43
+#: lib/modules/styles/lib/partials/cmb2-fields/container-excerpt-styles.php:43
+#: lib/modules/styles/lib/partials/cmb2-fields/container-title-styles.php:43
+msgid "Font Style"
+msgstr ""
+
+#: lib/modules/styles/lib/partials/cmb2-fields/container-date-styles.php:76
+#: lib/modules/styles/lib/partials/cmb2-fields/container-excerpt-styles.php:76
+#: lib/modules/styles/lib/partials/cmb2-fields/container-title-styles.php:76
+msgid "Font Weight"
+msgstr ""
+
+#: lib/modules/styles/lib/partials/cmb2-fields/container-date-styles.php:84
+#: lib/modules/styles/lib/partials/cmb2-fields/container-excerpt-styles.php:84
+#: lib/modules/styles/lib/partials/cmb2-fields/container-title-styles.php:84
+msgid "inherit"
+msgstr ""
+
+#: lib/modules/styles/lib/partials/cmb2-fields/container-date-styles.php:93
+#: lib/modules/styles/lib/partials/cmb2-fields/container-excerpt-styles.php:93
+#: lib/modules/styles/lib/partials/cmb2-fields/container-title-styles.php:93
+msgid "Normal"
+msgstr ""
+
+#: lib/modules/styles/lib/partials/cmb2-fields/container-date-styles.php:98
+#: lib/modules/styles/lib/partials/cmb2-fields/container-excerpt-styles.php:98
+#: lib/modules/styles/lib/partials/cmb2-fields/container-title-styles.php:98
+msgid "Bold"
+msgstr ""
+
+#: lib/modules/styles/lib/partials/cmb2-fields/container-date-styles.php:147
+#: lib/modules/styles/lib/partials/cmb2-fields/container-excerpt-styles.php:147
+#: lib/modules/styles/lib/partials/cmb2-fields/container-title-styles.php:147
+#. translators: 1. Singular announcement name (eg: announcement).
+msgid "Customize the title styles for this %s."
+msgstr ""
+
+#: lib/modules/styles/lib/partials/cmb2-fields/container-shadow.php:36
+msgid "X-Offset (px)"
+msgstr ""
+
+#: lib/modules/styles/lib/partials/cmb2-fields/container-shadow.php:44
+msgid "Y-Offset (px)"
+msgstr ""
+
+#: lib/modules/styles/lib/partials/cmb2-fields/container-shadow.php:52
+msgid "Blur (px)"
+msgstr ""
+
+#: lib/modules/styles/lib/partials/cmb2-fields/container-shadow.php:60
+msgid "Spread (px)"
+msgstr ""
+
+#: lib/modules/styles/lib/partials/cmb2-fields/container-shadow.php:78
+msgid "Customize the shadow behind this container."
+msgstr ""
+
+#: lib/modules/styles/lib/partials/cmb2-fields/container-style-one.php:24
+msgid "Title Background"
+msgstr ""
+
+#: lib/modules/styles/lib/partials/cmb2-fields/container-style-one.php:44
+msgid "Content Background"
+msgstr ""
+
+#: lib/modules/styles/lib/partials/cmb2-fields/container-style-one.php:64
+msgid "Content Text Color"
+msgstr ""
+
+#: lib/modules/styles/lib/partials/cmb2-fields/container-style-one.php:86
+#. translators: 1. Singular announcement name (eg: announcement).
+msgid "Customize \"Style One\" container styles for this %s."
+msgstr ""
+
+#: lib/modules/styles/lib/partials/cmb2-fields/container-style-two.php:28
+msgid "Read More Width (%)"
+msgstr ""
+
+#: lib/modules/styles/lib/partials/cmb2-fields/container-style-two.php:29
+msgid "Note: Set this value to 0 to inherit the width from the current theme."
+msgstr ""
+
+#: lib/modules/styles/lib/partials/cmb2-fields/container-style-two.php:54
+msgid "Read More Text Align"
+msgstr ""
+
+#: lib/modules/styles/lib/partials/cmb2-fields/container-style-two.php:55
+msgid ""
+"Note: Set this value to 0 to inherit the read more width from the current "
+"theme."
+msgstr ""
+
+#: lib/modules/styles/lib/partials/cmb2-fields/container-style-two.php:64
+msgid "Left"
+msgstr ""
+
+#: lib/modules/styles/lib/partials/cmb2-fields/container-style-two.php:65
+msgid "Right"
+msgstr ""
+
+#: lib/modules/styles/lib/partials/cmb2-fields/container-style-two.php:66
+msgid "Center"
+msgstr ""
+
+#: lib/modules/styles/lib/partials/cmb2-fields/container-style-two.php:90
+#. translators: 1. Singular announcement name (eg: announcement).
+msgid "Customize \"Style Two\" container styles for this %s."
+msgstr ""
+
+#: lib/modules/styles/lib/partials/metabox-groups/container-style-one.php:15
+#: lib/modules/styles/lib/partials/styles-helpers.php:106
+msgid "Style One"
+msgstr ""
+
+#: lib/modules/styles/lib/partials/metabox-groups/container-style-two.php:15
+#: lib/modules/styles/lib/partials/styles-helpers.php:107
+msgid "Style Two"
+msgstr ""
+
+#: lib/modules/styles/lib/partials/styles-helpers.php:105
+#: lib/modules/styles/lib/partials/styles-helpers.php:136
+#: lib/modules/styles/lib/partials/styles-metabox.php:60
+msgid "Default"
+msgstr ""
+
+#: lib/modules/styles/lib/partials/styles-helpers.php:108
+msgid "Style Three"
+msgstr ""
+
+#: lib/modules/styles/lib/partials/styles-helpers.php:137
+msgid "Bounce"
+msgstr ""
+
+#: lib/modules/styles/lib/partials/styles-helpers.php:138
+msgid "Flash"
+msgstr ""
+
+#: lib/modules/styles/lib/partials/styles-helpers.php:139
+msgid "Pulse"
+msgstr ""
+
+#: lib/modules/styles/lib/partials/styles-helpers.php:140
+msgid "Rubber Band"
+msgstr ""
+
+#: lib/modules/styles/lib/partials/styles-helpers.php:141
+msgid "Shake"
+msgstr ""
+
+#: lib/modules/styles/lib/partials/styles-helpers.php:142
+msgid "Tada"
+msgstr ""
+
+#: lib/modules/styles/lib/partials/styles-helpers.php:143
+msgid "Wobble"
+msgstr ""
+
+#: lib/modules/styles/lib/partials/styles-helpers.php:144
+msgid "Jello"
+msgstr ""
+
+#: lib/modules/styles/lib/partials/styles-helpers.php:145
+msgid "Swing"
+msgstr ""
+
+#: lib/modules/styles/lib/partials/styles-helpers.php:146
+msgid "Bounce In"
+msgstr ""
+
+#: lib/modules/styles/lib/partials/styles-helpers.php:147
+msgid "Bounce In Down"
+msgstr ""
+
+#: lib/modules/styles/lib/partials/styles-helpers.php:148
+msgid "Bounce In Left"
+msgstr ""
+
+#: lib/modules/styles/lib/partials/styles-helpers.php:149
+msgid "Bounce In Right"
+msgstr ""
+
+#: lib/modules/styles/lib/partials/styles-helpers.php:150
+msgid "Fade In"
+msgstr ""
+
+#: lib/modules/styles/lib/partials/styles-helpers.php:151
+msgid "Fade In - Down"
+msgstr ""
+
+#: lib/modules/styles/lib/partials/styles-helpers.php:152
+msgid "Fade In - Down Big"
+msgstr ""
+
+#: lib/modules/styles/lib/partials/styles-helpers.php:153
+msgid "Fade In - Left"
+msgstr ""
+
+#: lib/modules/styles/lib/partials/styles-helpers.php:154
+msgid "Fade In - Left Big"
+msgstr ""
+
+#: lib/modules/styles/lib/partials/styles-helpers.php:155
+msgid "Fade In - Right"
+msgstr ""
+
+#: lib/modules/styles/lib/partials/styles-helpers.php:156
+msgid "Fade In - Right Big"
+msgstr ""
+
+#: lib/modules/styles/lib/partials/styles-helpers.php:157
+msgid "Fade In - Up"
+msgstr ""
+
+#: lib/modules/styles/lib/partials/styles-helpers.php:158
+msgid "Fade In - Up Big"
+msgstr ""
+
+#: lib/modules/styles/lib/partials/styles-helpers.php:159
+msgid "Flip In - X Axis"
+msgstr ""
+
+#: lib/modules/styles/lib/partials/styles-helpers.php:160
+msgid "Flip In - Y Axis"
+msgstr ""
+
+#: lib/modules/styles/lib/partials/styles-helpers.php:161
+msgid "Lightspeed"
+msgstr ""
+
+#: lib/modules/styles/lib/partials/styles-helpers.php:162
+msgid "Rotate In"
+msgstr ""
+
+#: lib/modules/styles/lib/partials/styles-helpers.php:163
+msgid "Rotate In - Down Left"
+msgstr ""
+
+#: lib/modules/styles/lib/partials/styles-helpers.php:164
+msgid "Rotate In - Down Right"
+msgstr ""
+
+#: lib/modules/styles/lib/partials/styles-helpers.php:165
+msgid "Rotate In - Up Left"
+msgstr ""
+
+#: lib/modules/styles/lib/partials/styles-helpers.php:166
+msgid "Rotate In - Up Right"
+msgstr ""
+
+#: lib/modules/styles/lib/partials/styles-helpers.php:167
+msgid "Slide In - Left"
+msgstr ""
+
+#: lib/modules/styles/lib/partials/styles-helpers.php:168
+msgid "Slide In - Right"
+msgstr ""
+
+#: lib/modules/styles/lib/partials/styles-helpers.php:169
+msgid "Zoom In"
+msgstr ""
+
+#: lib/modules/styles/lib/partials/styles-helpers.php:170
+msgid "Zoom In - Down"
+msgstr ""
+
+#: lib/modules/styles/lib/partials/styles-helpers.php:171
+msgid "Zoom In - Left"
+msgstr ""
+
+#: lib/modules/styles/lib/partials/styles-helpers.php:172
+msgid "Zoom In - Right"
+msgstr ""
+
+#: lib/modules/styles/lib/partials/styles-helpers.php:173
+msgid "Zoom In - Up"
+msgstr ""
+
+#: lib/modules/styles/lib/partials/styles-helpers.php:174
+msgid "Roll In"
+msgstr ""
+
+#: lib/modules/styles/lib/partials/styles-helpers.php:175
+msgid "Jack in The Box"
+msgstr ""
+
+#: lib/modules/styles/lib/partials/styles-metabox.php:14
+#. translators: Timeline Express singular post type name (eg: Announcement)
+msgid "%s Styles"
+msgstr ""
+
+#: lib/modules/styles/lib/partials/styles-metabox.php:33
+msgid "Icon Styles"
+msgstr ""
+
+#: lib/modules/styles/lib/partials/styles-metabox.php:36
+msgid "Icon Animation"
+msgstr ""
+
+#: lib/modules/styles/lib/partials/styles-metabox.php:39
+#. translators: Timeline Express singular post type name (eg: announcement)
+msgid "Select the animation for the %s icon."
+msgstr ""
+
+#: lib/modules/styles/lib/partials/styles-metabox.php:49
+msgid "Icon Style"
+msgstr ""
+
+#: lib/modules/styles/lib/partials/styles-metabox.php:52
+#. translators: 1. Singular announcement name (eg: announcement).
+msgid "Select the icon style for this %s."
+msgstr ""
+
+#: lib/modules/styles/lib/partials/styles-metabox.php:61
+msgid "Small Dot (no icon)"
+msgstr ""
+
+#: lib/modules/styles/lib/partials/styles-metabox.php:62
+msgid "Square"
+msgstr ""
+
+#: lib/modules/styles/lib/partials/styles-metabox.php:63
+msgid "Rotated Square"
+msgstr ""
+
+#: lib/modules/styles/lib/partials/styles-metabox.php:67
+msgid "Border color"
+msgstr ""
+
+#: lib/modules/styles/lib/partials/styles-metabox.php:73
+msgid "Hide Icon"
+msgstr ""
+
+#: lib/modules/styles/lib/partials/styles-metabox.php:79
+#. translators: Announcement singular name.
+msgid "Hide the icon associated with this %s."
+msgstr ""
+
+#: lib/modules/styles/lib/partials/styles-metabox.php:88
+msgid "Container Styles"
+msgstr ""
+
+#: lib/modules/styles/lib/partials/styles-metabox.php:91
+msgid "Container Style"
+msgstr ""
+
+#: lib/modules/styles/lib/partials/styles-metabox.php:94
+#. translators: 1. Singular announcement name (eg: announcement).
+msgid "Select the conatiner style for this %s."
+msgstr ""
+
+#: lib/modules/styles/lib/partials/styles-metabox.php:104
+msgid "Container Animation"
+msgstr ""
+
+#: lib/modules/styles/lib/partials/styles-metabox.php:107
+#. translators: Timeline Express singular post type name (eg: announcement)
+msgid "Select the animation for the %s container."
+msgstr ""
+
+#: lib/modules/styles/lib/partials/styles-metabox.php:117
+msgid "Container Arrow"
+msgstr ""
+
+#: lib/modules/styles/lib/partials/styles-metabox.php:120
+#. translators: Timeline Express singular post type name (eg: announcement)
+msgid "Hide the %s container arrow pointing to the icon."
+msgstr ""
+
+#: lib/modules/styles/lib/partials/styles-metabox.php:128
+msgid "Container Background"
+msgstr ""
+
+#: lib/modules/styles/lib/partials/styles-metabox.php:137
+msgid "Container Border"
+msgstr ""
+
+#: lib/modules/styles/lib/partials/styles-metabox.php:149
+msgid "Container Shadow"
+msgstr ""
+
+#: lib/modules/styles/lib/partials/styles-metabox.php:165
+msgid "Title Styles"
+msgstr ""
+
+#: lib/modules/styles/lib/partials/styles-metabox.php:168
+msgid "Styles"
+msgstr ""
+
+#: lib/modules/styles/lib/partials/styles-metabox.php:213
+msgid "Date Styles"
+msgstr ""
+
+#: lib/modules/styles/lib/partials/styles-metabox.php:216
+msgid "Placeholder"
+msgstr ""
+
+#: lib/modules/styles/lib/partials/styles-metabox.php:236
+#: lib/modules/styles/lib/partials/styles-metabox.php:239
+msgid "Excerpt Styles"
+msgstr ""
+
+#: lib/modules/styles/lib/partials/styles-metabox.php:259
+msgid "Read More"
+msgstr ""
+
+#: lib/modules/styles/lib/partials/styles-metabox.php:262
+msgid "Disable Read More"
+msgstr ""
+
+#: lib/modules/styles/lib/partials/styles-metabox.php:268
+#. translators: Announcement singular name.
+msgid "Disable the 'Read More' links for this %s."
+msgstr ""
+
+#: lib/modules/styles/lib/partials/styles-metabox.php:281
+#: lib/modules/styles/lib/partials/styles-metabox.php:284
+msgid "Custom CSS"
+msgstr ""
+
+#: lib/modules/styles/lib/partials/styles-metabox.php:289
+#. translators: 1. Announcement singular name. (eg: annoucement) 2. Link to
+#. help documentation.
+msgid ""
+"Enter custom CSS for this %1$s. Note: Styles added here will only affect "
+"this %1$s. %2$s"
+msgstr ""
+
+#: lib/public/partials/timeline-express-filters.php:60
+#: templates/timeline-express-filters.php:60
+msgid "All Timelines"
+msgstr ""
+
+#: lib/public/partials/timeline-express-filters.php:95
+#: templates/timeline-express-filters.php:95
+msgid "Filter by Timeline"
+msgstr ""
+
+#: lib/public/partials/timeline-express-filters.php:120
+#: templates/timeline-express-filters.php:120
+msgid "Filter by Category"
+msgstr ""
+
+#: lib/public/partials/timeline-express-filters.php:178
+#: templates/timeline-express-filters.php:178
+msgid "Filter Timeline"
+msgstr ""
+
+#: lib/public/partials/timeline-express-pagination.php:36
+#: templates/timeline-express-pagination.php:36
+msgid "Previous"
+msgstr ""
+
+#: lib/public/partials/timeline-express-pagination.php:73
+#: templates/timeline-express-pagination.php:73
+msgid "Next &rsaquo;"
+msgstr ""
+
+#: lib/support-files/support-contact-form.php:18
+msgid ""
+"If you need support, please fill out the following form. We will get back "
+"to you as soon as possible."
+msgstr ""
+
+#: lib/support-files/support-contact-form.php:22
+msgid "Note: support requests are limited to one per hour, to help reduce spam."
+msgstr ""
+
+#: lib/support-files/support-contact-form.php:28
+msgid "Your name"
+msgstr ""
+
+#: lib/support-files/support-contact-form.php:31
+msgid "Your message"
+msgstr ""
+
+#: lib/support-files/support-contact-form.php:32
+msgid "Please describe your issue in as much detail as possible"
+msgstr ""
+
+#: lib/support-files/support-contact-form.php:34
+msgid "Get Support"
+msgstr ""
+
+#: lib/support-files/support-contact-form.php:49
+msgid "All fields are required, please fill in the form again."
+msgstr ""
+
+#: lib/support-files/support-contact-form.php:65
+msgid "There was an error sending your request"
+msgstr ""
+
+#: lib/support-files/support-contact-form.php:66
+#. translators: Anchor tag linking to the Timeline Express support email
+#. address.
+msgid ""
+"If the error persists, please contact our support team directly for support "
+"at %s."
+msgstr ""
+
+#: lib/support-files/support-contact-form.php:66
+msgid "Email Support"
+msgstr ""
+
+#: lib/support-files/support-contact-form.php:74
+msgid ""
+"Support request successfully sent. I will be in touch regarding your issue "
+"shortly."
+msgstr ""
+
+#: timeline-express-pro.php:71
+#. translators: HTML markup wrapped around the text "Error"
+msgid "Error"
+msgstr ""
+
+#: timeline-express-pro.php:72
+msgid ""
+"Please de-activate the free version before activating the pro version. Once "
+"the pro version is activated, you can uninstall the free version safely."
+msgstr ""
+
+#: timeline-express-pro.php:73
+#. translators: HTML anchor linking to Timeline Express documentation.
+msgid "Installation Documentation"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid "https://www.wp-timelineexpress.com"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"Create a beautiful vertical, CSS3 animated and responsive timeline in "
+"minutes flat without writing code."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Code Parrots"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "http://www.codeparrots.com"
+msgstr ""
+
+#: lib/admin/pages/page.addons.php:520
+msgctxt "Active plugin installs"
+msgid "1+ Million"
+msgstr ""
+
+#: lib/admin/pages/page.addons.php:524
+msgctxt "Active plugin installs"
+msgid "Less Than 10"
+msgstr ""

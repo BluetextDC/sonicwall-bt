@@ -1,0 +1,8 @@
+/*
+ * @Plugin Timeline Express Pro
+ * @Author Code Parrots
+ * @Site https://www.wp-timelineexpress.com
+ * @Version 2.2.7
+ * @Build 11-03-2018
+ */
+#cd-timeline .banner-popup .wp-video .mejs-container,#cd-timeline .banner-popup .wp-video .wp-video-shortcode{margin-bottom:0}#cd-timeline .banner-popup .announcement-banner-image{box-shadow:none}#cd-timeline .banner-popup a.banner-preview:active,#cd-timeline .banner-popup a.banner-preview:focus,#cd-timeline .banner-popup a.banner-preview:hover{text-decoration:none;border:none;box-shadow:none!important}#cd-timeline .banner-popup .wp-video .mejs-controls,#cd-timeline .banner-popup .wp-video .mejs-layers{display:none}#cd-timeline .banner-preview,#cd-timeline .wp-video{position:relative;display:block;float:left;margin-bottom:5px;width:100%}#cd-timeline .banner-preview img,#cd-timeline .wp-video img{margin-bottom:0;display:block;width:100%}#cd-timeline .banner-preview div.overlay,#cd-timeline .wp-video div.overlay{position:absolute;top:0;left:0;width:100%;height:100%;color:#fff;font-size:10px;font-weight:700;background-color:rgba(0,0,0,.5);text-align:center;display:table-cell;vertical-align:middle;opacity:0}#cd-timeline .banner-preview div.overlay span.fa.preview-icon,#cd-timeline .wp-video div.overlay span.fa.preview-icon{bottom:0;height:25px;left:0;margin:auto;position:absolute;top:0;right:0;width:25px;font-size:25px;line-height:25px}#cd-timeline .banner-preview div.overlay:hover,#cd-timeline .wp-video div.overlay:hover{opacity:1;-webkit-transition:opacity .25s;-moz-transition:opacity .25s;-o-transition:opacity .25s;transition:opacity .25s}

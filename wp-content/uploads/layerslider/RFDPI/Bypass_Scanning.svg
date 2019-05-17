@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="288px" height="59px" viewBox="0 0 288 59" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Bypass_Scanning</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Bypass_Scanning" transform="translate(2.400000, 0.358530)">
+            <g id="Group-54" transform="translate(281.400000, 3.603150) rotate(-90.000000) translate(-281.400000, -3.603150) translate(277.800000, -0.600525)" fill="#FFCC01">
+                <polygon id="Path-60-Copy-3" points="3.70793973 4.20367454 0 0 3.70793973 0 7.2 4.20367454"></polygon>
+                <polygon id="Path-60-Copy-6" transform="translate(3.600000, 6.305512) scale(1, -1) translate(-3.600000, -6.305512) " points="3.70793973 8.40734908 0 4.20367454 3.70793973 4.20367454 7.2 8.40734908"></polygon>
+            </g>
+            <path d="M0.204440298,26.4462642 L0.204440298,53.311565 C0.204440298,54.6370484 1.2789569,55.711565 2.6044403,55.711565 L278.96325,55.711565 C280.288733,55.711565 281.36325,54.6370484 281.36325,53.311565 L281.36325,0.999300437" id="Path-73" stroke="#FFCC01" stroke-width="4" stroke-linecap="round" stroke-dasharray="1,6.800000190734863"></path>
+        </g>
+    </g>
+</svg>

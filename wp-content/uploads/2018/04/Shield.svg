@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 92 94" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:10;">
+    <g transform="matrix(1,0,0,1,-996,-640)">
+        <g id="Shield">
+            <g transform="matrix(0.653086,0,0,-0.647422,1003.57,730.791)">
+                <path d="M55,0C55,0 110,21.059 110,68.008L110,119.005C110,119.005 85.384,136 55,136C24.621,136 0,119.005 0,119.005L0,68.008C0,21.059 55,0 55,0Z" style="fill:none;stroke:rgb(100,101,105);stroke-width:7.69px;"/>
+            </g>
+            <g transform="matrix(0.653086,0,0,-0.647422,1021.2,697.125)">
+                <path d="M63,42L42.011,21L20.989,0L0,21" style="fill:none;stroke:rgb(100,101,105);stroke-width:7.69px;stroke-linejoin:miter;"/>
+            </g>
+        </g>
+    </g>
+</svg>

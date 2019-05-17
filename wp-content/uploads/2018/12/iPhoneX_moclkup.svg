@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="426px" height="807px" viewBox="0 0 426 807" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 108</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="360" height="741.913043" rx="52.3848019"></rect>
+        <filter x="-16.8%" y="-5.2%" width="133.6%" height="116.3%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="22" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="16.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.32 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <filter x="-11.8%" y="-2.8%" width="123.6%" height="111.5%" filterUnits="objectBoundingBox" id="filter-3">
+            <feGaussianBlur stdDeviation="6.5" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="0" dy="-6" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 1   0 0 0 0 1   0 0 0 0 1  0 0 0 0.12 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+        <rect id="path-4" x="16.4347826" y="16.4347826" width="327.405012" height="709.301481" rx="34.9232013"></rect>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-108" transform="translate(33.000000, 10.000000)">
+            <g id="dark-copy-6" transform="translate(0.000000, 0.848593)">
+                <g id="dark-copy-2">
+                    <g id="base">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                        <use fill="#3D3D3D" fill-rule="evenodd" xlink:href="#path-1"></use>
+                        <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-1"></use>
+                    </g>
+                    <mask id="mask-5" fill="white">
+                        <use xlink:href="#path-4"></use>
+                    </mask>
+                    <use id="mask" fill="#1F1F1F" xlink:href="#path-4"></use>
+                    <path d="M91.9644301,15.7234318 L268.326597,15.7234318 L268.326597,21.5569882 C268.326597,32.4866007 259.466395,41.3468023 248.536783,41.3468023 L111.754244,41.3468023 C100.824632,41.3468023 91.9644301,32.4866007 91.9644301,21.5569882 L91.9644301,15.7234318 Z" id="bar" fill="#3D3D3D"></path>
+                </g>
+            </g>
+            <rect id="Rectangle-Copy-22" fill="#4E4E4E" fill-rule="nonzero" x="117" y="710" width="125.079284" height="3.84859335" rx="1.92429668"></rect>
+        </g>
+    </g>
+</svg>

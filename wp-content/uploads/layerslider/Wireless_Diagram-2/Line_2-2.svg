@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="572px" height="556px" viewBox="0 0 572 556" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50 (54983) - http://www.bohemiancoding.com/sketch -->
+    <title>Line_2</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Line_2" fill="#47AFE8">
+            <path d="M572,555.463354 C567.692091,552.690436 562.978455,550.55104 558,549.152597 L558,512.999999 C558,509.134006 561.134006,506 564.999999,506 C568.865992,506 571.999999,509.134006 571.999999,512.999999 L571.999999,555.463353 Z" id="Wireless2_Line2_1" fill-rule="nonzero"></path>
+            <path d="M408.274537,5 L408.274537,0 L553.010181,0 C561.017508,0 567.5,6.53831063 567.5,14.5930593 L567.5,543.795385 L562.5,543.795385 L562.5,14.5930593 C562.5,9.29018355 558.246442,5 553.010181,5 L408.274537,5 Z" id="Path-18"></path>
+            <polygon id="Path-18" points="0 6 0 1 60 1 60 6"></polygon>
+            <polygon id="Path-18" points="119.964635 5 119.964635 0 157.064971 0 157.064971 5"></polygon>
+        </g>
+    </g>
+</svg>

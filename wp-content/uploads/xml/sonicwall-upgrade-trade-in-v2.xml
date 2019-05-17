@@ -1,0 +1,1798 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Types>
+  <Type name="Firewall">
+    <Brands>
+      <Brand name="Barracuda">
+        <Models>
+          <Model name="F10">
+            <Products>
+              <Product>SOHO Series</Product>
+              <Product>SOHO 250 Series</Product>
+              <Product>TZ 300 Series</Product>
+              <Product>TZ 400 Series</Product>
+			  <Product>TZ 500 Series</Product>
+              <Product default="true">TZ 600</Product>
+            </Products>
+          </Model>
+          <Model name="F100">
+            <Products>
+              <Product>SOHO Series</Product>
+              <Product>SOHO 250 Series</Product>
+              <Product>TZ 300 Series</Product>
+              <Product>TZ 400 Series</Product>
+              <Product>TZ 500 Series</Product>
+              <Product default="true">TZ 600</Product>
+            </Products>
+          </Model>
+          <Model name="F200">
+            <Products>
+              <Product>SOHO Series</Product>
+              <Product>SOHO 250 Series</Product>
+              <Product>TZ 300 Series</Product>
+              <Product>TZ 400 Series</Product>
+              <Product>TZ 500 Series</Product>
+              <Product default="true">TZ 600</Product>
+              <Product>NS<i>a</i> 2650</Product>
+            </Products>
+          </Model>
+          <Model name="F201">
+            <Product>SOHO Series</Product>
+            <Product>SOHO 250 Series</Product>
+            <Product>TZ 300 Series</Product>
+            <Product>TZ 400 Series</Product>
+            <Product>TZ 500 Series</Product>
+            <Product default="true">TZ 600</Product>
+          </Model>
+          <Model name="F300">
+            <Products>
+              <Product>NS<i>a</i> 2650 Series</Product>
+              <Product default="true">NS<i>a</i> 3650</Product>
+            </Products>
+          </Model>
+          <Model name="F400">
+            <Products>
+              <Product default="true">NS<i>a</i> 3650</Product>
+              <Product>NS<i>a</i> 4650</Product>
+            </Products>
+          </Model>
+          <Model name="F600">
+            <Products>
+              <Product default="true">NS<i>a</i> 5650</Product>
+            </Products>
+          </Model>
+          <Model name="F800">
+            <Products>
+              <Product default="true">NS<i>a</i> 6650</Product>
+            </Products>
+          </Model>
+          <Model name="F900">
+            <Products>
+              <Product default="true">NS<i>a</i> 9250</Product>
+            </Products>
+          </Model>
+          <Model name="SGS 400 Series">
+            <Products>
+              <Product>SOHO Series</Product>
+              <Product>SOHO 250 Series</Product>
+              <Product>TZ 300 Series</Product>
+              <Product>TZ 400 Series</Product>
+              <Product>TZ 500 Series</Product>
+              <Product default="true">TZ 600</Product>
+            </Products>
+          </Model>
+          <Model name="SGS 5620">
+            <Products>
+              <Product default="true">NS<i>a</i> 3650</Product>
+              <Product>NS<i>a</i> 4650</Product>
+            </Products>
+          </Model>
+          <Model name="SGS 5640">
+            <Products>
+              <Product default="true">NS<i>a</i> 5650</Product>
+            </Products>
+          </Model>
+          <Model name="SGS 5660">
+            <Products>
+              <Product default="true">NS<i>a</i> 6650</Product>
+            </Products>
+          </Model>
+          <Model name="X200">
+            <Products>
+              <Product>SOHO Series</Product>
+              <Product>SOHO 250 Series</Product>
+              <Product>TZ 300 Series</Product>
+              <Product>TZ 400 Series</Product>
+              <Product>TZ 500 Series</Product>
+              <Product default="true">TZ 600</Product>
+            </Products>
+          </Model>
+          <Model name="X201">
+            <Products>
+              <Product>SOHO Series</Product>
+              <Product>SOHO 250 Series</Product>
+              <Product>TZ 300 Series</Product>
+              <Product>TZ 400 Series</Product>
+              <Product>TZ 500 Series</Product>
+              <Product default="true">TZ 600</Product>
+            </Products>
+          </Model>
+          <Model name="X300">
+            <Products>
+              <Product>SOHO Series</Product>
+              <Product>SOHO 250 Series</Product>
+              <Product>TZ 300 Series</Product>
+              <Product>TZ 400 Series</Product>
+              <Product>TZ 500 Series</Product>
+              <Product default="true">TZ 600</Product>
+              <Product>NS<i>a</i> 2650</Product>
+              <Product default="true">NS<i>a</i> 3650</Product>
+            </Products>
+          </Model>
+          <Model name="X400">
+            <Products>
+              <Product default="true">NS<i>a</i> 3650</Product>
+              <Product>NS<i>a</i> 4650</Product>
+            </Products>
+          </Model>
+          <Model name="X600">
+            <Products>
+              <Product default="true">NS<i>a</i> 5650</Product>
+            </Products>
+          </Model>
+        </Models>
+      </Brand>
+      <Brand name="Check Point">
+        <Models>
+          <Model name="FW-1 NG">
+            <Products>
+              <Product>NS<i>a</i> 9250</Product>
+              <Product>NS<i>a</i> 9450</Product>
+              <Product>NS<i>a</i> 9650</Product>
+              <Product default="true">SuperMassive 9800</Product>
+            </Products>
+          </Model>
+          <Model name="Safe@Office Series">
+            <Products>
+              <Product>SOHO Series</Product>
+              <Product>SOHO 250 Series</Product>
+              <Product>TZ 300 Series</Product>
+              <Product>TZ 400 Series</Product>
+              <Product>TZ 500 Series</Product>
+              <Product default="true">TZ 600</Product>
+            </Products>
+          </Model>
+          <Model name="UTM-1 1050">
+            <Products>
+              <Product default="true">NS<i>a</i> 5650</Product>
+            </Products>
+          </Model>
+          <Model name="UTM 1450">
+            <Products>
+              <Product default="true">NS<i>a</i> 4650</Product>
+            </Products>
+          </Model>
+          <Model name="UTM-1 2050">
+            <Products>
+              <Product default="true">NS<i>a</i> 6650</Product>
+            </Products>
+          </Model>
+          <Model name="UTM-1 2205">
+            <Products>
+              <Product default="true">NS<i>a</i> 5650</Product>
+            </Products>
+          </Model>
+          <Model name="UTM-1 2207">
+            <Products>
+              <Product default="true">NS<i>a</i> 5650</Product>
+            </Products>
+          </Model>
+          <Model name="UTM-1 2208">
+            <Products>
+              <Product default="true">NS<i>a</i> 5650</Product>
+            </Products>
+          </Model>
+          <Model name="UTM-1 2210">
+            <Products>
+              <Product default="true">NS<i>a</i> 5650</Product>
+            </Products>
+          </Model>
+          <Model name="UTM-1 4200">
+            <Products>
+              <Product default="true">NS<i>a</i> 6650</Product>
+            </Products>
+          </Model>
+          <Model name="UTM 4600">
+            <Products>
+              <Product>NS<i>a</i> 9250</Product>
+              <Product>NS<i>a</i> 9450</Product>
+              <Product>NS<i>a</i> 9650</Product>
+              <Product default="true">SuperMassive 9800</Product>
+            </Products>
+          </Model>
+          <Model name="UTM-1 5600">
+            <Products>
+              <Product default="true">NS<i>a</i> 6650</Product>
+            </Products>
+          </Model>
+          <Model name="UTM-1 5900">
+            <Products>
+              <Product default="true">NS<i>a</i> 9250</Product>
+            </Products>
+          </Model>
+          <Model name="UTM-1 15400">
+            <Products>
+              <Product default="true">NS<i>a</i> 9650</Product>
+            </Products>
+          </Model>
+          <Model name="UTM-1 Edge Series">
+            <Products>
+              <Product>SOHO Series</Product>
+              <Product>SOHO 250 Series</Product>
+              <Product>TZ 300 Series</Product>
+              <Product>TZ 400 Series</Product>
+              <Product>TZ 500 Series</Product>
+              <Product default="true">TZ 600</Product>
+            </Products>
+          </Model>
+          <Model name="600 Series">
+            <Products>
+              <Product>SOHO Series</Product>
+              <Product>SOHO 250 Series</Product>
+              <Product>TZ 300 Series</Product>
+              <Product>TZ 400 Series</Product>
+              <Product>TZ 500 Series</Product>
+              <Product default="true">TZ 600</Product>
+            </Products>
+          </Model>
+          <Model name="1100 Series">
+            <Products>
+              <Product>SOHO Series</Product>
+              <Product>SOHO 250 Series</Product>
+              <Product>TZ 300 Series</Product>
+              <Product>TZ 400 Series</Product>
+              <Product>TZ 500 Series</Product>
+              <Product default="true">TZ 600</Product>
+            </Products>
+          </Model>
+          <Model name="1400 Series">
+            <Products>
+              <Product>NS<i>a</i> 2650</Product>
+            </Products>
+          </Model>
+          <Model name="VPN-1 NG">
+            <Products>
+              <Product>NS<i>a</i> 9250</Product>
+              <Product>NS<i>a</i> 9450</Product>
+              <Product>NS<i>a</i> 9650</Product>
+              <Product default="true">SuperMassive 9800</Product>
+            </Products>
+          </Model>
+        </Models>
+      </Brand>
+      <Brand name="Cisco/Meraki">
+        <Models>
+          <Model name="ASA 5505">
+            <Products>
+              <Product>SOHO Series</Product>
+              <Product>SOHO 250 Series</Product>
+              <Product>TZ 300 Series</Product>
+              <Product>TZ 400 Series</Product>
+              <Product>TZ 500 Series</Product>
+              <Product default="true">TZ 600</Product>
+            </Products>
+          </Model>
+          <Model name="ASA 5506">
+            <Products>
+              <Product>SOHO Series</Product>
+              <Product>SOHO 250 Series</Product>
+              <Product>TZ 300 Series</Product>
+              <Product>TZ 400 Series</Product>
+              <Product>TZ 500 Series</Product>
+              <Product default="true">TZ 600</Product>
+            </Products>
+          </Model>
+		  <Model name="ASA 5508">
+            <Products>
+              <Product>SOHO Series</Product>
+              <Product>SOHO 250 Series</Product>
+              <Product>TZ 300 Series</Product>
+              <Product>TZ 400 Series</Product>
+              <Product>TZ 500 Series</Product>
+              <Product default="true">TZ 600</Product>
+            </Products>
+          </Model>
+          <Model name="ASA 5510">
+            <Products>
+              <Product>SOHO Series</Product>
+              <Product>SOHO 250 Series</Product>
+              <Product>TZ 300 Series</Product>
+              <Product>TZ 400 Series</Product>
+              <Product>TZ 500 Series</Product>
+              <Product default="true">TZ 600</Product>
+              <Product>NS<i>a</i> 2650</Product>
+              <Product default="true">NS<i>a</i> 3650</Product>
+            </Products>
+          </Model>
+          <Model name="ASA 5512-X">
+            <Products>
+              <Product>SOHO Series</Product>
+              <Product>SOHO 250 Series</Product>
+              <Product>TZ 300 Series</Product>
+              <Product>TZ 400 Series</Product>
+              <Product>TZ 500 Series</Product>
+              <Product default="true">TZ 600</Product>
+              <Product default="true">NS<i>a</i> 3650</Product>
+            </Products>
+          </Model>
+          <Model name="ASA 5515-X">
+            <Products>
+              <Product default="true">NS<i>a</i> 4650</Product>
+              <Product>NS<i>a</i> 5650</Product>
+            </Products>
+          </Model>
+          <Model name="ASA 5516">
+            <Products>
+              <Product default="true">NS<i>a</i> 3650</Product>
+              <Product>NS<i>a</i> 4650</Product>
+            </Products>
+          </Model>
+          <Model name="ASA 5520">
+            <Products>
+              <Product default="true">NS<i>a</i> 3650</Product>
+              <Product>NS<i>a</i> 4650</Product>
+              <Product>NS<i>a</i> 5650</Product>
+            </Products>
+          </Model>
+          <Model name="ASA 5525-X">
+            <Products>
+              <Product default="true">NS<i>a</i> 4650</Product>
+              <Product>NS<i>a</i> 5650</Product>
+            </Products>
+          </Model>
+          <Model name="ASA 5540">
+            <Products>
+              <Product default="true">NS<i>a</i> 3650</Product>
+              <Product>NS<i>a</i> 4650</Product>
+              <Product>NS<i>a</i> 5650</Product>
+              <Product>NS<i>a</i> 6650</Product>
+              <Product>NS<i>a</i> 9250</Product>
+              <Product>NS<i>a</i> 9450</Product>
+              <Product>NS<i>a</i> 9650</Product>
+              <Product>SuperMassive 9800</Product>
+            </Products>
+          </Model>
+          <Model name="ASA 5545-X">
+            <Products>
+              <Product default="true">NS<i>a</i> 6650</Product>
+            </Products>
+          </Model>
+          <Model name="ASA 5550">
+            <Products>
+              <Product default="true">NS<i>a</i> 5650</Product>
+              <Product>NS<i>a</i> 6650</Product>
+              <Product>NS<i>a</i> 9250</Product>
+              <Product>NS<i>a</i> 9450</Product>
+              <Product>NS<i>a</i> 9650</Product>
+              <Product>SuperMassive 9800</Product>
+            </Products>
+          </Model>
+          <Model name="ASA 5585">
+            <Products>
+              <Product>NS<i>a</i> 9250</Product>
+              <Product>NS<i>a</i> 9450</Product>
+              <Product>NS<i>a</i> 9650</Product>
+              <Product default="true">SuperMassive 9800</Product>
+            </Products>
+          </Model>
+          <Model name="ASA 5585-X">
+            <Products>
+              <Product>NS<i>a</i> 9250</Product>
+              <Product>NS<i>a</i> 9450</Product>
+              <Product>NS<i>a</i> 9650</Product>
+              <Product default="true">SuperMassive 9800</Product>
+            </Products>
+          </Model>
+          <Model name="Meraki MX84">
+            <Products>
+              <Product>SOHO Series</Product>
+              <Product>SOHO 250 Series</Product>
+              <Product>TZ 300 Series</Product>
+              <Product>TZ 400 Series</Product>
+              <Product>TZ 500 Series</Product>
+              <Product default="true">TZ 600</Product>
+              <Product>NS<i>a</i> 2650</Product>
+            </Products>
+          </Model>
+          <Model name="Meraki MX100">
+            <Products>
+              <Product>SOHO Series</Product>
+              <Product>SOHO 250 Series</Product>
+              <Product>TZ 300 Series</Product>
+              <Product>TZ 400 Series</Product>
+              <Product>TZ 500 Series</Product>
+              <Product default="true">TZ 600</Product>
+              <Product>NS<i>a</i> 2650</Product>
+            </Products>
+          </Model>
+          <Model name="Meraki MX450">
+            <Products>
+              <Product>NS<i>a</i> 6650</Product>
+            </Products>
+          </Model>
+          <Model name="PIX 501">
+            <Products>
+              <Product>SOHO Series</Product>
+              <Product>SOHO 250 Series</Product>
+              <Product>TZ 300 Series</Product>
+              <Product>TZ 400 Series</Product>
+              <Product>TZ 500 Series</Product>
+              <Product default="true">TZ 600</Product>
+            </Products>
+          </Model>
+          <Model name="PIX 506">
+            <Products>
+              <Product>SOHO Series</Product>
+              <Product>SOHO 250 Series</Product>
+              <Product>TZ 300 Series</Product>
+              <Product>TZ 400 Series</Product>
+              <Product>TZ 500 Series</Product>
+              <Product>TZ 600</Product>
+              <Product default="true">NS<i>a</i> 3650</Product>
+            </Products>
+          </Model>
+          <Model name="PIX 5515">
+            <Products>
+              <Product default="true">NS<i>a</i> 3650</Product>
+            </Products>
+          </Model>
+          <Model name="PIX 515">
+            <Products>
+              <Product default="true">NS<i>a</i> 4650</Product>
+            </Products>
+          </Model>
+          <Model name="PIX 535">
+            <Products>
+              <Product default="true">NS<i>a</i> 5650</Product>
+            </Products>
+          </Model>
+        </Models>
+      </Brand>
+      <Brand name="Fortinet">
+        <Models>
+          <Model name="FG 30 Series">
+            <Products>
+              <Product>SOHO Series</Product>
+              <Product>SOHO 250 Series</Product>
+              <Product>TZ 300 Series</Product>
+              <Product>TZ 400 Series</Product>
+              <Product>TZ 500 Series</Product>
+              <Product default="true">TZ 600</Product>
+            </Products>
+          </Model>
+          <Model name="FG 40 Series">
+            <Products>
+              <Product>SOHO Series</Product>
+              <Product>SOHO 250 Series</Product>
+              <Product>TZ 300 Series</Product>
+              <Product>TZ 400 Series</Product>
+              <Product>TZ 500 Series</Product>
+              <Product default="true">TZ 600</Product>
+            </Products>
+          </Model>
+          <Model name="FG 50 Series">
+            <Products>
+              <Product>SOHO Series</Product>
+              <Product>SOHO 250 Series</Product>
+              <Product>TZ 300 Series</Product>
+              <Product>TZ 400 Series</Product>
+              <Product>TZ 500 Series</Product>
+              <Product default="true">TZ 600</Product>
+            </Products>
+          </Model>
+          <Model name="FG 60 Series">
+            <Products>
+              <Product>SOHO Series</Product>
+              <Product>SOHO 250 Series</Product>
+              <Product>TZ 300 Series</Product>
+              <Product>TZ 400 Series</Product>
+              <Product>TZ 500 Series</Product>
+              <Product default="true">TZ 600</Product>
+            </Products>
+          </Model>
+          <Model name="FG 70 Series">
+            <Products>
+              <Product>SOHO Series</Product>
+              <Product>SOHO 250 Series</Product>
+              <Product>TZ 300 Series</Product>
+              <Product>TZ 400 Series</Product>
+              <Product>TZ 500 Series</Product>
+              <Product default="true">TZ 600</Product>
+            </Products>
+          </Model>
+          <Model name="FG 80 Series">
+            <Products>
+              <Product>SOHO Series</Product>
+              <Product>SOHO 250 Series</Product>
+              <Product>TZ 300 Series</Product>
+              <Product>TZ 400 Series</Product>
+              <Product>TZ 500 Series</Product>
+              <Product default="true">TZ 600</Product>
+            </Products>
+          </Model>
+          <Model name="FG 90 Series">
+            <Products>
+              <Product>SOHO Series</Product>
+              <Product>SOHO 250 Series</Product>
+              <Product>TZ 300 Series</Product>
+              <Product>TZ 400 Series</Product>
+              <Product>TZ 500 Series</Product>
+              <Product default="true">TZ 600</Product>
+            </Products>
+          </Model>
+          <Model name="FG 92 Series">
+            <Products>
+              <Product>SOHO Series</Product>
+              <Product>SOHO 250 Series</Product>
+              <Product>TZ 300 Series</Product>
+              <Product>TZ 400 Series</Product>
+              <Product>TZ 500 Series</Product>
+              <Product default="true">TZ 600</Product>
+            </Products>
+          </Model>
+          <Model name="FG 100">
+            <Products>
+              <Product>SOHO Series</Product>
+              <Product>SOHO 250 Series</Product>
+              <Product>TZ 300 Series</Product>
+              <Product>TZ 400 Series</Product>
+              <Product>TZ 500 Series</Product>
+              <Product default="true">TZ 600</Product>
+              <Product>NS<i>a</i> 2650</Product>
+            </Products>
+          </Model>
+          <Model name="FG 101">
+            <Products>
+              <Product>NS<i>a</i> 2650</Product>
+            </Products>
+          </Model>
+          <Model name="FG 1000C">
+            <Products>
+              <Product default="true">NS<i>a</i> 6650</Product>
+            </Products>
+          </Model>
+          <Model name="FG 140">
+            <Products>
+              <Product>NS<i>a</i> 2650</Product>
+            </Products>
+          </Model>
+          <Model name="FG 1200">
+            <Products>
+              <Product default="true">NS<i>a</i> 6650</Product>
+              <Product>NS<i>a</i> 9250</Product>
+            </Products>
+          </Model>
+          <Model name="FG 1240">
+            <Products>
+              <Product>NS<i>a</i> 9250</Product>
+              <Product>NS<i>a</i> 9450</Product>
+              <Product>NS<i>a</i> 9650</Product>
+              <Product default="true">NS<i>a</i> 6650</Product>
+              <Product>SuperMassive 9800</Product>
+            </Products>
+          </Model>
+          <Model name="FG 200">
+            <Products>
+              <Product>NS<i>a</i> 2650</Product>
+              <Product default="true">NS<i>a</i> 3650</Product>
+              <Product>NS<i>a</i> 4650</Product>
+            </Products>
+          </Model>
+          <Model name="FG 300">
+            <Products>
+              <Product>NS<i>a</i> 2650</Product>
+              <Product>NS<i>a</i> 4650</Product>
+              <Product default="true">NS<i>a</i> 5650</Product>
+            </Products>
+          </Model>
+          <Model name="FG 310">
+            <Products>
+              <Product default="true">NS<i>a</i> 4650</Product>
+              <Product>NS<i>a</i> 5650</Product>
+            </Products>
+          </Model>
+          <Model name="FG 400">
+            <Products>
+              <Product default="true">NS<i>a</i> 3650</Product>
+              <Product default="true">NS<i>a</i> 5650</Product>
+            </Products>
+          </Model>
+          <Model name="FG 4000">
+            <Products>
+              <Product default="true">NS<i>a</i> 6650</Product>
+            </Products>
+          </Model>
+          <Model name="FG 4010">
+            <Products>
+              <Product default="true">NS<i>a</i> 6650</Product>
+            </Products>
+          </Model>
+          <Model name="FG 500">
+            <Products>
+              <Product default="true">NS<i>a</i> 4650</Product>
+            </Products>
+          </Model>
+          <Model name="FG 60 Series">
+            <Products>
+			  <Product>TZ 300 Series</Product>
+              <Product>TZ 400 Series</Product>
+              <Product>TZ 500 Series</Product>
+              <Product default="true">TZ 600</Product>
+            </Products>
+          </Model>
+          <Model name="FG 600">
+            <Products>
+              <Product default="true">NS<i>a</i> 4650</Product>
+              <Product >NS<i>a</i> 5650</Product>
+              <Product>NS<i>a</i> 6650</Product>
+            </Products>
+          </Model>
+          <Model name="FG 800">
+            <Products>
+              <Product>NS<i>a</i> 4650</Product>
+              <Product default="true">NS<i>a</i> 5650</Product>
+            </Products>
+          </Model>
+          <Model name="FG 80C Series">
+            <Products>
+			  <Product>TZ 300 Series</Product>
+              <Product>TZ 400 Series</Product>
+              <Product>TZ 500 Series</Product>
+              <Product default="true">TZ 600</Product>
+            </Products>
+          </Model>
+          <Model name="FG2000">
+            <Products>
+              <Product default="true">NS<i>a</i> 9450</Product>
+            </Products>
+          </Model>
+          <Model name="FG2500">
+            <Products>
+              <Product default="true">NS<i>a</i> 9650</Product>
+            </Products>
+          </Model>
+          <Model name="FG3000">
+            <Products>
+              <Product>NS<i>a</i> 9250</Product>
+              <Product>NS<i>a</i> 9450</Product>
+              <Product>NS<i>a</i> 9650</Product>
+              <Product default="true">NS<i>a</i> 6650</Product>
+              <Product>SuperMassive 9800</Product>
+            </Products>
+          </Model>
+          <Model name="FG3016">
+            <Products>
+              <Product>NS<i>a</i> 9250</Product>
+              <Product>NS<i>a</i> 9450</Product>
+              <Product>NS<i>a</i> 9650</Product>
+              <Product default="true">NS<i>a</i> 6650</Product>
+              <Product>SuperMassive 9800</Product>
+            </Products>
+          </Model>
+          <Model name="FG3810">
+            <Products>
+              <Product>NS<i>a</i> 9250</Product>
+              <Product>NS<i>a</i> 9450</Product>
+              <Product>NS<i>a</i> 9650</Product>
+              <Product default="true">SuperMassive 9800</Product>
+            </Products>
+          </Model>
+          <Model name="FG4000">
+            <Products>
+              <Product default="true">NS<i>a</i> 6650</Product>
+            </Products>
+          </Model>
+          <Model name="FG4010B">
+            <Products>
+              <Product default="true">NS<i>a</i> 6650</Product>
+            </Products>
+          </Model>
+          <Model name="FG5000">
+            <Products>
+              <Product default="true">NS<i>a</i> 6650</Product>
+            </Products>
+          </Model>
+          <Model name="FG1500">
+            <Products>
+              <Product>NS<i>a</i> 9250</Product>
+              <Product default="true">SuperMassive 9800</Product>
+            </Products>
+          </Model>
+        </Models>
+      </Brand>
+      <Brand name="Juniper">
+        <Models>
+          <Model name="NetScreen 5GT">
+            <Products>
+              <Product>SOHO Series</Product>
+              <Product>SOHO 250 Series</Product>
+              <Product>TZ 300 Series</Product>
+              <Product>TZ 400 Series</Product>
+              <Product>TZ 500 Series</Product>
+              <Product default="true">TZ 600</Product>
+            </Products>
+          </Model>
+          <Model name="NS-1000">
+            <Products>
+              <Product default="true">NS<i>a</i> 6650</Product>
+            </Products>
+          </Model>
+          <Model name="NS-204">
+            <Products>
+              <Product default="true">NS<i>a</i> 3650</Product>
+              <Product>NS<i>a</i> 4650</Product>
+            </Products>
+          </Model>
+          <Model name="NS-208">
+            <Products>
+              <Product default="true">NS<i>a</i> 5650</Product>
+            </Products>
+          </Model>
+          <Model name="NS-240">
+            <Products>
+              <Product default="true">NS<i>a</i> 3650</Product>
+            </Products>
+          </Model>
+          <Model name="NS-25">
+            <Products>
+              <Product>SOHO Series</Product>
+              <Product>SOHO 250 Series</Product>
+              <Product>TZ 300 Series</Product>
+              <Product>TZ 400 Series</Product>
+              <Product>TZ 500 Series</Product>
+              <Product default="true">TZ 600</Product>
+              <Product>NS<i>a</i> 2650</Product>
+            </Products>
+          </Model>
+          <Model name="NS-50">
+            <Products>
+              <Product default="true">NS<i>a</i> 3650</Product>
+            </Products>
+          </Model>
+          <Model name="NS-500">
+            <Products>
+              <Product default="true">NS<i>a</i> 5650</Product>
+            </Products>
+          </Model>
+          <Model name="ISG 1000">
+            <Products>
+              <Product>NS<i>a</i> 9250</Product>
+              <Product>NS<i>a</i> 9450</Product>
+              <Product>NS<i>a</i> 9650</Product>
+              <Product default="true">SuperMassive 9800</Product>
+            </Products>
+          </Model>
+          <Model name="ISG 2000">
+            <Products>
+              <Product>NS<i>a</i> 9250</Product>
+              <Product>NS<i>a</i> 9450</Product>
+              <Product>NS<i>a</i> 9650</Product>
+              <Product default="true">SuperMassive 9800</Product>
+            </Products>
+          </Model>
+          <Model name="SRX 220">
+            <Products>
+              <Product default="true">NS<i>a</i> 3650</Product>
+            </Products>
+          </Model>
+          <Model name="SRX 550">
+            <Products>
+              <Product default="true">NS<i>a</i> 3650</Product>
+              <Product>NS<i>a</i> 4650</Product>
+            </Products>
+          </Model>
+          <Model name="SRX 650">
+            <Products>
+              <Product default="true">NS<i>a</i> 5650</Product>
+              <Product>NS<i>a</i> 9250</Product>
+              <Product>NS<i>a</i> 9450</Product>
+              <Product>NS<i>a</i> 9650</Product>
+              <Product>SuperMassive 9800</Product>
+            </Products>
+          </Model>
+          <Model name="SRX-100 Series">
+            <Products>
+              <Product>SOHO Series</Product>
+              <Product>SOHO 250 Series</Product>
+              <Product>TZ 300 Series</Product>
+              <Product>TZ 400 Series</Product>
+              <Product>TZ 500 Series</Product>
+              <Product default="true">TZ 600</Product>
+            </Products>
+          </Model>
+          <Model name="SRX-110 Series">
+            <Products>
+              <Product>SOHO Series</Product>
+              <Product>SOHO 250 Series</Product>
+              <Product>TZ 300 Series</Product>
+              <Product>TZ 400 Series</Product>
+              <Product>TZ 500 Series</Product>
+              <Product default="true">TZ 600</Product>
+            </Products>
+          </Model>
+          <Model name="SRX-210 Series">
+            <Products>
+              <Product>SOHO Series</Product>
+              <Product>SOHO 250 Series</Product>
+              <Product>TZ 300 Series</Product>
+              <Product>TZ 400 Series</Product>
+              <Product>TZ 500 Series</Product>
+              <Product default="true">TZ 600</Product>
+            </Products>
+          </Model>
+          <Model name="SRX-220 Series">
+            <Products>
+              <Product>SOHO Series</Product>
+              <Product>SOHO 250 Series</Product>
+              <Product>TZ 300 Series</Product>
+              <Product>TZ 400 Series</Product>
+              <Product>TZ 500 Series</Product>
+              <Product default="true">TZ 600</Product>
+            </Products>
+          </Model>
+          <Model name="SRX-240 Series">
+            <Products>
+              <Product>SOHO Series</Product>
+              <Product>SOHO 250 Series</Product>
+              <Product>TZ 300 Series</Product>
+              <Product>TZ 400 Series</Product>
+              <Product>TZ 500 Series</Product>
+              <Product default="true">TZ 600</Product>
+            </Products>
+          </Model>
+          <Model name="SSG-140">
+            <Products>
+              <Product default="true">NS<i>a</i> 3650</Product>
+            </Products>
+          </Model>
+          <Model name="SSG-20 Series">
+            <Products>
+              <Product>SOHO Series</Product>
+              <Product>SOHO 250 Series</Product>
+              <Product>TZ 300 Series</Product>
+              <Product>TZ 400 Series</Product>
+              <Product>TZ 500 Series</Product>
+              <Product default="true">TZ 600</Product>
+            </Products>
+          </Model>
+          <Model name="SSG-320">
+            <Products>
+              <Product default="true">NS<i>a</i> 3650</Product>
+              <Product>NS<i>a</i> 4650</Product>
+            </Products>
+          </Model>
+          <Model name="SSG-5 Series">
+            <Products>
+              <Product>SOHO Series</Product>
+              <Product>SOHO 250 Series</Product>
+              <Product>TZ 300 Series</Product>
+              <Product>TZ 400 Series</Product>
+              <Product>TZ 500 Series</Product>
+              <Product default="true">TZ 600</Product>
+            </Products>
+          </Model>
+          <Model name="SSG-520">
+            <Products>
+              <Product default="true">NS<i>a</i> 5650</Product>
+              <Product>NS<i>a</i> 6650</Product>
+            </Products>
+          </Model>
+        </Models>
+      </Brand>
+      <Brand name="Palo Alto Networks">
+        <Models>
+          <Model name="PA-200">
+            <Products>
+              <Product>SOHO Series</Product>
+              <Product>SOHO 250 Series</Product>
+              <Product>TZ 300 Series</Product>
+              <Product>TZ 400 Series</Product>
+              <Product>TZ 500 Series</Product>
+              <Product default="true">TZ 600</Product>
+              <Product>NS<i>a</i> 2650</Product>
+            </Products>
+          </Model>
+          <Model name="PA-220">
+            <Products>
+              <Product>NS<i>a</i> 2650</Product>
+            </Products>
+          </Model>
+          <Model name="PA-2020">
+            <Products>
+              <Product>SOHO Series</Product>
+              <Product>SOHO 250 Series</Product>
+              <Product>TZ 300 Series</Product>
+              <Product>TZ 400 Series</Product>
+              <Product>TZ 500 Series</Product>
+              <Product default="true">TZ 600</Product>
+              <Product default="true">NS<i>a</i> 3650</Product>
+            </Products>
+          </Model>
+          <Model name="PA-2050">
+            <Products>
+              <Product default="true">NS<i>a</i> 4650</Product>
+              <Product>NS<i>a</i> 6650</Product>
+            </Products>
+          </Model>
+          <Model name="PA-300">
+            <Products>
+              <Product>SOHO Series</Product>
+              <Product>SOHO 250 Series</Product>
+              <Product>TZ 300 Series</Product>
+              <Product>TZ 400 Series</Product>
+              <Product>TZ 500 Series</Product>
+              <Product default="true">TZ 600</Product>
+            </Products>
+          </Model>
+          <Model name="PA-3020">
+            <Products>
+              <Product default="true">NS<i>a</i> 5650</Product>
+              <Product>NS<i>a</i> 6650</Product>
+            </Products>
+          </Model>
+          <Model name="PA-3050">
+            <Products>
+              <Product>NS<i>a</i> 9250</Product>
+              <Product>NS<i>a</i> 9450</Product>
+              <Product>NS<i>a</i> 9650</Product>
+              <Product default="true">SuperMassive 9800</Product>
+            </Products>
+          </Model>
+          <Model name="PA-3200">
+            <Products>
+              <Product default="true">NS<i>a</i> 5650</Product>
+              <Product>NS<i>a</i> 6650</Product>
+            </Products>
+          </Model>
+          <Model name="PA-3260">
+            <Products>
+              <Product>NS<i>a</i> 9250</Product>
+              <Product>NS<i>a</i> 9450</Product>
+              <Product>NS<i>a</i> 9650</Product>
+            </Products>
+          </Model>
+          <Model name="PA-4020">
+            <Products>
+              <Product default="true">NS<i>a</i> 5650</Product>
+              <Product>NS<i>a</i> 9250</Product>
+              <Product>NS<i>a</i> 9450</Product>
+              <Product>NS<i>a</i> 9650</Product>
+              <Product>SuperMassive 9800</Product>
+            </Products>
+          </Model>
+          <Model name="PA-4050">
+            <Products>
+              <Product default="true">NS<i>a</i> 6650</Product>
+              <Product>NS<i>a</i> 9650</Product>
+              <Product>SuperMassive 9800</Product>
+            </Products>
+          </Model>
+          <Model name="PA-4060">
+            <Products>
+              <Product>NS<i>a</i> 9250</Product>
+              <Product>NS<i>a</i> 9450</Product>
+              <Product>NS<i>a</i> 9650</Product>
+              <Product default="true">SuperMassive 9800</Product>
+            </Products>
+          </Model>
+          <Model name="PA-500">
+            <Products>
+              <Product default="true">NS<i>a</i> 3650</Product>
+              <Product>NS<i>a</i> 4650</Product>
+            </Products>
+          </Model>
+          <Model name="PA-5020">
+            <Products>
+              <Product>NS<i>a</i> 9250</Product>
+              <Product>NS<i>a</i> 9450</Product>
+              <Product>NS<i>a</i> 9650</Product>
+              <Product default="true">SuperMassive 9800</Product>
+            </Products>
+          </Model>
+          <Model name="PA-5050">
+            <Products>
+              <Product>NS<i>a</i> 9650</Product>
+              <Product default="true">SuperMassive 9800</Product>
+            </Products>
+          </Model>
+          <Model name="PA-5220">
+            <Products>
+              <Product>NS<i>a</i> 9650</Product>
+              <Product default="true">SuperMassive 9800</Product>
+            </Products>
+          </Model>
+        </Models>
+      </Brand>
+      <Brand name="Sophos">
+        <Models>
+          <Model name="SG 105 Series">
+            <Products>
+              <Product>SOHO Series</Product>
+              <Product>SOHO 250 Series</Product>
+              <Product>TZ 300 Series</Product>
+              <Product>TZ 400 Series</Product>
+              <Product>TZ 500 Series</Product>
+              <Product default="true">TZ 600</Product>
+            </Products>
+          </Model>
+          <Model name="SG 115 Series">
+            <Products>
+              <Product>SOHO Series</Product>
+              <Product>SOHO 250 Series</Product>
+              <Product>TZ 300 Series</Product>
+              <Product>TZ 400 Series</Product>
+              <Product>TZ 500 Series</Product>
+              <Product default="true">TZ 600</Product>
+            </Products>
+          </Model>
+          <Model name="SG 125 Series">
+            <Products>
+              <Product>SOHO Series</Product>
+              <Product>SOHO 250 Series</Product>
+              <Product>TZ 300 Series</Product>
+              <Product>TZ 400 Series</Product>
+              <Product>TZ 500 Series</Product>
+              <Product default="true">TZ 600</Product>
+            </Products>
+          </Model>
+          <Model name="SG 135 Series">
+            <Products>
+              <Product>SOHO Series</Product>
+              <Product>SOHO 250 Series</Product>
+              <Product>TZ 300 Series</Product>
+              <Product>TZ 400 Series</Product>
+              <Product>TZ 500 Series</Product>
+              <Product default="true">TZ 600</Product>
+            </Products>
+          </Model>
+          <Model name="SG 210">
+            <Products>
+              <Product>SOHO Series</Product>
+              <Product>SOHO 250 Series</Product>
+              <Product>TZ 300 Series</Product>
+              <Product>TZ 400 Series</Product>
+              <Product>TZ 500 Series</Product>
+              <Product default="true">TZ 600</Product>
+              <Product>NS<i>a</i> 2650</Product>
+            </Products>
+          </Model>
+          <Model name="SG 230">
+            <Products>
+              <Product>NS<i>a</i> 2650</Product>
+            </Products>
+          </Model>
+          <Model name="SG 330">
+            <Products>
+              <Product default="true">NS<i>a</i> 3650</Product>
+            </Products>
+          </Model>
+          <Model name="XG 85 Series">
+            <Products>
+              <Product>SOHO Series</Product>
+              <Product>SOHO 250 Series</Product>
+              <Product>TZ 300 Series</Product>
+              <Product>TZ 400 Series</Product>
+              <Product>TZ 500 Series</Product>
+              <Product default="true">TZ 600</Product>
+            </Products>
+          </Model>
+          <Model name="XG 105 Series">
+            <Products>
+              <Product>SOHO Series</Product>
+              <Product>SOHO 250 Series</Product>
+              <Product>TZ 300 Series</Product>
+              <Product>TZ 400 Series</Product>
+              <Product>TZ 500 Series</Product>
+              <Product default="true">TZ 600</Product>
+            </Products>
+          </Model>
+          <Model name="XG 115 Series">
+            <Products>
+              <Product>SOHO Series</Product>
+              <Product>SOHO 250 Series</Product>
+              <Product>TZ 300 Series</Product>
+              <Product>TZ 400 Series</Product>
+              <Product>TZ 500 Series</Product>
+              <Product default="true">TZ 600</Product>
+            </Products>
+          </Model>
+          <Model name="XG 125 Series">
+            <Products>
+              <Product>SOHO Series</Product>
+              <Product>SOHO 250 Series</Product>
+              <Product>TZ 300 Series</Product>
+              <Product>TZ 400 Series</Product>
+              <Product>TZ 500 Series</Product>
+              <Product default="true">TZ 600</Product>
+            </Products>
+          </Model>
+          <Model name="XG 135 Series">
+            <Products>
+              <Product>SOHO Series</Product>
+              <Product>SOHO 250 Series</Product>
+              <Product>TZ 300 Series</Product>
+              <Product>TZ 400 Series</Product>
+              <Product>TZ 500 Series</Product>
+              <Product default="true">TZ 600</Product>
+            </Products>
+          </Model>
+          <Model name="XG 210 Series">
+            <Products>
+              <Product>SOHO Series</Product>
+              <Product>SOHO 250 Series</Product>
+              <Product>TZ 300 Series</Product>
+              <Product>TZ 400 Series</Product>
+              <Product>TZ 500 Series</Product>
+              <Product default="true">TZ 600</Product>
+            </Products>
+          </Model>
+          <Model name="XG 230">
+          <Products>
+            <Product>NS<i>a</i> 2650</Product>
+          </Products>
+        </Model>
+          <Model name="XG 310">
+            <Products>
+              <Product>NS<i>a</i> 2650</Product>
+              <Product default="true">NS<i>a</i> 3650</Product>
+            </Products>
+          </Model>
+          <Model name="XG 330">
+            <Products>
+              <Product default="true">NS<i>a</i> 3650</Product>
+            </Products>
+          </Model>
+          <Model name="XG 430">
+            <Products>
+              <Product default="true">NS<i>a</i> 4650</Product>
+            </Products>
+          </Model>
+          <Model name="XG 450">
+            <Products>
+              <Product default="true">NS<i>a</i> 5650</Product>
+            </Products>
+          </Model>
+          <Model name="XG 550">
+            <Products>
+              <Product default="true">NS<i>a</i> 6650</Product>
+              <Product>NS<i>a</i> 9250</Product>
+              <Product>NS<i>a</i> 9450</Product>
+              <Product>NS<i>a</i> 9650</Product>
+            </Products>
+          </Model>
+          <Model name="XG 650">
+            <Products>
+              <Product default="true">NS<i>a</i> 6650</Product>
+            </Products>
+          </Model>
+          <Model name="XG 570">
+            <Products>
+              <Product default="true">NS<i>a</i> 6650</Product>
+              <Product>NS<i>a</i> 9250</Product>
+            </Products>
+          </Model>
+          <Model name="XG 750">
+            <Products>
+              <Product default="true">SuperMassive 9800</Product>
+            </Products>
+          </Model>
+        </Models>
+      </Brand>
+      <Brand name="WatchGuard">
+        <Models>
+          <Model name="SOHO6 Series">
+            <Products>
+              <Product>SOHO Series</Product>
+              <Product>SOHO 250 Series</Product>
+              <Product>TZ 300 Series</Product>
+              <Product>TZ 400 Series</Product>
+              <Product>TZ 500 Series</Product>
+              <Product default="true">TZ 600</Product>
+            </Products>
+          </Model>
+          <Model name="Firebox T10">
+            <Products>
+              <Product>SOHO Series</Product>
+              <Product>SOHO 250 Series</Product>
+              <Product>TZ 300 Series</Product>
+              <Product>TZ 400 Series</Product>
+              <Product>TZ 500 Series</Product>
+              <Product default="true">TZ 600</Product>
+            </Products>
+          </Model>
+          <Model name="Firebox T15">
+            <Products>
+              <Product>SOHO Series</Product>
+              <Product>SOHO 250 Series</Product>
+              <Product>TZ 300 Series</Product>
+              <Product>TZ 400 Series</Product>
+              <Product>TZ 500 Series</Product>
+              <Product default="true">TZ 600</Product>
+            </Products>
+          </Model>
+          <Model name="Firebox T30">
+            <Products>
+              <Product>SOHO Series</Product>
+              <Product>SOHO 250 Series</Product>
+              <Product>TZ 300 Series</Product>
+              <Product>TZ 400 Series</Product>
+              <Product>TZ 500 Series</Product>
+              <Product default="true">TZ 600</Product>
+            </Products>
+          </Model>
+          <Model name="Firebox T35">
+            <Products>
+              <Product>SOHO Series</Product>
+              <Product>SOHO 250 Series</Product>
+              <Product>TZ 300 Series</Product>
+              <Product>TZ 400 Series</Product>
+              <Product>TZ 500 Series</Product>
+              <Product default="true">TZ 600</Product>
+            </Products>
+          </Model>
+          <Model name="Firebox T55">
+            <Products>
+              <Product>SOHO Series</Product>
+              <Product>SOHO 250 Series</Product>
+              <Product>TZ 300 Series</Product>
+              <Product>TZ 400 Series</Product>
+              <Product>TZ 500 Series</Product>
+              <Product default="true">TZ 600</Product>
+            </Products>
+          </Model>
+          <Model name="Firebox T70">
+            <Products>
+              <Product>SOHO Series</Product>
+              <Product>SOHO 250 Series</Product>
+              <Product>TZ 300 Series</Product>
+              <Product>TZ 400 Series</Product>
+              <Product>TZ 500 Series</Product>
+              <Product default="true">TZ 600</Product>
+              <Product>NS<i>a</i> 2650</Product>
+            </Products>
+          </Model>
+          <Model name="M300">
+            <Products>
+              <Product>NS<i>a</i> 2650</Product>
+            </Products>
+          </Model>
+          <Model name="X1000">
+            <Products>
+              <Product default="true">NS<i>a</i> 3650</Product>
+            </Products>
+          </Model>
+          <Model name="X1000e">
+            <Products>
+              <Product default="true">NS<i>a</i> 3650</Product>
+            </Products>
+          </Model>
+          <Model name="X1250e">
+            <Products>
+              <Product default="true">NS<i>a</i> 3650</Product>
+            </Products>
+          </Model>
+          <Model name="X2500e">
+            <Products>
+              <Product default="true">NS<i>a</i> 4650</Product>
+            </Products>
+          </Model>
+          <Model name="X500">
+            <Products>
+              <Product>SOHO Series</Product>
+              <Product>SOHO 250 Series</Product>
+              <Product>TZ 300 Series</Product>
+              <Product>TZ 400 Series</Product>
+              <Product>TZ 500 Series</Product>
+              <Product default="true">TZ 600</Product>
+              <Product>NS<i>a</i> 2650</Product>
+            </Products>
+          </Model>
+          <Model name="X500e">
+            <Products>
+              <Product>NS<i>a</i> 2650</Product>
+            </Products>
+          </Model>
+          <Model name="X550e">
+            <Products>
+              <Product>SOHO Series</Product>
+              <Product>SOHO 250 Series</Product>
+              <Product>TZ 300 Series</Product>
+              <Product>TZ 400 Series</Product>
+              <Product>TZ 500 Series</Product>
+              <Product default="true">TZ 600</Product>
+            </Products>
+          </Model>
+          <Model name="X5000">
+            <Products>
+              <Product default="true">NS<i>a</i> 4650</Product>
+            </Products>
+          </Model>
+          <Model name="X5500e">
+            <Products>
+              <Product default="true">NS<i>a</i> 4650</Product>
+            </Products>
+          </Model>
+          <Model name="X6000">
+            <Products>
+              <Product default="true">NS<i>a</i> 4650</Product>
+              <Product>NS<i>a</i> 5650</Product>
+            </Products>
+          </Model>
+          <Model name="X6500e">
+            <Products>
+              <Product default="true">NS<i>a</i> 4650</Product>
+              <Product>NS<i>a</i> 5650</Product>
+            </Products>
+          </Model>
+          <Model name="X700">
+            <Products>
+              <Product>SOHO Series</Product>
+              <Product>SOHO 250 Series</Product>
+              <Product>TZ 300 Series</Product>
+              <Product>TZ 400 Series</Product>
+              <Product>TZ 500 Series</Product>
+              <Product default="true">TZ 600</Product>
+              <Product>NS<i>a</i> 2650</Product>
+            </Products>
+          </Model>
+          <Model name="X700e">
+            <Products>
+              <Product>NS<i>a</i> 2650</Product>
+            </Products>
+          </Model>
+          <Model name="X750e">
+            <Products>
+              <Product>SOHO Series</Product>
+              <Product>SOHO 250 Series</Product>
+              <Product>TZ 300 Series</Product>
+              <Product>TZ 400 Series</Product>
+              <Product>TZ 500 Series</Product>
+              <Product default="true">TZ 600</Product>
+              <Product>NS<i>a</i> 2650</Product>
+            </Products>
+          </Model>
+          <Model name="X8000">
+            <Products>
+              <Product default="true">NS<i>a</i> 6650</Product>
+            </Products>
+          </Model>
+          <Model name="X8500e">
+            <Products>
+              <Product default="true">NS<i>a</i> 6650</Product>
+            </Products>
+          </Model>
+          <Model name="X8500e-F">
+            <Products>
+              <Product>NS<i>a</i> 9250</Product>
+              <Product>NS<i>a</i> 9450</Product>
+              <Product>NS<i>a</i> 9650</Product>
+              <Product default="true">SuperMassive 9800</Product>
+            </Products>
+          </Model>
+          <Model name="X-Edge Series">
+            <Products>
+              <Product>SOHO Series</Product>
+              <Product>SOHO 250 Series</Product>
+              <Product>TZ 300 Series</Product>
+              <Product>TZ 400 Series</Product>
+              <Product>TZ 500 Series</Product>
+              <Product default="true">TZ 600</Product>
+            </Products>
+          </Model>
+          <Model name="X-Edge eSeries">
+            <Products>
+              <Product>SOHO Series</Product>
+              <Product>SOHO 250 Series</Product>
+              <Product>TZ 300 Series</Product>
+              <Product>TZ 400 Series</Product>
+              <Product>TZ 500 Series</Product>
+              <Product default="true">TZ 600</Product>
+            </Products>
+          </Model>
+          <Model name="XTM 1050">
+            <Products>
+              <Product>NS<i>a</i> 9250</Product>
+              <Product>NS<i>a</i> 9450</Product>
+              <Product>NS<i>a</i> 9650</Product>
+              <Product default="true">SuperMassive 9800</Product>
+            </Products>
+          </Model>
+          <Model name="XTM 115">
+            <Products>
+              <Product>SOHO Series</Product>
+              <Product>SOHO 250 Series</Product>
+              <Product>TZ 300 Series</Product>
+              <Product>TZ 400 Series</Product>
+              <Product>TZ 500 Series</Product>
+              <Product default="true">TZ 600</Product>
+            </Products>
+          </Model>
+          <Model name="XTM 1520">
+            <Products>
+              <Product>NS<i>a</i> 9250</Product>
+              <Product  default="true">NS<i>a</i> 9450</Product>
+            </Products>
+          </Model>
+          <Model name="XTM 1525">
+            <Products>
+              <Product>NS<i>a</i> 9250</Product>
+              <Product  default="true">NS<i>a</i> 9450</Product>
+            </Products>
+          </Model>
+          <Model name="XTM 2050">
+            <Products>
+              <Product>NS<i>a</i> 9650</Product>
+              <Product default="true">SuperMassive 9800</Product>
+            </Products>
+          </Model>
+          <Model name="XTM 22">
+            <Products>
+              <Product>SOHO Series</Product>
+              <Product>SOHO 250 Series</Product>
+              <Product>TZ 300 Series</Product>
+              <Product>TZ 400 Series</Product>
+              <Product>TZ 500 Series</Product>
+              <Product default="true">TZ 600</Product>
+            </Products>
+          </Model>
+          <Model name="XTM 23">
+            <Products>
+              <Product>SOHO Series</Product>
+              <Product>SOHO 250 Series</Product>
+              <Product>TZ 300 Series</Product>
+              <Product>TZ 400 Series</Product>
+              <Product>TZ 500 Series</Product>
+              <Product default="true">TZ 600</Product>
+            </Products>
+          </Model>
+          <Model name="XTM 25">
+            <Products>
+              <Product>SOHO Series</Product>
+              <Product>SOHO 250 Series</Product>
+              <Product>TZ 300 Series</Product>
+              <Product>TZ 400 Series</Product>
+              <Product>TZ 500 Series</Product>
+              <Product default="true">TZ 600</Product>
+            </Products>
+          </Model>
+          <Model name="XTM 26">
+            <Products>
+              <Product>SOHO Series</Product>
+              <Product>SOHO 250 Series</Product>
+              <Product>TZ 300 Series</Product>
+              <Product>TZ 400 Series</Product>
+              <Product>TZ 500 Series</Product>
+              <Product default="true">TZ 600</Product>
+            </Products>
+          </Model>
+          <Model name="XTM 33">
+            <Products>
+              <Product>SOHO Series</Product>
+              <Product>SOHO 250 Series</Product>
+              <Product>TZ 300 Series</Product>
+              <Product>TZ 400 Series</Product>
+              <Product>TZ 500 Series</Product>
+              <Product default="true">TZ 600</Product>
+            </Products>
+          </Model>
+          <Model name="XTM 330">
+            <Products>
+              <Product>SOHO Series</Product>
+              <Product>SOHO 250 Series</Product>
+              <Product>TZ 300 Series</Product>
+              <Product>TZ 400 Series</Product>
+              <Product>TZ 500 Series</Product>
+              <Product default="true">TZ 600</Product>
+            </Products>
+          </Model>
+          <Model name="XTM 510">
+            <Products>
+              <Product default="true">NS<i>a</i> 3650</Product>
+            </Products>
+          </Model>
+          <Model name="XTM 515">
+            <Products>
+              <Product>SOHO Series</Product>
+              <Product>SOHO 250 Series</Product>
+              <Product>TZ 300 Series</Product>
+              <Product>TZ 400 Series</Product>
+              <Product>TZ 500 Series</Product>
+              <Product>TZ 600</Product>
+              <Product>NS<i>a</i> 2650</Product>
+              <Product default="true">NS<i>a</i> 3650</Product>
+            </Products>
+          </Model>
+          <Model name="XTM 520">
+            <Products>
+              <Product default="true">NS<i>a</i> 3650</Product>
+            </Products>
+          </Model>
+          <Model name="XTM 525">
+            <Products>
+              <Product>SOHO Series</Product>
+              <Product>SOHO 250 Series</Product>
+              <Product>TZ 300 Series</Product>
+              <Product>TZ 400 Series</Product>
+              <Product>TZ 500 Series</Product>
+              <Product default="true">TZ 600</Product>
+              <Product>NS<i>a</i> 2650</Product>
+            </Products>
+          </Model>
+          <Model name="XTM 530">
+            <Products>
+              <Product default="true">NS<i>a</i> 4650</Product>
+            </Products>
+          </Model>
+          <Model name="XTM 535">
+            <Products>
+              <Product>SOHO Series</Product>
+              <Product>SOHO 250 Series</Product>
+              <Product>TZ 300 Series</Product>
+              <Product>TZ 400 Series</Product>
+              <Product>TZ 500 Series</Product>
+              <Product>TZ 600</Product>
+              <Product>NS<i>a</i> 2650</Product>
+              <Product default="true">NS<i>a</i> 3650</Product>
+            </Products>
+          </Model>
+          <Model name="XTM 545">
+            <Products>
+              <Product default="true">NS<i>a</i> 3650</Product>
+              <Product>NS<i>a</i> 4650</Product>
+            </Products>
+          </Model>
+          <Model name="XTM 800">
+            <Products>
+              <Product>NS<i>a</i> 4650</Product>
+            </Products>
+          </Model>
+          <Model name="XTM 810">
+            <Products>
+              <Product default="true">NS<i>a</i> 4650</Product>
+              <Product>NS<i>a</i> 5650</Product>
+            </Products>
+          </Model>
+          <Model name="XTM 820">
+            <Products>
+              <Product default="true">NS<i>a</i> 5650</Product>
+              <Product>NS<i>a</i> 6650</Product>
+            </Products>
+          </Model>
+          <Model name="XTM 850">
+            <Products>
+              <Product default="true">NS<i>a</i> 5650</Product>
+            </Products>
+          </Model>
+          <Model name="XTM 860">
+            <Products>
+              <Product default="true">NS<i>a</i> 5650</Product>
+            </Products>
+          </Model>
+          <Model name="XTM 870">
+            <Products>
+              <Product default="true">NS<i>a</i> 6650</Product>
+            </Products>
+          </Model>
+          <Model name="XTM520">
+            <Products>
+              <Product default="true">NS<i>a</i> 3650</Product>
+            </Products>
+          </Model>
+          <Model name="XTM525">
+            <Products>
+              <Product>TZ 300 Series</Product>
+              <Product>TZ 400 Series</Product>
+              <Product>TZ 500 Series</Product>
+              <Product>TZ 600</Product>
+              <Product default="true">NSA 2650</Product>
+            </Products>
+          </Model>
+          <Model name="XTM535">
+            <Products>
+              <Product>TZ 300 Series</Product>
+              <Product>TZ 400 Series</Product>
+              <Product>TZ 500 Series</Product>
+              <Product>TZ 600</Product>
+              <Product>NS<i>a</i> 2650</Product>
+              <Product default="true">NS<i>a</i> 3650</Product>
+            </Products>
+          </Model>
+          <Model name="XTM545">
+            <Products>
+              <Product default="true">NS<i>a</i> 3650</Product>
+              <Product>NS<i>a</i> 4650</Product>
+            </Products>
+          </Model>
+        </Models>
+      </Brand>
+    </Brands>
+  </Type>
+  <Type name="SRA">
+    <Brands>
+      <Brand name="Barracuda">
+        <Models>
+          <Model name="280">
+            <Products>
+              <Product default="true">SRA 1600</Product>
+              <Product>SRA 4600</Product>
+            </Products>
+          </Model>
+          <Model name="380">
+            <Products>
+              <Product default="true">SRA 1600</Product>
+              <Product>SRA 4600</Product>
+            </Products>
+          </Model>
+          <Model name="480">
+            <Products>
+              <Product default="true">SRA 1600</Product>
+              <Product>SRA 4600</Product>
+            </Products>
+          </Model>
+        </Models>
+      </Brand>
+      <Brand name="Cisco">
+        <Models>
+          <Model name="5505">
+            <Products>
+              <Product default="true">SRA 1600</Product>
+              <Product>SRA 4600</Product>
+            </Products>
+          </Model>
+          <Model name="5510">
+            <Products>
+              <Product default="true">SRA EX6000</Product>
+            </Products>
+          </Model>
+          <Model name="5520">
+            <Products>
+              <Product default="true">SRA EX6000</Product>
+            </Products>
+          </Model>
+          <Model name="5550">
+            <Products>
+              <Product default="true">SRA EX7000</Product>
+            </Products>
+          </Model>
+          <Model name="5580">
+            <Products>
+              <Product default="true">SRA EX6000</Product>
+            </Products>
+          </Model>
+        </Models>
+      </Brand>
+      <Brand name="Citrix">
+        <Models>
+          <Model name="2010">
+            <Products>
+              <Product default="true">SRA 1600</Product>
+              <Product>SRA 4600</Product>
+            </Products>
+          </Model>
+          <Model name="7000">
+            <Products>
+              <Product default="true">SRA EX6000</Product>
+            </Products>
+          </Model>
+          <Model name="9000">
+            <Products>
+              <Product default="true">SRA EX7000</Product>
+            </Products>
+          </Model>
+        </Models>
+      </Brand>
+      <Brand name="Juniper">
+        <Models>
+          <Model name="700">
+            <Products>
+              <Product default="true">SRA 1600</Product>
+              <Product>SRA 4600</Product>
+            </Products>
+          </Model>
+          <Model name="2500">
+            <Products>
+              <Product default="true">SRA EX6000</Product>
+            </Products>
+          </Model>
+          <Model name="2600">
+            <Products>
+              <Product default="true">SRA 1600</Product>
+              <Product>SRA 4600</Product>
+            </Products>
+          </Model>
+          <Model name="4500">
+            <Products>
+              <Product default="true">SRA EX7000</Product>
+            </Products>
+          </Model>
+        </Models>
+      </Brand>
+    </Brands>
+  </Type>
+  <Type name="EMS">
+    <Brands>
+      <Brand name="Astaro">
+        <Products>
+          <Product default="true">ES 3300</Product>
+          <Product>ES 4300</Product>
+          <Product>ES 8300</Product>
+        </Products>
+      </Brand>
+      <Brand name="Barracuda">
+        <Products>
+          <Product default="true">ES 3300</Product>
+          <Product>ES 4300</Product>
+          <Product>ES 8300</Product>
+        </Products>
+      </Brand>
+      <Brand name="Cisco IronPort">
+        <Products>
+          <Product default="true">ES 3300</Product>
+          <Product>ES 4300</Product>
+          <Product>ES 8300</Product>
+        </Products>
+      </Brand>
+      <Brand name="Eleven">
+        <Products>
+          <Product default="true">ES 3300</Product>
+          <Product>ES 4300</Product>
+          <Product>ES 8300</Product>
+        </Products>
+      </Brand>
+      <Brand name="FortiMail">
+        <Products>
+          <Product default="true">ES 3300</Product>
+          <Product>ES 4300</Product>
+          <Product>ES 8300</Product>
+        </Products>
+      </Brand>
+      <Brand name="Juniper">
+      
+      </Brand>
+      <Brand name="MailFrontier">
+        <Products>
+          <Product default="true">ES 3300</Product>
+          <Product>ES 4300</Product>
+          <Product>ES 8300</Product>
+        </Products>
+      </Brand>
+      <Brand name="MX Logic">
+        <Products>
+          <Product default="true">ES 3300</Product>
+          <Product>ES 4300</Product>
+          <Product>ES 8300</Product>
+        </Products>
+      </Brand>
+      <Brand name="Postini">
+        <Products>
+          <Product default="true">ES 3300</Product>
+          <Product>ES 4300</Product>
+          <Product>ES 8300</Product>
+        </Products>
+      </Brand>
+      <Brand name="Symantec BrightMail">
+        <Products>
+          <Product default="true">ES 3300</Product>
+          <Product>ES 4300</Product>
+          <Product>ES 8300</Product>
+        </Products>
+      </Brand>
+      <Brand name="Other">
+        <Products>
+          <Product default="true">ES 3300</Product>
+          <Product>ES 4300</Product>
+          <Product>ES 8300</Product>
+        </Products>
+      </Brand>
+    </Brands>
+  </Type>
+</Types>

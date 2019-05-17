@@ -1,0 +1,47 @@
+// CONVERSIONS
+.panel-ce-tracking {
+  .panel-heading .tit::before {
+    @include material-icons(track_changes);
+  }
+
+  .panel-footer {
+    text-align: center;
+  }
+
+  .table {
+    margin-bottom: 0;
+
+    .name {
+      width: 200px;
+      font-weight: bold;
+    }
+
+  .trigger {
+  	white-space: nowrap;
+  }
+
+    @media screen and (min-width: $screen-md-max) {
+      .name {
+        width: auto;
+      }
+    }
+  }
+
+  .code-sample {
+    display: block;
+  }
+
+  .code-copy,
+  .show-code {
+    margin-top: 5px;
+    display: inline-block;
+    font-size: $font-size-small;
+    font-weight: $default-font-weight-semibold;
+    text-transform: uppercase;
+  }
+}
+.panel-ce-new {
+  .panel-heading .tit::before {
+    @include material-icons(track_changes);
+  }
+}

@@ -1,0 +1,24 @@
+/**
+ * Eventon wp-admin CSS for RTL
+ * @version 2.5.4
+ */
+
+.evomb_header p{
+	padding-left: 0;
+	padding-right: 40px;
+}
+.yesno_row span.field_name, .yesno_row label{
+	padding-left: 0;
+	padding-right: 80px;
+}
+.ajde_yn_btn.NO .btn_inner{
+	margin-right: -46px;
+	margin-left: auto;
+}
+.evo_date, .evcal_date_time, .evcal_db_ui{
+	float: right;
+}
+#evo_new_window_io span{
+	float: right;
+	margin: 0 0 0 5px;
+}

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="100px" height="50px" viewBox="0 0 100 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>25 users EMEA</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M-4293,-8917 L8530,-8917 L8530,5074 L-4293,5074 L-4293,-8917 Z" id="path-1"></path>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="12823" height="13991" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <use id="Rectangle-5" stroke="#979797" mask="url(#mask-2)" stroke-width="12" stroke-dasharray="15,15" xlink:href="#path-1"></use>
+        <text id="25-users-EMEA" font-family="Nunito-SemiBold, Nunito" font-size="22" font-weight="500" line-spacing="23" fill="#4A4A4A">
+            <tspan x="7.5" y="23">25 users</tspan>
+            <tspan x="20.205" y="46">EMEA</tspan>
+        </text>
+    </g>
+</svg>

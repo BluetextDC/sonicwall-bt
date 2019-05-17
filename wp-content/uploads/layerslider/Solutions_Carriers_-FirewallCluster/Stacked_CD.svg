@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="80px" height="14px" viewBox="0 0 80 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50 (54983) - http://www.bohemiancoding.com/sketch -->
+    <title>Stacked CD Copy</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M-4991,-16188 L7832,-16188 L7832,542 L-4991,542 L-4991,-16188 Z" id="path-1"></path>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="12823" height="16730" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <use id="Rectangle-5" stroke="#979797" mask="url(#mask-2)" stroke-width="12" stroke-dasharray="15,15" xlink:href="#path-1"></use>
+        <text id="Stacked-CD-Copy" font-family="Nunito-Bold, Nunito" font-size="14" font-weight="bold" fill="#4A4A4A">
+            <tspan x="2" y="12">Stacked CD</tspan>
+        </text>
+    </g>
+</svg>

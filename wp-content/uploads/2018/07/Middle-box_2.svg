@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 1218 447" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;">
+    <g transform="matrix(1,0,0,1,-85,-51)">
+        <g transform="matrix(0.794361,0,0,0.814858,-610.258,20.2128)">
+            <g id="Middle-box" serif:id="Middle box" transform="matrix(4.02956,0,0,2.93529,721.884,-75.6413)">
+                <path d="M418.263,40.34C418.263,40.007 418.165,39.688 417.989,39.453C417.813,39.217 417.575,39.085 417.326,39.085C397.197,39.085 59.36,39.085 39.231,39.085C38.982,39.085 38.744,39.217 38.568,39.453C38.392,39.688 38.294,40.007 38.294,40.34C38.294,55.769 38.294,208.621 38.294,224.05C38.294,224.383 38.392,224.702 38.568,224.937C38.744,225.172 38.982,225.305 39.231,225.305C59.36,225.305 397.197,225.305 417.326,225.305C417.575,225.305 417.813,225.172 417.989,224.937C418.165,224.702 418.263,224.383 418.263,224.05C418.263,208.621 418.263,55.769 418.263,40.34Z" style="fill:none;stroke:rgb(210,208,210);stroke-width:0.35px;"/>
+            </g>
+        </g>
+    </g>
+</svg>

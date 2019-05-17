@@ -1,0 +1,422 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Really Simple SSL pro\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-12-31 09:02+0000\n"
+"PO-Revision-Date: 2017-01-11 15:57+0000\n"
+"Last-Translator: Yi Hua Caer <yihua@caerboardsports.nl>\n"
+"Language-Team: Chinese (Taiwan)\n"
+"Language: zh-TW\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco - https://localise.biz/"
+
+#: class-scan.php:182
+msgid ""
+"Please install and activate Really Simple SSL before activating this add-on."
+msgstr "請安裝並在啟動這附加元件之前啟動Really Simple SSL。 "
+
+#: class-scan.php:196
+msgid "Please upgrade to the latest version before installing this add on."
+msgstr "請在安裝這附件前先升級到最新的版本"
+
+#: class-scan.php:224
+msgid "Searching for js and css files and external resources in website"
+msgstr "搜尋js及css檔以及網站外部來源"
+
+#: class-scan.php:268
+msgid "Generating file list"
+msgstr "使檔案名單產生"
+
+#: class-scan.php:282
+msgid "Checking which posts contain external resources"
+msgstr "查看那些貼文包含外部來源"
+
+#: class-scan.php:346
+msgid "Looking up blocked resources in posts"
+msgstr "查尋在貼文裡被封鎖的來源"
+
+#: class-scan.php:1008
+msgid "Fix these issues before migrating to SSL"
+msgstr "在遷移到SSL前先修復這些問題"
+
+#: class-scan.php:1009
+msgid "Blocked urls"
+msgstr "被封鎖的 urls"
+
+#: class-scan.php:1010
+msgid ""
+"These files contain references to other websites that will get blocked on a "
+"https website because they do not have an SSL certificate."
+msgstr "這些檔案包含關於其它會被封鎖在https上的網站因為它們沒有SSL 認證。"
+
+#: class-scan.php:1011 class-scan.php:1048 class-scan.php:1082
+#: class-scan.php:1107 class-scan.php:1126 class-scan.php:1153
+msgid "To fix, follow these"
+msgstr "要修護，請跟循這些"
+
+#: class-scan.php:1011 class-scan.php:1048 class-scan.php:1082
+#: class-scan.php:1107 class-scan.php:1126 class-scan.php:1153
+msgid "instructions"
+msgstr "程序"
+
+#: class-scan.php:1035
+msgid "Url cannot load over https"
+msgstr "Url 無法載 https"
+
+#: class-scan.php:1042
+msgid "No references to domains without ssl certificate found."
+msgstr "沒有發現關於無 ssl 認證的網域資料。"
+
+#: class-scan.php:1046
+msgid "CSS and JS files with mixed content"
+msgstr "有混合內容的 CSS及JS 檔"
+
+#: class-scan.php:1047
+msgid "These files contain http links, which causes mixed content."
+msgstr "這些檔案包括 http 連結，因而產生混合內容。"
+
+#: class-scan.php:1070 class-scan.php:1094
+msgid "http link"
+msgstr "http 連結"
+
+#: class-scan.php:1077
+msgid "No CSS and JS files with mixed content found."
+msgstr "包含混合內容的 css 及 js檔案 未找到。"
+
+#: class-scan.php:1081
+msgid "CSS and JS files from other domains with mixed content."
+msgstr "從其它有混合內容網域的 css 及 js 檔。"
+
+#: class-scan.php:1090
+msgid "File containing this url: "
+msgstr "檔案包含這 url:"
+
+#: class-scan.php:1101
+msgid "No CSS and JS files from on other domains with mixed content."
+msgstr "沒有從其它有混合內容網域的 css 及 js 檔。"
+
+#: class-scan.php:1105
+msgid "Posts with blocked resources."
+msgstr "含有被封鎖來源的貼文。"
+
+#: class-scan.php:1106
+msgid "These posts contain resources that could not load over https."
+msgstr "這些貼文包含一些來源無法負載 https。"
+
+#: class-scan.php:1112 class-scan.php:1137 class-scan.php:1166
+msgid "edit"
+msgstr "編輯"
+
+#: class-scan.php:1115
+msgid "blocked url"
+msgstr "被封鎖的 url"
+
+#: class-scan.php:1121
+msgid ""
+"No posts found that contain references to domains without an SSL certificate."
+msgstr "包含了關於無SSL認證的網域貼文未找到。"
+
+#: class-scan.php:1125
+msgid ""
+"These blocked resources were found on your website, but weren't found in the "
+"database or files."
+msgstr "這些被封鎖的來源在你的網站被發現，可是沒有在資料庫或檔案裡被發現。"
+
+#: class-scan.php:1152
+msgid ""
+"These blocked resources were found on your website, but couldn't be traced "
+"to the source."
+msgstr "這些被封鎖的來源在你的網站被發現，可是無法追蹤來源。"
+
+#: class-scan.php:1189
+msgid "No blocked urls found"
+msgstr "未發現被封鎖的 urls"
+
+#: class-scan.php:1190
+msgid "No .js or .css files with http:// urls found."
+msgstr "沒有http:// urls的 .js 或 .css 檔被找到。"
+
+#: class-scan.php:1191
+msgid "No .js or .css files on other domains with http:// urls found."
+msgstr "沒有http:// urls的 .js 或 .css 檔在其它網域被找到。"
+
+#: class-scan.php:1192
+msgid ""
+"No posts in your database found with links to blocked remote urls found."
+msgstr "在你資料庫沒有貼文被找到關於連結到被封鎖的遠端url。"
+
+#: class-scan.php:1354
+msgid "Plugin not found"
+msgstr "插件未找到"
+
+#: class-scan.php:1382
+msgid "The native Wordpress function is_ssl() returned true"
+msgstr "在地的Wordpress 功能is_ssl() 迴轉到真"
+
+#: class-scan.php:1384
+msgid "The native Wordpress function is_ssl() returned false"
+msgstr "在地的Wordpress 功能is_ssl() 迴轉到偽"
+
+#: class-scan.php:1391 class-scan.php:1399
+msgid "Great! Your scan last completed without errors."
+msgstr "太好了! 你的最後掃瞄已毫無錯誤完成了。"
+
+#: class-scan.php:1393
+msgid ""
+"The last scan was completed with errors. Only migrate if you are sure the "
+"found errors are not a problem for your site."
+msgstr "最後的掃瞄已完成帶有錯誤。若你確定所發現的錯誤並不會對你的網站造成問題你才遷移。"
+
+#: class-scan.php:1395
+msgid ""
+"You haven't scanned the site yet, you should scan your site to check for "
+"possible issues before migrating to ssl."
+msgstr "你還沒有掃瞄這網站，你應遷移到 ssl 之前掃瞄你的網站以檢查潛在的問題。"
+
+#: class-scan.php:1401
+msgid ""
+"The last scan was completed with errors. Are you sure these issues don't "
+"impact your site?."
+msgstr "最後的掃瞄已完成但帶有錯誤。你確定這不會對你的網站有影響嗎?"
+
+#: class-scan.php:1403
+msgid ""
+"You haven't scanned the site yet, you should scan your site to check for "
+"possible issues."
+msgstr "你還沒有掃瞄你的網站，你應為檢查一些潛在的問題而掃瞄你的網站。"
+
+#: class-scan.php:1411
+msgid "Scan for issues"
+msgstr "掃瞄問題"
+
+#: class-scan.php:1423
+msgid ""
+"No SSL was detected. If you do have an ssl certificate, try to change your "
+"current url in the browser address bar to https."
+msgstr "未偵測到 SSL。若你沒有 SSL認證， 請試這改變你現有瀏覽器的 url 網址為 https。"
+
+#: class-scan.php:1425
+msgid "Prepare for your ssl migration by checking your site with the scan"
+msgstr "藉由掃瞄檢查你ˇ的網站以做好 ssl 遷移 的準備"
+
+#: class-scan.php:1432
+msgid "Almost ready to migrate to SSL!"
+msgstr "即將準備好遷移到 SSL !"
+
+#: class-scan.php:1437
+msgid ""
+"No scan completed yet. Before migrating to SSL, you should do a <a "
+"href=\"options-general.php?page=rlrsssl_really_simple_ssl&tab=scan\">scan</a>"
+msgstr ""
+"掃瞄尚未完全。 在遷移到 SSL, 你應作 <a href=\"options-general.php?"
+"page=rlrsssl_really_simple_ssl&tab=scan\">scan</a>"
+
+#: class-licensing.php:43 class-licensing.php:95
+msgid "Go to the settings page"
+msgstr "到設定頁"
+
+#: class-licensing.php:94
+msgid ""
+"You haven't activated your Really Simple SSL pro license yet on your main "
+"site. To get all future updates, enter your license on the settings page of "
+"your main site."
+msgstr "你還沒有啟動你在主站的 Really Simple SSL pro 執照。 為了未來所有的更新， 請在您主站的設定頁輸入您的執照。"
+
+#: class-licensing.php:122
+msgid "License"
+msgstr "執照"
+
+#. Name of the plugin
+msgid "Really Simple SSL pro"
+msgstr "Really Simpole SSL pro"
+
+#. Description of the plugin
+msgid "Add on for Really Simple SSL"
+msgstr "為Really Siimple SSL 的附加元件。"
+
+#. URI of the plugin
+msgid "https://www.really-simple-ssl.com/pro"
+msgstr "https://www.really-simple-ssl.com/pro"
+
+#. Author of the plugin
+msgid "Rogier Lankhorst"
+msgstr "Rogier Lankhorst"
+
+#. Author URI of the plugin
+msgid "https://www.rogierlankhorst.com"
+msgstr "https://www.rogierlankhorst.com"
+
+#: class-premium-options.php:10 class-scan.php:35
+#, php-format
+msgid "%s is a singleton class and you cannot create a second instance."
+msgstr ""
+"%s 是一個單例級而且你無法建立第二例\n"
+
+#: class-premium-options.php:60
+msgid "Turn HTTP Strict Transport Security on"
+msgstr "打開HTTP嚴密傳輸安全系統"
+
+#: class-premium-options.php:85
+msgid "Configure your site for the HSTS preload list"
+msgstr "為了預加載列表要配置您的網站"
+
+#: class-premium-options.php:88
+msgid "Enable the mixed content fixer on the WordPress back-end"
+msgstr "啟用WordPress 後端的混合內容"
+
+#: class-premium-options.php:111
+msgid ""
+"The free version of Really Simple SSL should be updated to make the pro "
+"version work fully."
+msgstr "Really SimpleSSL 的免費版本應該要更新以便這pro版板本能完全作用"
+
+#: class-premium-options.php:127
+msgid "HTTP Strict Transport Security was set in the .htaccess"
+msgstr "HTTP 嚴密傳輸安全系統被設在.htaccess"
+
+#: class-premium-options.php:129
+msgid ""
+"<a href=\"https://en.wikipedia.org/wiki/HTTP_Strict_Transport_Security\" "
+"target=\"_blank\">HTTP Strict Transport Security</a> was not set in your ."
+"htaccess."
+msgstr ""
+"<a href=\"https://en.wikipedia.org/wiki/HTTP_Strict_Transport_Security\" "
+"target=\"_blank\">HTTP Strict Transport Security</a> 沒有被設在你的 .htaccess"
+
+#: class-premium-options.php:131
+msgid "Enable HSTS"
+msgstr "啟動 HSTS"
+
+#: class-premium-options.php:147
+msgid ""
+"Your site has been configured for the HSTS preload list. If you have "
+"submitted your site, it will be preloaded."
+msgstr "你的網站已經為HSTS預加載列表配置好。若你已提交網站，它將會被預架。"
+
+#: class-premium-options.php:148
+msgid "Click"
+msgstr "點選"
+
+#: class-premium-options.php:148
+msgid "here"
+msgstr "這裡"
+
+#: class-premium-options.php:148
+msgid "to submit."
+msgstr "提交"
+
+#: class-premium-options.php:150
+msgid ""
+"Your site is not yet configured for the <a href=\"https://hstspreload."
+"appspot.com\" target=\"_blank\">HSTS preload list</a>. Read the "
+"documentation carefully before you do!"
+msgstr ""
+"你的網站還沒有<a href=\"https://hstspreload.appspot.com\" target=\"_blank\">HSTS "
+"preload list</a> 配置好。 在你行動前先仔細閱讀文件!"
+
+#: class-premium-options.php:152
+msgid "Enable the preload list"
+msgstr "啟動預加載列表"
+
+#: class-premium-options.php:168
+msgid "You have the mixed content fixer activated on your admin panel."
+msgstr "你已在管理系統模板啟動混合內容修護器。"
+
+#: class-premium-options.php:193
+msgid ""
+"Are you sure? Your visitors will keep going to a https site for a year after "
+"you turn this off."
+msgstr "你確定嗎? 在你關閉後你的訪客將持續一年到這https站"
+
+#: class-premium-options.php:195
+msgid ""
+"You cannot use this option when .htaccess is not writable, or 'stop editing "
+"the .htaccess file' is enabled."
+msgstr "當 .htaccess 不可寫，或 '停止編輯/htaccess file'  起動時，你無法使用這選項。"
+
+#: class-premium-options.php:214
+msgid "Did you read the information on the preload list site?"
+msgstr "你讀了在預載名單的資料了嘛?"
+
+#: class-premium-options.php:216
+msgid ""
+"Please note that all subdomains, and both www and non-www domain need to be "
+"https!"
+msgstr "www 網域必須是 https!"
+
+#: class-premium-options.php:218
+msgid "After enabling this option, you have to "
+msgstr ""
+"在啟動這選項後，你必須\n"
+
+#: class-premium-options.php:219
+msgid "submit"
+msgstr "提交"
+
+#: class-premium-options.php:220
+msgid "your site."
+msgstr "你的網站"
+
+#: class-premium-options.php:222
+msgid ""
+"Before submitting, please read the <a href=\"https://hstspreload.appspot."
+"com/\" target=\"_blank\">information</a>."
+msgstr ""
+"在提交前，請讀<a href=\"https://hstspreload.appspot.com/\" target=\"_blank\">"
+"information</a>."
+
+#: class-scan.php:102
+msgid "Generating list of website pages"
+msgstr "網頁的產生名單"
+
+#: class-scan.php:133 class-scan.php:1212
+msgid "Never"
+msgstr "從不"
+
+#: class-scan.php:143
+msgid "For best results, deactivate caching and/or security plugins."
+msgstr "為了最佳的結果，停止cashing 及/或安全插件。"
+
+#: class-scan.php:144
+msgid ""
+"If your scan freezes, try disabling curl or brute force database search."
+msgstr "若你的掃瞄器當機時，試著停止curl或用蠻力尋找數據庫。"
+
+#: class-scan.php:146
+msgid "Disable brute force database search."
+msgstr "停止硬性搜尋數據庫"
+
+#: class-scan.php:148
+msgid "Disable curl."
+msgstr "停用 curl。"
+
+#: class-scan.php:154
+msgid "Scan"
+msgstr "掃瞄"
+
+#: class-scan.php:156
+msgid "Quick scan"
+msgstr "快速掃瞄"
+
+#: class-scan.php:157
+msgid "Full scan"
+msgstr "完全掃瞄"
+
+#: class-scan.php:180 class-scan.php:194
+msgid "Plugin dependency error."
+msgstr "插件 dependency error。"
+
+#: class-scan.php:181
+msgid ""
+"Really Simple SSL pro is an add-on for Really Simple SSL, and cannot do it "
+"on its own :("
+msgstr "Really Simple SSL pro 是 Really Simple SSL一個附加元件, 無法自己來:("
+
+#: class-licensing.php:42
+msgid ""
+"You haven't activated your Really Simple SSL pro license yet. To get all "
+"future updates, enter your license on the settings page."
+msgstr "你還沒有啟動你的 Really Simple SSL pro 認證。要取得未來所有的更新，請在設定網頁上輸入你的認證。"

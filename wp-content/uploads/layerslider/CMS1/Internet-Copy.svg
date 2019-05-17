@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="60px" height="18px" viewBox="0 0 60 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Internet Copy</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M-3296,-8840 L9527,-8840 L9527,5151 L-3296,5151 L-3296,-8840 Z" id="path-1"></path>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="12823" height="13991" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <use id="Rectangle-5" stroke="#979797" mask="url(#mask-2)" stroke-width="12" stroke-dasharray="15,15" xlink:href="#path-1"></use>
+        <g id="Group-21" transform="translate(-845.000000, -755.000000)" fill="#FFFFFF" font-family="Nunito-SemiBold, Nunito" font-size="16" font-weight="500">
+            <text id="Internet-Copy">
+                <tspan x="846" y="769">Internet</tspan>
+            </text>
+        </g>
+    </g>
+</svg>

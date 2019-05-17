@@ -1,0 +1,219 @@
+# Translation of Stable (latest release) in Slovak
+# This file is distributed under the same license as the Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2016-03-31 18:19:50+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+"X-Generator: GlotPress/1.1.0-alpha\n"
+"Project-Id-Version: Stable (latest release)\n"
+
+#: tadv_admin.php:125
+msgid "Default settings restored."
+msgstr "Predvolené nastavenia boli obnovené."
+
+#: tadv_admin.php:137
+msgid "TinyMCE Advanced Settings Export"
+msgstr "TinyMCE Advanced export nastavení"
+
+#: tadv_admin.php:141
+msgid "The settings are exported as a JSON encoded string."
+msgstr "Nastavenia sú exportované ako JSON kódovaný reťazec."
+
+#: tadv_admin.php:142
+msgid "Please copy the content and save it in a <b>text</b> (.txt) file, using a plain text editor like Notepad."
+msgstr "Skopírujte si obsah a uložte ho do <b>text</b> (.txt) súboru, pomocou obyčajného textového editora, napr.: Poznámkový blok."
+
+#: tadv_admin.php:143
+msgid "It is important that the export is not changed in any way, no spaces, line breaks, etc."
+msgstr "Je dôležité, aby ste export v žiadnom prípade nezmenili, žiadne medzery, nové riadky, atď."
+
+#: tadv_admin.php:148
+msgid "Select All"
+msgstr "Vybrať všetko"
+
+#: tadv_admin.php:150 tadv_admin.php:176
+msgid "Back to Editor Settings"
+msgstr "Späť na nastavenie editora"
+
+#: tadv_admin.php:162
+msgid "TinyMCE Advanced Settings Import"
+msgstr "TinyMCE Advanced import nastavení"
+
+#: tadv_admin.php:165
+msgid "The settings are imported from a JSON encoded string. Please paste the exported string in the text area below."
+msgstr "Nastavenia sú importované z JSON kódovaného reťazca. Prosím vložte exportovaný reťazec do textového poľa nižšie."
+
+#: tadv_admin.php:170
+msgid "Verify"
+msgstr "Potvrdiť"
+
+#: tadv_admin.php:171
+msgid "Import"
+msgstr "Import"
+
+#: tadv_admin.php:201
+msgid "Importing of settings failed."
+msgstr "Import nastavenia zlyhal."
+
+#: tadv_admin.php:227
+msgid "ERROR: All toolbars are empty. Default settings loaded."
+msgstr "CHYBA: Všetky panely s nástrojmi sú prázdne. Boli načítané predvolené nastavenia."
+
+#: tadv_admin.php:239
+msgid "Editor Settings"
+msgstr "Nastavenie editora"
+
+#: tadv_admin.php:246
+msgid "Settings saved."
+msgstr "Nastavenia uložené."
+
+#: tadv_admin.php:255 tadv_admin.php:509
+msgid "Save Changes"
+msgstr "Uložiť nastavenia"
+
+#: tadv_admin.php:260
+msgid "New in TinyMCE 4.0/WordPress 3.9 is the editor menu. When it is enabled, most buttons are also available as menu items."
+msgstr "Novinka v TinyMCE 4.0/WordPress 3.9 je menu editor. Keď je povolený, väčšina tlačidiel je priamo dostupná ako položka v menu."
+
+#: tadv_admin.php:264
+msgid "Enable the editor menu."
+msgstr "Povoliť menu editora."
+
+#: tadv_admin.php:376
+msgid "Drag buttons from the unused buttons below and drop them in the toolbars above, or drag the buttons in the toolbars to rearrange them."
+msgstr "Presuňte tlačidlá z nepoužívaných tlačidiel nižšie do panela s nástrojmi, ktoré je vyššie (drag and drop). Tlačidlá v panele s nástrojmi môžete aj preusporiadať."
+
+#: tadv_admin.php:379
+msgid "Unused Buttons"
+msgstr "Nepoužívané tlačidlá"
+
+#: tadv_admin.php:420
+msgid "Also enable:"
+msgstr "Taktiež povoľ:"
+
+#: tadv_admin.php:423
+msgid "List Style Options"
+msgstr "Možnosti štýlu zoznamu"
+
+#: tadv_admin.php:428
+msgid "Context Menu"
+msgstr "Kontextové menu"
+
+#: tadv_admin.php:433
+msgid "Link (replaces the Insert/Edit Link dialog)"
+msgstr "Odkaz (nahradí okno Vložiť/upraviť odkaz)"
+
+#: tadv_admin.php:443
+msgid "Advanced Options"
+msgstr "Nastavenia"
+
+#: tadv_admin.php:451
+msgid "Import editor-style.css."
+msgstr "Import editor-style.css."
+
+#: tadv_admin.php:453
+msgid "It seems your theme does not support customised styles for the editor."
+msgstr "Zdá sa, že vaša tému nepodporuje vlastné štýly pre editor."
+
+#: tadv_admin.php:454
+msgid "You can create a CSS file named <code>editor-style.css</code> and upload it to your theme's directory."
+msgstr "Môžete vytvoriť CSS súbor s názvom <code>editor-style.css</code> a nahrať ju do adresára vašej témy."
+
+#: tadv_admin.php:455
+msgid "After that, enable this setting."
+msgstr "Potom povoľte toto nastavenie."
+
+#: tadv_admin.php:464
+msgid "Load the CSS classes used in editor-style.css and replace the Formats button and sub-menu."
+msgstr "Načítať CSS triedy používané v editore-style.css a nahradiť formáty tlačidiel a podriadené menu (sub-menu)."
+
+#: tadv_admin.php:469
+msgid "Stop removing the &lt;p&gt; and &lt;br /&gt; tags when saving and show them in the Text editor"
+msgstr "Neodstraňovať tagy &lt;p&gt; a &lt;br /&gt; pri ukladaní a zobrazovať ich v textovom editore"
+
+#: tadv_admin.php:471
+msgid "This will make it possible to use more advanced coding in the HTML editor without the back-end filtering affecting it much."
+msgstr "Toto umožní použiť pokročilé kódovanie v editore HTML bez filtrovania back-endom."
+
+#: tadv_admin.php:472
+msgid "However it may behave unexpectedly in rare cases, so test it thoroughly before enabling it permanently."
+msgstr "Avšak v zriedkavých prípadoch sa to môže správať neočakávane, takže to dôkladne vyskúšajte pred trvalým zapnutím."
+
+#: tadv_admin.php:473
+msgid "Line breaks in the HTML editor would still affect the output, in particular do not use empty lines, line breaks inside HTML tags or multiple &lt;br /&gt; tags."
+msgstr "Nové riadky v editore HTML budú stále ovplyvňovať výstup, nepoužívajte prázdne riadky, zalomenie vnútri značiek HTML alebo viaceré &lt;br /&gt; tagy."
+
+#: tadv_admin.php:479
+msgid "Replace font size settings"
+msgstr "Nahradiť nastavenie veľkosti písma"
+
+#: tadv_admin.php:480
+msgid "Replaces the size setting available for fonts with: 8px 10px 12px 14px 16px 20px 24px 28px 32px 36px."
+msgstr "Nahradí nastavenie veľkosti pre písmo s: 8px 10px 12px 14px 16px 20px 24px 28px 32px 36px."
+
+#: tadv_admin.php:485
+msgid "Enable pasting of image source"
+msgstr "Umožniť vkladanie zdroju obrázka"
+
+#: tadv_admin.php:487
+msgid "Works only in Firefox and Safari. These browsers support pasting of images directly in the editor and convert them to base64 encoded text."
+msgstr "Funguje iba v prehliadači Firefox a Safari. Tieto prehliadače podporujú vkladanie obrázkov priamo v editore a previesť ich do base64 kódovania textu."
+
+#: tadv_admin.php:488
+msgid "This is not acceptable for larger images like photos or graphics, but may be useful in some cases for very small images like icons, not larger than 2-3KB."
+msgstr "To nie je akceptované pre väčšie obrázky ako fotografie alebo grafiku, ale môžu byť užitočné v niektorých prípadoch pri veľmi malých obrazov ako ikony, nie väčšie ako 2-3KB."
+
+#: tadv_admin.php:489
+msgid "These images will not be available in the Media Library."
+msgstr "Tieto obrázky nebudú k dispozícii v Multimédiách."
+
+#: tadv_admin.php:495
+msgid "Administration"
+msgstr "Administrácia"
+
+#: tadv_admin.php:497
+msgid "Export Settings"
+msgstr "Exportovanie nastavení"
+
+#: tadv_admin.php:498
+msgid "Import Settings"
+msgstr "Importovanie nastavení"
+
+#: tadv_admin.php:508
+msgid "Restore Default Settings"
+msgstr "Obnovenie predvolených nastavení"
+
+#: tadv_admin.php:514
+msgid "The [Toolbar toggle] button shows or hides the second, third, and forth button rows. It will only work when it is in the first row and there are buttons in the second row."
+msgstr "[Toolbar toggle] tlačidlo zobrazí alebo skryje druhý, tretí a štvrtý riadok tlačidiel. Toto bude fungovať len ak bude v prvom riadku a v druhom riadku sú tlačidlá."
+
+#: tinymce-advanced.php:180
+msgid "TinyMCE Advanced requires WordPress version %1$s or newer. It appears that you are running %2$s. This can make the editor unstable."
+msgstr "TinyMCE Advanced vyžaduje WordPress verziu %1$s alebo novšiu. Zdá sa, že používate verziu %2$s. Toto môže spôsobiť nestabilné správanie sa editoru."
+
+#: tinymce-advanced.php:187
+msgid "Please upgrade your WordPress installation or download an <a href=\"%s\">older version of the plugin</a>."
+msgstr "Prosím aktualizujte si vašu WordPress inštaláciu alebo si stiahnite <a href=\"%s\">staršiu verziu modulu</a>."
+
+#. Plugin Name of the plugin/theme
+msgid "TinyMCE Advanced"
+msgstr "TinyMCE Advanced"
+
+#. Plugin URI of the plugin/theme
+msgid "http://www.laptoptips.ca/projects/tinymce-advanced/"
+msgstr "http://www.laptoptips.ca/projects/tinymce-advanced/"
+
+#. Description of the plugin/theme
+msgid "Enables advanced features and plugins in TinyMCE, the visual editor in WordPress."
+msgstr "TinyMCE umožní pokročilé funkcie a moduly vo vizuálnom editore WordPress."
+
+#. Author of the plugin/theme
+msgid "Andrew Ozz"
+msgstr "Andrew Ozz"
+
+#. Author URI of the plugin/theme
+msgid "http://www.laptoptips.ca/"
+msgstr "http://www.laptoptips.ca/"

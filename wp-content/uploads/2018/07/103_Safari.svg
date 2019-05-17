@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>103_Safari</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="103_Safari" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="safari" fill-rule="nonzero">
+            <circle id="Oval" fill="#2196F3" cx="24" cy="24" r="24"></circle>
+            <polygon id="Shape" fill="#FAFAFA" points="21.4 21.4 9.4 39.4 27.4 27.4"></polygon>
+            <polygon id="Shape" fill="#F44336" points="21.4 21.4 27.4 27.4 39.4 9.4"></polygon>
+        </g>
+    </g>
+</svg>

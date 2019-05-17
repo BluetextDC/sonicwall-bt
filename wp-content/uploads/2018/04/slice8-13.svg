@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 206 140" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;">
+    <g transform="matrix(1,0,0,1,-106,-417)">
+        <g>
+            <g transform="matrix(0.941512,0,0,0.941512,133.863,-97.916)">
+                <g transform="matrix(1.01387,0,0,1.01584,-2.5792,-9.96952)">
+                    <path d="M185.95,561.805C185.95,558.626 183.365,556.046 180.18,556.046L83.747,556.046C80.563,556.046 77.977,558.626 77.977,561.805L77.977,623.437C77.977,626.615 80.563,629.196 83.747,629.196L180.18,629.196C183.365,629.196 185.95,626.615 185.95,623.437L185.95,561.805Z" style="fill:none;stroke:rgb(99,101,105);stroke-width:4.71px;"/>
+                </g>
+                <path d="M95.99,596.2L114.798,596.2L123.129,576.708L135.386,607.197L145.178,586.554L151.828,594.293L165.667,594.293" style="fill:none;stroke:rgb(99,101,105);stroke-width:4.78px;"/>
+                <path d="M126.061,620.057L136.09,620.057" style="fill:none;stroke:rgb(99,101,105);stroke-width:4.78px;"/>
+                <path d="M121.188,629.196L121.188,639.911L112.414,639.911L149.421,639.911L141.559,639.911L141.559,629.196" style="fill:none;stroke:rgb(99,101,105);stroke-width:4.78px;"/>
+            </g>
+            <g transform="matrix(0.97257,0,0,0.97257,98.5808,397.672)">
+                <path d="M98.179,114.687C87.689,121.266 63.51,122.312 55.102,122.194L55.014,122.19L54.93,122.19C46.522,122.309 22.369,121.131 11.755,114.498C13.26,92.355 31.85,75.656 54.997,75.656C78.165,75.656 96.755,92.368 98.243,114.528C98.25,114.599 98.212,114.667 98.179,114.687ZM54.997,23.62C69.294,23.62 80.92,35.294 80.92,49.643C80.92,63.992 69.294,75.667 54.997,75.667C40.704,75.667 29.078,63.992 29.078,49.643C29.078,35.294 40.704,23.62 54.997,23.62Z" style="fill:none;stroke:rgb(99,101,105);stroke-width:6.57px;stroke-linecap:butt;stroke-miterlimit:1.41421;"/>
+            </g>
+            <g transform="matrix(1.42996,0,0,1.42996,-479.443,165.431)">
+                <text x="432.764px" y="270.779px" style="font-family:'Nunito-Regular', 'Nunito';font-size:16px;fill:rgb(106,109,114);">On-pr<tspan x="475.676px " y="270.779px ">e</tspan>mises</text>
+            </g>
+        </g>
+    </g>
+</svg>

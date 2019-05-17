@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 187 70" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;">
+    <g transform="matrix(1,0,0,1,-1045,-516)">
+        <g id="blue-upper-rect" serif:id="blue upper rect" transform="matrix(1.10897,0,0,1.01515,-133.004,-7.63652)">
+            <path d="M1230.68,521.513C1230.68,518.419 1228.38,515.907 1225.55,515.907L1068.17,515.907C1065.33,515.907 1063.03,518.419 1063.03,521.513L1063.03,579.065C1063.03,582.158 1065.33,584.67 1068.17,584.67L1225.55,584.67C1228.38,584.67 1230.68,582.158 1230.68,579.065L1230.68,521.513Z" style="fill:rgb(214,222,225);"/>
+            <clipPath id="_clip1">
+                <path d="M1230.68,521.513C1230.68,518.419 1228.38,515.907 1225.55,515.907L1068.17,515.907C1065.33,515.907 1063.03,518.419 1063.03,521.513L1063.03,579.065C1063.03,582.158 1065.33,584.67 1068.17,584.67L1225.55,584.67C1228.38,584.67 1230.68,582.158 1230.68,579.065L1230.68,521.513Z"/>
+            </clipPath>
+            <g clip-path="url(#_clip1)">
+                <g transform="matrix(0.901737,0,0,0.985078,158.349,8.69564)">
+                    <text x="1058.56px" y="544.323px" style="font-family:'Nunito-Regular', 'Nunito';font-size:23px;fill:rgb(97,102,113);">Antivirus</text>
+                    <text x="1069.41px" y="567.323px" style="font-family:'Nunito-Regular', 'Nunito';font-size:23px;fill:rgb(97,102,113);">Engine</text>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

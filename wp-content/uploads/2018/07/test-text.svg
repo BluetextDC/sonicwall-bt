@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 757 284" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;">
+    <g transform="matrix(1,0,0,1,-68,-206)">
+        <g>
+            <g transform="matrix(1,0,0,1,-298.002,-17.7317)">
+                <text x="363.905px" y="244.289px" style="font-family:'Nunito-Regular', 'Nunito';font-size:28px;">DEFEND WEB PR<tspan x="591.741px " y="244.289px ">O</tspan>PER<tspan x="666.137px " y="244.289px ">T</tspan>IE<tspan x="706.065px " y="244.289px ">S</tspan> RUNNING IN A</text>
+                <text x="363.905px" y="280.289px" style="font-family:'Nunito-Regular', 'Nunito';font-size:28px;">PRIV<tspan x="425.925px 443.957px " y="280.289px 280.289px ">AT</tspan>E OR PUBLIC CL<tspan x="670.785px " y="280.289px ">O</tspan>UD ENVIR<tspan x="822.937px " y="280.289px ">O</tspan>NMENT</text>
+            </g>
+            <g transform="matrix(1,0,0,1,-110.9,-6.70159)">
+                <text x="193.115px" y="300.804px" style="font-family:'Nunito-Regular', 'Nunito';font-size:16px;">Shrink attack sur<tspan x="313.259px " y="300.804px ">f</tspan>ace with full management and contr<tspan x="574.523px " y="300.804px ">o</tspan>l of w<tspan x="622.859px " y="300.804px ">e</tspan>b application trafﬁc</text>
+                <text x="193.115px" y="348.804px" style="font-family:'Nunito-Regular', 'Nunito';font-size:16px;">Detect and aler<tspan x="302.347px " y="348.804px ">t</tspan> on anomalies in web application behavior</text>
+                <text x="193.115px" y="396.804px" style="font-family:'Nunito-Regular', 'Nunito';font-size:16px;">P<tspan x="203.275px 208.763px " y="396.804px 396.804px ">ro</tspan>tect against kno<tspan x="330.923px " y="396.804px ">w</tspan>n and z<tspan x="396.491px 404.923px 410.411px 419.531px 426.571px " y="396.804px 396.804px 396.804px 396.804px 396.804px ">ero-d</tspan>ay vulnerabilities with vir<tspan x="613.099px " y="396.804px ">t</tspan>ual patching and custom rules</text>
+                <text x="193.115px" y="444.804px" style="font-family:'Nunito-Regular', 'Nunito';font-size:16px;">Defend agains<tspan x="296.219px " y="444.804px ">t</tspan> vulnerabilities outlined b<tspan x="479.019px " y="444.804px ">y</tspan> O<tspan x="503.339px 519.947px " y="444.804px 444.804px ">WA</tspan>SP<tspan x="550.859px " y="444.804px ">,</tspan> including SQL injection and cr<tspan x="770.315px " y="444.804px ">o</tspan>ss-site scripting (<tspan x="901.723px 911.899px " y="444.804px 444.804px ">XS</tspan>S)</text>
+                <text x="193.115px" y="492.804px" style="font-family:'Nunito-Regular', 'Nunito';font-size:16px;">P<tspan x="203.275px 208.763px 217.099px 225.227px " y="492.804px 492.804px 492.804px 492.804px ">reve</tspan>nt data thef<tspan x="315.979px " y="492.804px ">t</tspan> via data masking and page<tspan x="516.811px " y="492.804px ">-</tspan>blocking techniques</text>
+            </g>
+            <g transform="matrix(1,0,0,1,13.601,3.43089)">
+                <g transform="matrix(1,0,0,1,54.7386,279.264)">
+                    <text x="0px" y="8.596px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:12px;">●</text>
+                </g>
+                <g transform="matrix(1,0,0,1,54.7386,328.264)">
+                    <text x="0px" y="8.596px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:12px;">●</text>
+                </g>
+                <g transform="matrix(1,0,0,1,54.7386,376.264)">
+                    <text x="0px" y="8.596px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:12px;">●</text>
+                </g>
+                <g transform="matrix(1,0,0,1,54.7386,423.264)">
+                    <text x="0px" y="8.596px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:12px;">●</text>
+                </g>
+                <g transform="matrix(1,0,0,1,54.7386,471.264)">
+                    <text x="0px" y="8.596px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:12px;">●</text>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="598px" height="352px" viewBox="0 0 598 352" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Wall2</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-79" transform="translate(-509.000000, -297.000000)" fill="#D3D3D3" fill-rule="nonzero">
+            <path d="M1099,305 L1099,297 L1107,305 L1099,305 Z M1099,305 L709,305 C602.961328,305 517,390.961328 517,497 L517,539.082031 L509,539.082031 L509,497 C509,386.54305 598.54305,297 709,297 L1107,297 L1107,649 L509,649 L509,595.969185 L517,595.969185 L517,641 L1099,641 L1099,305 Z M1099,641 L1107,641 L1099,649 L1099,641 Z M517,649 L509,641 L517,641 L517,649 Z M517,649 L509,641 L517,641 L517,649 Z M1099,641 L1099,305 L709,305 C602.961328,305 517,390.961328 517,497 L517,539.082031 L509,539.082031 L509,497 C509,386.54305 598.54305,297 709,297 L1107,297 L1107,649 L509,649 L509,595.969185 L517,595.969185 L517,641 L1099,641 Z M1099,641 L1107,641 L1099,649 L1099,641 Z M1099,305 L1099,297 L1107,305 L1099,305 Z" id="Wall2"></path>
+        </g>
+    </g>
+</svg>

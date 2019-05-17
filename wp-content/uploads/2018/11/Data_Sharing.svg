@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 128 33" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;">
+    <g transform="matrix(1,0,0,1,-1089,-239)">
+        <g id="Page-1">
+            <rect id="Rectangle" x="-288" y="-1260" width="4368" height="4802" style="fill:none;stroke:rgb(155,155,155);stroke-width:20px;stroke-dasharray:30,10;"/>
+            <g id="Group-69" transform="matrix(1,0,0,1,38,27)">
+                <g id="Group-63" transform="matrix(1,0,0,1,982.593,20.7407)">
+                    <g transform="matrix(1,0,0,1,71.4571,215.123)">
+                        <g id="Data-Sharing">
+                            <text x="0px" y="0px" style="font-family:'Nunito-Medium', 'Nunito';font-weight:500;font-size:20.741px;fill:rgb(99,101,105);">Data Sharing</text>
+                        </g>
+                    </g>
+                </g>
+                <path id="Combined-Shape" d="M542.229,668.996C532.014,670.878 521.512,671.18 510.982,669.595C444.868,659.649 400.988,615.128 400.988,552.348C400.988,493.019 449.19,444.306 510.682,439.129C509.585,433.294 509.012,427.287 509.012,421.154C509.012,364.675 557.57,318.889 617.469,318.889C626.019,318.889 634.339,319.822 642.318,321.586C676.28,253.606 749.707,206.543 834.815,206.543C929.293,206.543 1009.38,264.541 1037.06,344.767C1111.59,362.857 1166.67,426.632 1166.67,502.531C1166.67,592.499 1089.28,665.432 993.827,665.432L542.229,668.996Z" style="fill:none;stroke:rgb(70,175,232);stroke-width:10.37px;"/>
+            </g>
+        </g>
+    </g>
+</svg>

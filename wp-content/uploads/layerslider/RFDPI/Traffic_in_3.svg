@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="181px" height="44px" viewBox="0 0 181 44" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Traffic_in_3</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Traffic_in_3" fill="#FFCC01">
+            <path d="M0,11 L164,11 C170.627417,11 176,16.372583 176,23 L176,23 C176,29.627417 170.627417,35 164,35 L0,35 L0,11 Z" id="Rectangle-16"></path>
+            <polygon id="Path-60-Copy-3" points="162.569682 22 143 0 162.569682 0 181 22"></polygon>
+            <polygon id="Path-60-Copy-5" transform="translate(162.000000, 33.000000) scale(1, -1) translate(-162.000000, -33.000000) " points="162.569682 44 143 22 162.569682 22 181 44"></polygon>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,899 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Font Organizer\n"
+"POT-Creation-Date: 2017-05-27 13:42+0300\n"
+"PO-Revision-Date: 2017-05-27 13:44+0300\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: he_IL\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.2\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-WPHeader: font-organizer.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: advanced-settings.php:4
+msgid "Advanced CSS Settings"
+msgstr "הגדרות CSS מתקדם"
+
+#: advanced-settings.php:20
+msgid "System Settings"
+msgstr "הגדרות מערכת"
+
+#: classes/class-ElementsTable.php:67 settings.php:227
+msgid "Not Stated"
+msgstr "לא צוין"
+
+#: classes/class-ElementsTable.php:100
+msgid "Id"
+msgstr "מזהה"
+
+#: classes/class-ElementsTable.php:101 general-settings.php:49
+#: general-settings.php:111 settings.php:1122
+msgid "Font Weight"
+msgstr "משקל גופן"
+
+#: classes/class-ElementsTable.php:102
+msgid "Custom Elements"
+msgstr "אלמנט מותאם אישית"
+
+#: classes/class-ElementsTable.php:103 settings.php:1447 settings.php:1464
+msgid "Important"
+msgstr "חשוב"
+
+#: classes/class-ElementsTable.php:114 settings.php:290
+msgid "Yes"
+msgstr "כן"
+
+#: classes/class-ElementsTable.php:114 settings.php:293
+msgid "No"
+msgstr "לא"
+
+#: classes/class-ElementsTable.php:122 classes/class-ElementsTable.php:154
+msgid "Delete"
+msgstr "מחק"
+
+#: classes/class-ElementsTable.php:223
+msgid "No custom elements found."
+msgstr "לא נמצאו אלמנטים מותאמים אישית."
+
+#: font-organizer.php:232 settings.php:417 settings.php:713
+msgid "Font Settings"
+msgstr "הגדרות גופנים"
+
+#: general-settings.php:4
+msgid "1. Add Fonts"
+msgstr "1. הוספת גופנים"
+
+#: general-settings.php:6
+msgid "Step 1: Select and add fonts to be used in your website."
+msgstr "שלב 1: בחר והוסף גופנים לשימוש באתר האינטרנט שלך."
+
+#: general-settings.php:8
+msgid "You can select google or regular fonts."
+msgstr "באפשרותך לבחור בגופנים של גוגל או גופנים מוכרים."
+
+#: general-settings.php:12
+msgid "Available Fonts"
+msgstr "גופנים זמינים"
+
+#: general-settings.php:13 general-settings.php:108 general-settings.php:167
+#: settings.php:768
+msgid "-- Select Font --"
+msgstr "-- בחירת גופן --"
+
+#: general-settings.php:19
+msgid "Use This Font"
+msgstr "השתמש בגופן זה"
+
+#: general-settings.php:30
+msgid "2. Custom Fonts"
+msgstr "2. גופנים מיובאים"
+
+#: general-settings.php:32
+msgid "Step 2: Upload custom fonts to be used in your website."
+msgstr "שלב 2: העלה גופנים מותאמים אישית לשימוש באתר האינטרנט שלך."
+
+#: general-settings.php:34
+msgid ""
+"Name the font you want to upload with the actual name of the font or similar "
+"(no need to write the font weight as well). In order to support more "
+"browsers, you can click the green plus to upload more font formats."
+msgstr ""
+"בחר שם לגופן שברצונך לעלות (אין צורך להוסיף את המשקל). על מנת לתמוך בדפדפנים "
+"נוספים, באפשרותך ללחוץ על הפלוס הירוק על מנת להעלות גופן בפורמטים שונים של "
+"אותו המשקל."
+
+#: general-settings.php:35
+msgid ""
+"You can now set font weight for this upload. If the font name is the same as "
+"an existing font name, the font weight will then be added to the existing "
+"font and can be used under that font name. You can always leave it Normal."
+msgstr ""
+"כעת באפשרותך להגדיר את משקל הגופן להעלאה זו. אם שם הגופן קיים, המשקל החדש "
+"יתווסף לגופן הקיים, וניתן יהיה להשתמש תחת אותו השם. ניתן תמיד להשאיר את "
+"המשקל על נורמלי."
+
+#: general-settings.php:38
+msgid ""
+"This font format is already selected. Reminder: you need to upload the font "
+"files for the same font weight."
+msgstr ""
+"סיומת קובץ הגופן שנבחר כבר קיים. תזכורת: צריך להעלות את כל הקבצים המתאימים "
+"למשקל אחד של הגופן בכל פעם."
+
+#: general-settings.php:45
+msgid "Font Name"
+msgstr "שם גופן"
+
+#: general-settings.php:46
+msgid "Font weight name cannot be empty."
+msgstr "שם משקל הגופן אינו יכול להיות ריק."
+
+#: general-settings.php:54
+msgid "Font Weight File"
+msgstr "קובץ משקל גופן"
+
+#: general-settings.php:58
+msgid "Accepted Font Format : "
+msgstr "פורמט גופן נתמך:"
+
+#: general-settings.php:61 general-settings.php:62
+msgid "Add Another Font Format File"
+msgstr "הוסף עוד קובץ פורמט גופן"
+
+#: general-settings.php:70
+msgid "Upload"
+msgstr "העלה"
+
+#: general-settings.php:81
+msgid "3. Known Elements Settings"
+msgstr "3. הגדרות אלמנטים הידועים"
+
+#: general-settings.php:84
+msgid ""
+"Step 3: In this section you can apply your fonts to the various elements of "
+"the website. Simply select the font you want to use for each element."
+msgstr ""
+"שלב 3: בחלק זה ניתן להחיל את הגופנים שלך על רכיבים שונים באתר. פשוט בחר את "
+"הגופן הרצוי עבור כל רכיב."
+
+#: general-settings.php:85
+msgid ""
+"In case of font not displaying in your website after saving, try clear the "
+"cache using Shift+F5 or Ctrl+Shift+Delete to clear all. (You may need to "
+"hard clear cache, just search in google \"Hard clear cache\" + browser name. "
+"Example: \"Hard clear chrome\")."
+msgstr ""
+"במקרה שגופן לא מוצג באתר האינטרנט שלך לאחר שמירתו, נסה לנקות את המטמון "
+"באמצעות Shift + F5 או Ctrl + Shift + Delete כדי לנקות את כל. (ייתכן שיהיה "
+"עליך לנקות מטמון בצורה \"קשה\", פשוט חפש בגוגל \"Hard clear cache\" + שם "
+"הדפדפן. דוגמה: \"Hard clear chrome\")."
+
+#: general-settings.php:100
+msgid "4. Custom Elements Settings"
+msgstr "4. הגדרות אלמנטים מותאמים אישית"
+
+#: general-settings.php:103
+msgid ""
+"Step 4: Assign a font to custom elements in your website. Simply select the "
+"font, and then type the elements you want to assign with the font."
+msgstr ""
+"שלב 4: הקצאת גופן עבור רכיבים מותאמים אישית באתר האינטרנט שלך. פשוט בחר את "
+"הגופן והמשקל, ולאחר מכן הקלד את הרכיבים שאתה רוצה להקצות לגופן זה מופרדים "
+"בפסיק (,)."
+
+#: general-settings.php:107 general-settings.php:164
+msgid "Font"
+msgstr "גופן"
+
+#: general-settings.php:108
+msgid "You must select a font for the elements."
+msgstr "עליך לבחור גופן עבור הרכיבים."
+
+#: general-settings.php:117
+msgid "Custom Element"
+msgstr "רכיב מותאם אישית"
+
+#: general-settings.php:121
+msgid "Font custom elements cannot be empty."
+msgstr "רכיב מותאם אישית אינו יכול להיות ריק."
+
+#: general-settings.php:122
+msgid ""
+"Custom elements can be seperated by commas to allow multiple elements. "
+"Example: #myelementid, .myelementclass, .myelementclass .foo, etc."
+msgstr ""
+"רכיבים מותאמים אישית ניתן להפריד בפסיקים כדי לאפשר מספר אלמנטים. דוגמה: ."
+"myelementclass, #myelementid, .myelementclass .foo, וכו '."
+
+#: general-settings.php:133
+msgid "Apply Custom Elements"
+msgstr "החל על אלמנטים אלה"
+
+#: general-settings.php:144
+msgid "5. Manage Fonts"
+msgstr "5. ניהול גופנים"
+
+#: general-settings.php:147
+msgid ""
+"Step 5: Select a font to delete, edit or view its source and custom elements "
+"assigned to it."
+msgstr ""
+"שלב 5: בחר גופן כדי לערוך, למחוק או להציג את מקורו ואת רכיבים מותאמים אישית "
+"מוקצה לו."
+
+#: general-settings.php:150 settings.php:774
+msgid "Note: "
+msgstr "הערה:"
+
+#: general-settings.php:151
+msgid ""
+"You can edit the values of every row to change the custom elements assigned "
+"or add and remove the important tag. Just change the text or check the box "
+"and the settings will automatically save."
+msgstr ""
+"באפשרותך לערוך את הערכים של כל שורה, על מנת לשנות את הרכיבים המותאמים אישית "
+"או להוסיף ולהסיר את התגית 'important!'. רק שנה את הטקסט או לחץ על התיבה "
+"והשינויים ישמרו אוטומטית."
+
+#: general-settings.php:155
+msgid "Changes saved!"
+msgstr "השינויים נשמרו בהצלחה!"
+
+#: general-settings.php:159
+msgid "Data is invalid"
+msgstr "ערך לא תקין."
+
+#: general-settings.php:179
+msgid "Delete Font"
+msgstr "מחק גופן"
+
+#: general-settings.php:179
+msgid "Are you sure you want to delete this font from your website?"
+msgstr "האם אתה בטוח שברצונך למחוק גופן זה מהאתר שלך?"
+
+#: general-settings.php:190
+msgid "Source"
+msgstr "מקור"
+
+#: general-settings.php:194
+msgid "Urls"
+msgstr "כתובת"
+
+#: helpers/helpers.php:95
+msgid "Google"
+msgstr "גוגל"
+
+#: helpers/helpers.php:98
+msgid "Standard"
+msgstr "סטנדרטי"
+
+#: helpers/helpers.php:101
+msgid "Custom"
+msgstr "מיובא"
+
+#: helpers/helpers.php:104
+msgid "Google (Early Access)"
+msgstr "גוגל (גישה מוקדמת)"
+
+#: helpers/helpers.php:118 helpers/helpers.php:120 helpers/helpers.php:149
+#: helpers/helpers.php:151 settings.php:228
+msgid "Light"
+msgstr "בהיר"
+
+#: helpers/helpers.php:120 helpers/helpers.php:124 helpers/helpers.php:128
+#: helpers/helpers.php:132 helpers/helpers.php:136 helpers/helpers.php:140
+#: helpers/helpers.php:151 helpers/helpers.php:155 helpers/helpers.php:159
+#: helpers/helpers.php:163 helpers/helpers.php:167 helpers/helpers.php:171
+#: settings.php:234
+msgid "Italic"
+msgstr "נטוי"
+
+#: helpers/helpers.php:122 helpers/helpers.php:124 helpers/helpers.php:153
+#: helpers/helpers.php:155 settings.php:229
+msgid "Normal"
+msgstr "רגיל"
+
+#: helpers/helpers.php:126 helpers/helpers.php:128 helpers/helpers.php:157
+#: helpers/helpers.php:159 settings.php:230
+msgid "Semi-Bold"
+msgstr "מודגש למחצה"
+
+#: helpers/helpers.php:130 helpers/helpers.php:132 helpers/helpers.php:161
+#: helpers/helpers.php:163 settings.php:231
+msgid "Bold"
+msgstr "מודגש"
+
+#: helpers/helpers.php:134 helpers/helpers.php:136 helpers/helpers.php:165
+#: helpers/helpers.php:167 settings.php:232
+msgid "Extra-Bold"
+msgstr "מודגש מאוד"
+
+#: helpers/helpers.php:138 helpers/helpers.php:140 helpers/helpers.php:169
+#: helpers/helpers.php:171 settings.php:233
+msgid "Black"
+msgstr "שחור"
+
+#: settings.php:146
+msgid "<body> Font"
+msgstr "גופן לתגית <body>"
+
+#: settings.php:147
+msgid "<h1> Font"
+msgstr "גופן לתגית <h1>"
+
+#: settings.php:148
+msgid "<h2> Font"
+msgstr "גופן לתגית <h2>"
+
+#: settings.php:149
+msgid "<h3> Font"
+msgstr "גופן לתגית <h3>"
+
+#: settings.php:150
+msgid "<h4> Font"
+msgstr "גופן לתגית <h4>"
+
+#: settings.php:151
+msgid "<h5> Font"
+msgstr "גופן לתגית <h5>"
+
+#: settings.php:152
+msgid "<h6> Font"
+msgstr "גופן לתגית <h6>"
+
+#: settings.php:153
+msgid "<p> Font"
+msgstr "גופן לתגית <p>"
+
+#: settings.php:154
+msgid "<q> Font"
+msgstr "גופן לתגית <q>"
+
+#: settings.php:155
+msgid "<li> Font"
+msgstr "גופן לתגית <li>"
+
+#: settings.php:156
+msgid "<a> Font"
+msgstr "גופן לתגית <a>"
+
+#: settings.php:654
+msgid "Google API key is not valid: "
+msgstr "המפתח של גוגל אינה חוקי:"
+
+#: settings.php:720
+msgid "General"
+msgstr "כללי"
+
+#: settings.php:721
+msgid "Advanced"
+msgstr "מתקדם"
+
+#: settings.php:736
+msgid "Thank you"
+msgstr "תודה לך!"
+
+#: settings.php:741
+msgid ""
+"Thank you for using an <a href=\"http://hivewebstudios.com\" target=\"_blank"
+"\">Hive</a> plugin! We 5 star you already, so why don't you <a href="
+"\"https://wordpress.org/support/plugin/font-organizer/reviews/?rate=5#new-"
+"post\" target=\"_blank\">5 star us too</a>?"
+msgstr ""
+"תודה לך על השימוש בפלאגין של <a href=\"http://hivewebstudios.com\" target="
+"\"_blank\">Hive</a>! אנחנו כבר מדרגים אותך 5 כוכבים, אז למה שלא <a href="
+"\"https://wordpress.org/support/plugin/font-organizer/reviews/?rate=5#new-"
+"post\" target=\"_blank\">תדרג אותנו 5 כוכבים גם</a>?"
+
+#: settings.php:743
+msgid "Anyway, if you need anything, this may help:"
+msgstr "בכל מקרה, אם את/ה צריכ/ה משהו, אולי זה יעזור:"
+
+#: settings.php:745
+msgid "FAQ"
+msgstr "שאלות נפוצות"
+
+#: settings.php:746
+msgid "Support forums"
+msgstr "פורום תמיכה"
+
+#: settings.php:747
+msgid "Contact us"
+msgstr "צרו קשר"
+
+#: settings.php:754
+msgid "Like Our Facebook Page"
+msgstr "תן לייק לעמוד הפייסבוק שלנו"
+
+#: settings.php:762
+msgid "Font Preview"
+msgstr "תצוגה מקדימה לגופנים"
+
+#: settings.php:766
+msgid "Select a font from the list to preview."
+msgstr "בחר גופן מהרשימה כדי להציג בתצוגה מקדימה."
+
+#: settings.php:769 settings.php:772
+msgid "This is a preview content."
+msgstr "זוהי תצוגה מקדימה של תוכן."
+
+#: settings.php:769
+msgid "Font preview free text"
+msgstr "טקסט חופשי לתצוגה מקדימה"
+
+#: settings.php:774
+msgid "Some fonts may not support your language."
+msgstr "גופנים מסוימים עשויים שלא לתמוך בשפה שלך."
+
+#: settings.php:785 settings.php:827 settings.php:842 settings.php:863
+msgid "Session ended, please try again."
+msgstr "הסתיים הטיפול, אנא נסה שנית."
+
+#: settings.php:791
+msgid "Font name is empty or invalid."
+msgstr "שם גופן הוא ריק או לא חוקי."
+
+#: settings.php:797
+msgid "Font weight is empty or invalid."
+msgstr "משקל גופן הוא ריק או לא חוקי."
+
+#: settings.php:802
+msgid "Font file is not selected."
+msgstr "לא נבחר קובץ הגופן."
+
+#: settings.php:818
+msgid "Font file(s) not selected."
+msgstr "לא נבחרו קבצים לגופן."
+
+#: settings.php:833
+msgid "Usable font is empty or invalid."
+msgstr "גופן לשימוש הוא ריק או לא חוקי."
+
+#: settings.php:848
+msgid "Custom elements is empty or invalid."
+msgstr "אלמנטים מותאמים אישית ריק או לא חוקי."
+
+#: settings.php:870
+msgid "Something went horribly wrong. Ask the support!"
+msgstr "משהו השתבש בצורה נוראית. תשאל את התמיכה!"
+
+#: settings.php:1002
+msgid "Error adding custom elements: "
+msgstr "שגיאה בעת הוספת אלמנטים מותאמים אישית:"
+
+#: settings.php:1009
+msgid "Custom elements added to your website!"
+msgstr "אלמנטים מותאמים אישית התווספו לאתר שלך!"
+
+#: settings.php:1017
+msgid "Font can now be used in your website!"
+msgstr "כעת ניתן להשתמש בגופן באתר האינטרנט שלך!"
+
+#: settings.php:1025
+msgid "Font deleted from your website!"
+msgstr "גופן נמחק מהאתר שלך!"
+
+#: settings.php:1033
+msgid "The file(s) uploaded successfully!"
+msgstr "הקובץ הועלה בהצלחה!"
+
+#: settings.php:1041
+msgid "Error uploading the file: "
+msgstr "שגיאה בהעלאת הקובץ:"
+
+#: settings.php:1049
+msgid "Error adding font to website fonts: "
+msgstr "שגיאה בעת הוספת גופן לאתר:"
+
+#: settings.php:1057
+msgid "Error deleting font: "
+msgstr "שגיאה במחיקת גופן:"
+
+#: settings.php:1065
+msgid "Failed to open or create the css file. Check for permissions."
+msgstr "לא ניתן לפתוח או ליצור את קובץ ה-css. בדוק אם יש הרשאות."
+
+#: settings.php:1152
+msgid "Additional CSS"
+msgstr "CSS נוסף"
+
+#: settings.php:1165
+msgid "Google API Key"
+msgstr "מפתח API של גוגל"
+
+#: settings.php:1172
+msgid "Show Font Family Preview"
+msgstr "טען תצוגה מקדימה לגופנים"
+
+#: settings.php:1182
+msgid "Access Settings Role"
+msgstr "רמת הרשאה להגדרות"
+
+#: settings.php:1191
+msgid "Uninstall All"
+msgstr "הסר הכל"
+
+#: settings.php:1191
+msgid "Caution"
+msgstr "זהירות"
+
+#: settings.php:1300
+msgid "This is the general settings for the site."
+msgstr "אלה הם הגדרות כלליות עבור התוסף."
+
+#: settings.php:1308
+msgid "This is the advanced css settings for the plugin."
+msgstr "זהו הגדרות css מתקדם של התוסף."
+
+#: settings.php:1330
+#, php-format
+msgid ""
+"The plugin uses static google fonts list. In order to get the most current "
+"fonts list, Google requires an API key, generated via their interface. For "
+"more information read <a href=\"%s\" target=\"_blank\">our FAQ</a>."
+msgstr ""
+"התוסף משתמש ברשימה סטאטית של גופנים מגוגל. כדי לקבל את רשימת גופנים העדכניים "
+"ביותר, גוגל דורש מפתח API, שנוצר באמצעות הממשק שלהם. לקבלת מידע נוסף, קרא <a "
+"href=\"%s\" target=\"_blank\">את השאלות הנפוצות שלנו</a>."
+
+#: settings.php:1342
+msgid ""
+"This custom css will be added to the elements css file. Please use with "
+"caution."
+msgstr "Css מותאם אישית זה יתווספו לקובץ css של האלמנטים. אנא השתמש בזהירות."
+
+#: settings.php:1359
+msgid "Uninstall All Option"
+msgstr "אפשרות הסרת הכל"
+
+#: settings.php:1361
+msgid ""
+"When checked uninstalling the plugin will delete all of it's content "
+"including uploaded fonts and database."
+msgstr ""
+"כאשר אפשרות זו מסומנת, הסרת ההתקנה של התוסף תמחק את כל התוכן, כולל גופנים "
+"שהועלו ומסד הנתונים."
+
+#: settings.php:1379
+msgid "Include Font Family Preview"
+msgstr "הוסף גופן לדף זה לצפיה בתוצגה מוקדמת"
+
+#: settings.php:1381
+msgid "Show font preview when listing the fonts (might be slow)"
+msgstr "הצג תצוגה מקדימה של הגופן ברשימה של גופנים (עשוי להיות איטי)."
+
+#: settings.php:1450 settings.php:1467
+msgid "Include !important to this element to always apply."
+msgstr "הוסף  תגית important! על מנת שגופן זה תמיד יופיע."
+
+#: settings.php:1479
+msgid "Default"
+msgstr "ברירת מחדל"
+
+#. Plugin Name of the plugin/theme
+msgid "Font Organizer"
+msgstr "מארגן הגופנים"
+
+#. Plugin URI of the plugin/theme
+msgid "https://wordpress.org/plugins/font-organizer/"
+msgstr "https://wordpress.org/plugins/font-organizer/"
+
+#. Description of the plugin/theme
+msgid ""
+"Font Organizer is the complete solution for font implementation in WordPress "
+"websites."
+msgstr "Font Organizer הוא הפתרון המושלם לניהול ושימוש גופנים באתר וורדפרס."
+
+#. Author of the plugin/theme
+msgid "Hive"
+msgstr "Hive"
+
+#. Author URI of the plugin/theme
+msgid "https://hivewebstudios.com"
+msgstr "https://hivewebstudios.com"
+
+#~ msgid ""
+#~ "Step 4: Assign a font to custom elements in your website. Simply select "
+#~ "the font, and then type the elemets you want to assign with the font."
+#~ msgstr ""
+#~ "שלב 4: הקצאת גופן עבור רכיבים מותאמים אישית באתר האינטרנט שלך. פשוט בחר "
+#~ "את הגופן והמשקל, ולאחר מכן הקלד את elemets שאתה רוצה להקצות עם הגופן."
+
+#~ msgid ""
+#~ "Step 1: Select and add fonts to be used in your website. Select as many "
+#~ "as you wish."
+#~ msgstr "שלב 1:  בחר והוסף גופנים לאתר האינטרנט שלך. ניתן לבחר כמה שתרצה."
+
+#~ msgid ""
+#~ "Step 2: Upload custom fonts to be used in your website. Here too, you can "
+#~ "upload as many as you wish."
+#~ msgstr ""
+#~ "שלב 2: כאן ניתן לעלות גופנים לאתר שלך. גם כאן, ניתן להעלות כמה שתרצה."
+
+#~ msgid ""
+#~ "Name the font you want to upload and upload all the files formats for "
+#~ "this font. In order to support more browsers you can click the green plus "
+#~ "to upload more font formats. We suggest at least .woff and .woff2."
+#~ msgstr ""
+#~ "בחר שם לגופן שברצונך להעלות ובחר את כל סוגי הפורמטים עבור גופן זה. על מנת "
+#~ "לתמוך ביותר דפדפנים ביכולתך ללחוץ על הפלוס הירוק להעלות עוד סוגי פורמטים. "
+#~ "אנו מציעים woff. ו- woff2.."
+
+#~ msgid ""
+#~ "You can now set font weight for this upload. If font name is set to an "
+#~ "existing font name, the font weight will be added to the existing font "
+#~ "and will be free to be used under said font name. You can always leave it "
+#~ "Normal."
+#~ msgstr ""
+#~ "כעת באפשרותך להגדיר את משקל הגופן להעלאה זו. אם שם הגופן קיים, משקל גופן "
+#~ "יתווסף לגופן הקיים, ויהיה פתוח לשימוש תחת שם הגופן האמור. ניתן תמיד "
+#~ "להשאיר את משקל הגוף על משקל נורמלי."
+
+#~ msgid ""
+#~ "Step 3: For each element you can assign a font you have added in step 1 & "
+#~ "2."
+#~ msgstr "שלב 3: עבור כל אלמנט ניתן להקצות גופן שהוספת בשלב 1 & 2."
+
+#~ msgid "Custom fonts you uploaded are automatically used in your website."
+#~ msgstr "גופנים מיובאים אוטומטית נוספים לאתר שלך."
+
+#~ msgid ""
+#~ "In case of font not displaying in your website after saving, try clear "
+#~ "the cache using Shift+F5 or Ctrl+Shift+Delete to clear all."
+#~ msgstr ""
+#~ "במקרה שגופן אינו מוצג באתר האינטרנט שלך לאחר שמירה, נסה לנקות את המטמון "
+#~ "באמצעות Shift + F5 או Ctrl+Shift+Delete כדי לנקות הכל."
+
+#~ msgid ""
+#~ "Step 4: Assign font that you have added to your website to custom "
+#~ "elements."
+#~ msgstr ""
+#~ "שלב 4: כאן ניתן לשייך גופן שהוספת לאתר האינטרנט שלך לאלמנטים מותאמים "
+#~ "אישית."
+
+#~ msgid ""
+#~ "Step 5: Select a font to manage, delete and view the source and custom "
+#~ "elements assigned to it."
+#~ msgstr ""
+#~ "שלב 5: בחר גופן כדי לנהל, למחוק ולהציג את המקור, וכל הרכיבים מותאמים "
+#~ "אישית המוקצים לו."
+
+#~ msgid ""
+#~ "To get all the current fonts, Google requires the mandatory use of an API "
+#~ "key, get one from <a href=\"%s\" target=\"_blank\">HERE</a>"
+#~ msgstr ""
+#~ "כדי לקבל רשימת הגופנים העדכנית, גוגל מחייב שימוש ב-API, ניתן לקבל אחד מ<a "
+#~ "href=\"%s\" target=\"_blank\">כאן</a> בחינם ובמהירות."
+
+#~ msgid " Need help? Click <a href=\"%s\" target=\"_blank\">here</a>"
+#~ msgstr "צריך עזרה? לחץ <a href=\"%s\" target=\"_blank\">כאן</a>"
+
+#~ msgid ""
+#~ "You are using a static google fonts list, if you want the current list "
+#~ "you can specify an API key."
+#~ msgstr ""
+#~ "הנך משתמש ברשימת גופן גוגל סטטית, אם ברצוך רשימה עדכנית ניתן לציין מפתח "
+#~ "API."
+
+#~ msgid "General Settings"
+#~ msgstr "הגדרות כלליות"
+
+#~ msgid ""
+#~ "Name the font you want to upload and upload all the files formats for "
+#~ "this font. In order to support more browsers you can click the green plus "
+#~ "to upload more font formats. We suggest .woff and .woff2."
+#~ msgstr ""
+#~ "בחר שם לגופן שברצונך להעלות ובחר כל סוגי הפורמטים עבור גופן זה. על מנת "
+#~ "לתמוך ביותר דפדפנים ביכולתך ללחוץ על הפלוס הירוק להעלות עוד סוגי פורמטים. "
+#~ "אנו מציעים woff. ו- woff2.."
+
+#~ msgid "Font Weight Name"
+#~ msgstr "שם משקל גופן"
+
+#~ msgid "The file has been uploaded!"
+#~ msgstr "הקובץ הועלה בהצלחה."
+
+#~ msgid ""
+#~ "To get all the fonts, Google requires the mandatory use of an API key, "
+#~ "get one from <a href=\"%s\" target=\"_blank\">HERE</a>"
+#~ msgstr ""
+#~ "כדי לקבל רשימת הגופנים העדכנית, גוגל מחייב שימוש ב-API, ניתן לקבל אחד מ<a "
+#~ "href=\"%s\" target=\"_blank\">כאן</a> בחינם ובמהירות."
+
+#~ msgid ""
+#~ "You are using a static google font list, if you want the current list you "
+#~ "can specify an API key."
+#~ msgstr ""
+#~ "הנך משתמש ברשימת גופן גוגל סטטית, אם ברצוך רשימה עדכנית ניתן לציין מפתח "
+#~ "API."
+
+#~ msgid "Google API key is not set! Cannot display google fonts."
+#~ msgstr "המפתח של גוגל אינו מוגדר! אין אפשרות להציג גופנים של גוגל."
+
+#~ msgid "Hive Facebook page"
+#~ msgstr "עמוד הפייסבוק של Hive"
+
+#~ msgid "Font file is not valid."
+#~ msgstr "קובץ הגופן אינו חוקי."
+
+#~ msgid "Font File"
+#~ msgstr "קובץ הגופן"
+
+#~ msgid "Add Another Font File"
+#~ msgstr "הוסף עוד קובץ גופן"
+
+#~ msgid ""
+#~ "Name the font you want to upload and upload all the files types for this "
+#~ "font. In order to support more browsers you can click the green plus to "
+#~ "upload more font formats. We suggest .woff and .woff2."
+#~ msgstr ""
+#~ "בחר שם לגופן שברצונך להעלות ובחר כל סוגי הפורמטים עבור גופן זה. על מנת "
+#~ "לתמוך יותר דפדפני אתה יכול ללחוץ על הירוק פלוס להעלות עוד גופן פורמטים. "
+#~ "אנו מציעים .woff ו- .woff2."
+
+#~ msgid ""
+#~ "Thank you for using an <a href=\"http://hivewebstudios.com\" target="
+#~ "\"_blank\">Hive</a> plugin! We 5 star you already, so why don't you <a "
+#~ "href=\"https://wordpress.org/support/plugin/font-organizer/reviews/?"
+#~ "rate=5#new-post\" target=\"_blank\">5 star us too</a>?<br /><br /"
+#~ "><p>Anyway, if you need anything, this may help:</p> <ul style=\"list-"
+#~ "style-type:disc;margin: 0 20px;\">\n"
+#~ "                                        <li><a href=\"http://"
+#~ "hivewebstudios.com/font-organizer#faqs\" target=\"_blank\">FAQ</a></li>\n"
+#~ "                                        <li><a href=\"https://wordpress."
+#~ "org/support/plugin/font-organizer/reviews/\" target=\"_blank\">Support "
+#~ "Forums</a></li>\n"
+#~ "                                        <li><a href=\"http://"
+#~ "hivewebstudios.com/font-organizer\" target=\"_blank\">Contact us</a></"
+#~ "li>\n"
+#~ "                                        <li><a href=\"https://www."
+#~ "facebook.com/hivewp\" target=\"_blank\">Hive Facebook page</a></li>\n"
+#~ "                                        </ul>"
+#~ msgstr ""
+#~ "המון תודה שאתה משתמש בפלאגין של <a href=\"http://hivewebstudios.com\" "
+#~ "target=\"_blank\">Hive</a>! אתה בשבילנו כבר 5 כוכבים, אז למה שלא <a href="
+#~ "\"https://wordpress.org/support/plugin/font-organizer/reviews/?rate=5#new-"
+#~ "post\" target=\"_blank\">תדרג אותנו 5 כוכבים גם</a>?\n"
+#~ "<p>בכל מקרה, אם תצטרך משהו, אולי זה יעזור:</p> \n"
+#~ "<ul style=\"list-style-type:disc;margin: 0 20px;\">\n"
+#~ "                                        <li><a href=\"http://"
+#~ "hivewebstudios.com/font-organizer#faqs\" target=\"_blank\">שאלות ותשובות</"
+#~ "a></li>\n"
+#~ "                                        <li><a href=\"https://wordpress."
+#~ "org/support/plugin/font-organizer/reviews/\" target=\"_blank\">פורום "
+#~ "תמיכה</a></li>\n"
+#~ "                                        <li><a href=\"http://"
+#~ "hivewebstudios.com/font-organizer\" target=\"_blank\">צור קשר</a></li>\n"
+#~ "                                        <li><a href=\"https://www."
+#~ "facebook.com/hivewp\" target=\"_blank\">עמוד פייסבוק שלנו</a></li>\n"
+#~ "                                        </ul>"
+
+#~ msgid ""
+#~ "Thank you for using an <a href=\"http://hivewebstudios.com\" target="
+#~ "\"_blank\">Hive</a> plugin! We 5 star you already, so why don't you <a "
+#~ "href=\"https://wordpress.org/support/plugin/font-organizer/reviews/?"
+#~ "rate=5#new-post\" target=\"_blank\">5 star us too</a>?<br /><br /"
+#~ "><p>Anyway, if you need anything, this may help:</p> <ul style=\"list-"
+#~ "style-type:disc\">\n"
+#~ "                                        <li><a href=\"http://"
+#~ "hivewebstudios.com/font-organizer#faqs\" target=\"_blank\">FAQ</a></li>\n"
+#~ "                                        <li><a href=\"http://"
+#~ "hivewebstudios.com/font-organizer\" target=\"_blank\">Contact us</a></"
+#~ "li>\n"
+#~ "                                        <li><a href=\"https://wordpress."
+#~ "org/support/plugin/font-organizer/reviews/\" target=\"_blank\">Support "
+#~ "Forums</a></li>\n"
+#~ "                                        <li><a href=\"https://www."
+#~ "facebook.com/hivewp\" target=\"_blank\">Hive Facebook page</a></li>\n"
+#~ "                                        </ul>"
+#~ msgstr ""
+#~ "המון תודה שאתה משתמש בפלאגין של <a href=\"http://hivewebstudios.com\" "
+#~ "target=\"_blank\">Hive</a>! אתה בשבילנו כבר 5 כוכבים, אז למה שלא <a href="
+#~ "\"https://wordpress.org/support/plugin/font-organizer/reviews/?rate=5#new-"
+#~ "post\" target=\"_blank\">תדרג אותנו 5 כוכבים גםo</a> ?\n"
+#~ "<p>בכל מקרה, אם תצטרך משהו, אולי זה יעזור:</p> \n"
+#~ "<ul style=\"list-style-type:disc\">\n"
+#~ "                                        <li><a href=\"http://"
+#~ "hivewebstudios.com/font-organizer#faqs\" target=\"_blank\">שאלות ותשובות</"
+#~ "a></li>\n"
+#~ "                                        <li><a href=\"http://"
+#~ "hivewebstudios.com/font-organizer\" target=\"_blank\">צור קשר</a></li>\n"
+#~ "                                        <li><a href=\"https://wordpress."
+#~ "org/support/plugin/font-organizer/reviews/\" target=\"_blank\">פורום "
+#~ "תמיכה</a></li>\n"
+#~ "                                        <li><a href=\"https://www."
+#~ "facebook.com/hivewp\" target=\"_blank\">עמוד הפייסבוק שלנו</a></li>\n"
+#~ "                                        </ul>"
+
+#~ msgid ""
+#~ "Thank you for using an <a href=\"http://hivewebstudios.com\" target="
+#~ "\"_blank\">Hive</a> plugin! We 5 star you already, so why don't you <a "
+#~ "href=\"https://wordpress.org/support/plugin/font-organizer/reviews/?"
+#~ "rate=5#new-post\" target=\"_blank\">5 star us too</a>?<br /><br /"
+#~ "><p>Anyway, if you need anything, this may help:</p> <ul style=\"list-"
+#~ "style-type:circle\">\n"
+#~ "                                        <li><a href=\"http://"
+#~ "hivewebstudios.com/font-organizer#faqs\" target=\"_blank\">FAQ</a></li>\n"
+#~ "                                        <li><a href=\"http://"
+#~ "hivewebstudios.com/font-organizer\" target=\"_blank\">Contact us</a></"
+#~ "li>\n"
+#~ "                                        <li><a href=\"https://wordpress."
+#~ "org/support/plugin/font-organizer/reviews/\" target=\"_blank\">Support "
+#~ "Forums</a></li>\n"
+#~ "                                        <li><a href=\"https://www."
+#~ "facebook.com/hivewp\" target=\"_blank\">Hive Facebook page</a></li>\n"
+#~ "                                        </ul>"
+#~ msgstr ""
+#~ "תודה שאתה משתמש פלאגין  של <a href=\"http://hivewebstudios.com\" target="
+#~ "\"_blank\">Hive</a>! אנחנו כבר נותנים לך 5 כוכבים, למה שלא <a href="
+#~ "\"https://wordpress.org/support/plugin/font-organizer/reviews/?rate=5#new-"
+#~ "post\" target=\"_blank\">תדרג אותנו 5 כוכבים גם</a>?\n"
+#~ "<br /><p>בכל מקרה, אם יש משהו שנוכל לעזור, אולי הקישורים האלו יעזרו: </"
+#~ "p>\n"
+#~ " <ul style=\"list-style-type:circle\">\n"
+#~ "                                        <li><a href=\"http://"
+#~ "hivewebstudios.com/font-organizer#faqs\" target=\"_blank\">שאלות ותשובות</"
+#~ "a></li>\n"
+#~ "                                        <li><a href=\"http://"
+#~ "hivewebstudios.com/font-organizer\" target=\"_blank\">צור קשר</a></li>\n"
+#~ "                                        <li><a href=\"https://wordpress."
+#~ "org/support/plugin/font-organizer/reviews/\" target=\"_blank\">פורום "
+#~ "תמיכה</a></li>\n"
+#~ "                                        <li><a href=\"https://www."
+#~ "facebook.com/hivewp\" target=\"_blank\">עמוד הפייסבוק שלנו</a></li>\n"
+#~ "                                        </ul>"
+
+#~ msgid ""
+#~ "Thank you for using an <a href=\"http://hivewebstudios.com\" target="
+#~ "\"_blank\">HiveTeam</a> plugin! We 5 star you already, so why don't you "
+#~ "<a href=\"http://xxxxx.xxx\" target=\"_blank\">5 star us too</a>?"
+#~ msgstr ""
+#~ "תודה לך על השימוש בתוסף של <a href=\"http://hivewebstudios.com\" target="
+#~ "\"_blank\">HiveTeam</a>! אנחנו מדרגים אותך 5 כוכבים כבר, אז למה לא <a "
+#~ "href=\"http://xxxxx.xxx\" target=\"_blank\">תדרג אותנו 5 כוכבים</a>?"
+
+#~ msgid "afsaf."
+#~ msgstr "תיאור"
+
+#~ msgid "HiveTeam"
+#~ msgstr "HiveTeam"
+
+#~ msgid "Toggle panel: General Settings"
+#~ msgstr "לוח דו-מצביים: הגדרות כלליות"
+
+#~ msgid "Toggle panel: First Step: Add Fonts"
+#~ msgstr "לוח דו-מצביים: שלב ראשון: הוספת גופנים"
+
+#~ msgid "Toggle panel: Custom Fonts"
+#~ msgstr "לוח דו-מצביים: גופנים מיובאים"
+
+#~ msgid "Toggle panel: Known Elements Settings"
+#~ msgstr "לוח דו-מצביים: הגדרות אלמנטים ידועים"
+
+#~ msgid "Toggle panel: Custom Elements Settings"
+#~ msgstr "לוח דו-מצביים: הגדרות אלמנטים מותאמים אישית"
+
+#~ msgid "Toggle panel: Manage Fonts"
+#~ msgstr "לוח דו-מצביים: ניהול גופנים"
+
+#~ msgid "None"
+#~ msgstr "ללא"
+
+#~ msgid "Google API key is not valid!"
+#~ msgstr "המפתח של גוגל אינו חוקי!"
+
+#~ msgid "Custom fonts you uploaded are automaticly used in your website."
+#~ msgstr "גופנים מיובאים אוטומטית נוספים לאתר האינטרנט שלך."
+
+#~ msgid "Something went horribly worng. Ask the support!"
+#~ msgstr "משהו הלך נורא עובדת. תשאל את התמיכה!"

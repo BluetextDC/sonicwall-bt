@@ -1,0 +1,22 @@
+<!-- start Simple Custom CSS and JS -->
+<style type="text/css">
+.avia_textblock ul li{
+	text-indent: 0 !important;
+}
+
+#top .gform_wrapper ul li.gfield{
+	margin: 0;
+}
+
+div.gform_footer.top_label{
+	text-align: center;
+}
+
+.gform_button{
+	width: 50% !important;
+}
+
+
+
+</style>
+<!-- end Simple Custom CSS and JS -->

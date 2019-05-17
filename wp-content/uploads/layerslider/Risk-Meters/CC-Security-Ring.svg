@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="710px" height="710px" viewBox="0 0 710 710" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>CC Security Ring</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" fill-opacity="0.075464221" stroke-dasharray="33,18">
+        <path d="M355,707 C160.595768,707 3,549.404232 3,355 C3,160.595768 160.595768,3 355,3 C549.404232,3 707,160.595768 707,355 C707,549.404232 549.404232,707 355,707 Z M354.5,636 C509.415872,636 635,510.415872 635,355.5 C635,200.584128 509.415872,75 354.5,75 C199.584128,75 74,200.584128 74,355.5 C74,510.415872 199.584128,636 354.5,636 Z" id="CC-Security-Ring" stroke="#EA0101" stroke-width="6" fill="#FFFFFF"></path>
+    </g>
+</svg>

@@ -1,0 +1,1832 @@
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'sonicwalliconfont' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@font-face {font-family: 'sonicwalliconfont'; font-weight: normal; font-style: normal;
+src: url('https://d3ik27cqx8s5ub.cloudfront.net/media/uploads/avia_fonts/sonicwalliconfont/sonicwalliconfont.eot');
+src: url('https://d3ik27cqx8s5ub.cloudfront.net/media/uploads/avia_fonts/sonicwalliconfont/sonicwalliconfont.eot?#iefix') format('embedded-opentype'), 
+url('https://d3ik27cqx8s5ub.cloudfront.net/media/uploads/avia_fonts/sonicwalliconfont/sonicwalliconfont.woff') format('woff'), 
+url('https://d3ik27cqx8s5ub.cloudfront.net/media/uploads/avia_fonts/sonicwalliconfont/sonicwalliconfont.ttf') format('truetype'), 
+url('https://d3ik27cqx8s5ub.cloudfront.net/media/uploads/avia_fonts/sonicwalliconfont/sonicwalliconfont.svg#sonicwalliconfont') format('svg');
+} #top .avia-font-sonicwalliconfont, body .avia-font-sonicwalliconfont, html body [data-av_iconfont='sonicwalliconfont']:before{ font-family: 'sonicwalliconfont'; }
+
+[class^="icon-"]:before, [class*=" icon-"]:before {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'sonicwalliconfont' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-home:before {
+  content: "\e904";
+}
+.icon-menu:before {
+  content: "\ec71";
+}
+.icon-list:before {
+  content: "\e8ee";
+}
+.icon-grid:before {
+  content: "\e5c3";
+}
+.icon-item-list:before {
+  content: "\e1db";
+}
+.icon-bullet-list:before {
+  content: "\e722";
+}
+.icon-tree:before {
+  content: "\e0eb";
+}
+.icon-more:before {
+  content: "\e701";
+}
+.icon-dragdable-handle:before {
+  content: "\e080";
+}
+.icon-dashboard:before {
+  content: "\ec21";
+}
+.icon-puzzle:before {
+  content: "\ec22";
+}
+.icon-eraser:before {
+  content: "\e916";
+}
+.icon-pencil:before {
+  content: "\e927";
+}
+.icon-search:before {
+  content: "\f002";
+}
+.icon-image-compare:before {
+  content: "\e93d";
+}
+.icon-camera:before {
+  content: "\e944";
+}
+.icon-new:before {
+  content: "\e97b";
+}
+.icon-bookmark:before {
+  content: "\e994";
+}
+.icon-calendar:before {
+  content: "\e917";
+}
+.icon-calendar-date:before {
+  content: "\e918";
+}
+.icon-calendar-event:before {
+  content: "\e919";
+}
+.icon-calendar-date-range:before {
+  content: "\e91a";
+}
+.icon-calendar-day:before {
+  content: "\ea63";
+}
+.icon-file-text:before {
+  content: "\e99b";
+}
+.icon-profile:before {
+  content: "\e99c";
+}
+.icon-duplicate:before {
+  content: "\f1e4";
+}
+.icon-clone:before {
+  content: "\f1e5";
+}
+.icon-file-text2:before {
+  content: "\e9ae";
+}
+.icon-file-presentation:before {
+  content: "\e9c0";
+}
+.icon-report:before {
+  content: "\f1e6";
+}
+.icon-folder-minus:before {
+  content: "\e9d6";
+}
+.icon-phone:before {
+  content: "\ea1c";
+}
+.icon-halo:before {
+  content: "\ea1d";
+}
+.icon-alarm:before {
+  content: "\ea53";
+}
+.icon-printer:before {
+  content: "\ea69";
+}
+.icon-keyboard:before {
+  content: "\f30f";
+}
+.icon-download:before {
+  content: "\ea87";
+}
+.icon-upload:before {
+  content: "\ea88";
+}
+.icon-floppy-disk:before {
+  content: "\ea89";
+}
+.icon-database:before {
+  content: "\ea93";
+}
+.icon-user:before {
+  content: "\eb0e";
+}
+.icon-user-add:before {
+  content: "\eb0f";
+}
+.icon-user-remove:before {
+  content: "\eb10";
+}
+.icon-user-lock:before {
+  content: "\eafd";
+}
+.icon-users-group:before {
+  content: "\eb11";
+}
+.icon-maximize:before {
+  content: "\eb48";
+}
+.icon-minimize:before {
+  content: "\eb49";
+}
+.icon-control:before {
+  content: "\eb5b";
+}
+.icon-settings:before {
+  content: "\eb60";
+}
+.icon-options:before {
+  content: "\eb61";
+}
+.icon-stats-dots:before {
+  content: "\eb87";
+}
+.icon-chart-area:before {
+  content: "\eb8f";
+}
+.icon-chart-area2:before {
+  content: "\e0a1";
+}
+.icon-chart-column:before {
+  content: "\e0a2";
+}
+.icon-stats-growth:before {
+  content: "\eb90";
+}
+.icon-stats-decline:before {
+  content: "\eb91";
+}
+.icon-chart-lines:before {
+  content: "\e0a4";
+}
+.icon-pie-chart-box:before {
+  content: "\eb89";
+}
+.icon-stats-bars:before {
+  content: "\eb88";
+}
+.icon-pie-chart:before {
+  content: "\eb85";
+}
+.icon-pulse:before {
+  content: "\eb70";
+}
+.icon-stats-bars2:before {
+  content: "\eb8c";
+}
+.icon-chart-bubble:before {
+  content: "\e0a3";
+}
+.icon-chart-bubbles:before {
+  content: "\e0a6";
+}
+.icon-trash:before {
+  content: "\ebfe";
+}
+.icon-reboot:before {
+  content: "\ec4b";
+}
+.icon-go-back:before {
+  content: "\ea4b";
+}
+.icon-reload:before {
+  content: "\e86a";
+}
+.icon-location:before {
+  content: "\f34e";
+}
+.icon-pin:before {
+  content: "\e900";
+}
+.icon-link:before {
+  content: "\ec9f";
+}
+.icon-unlink:before {
+  content: "\eca0";
+}
+.icon-attachment:before {
+  content: "\ecac";
+}
+.icon-view:before {
+  content: "\ecb2";
+}
+.icon-add:before {
+  content: "\ed5d";
+}
+.icon-minus:before {
+  content: "\ed5e";
+}
+.icon-close:before {
+  content: "\e002";
+}
+.icon-close-thin:before {
+  content: "\e804";
+}
+.icon-dot:before {
+  content: "\ee78";
+}
+.icon-square:before {
+  content: "\ee79";
+}
+.icon-partially-selected:before {
+  content: "\ee7a";
+}
+.icon-firewall:before {
+  content: "\ed7c";
+}
+.icon-shield:before {
+  content: "\ed7d";
+}
+.icon-play:before {
+  content: "\ed7e";
+}
+.icon-pause:before {
+  content: "\ed7f";
+}
+.icon-stop:before {
+  content: "\ed80";
+}
+.icon-previous:before {
+  content: "\ed81";
+}
+.icon-next:before {
+  content: "\ed82";
+}
+.icon-backward:before {
+  content: "\ed83";
+}
+.icon-forward:before {
+  content: "\ed84";
+}
+.icon-volume-medium:before {
+  content: "\ed90";
+}
+.icon-volume-low:before {
+  content: "\ed91";
+}
+.icon-volume-mute:before {
+  content: "\ed95";
+}
+.icon-arrow-left-thick:before {
+  content: "\edc4";
+}
+.icon-arrow-left:before {
+  content: "\edc5";
+}
+.icon-arrow-right-thin:before {
+  content: "\edc6";
+}
+.icon-arrow-up:before {
+  content: "\edc7";
+}
+.icon-arrow-left2:before {
+  content: "\ede2";
+}
+.icon-sorting-up:before {
+  content: "\ee37";
+}
+.icon-filter:before {
+  content: "\ee8b";
+}
+.icon-export:before {
+  content: "\eec9";
+}
+.icon-file-pdf:before {
+  content: "\ef3e";
+}
+.icon-file-word:before {
+  content: "\ef40";
+}
+.icon-file-excel:before {
+  content: "\ef41";
+}
+.icon-lightbulb:before {
+  content: "\e90f";
+}
+.icon-help:before {
+  content: "\e910";
+}
+.icon-shopping-cart:before {
+  content: "\e8cc";
+}
+.icon-mic:before {
+  content: "\e029";
+}
+.icon-mic-off:before {
+  content: "\e02b";
+}
+.icon-archive:before {
+  content: "\e901";
+}
+.icon-linkedin:before {
+  content: "\ef28";
+}
+.icon-severity-critical:before {
+  content: "\f029";
+}
+.icon-severity-high:before {
+  content: "\f027";
+}
+.icon-severity-major:before {
+  content: "\f026";
+}
+.icon-severity-minor:before {
+  content: "\f028";
+}
+.icon-status-unknown:before {
+  content: "\ed56";
+}
+.icon-checkmark:before {
+  content: "\ed71";
+}
+.icon-info:before {
+  content: "\e094";
+}
+.icon-locked:before {
+  content: "\e023";
+}
+.icon-unlocked:before {
+  content: "\e719";
+}
+.icon-cloud-app:before {
+  content: "\f1e7";
+}
+.icon-cloud:before {
+  content: "\f3ca";
+}
+.icon-cloud-stack:before {
+  content: "\e60b";
+}
+.icon-app:before {
+  content: "\e9cf";
+}
+.icon-app-issue:before {
+  content: "\e849";
+}
+.icon-app-add:before {
+  content: "\e850";
+}
+.icon-app-remove:before {
+  content: "\e851";
+}
+.icon-email:before {
+  content: "\f0e0";
+}
+.icon-user-profile:before {
+  content: "\f00c";
+}
+.icon-chatting:before {
+  content: "\eada";
+}
+.icon-announcement:before {
+  content: "\e85a";
+}
+.icon-topo-home:before {
+  content: "\e905";
+}
+.icon-topo-compass:before {
+  content: "\f1e8";
+}
+.icon-topo-change:before {
+  content: "\f1e9";
+}
+.icon-topo-zoom-in:before {
+  content: "\f1ea";
+}
+.icon-topo-zoom-out:before {
+  content: "\f1eb";
+}
+.icon-topo-toggle:before {
+  content: "\f1ec";
+}
+.icon-topo-layout:before {
+  content: "\f1ed";
+}
+.icon-topo-reset:before {
+  content: "\f1ee";
+}
+.icon-share:before {
+  content: "\e80d";
+}
+.icon-device-hub:before {
+  content: "\e335";
+}
+.icon-topo:before {
+  content: "\e80e";
+}
+.icon-world-net:before {
+  content: "\e80f";
+}
+.icon-iphone:before {
+  content: "\f1ef";
+}
+.icon-ipad:before {
+  content: "\f1f0";
+}
+.icon-laptop:before {
+  content: "\e810";
+}
+.icon-monitor:before {
+  content: "\e811";
+}
+.icon-monitoring:before {
+  content: "\e812";
+}
+.icon-rss:before {
+  content: "\eefa";
+}
+.icon-signal-no:before {
+  content: "\e024";
+}
+.icon-signal-low:before {
+  content: "\e025";
+}
+.icon-signal-medium:before {
+  content: "\e026";
+}
+.icon-signal-high:before {
+  content: "\e027";
+}
+.icon-signal-perfect:before {
+  content: "\e028";
+}
+.icon-facebook:before {
+  content: "\eef0";
+}
+.icon-twitter:before {
+  content: "\eef5";
+}
+.icon-appleinc:before {
+  content: "\ef1d";
+}
+.icon-windows:before {
+  content: "\f17a";
+}
+.icon-android:before {
+  content: "\f032";
+}
+.icon-tux:before {
+  content: "\ef1c";
+}
+.icon-drupal:before {
+  content: "\f1f1";
+}
+.icon-github-box:before {
+  content: "\f2a3";
+}
+.icon-amazon:before {
+  content: "\f02d";
+}
+.icon-dropbox:before {
+  content: "\f1e3";
+}
+.icon-reddit-alien:before {
+  content: "\f281";
+}
+.icon-youtube:before {
+  content: "\f167";
+}
+.icon-xbox:before {
+  content: "\f5b9";
+}
+.icon-delicious:before {
+  content: "\f1a5";
+}
+.icon-network-port-interface:before {
+  content: "\f1a6";
+}
+.icon-app-category:before {
+  content: "\f1a7";
+}
+.icon-app-signature:before {
+  content: "\f1a8";
+}
+.icon-website:before {
+  content: "\f1a9";
+}
+.icon-web-category:before {
+  content: "\f1aa";
+}
+.icon-url:before {
+  content: "\f1ab";
+}
+.icon-threat-intrusion:before {
+  content: "\f1ac";
+}
+.icon-threat-virus:before {
+  content: "\f1ad";
+}
+.icon-threat-spyware:before {
+  content: "\f1ae";
+}
+.icon-severity-low:before {
+  content: "\f1af";
+}
+.icon-diamond:before {
+  content: "\f1b0";
+}
+.icon-informational:before {
+  content: "\f1b1";
+}
+.icon-in-queue:before {
+  content: "\f1b2";
+}
+.icon-status:before {
+  content: "\f1b3";
+}
+.icon-diagnostics:before {
+  content: "\f1b4";
+}
+.icon-firmware-backup:before {
+  content: "\f1b5";
+}
+.icon-appflow-settings:before {
+  content: "\f1b6";
+}
+.icon-log-settings:before {
+  content: "\f1b7";
+}
+.icon-licensing:before {
+  content: "\f1b8";
+}
+.icon-rules:before {
+  content: "\f1b9";
+}
+.icon-appliance:before {
+  content: "\f1ba";
+}
+.icon-dhcp:before {
+  content: "\f1bb";
+}
+.icon-modem:before {
+  content: "\f1bc";
+}
+.icon-objects:before {
+  content: "\f1bd";
+}
+.icon-voip:before {
+  content: "\f1be";
+}
+.icon-vpn:before {
+  content: "\f1bf";
+}
+.icon-ssl-vpn:before {
+  content: "\f1c0";
+}
+.icon-virtual-assist:before {
+  content: "\f1c1";
+}
+.icon-high-availability:before {
+  content: "\f1c2";
+}
+.icon-wan-acceleration:before {
+  content: "\f1c3";
+}
+.icon-firewall-settings:before {
+  content: "\f1c4";
+}
+.icon-deep-packet-inspection:before {
+  content: "\f1c5";
+}
+.icon-dpi-ssh:before {
+  content: "\f1c6";
+}
+.icon-anti-spam:before {
+  content: "\f1c7";
+}
+.icon-security-services:before {
+  content: "\f1c8";
+}
+.icon-sonicpoints:before {
+  content: "\f1c9";
+}
+.icon-single-group:before {
+  content: "\f1ca";
+}
+.icon-double-group:before {
+  content: "\f1cb";
+}
+.icon-tripple-group:before {
+  content: "\f1cc";
+}
+.icon-single-group-flash:before {
+  content: "\f1cd";
+}
+.icon-double-group-flash:before {
+  content: "\f1ce";
+}
+.icon-tripple-group-flash:before {
+  content: "\f1cf";
+}
+.icon-single-group-clock:before {
+  content: "\f1d0";
+}
+.icon-double-click:before {
+  content: "\f1d1";
+}
+.icon-triple-group-clock:before {
+  content: "\f1d2";
+}
+.icon-ethernet-fail:before {
+  content: "\f1d3";
+}
+.icon-modem-dialup:before {
+  content: "\f1d4";
+}
+.icon-wan-wireless:before {
+  content: "\f1d5";
+}
+.icon-flash:before {
+  content: "\f1d6";
+}
+.icon-severity-1:before {
+  content: "\f1d7";
+}
+.icon-severity-2:before {
+  content: "\f1d8";
+}
+.icon-system:before {
+  content: "\f1d9";
+}
+.icon-content-filter:before {
+  content: "\f1da";
+}
+.icon-dpi-ssl:before {
+  content: "\f1db";
+}
+.icon-capture-atp:before {
+  content: "\f1dc";
+}
+.icon-register:before {
+  content: "\f1dd";
+}
+.icon-tasks:before {
+  content: "\f1de";
+}
+.icon-management:before {
+  content: "\f1df";
+}
+.icon-workflow:before {
+  content: "\f1e0";
+}
+.icon-flow:before {
+  content: "\f1e1";
+}
+.icon-live-report:before {
+  content: "\f1e2";
+}
+.icon-encryption:before {
+  content: "\f1f2";
+}
+.icon-exploit-kit:before {
+  content: "\f1f3";
+}
+.icon-law-enforcement:before {
+  content: "\f1f4";
+}
+.icon-encryption-hiding:before {
+  content: "\f1f5";
+}
+.icon-unique-ransomware:before {
+  content: "\f1f6";
+}
+.icon-processor-threat:before {
+  content: "\f1f7";
+}
+.icon-industry:before {
+  content: "\f1f8";
+}
+.icon-building:before {
+  content: "\f1f9";
+}
+.icon-ethernet:before {
+  content: "\e902";
+}
+.icon-kill:before {
+  content: "\e903";
+}
+.icon-quarantine:before {
+  content: "\e906";
+}
+.icon-remediate:before {
+  content: "\e907";
+}
+.icon-rollback:before {
+  content: "\e908";
+}
+.icon-active-threats:before {
+  content: "\e90d";
+}
+.icon-threat-suspicious:before {
+  content: "\e909";
+}
+.icon-threat-blocked:before {
+  content: "\e90a";
+}
+.icon-botnet:before {
+  content: "\e90b";
+}
+.icon-router:before {
+  content: "\e90c";
+}
+.icon-CCP:before {
+  content: "\e90e";
+}
+.icon-CSC:before {
+  content: "\e914";
+}
+.icon-service-fwmanagement:before {
+  content: "\e91d";
+}
+.icon-service-analytics:before {
+  content: "\e91b";
+}
+.icon-service-captureclient:before {
+  content: "\e911";
+}
+.icon-service-cas:before {
+  content: "\e912";
+}
+.icon-service-wireless:before {
+  content: "\e91e";
+}
+.icon-service-wifi-planner:before {
+  content: "\e913";
+}
+.icon-service-msw:before {
+  content: "\e91c";
+}
+.icon-service-licensing:before {
+  content: "\e91f";
+}
+.icon-service-waf:before {
+  content: "\e920";
+}
+.icon-fw-shield:before {
+  content: "\e915";
+}
+.icon-all-traffic:before {
+  content: "\e921";
+}
+.icon-threat:before {
+  content: "\e922";
+}
+.icon-web-activities:before {
+  content: "\e923";
+}
+.icon-blog:before {
+  content: "\e924";
+}
+.icon-entry-level-firewalls:before {
+  content: "\e925";
+}
+.icon-mid-range-level-firewalls:before {
+  content: "\e926";
+}
+.icon-high-end-level-firewalls:before {
+  content: "\e928";
+}
+.icon-finacial-services-industries:before {
+  content: "\e929";
+}
+.icon-manage-security-services-security-as-a-Services:before {
+  content: "\e92a";
+}
+.icon-sonicwall-university:before {
+  content: "\e92b";
+}
+.icon-group:before {
+  content: "\e92c";
+}
+.icon-carriers-industries:before {
+  content: "\e92d";
+}
+.icon-CSSA-CSSP-certification-tranining:before {
+  content: "\e92e";
+}
+.icon-authorized-distributors:before {
+  content: "\e92f";
+}
+.icon-healthcare-industries:before {
+  content: "\e930";
+}
+.icon-retail-hospitality-industries:before {
+  content: "\e931";
+}
+.icon-higher-education-industries:before {
+  content: "\e932";
+}
+.icon-secure-first-partner-program:before {
+  content: "\e933";
+}
+.icon-email-threats-advanced-threats:before {
+  content: "\e934";
+}
+.icon-secureSD-WAN-useCases:before {
+  content: "\e938";
+}
+.icon-encrypted-threats-advancedThreats:before {
+  content: "\e939";
+}
+.icon-content-filtering-client_endpoint-security:before {
+  content: "\e93a";
+}
+.icon-cloud-app-security-cloud-security:before {
+  content: "\e93b";
+}
+.icon-email-security-appliances:before {
+  content: "\e93c";
+}
+.icon-private-cloud-firewall-cloud-security:before {
+  content: "\e946";
+}
+.icon-public-cloud-firewall_cloud-security:before {
+  content: "\e947";
+}
+.icon-VPN-clients-secure-remote-access:before {
+  content: "\e948";
+}
+.icon-email-security-email-security:before {
+  content: "\e949";
+}
+.icon-email-security:before {
+  content: "\e94a";
+}
+.icon-cloud-security:before {
+  content: "\e94b";
+}
+.icon-access-point-secure-wireless:before {
+  content: "\e94c";
+}
+.icon-wireless-mobile-access-use-cases:before {
+  content: "\e94d";
+}
+.icon-secure-mobile-access-appliances-secure-remote-access:before {
+  content: "\e94e";
+}
+.icon-partner-portal:before {
+  content: "\e94f";
+}
+.icon-remote-access-mangement-reporting-secure-remote-access:before {
+  content: "\e950";
+}
+.icon-WAN-acceleration-firewalls:before {
+  content: "\e956";
+}
+.icon-home:before {
+  content: "\e904";
+}
+.icon-menu:before {
+  content: "\ec71";
+}
+.icon-list:before {
+  content: "\e8ee";
+}
+.icon-grid:before {
+  content: "\e5c3";
+}
+.icon-item-list:before {
+  content: "\e1db";
+}
+.icon-bullet-list:before {
+  content: "\e722";
+}
+.icon-tree:before {
+  content: "\e0eb";
+}
+.icon-more:before {
+  content: "\e701";
+}
+.icon-dragdable-handle:before {
+  content: "\e080";
+}
+.icon-dashboard:before {
+  content: "\ec21";
+}
+.icon-puzzle:before {
+  content: "\ec22";
+}
+.icon-eraser:before {
+  content: "\e916";
+}
+.icon-pencil:before {
+  content: "\e927";
+}
+.icon-search:before {
+  content: "\f002";
+}
+.icon-image-compare:before {
+  content: "\e93d";
+}
+.icon-camera:before {
+  content: "\e944";
+}
+.icon-new:before {
+  content: "\e97b";
+}
+.icon-bookmark:before {
+  content: "\e994";
+}
+.icon-calendar:before {
+  content: "\e917";
+}
+.icon-calendar-date:before {
+  content: "\e918";
+}
+.icon-calendar-event:before {
+  content: "\e919";
+}
+.icon-calendar-date-range:before {
+  content: "\e91a";
+}
+.icon-calendar-day:before {
+  content: "\ea63";
+}
+.icon-file-text:before {
+  content: "\e99b";
+}
+.icon-profile:before {
+  content: "\e99c";
+}
+.icon-duplicate:before {
+  content: "\f1e4";
+}
+.icon-clone:before {
+  content: "\f1e5";
+}
+.icon-file-text2:before {
+  content: "\e9ae";
+}
+.icon-file-presentation:before {
+  content: "\e9c0";
+}
+.icon-report:before {
+  content: "\f1e6";
+}
+.icon-folder-minus:before {
+  content: "\e9d6";
+}
+.icon-phone:before {
+  content: "\ea1c";
+}
+.icon-halo:before {
+  content: "\ea1d";
+}
+.icon-alarm:before {
+  content: "\ea53";
+}
+.icon-printer:before {
+  content: "\ea69";
+}
+.icon-keyboard:before {
+  content: "\f30f";
+}
+.icon-download:before {
+  content: "\ea87";
+}
+.icon-upload:before {
+  content: "\ea88";
+}
+.icon-floppy-disk:before {
+  content: "\ea89";
+}
+.icon-database:before {
+  content: "\ea93";
+}
+.icon-user:before {
+  content: "\eb0e";
+}
+.icon-user-add:before {
+  content: "\eb0f";
+}
+.icon-user-remove:before {
+  content: "\eb10";
+}
+.icon-user-lock:before {
+  content: "\eafd";
+}
+.icon-users-group:before {
+  content: "\eb11";
+}
+.icon-maximize:before {
+  content: "\eb48";
+}
+.icon-minimize:before {
+  content: "\eb49";
+}
+.icon-control:before {
+  content: "\eb5b";
+}
+.icon-settings:before {
+  content: "\eb60";
+}
+.icon-options:before {
+  content: "\eb61";
+}
+.icon-stats-dots:before {
+  content: "\eb87";
+}
+.icon-chart-area:before {
+  content: "\eb8f";
+}
+.icon-chart-area2:before {
+  content: "\e0a1";
+}
+.icon-chart-column:before {
+  content: "\e0a2";
+}
+.icon-stats-growth:before {
+  content: "\eb90";
+}
+.icon-stats-decline:before {
+  content: "\eb91";
+}
+.icon-chart-lines:before {
+  content: "\e0a4";
+}
+.icon-pie-chart-box:before {
+  content: "\eb89";
+}
+.icon-stats-bars:before {
+  content: "\eb88";
+}
+.icon-pie-chart:before {
+  content: "\eb85";
+}
+.icon-pulse:before {
+  content: "\eb70";
+}
+.icon-stats-bars2:before {
+  content: "\eb8c";
+}
+.icon-chart-bubble:before {
+  content: "\e0a3";
+}
+.icon-chart-bubbles:before {
+  content: "\e0a6";
+}
+.icon-trash:before {
+  content: "\ebfe";
+}
+.icon-reboot:before {
+  content: "\ec4b";
+}
+.icon-go-back:before {
+  content: "\ea4b";
+}
+.icon-reload:before {
+  content: "\e86a";
+}
+.icon-location:before {
+  content: "\f34e";
+}
+.icon-pin:before {
+  content: "\e900";
+}
+.icon-link:before {
+  content: "\ec9f";
+}
+.icon-unlink:before {
+  content: "\eca0";
+}
+.icon-attachment:before {
+  content: "\ecac";
+}
+.icon-view:before {
+  content: "\ecb2";
+}
+.icon-add:before {
+  content: "\ed5d";
+}
+.icon-minus:before {
+  content: "\ed5e";
+}
+.icon-close:before {
+  content: "\e002";
+}
+.icon-close-thin:before {
+  content: "\e804";
+}
+.icon-dot:before {
+  content: "\ee78";
+}
+.icon-square:before {
+  content: "\ee79";
+}
+.icon-partially-selected:before {
+  content: "\ee7a";
+}
+.icon-firewall:before {
+  content: "\ed7c";
+}
+.icon-shield:before {
+  content: "\ed7d";
+}
+.icon-play:before {
+  content: "\ed7e";
+}
+.icon-pause:before {
+  content: "\ed7f";
+}
+.icon-stop:before {
+  content: "\ed80";
+}
+.icon-previous:before {
+  content: "\ed81";
+}
+.icon-next:before {
+  content: "\ed82";
+}
+.icon-backward:before {
+  content: "\ed83";
+}
+.icon-forward:before {
+  content: "\ed84";
+}
+.icon-volume-medium:before {
+  content: "\ed90";
+}
+.icon-volume-low:before {
+  content: "\ed91";
+}
+.icon-volume-mute:before {
+  content: "\ed95";
+}
+.icon-arrow-left-thick:before {
+  content: "\edc4";
+}
+.icon-arrow-left:before {
+  content: "\edc5";
+}
+.icon-arrow-right-thin:before {
+  content: "\edc6";
+}
+.icon-arrow-up:before {
+  content: "\edc7";
+}
+.icon-arrow-left2:before {
+  content: "\ede2";
+}
+.icon-sorting-up:before {
+  content: "\ee37";
+}
+.icon-filter:before {
+  content: "\ee8b";
+}
+.icon-export:before {
+  content: "\eec9";
+}
+.icon-file-pdf:before {
+  content: "\ef3e";
+}
+.icon-file-word:before {
+  content: "\ef40";
+}
+.icon-file-excel:before {
+  content: "\ef41";
+}
+.icon-lightbulb:before {
+  content: "\e90f";
+}
+.icon-help:before {
+  content: "\e910";
+}
+.icon-shopping-cart:before {
+  content: "\e8cc";
+}
+.icon-mic:before {
+  content: "\e029";
+}
+.icon-mic-off:before {
+  content: "\e02b";
+}
+.icon-archive:before {
+  content: "\e901";
+}
+.icon-linkedin:before {
+  content: "\ef28";
+}
+.icon-severity-critical:before {
+  content: "\f029";
+}
+.icon-severity-high:before {
+  content: "\f027";
+}
+.icon-severity-major:before {
+  content: "\f026";
+}
+.icon-severity-minor:before {
+  content: "\f028";
+}
+.icon-status-unknown:before {
+  content: "\ed56";
+}
+.icon-checkmark:before {
+  content: "\ed71";
+}
+.icon-info:before {
+  content: "\e094";
+}
+.icon-locked:before {
+  content: "\e023";
+}
+.icon-unlocked:before {
+  content: "\e719";
+}
+.icon-cloud-app:before {
+  content: "\f1e7";
+}
+.icon-cloud:before {
+  content: "\f3ca";
+}
+.icon-cloud-stack:before {
+  content: "\e60b";
+}
+.icon-app:before {
+  content: "\e9cf";
+}
+.icon-app-issue:before {
+  content: "\e849";
+}
+.icon-app-add:before {
+  content: "\e850";
+}
+.icon-app-remove:before {
+  content: "\e851";
+}
+.icon-email:before {
+  content: "\f0e0";
+}
+.icon-user-profile:before {
+  content: "\f00c";
+}
+.icon-chatting:before {
+  content: "\eada";
+}
+.icon-announcement:before {
+  content: "\e85a";
+}
+.icon-topo-home:before {
+  content: "\e905";
+}
+.icon-topo-compass:before {
+  content: "\f1e8";
+}
+.icon-topo-change:before {
+  content: "\f1e9";
+}
+.icon-topo-zoom-in:before {
+  content: "\f1ea";
+}
+.icon-topo-zoom-out:before {
+  content: "\f1eb";
+}
+.icon-topo-toggle:before {
+  content: "\f1ec";
+}
+.icon-topo-layout:before {
+  content: "\f1ed";
+}
+.icon-topo-reset:before {
+  content: "\f1ee";
+}
+.icon-share:before {
+  content: "\e80d";
+}
+.icon-device-hub:before {
+  content: "\e335";
+}
+.icon-topo:before {
+  content: "\e80e";
+}
+.icon-world-net:before {
+  content: "\e80f";
+}
+.icon-iphone:before {
+  content: "\f1ef";
+}
+.icon-ipad:before {
+  content: "\f1f0";
+}
+.icon-laptop:before {
+  content: "\e810";
+}
+.icon-monitor:before {
+  content: "\e811";
+}
+.icon-monitoring:before {
+  content: "\e812";
+}
+.icon-rss:before {
+  content: "\eefa";
+}
+.icon-signal-no:before {
+  content: "\e024";
+}
+.icon-signal-low:before {
+  content: "\e025";
+}
+.icon-signal-medium:before {
+  content: "\e026";
+}
+.icon-signal-high:before {
+  content: "\e027";
+}
+.icon-signal-perfect:before {
+  content: "\e028";
+}
+.icon-facebook:before {
+  content: "\eef0";
+}
+.icon-twitter:before {
+  content: "\eef5";
+}
+.icon-appleinc:before {
+  content: "\ef1d";
+}
+.icon-windows:before {
+  content: "\f17a";
+}
+.icon-android:before {
+  content: "\f032";
+}
+.icon-tux:before {
+  content: "\ef1c";
+}
+.icon-drupal:before {
+  content: "\f1f1";
+}
+.icon-github-box:before {
+  content: "\f2a3";
+}
+.icon-amazon:before {
+  content: "\f02d";
+}
+.icon-dropbox:before {
+  content: "\f1e3";
+}
+.icon-reddit-alien:before {
+  content: "\f281";
+}
+.icon-youtube:before {
+  content: "\f167";
+}
+.icon-xbox:before {
+  content: "\f5b9";
+}
+.icon-delicious:before {
+  content: "\f1a5";
+}
+.icon-network-port-interface:before {
+  content: "\f1a6";
+}
+.icon-app-category:before {
+  content: "\f1a7";
+}
+.icon-app-signature:before {
+  content: "\f1a8";
+}
+.icon-website:before {
+  content: "\f1a9";
+}
+.icon-web-category:before {
+  content: "\f1aa";
+}
+.icon-url:before {
+  content: "\f1ab";
+}
+.icon-threat-intrusion:before {
+  content: "\f1ac";
+}
+.icon-threat-virus:before {
+  content: "\f1ad";
+}
+.icon-threat-spyware:before {
+  content: "\f1ae";
+}
+.icon-severity-low:before {
+  content: "\f1af";
+}
+.icon-diamond:before {
+  content: "\f1b0";
+}
+.icon-informational:before {
+  content: "\f1b1";
+}
+.icon-in-queue:before {
+  content: "\f1b2";
+}
+.icon-status:before {
+  content: "\f1b3";
+}
+.icon-diagnostics:before {
+  content: "\f1b4";
+}
+.icon-firmware-backup:before {
+  content: "\f1b5";
+}
+.icon-appflow-settings:before {
+  content: "\f1b6";
+}
+.icon-log-settings:before {
+  content: "\f1b7";
+}
+.icon-licensing:before {
+  content: "\f1b8";
+}
+.icon-rules:before {
+  content: "\f1b9";
+}
+.icon-appliance:before {
+  content: "\f1ba";
+}
+.icon-dhcp:before {
+  content: "\f1bb";
+}
+.icon-modem:before {
+  content: "\f1bc";
+}
+.icon-objects:before {
+  content: "\f1bd";
+}
+.icon-voip:before {
+  content: "\f1be";
+}
+.icon-vpn:before {
+  content: "\f1bf";
+}
+.icon-ssl-vpn:before {
+  content: "\f1c0";
+}
+.icon-virtual-assist:before {
+  content: "\f1c1";
+}
+.icon-high-availability:before {
+  content: "\f1c2";
+}
+.icon-wan-acceleration:before {
+  content: "\f1c3";
+}
+.icon-firewall-settings:before {
+  content: "\f1c4";
+}
+.icon-deep-packet-inspection:before {
+  content: "\f1c5";
+}
+.icon-dpi-ssh:before {
+  content: "\f1c6";
+}
+.icon-anti-spam:before {
+  content: "\f1c7";
+}
+.icon-security-services:before {
+  content: "\f1c8";
+}
+.icon-sonicpoints:before {
+  content: "\f1c9";
+}
+.icon-single-group:before {
+  content: "\f1ca";
+}
+.icon-double-group:before {
+  content: "\f1cb";
+}
+.icon-tripple-group:before {
+  content: "\f1cc";
+}
+.icon-single-group-flash:before {
+  content: "\f1cd";
+}
+.icon-double-group-flash:before {
+  content: "\f1ce";
+}
+.icon-tripple-group-flash:before {
+  content: "\f1cf";
+}
+.icon-single-group-clock:before {
+  content: "\f1d0";
+}
+.icon-double-click:before {
+  content: "\f1d1";
+}
+.icon-triple-group-clock:before {
+  content: "\f1d2";
+}
+.icon-ethernet-fail:before {
+  content: "\f1d3";
+}
+.icon-modem-dialup:before {
+  content: "\f1d4";
+}
+.icon-wan-wireless:before {
+  content: "\f1d5";
+}
+.icon-flash:before {
+  content: "\f1d6";
+}
+.icon-severity-1:before {
+  content: "\f1d7";
+}
+.icon-severity-2:before {
+  content: "\f1d8";
+}
+.icon-system:before {
+  content: "\f1d9";
+}
+.icon-content-filter:before {
+  content: "\f1da";
+}
+.icon-dpi-ssl:before {
+  content: "\f1db";
+}
+.icon-capture-atp:before {
+  content: "\f1dc";
+}
+.icon-register:before {
+  content: "\f1dd";
+}
+.icon-tasks:before {
+  content: "\f1de";
+}
+.icon-management:before {
+  content: "\f1df";
+}
+.icon-workflow:before {
+  content: "\f1e0";
+}
+.icon-flow:before {
+  content: "\f1e1";
+}
+.icon-live-report:before {
+  content: "\f1e2";
+}
+.icon-encryption:before {
+  content: "\f1f2";
+}
+.icon-exploit-kit:before {
+  content: "\f1f3";
+}
+.icon-law-enforcement:before {
+  content: "\f1f4";
+}
+.icon-encryption-hiding:before {
+  content: "\f1f5";
+}
+.icon-unique-ransomware:before {
+  content: "\f1f6";
+}
+.icon-processor-threat:before {
+  content: "\f1f7";
+}
+.icon-industry:before {
+  content: "\f1f8";
+}
+.icon-building:before {
+  content: "\f1f9";
+}
+.icon-ethernet:before {
+  content: "\e902";
+}
+.icon-kill:before {
+  content: "\e903";
+}
+.icon-quarantine:before {
+  content: "\e906";
+}
+.icon-remediate:before {
+  content: "\e907";
+}
+.icon-rollback:before {
+  content: "\e908";
+}
+.icon-active-threats:before {
+  content: "\e90d";
+}
+.icon-threat-suspicious:before {
+  content: "\e909";
+}
+.icon-threat-blocked:before {
+  content: "\e90a";
+}
+.icon-botnet:before {
+  content: "\e90b";
+}
+.icon-router:before {
+  content: "\e90c";
+}
+.icon-CCP:before {
+  content: "\e90e";
+}
+.icon-CSC:before {
+  content: "\e914";
+}
+.icon-service-fwmanagement:before {
+  content: "\e91d";
+}
+.icon-service-analytics:before {
+  content: "\e91b";
+}
+.icon-service-captureclient:before {
+  content: "\e911";
+}
+.icon-service-cas:before {
+  content: "\e912";
+}
+.icon-service-wireless:before {
+  content: "\e91e";
+}
+.icon-service-wifi-planner:before {
+  content: "\e913";
+}
+.icon-service-msw:before {
+  content: "\e91c";
+}
+.icon-service-licensing:before {
+  content: "\e91f";
+}
+.icon-service-waf:before {
+  content: "\e920";
+}
+.icon-fw-shield:before {
+  content: "\e915";
+}
+.icon-all-traffic:before {
+  content: "\e921";
+}
+.icon-threat:before {
+  content: "\e922";
+}
+.icon-web-activities:before {
+  content: "\e923";
+}
+.icon-blog:before {
+  content: "\e924";
+}
+.icon-entry-level-firewalls:before {
+  content: "\e925";
+}
+.icon-mid-range-level-firewalls:before {
+  content: "\e926";
+}
+.icon-high-end-level-firewalls:before {
+  content: "\e928";
+}
+.icon-finacial-services-industries:before {
+  content: "\e929";
+}
+.icon-manage-security-services-security-as-a-Services:before {
+  content: "\e92a";
+}
+.icon-sonicwall-university:before {
+  content: "\e92b";
+}
+.icon-group:before {
+  content: "\e92c";
+}
+.icon-carriers-industries:before {
+  content: "\e92d";
+}
+.icon-CSSA-CSSP-certification-tranining:before {
+  content: "\e92e";
+}
+.icon-authorized-distributors:before {
+  content: "\e92f";
+}
+.icon-healthcare-industries:before {
+  content: "\e930";
+}
+.icon-retail-hospitality-industries:before {
+  content: "\e931";
+}
+.icon-higher-education-industries:before {
+  content: "\e932";
+}
+.icon-secure-first-partner-program:before {
+  content: "\e933";
+}
+.icon-email-threats-advanced-threats:before {
+  content: "\e934";
+}
+.icon-secureSD-WAN-useCases:before {
+  content: "\e938";
+}
+.icon-encrypted-threats-advanced-threats:before {
+  content: "\e939";
+}
+.icon-content-filtering-client-endpoint-security:before {
+  content: "\e93a";
+}
+.icon-cloud-app-security-cloud-security:before {
+  content: "\e93b";
+}
+.icon-email-security-appliances-email-security:before {
+  content: "\e93c";
+}
+.icon-private-cloud-firewall-cloud-security:before {
+  content: "\e946";
+}
+.icon-public-cloud-firewall-cloud-security:before {
+  content: "\e947";
+}
+.icon-VPN-clients-secure-remote-access:before {
+  content: "\e948";
+}
+.icon-email-security-email-security:before {
+  content: "\e949";
+}
+.icon-email-security:before {
+  content: "\e94a";
+}
+.icon-cloud-security:before {
+  content: "\e94b";
+}
+.icon-access-point-secure-wireless:before {
+  content: "\e94c";
+}
+.icon-wireless-mobile-access-use-cases:before {
+  content: "\e94d";
+}
+.icon-secure-mobile-access-appliances-secure-remote-access:before {
+  content: "\e94e";
+}
+.icon-partner-portal:before {
+  content: "\e94f";
+}
+.icon-remote-access-mangement-reporting-secure-remote-access:before {
+  content: "\e950";
+}
+.icon-WAN-acceleration-firewalls:before {
+  content: "\e956";
+}
+.icon-public-sector-industries:before {
+  content: "\e957";
+}
+.icon-manage-security-services-manage-security-services:before {
+  content: "\e958";
+}
+.icon-k-12-education-industries:before {
+  content: "\e959";
+}
+.icon-management-reporting:before {
+  content: "\e95a";
+}
+.icon-secure-remote-access:before {
+  content: "\e95b";
+}
+.icon-risk-meters-risk-management:before {
+  content: "\e95c";
+}
+.icon-state-local-industries:before {
+  content: "\e95d";
+}
+.icon-virtual-firewalls:before {
+  content: "\e95e";
+}

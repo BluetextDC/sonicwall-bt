@@ -1,0 +1,2643 @@
+<!DOCTYPE html>
+<!--[if IE 8]>
+<html xmlns="http://www.w3.org/1999/xhtml" class="ie8 wp-toolbar"  lang="en-US">
+<![endif]-->
+<!--[if !(IE 8) ]><!-->
+<html xmlns="http://www.w3.org/1999/xhtml" class="wp-toolbar" lang="en-US"><!--<![endif]--><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Advanced iFrame Pro 6.4.1</title>
+<script type="text/javascript">
+addLoadEvent = function(func){if(typeof jQuery!="undefined")jQuery(document).ready(func);else if(typeof wpOnload!='function'){wpOnload=func;}else{var oldonload=wpOnload;wpOnload=function(){oldonload();func();}}};
+var ajaxurl = '/wordpress32/wp-admin/admin-ajax.php',
+	pagenow = 'toplevel_page_advanced-iframe',
+	typenow = '',
+	adminpage = 'toplevel_page_advanced-iframe',
+	thousandsSeparator = ',',
+	decimalPoint = '.',
+	isRtl = 0;
+</script>
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<link rel="stylesheet" href="css/load-styles.css" type="text/css" media="all">
+<script type="text/javascript">var _wpColorScheme = {"icons":{"base":"#999","focus":"#2ea2cc","current":"#fff"}};</script>
+<style type="text/css" media="print">#wpadminbar { display:none; }</style>
+<style type="text/css">
+
+.kg-content-notification {
+
+    vertical-align: baseline !important;
+
+    color: #000 !important;
+
+    overflow: visible !important;
+
+    visibility: visible !important;
+
+    margin: 0 !important;
+
+    padding: 0 !important;
+
+    position: fixed !important;
+
+    background: #fff !important;
+
+    border: solid 1px #AAA !important;
+
+    left: -999px;
+
+    top: -999px;
+
+    width: auto !important;
+
+    /* width: 300px !important; */
+
+    display: block;
+
+    z-index: 999999999 !important;
+
+    -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.18) !important;
+
+    -moz-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.18) !important;
+
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.18) !important;
+
+    -webkit-border-radius: 3px !important;
+
+    -moz-border-radius: 3px !important;
+
+    border-radius: 3px !important;
+
+    overflow: hidden !important;
+
+    opacity: 0 !important;
+
+    transition: opacity 0.5s !important;
+
+    -moz-transition: opacity 0.5s !important; /* Firefox 4 */
+
+    -webkit-transition: opacity 0.5s !important; /* Safari and Chrome */
+
+    cursor: default !important;
+
+    min-width: 250px !important;
+
+    -webkit-touch-callout: none !important;
+
+    -webkit-user-select: none !important;
+
+    -khtml-user-select: none !important;
+
+    -moz-user-select: none !important;
+
+    -ms-user-select: none !important;
+
+    user-select: none !important;
+
+}
+
+
+
+.kg-content-notification-shown {
+
+    opacity: 1 !important;
+
+    transition: opacity 0.5s !important;
+
+    -moz-transition: opacity 0.5s !important; /* Firefox 4 */
+
+    -webkit-transition: opacity 0.5s !important; /* Safari and Chrome */
+
+}
+
+
+
+.kg-content-notification-header {
+
+    height: 15px !important;
+
+    background: #DDD !important;
+
+    border-bottom: solid 1px #AAA !important;
+
+    padding: 1px 4px !important;
+
+    overflow: hidden !important;
+
+    width: auto !important;
+
+}
+
+
+
+.kg-content-notification-header-caption {
+
+    font: normal 11px Arial, Helvetica !important;
+
+    line-height: 13px !important;
+
+    color: #555 !important;
+
+    float: left !important;
+
+    text-shadow: none !important;
+
+    letter-spacing: normal !important;
+
+    width: auto !important;
+
+    margin: 1px 0 0 0 !important;
+
+}
+
+
+
+.kg-content-notification-header-close {
+
+    width: 7px !important;
+
+    height: 7px !important;
+
+    display: block !important;
+
+    float: right !important;
+
+    margin: 1px 0 0 0 !important;
+
+    padding: 3px !important;
+
+}
+
+
+
+.kg-content-notification-header-close img {
+
+    display: block !important;
+
+    padding: 0 !important;
+
+    margin: 0 !important;
+
+}
+
+
+
+.kg-content-notification-content {
+
+    margin: 0 !important;
+
+    padding: 8px !important;
+
+    float: left !important;
+
+    overflow: hidden !important;
+
+    width: 100% !important;
+
+}
+
+
+
+.kg-content-notification-content-logo {
+
+    float: left !important;
+
+    margin-right: 2px !important;
+
+}
+
+
+
+.kg-content-notification-content-main {
+
+    margin-left: 0 !important;
+
+    overflow: hidden !important;
+
+    padding: 0 0 2px 0 !important;
+
+    color: #333 !important;
+
+    text-align: left !important;
+
+    text-shadow: none !important;
+
+    letter-spacing: normal !important;
+
+    font: normal 13px Arial, Helvetica !important;
+
+    width: auto !important;
+
+}
+
+
+
+.kg-content-notification-content-header {
+
+    font: bold 14px Arial, Helvetica !important;
+
+    margin: 0 0 4px 0 !important;
+
+    padding: 0 !important;
+
+    border: 0 !important;
+
+    color: #333 !important;
+
+    text-shadow: none !important;
+
+    letter-spacing: normal !important;
+
+    display: block !important;
+
+    top: 0 !important;
+
+    left: 0 !important;
+
+}
+
+
+
+.kg-content-notification-word {
+
+    color: #d56e00 !important;
+
+    font-weight: bold !important;
+
+    font-size: 14px !important;
+
+}</style><style class="firebugResetStyles" type="text/css" charset="utf-8">/* See license.txt for terms of usage */
+/** reset styling **/
+.firebugResetStyles {
+    z-index: 2147483646 !important;
+    top: 0 !important;
+    left: 0 !important;
+    display: block !important;
+    border: 0 none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    outline: 0 !important;
+    min-width: 0 !important;
+    max-width: none !important;
+    min-height: 0 !important;
+    max-height: none !important;
+    position: fixed !important;
+    transform: rotate(0deg) !important;
+    transform-origin: 50% 50% !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    background: transparent none !important;
+    pointer-events: none !important;
+    white-space: normal !important;
+}
+style.firebugResetStyles {
+    display: none !important;
+}
+
+.firebugBlockBackgroundColor {
+    background-color: transparent !important;
+}
+
+.firebugResetStyles:before, .firebugResetStyles:after {
+    content: "" !important;
+}
+/**actual styling to be modified by firebug theme**/
+.firebugCanvas {
+    display: none !important;
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+.firebugLayoutBox {
+    width: auto !important;
+    position: static !important;
+}
+
+.firebugLayoutBoxOffset {
+    opacity: 0.8 !important;
+    position: fixed !important;
+}
+
+.firebugLayoutLine {
+    opacity: 0.4 !important;
+    background-color: #000000 !important;
+}
+
+.firebugLayoutLineLeft, .firebugLayoutLineRight {
+    width: 1px !important;
+    height: 100% !important;
+}
+
+.firebugLayoutLineTop, .firebugLayoutLineBottom {
+    width: 100% !important;
+    height: 1px !important;
+}
+
+.firebugLayoutLineTop {
+    margin-top: -1px !important;
+    border-top: 1px solid #999999 !important;
+}
+
+.firebugLayoutLineRight {
+    border-right: 1px solid #999999 !important;
+}
+
+.firebugLayoutLineBottom {
+    border-bottom: 1px solid #999999 !important;
+}
+
+.firebugLayoutLineLeft {
+    margin-left: -1px !important;
+    border-left: 1px solid #999999 !important;
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+.firebugLayoutBoxParent {
+    border-top: 0 none !important;
+    border-right: 1px dashed #E00 !important;
+    border-bottom: 1px dashed #E00 !important;
+    border-left: 0 none !important;
+    position: fixed !important;
+    width: auto !important;
+}
+
+.firebugRuler{
+    position: absolute !important;
+}
+
+.firebugRulerH {
+    top: -15px !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 14px !important;
+    background: url("data:image/png,%89PNG%0D%0A%1A%0A%00%00%00%0DIHDR%00%00%13%88%00%00%00%0E%08%02%00%00%00L%25a%0A%00%00%00%04gAMA%00%00%D6%D8%D4OX2%00%00%00%19tEXtSoftware%00Adobe%20ImageReadyq%C9e%3C%00%00%04%F8IDATx%DA%EC%DD%D1n%E2%3A%00E%D1%80%F8%FF%EF%E2%AF2%95%D0D4%0E%C1%14%B0%8Fa-%E9%3E%CC%9C%87n%B9%81%A6W0%1C%A6i%9A%E7y%0As8%1CT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AATE9%FE%FCw%3E%9F%AF%2B%2F%BA%97%FDT%1D~K(%5C%9D%D5%EA%1B%5C%86%B5%A9%BDU%B5y%80%ED%AB*%03%FAV9%AB%E1%CEj%E7%82%EF%FB%18%BC%AEJ8%AB%FA'%D2%BEU9%D7U%ECc0%E1%A2r%5DynwVi%CFW%7F%BB%17%7Dy%EACU%CD%0E%F0%FA%3BX%FEbV%FEM%9B%2B%AD%BE%AA%E5%95v%AB%AA%E3E5%DCu%15rV9%07%B5%7F%B5w%FCm%BA%BE%AA%FBY%3D%14%F0%EE%C7%60%0EU%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5JU%88%D3%F5%1F%AE%DF%3B%1B%F2%3E%DAUCNa%F92%D02%AC%7Dm%F9%3A%D4%F2%8B6%AE*%BF%5C%C2Ym~9g5%D0Y%95%17%7C%C8c%B0%7C%18%26%9CU%CD%13i%F7%AA%90%B3Z%7D%95%B4%C7%60%E6E%B5%BC%05%B4%FBY%95U%9E%DB%FD%1C%FC%E0%9F%83%7F%BE%17%7DkjMU%E3%03%AC%7CWj%DF%83%9An%BCG%AE%F1%95%96yQ%0Dq%5Dy%00%3Et%B5'%FC6%5DS%95pV%95%01%81%FF'%07%00%00%00%00%00%00%00%00%00%F8x%C7%F0%BE%9COp%5D%C9%7C%AD%E7%E6%EBV%FB%1E%E0(%07%E5%AC%C6%3A%ABi%9C%8F%C6%0E9%AB%C0'%D2%8E%9F%F99%D0E%B5%99%14%F5%0D%CD%7F%24%C6%DEH%B8%E9rV%DFs%DB%D0%F7%00k%FE%1D%84%84%83J%B8%E3%BA%FB%EF%20%84%1C%D7%AD%B0%8E%D7U%C8Y%05%1E%D4t%EF%AD%95Q%BF8w%BF%E9%0A%BF%EB%03%00%00%00%00%00%00%00%00%00%B8vJ%8E%BB%F5%B1u%8Cx%80%E1o%5E%CA9%AB%CB%CB%8E%03%DF%1D%B7T%25%9C%D5(%EFJM8%AB%CC'%D2%B2*%A4s%E7c6%FB%3E%FA%A2%1E%80~%0E%3E%DA%10x%5D%95Uig%15u%15%ED%7C%14%B6%87%A1%3B%FCo8%A8%D8o%D3%ADO%01%EDx%83%1A~%1B%9FpP%A3%DC%C6'%9C%95gK%00%00%00%00%00%00%00%00%00%20%D9%C9%11%D0%C0%40%AF%3F%EE%EE%92%94%D6%16X%B5%BCMH%15%2F%BF%D4%A7%C87%F1%8E%F2%81%AE%AAvzr%DA2%ABV%17%7C%E63%83%E7I%DC%C6%0Bs%1B%EF6%1E%00%00%00%00%00%00%00%00%00%80cr%9CW%FF%7F%C6%01%0E%F1%CE%A5%84%B3%CA%BC%E0%CB%AA%84%CE%F9%BF)%EC%13%08WU%AE%AB%B1%AE%2BO%EC%8E%CBYe%FE%8CN%ABr%5Dy%60~%CFA%0D%F4%AE%D4%BE%C75%CA%EDVB%EA(%B7%F1%09g%E5%D9%12%00%00%00%00%00%00%00%00%00H%F6%EB%13S%E7y%5E%5E%FB%98%F0%22%D1%B2'%A7%F0%92%B1%BC%24z3%AC%7Dm%60%D5%92%B4%7CEUO%5E%F0%AA*%3BU%B9%AE%3E%A0j%94%07%A0%C7%A0%AB%FD%B5%3F%A0%F7%03T%3Dy%D7%F7%D6%D4%C0%AAU%D2%E6%DFt%3F%A8%CC%AA%F2%86%B9%D7%F5%1F%18%E6%01%F8%CC%D5%9E%F0%F3z%88%AA%90%EF%20%00%00%00%00%00%00%00%00%00%C0%A6%D3%EA%CFi%AFb%2C%7BB%0A%2B%C3%1A%D7%06V%D5%07%A8r%5D%3D%D9%A6%CAu%F5%25%CF%A2%99%97zNX%60%95%AB%5DUZ%D5%FBR%03%AB%1C%D4k%9F%3F%BB%5C%FF%81a%AE%AB'%7F%F3%EA%FE%F3z%94%AA%D8%DF%5B%01%00%00%00%00%00%00%00%00%00%8E%FB%F3%F2%B1%1B%8DWU%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*UiU%C7%BBe%E7%F3%B9%CB%AAJ%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5J%95*U%AAT%A9R%A5*%AAj%FD%C6%D4%5Eo%90%B5Z%ADV%AB%D5j%B5Z%ADV%AB%D5j%B5Z%ADV%AB%D5j%B5Z%ADV%AB%D5j%B5Z%ADV%AB%D5j%B5Z%ADV%AB%D5j%B5Z%ADV%AB%D5j%B5%86%AF%1B%9F%98%DA%EBm%BBV%AB%D5j%B5Z%ADV%AB%D5j%B5Z%ADV%AB%D5j%B5Z%ADV%AB%D5j%B5Z%ADV%AB%D5j%B5Z%ADV%AB%D5j%B5Z%ADV%AB%D5j%B5Z%AD%D6%E4%F58%01%00%00%00%00%00%00%00%00%00%00%00%00%00%40%85%7F%02%0C%008%C2%D0H%16j%8FX%00%00%00%00IEND%AEB%60%82") repeat-x !important;
+    border-top: 1px solid #BBBBBB !important;
+    border-right: 1px dashed #BBBBBB !important;
+    border-bottom: 1px solid #000000 !important;
+}
+
+.firebugRulerV {
+    top: 0 !important;
+    left: -15px !important;
+    width: 14px !important;
+    height: 100% !important;
+    background: url("data:image/png,%89PNG%0D%0A%1A%0A%00%00%00%0DIHDR%00%00%00%0E%00%00%13%88%08%02%00%00%00%0E%F5%CB%10%00%00%00%04gAMA%00%00%D6%D8%D4OX2%00%00%00%19tEXtSoftware%00Adobe%20ImageReadyq%C9e%3C%00%00%06~IDATx%DA%EC%DD%D1v%A20%14%40Qt%F1%FF%FF%E4%97%D9%07%3BT%19%92%DC%40(%90%EEy%9A5%CB%B6%E8%F6%9Ac%A4%CC0%84%FF%DC%9E%CF%E7%E3%F1%88%DE4%F8%5D%C7%9F%2F%BA%DD%5E%7FI%7D%F18%DDn%BA%C5%FB%DF%97%BFk%F2%10%FF%FD%B4%F2M%A7%FB%FD%FD%B3%22%07p%8F%3F%AE%E3%F4S%8A%8F%40%EEq%9D%BE8D%F0%0EY%A1Uq%B7%EA%1F%81%88V%E8X%3F%B4%CEy%B7h%D1%A2E%EBohU%FC%D9%AF2fO%8BBeD%BE%F7X%0C%97%A4%D6b7%2Ck%A5%12%E3%9B%60v%B7r%C7%1AI%8C%BD%2B%23r%00c0%B2v%9B%AD%CA%26%0C%1Ek%05A%FD%93%D0%2B%A1u%8B%16-%95q%5Ce%DCSO%8E%E4M%23%8B%F7%C2%FE%40%BB%BD%8C%FC%8A%B5V%EBu%40%F9%3B%A72%FA%AE%8C%D4%01%CC%B5%DA%13%9CB%AB%E2I%18%24%B0n%A9%0CZ*Ce%9C%A22%8E%D8NJ%1E%EB%FF%8F%AE%CAP%19*%C3%BAEKe%AC%D1%AAX%8C*%DEH%8F%C5W%A1e%AD%D4%B7%5C%5B%19%C5%DB%0D%EF%9F%19%1D%7B%5E%86%BD%0C%95%A12%AC%5B*%83%96%CAP%19%F62T%86%CAP%19*%83%96%CA%B8Xe%BC%FE)T%19%A1%17xg%7F%DA%CBP%19*%C3%BA%A52T%86%CAP%19%F62T%86%CA%B0n%A9%0CZ%1DV%C6%3D%F3%FCH%DE%B4%B8~%7F%5CZc%F1%D6%1F%AF%84%F9%0F6%E6%EBVt9%0E~%BEr%AF%23%B0%97%A12T%86%CAP%19%B4T%86%CA%B8Re%D8%CBP%19*%C3%BA%A52huX%19%AE%CA%E5%BC%0C%7B%19*CeX%B7h%A9%0C%95%E1%BC%0C%7B%19*CeX%B7T%06%AD%CB%5E%95%2B%BF.%8F%C5%97%D5%E4%7B%EE%82%D6%FB%CF-%9C%FD%B9%CF%3By%7B%19%F62T%86%CA%B0n%D1R%19*%A3%D3%CA%B0%97%A12T%86uKe%D0%EA%B02*%3F1%99%5DB%2B%A4%B5%F8%3A%7C%BA%2B%8Co%7D%5C%EDe%A8%0C%95a%DDR%19%B4T%C66%82fA%B2%ED%DA%9FC%FC%17GZ%06%C9%E1%B3%E5%2C%1A%9FoiB%EB%96%CA%A0%D5qe4%7B%7D%FD%85%F7%5B%ED_%E0s%07%F0k%951%ECr%0D%B5C%D7-g%D1%A8%0C%EB%96%CA%A0%A52T%C6)*%C3%5E%86%CAP%19%D6-%95A%EB*%95q%F8%BB%E3%F9%AB%F6%E21%ACZ%B7%22%B7%9B%3F%02%85%CB%A2%5B%B7%BA%5E%B7%9C%97%E1%BC%0C%EB%16-%95%A12z%AC%0C%BFc%A22T%86uKe%D0%EA%B02V%DD%AD%8A%2B%8CWhe%5E%AF%CF%F5%3B%26%CE%CBh%5C%19%CE%CB%B0%F3%A4%095%A1%CAP%19*Ce%A8%0C%3BO*Ce%A8%0C%95%A12%3A%AD%8C%0A%82%7B%F0v%1F%2FD%A9%5B%9F%EE%EA%26%AF%03%CA%DF9%7B%19*Ce%A8%0C%95%A12T%86%CA%B8Ze%D8%CBP%19*Ce%A8%0C%95%D1ae%EC%F7%89I%E1%B4%D7M%D7P%8BjU%5C%BB%3E%F2%20%D8%CBP%19*Ce%A8%0C%95%A12T%C6%D5*%C3%5E%86%CAP%19*Ce%B4O%07%7B%F0W%7Bw%1C%7C%1A%8C%B3%3B%D1%EE%AA%5C%D6-%EBV%83%80%5E%D0%CA%10%5CU%2BD%E07YU%86%CAP%19*%E3%9A%95%91%D9%A0%C8%AD%5B%EDv%9E%82%FFKOee%E4%8FUe%A8%0C%95%A12T%C6%1F%A9%8C%C8%3D%5B%A5%15%FD%14%22r%E7B%9F%17l%F8%BF%ED%EAf%2B%7F%CF%ECe%D8%CBP%19*Ce%A8%0C%95%E1%93~%7B%19%F62T%86%CAP%19*Ce%A8%0C%E7%13%DA%CBP%19*Ce%A8%0CZf%8B%16-Z%B4h%D1R%19f%8B%16-Z%B4h%D1R%19%B4%CC%16-Z%B4h%D1R%19%B4%CC%16-Z%B4h%D1%A2%A52%CC%16-Z%B4h%D1%A2%A52h%99-Z%B4h%D1%A2%A52h%99-Z%B4h%D1%A2EKe%98-Z%B4h%D1%A2EKe%D02%5B%B4h%D1%A2EKe%D02%5B%B4h%D1%A2E%8B%96%CA0%5B%B4h%D1%A2E%8B%96%CA%A0e%B6h%D1%A2E%8B%96%CA%A0e%B6h%D1%A2E%8B%16-%95a%B6h%D1%A2E%8B%16-%95A%CBl%D1%A2E%8B%16-%95A%CBl%D1%A2E%8B%16-Z*%C3l%D1%A2E%8B%16-Z*%83%96%D9%A2E%8B%16-Z*%83%96%D9%A2E%8B%16-Z%B4T%86%D9%A2E%8B%16-Z%B4T%06-%B3E%8B%16-Z%B4T%06-%B3E%8B%16-Z%B4h%A9%0C%B3E%8B%16-Z%B4h%A9%0CZf%8B%16-Z%B4h%A9%0CZf%8B%16-Z%B4h%D1R%19f%8B%16-Z%B4h%D1R%19%B4%CC%16-Z%B4h%D1R%19%B4%CC%16-Z%B4h%D1%A2%A52%CC%16-Z%B4h%D1%A2%A52h%99-Z%B4h%D1%A2%A52h%99-Z%B4h%D1%A2EKe%98-Z%B4h%D1%A2EKe%D02%5B%B4h%D1%A2EKe%D02%5B%B4h%D1%A2E%8B%96%CA0%5B%B4h%D1%A2E%8B%96%CA%A0e%B6h%D1%A2E%8B%96%CA%A0e%B6h%D1%A2E%8B%16-%95a%B6h%D1%A2E%8B%16-%95A%CBl%D1%A2E%8B%16-%95A%CBl%D1%A2E%8B%16-Z*%C3l%D1%A2E%8B%16-Z*%83%96%D9%A2E%8B%16-Z*%83%96%D9%A2E%8B%16-Z%B4T%86%D9%A2E%8B%16-Z%B4T%06-%B3E%8B%16-Z%B4T%06-%B3E%8B%16-Z%B4h%A9%0C%B3E%8B%16-Z%B4h%A9%0CZf%8B%16-Z%B4h%A9%0CZf%8B%16-Z%B4h%D1R%19f%8B%16-Z%B4h%D1R%19%B4%CC%16-Z%B4h%D1R%19%B4%CC%16-Z%B4h%D1%A2%A52%CC%16-Z%B4h%D1%A2%A52h%99-Z%B4h%D1%A2%A52h%99-Z%B4h%D1%A2EKe%98-Z%B4h%D1%A2EKe%D02%5B%B4h%D1%A2EKe%D02%5B%B4h%D1%A2E%8B%96%CA0%5B%B4h%D1%A2E%8B%96%CA%A0e%B6h%D1%A2E%8B%96%CA%A0e%B6h%D1%A2E%8B%16-%95a%B6h%D1%A2E%8B%16-%95A%CBl%D1%A2E%8B%16-%95A%CBl%D1%A2E%8B%16-Z*%C3l%D1%A2E%8B%16-Z*%83%96%D9%A2E%8B%16-Z*%83%96%D9%A2E%8B%16-Z%B4T%86%D9%A2E%8B%16-Z%B4T%06-%B3E%8B%16-Z%B4%AE%A4%F5%25%C0%00%DE%BF%5C'%0F%DA%B8q%00%00%00%00IEND%AEB%60%82") repeat-y !important;
+    border-left: 1px solid #BBBBBB !important;
+    border-right: 1px solid #000000 !important;
+    border-bottom: 1px dashed #BBBBBB !important;
+}
+
+.overflowRulerX > .firebugRulerV {
+    left: 0 !important;
+}
+
+.overflowRulerY > .firebugRulerH {
+    top: 0 !important;
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+.fbProxyElement {
+    position: fixed !important;
+    pointer-events: auto !important;
+}
+</style></head>
+<body class="wp-admin wp-core-ui js  debug-bar-maximized  toplevel_page_advanced-iframe auto-fold admin-bar branch-4 version-4-0-1 admin-color-fresh locale-en-us customize-support sticky-menu svg">
+<script type="text/javascript">
+	document.body.className = document.body.className.replace('no-js','js');
+</script>
+
+	<script type="text/javascript">
+		(function() {
+			var request, b = document.body, c = 'className', cs = 'customize-support', rcs = new RegExp('(^|\\s+)(no-)?'+cs+'(\\s+|$)');
+
+			request = true;
+
+			b[c] = b[c].replace( rcs, ' ' );
+			b[c] += ( window.postMessage && request ? ' ' : ' no-' ) + cs;
+		}());
+	</script>
+	
+<div id="wpwrap">
+<a tabindex="1" href="#wpbody-content" class="screen-reader-shortcut">Skip to main content</a>
+
+<div id="adminmenuback"></div>
+<div style="" id="adminmenuwrap">
+<ul id="adminmenu" role="navigation">
+
+
+	<li class="wp-first-item wp-has-submenu wp-not-current-submenu menu-top menu-top-first menu-icon-dashboard menu-top-last" id="menu-dashboard">
+	<a href="http://localhost/wordpress32/wp-admin/index.php" class="wp-first-item wp-has-submenu wp-not-current-submenu menu-top menu-top-first menu-icon-dashboard menu-top-last" aria-haspopup="true"><div class="wp-menu-arrow"><div></div></div><div class="wp-menu-image dashicons-before dashicons-dashboard"><br></div><div class="wp-menu-name">Dashboard</div></a>
+	<ul class="wp-submenu wp-submenu-wrap"><li class="wp-submenu-head">Dashboard</li><li class="wp-first-item"><a href="http://localhost/wordpress32/wp-admin/index.php" class="wp-first-item">Home</a></li><li><a href="http://localhost/wordpress32/wp-admin/update-core.php">Updates <span class="update-plugins count-12" title="7 Plugin Updates, 5 Theme Updates"><span class="update-count">12</span></span></a></li></ul></li>
+	<li class="wp-not-current-submenu wp-menu-separator"><div class="separator"></div></li>
+	<li class="wp-has-submenu wp-not-current-submenu open-if-no-js menu-top menu-icon-post menu-top-first" id="menu-posts">
+	<a href="http://localhost/wordpress32/wp-admin/edit.php" class="wp-has-submenu wp-not-current-submenu open-if-no-js menu-top menu-icon-post menu-top-first" aria-haspopup="true"><div class="wp-menu-arrow"><div></div></div><div class="wp-menu-image dashicons-before dashicons-admin-post"><br></div><div class="wp-menu-name">Posts</div></a>
+	<ul class="wp-submenu wp-submenu-wrap"><li class="wp-submenu-head">Posts</li><li class="wp-first-item"><a href="http://localhost/wordpress32/wp-admin/edit.php" class="wp-first-item">All Posts</a></li><li><a href="http://localhost/wordpress32/wp-admin/post-new.php">Add New</a></li><li><a href="http://localhost/wordpress32/wp-admin/edit-tags.php?taxonomy=category">Categories</a></li><li><a href="http://localhost/wordpress32/wp-admin/edit-tags.php?taxonomy=post_tag">Tags</a></li></ul></li>
+	<li class="wp-has-submenu wp-not-current-submenu menu-top menu-icon-media" id="menu-media">
+	<a href="http://localhost/wordpress32/wp-admin/upload.php" class="wp-has-submenu wp-not-current-submenu menu-top menu-icon-media" aria-haspopup="true"><div class="wp-menu-arrow"><div></div></div><div class="wp-menu-image dashicons-before dashicons-admin-media"><br></div><div class="wp-menu-name">Media</div></a>
+	<ul class="wp-submenu wp-submenu-wrap"><li class="wp-submenu-head">Media</li><li class="wp-first-item"><a href="http://localhost/wordpress32/wp-admin/upload.php" class="wp-first-item">Library</a></li><li><a href="http://localhost/wordpress32/wp-admin/media-new.php">Add New</a></li><li><a href="http://localhost/wordpress32/wp-admin/upload.php?page=wordpress-flash-uploader.php">WP Flash Uploader</a></li><li><a href="http://localhost/wordpress32/wp-admin/upload.php?page=wordpress-flash-uploader.php?printSync=true">Sync Media Library</a></li></ul></li>
+	<li class="wp-has-submenu wp-not-current-submenu menu-top menu-icon-links" id="menu-links">
+	<a href="http://localhost/wordpress32/wp-admin/link-manager.php" class="wp-has-submenu wp-not-current-submenu menu-top menu-icon-links" aria-haspopup="true"><div class="wp-menu-arrow"><div></div></div><div class="wp-menu-image dashicons-before dashicons-admin-links"><br></div><div class="wp-menu-name">Links</div></a>
+	<ul class="wp-submenu wp-submenu-wrap"><li class="wp-submenu-head">Links</li><li class="wp-first-item"><a href="http://localhost/wordpress32/wp-admin/link-manager.php" class="wp-first-item">All Links</a></li><li><a href="http://localhost/wordpress32/wp-admin/link-add.php">Add New</a></li><li><a href="http://localhost/wordpress32/wp-admin/edit-tags.php?taxonomy=link_category">Link Categories</a></li></ul></li>
+	<li class="wp-has-submenu wp-not-current-submenu menu-top menu-icon-page" id="menu-pages">
+	<a href="http://localhost/wordpress32/wp-admin/edit.php?post_type=page" class="wp-has-submenu wp-not-current-submenu menu-top menu-icon-page" aria-haspopup="true"><div class="wp-menu-arrow"><div></div></div><div class="wp-menu-image dashicons-before dashicons-admin-page"><br></div><div class="wp-menu-name">Pages</div></a>
+	<ul class="wp-submenu wp-submenu-wrap"><li class="wp-submenu-head">Pages</li><li class="wp-first-item"><a href="http://localhost/wordpress32/wp-admin/edit.php?post_type=page" class="wp-first-item">All Pages</a></li><li><a href="http://localhost/wordpress32/wp-admin/post-new.php?post_type=page">Add New</a></li></ul></li>
+	<li class="wp-not-current-submenu menu-top menu-icon-comments menu-top-last" id="menu-comments">
+	<a href="http://localhost/wordpress32/wp-admin/edit-comments.php" class="wp-not-current-submenu menu-top menu-icon-comments menu-top-last"><div class="wp-menu-arrow"><div></div></div><div class="wp-menu-image dashicons-before dashicons-admin-comments"><br></div><div class="wp-menu-name">Comments <span class="awaiting-mod count-0"><span class="pending-count">0</span></span></div></a></li>
+	<li class="wp-not-current-submenu wp-menu-separator"><div class="separator"></div></li>
+	<li class="wp-has-submenu wp-not-current-submenu menu-top menu-icon-appearance menu-top-first" id="menu-appearance">
+	<a href="http://localhost/wordpress32/wp-admin/themes.php" class="wp-has-submenu wp-not-current-submenu menu-top menu-icon-appearance menu-top-first" aria-haspopup="true"><div class="wp-menu-arrow"><div></div></div><div class="wp-menu-image dashicons-before dashicons-admin-appearance"><br></div><div class="wp-menu-name">Appearance</div></a>
+	<ul class="wp-submenu wp-submenu-wrap"><li class="wp-submenu-head">Appearance</li><li class="wp-first-item"><a href="http://localhost/wordpress32/wp-admin/themes.php" class="wp-first-item">Themes</a></li><li class="hide-if-no-customize"><a href="http://localhost/wordpress32/wp-admin/customize.php?return=%2Fwordpress32%2Fwp-admin%2Fadmin.php%3Fpage%3Dadvanced-iframe.php%26doing_wp_cron%3D1417295863.0403099060058593750000" class="hide-if-no-customize">Customize</a></li><li><a href="http://localhost/wordpress32/wp-admin/widgets.php">Widgets</a></li><li><a href="http://localhost/wordpress32/wp-admin/nav-menus.php">Menus</a></li><li><a href="http://localhost/wordpress32/wp-admin/themes.php?page=jr_mt_settings">Multiple Themes plugin</a></li><li><a href="http://localhost/wordpress32/wp-admin/themes.php?page=themecheck">Theme Check</a></li><li><a href="http://localhost/wordpress32/wp-admin/themes.php?page=custom-header">Header</a></li><li><a href="http://localhost/wordpress32/wp-admin/themes.php?page=custom-background">Background</a></li><li><a href="http://localhost/wordpress32/wp-admin/theme-editor.php">Editor</a></li></ul></li>
+	<li class="wp-has-submenu wp-not-current-submenu menu-top menu-icon-plugins" id="menu-plugins">
+	<a href="http://localhost/wordpress32/wp-admin/plugins.php" class="wp-has-submenu wp-not-current-submenu menu-top menu-icon-plugins" aria-haspopup="true"><div class="wp-menu-arrow"><div></div></div><div class="wp-menu-image dashicons-before dashicons-admin-plugins"><br></div><div class="wp-menu-name">Plugins <span class="update-plugins count-7"><span class="plugin-count">7</span></span></div></a>
+	<ul class="wp-submenu wp-submenu-wrap"><li class="wp-submenu-head">Plugins <span class="update-plugins count-7"><span class="plugin-count">7</span></span></li><li class="wp-first-item"><a href="http://localhost/wordpress32/wp-admin/plugins.php" class="wp-first-item">Installed Plugins</a></li><li><a href="http://localhost/wordpress32/wp-admin/plugin-install.php">Add New</a></li><li><a href="http://localhost/wordpress32/wp-admin/plugin-editor.php">Editor</a></li><li><a href="http://localhost/wordpress32/wp-admin/plugins.php?page=plugincheck">Plugin Check</a></li></ul></li>
+	<li class="wp-has-submenu wp-not-current-submenu menu-top menu-icon-users" id="menu-users">
+	<a href="http://localhost/wordpress32/wp-admin/users.php" class="wp-has-submenu wp-not-current-submenu menu-top menu-icon-users" aria-haspopup="true"><div class="wp-menu-arrow"><div></div></div><div class="wp-menu-image dashicons-before dashicons-admin-users"><br></div><div class="wp-menu-name">Users</div></a>
+	<ul class="wp-submenu wp-submenu-wrap"><li class="wp-submenu-head">Users</li><li class="wp-first-item"><a href="http://localhost/wordpress32/wp-admin/users.php" class="wp-first-item">All Users</a></li><li><a href="http://localhost/wordpress32/wp-admin/user-new.php">Add New</a></li><li><a href="http://localhost/wordpress32/wp-admin/profile.php">Your Profile</a></li></ul></li>
+	<li class="wp-has-submenu wp-not-current-submenu menu-top menu-icon-tools" id="menu-tools">
+	<a href="http://localhost/wordpress32/wp-admin/tools.php" class="wp-has-submenu wp-not-current-submenu menu-top menu-icon-tools" aria-haspopup="true"><div class="wp-menu-arrow"><div></div></div><div class="wp-menu-image dashicons-before dashicons-admin-tools"><br></div><div class="wp-menu-name">Tools</div></a>
+	<ul class="wp-submenu wp-submenu-wrap"><li class="wp-submenu-head">Tools</li><li class="wp-first-item"><a href="http://localhost/wordpress32/wp-admin/tools.php" class="wp-first-item">Available Tools</a></li><li><a href="http://localhost/wordpress32/wp-admin/import.php">Import</a></li><li><a href="http://localhost/wordpress32/wp-admin/export.php">Export</a></li><li><a href="http://localhost/wordpress32/wp-admin/tools.php?page=deprecation-checker/deprecation-checker.php">Deprecation Checker</a></li></ul></li>
+	<li class="wp-has-submenu wp-not-current-submenu menu-top menu-icon-settings menu-top-last" id="menu-settings">
+	<a href="http://localhost/wordpress32/wp-admin/options-general.php" class="wp-has-submenu wp-not-current-submenu menu-top menu-icon-settings menu-top-last" aria-haspopup="true"><div class="wp-menu-arrow"><div></div></div><div class="wp-menu-image dashicons-before dashicons-admin-settings"><br></div><div class="wp-menu-name">Settings</div></a>
+	<ul class="wp-submenu wp-submenu-wrap"><li class="wp-submenu-head">Settings</li><li class="wp-first-item"><a href="http://localhost/wordpress32/wp-admin/options-general.php" class="wp-first-item">General</a></li><li><a href="http://localhost/wordpress32/wp-admin/options-writing.php">Writing</a></li><li><a href="http://localhost/wordpress32/wp-admin/options-reading.php">Reading</a></li><li><a href="http://localhost/wordpress32/wp-admin/options-discussion.php">Discussion</a></li><li><a href="http://localhost/wordpress32/wp-admin/options-media.php">Media</a></li><li><a href="http://localhost/wordpress32/wp-admin/options-permalink.php">Permalinks</a></li><li><a href="http://localhost/wordpress32/wp-admin/options-general.php?page=advanced-iframe.php">Advanced iFrame Pro</a></li><li><a href="http://localhost/wordpress32/wp-admin/options-general.php?page=tinywebgallery-wrapper.php">TinyWebGallery</a></li><li><a href="http://localhost/wordpress32/wp-admin/options-general.php?page=jr_mt_settings">Multiple Themes plugin</a></li><li><a href="http://localhost/wordpress32/wp-admin/options-general.php?page=post-ui-tabs">Post UI Tabs</a></li><li><a href="http://localhost/wordpress32/wp-admin/options-general.php?page=wordpress-flash-uploader.php">WP Flash Uploader</a></li><li><a href="http://localhost/wordpress32/wp-admin/options-general.php?page=auto-hyperlink-urls/autohyperlink-urls.php">Auto-hyperlink</a></li></ul></li>
+	<li class="wp-not-current-submenu wp-menu-separator"><div class="separator"></div></li>
+	<li class="current menu-top menu-icon-generic toplevel_page_advanced-iframe menu-top-first" id="toplevel_page_advanced-iframe">
+	<a href="http://localhost/wordpress32/wp-admin/admin.php?page=advanced-iframe.php" class="current menu-top menu-icon-generic toplevel_page_advanced-iframe menu-top-first"><div class="wp-menu-arrow"><div></div></div><div class="wp-menu-image dashicons-before dashicons-admin-generic"><br></div><div class="wp-menu-name">Advanced iFrame Pro</div></a></li>
+	<li class="wp-not-current-submenu menu-top menu-icon-generic toplevel_page_tinywebgallery-wrapper menu-top-last" id="toplevel_page_tinywebgallery-wrapper">
+	<a href="http://localhost/wordpress32/wp-admin/admin.php?page=tinywebgallery-wrapper.php" class="wp-not-current-submenu menu-top menu-icon-generic toplevel_page_tinywebgallery-wrapper menu-top-last"><div class="wp-menu-arrow"><div></div></div><div class="wp-menu-image dashicons-before dashicons-admin-generic"><br></div><div class="wp-menu-name">TinyWebGallery</div></a></li><li id="collapse-menu" class="hide-if-no-js"><div id="collapse-button"><div></div></div><span>Collapse menu</span></li></ul>
+</div>
+<div id="wpcontent">		
+<div id="wpbody">
+
+<div id="wpbody-content" aria-label="Main content" tabindex="0">
+		<div id="screen-meta" class="metabox-prefs">
+
+			<div id="contextual-help-wrap" class="hidden no-sidebar" tabindex="-1" aria-label="Contextual Help Tab">
+				<div id="contextual-help-back"></div>
+				<div id="contextual-help-columns">
+					<div class="contextual-help-tabs">
+						<ul>
+												</ul>
+					</div>
+
+					
+					<div class="contextual-help-tabs-wrap">
+											</div>
+				</div>
+			</div>
+				</div>
+		<script type="text/javascript">
+    function aiCheckInputNumber(inputField) {
+        inputField.value = inputField.value.split(' ').join('');
+        var f = inputField.value;
+        if (inputField.value == '') return;
+        var match = f.match(/^(\-){0,1}([\d\.]+)(px|%|em|pt)?$/);
+        if (!match) {
+            alert("Please check the value you have entered. Only numbers with a dot or with an optional px, %, em or pt are allowed");
+            setTimeout(function(){inputField.focus();}, 10);
+        }
+    }
+    
+    function setScrollposition() {
+      var scrollposition = jQuery(document).scrollTop();   
+      jQuery("#scrollposition").val(scrollposition);
+    }
+</script>
+<style type="text/css">table th {text-align: left;}
+</style>
+<div id="ai" class="wrap">
+  <!-- options-general.php?page=advanced-iframe.php -->
+  <form name="ai_form" method="post" action="">
+    <input id="twg-options" name="twg-options" value="0d83aeeeb3" type="hidden"><input name="_wp_http_referer" value="/wordpress32/wp-admin/admin.php?page=advanced-iframe.php&amp;doing_wp_cron=1417295863.0403099060058593750000" type="hidden">
+      <div id="icon-options-general" class="icon_ai">
+      <br>
+      </div>
+<h2>Advanced iFrame Pro 6.4.1<span id="help-header">&nbsp;attribute help</span><br />This file is not updated anymore as the current administration can be printed nicely as well.</h2>
+<br>
+
+<div class="nounderline">
+<div style="float:left; margin-right:30px;height:60px;">
+<a href="#ds">Default settings</a><br>
+<a href="#gs">Get support </a><br>
+<a href="#as">Advanced settings</a><br>
+</div>
+<div style="float:left; margin-right:30px;;height:60px;">
+<a href="#mp">Modify the parent page</a><br>
+<a href="#so">Show only a part of the iframe or modify it</a><br>
+<a href="#rt">Resize the iframe to the content height/width</a><br>
+</div>
+<div style="float:left;height:60px;">
+<a href="#xss">Howto enable cross domain resize and modification</a><br>
+<a href="#ad">Add additional files</a><br>
+<a href="#ic">Include content directly</a><br>
+</div>
+</div>
+
+<div style="clear:both;"></div>
+
+<div id="noacc">
+
+<h1 style="display: none;">Quickstart guide, display options, vote for the plugin on codecanyon</h1>
+      <div>
+      <div id="icon-options-general" class="icon_ai">
+      <br>
+      </div><h2>Advanced iFrame Pro - Quickstart guide, widget, display options, vote for the plugin on codecanyon</h2>
+  <h3 style="display: block;">Quick start guide</h3>
+<p style="display: block;">To include a web page to your page please check the following things first:</p>
+<ul style="display: block;">
+<li>- Check if your page you want to include is allowed to be included:<br>&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://www.tinywebgallery.com/blog/advanced-iframe/free-iframe-checker">http://www.tinywebgallery.com/blog/advanced-iframe/free-iframe-checker</a>!</li>
+<li>- Check if the iframe page and the parent page are one the same domain. www.example.com and text.example.com are different domains!</li>
+<li>- Can you modify the page that should be included?</li>
+</ul>
+<p style="display: block;">Most likely you have one of the following setups:</p>
+<ol style="display: block;">
+<li>iframe cannot be included:  You cannot include the content because the owner does not allow this. </li>
+<li>iframe can be included and you are on a different domain: See the <a href="http://www.tinywebgallery.com/blog/advanced-iframe/advanced-iframe-comparison-chart" target="_blank">feature comparison chart</a>. To resize the content to the height/width or modify css you <strong>need to modify the remote iframe page</strong> by adding one line of Javascript to enable the provided workaround.</li>
+<li>Iframe can be included and you are on the same domain: All features of the plugin can be used.</li>
+</ol>If you mix http and https read <a href="http://www.tinywebgallery.com/blog/iframe-do-not-mix-http-and-https" target="_blank">this blog</a>. Parent https and iframe http does not work on all browsers!<h3 class="hide-print">Advanced iFrame Pro Widget</h3><p class="hide-print">The
+ pro version also does offer a widget where you can include the iframe. 
+The usage is really simple. Go to Appearance -&gt; Widgets and insert 
+the shortcode you would normally put into a page into the text field of 
+the "Advanced iFrame Pro Widget" .</p><h3>Vote for the plugin</h3><p>Thank you for getting Advanced iFrame Pro at Codecanyon.<br>Please feel free to leave an item rating from your items download page if you haven't already done so.</p><p>Please
+ get in contact with me if you have problems because most of the issues 
+are easy to solve. But at least tell me what you did not like so I can 
+improve this. Also make sure that you took a look at the quick start 
+guide to make sure the feature you like can be used!</p><h3 class="hide-print">Display options</h3><table class="form-table hide-print" "="">
+      <tbody><tr>
+      <th scope="row">Show this section at the bottom</th>
+      <td><span class="hide-print">
+      <input id="donation_bottom" name="donation_bottom" value="true" type="radio"> Yes&nbsp;&nbsp;&nbsp;&nbsp;<input id="donation_bottom" name="donation_bottom" value="false" checked="checked" type="radio"> No<br>
+    </span><p class="description">Please move this section to the bottom after you have read it.</p></td>
+    </tr>
+    
+      <tr>
+      <th scope="row">Enable expert mode</th>
+      <td><span class="hide-print">
+      <input id="expert_mode" name="expert_mode" value="true" type="radio"> Yes&nbsp;&nbsp;&nbsp;&nbsp;<input id="expert_mode" name="expert_mode" value="false" checked="checked" type="radio"> No<br>
+    </span><p class="description">If you enable the expert mode the 
+description is only shown if you click on the label of the setting. You 
+see more settings at once but only one description at once. Also the 
+padding between the table rows are reduced a lot. So you see a lot of 
+more settings on one screen. Use this if you are common with the 
+settings.</p></td>
+    </tr>
+    
+      <tr>
+      <th scope="row">Use footer save button</th>
+      <td><span class="hide-print">
+      <input id="single_save_button" name="single_save_button" value="true" checked="checked" type="radio"> Yes&nbsp;&nbsp;&nbsp;&nbsp;<input id="single_save_button" name="single_save_button" value="false" type="radio"> No<br>
+    </span><p class="description">The new default is theat the save 
+button is in a sticky footer. I was testing this for all major browsers 
+but not for all worpress versions. So if this does not work for your 
+version set this to false to get one save button for each section.</p></td>
+    </tr>
+    
+      <tr>
+      <th scope="row">Use accordeon menu</th>
+      <td>
+      <select name="accordeon_menu">
+         <option value="false" selected="selected">No Accordeon menu</option><option value="no">Accordeon menu. No section is open by default.</option><option value="h1-ds">Section 'Default settings' is open by default</option><option value="h1-as">Section 'Advanced settings' is open by default</option><option value="h1-mp">Section 'Modify the parent page' is open by default</option><option value="h1-so">Section 'Show only a part of the iframe' is open by default</option><option value="h1-rt">Section 'Resize the iframe to the content height/width' is open by default</option><option value="h1-xss">Section 'External workaround' is open by default</option>
+      </select>
+    <br>
+    <p class="description">The accordeon menu does not show the 
+different sections in one big page but does only show the sections you 
+open. You can define the default section which is open by default here 
+also. Sections do not close if you open another one because sometimes is
+ is usefull to open several sections at once. Also the quick jump links 
+at the top are removed because they do not make sense than anymore. The 
+menu is used after you saved this setting. Only important sections are 
+offered in the dropdown.</p></td>
+    </tr>
+    
+      <tr>
+      <th scope="row">Alternative shortcode</th>
+      <td><span class="hide-print">
+      <input name="alternative_shortcode" id="alternative_shortcode" type="text"><br></span>
+      <p class="description">You can define an alternative shortcode the
+ plugin should evaluate. This is e.g. useful if you chance/upgrade from 
+iframe to advanced iframe (pro). Simply insert "iframe" in the text 
+field. Most if the parameters do already match! Make sure to deactivate 
+the other plugin that used the shortcode. With using iframe also the 
+BBCode [iframe]url[/iframe] is supported. IMPORTANT: If you use this, 
+security codes are NOT checked anymore. So anyone who can e.g. write a 
+post can also insert an iframe!</p></td>
+      </tr>
+      
+      <tr>
+      <th scope="row">Show plugin in main menu</th>
+      <td><span class="hide-print">
+      <input id="show_menu_link" name="show_menu_link" value="true" checked="checked" type="radio"> Yes&nbsp;&nbsp;&nbsp;&nbsp;<input id="show_menu_link" name="show_menu_link" value="false" type="radio"> No<br>
+    </span><p class="description">Show the "Advanced iFrame Pro" Menu link also in the main menu. If set to "False" it is only shown in the settings menu.</p></td>
+    </tr>
+    </tbody></table><p></p><p>
+        <input class="button-primary" name="update_iframe-loader" value="Update Settings" type="submit"></p></div>    <h1 style="display: none;" id="h1-ds">
+    Default settings    </h1> 
+    <div>
+    <div id="ds"></div> 
+    <div id="icon-options-general" class="icon_ai">
+      <br>
+    </div>
+    <h2>
+Advanced iFrame Pro - Default settings</h2>
+    <p class="hide-print">
+      This plugin will include any content an advanced iframe. Please 
+enter the url and the size you want to include your page. You have a 
+couple of additional default options which help to integrate your site 
+better into your template. You can overwrite all of these settings by 
+specifying the parameter in the shortcode. Please read the documentation
+ after each field about the parameter you have to use.    </p>
+    <p class="shortcode hide-print">
+      Please use the following shortcode to add an iframe to your page: <br>
+      <span> [advanced_iframe securitykey="eaa4ba356ec483b7b1d5356ba6bc84157c58292f"]
+      </span>
+       
+      </p><p class="hide-print">
+      You can also generate a shortcode which does include all settings 
+as shortcode attributes. This shortcode does not use any of the 
+defaults.      <br><input id="gen" class="button-primary" name="generate" value="Generate a shortcode for the current settings" onclick="aiGenerateShortcode(); jQuery('#jquery-gen').show(); return false;" type="button"></p>
+      <div id="jquery-gen" class="hide-print" "="">
+      <p class="hide-print">
+      Copy the following shortcode to your page:  
+      </p>
+      <p id="gen-shortcode" class="hide-print">
+          [advanced_iframe securitykey="eaa4ba356ec483b7b1d5356ba6bc84157c58292f"]
+      </p>
+      
+      </div>
+            <p class="hide-print">
+      Examples if you want to use several iframes with different settings. Also read the <a target="_blank" href="http://www.tinywebgallery.com/blog/advanced-iframe/advanced-iframe-faq">FAQ</a>:
+      </p>
+      <ul class="hide-print">
+      <li>[advanced_iframe securitykey="eaa4ba356ec483b7b1d5356ba6bc84157c58292f" src="http://www.tinywebgallery.com"] </li>
+      <li>[advanced_iframe 
+securitykey="eaa4ba356ec483b7b1d5356ba6bc84157c58292f" 
+src="http://www.tinywebgallery.com" width="100%" height="600"]</li>
+      <li>[advanced_iframe 
+securitykey="eaa4ba356ec483b7b1d5356ba6bc84157c58292f" 
+src="http://www.tinywebgallery.com" id="iframe1" name="iframe1" 
+width="100%" height="600" ]</li>
+      </ul>
+      
+    <p></p>
+    <table class="form-table">
+
+      <tbody><tr>
+      <th scope="row">Security key</th>
+      <td><span class="hide-print">
+      <input name="securitykey" id="securitykey" value="eaa4ba356ec483b7b1d5356ba6bc84157c58292f" type="text"><br></span>
+      <p class="description">This is the security key which has to be 
+used in the shorttag. This is mandatory because otherwise anyone who can
+ create an article can insert an iframe.  The default security key was 
+randomly generated during installation. Please change the key if you 
+like. You should use this in combination with e.g. Page security to make
+ sure that only the users you define can modify pages.</p></td>
+      </tr>
+      
+      <tr>
+      <th scope="row"><b>Url</b></th>
+      <td><span class="hide-print">
+      <input name="src" id="src" value="http://localhost/wordpress/wp-content/plugins/advanced-iframe/example/example2.html?id={userid}&amp;name={username}&amp;usermail={useremail}" type="text"><br></span>
+      <p class="description">Enter the full URL to your page. e.g. http://www.tinywebgallery.com. <strong>Please do not use a different protocol for the iframe: Do not mix http and https if possible!</strong> Please read <a href="http://www.tinywebgallery.com/blog/iframe-do-not-mix-http-and-https" target="_blank">this post</a> for details. If you cannot save the full url because of mod_security don't specify the protocoll (e.g. //www.tinywebgallery.com) or leave this field empty and define the src in the shortcode. Also use the free url checker below to make sure that you can include the page. You can also add parameters to this url like http://www.tinywebgallery.com/test.php?iframe=true. Then you can check this variable and use it to e.g. hide some elements in the iframe.<br>The pro version also has some placeholders (the standalone version has only host and port available) which are replaced on the fly: <br>&nbsp;&nbsp;&nbsp;- {site}: the url to the wordpress root<br>&nbsp;&nbsp;&nbsp;- {host}: the current host from the request<br>&nbsp;&nbsp;&nbsp;- {port}: the current port from the request<br>&nbsp;&nbsp;&nbsp;- {userid}: the id of the current user<br>&nbsp;&nbsp;&nbsp;- {username}: the username of the current user<br>&nbsp;&nbsp;&nbsp;- {useremail}: the e-mail of the current user<br>&nbsp;&nbsp;&nbsp;- {adminmail}: the e-mail of the wordpress admin<br>&nbsp;&nbsp;&nbsp;- {userinfo-X}: extract attribute X from get_currentuserinfo. E.g. {userinfo-display_name}. See <a href=" https://codex.wordpress.org/Function_Reference/get_currentuserinfo" target="_blank">here</a> for details.<br>&nbsp;&nbsp;&nbsp;- {usermeta-X}: extract key X from get_user_meta. E.g. {usermeta-last_name}. See <a href=" https://codex.wordpress.org/Function_Reference/get_user_meta" target="_blank">here</a> for details.<br>&nbsp;&nbsp;&nbsp;- {urlpathX}: the Xth path element from the front. The first path element would be {urlpath1}<br>&nbsp;&nbsp;&nbsp;- {urlpath-X}: the Xth path element from behind. The last path element would be {urlpath-1}<br> <br>An example would be src="http://demo.{host}/url?id={userid}". Especially for multidomain installations this is maybe helpful. If no user is logged in the values are empty or 0 for the id.<br>urlpath does extract path elements from the url in the address bar. So {urlpath-1} for the url www.xx.com/a/bb/cc would be cc.<br><strong>Also shortcodes are supported.</strong> You have to replace the bracket [ with {{ and ] with }}. So if the shortcode is [link] you have to use {{link}} because shortcode attributes which include shortcodes are not supported directly by Wordpress. Also be aware of single and double quotations: src="http://demo.{{url domain='home'}}/url". So only use ' for attributes of the nested shortcode.<br><strong>PDF support: </strong>If you include a pdf google doc is used to render the pdf. This solution looks the same on all browsers. If you want to use the native pdf renderer of the browser/your system add NATIVE: before the url. Like NATIVE:http://www.example.com/pdf.pdf.<br>Shortcode attribute: src=""</p></td>
+      </tr>
+            <tr>
+        <th scope="row"><strong>Free url checker</strong>
+        </th>      <td>
+          <strong>Not all pages</strong> can be included in an iframe 
+because they have a header flag this does not allow this. Please use the
+ free iframe checker to find out if the page you want to include does 
+work on all browsers: <a target="_blank" href="http://www.tinywebgallery.com/blog/advanced-iframe/free-iframe-checker/">Free iframe checker</a>.</td>
+      </tr>
+
+      <tr>
+      <th scope="row">Width</th>
+      <td><span class="hide-print">
+      <input name="width" id="width" style="width:150px;" onblur="aiCheckInputNumber(this)" value="600" type="text"><br></span>
+      <p class="description">The width of the iframe. You can specify 
+the value in px or in %. If you don't specify anything px is assumed.  
+Shortcode attribute: width=""</p></td>
+      </tr>
+      
+      <tr>
+      <th scope="row">Height</th>
+      <td><span class="hide-print">
+      <input name="height" id="height" style="width:150px;" onblur="aiCheckInputNumber(this)" value="200" type="text"><br></span>
+      <p class="description">The height of the iframe. You can specify 
+the value in px or in %. If you don't specify anything px is assumed. 
+Please note that % does most of the time does NOT give the expected 
+result (e.g. 100% is only 150px) because the % are not from the iframe 
+page but from the parent element. If you like something like that the 
+iframe is resized to the content please read the '<a href="#onload">Javascript iframe onload options</a>' section below! Shortcode attribute: height=""</p></td>
+      </tr>
+      
+      <tr>
+      <th scope="row">Scrolling</th>
+      <td><span class="hide-print">
+      <input id="scrolling1" name="scrolling" value="auto" type="radio"> Yes&nbsp;&nbsp;&nbsp;&nbsp;<input id="scrolling2" name="scrolling" value="no" checked="checked" type="radio"> No&nbsp;&nbsp;&nbsp;&nbsp;<input id="scrolling3" name="scrolling" value="none" type="radio"> Not rendered<br></span>
+    <p class="description">Defines if scrollbars are shown if the page 
+is too big for your iframe. Please note: If you select 'Yes' IE does 
+always show scrollbars on many pages! So only use this if needed. 
+Scrolling "none" means that the attribute is not rendered at all and can
+ be set by css to enable the scrollbars responsive.  Shortcode 
+attribute: scrolling="auto" or scrolling="no" or scrolling="none"</p></td>
+    </tr>
+    
+      <tr>
+      <th scope="row">Margin width</th>
+      <td><span class="hide-print">
+      <input name="marginwidth" id="marginwidth" style="width:150px;" onblur="aiCheckInputNumber(this)" value="0" type="text"><br></span>
+      <p class="description">The margin width of the iframe. You can 
+specify the value in px. If you don't specify anything px is assumed.  
+Shortcode attribute: marginwidth=""</p></td>
+      </tr>
+      
+      <tr>
+      <th scope="row">Margin height</th>
+      <td><span class="hide-print">
+      <input name="marginheight" id="marginheight" style="width:150px;" onblur="aiCheckInputNumber(this)" value="0" type="text"><br></span>
+      <p class="description">The margin height of the iframe. You can 
+specify the value in px. If you don't specify anything px is assumed.  
+Shortcode attribute: marginheight=""</p></td>
+      </tr>
+      
+      <tr>
+      <th scope="row">Frame border</th>
+      <td><span class="hide-print">
+      <input name="frameborder" id="frameborder" style="width:150px;" onblur="aiCheckInputNumber(this)" value="0" type="text"><br></span>
+      <p class="description">The frame border of the iframe. You can 
+specify the value in px. If you don't specify anything px is assumed.  
+Shortcode attribute: frameborder=""</p></td>
+      </tr>
+      
+      <tr>
+      <th scope="row">Transparency</th>
+      <td><span class="hide-print">
+      <input id="transparency" name="transparency" value="true" checked="checked" type="radio"> Yes&nbsp;&nbsp;&nbsp;&nbsp;<input id="transparency" name="transparency" value="false" type="radio"> No<br>
+    </span><p class="description">If you like that the iframe is 
+transparent and your background is shown you should set this to 'Yes'. 
+If this value is not set then the iframe is transparent in IE but 
+transparent in e.g. Firefox. So by default you should leave this to 
+'Yes'. Shortcode attribute: transparency="true" or transparency="false" </p></td>
+    </tr>
+    
+      <tr>
+      <th scope="row">Class</th>
+      <td><span class="hide-print">
+      <input name="class" id="class" type="text"><br></span>
+      <p class="description">You can define a class for the iframe if you like. Shortcode attribute: class=""</p></td>
+      </tr>
+      
+      <tr>
+      <th scope="row">Style</th>
+      <td><span class="hide-print">
+      <input name="style" id="style" type="text"><br></span>
+      <p class="description">You can define styles for the iframe if you
+ like. The recommended way is to put the styles in a css file and use 
+the class option. Shortcode attribute: style=""</p></td>
+      </tr>
+      
+      <tr>
+      <th scope="row">Id</th>
+      <td><span class="hide-print">
+      <input name="id" id="id" value="advanced_iframe" type="text"><br></span>
+      <p class="description">Enter the 'id' attribute of the iframe. 
+Allowed values are only a-zA-Z0-9_. Do NOT use any other characters 
+because the id is also used to generate unique javascript functions! 
+Other characters will be removed when you save! If a src directly in a 
+shortcode is set and no id than an id is generated automatically if 
+several iframes are on one page to avoid configuration problems. 
+Shortcode attribute: id=""</p></td>
+      </tr>
+      
+      <tr>
+      <th scope="row">Name</th>
+      <td><span class="hide-print">
+      <input name="name" id="name" type="text"><br></span>
+      <p class="description">Enter the 'name' attribute of the iframe. Shortcode attribute: name=""</p></td>
+      </tr>
+      
+      <tr>
+      <th scope="row">Allow full screen</th>
+      <td><span class="hide-print">
+      <input id="allowfullscreen" name="allowfullscreen" value="true" type="radio"> Yes&nbsp;&nbsp;&nbsp;&nbsp;<input id="allowfullscreen" name="allowfullscreen" value="false" checked="checked" type="radio"> No<br>
+    </span><p class="description">allowfullscreen is an HTML attribute 
+that enables videos to be displayed in fullscreen mode. Currently this 
+is a new html attribute not supported by all browsers. So please check  
+all of the browsers you want to support. Shortcode attribute: 
+allowfullscreen="true" or allowfullscreen="false"</p></td>
+    </tr>
+    
+      <tr>
+      <th scope="row">Allow shortcode attributes</th>
+      <td><span class="hide-print">
+      <input id="shortcode_attributes" name="shortcode_attributes" value="true" checked="checked" type="radio"> Yes&nbsp;&nbsp;&nbsp;&nbsp;<input id="shortcode_attributes" name="shortcode_attributes" value="false" type="radio"> No<br>
+    </span><p class="description">Allow to set attributes in the 
+shortcode. All of the attributes can be overwritten in the shortcode if 
+you set 'Yes'. Otherwise the settings you specify here are used.</p></td>
+    </tr>
+    
+      <tr>
+      <th scope="row">Use shortcode attributes only</th>
+      <td><span class="hide-print">
+      <input id="use_shortcode_attributes_only" name="use_shortcode_attributes_only" value="true" type="radio"> Yes&nbsp;&nbsp;&nbsp;&nbsp;<input id="use_shortcode_attributes_only" name="use_shortcode_attributes_only" value="false" checked="checked" type="radio"> No<br>
+    </span><p class="description">All iframes you use in your pages use 
+the settings below. With shortcode attributes you can overwrite these 
+settings. When you use several iframes with different settings this can 
+lead to strange behavior because you do not see the whole configuration 
+in the shortcode. By setting this option to true only the parameters 
+defined as attributes are used. So the minimum you need to define is: 
+securitykey and src of the iframe. You can set this for a single iframe 
+as well with the shortcode attribute 
+use_shortcode_attributes_only="true". A minimal shortcode would then 
+look like this: [advanced_iframe 
+securitykey="eaa4ba356ec483b7b1d5356ba6bc84157c58292f" 
+use_shortcode_attributes_only="true" 
+src="http://www.tinywebgallery.com"].  Shortcode attribute: 
+use_shortcode_attributes_only="true" or 
+use_shortcode_attributes_only="false"</p></td>
+    </tr>
+    
+      <tr>
+      <th scope="row">Include ai.js in the footer</th>
+      <td><span class="hide-print">
+      <input id="include_scripts_in_footer" name="include_scripts_in_footer" value="true" checked="checked" type="radio"> Yes&nbsp;&nbsp;&nbsp;&nbsp;<input id="include_scripts_in_footer" name="include_scripts_in_footer" value="false" type="radio"> No<br>
+    </span><p class="description">By default now the needed Javascripts 
+are included at the footer. So you can include jQuery also at the footer
+if you like. If you like/need it in the header set this value to false. 
+Before Wordpress 3.3 jQuery is needed in the header if you want to use 
+lazy-loading! The ai.js has also to be in the footer if it should only 
+be loaded when the shortcode is on the page. This setting cannot be set 
+as shortcode!</p></td>
+    </tr>
+      <tr class="">
+      <th scope="row">Load jQuery as dependency</th>
+      <td><span class="hide-print">
+      <input id="load_jquery" name="load_jquery" value="true" checked="checked" type="radio"> Yes&nbsp;&nbsp;&nbsp;&nbsp;<input id="load_jquery" name="load_jquery" value="false" type="radio"> No<br>
+    </span><p class="description">By default jQuery is loaded as 
+dependeny. If you have a theme or another plugin that does not stick to 
+the Wordpress way to load the scripts you might have to disable the 
+dependeny. This avoids that jQuery is loaded again and other plugins do 
+maybe not work anymore.</p></td>
+    </tr>
+        </tbody></table>
+     <div id="gs"></div>
+    
+</div>
+<h1 style="display: none;">Get support</h1>
+<div>
+    <div id="icon-options-general" class="icon_ai">
+      <br>
+    </div> <h2>
+Advanced iFrame Pro - Get support       </h2>
+    <p>
+      The settings above are the settings a normal iframe solution does 
+offer. They don't require any specific html, css or programming knowhow.
+    </p>
+    <p>
+      The advanced options below do modify the styles of the parent 
+page, the iframe, do some Javascript magic when the iframe is loaded or 
+include content directly to your page. Understanding this is not basic 
+Wordpress knowhow and therefore you can get help here if you want. I do 
+offer paid support for this plugin now.    </p>
+    
+      What do you get? <ul><li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Free check if you can include the content the way YOU like.</li><li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Fast and reliable setup of what you want.</li><li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- You only pay if it works!</li></ul>   
+    <p>
+      This offer is only available for Advanced iFrame Pro users.<br>If you are interested please visit <a id="as" target="_blank" href="http://www.tinywebgallery.com/blog/advanced-iframe-support/">http://www.tinywebgallery.com/blog/advanced-iframe-support/</a> for more information.    </p>
+</div> 
+<h1 style="display: none;" id="h1-as">Advanced settings</h1> 
+<div>
+  <div id="icon-options-general" class="icon_ai">
+      <br>
+    </div>
+
+     <h2>
+Advanced iFrame Pro - Advanced settings</h2>
+    <p>
+      The following options are already features which are not html 
+standard anymore. All the options do already require additional 
+Javascript, css or dynamic processing.    </p>
+    <table class="form-table">
+    
+      <tbody><tr>
+      <th scope="row">URL forward parameters</th>
+      <td><span class="hide-print">
+      <input name="url_forward_parameter" id="url_forward_parameter" type="text"><br></span>
+      <p class="description">Define the parameters that should be passed
+ from the browser url to the iframe url. Please separate the parameters 
+by ','. Using "ALL" does forward every parameter.<br>Pro users can also map incoming parameters to a different parameter. Wordpress has a couple of <href="http: codex.wordpress.org="" function_reference="" register_taxonomy#reserved_terms"="" target="_blank">reserved
+ words which canot be used in urls. So if you want to pass the parameter
+ "name" (reserved word) to your iframe you can do a mapping with 
+"ainame|name". Than the parameter "ainame=hallo" will be passed as 
+"name=hallo" to the iframe. This can also be used if the parameters of 
+the 2 pages do not match. Several mappings can be seperated with ',' 
+like normal parameters. In e.g. TinyWebGallery this enables you to jump 
+directly to an album or image although TinyWebGallery is included in an 
+iframe. Shortcode attribute: url_forward_parameter=""</href="http:></p></td>
+      </tr>
+      
+      <tr>
+      <th scope="row">Map parameter to url</th>
+      <td><span class="hide-print">
+      <input name="map_parameter_to_url" id="map_parameter_to_url" type="text"><br></span>
+      <p class="description">You can map an url parameter value pair to 
+an url or pass the url directly which should be opened in the iframe. If
+ you e.g. have a page with the iframe and you like to have different 
+content in the iframe depending on an url parameter than this is the 
+setting you have to use. You have to specify this setting in the 
+following syntax "parameter|value|url" e.g. 
+"show|1|http://www.tinywebgallery.com". If you than open the parent page
+ with ?show=1 than http://www.tinywebgallery.com is opened inside the 
+iframe. You can also specify several mappings by separating them by ','.
+ You can also only specify 1 parameter here! The value of this paramter 
+is than used as iframe url. e.g. 
+show=http%3A%2F%2Fwww.tinywebgallery.com%3Fparam=value. You need to 
+encode the url if you pass it in the url. Especially ? (%3F) and &amp; 
+(%26)! Please note that because of security reason only whitelisted 
+chars [a-zA-Z0-9/:?&amp;.] are allowed. Encoded parameters in the passed
+ urls are not supported because all input is decoded and checked. If no 
+parameter/value pair does match the normal src attribute of the 
+configuration is used. Shortcode attribute: map_parameter_to_url=""</p></td>
+      </tr>
+      
+      <tr class="">
+      <th scope="row">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Add iframe url<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;as param</th>
+      <td><span class="hide-print">
+      <input id="add_iframe_url_as_param1" name="add_iframe_url_as_param" value="same" type="radio"> Same domain&nbsp;&nbsp;&nbsp;&nbsp;<input id="add_iframe_url_as_param2" name="add_iframe_url_as_param" value="remote" type="radio"> Remote domain&nbsp;&nbsp;&nbsp;&nbsp;<input id="add_iframe_url_as_param3" name="add_iframe_url_as_param" value="false" checked="checked" type="radio"> False<br></span>
+    <p class="description">With this setting the url of the iframe is 
+added as parameter to the current url. The parameter is defined in the 
+setting before. This feature is only enabled if you also enable auto 
+height for remote domains because the url of the iframe is sent with the
+ same request. This enables bookmarkable urls where you go directly to 
+the last page in the iframe. The history api which enables the change of
+ the url is only supported by modern browsers. For older browsers the 
+url is simply not changed. See http://caniuse.com/#search=pushstate. 
+Shortcode attribute: add_iframe_url_as_param="same", 
+add_iframe_url_as_param="remote" or add_iframe_url_as_param="false" </p></td>
+    </tr>
+      <tr class="">
+      <th scope="row">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Prefix for<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;iframe url</th>
+      <td><span class="hide-print">
+      <input name="add_iframe_url_as_param_prefix" id="add_iframe_url_as_param_prefix" value="localhost/wordpress32/wp-content/plugins/advanced-iframe/example/" type="text"><br></span>
+      <p class="description">With this setting you can define a prefix 
+which all (most) of your pages in the iframe have. This prefix is than 
+not added to the url but added internally. This does reduce the length 
+of the parameter value. The prefix has to be without http:// or 
+https://. So a prefix could be www.tinywebgallery.com/examples/. If your
+ pages are e.g. at www.tinywebgallery.com/examples/example1.htm and 
+www.tinywebgallery.com/examples/example2.htm than the page parameter is 
+only page=example2.htm and not 
+page=www.tinywebgallery.com%2Fexamples%2Fexample2.htm. See the demo for a
+ working example. Shortcode attribute: add_iframe_url_as_param_prefix=""</p></td>
+      </tr>
+      <th scope="row">Scrolls the parent window to the top</th>
+      <td><span class="hide-print">
+      <input id="onload_scroll_top" name="onload_scroll_top" value="true" type="radio"> Yes&nbsp;&nbsp;&nbsp;&nbsp;<input id="onload_scroll_top" name="onload_scroll_top" value="false" checked="checked" type="radio"> No<br>
+    </span><p class="description">If you like that if you click on a 
+link in the iframe the parent page should scroll to the top you should 
+set this to 'Yes'. Please note that this is done by Javascript! So if a 
+user has Javascript deactivated no scrolling is done.   This setting 
+generates the code onload="aiScrollToTop();" to the iframe. If you 
+select the resize iframe as well then 
+onload="aiResizeIframe(this);aiScrollToTop();" is generated. If you like
+ a different order please enter the javascript functions directly in the
+ onload parameter in the order you like. Shortcode attribute: 
+onload_scroll_top="true" or onload_scroll_top="false" </p></td>
+    </tr>
+    
+      <tr>
+      <th scope="row">Hide the iframe until it is loaded</th>
+      <td><span class="hide-print">
+      <input id="hide_page_until_loaded" name="hide_page_until_loaded" value="true" type="radio"> Yes&nbsp;&nbsp;&nbsp;&nbsp;<input id="hide_page_until_loaded" name="hide_page_until_loaded" value="false" checked="checked" type="radio"> No<br>
+    </span><p class="description">This setting hides the iframe until it
+ is loaded. This prevents the iframe white flash issue while loading. 
+When you use the external workaround please check the setting in this 
+section <a href="#xss">below</a>. The setting there overwrites this 
+setting because otherwise the iframe is maybe shown too early! Shortcode
+ attribute: hide_page_until_loaded="true" or 
+hide_page_until_loaded="false" </p></td>
+    </tr>
+    
+      <tr>
+      <th scope="row">Show loading icon</th>
+      <td><span class="hide-print">
+      <input id="show_iframe_loader" name="show_iframe_loader" value="true" type="radio"> Yes&nbsp;&nbsp;&nbsp;&nbsp;<input id="show_iframe_loader" name="show_iframe_loader" value="false" checked="checked" type="radio"> No<br>
+    </span><p class="description">You can show a loading icon until the 
+page in the iframe is fully loaded. You can use your own image with the 
+size of 66 x 66 px by replacing the file img/loader.gif. Shortcode 
+attribute: show_iframe_loader="true" or show_iframe_loader="false" </p></td>
+    </tr>
+    
+      <tr>
+      <th scope="row">Zoom iframe</th>
+      <td><span class="hide-print">
+      <input name="iframe_zoom" id="iframe_zoom" style="width:150px;" onblur="aiCheckInputNumber(this)" type="text"><br></span>
+      <p class="description">You can zoom the content of the iframe with
+ this setting. E.g. entering 0.5 does resize the iframe to 50%. At the 
+iframe width and height you need to enter the FULL size of the iframe. 
+So if you enter width = 1000, height = 500 and zoom = 0.5 than the 
+result will be 500x250. The following browsers are supported: IE8-11, 
+Firefox, Chrome, Safari, Opera. Older versions of IE are not supported. 
+Please test all the browsers you want to support with your page because 
+not all pages do look good in a zoomed mode! "Show only a part of an 
+iframe" and "Resize iframe to content height" are supported. Shortcode 
+attribute: iframe_zoom=""</p></td>
+      </tr>
+      
+      <tr>
+      <th scope="row">Auto zoom iframe</th>
+      <td><span class="hide-print">
+      <input id="auto_zoom1" name="auto_zoom" value="same" type="radio"> Same domain&nbsp;&nbsp;&nbsp;&nbsp;<input id="auto_zoom2" name="auto_zoom" value="remote" type="radio"> Remote domain&nbsp;&nbsp;&nbsp;&nbsp;<input id="auto_zoom3" name="auto_zoom" value="false" type="radio"> False<br></span>
+    <p class="description">This feature does automatically calculates 
+the needed zoom factor to fit the iframe page into the parent page. 
+Especially when you have a responsive website but the remote website is 
+not responsive this is the only way that the page in the iframe does 
+also zoom. Many smartphones and tablets to automatically zoom the parent
+ page but not the iframe page. So there this feature can also be used. 
+This feature works on the same domain and if you are able to use the 
+external workaround and use auto height there (otherwise the width does 
+not get transfered). Shortcode attribute: auto_zoom="same", 
+auto_zoom="remote" or auto_zoom="false" </p></td>
+    </tr>
+    
+      <tr class="">
+      <th scope="row">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Auto zoom by ratio</th>
+      <td><span class="hide-print">
+      <input name="auto_zoom_by_ratio" id="auto_zoom_by_ratio" type="text"><br></span>
+      <p class="description">This setting can be used on the SAME domain
+ if the height of the page cannot be mesured but the ratio of the page 
+is known. And if the width also cannot be measured automatically but is 
+known because the iframe page has a fixed width, you can specify this 
+width by adding with a pipe like ratio|width. E.g. 0.80|800. If you know
+ the the ratio and the width, this setting does also work on REMOTE 
+domains. You don't even need access to the remote domain! For remote 
+domains also select SAME in the setting before as remote means that the 
+height/width information is sent from the remote domain which is not the
+ case here. Shortcode attribute: auto_zoom_by_ratio=""</p></td>
+      </tr>
+      <tr class="">
+      <th scope="row">Enable responsive iframe</th>
+      <td><span class="hide-print">
+      <input id="enable_responsive_iframe" name="enable_responsive_iframe" value="true" type="radio"> Yes&nbsp;&nbsp;&nbsp;&nbsp;<input id="enable_responsive_iframe" name="enable_responsive_iframe" value="false" checked="checked" type="radio"> No<br>
+    </span><p class="description">You can enable that the width of 
+iframe is responsive. This features adds a max-width:100% to the iframe.
+ So the defined  width is the maximum width of the iframe. But if the 
+surrounding element gets smaller than this, the iframe is responsive and
+ does shrink! But this is not the interesting part of this feature. When
+ you enable this feature and also the resize the iframe to the content 
+height (directt or by external workaround), the height does get 
+responsive too! And this is the big difference to any other pure css 
+solution which only work for iframes with a certain ratio e.g. for 
+videos. Please read <a href="" target="_blank">this post</a> for details and take a look <a href="" target="_blank">pro demo</a>.
+ Please note that this feature does NOT work together with "Show only a 
+part of an iframe" and "Hidden tabs". Shortcode attribute: 
+enable_responsive_iframe="true" or enable_responsive_iframe="false" </p></td>
+    </tr>
+    
+      <tr>
+      <th scope="row">Set Iframe height by ratio</th>
+      <td><span class="hide-print">
+      <input name="iframe_height_ratio" id="iframe_height_ratio" style="width:150px;" onblur="aiCheckInputNumber(this)" type="text"><br></span>
+      <p class="description">This setting enables you to set the height 
+of an iframe depending on the width of an iframe. If you have a static 
+site you know the width of an iframe and you can set the heigt to a fix 
+value. But if you e.g. have an iframe width of 100% and responsive 
+layout you do not know the height. Using auto heigt does solve this most
+ of the time but sometimes the content inside the iframe is fully 
+dynamic too (like a video which does scale). If this is the case you can
+ define a ratio here. e.g. 0.5 means that if you have a width of 1000 
+you have a height of 500. If the width changes to 800 the height changes
+ to 400. Please use a . as decimal char. This setting does also work 
+together with "Enable responsive iframe". So scalling the browser does 
+change the height also if you enable the setting above. If you enable 
+this setting the local resize settings are disabled! Shortcode 
+attribute: iframe_height_ratio="" </p></td>
+      </tr>
+      
+      <tr>
+      <th scope="row">Enable lazy load</th>
+      <td><span class="hide-print">
+      <input id="enable_lazy_load" name="enable_lazy_load" value="true" type="radio"> Yes&nbsp;&nbsp;&nbsp;&nbsp;<input id="enable_lazy_load" name="enable_lazy_load" value="false" checked="checked" type="radio"> No<br>
+    </span><p class="description">You can enable that iframes are lazy 
+loaded. If you enable this, the iframe is loaded either after the ready 
+event of the parent or if the iframe gets visible. Please check the 
+"Enable lazy load threshold" setting below how to configure this. 
+Shortcode attribute: enable_lazy_load="true" or enable_lazy_load="false"
+ </p></td>
+    </tr>
+    
+      <tr>
+      <th scope="row">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lazy load threshold</th>
+      <td><span class="hide-print">
+      <input readonly="readonly" name="enable_lazy_load_threshold" id="enable_lazy_load_threshold" style="width:150px;" onblur="aiCheckInputNumber(this)" value="3000" type="text"><br></span>
+      <p class="description">This setting sets the pixels to load 
+earlier. Setting the value e.g. to 200 causes iframe to load 200 pixels 
+before it appears in the viewport. It should be greater or equal zero. 
+The default is set to 3000 which normally is a lazy load after the 
+parent finished loading. If you set this value higher then the distance 
+of the iframe to the top, the iframe is lazy loaded after the parent 
+document ready event is fired. If you leave this field empty 0 is used. 
+Shortcode attribute: enable_lazy_load_threshold="" </p></td>
+      </tr>
+      
+      <tr>
+      <th scope="row">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lazy load fadein time</th>
+      <td><span class="hide-print">
+      <input readonly="readonly" name="enable_lazy_load_fadetime" id="enable_lazy_load_fadetime" style="width:150px;" onblur="aiCheckInputNumber(this)" value="0" type="text"><br></span>
+      <p class="description">This setting enables you to fade in the 
+iframe after it is lazy loaded. Enter the time in milliseconds.  
+Depending on the content of the iframe this looks good or not. Please 
+test if you like the behaviour. If you leave this field empty 0 is used.
+ Shortcode attribute: enable_lazy_load_fadetime="" </p></td>
+      </tr>
+      
+      <tr>
+      <th scope="row">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;How trigger lazy loading</th>
+      <td><span class="hide-print">
+      <input disabled="disabled" id="enable_lazy_load_manual1" name="enable_lazy_load_manual" value="false" checked="checked" type="radio"> Default (Scroll)&nbsp;&nbsp;&nbsp;&nbsp;<input disabled="disabled" id="enable_lazy_load_manual2" name="enable_lazy_load_manual" value="auto" type="radio"> Auto&nbsp;&nbsp;&nbsp;&nbsp;<input disabled="disabled" id="enable_lazy_load_manual3" name="enable_lazy_load_manual" value="true" type="radio"> Manually<br></span>
+    <p class="description">Normally (Default (Scroll)) the iframes are 
+loaded lazy after the settings you specify above. The option "Auto" does
+ check every 50 ms if the iframe is visible in the viewport and should 
+be loaded. This is especially useful for iframes that are hidden when 
+the page is loaded. So this can be used for hidden tabs because when 
+this is shown no internal Javascipt event like scrolling does exist! If 
+you use auto all iframes on the same page do poll because this is a 
+global setting of the plugin. But you also can trigger the loading 
+manually. This can also be used to lazy load tabs or when you want to 
+load the iframe by yourself. For each iframe a Javascript function to 
+show the iframe is created: aiLoadIframe_"your id"(); e.g. 
+aiLoadIframe_advanced_iframe(); Simply call it when you want. Also see 
+the next option! If you want to avoid polling for tabs use the manual 
+setting. See the lazy load demo for an example. Shortcode attribute: 
+enable_lazy_load_manual="false"  enable_lazy_load_manual="auto" or 
+enable_lazy_load_manual="true" </p></td>
+    </tr>
+    
+      <tr>
+      <th scope="row">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Element
+ that triggers 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;the lazy 
+load</th>
+      <td><span class="hide-print">
+      <input readonly="readonly" name="enable_lazy_load_manual_element" id="enable_lazy_load_manual_element" type="text"><br></span>
+      <p class="description">If you enable "How trigger lazy loading 
+-&gt; manually" you have a Javascript function that triggers the lazy 
+load. With this setting you can add an click event with this Javascript 
+function to the element you define here. So if you e.g. have a tab with 
+the id="tab1" you simply enter #tab1 here. Any jQuery selector does work
+ here. So you can even attach this to several elements. Shortcode 
+attribute: enable_lazy_load_manual_element=""</p></td>
+      </tr>
+      <tr>
+      <th scope="row">Reload interval</th>
+      <td><span class="hide-print">
+      <input name="reload_interval" id="reload_interval" value="" type="text"><br></span>
+      <p class="description">You can reload the iframe in a given interval. Enter the intervall im ms or leave the field blank for no reload. Shortcode attribute: reload_interval=""</p></td>
+      </tr>  
+     <tr>
+        <th scope="row"><strong>Browser detection</strong>
+        </th><td>
+          You can now specify browser specific iframes. This is imporant
+ especially for the "Show only part of the iframe" feature where browser
+ differences of a few pixels can matter. But you can use this for other 
+things as well because mobile, iphone, ipad can also be detected. Please
+ read the <a href="#browser-detection">browser detection</a> section for details. Shortcode: browser=""</td>
+    </tr>    
+    </tbody></table>
+     <div id="mp"></div>
+     
+</div>
+<h1 style="display: none;" id="h1-mp">Modify the parent page</h1>
+<div>
+    <div id="icon-options-general" class="icon_ai">
+      <br>
+    </div>
+
+     <h2>
+Advanced iFrame Pro - Modify the parent page</h2>
+    <p>
+      With the following 3 options you can modify your template on the 
+fly to give the iframe more space! At most templates you would have to 
+create a page template with a special css and this is quite complicated.
+ By using the options below your template is modified on the fly by 
+jQuery. Please look at the screenshots to make these options more clear.
+ The options are very useful for templates that have a top navigation 
+because otherwise your menu is gone! If you still want to do this you 
+should add a back link to the page. The examples below are for Twenty 
+Ten, iNove and the default Wordpress theme.    </p>
+    <table class="form-table">
+
+      <tbody><tr>
+      <th scope="row">Hide elements</th>
+      <td><span class="hide-print">
+      <input name="hide_elements" id="hide_elements" value="test" type="text"><br></span>
+      <p class="description">This setting allows you to hide elements 
+when the iframe is shown. This can be used to hide the sidebar or the 
+heading. Usage: If you want to hide a div you have to enter a hash (#) 
+followed by the id e.g. #sidebar. If you want to hide a heading which is
+ a &lt;h2&gt; you have to enter h2. You can define several elements 
+separated by , e.g. #sidebar,h2. This gives you a lot more space to show
+ the content of the iframe. To get the id of the sidebar go to 
+Appearance -&gt; Editor -&gt; Click on 'Sidebar' on the right side. Then
+ look for the first 'div' you find. The id of this div is the one you 
+need. For some common templates the id is e.g. #menu, #sidebar, or 
+#primary. For Twenty Ten and iNove you can remove the sidebar directly: 
+Page attributes -&gt; Template -&gt; no sidebar. Wordpress default: 
+'#sidebar'. I recommend using firebug (see below) to find the elements 
+and the ids. You can use any valid <a href="#h1-jqh">jQuery selector pattern</a> here! Shortcode attribute: hide_elements=""</p></td>
+      </tr>
+      </tbody></table><p>With the next 2 options you can modify the css 
+of your parent page. The first option defines the id/class/element you 
+want to modify and at the 2nd option you define the styles you want to 
+change.</p><table class="form-table">
+      <tbody><tr>
+      <th scope="row">Content id</th>
+      <td><span class="hide-print">
+      <input name="content_id" id="content_id" type="text"><br></span>
+      <p class="description">Some templates do not use the full width 
+for their content and even most 'One column, no sidebar Page Template' 
+templates only remove the sidebar but do not change the content width. 
+Set the e.g. id of the div starting with a hash (#) that defines the 
+content.  You can use any valid <a href="#jqh">jQuery selector pattern</a>
+ here! In the field below you then define the style you want to 
+overwrite. For Twenty Ten and WordPress Default the id is #content, for 
+iNove it is #main. You can also define more than one element. Please 
+separate them with | and provide the styles below. Please read the note 
+below how to find this id for other templates. #content|h2 means that 
+you want to set a new style for the div content and the heading h2 
+below. Shortcode attribute: content_id=""</p></td>
+      </tr>
+      
+      <tr>
+      <th scope="row">Content styles</th>
+      <td><span class="hide-print">
+      <input name="content_styles" id="content_styles" type="text"><br></span>
+      <p class="description">Define the styles that have to be 
+overwritten to enable the full width. Most of the time you have to 
+modify some of the following attributes: width, margin-left, 
+margin-right, padding-left. Please use ; as separator between styles. If
+ you have defined more than one element above (Content id) please 
+separate the different style sets with |. The default values are: 
+Wordpress default: 'width:450px;padding-left:45px;'. Twenty Ten: 
+'margin-left:20px;margin-right:240px'. iNove: 'width:605px'. Read the 
+note below how to find these styles for other templates. If you have 
+defined #content|h2 at the Content id you can e.g. set 
+'width:650px;padding-left:25px;|padding-left:15px;'. Shortcode 
+attribute: content_styles=""</p></td>
+      </tr>
+      
+      <tr>
+      <th scope="row">Add css class to parent elements</th>
+      <td><span class="hide-print">
+      <input id="add_css_class_parent" name="add_css_class_parent" value="true" type="radio"> Yes&nbsp;&nbsp;&nbsp;&nbsp;<input id="add_css_class_parent" name="add_css_class_parent" value="false" checked="checked" type="radio"> No<br>
+    </span><p class="description">Sometimes it is not possible to modify
+ existing css classes because they are also used somewhere else or there
+ is no unique selector for this element. Setting this attribute to true 
+causes that a new class is added at each parent of the iframe up to the 
+body! If the element has an id the class is named "ai-class-(id)". 
+Otherwise "ai-class-(number)" is added. Then it is easy to identify all 
+parent elements of the iframe and modify them. If you have several 
+iframes on one page the classes could not be unique anymore. You need to
+ set "Include ai.js in the footer" to false if you want to use this! 
+Shortcode attribute: add_css_class_parent="true" or 
+add_css_class_parent="false" </p></td>
+    </tr>
+    
+      <tr>
+      <th scope="row">Change parent links target</th>
+      <td><span class="hide-print">
+      <input name="change_parent_links_target" id="change_parent_links_target" type="text"><br></span>
+      <p class="description">Change links of the parent page to open the
+ url inside the iframe. This option does add the attribute target="your 
+id" to the links you define. You can use any valid <a href="#jqh">jQuery selector pattern</a>
+ here! So if your link e.g. has an id="link1" you have to use "a#link1".
+ If you want to change all links e.g. in the div with the id="menu-div" 
+you have to use "#menu-div a". You can also define more than one 
+element. Please separate them with ,. Shortcode attribute: 
+change_parent_links_target=""</p></td>
+      </tr>
+      <tr class="">
+      <th scope="row">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Show iframe as layer</th>
+      <td><span class="hide-print">
+      <input id="show_iframe_as_layer1" name="show_iframe_as_layer" value="true" type="radio"> True&nbsp;&nbsp;&nbsp;&nbsp;<input id="show_iframe_as_layer2" name="show_iframe_as_layer" value="external" type="radio"> External&nbsp;&nbsp;&nbsp;&nbsp;<input id="show_iframe_as_layer3" name="show_iframe_as_layer" value="false" checked="checked" type="radio"> False<br></span>
+    <p class="description">If you enable this, the iframe is initally 
+hidden and if you click on a link defined at "Change parent links 
+target" the iframe is shown as a simple lighbox as overlay on the page. 
+So if you use this for external links the user does not leave your page!
+ "External" does simply open all links that are not on the same domain 
+in a layer. The setting at "Change parent links target" is ignored than.
+ This setting does overwrite some iframe settings like height, width and
+ border! Show part of iframe, lazy load, hide part of iframe and iframe 
+loader are disabled as they do not work with this feature. <span id="howtoid">Shortcode</span> attribute: show_iframe_as_layer="true", show_iframe_as_layer="external", show_iframe_as_layer="false" </p></td>
+      </tr>
+          </tbody></table>
+
+     
+
+      <strong>How to find the id and the attributes:</strong><ol><li>Manually:
+ Go to Appearance -&gt; Editor and select the page template. Then you 
+have to look which div elements are defined. e.g. container, content, 
+main. Also classes can be defined here. Then you have to select the 
+style sheet below and search for this ids and classes and look which one
+ does define the width of you content.</li><li>Firebug: For Firefox you 
+can use the plugin firebug to select the content element directly in the
+ page. On the right side the styles are always shown. Look for the 
+styles that set the width or any bigger margins. These are the values 
+you can then overwrite by the settings above.</li><li><strong>Small jquery help</strong><br>Above you have to use the jQuery syntax:<p></p><ul><li>- tags - if you want to hide/modify a tag directly (e.g. h1, h2) simply use it directly e.g. h1,h2</li><li>- id - if you want to hide/modify an element where you have the id use #id</li><li>- class - if you want to hide/modify an element where you have the class use .class</li></ul><p></p>For more complex selectors please read the jQuery documentation.</li></ol>
+     <div id="so"></div>
+    
+</div>
+<h1 style="display: none;" id="h1-so">Show only a part of the iframe</h1>
+<div>
+    <div id="icon-options-general" class="icon_ai">
+      <br>
+    </div><h2>
+      Show only a part of the iframe</h2>
+       <h3>Options if the iframe is on a different OR the same domain</h3>
+    <p>
+
+You can only show a part of the iframe. This solution DOES WORK across 
+domains without any hacks! This is a solution that works only with css 
+by placing a window over the iframe which does a clipping. All areas of 
+the iframe that are not inside the window cannot be seen. Please specify
+ the upper left corner coordinates x and y and the height and width that
+ should be shown. Specify a fixed height and width in the iframe options
+ at the top for optimal results! Simply select the area you want to show
+ with the graphical area selector! Please go to the <a target="_blank" href="http://www.tinywebgallery.com/blog/advanced-iframe/advanced-iframe-pro-demo">pro demo</a>
+ for some working examples. Please also check the 5 options below. These
+ are the advanced features to handle changes in the iframe</p><p><input id="s" class="button-primary" name="update_iframe-loader" onclick="openSelectorWindow('http://localhost/wordpress32/wp-content/plugins/advanced-iframe/includes/advanced-iframe-area-selector.html');" value="Open the area selector" type="button"></p><table class="form-table">
+      <tbody><tr>
+      <th scope="row">Show only part of the iframe</th>
+      <td><span class="hide-print">
+      <input id="show_part_of_iframe" name="show_part_of_iframe" value="true" type="radio"> Yes&nbsp;&nbsp;&nbsp;&nbsp;<input id="show_part_of_iframe" name="show_part_of_iframe" value="false" checked="checked" type="radio"> No<br>
+    </span><p class="description">Show only part of the iframe. You have
+ to enable this to use all the options below. Please read the text 
+above. Shortcode attribute: show_part_of_iframe="true" or 
+show_part_of_iframe="false" </p></td>
+    </tr>
+    
+      <tr>
+      <th scope="row">Upper left corner x</th>
+      <td><span class="hide-print">
+      <input readonly="readonly" name="show_part_of_iframe_x" id="show_part_of_iframe_x" style="width:150px;" onblur="aiCheckInputNumber(this)" type="text"><br></span>
+      <p class="description">Specifies the x coordinate of the upper 
+left corner of the view window. Enter the x-offset from the left border 
+of your external iframe page you want to show. Shortcode attribute: 
+show_part_of_iframe_x=""</p></td>
+      </tr>
+      
+      <tr>
+      <th scope="row">Upper left corner y (top distance)</th>
+      <td><span class="hide-print">
+      <input readonly="readonly" name="show_part_of_iframe_y" id="show_part_of_iframe_y" style="width:150px;" onblur="aiCheckInputNumber(this)" type="text"><br></span>
+      <p class="description">Specifies the y coordinate of the upper 
+left corner.  Enter the y-offset from the top border of your external 
+iframe page you want to show. Shortcode attribute: 
+show_part_of_iframe_y=""</p></td>
+      </tr>
+      
+      <tr>
+      <th scope="row">Width of the visible content</th>
+      <td><span class="hide-print">
+      <input readonly="readonly" name="show_part_of_iframe_width" id="show_part_of_iframe_width" style="width:150px;" onblur="aiCheckInputNumber(this)" type="text"><br></span>
+      <p class="description">Specifies the width of the content in pixel that should be shown. Shortcode attribute: show_part_of_iframe_width=""</p></td>
+      </tr>
+      
+      <tr>
+      <th scope="row">Height of the visible content</th>
+      <td><span class="hide-print">
+      <input readonly="readonly" name="show_part_of_iframe_height" id="show_part_of_iframe_height" style="width:150px;" onblur="aiCheckInputNumber(this)" type="text"><br></span>
+      <p class="description">Specifies the height of the content in pixel that should be shown. Shortcode attribute: show_part_of_iframe_height=""</p></td>
+      </tr>
+      
+      <tr>
+      <th scope="row">Enable horizontal scrollbar</th>
+      <td><span class="hide-print">
+      <input disabled="disabled" id="show_part_of_iframe_allow_scrollbar_horizontal" name="show_part_of_iframe_allow_scrollbar_horizontal" value="true" type="radio"> Yes&nbsp;&nbsp;&nbsp;&nbsp;<input disabled="disabled" id="show_part_of_iframe_allow_scrollbar_horizontal" name="show_part_of_iframe_allow_scrollbar_horizontal" value="false" checked="checked" type="radio"> No<br>
+    </span><p class="description">By default you specify a fixed area 
+you want to show from the external page. Settings this to "true" will 
+show a horizontal scrollbar if needed. Shortcode attribute: 
+show_part_of_iframe_allow_scrollbar_horizontal="true" or 
+show_part_of_iframe_allow_scrollbar_horizontal="false" </p></td>
+    </tr>
+    
+      <tr>
+      <th scope="row">Enable vertical scrollbar</th>
+      <td><span class="hide-print">
+      <input disabled="disabled" id="show_part_of_iframe_allow_scrollbar_vertical" name="show_part_of_iframe_allow_scrollbar_vertical" value="true" type="radio"> Yes&nbsp;&nbsp;&nbsp;&nbsp;<input disabled="disabled" id="show_part_of_iframe_allow_scrollbar_vertical" name="show_part_of_iframe_allow_scrollbar_vertical" value="false" checked="checked" type="radio"> No<br>
+    </span><p class="description">By default you specify a fixed area 
+you want to show from the external page. Settings this to "true" will 
+show a vertical scrollbar if needed. Shortcode attribute: 
+show_part_of_iframe_allow_scrollbar_vertical="true" or 
+show_part_of_iframe_allow_scrollbar_vertical="false" </p></td>
+    </tr>
+    
+      <tr>
+      <th scope="row">Viewport style</th>
+      <td><span class="hide-print">
+      <input readonly="readonly" name="show_part_of_iframe_style" id="show_part_of_iframe_style" type="text"><br></span>
+      <p class="description">Show part of an iframe does create an 
+additional div which is the element you can style here. If you e.g. want
+ to add a border you can use "border: 2px solid #ff0000;". Using the 
+style, border or class in the default settings do not work as they are 
+all related to the iframe directly! Shortcode attribute:  
+show_part_of_iframe_style=""</p></td>
+      </tr>
+      </tbody></table><p>With the following 5 options you can do 
+something when the page in the iframe does change. The parent page does 
+only know the url of the iframe that is loaded initially. This is a 
+browser restriction when the pages are not on the same domain. The 
+parent only can find out when the page inside does change. But it does 
+not know to which url. So the options below rely on a counting of the 
+onload event. But for certain solutions (e.g. show only the login part 
+of a page and then open the result page as parent) this will work.</p><table class="form-table">
+      <tbody><tr>
+      <th scope="row">Change the viewport when iframe changes to the next step</th>
+      <td><span class="hide-print">
+      <input readonly="readonly" name="show_part_of_iframe_next_viewports" id="show_part_of_iframe_next_viewports" type="text"><br></span>
+      <p class="description">You can define different viewports when the
+ page inside the iframe does change and a onload event is fired. Each 
+time this event is fired a different viewport is shown. A viewport is 
+defined the following way: left,top,width,height e.g. 50,100,500,600. 
+You can define several viewports (if you e.g. have a staright workflow) 
+by seperating the viewports by ; e.g. 50,100,500,600;10,40,200,400. 
+Shortcode attribute:  show_part_of_iframe_next_viewports=""</p></td>
+      </tr>
+      
+      <tr>
+      <th scope="row">Restart the viewports from the beginning after the last step.</th>
+      <td><span class="hide-print">
+      <input disabled="disabled" id="show_part_of_iframe_next_viewports_loop" name="show_part_of_iframe_next_viewports_loop" value="true" type="radio"> Yes&nbsp;&nbsp;&nbsp;&nbsp;<input disabled="disabled" id="show_part_of_iframe_next_viewports_loop" name="show_part_of_iframe_next_viewports_loop" value="false" checked="checked" type="radio"> No<br>
+    </span><p class="description">If you define different viewports it 
+could make sense always to use them in a loop. E.g. if you have an image
+ gallery where you have an overview with viewport 1 and a detail page 
+with viewport 2. And you can only can come from the overview to the 
+detail page and back. Shortcode attribute: 
+show_part_of_iframe_next_viewports_loop="true" or 
+show_part_of_iframe_next_viewports_loop="false" </p></td>
+    </tr>
+    
+      <tr>
+      <th scope="row">Open iFrame in new window after the last step</th>
+      <td><span class="hide-print">
+      <input readonly="readonly" name="show_part_of_iframe_new_window" id="show_part_of_iframe_new_window" type="text"><br></span>
+      <p class="description">You can define if the iframe is opened in a
+ new tab/window or as full window. the options you can use are "_top" = 
+as full window, "_blank" = new tab/window or you leave it blank to stay 
+in the iframe. Because of the browser restriction not the current url of
+ the iframe can be loaded. It is either the initial one or the one you 
+specify in the next setting. Shortcode attribute: 
+show_part_of_iframe_new_window="", show_part_of_iframe_new_window="_top"
+ or show_part_of_iframe_new_window="_blank" </p></td>
+      </tr>
+      
+      <tr>
+      <th scope="row">Url that is opened after the last step</th>
+      <td><span class="hide-print">
+      <input readonly="readonly" name="show_part_of_iframe_new_url" id="show_part_of_iframe_new_url" type="text"><br></span>
+      <p class="description">You can define the url that is loaded after
+ the last step. This enables you to jump to a certain page after your 
+workflow. This is useful with the above. Shortcode attribute: 
+show_part_of_iframe_new_url="" </p></td>
+      </tr>
+      
+      <tr>
+      <th scope="row">Hide the iframe after the last step</th>
+      <td><span class="hide-print">
+      <input disabled="disabled" id="show_part_of_iframe_next_viewports_hide" name="show_part_of_iframe_next_viewports_hide" value="true" type="radio"> Yes&nbsp;&nbsp;&nbsp;&nbsp;<input disabled="disabled" id="show_part_of_iframe_next_viewports_hide" name="show_part_of_iframe_next_viewports_hide" value="false" checked="checked" type="radio"> No<br>
+    </span><p class="description">Hides the iframe after the last step 
+completely. Shortcode attribute: 
+show_part_of_iframe_next_viewports_hide="true" or 
+show_part_of_iframe_next_viewports_hide="false" </p></td>
+    </tr>
+    
+      <tr>
+      <th scope="row">Hide a part of the iframe</th>
+      <td><span class="hide-print">
+      <input name="hide_part_of_iframe" id="hide_part_of_iframe" type="text"><br></span>
+      <p class="description">Please note: This is an advanced setting! 
+You need to know basic html/css! You can define an area which will be 
+hidden by a rectangle you define. This can e.g. be used to hide a logo. A
+ rectangle is defined the following way: 
+left,top,width,height,color,z-index e.g. 10,20,200,50,#ffffff,10. This 
+defines a rectagle in white with the z-index of 10. z-index means the 
+layer the rectangle is placed. If you don't see your rectangle please 
+use a higher z-index. You can also define a background image here! use 
+e.g. 
+10,20,200,50,#ffffff;background-image:url(your-logo.gif);background-repeat:no-repeat;,10
+ for a white rectange with the given background image. Use the area 
+selector to get the coordinates very easy. You can specify several 
+rectangles by seperating them by |. Please see the <a href="http://www.tinywebgallery.com/blog/advanced-iframe/advanced-iframe-pro-demo#e8">pro demo</a>
+ for a cool example where a logo is exchanged. You can also create read 
+only iframes with this feature. Use 
+hide_part_of_iframe="0,0,100%,100%,transparent,10". For a working 
+example please see example 21 of the pro demo. Shortcode attribute: 
+hide_part_of_iframe=""</p></td>
+      </tr>
+      </tbody></table>        <h3 id="modifycontent">Modify the content of the iframe if the iframe page is on the same domain</h3>
+    <p>
+      With the following options you can modify the content of the iframe. <strong>IMPORTANT</strong>: This is only possible if the iframe comes from the <strong>same domain</strong> because of the <a href="http://en.wikipedia.org/wiki/Same_origin_policy" target="_blank">same origin policy</a> of Javascript.</p><p>If you can use the <a href="#xss">workaround</a> like described below you can also use this setting if you upgrade to the pro version.</p>Please read the section "<a href="#howtoid">How to find the id and the attributes</a>"
+ above how to find the right styles. If the content comes from a 
+different domain you have to modify the iframe page by e.g. adding a 
+Javascript function that is then called by the onload function you can 
+set above or you add a parameter in the url that you can read in the 
+iframe and display the page differently then. You should also use the 
+external workaround to modify the iframe if your page loads quite slow 
+and you see the modifications on subsequent pages. The reason is that 
+the direct modification can only be done after the page is loaded and 
+the "Hide until loaded" is only working for the 1st page. The external 
+workaround is able to hide the iframe until it is modified always and 
+also css can be added to the header directly.    <p></p>
+    <table class="form-table">
+
+      <tbody><tr>
+      <th scope="row">Hide elements in iframe</th>
+      <td><span class="hide-print">
+      <input name="iframe_hide_elements" id="iframe_hide_elements" value="#iframe-header, #iframe-footer" type="text"><br></span>
+      <p class="description">This setting allows you to hide elements 
+inside the iframe. This can be used to hide a border or a heading. 
+Usage: If you want to hide a div you have to enter a hash (#) followed 
+by the id e.g. #header. If you want to hide a heading which is a 
+&lt;h2&gt; you have to enter h2. You can define several elements 
+separated by , e.g. #header,h2. I recommend using firebug to find the 
+elements and the ids. You can use any valid <a href="#jqh">jQuery selector pattern</a> here! Shortcode attribute: iframe_hide_elements=""</p></td>
+      </tr>
+      
+      <tr>
+      <th scope="row">Show only one element</th>
+      <td><span class="hide-print">
+      <input name="onload_show_element_only" id="onload_show_element_only" type="text"><br></span>
+      <p class="description">You can define which part of the page 
+should be shown in the iframe. You can define the id (e.g. #id) or the 
+class (.class) which should be shown. Be aware that all other elements 
+below the body are removed! So if your css relies on a certain structure
+ you have to add additional css by "Content id in iframe" below. Very 
+often also a background is defined for the header which you should 
+remove below. e.g. by setting background-image: none; in the body. This 
+can be done at "Content id in iframe" and "Content styles in iframe" 
+below. Shortcode attribute: onload_show_element_only=""</p></td>
+      </tr>
+      </tbody></table><p>With the next 2 options you can modify the css of your iframe if <strong>it is on the same domain</strong>.
+ The first option defines the id/class/element you want to modify and at
+ the 2nd option you define the styles you want to change.</p><table class="form-table">
+      <tbody><tr>
+      <th scope="row">Content id in iframe</th>
+      <td><span class="hide-print">
+      <input name="iframe_content_id" id="iframe_content_id" value="#iframe-main" type="text"><br></span>
+      <p class="description">Set the id of the element starting with a hash (#) that defines element you want to modify the css.  You can use any valid <a href="#jqh">jQuery selector pattern</a>
+ here! In the field below you then define the style you want to 
+overwrite. You can also define more than one element. Please separate 
+them by | and provide the styles below. Please read the note below how 
+to find this id for other templates. #content|h2 means that you want to 
+set a new style for the div content and the heading h2 below. Shortcode 
+attribute: iframe_content_id=""</p></td>
+      </tr>
+      
+      <tr>
+      <th scope="row">Content styles in iframe</th>
+      <td><span class="hide-print">
+      <input name="iframe_content_styles" id="iframe_content_styles" value="color:#ff00ff;background-color:#00fff0;" type="text"><br></span>
+      <p class="description">Define the styles that have to be 
+overwritten to enable the full width. Most of the time you have to 
+modify some of the following attributes: width, margin-left, 
+margin-right, padding-left. Please use ; as separator between styles. If
+ you have defined more than one element above (Content id in iframe) 
+please separate the different style sets with |. The default values are:
+ Wordpress default: 'width:450px;padding-left:45px;'. Twenty Ten: 
+'margin-left:20px;margin-right:240px'. iNove: 'width:605px'. Please read
+ the note below how to find these styles for other templates. If you 
+have defined #content|h2 at the Content id you can e.g. set 
+'width:650px;padding-left:25px;|padding-left:15px;'. Shortcode 
+attribute: iframe_content_styles=""</p></td>
+      </tr>
+          </tbody></table>
+With the next 2 options you can modify the target of links in your iframe if <strong>it is on the same domain</strong>.<p></p><table class="form-table">
+      <tbody><tr>
+      <th scope="row">Change iframe links</th>
+      <td><span class="hide-print">
+      <input name="change_iframe_links" id="change_iframe_links" type="text"><br></span>
+      <p class="description">Change links of the iframe page to open the
+ url at a different target. This option does add the attribute 
+target="your target" to the links you define. The targets are defined in
+ the next setting. You can use any valid <a href="#jqh">jQuery selector pattern</a>
+ here! So if your link e.g. has an id="link1" you have to use "a#link1".
+ If you want to change all links e.g. in the div with the id="menu-div" 
+you have to use "#menu-div a". If you e.g. only want to change all links
+ of pdfs you can use "a[href$=.pdf]"). You can also define more than one
+ element. Please separate them with |. Shortcode attribute: 
+change_iframe_links=""</p></td>
+      </tr>
+      
+      <tr>
+      <th scope="row">Change iframe links target</th>
+      <td><span class="hide-print">
+      <input name="change_iframe_links_target" id="change_iframe_links_target" type="text"><br></span>
+      <p class="description">Here you define the targets for the links 
+you define in the setting before. If you have defined more than one 
+element above (Change iframe links) please separate the different 
+targets with |. E.g. "_blank|_top". Shortcode attribute: 
+change_iframe_links_target=""</p></td>
+      </tr>
+      </tbody></table>     <div id="rt"></div>
+ 
+</div>
+<h1 style="display: none;" id="h1-rt">Resize the iframe to the content height/width</h1>
+<div>
+    <div id="icon-options-general" class="icon_ai">
+      <br>
+    </div>
+    <h2>Resize the iframe to the content height/width</h2>
+    <h3>Options if the iframe is on the same domain</h3>
+    <p>PLEASE READ THIS FIRST:    </p>
+    <p>Only if the content from the iframe comes from the <strong>same domain</strong>
+ it is possible that the onload attribute can execute Javascript 
+directly which does e.g. resize the iframe to the height of the content 
+or scroll the parent window to the top. <br> If this is the case you can
+ use the settings below. If you want to include an iframe from a 
+different domain please read the how-to "Enabling cross-site scripting 
+XSS via an iframe" below where I explain how this can be done if you can
+ modify the web site that should be included. So if you are on a 
+different domain and cannot edit the external iframe page no interaction
+ between parent and iframe is possible!    </p>
+    <table class="form-table">
+
+      <tbody><tr>
+      <th scope="row">Onload</th>
+      <td><span class="hide-print">
+      <input name="onload" id="onload" type="text"><br></span>
+      <p class="description">Enter the 'onload' script of the iframe you
+ want to execute. You can enter Javascript that is executed when the 
+iframe is loaded. Please check the following settings first! There you 
+find a solution for iframe resize and one for scrolling the parent to 
+the top. Please note that the output is escaped for security reasons 
+with the Wordpress function esc_js. So please define your Javascript 
+functions in your parent page, read all needed parameters inside the 
+functions and call this function here. I recommend to use only the 
+following characters: a-zA-Z_0-9();. Also note that the 2 settings below
+ also use the onload event. So if you set them to true the code is 
+appended to your onload function. If you like a different order of the 
+predefined functions (aiShowElementOnly(id,element); 
+aiResizeIframe(this); and aiScrollToTop();) please set the settings 
+below to 'No' and enter them here directly. Shortcode attribute: 
+onload=""</p></td>
+      </tr>
+      
+      <tr>
+      <th scope="row">Resize iframe to content height</th>
+      <td><span class="hide-print">
+      <input id="onload_resize" name="onload_resize" value="true" checked="checked" type="radio"> Yes&nbsp;&nbsp;&nbsp;&nbsp;<input id="onload_resize" name="onload_resize" value="false" type="radio"> No<br>
+    </span><p class="description">If you like that the iframe is resized
+ to the height of the content you should set this to 'Yes'. Please note 
+that this is done by Javascript! So if a user has Javascript deactivated
+ or a not supported browser the iframe does not get resized. Please set 
+the height of the iframe to the minimum pixels the iframe should have! 
+Some web pages use 100% of the height. Specifying a too big value as 
+height does not gives you the expected result. This setting generates 
+the code onload="aiResizeIframe(this);" to the iframe. Shortcode 
+attribute: onload_resize="true" or onload_resize="false" </p></td>
+    </tr>
+    
+      <tr>
+      <th scope="row">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Resize delay</th>
+      <td><span class="hide-print">
+      <input name="onload_resize_delay" id="onload_resize_delay" style="width:150px;" onblur="aiCheckInputNumber(this)" type="text"><br></span>
+      <p class="description">Sometimes the external page does not have 
+its full height after loading because e.g. parts of the page are build 
+by Javascript. If this is the case you can define a timeout in 
+millisecounds until the resize is called. Otherwise leave this field 
+empty.. Shortcode attribute: onload_resize_delay=""</p></td>
+      </tr>
+      
+      <tr>
+      <th scope="row">Store height in cookie</th>
+      <td><span class="hide-print">
+      <input onclick="aiDisableHeight();" id="store_height_in_cookie" name="store_height_in_cookie" value="true" type="radio"> Yes&nbsp;&nbsp;&nbsp;&nbsp;<input onclick="aiEnableHeight();" id="store_height_in_cookie" name="store_height_in_cookie" value="false" checked="checked" type="radio"> No<br></span>
+    <p class="description">If you enable the dynamic resize the value is
+ calculated each time when the page is loaded. So each time it took a 
+little time until the resize of the iframe is done. And this is visible 
+sometimes if the content page loads very slow or is on a different 
+domain or depends on the browser. By enabling this option the last 
+calculated height is stored in a cookie and available right away. The 
+iframe is then first resized to this height and later on when the new 
+height comes it is updated. By default this is disabled because when you
+ have dynamic content in the iframe it is possible that the iframe does 
+not shrink. So please try this setting with your destination page. <strong>If
+ you use several iframes on one page please don't use this because 
+currently only one cookie per page is supported. Also you cannot use 
+this feature if you include the ai.js file at the bottom. If you use 
+iframe on different pages different id are needed because the id is part
+ of the cookie.. Shortcode attribute: store_height_in_cookie="true" or 
+store_height_in_cookie="false" </strong></p></td>
+    </tr>
+    
+      <tr>
+      <th scope="row">Additional height</th>
+      <td><span class="hide-print">
+      <input name="additional_height" style="width:150px;" id="additional_height" onblur="aiCheckInputNumber(this)" value="0" type="text"><br></span>
+      <p class="description">If you like that the iframe is higher than 
+the calculated value you can add some extra height here. This number is 
+then added to the calculated one. This is e.g. needed if one of your 
+tested browsers displays a scrollbar because of 1 or 2 pixel. Or you 
+have an invisible area that is shown by the click on a button that can 
+increase the size of the page. This option is NOT possible when "Store 
+height in cookie" is enabled because this would cause that the height 
+will increase at each reload of the parent page. If you use several 
+iframes please use the same setting for all of them because there is 
+only one global variable. Shortcode attribute: additional_height=""</p></td>
+      </tr>
+      
+      <tr>
+      <th scope="row">Resize iframe to content width</th>
+      <td><span class="hide-print">
+      <input id="onload_resize_width" name="onload_resize_width" value="true" checked="checked" type="radio"> Yes&nbsp;&nbsp;&nbsp;&nbsp;<input id="onload_resize_width" name="onload_resize_width" value="false" type="radio"> No<br>
+    </span><p class="description">If you like that the iframe is resized
+ to the width of the content you should set this to 'Yes'. Please note 
+that this is done by Javascript and only in combination with resizing 
+the content height! So if a user has Javascript deactivated or a not 
+supported browser the iframe does not get resized. This setting 
+generates the code onload="aiResizeIframe(this, 'true');" to the iframe.
+ Shortcode attribute: onload_resize_width="true" or 
+onload_resize_width="false" </p></td>
+    </tr>
+    
+      <tr>
+      <th scope="row">Resize on click events</th>
+      <td><span class="hide-print">
+      <input name="resize_on_click" id="resize_on_click" style="width:150px;" onblur="aiCheckInputNumber(this)" type="text"><br></span>
+      <p class="description">If you like that the iframe is resized 
+after clicks  in the iframe please enter the timeout here. Otherwise 
+leave this field empty. The number is the timeout in milliseconds untill
+ the resize is called. This setting intercepts the clicks on the element
+ specified below. Catching happens BEFORE the actuall action on e.g. the
+ link. Therefore you need to enter a number &gt; 0 because the original 
+action is done later. 100 is a good value to start with! If you have 
+e.g. a slide down effect you should add the time here it takes to get 
+the full height. This setting does only work on the SAME domain by 
+default. If you like to get this working across different domains you 
+have to extract the code from the plugin and add it to your remote page.
+ Shortcode attribute: resize_on_click=""</p></td>
+      </tr>
+      
+      <tr>
+      <th scope="row">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Elements where the<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;clicks are intercepted</th>
+      <td><span class="hide-print">
+      <input name="resize_on_click_elements" id="resize_on_click_elements" value="a" type="text"><br></span>
+      <p class="description">You can define the tags and ids where the 
+clicks should be intercepted. By default all links "a" are intercepted. 
+To define a specific id you have to add the id with a :. So intercepting
+ all links with the id "testid" you have to enter "a:testid". The id you
+ specify is compared with "contains". So if you use "a:test" all links 
+with an id containing test are intercepted. You can add several tags 
+separated by ",". So "a:test,button:submitid" would work fine. Always 
+try to specify the elements as exactly as possible to avoid any problems
+ with other Javascript on the site. If you leave this field empty resize
+ on click events is NOT enabled at all! Shortcode attribute: 
+resize_on_click_elements=""</p></td>
+      </tr>
+      
+      <tr>
+      <th scope="row">Resize on AJAX events</th>
+      <td><span class="hide-print">
+      <input name="resize_on_ajax" id="resize_on_ajax" style="width:150px;" onblur="aiCheckInputNumber(this)" type="text"><br></span>
+      <p class="description">If you like that the iframe is resized 
+after each AJAX event in the iframe please enter a number here. 
+Otherwise leave this field empty. The number is the timeout in 
+milliseconds until the resize is called. This setting intercepts the 
+AJAX call after the callback was executed. So for many pages 0 should 
+work fine. But if you have e.g. a slide down effect you should add the 
+time here to get the full height. Currently only jQuery and direct 
+XMLHttpRequest are supported as AJAX calls on the included page! See the
+ "AJAX events are jQuery" setting. This setting does only work on the 
+SAME domain by default. If you like to get this working across different
+ domains you have to extract the code from the plugin and add it to your
+ remote page. Shortcode attribute: resize_on_ajax=""</p></td>
+      </tr>
+      
+      <tr>
+      <th scope="row">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;AJAX events are jQuery</th>
+      <td><span class="hide-print">
+      <input id="resize_on_ajax_jquery" name="resize_on_ajax_jquery" value="true" checked="checked" type="radio"> Yes&nbsp;&nbsp;&nbsp;&nbsp;<input id="resize_on_ajax_jquery" name="resize_on_ajax_jquery" value="false" type="radio"> No<br>
+    </span><p class="description">Currently only direct XMLHttpRequest 
+and jQuery AJAX call can be intercepted. Please select true = jQuery, 
+false = XMLHttpRequest. Shortcode attribute: 
+resize_on_ajax_jquery="true" or resize_on_ajax_jquery="false" </p></td>
+    </tr>
+    
+      <tr>
+      <th scope="row">Resize on element resize</th>
+      <td><span class="hide-print">
+      <input name="resize_on_element_resize" id="resize_on_element_resize" type="text"><br></span>
+      <p class="description">With this setting you are able to detect if
+ the size of an element changes. If this is the case than the iframe is 
+resized. This can be on click, by an Ajax call, typing with the keyboard
+ where a menu opens, a timer .... So actually any change of the size. 
+The big advantage is that this feature is most of the time easier to 
+configure than the options before and also more powerfull. But it has 
+the disadvantage that the change of the size is not send by an event but
+ the defined elements are checked in a fix intervall (see below). So 
+e.g. every 100ms a certain div is checked and if the size has changed 
+the iframe is resized.<br>If you only specify "body" then the iframe 
+does enlage nicely but does not get smaller anymore. So the best way to 
+configure this is to use the outermost element where the change can 
+happen. Please see example 26 for a working example. You can use the 
+jQuery syntax to specify the elements. Most likely the outermost div 
+(e.g. #main, #page, #wrap) is the one you need. This feature is also 
+available in the external workaround while "Resize on click events" and 
+"Resize on AJAX events" not yet! Shortcode attribute: 
+resize_on_element_resize=""</p></td>
+      </tr>
+      
+      <tr>
+      <th scope="row">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Poll intervall for the<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;resize detection</th>
+      <td><span class="hide-print">
+      <input name="resize_on_element_resize_delay" id="resize_on_element_resize_delay" style="width:150px;" onblur="aiCheckInputNumber(this)" value="250" type="text"><br></span>
+      <p class="description">The invervall in ms the specified element 
+is checked for a change of the size. The minimum polloing time is 50ms. 
+If you a smaller value the default of 250 is used. Shortcode attribute: 
+resize_on_element_resize_delay=""</p></td>
+      </tr>
+          </tbody></table>
+     
+     <h3>Resize hidden iframes on tabs</h3>
+     <p>Elements that are hidden with display:none return a size of 0 
+when the height is measured. This is very often the case when tabs are 
+used and you place an iframe on a tab that is not shown by default. The 
+next settings are needed for a workaround that moves the hidden element 
+out of the viewport, shows and measures the iframe and moves everything 
+back. To get this working you need to provide the id or class of the tab
+ that is hidden and depending on the tabs plugin also the id or class of
+ the tab that is visible by default to get the correct width. Please 
+read the section "<a href="#howtoid">How to find the id and the attributes</a>"
+ above how to find the right id or class. E.g. Tabby Responsive Tabs and
+ Post UI Tabs work fine with this solution. Even nested tabs do work! If
+ you need a custom solution please contact me for an offer.    </p>
+    <p>IMPORTANT: If you use this feature with the external workaround 
+you NEED to set a resize delay because otherwise the height is measured 
+while the element is still hidden. This can be done by setting "var 
+onload_resize_delay = 200;" before the external workaround script. 
+Depending on the size of your page you might have to increase this 
+value. As the tab is hidden this should not be a problem. For details 
+please see <a href="#xss">here</a>.    </p>
+    <p>Please note: Check the lazy load feature! It does also support 
+hidden tabs and is maybe the better solution as you only load the iframe
+ when it is really visible.    </p>
+    <p>Please note: This feature is not supported for responsive iframes
+ because the size of the hidden tabs are not calculated at each resize. 
+   </p>
+    <table class="form-table">
+
+      <tbody><tr>
+      <th scope="row">Hidden tab(s) with iframe</th>
+      <td><span class="hide-print">
+      <input name="tab_hidden" id="tab_hidden" type="text"><br></span>
+      <p class="description">The id or class of the tab that is hidden. 
+You need to define the element that has display:none set. E.g. For 
+"Tabby Responsive Tabs" this would be #tablist1-panel2 if the iframe is 
+on the 2nd tab. For "Post UI Tabs" it would be #tabs-1-2. If you have 
+nested hidden elements all elements need to be defined here. You need to
+ specify each hidden element starting from the outermost. e.g. 
+#tablist1-panel2,#tabs-1-2 if you use "Tabby Responsive Tabs" and inside
+ the tabs "Post UI Tabs. Shortcode attribute: tab_hidden=""</p></td>
+      </tr>
+      
+      <tr>
+      <th scope="row">Visible tab</th>
+      <td><span class="hide-print">
+      <input name="tab_visible" id="tab_visible" type="text"><br></span>
+      <p class="description">The id or class of the tab that is visible 
+by default. This is needed to preserve the width of the first hidden 
+tab. Depending on your css this is not needed but e.g. for "Tabby 
+Responsive Tabs" you would need #tablist1-panel1 in the default setup. 
+If you have defined several elements at "Hidden tab(s) with iframe" you 
+need to specify the element that has the same width as the hidden 
+element you have defined first above. Shortcode attribute: 
+tab_visible=""</p></td>
+      </tr>
+            </tbody></table> 
+     <div id="xss"></div>
+ 
+</div>
+<h1 style="display: none;" id="h1-xss">External workaround: Howto enable cross domain resize and modification</h1>
+<div>
+        <div id="icon-options-general" class="icon_ai">
+      <br>
+    </div><h2>
+      Howto enable cross domain resize and modification</h2>  
+    <h3>
+        Solution if the iframe is NOT on the same domain: Enabling cross-site scripting XSS via an iframe</h3>
+<p><b>You need to be able to modify the external web page you want to have in the iframe to use the workaround!</b></p>
+
+      <a href="#" onclick="jQuery('#details-workaround').show(); return false;">Show me more infos how this works.</a>
+
+      <div id="details-workaround">If the parent site and the iframe 
+site are NOT on the same domain it is only possible to do the above 
+stuff by including an additional iframe to the remote page which than 
+can call a script on the parent domain that can then access the 
+functions there. A detailed documentation how this works is described 
+here:
+      <p>
+        <a target="_blank" href="http://www.codecouch.com/2008/10/cross-site-scripting-xss-using-iframes/">http://www.codecouch.com/2008/10/cross-site-scripting-xss-using-iframes</a> - This plugin does wrap everything that is described there. Simple follow the steps below.
+      </p>The following steps are needed:
+      <ol>
+
+        <li>The parent page has a Javascript function that resizes the iframe
+        </li>
+        <li>The external iframe page has an additional hidden iframe, an onload attribute at the body and a javascript function
+        </li>
+        <li>A page on the parent domain does exist that is included by the hidden iframe that calls the function on the parent page
+        </li>
+      </ol></div>
+      <p>Everything is already prepared that you need on the parent 
+domain. For the remote page the Javascript file ai_external.js is 
+generated when you save the settings which you have to include into your
+ external iframe page:
+      </p>
+      <ol>
+        <li>Add the following Javascript to the <b>external web page</b>
+ you want to have in the iframe (The optimal place is before the 
+&lt;/body&gt; if possible. Otherwise put it in the head section. NEVER 
+place it just after the &lt;body&gt; as than the height of the script 
+element would be measured!):        <p>&lt;script src="http://yourdomain/path/ai_external.js"&gt;&lt;/script&gt;</p>
+     <p>
+     <a href="#" onclick="jQuery('#details-javascript').show(); return false;">Show me what the Javascript does</a>
+     </p><div id="details-javascript">
+
+    The Javascript does the following:
+         <ol>
+           <li>Adds "aiUpdateIframeHeight()" to the onload event of the page</li>
+           <li>Modifies the remote iframe page (pro version only)
+        - <a href="#mirp">Please see below how to configure this</a>.</li>
+           <li>Adds the iframe dynamically</li>
+           <li>Adds a wrapper div below the body if needed</li>
+           <li>Removes any margin, padding from the body</li>
+           <li>Adds a temporary overflow:hidden to the body to avoid scrollbars</li>
+         </ol>
+              </div>
+    <p></p>
+        </li>
+        <li>
+          Enable the workarounds you want to use below.        </li>
+      </ol>
+    <p></p>
+      <table class="form-table">
+
+      <tbody><tr>
+      <th scope="row">Enable the height workaround</th>
+      <td><span class="hide-print">
+      <input id="enable_external_height_workaround" name="enable_external_height_workaround" value="true" type="radio"> Yes&nbsp;&nbsp;&nbsp;&nbsp;<input id="enable_external_height_workaround" name="enable_external_height_workaround" value="false" checked="checked" type="radio"> No<br>
+    </span><p class="description">Enable the height workaround in the 
+generated Javascript file. If you want to use several iframes please use
+ the description below for configuration. This settings only works if 
+you have included the Javascript to the remote page.<br>IMPORTANT: If 
+you set this setting to true the settings from "Options if the iframe is
+ on the same domain" and "Modify the content of the iframe if the iframe
+ page is on the same domain" are disabled. The settings of ""Modify the 
+content of the iframe if the iframe page is on the same domain" are used
+ in the pro version in the external workaround. These settings would 
+generated Javascipt security errors if set for an external domain! 
+Shortcode attribute: enable_external_height_workaround="false". The 
+shortcode can only be used to enable the disabled functionality describe
+ before!</p></td>
+    </tr>
+    
+      <tr>
+      <th scope="row">Keep overflow:hidden after resize</th>
+      <td><span class="hide-print">
+      <input id="keep_overflow_hidden" name="keep_overflow_hidden" value="true" type="radio"> Yes&nbsp;&nbsp;&nbsp;&nbsp;<input id="keep_overflow_hidden" name="keep_overflow_hidden" value="false" checked="checked" type="radio"> No<br>
+    </span><p class="description">By default overflow:hidden (removes 
+any scrollbars inside the iframe) is set during the resize to avoid 
+scrollbars and is removed afterwards to allow scrollbars if e.g. the 
+content changes because of dynamic elements. If you set this setting to 
+true the overflow:hidden is not removed and any scrollbars are not 
+shown. This is e.g. helpful if the page is still to wide! If you want to
+ use several iframes please use the description below for configuration.
+ These settings only works if you have included the Javascript to the 
+remote page. This setting cannot be set by a shortcode. Please see 
+below.</p></td>
+    </tr>
+    
+      <tr>
+      <th scope="row">Hide the iframe until it is completely modified.</th>
+      <td><span class="hide-print">
+      <input id="hide_page_until_loaded_external" name="hide_page_until_loaded_external" value="true" type="radio"> Yes&nbsp;&nbsp;&nbsp;&nbsp;<input id="hide_page_until_loaded_external" name="hide_page_until_loaded_external" value="false" checked="checked" type="radio"> No<br>
+    </span><p class="description">This setting hides the iframe until 
+the external workaround is completely done. This prevents that you see 
+the original site before any modifications. The normal "Hide the iframe 
+until it is loaded" shows the iframe after all modifications are done 
+which are all done by a local script. This way cannot be used for the 
+external workaround because the exact time when the external 
+modifications are done is unknown. Therefore the external workaround 
+does call iaShowIframe after all modifications are done. This setting 
+cannot be set by a shortcode. Make sure that if you use different 
+settings on different iframes the id of the shortcode matches the 
+setting you make below because otherwise the iframe is not hidden.</p></td>
+    </tr>
+    
+      <tr>
+      <th scope="row">Write css directly</th>
+      <td><span class="hide-print">
+      <input id="write_css_directly" name="write_css_directly" value="true" type="radio"> Yes&nbsp;&nbsp;&nbsp;&nbsp;<input id="write_css_directly" name="write_css_directly" value="false" checked="checked" type="radio"> No<br>
+    </span><p class="description">By default changes off the iframe are 
+made by jQuery after the page is loaded. This is the only way this is 
+possible if you do this directly. But with the external workaround it is
+ now also possible that the style is written directly to the page. It is
+ written where the ai_external.js is included. So if you use this option
+ you need to include the ai_external.js as last element in the header. 
+This setting has the advantage that the changes are not done after the 
+page is loaded but when the browser renders the page initially. Also the
+ page is not hidden until the page is fully modified. The settings "Hide
+ elements in iframe" and "Modify content in iframe" are supported! This 
+setting cannot be set by a shortcode. Please see below.</p></td>
+    </tr>
+    
+      <tr>
+      <th scope="row">Iframe redirect url</th>
+      <td><span class="hide-print">
+      <input name="iframe_redirect_url" id="iframe_redirect_url" type="text"><br></span>
+      <p class="description">If you like that the page you want to 
+include can only be viewed in your iframe you can define the parent url 
+here. If someone tries to open the url directly he will be redirected to
+ this url. Existing parameters from the original url are added to the 
+new url. You need to add the possible parameters to the "URL forward 
+parameters" that they will be passed to the iframe again. This settting 
+does use Javascript for the redirect. If Javascript is turned off the 
+user can still access the site. If you also want to avoid this add "html
+ {visibility:hidden;}" to the style sheet of your iframe page. Than the 
+page is simply white. The Javascript does set the page visible after it 
+is loaded!</p></td>
+      </tr>
+      
+      <tr>
+      <th scope="row">Add the id to the url of the iframe</th>
+      <td><span class="hide-print">
+      <input name="pass_id_by_url" id="pass_id_by_url" type="text"><br></span>
+      <p class="description">This feature adds the id of the iframe to 
+the iframe url. The id is than extracted on the iframe and used as value
+ for the callback to find the right iframe on the parent side. The 
+static way is to set iframe_id (Please see below). The dynamic solution 
+has to be used if you want to include the same page several times to the
+ parent page (e.g. the page you include is called with different 
+parameters and shows different content then). You specify the paramter 
+that is added to the url. So e.g. ai_id can be used. Allowed values are 
+only a-zA-Z0-9_. Do NOT use any other characters. You need to set the 
+parameter here or by setting iframe_url_id before you include 
+ai_external.js. Please note the if you specify it here ALL shortcodes 
+with use_shortcode_parameters_only="true" need pass_id_by_url to be set.
+ See example 27 for a working setup. Shortcode: pass_id_by_url=""</p></td>
+      </tr>
+      </tbody></table>
+    <strong>Please note:</strong> If you change the settings above make sure to do a full reload the page in the iframe!    <p>
+      Please test with <strong>all</strong> browsers! If the wrapper div
+ is needed (It has a transparent border of 1px!) and it causes layout 
+problems you have to remove the wrapper div in the Javascript file and 
+you have to measure the body. The alternative solution is stored as 
+comment in the Javascript file. The Javascript file is regenerated each 
+time you save the settings on this page.<br>The workaround only supports one iframe on one page currently.    </p>
+    
+    <h3 id="mirp">How to configure the "Modifies the remote iframe page" options</h3>
+    <p>
+    The configuration which is rendered by default to the Javascript is the one you enter in the settings above at <a href="#modifycontent">"Modify the content of the iframe if the iframe page is on the same domain"</a>.
+    </p>
+    <h3 id="mirp">How to configure the workaround to work with different settings for different iframes</h3>
+    <p>
+        The file ai_external.js is created when you save the settings.
+        If you want to have different settings for different pages you can define the parameters which are used
+        in the script before you include the file ai_external.js.
+    </p><p>
+    </p><p>The following parameters can be used:
+      
+    </p><p>
+      <a href="#" onclick="jQuery('#all-parameters').show(); return false;"> Show me the parameters.</a>
+    </p>
+      <div id="all-parameters">
+       <ul class="ulli">
+         <li>iframe_id - By default the id from the settings are used. 
+If you want to use several iframes on the same page with the external 
+workaround you need to specify the id from the shortcode.</li>
+         <li>updateIframeHeight - Enable/disable the resize height workaround. Valid values are "true", "false".</li>
+         <li>keepOverflowHidden - Enable/disable if the overflow:hidden is kept. Valid values are "true", "false".</li>
+          <li>hide_page_until_loaded_external - Enable/disable that the page is hidden until fully modified. Valid values are "true", "false".</li>
+      
+          <li>iframe_hide_elements - See <a href="#modifycontent">Hide elements in iframe</a>.</li>
+          <li>onload_show_element_only - See <a href="#modifycontent">Show only one element</a></li>
+          <li>iframe_content_id - See <a href="#modifycontent">Content id in iframe</a></li>
+          <li>iframe_content_styles - See <a href="#modifycontent">Content styles in iframe</a></li>
+          <li>change_iframe_links - See <a href="#modifycontent">Change iframe links</a></li>
+          <li>change_iframe_links_target - See <a href="#modifycontent">Change iframe links target</a></li>
+          <li>onload_resize_delay - See <a href="#rt">Resize delay</a>. 
+This setting is not stored in ai_external.js as default because if you 
+enable the external workaround this setting is disabled above because of
+ configuration inconsistencies! So this setting has to be done in the 
+external page. e.g. var onload_resize_delay=100; means 100 ms resize 
+delay. You also need this setting when you use the hidden tabs feature.</li>
+          <li>iframe_redirect_url - Defines an url which is loaded if the page is not included in an iframe. See "Iframe redirect url" above.</li>
+          <li>write_css_directly - See "Write css directly" above. Valid
+ settings are write_css_directly="true" or write_css_directly="false". </li>
+          <li>additional_js_iframe - The ai_external.js can also write 
+additional Javscript. This is loaded at the end of ai_external.js. The 
+advantage using this is that the Javascript is only loaded if the page 
+is inside the iframe and is not loaded when accessed directly.</li>
+          <li>additional_js_file_iframe - The ai_external.js can also 
+load an additional Javascript file. This is loaded at the end of 
+ai_external.js. The advantage using this is that the file is only loaded
+ if the page is inside the iframe and is not loaded when accessed 
+directly. Please note that the file is loaded asynchronously.</li>
+          <li>resize_on_element_resize - See "Resize on element resize"</li> 
+          <li>resize_on_element_resize_delay - See "Poll intervall for the resize detection"</li> 
+          <li>iframe_url_id - See "Add the id to the url of the iframe"</li> 
+          <li>element_to_measure - You can define the element you want 
+to measure + a offset for fix content. This is sometimes needed for some
+ themes where e.g. chrome returns 0 as height.</li> 
+          <li>element_to_measure_offset - The offset for a fix content </li> 
+          
+          
+      </ul>
+      </div>
+     <p>An example would look like this:
+     </p>
+     <p>
+        &lt;script&gt;<br>
+        &nbsp;&nbsp;&nbsp;var updateIframeHeight = "true";<br>
+        &nbsp;&nbsp;&nbsp;var keepOverflowHidden = "false";<br>
+        &nbsp;&nbsp;&nbsp;var hide_page_until_loaded_external = "true";<br>
+        &lt;/script&gt;<br>
+              &lt;script 
+src="http://yourdomain/path/ai_external.js"&gt;&lt;/script&gt;
+  
+    </p>
+    <p style="display: block;">Important: If you want to include one 
+external page into more than one iframe only one configuration for the 
+external page is possible. You need to include the script from every 
+parent page that the resize callback is done properly. If you have 
+different configurations they overwrite each other and you will get an 
+unexpected result. If you need more complex configurations like this I 
+recommend to get the professional support offered for this plugin 
+because then an indivitual solution has to be designed and a custom 
+version of the plugin would be needed.</p>
+    <h3 style="display: block;">
+    New 6.3 - Config files for the external workaround    </h3>
+    <p style="display: block;">
+    Defining the variables before the script has the disadvantage that 
+you need to modify the html of the remote domain for every change and 
+also the code there can get really big. Therefore it is now possible to 
+use config files which are located on the parent server and loaded 
+dynamically from the external_ai.js. Config files have to be placed in 
+the root folder of the plugin (where advanced-iframe.php is located) and
+ need to follow this naming convention: 
+ai_external_config_&lt;config_id&gt;.js. This file does contain exactly 
+the variables described before. Then you need to add the config_id as 
+parameter to the external_ai.js like this:  
+..../ai_external.js?config_id=&lt;config_id&gt;. The config_id can only 
+contain alphanumeric characters, - and _.    </p>
+     <p style="display: block;">
+    You can also include the config file directly before the 
+ai_external.js script. This gives you the same flexibility but you have 
+to include 2 scripts. The performance including this directly is a 
+little bit better because no internal loading has to be done!    </p>
+         <p style="display: block;">
+     <a href="#" onclick="jQuery('#details-config').show(); return false;">Show me the example above with a config file</a>
+     </p><div id="details-config">
+     <p style="display: block;">
+In this example the config_id "example" is used.    </p>
+    <ol style="display: block;">
+    <li>First create a file called "ai_external_config_example.js" in 
+the main folder of the plugin where the advanced-iframe.php file is and 
+save the following lines there:<br>
+        &nbsp;&nbsp;&nbsp;var updateIframeHeight = "true";<br>
+        &nbsp;&nbsp;&nbsp;var keepOverflowHidden = "false";<br>
+    </li>
+    <li>
+      a. Add the parameter ?config_id=example to the external_ai.js<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;script 
+src="http://localhost/wordpress32/wp-content/plugins/advanced-iframe/js/ai_external.js?config_id=example"&gt;&lt;/script&gt;
+        <br>
+        or
+        <br>
+        b. &lt;script 
+src="http://localhost/wordpress32/wp-content/plugins/advanced-iframe/ai_external_config_example.js"&gt;&lt;/script&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;script 
+src="http://localhost/wordpress32/wp-content/plugins/advanced-iframe/js/ai_external.js"&gt;&lt;/script&gt;
+    </li>
+    <li>  
+    Done. Make sure that you refresh the browser cache if you make changes to your config file. <a href="http://www.tinywebgallery.com/blog/advanced-iframe/advanced-iframe-pro-demo/external-workaround-auto-height-and-css-modifications#e7" target="_blank">Example 7</a> shows a working setup.    </li>
+    </ol>
+    </div>
+    <p style="display: block;"></p>
+    <div class="hide-print">
+    <h4 style="display: block;">Existing config files</h4>
+    <p style="display: block;">The following configuration files do 
+currently exist. Please note that you can view/edit this files with the 
+plugin editor of Wordpress by clicking on the "Edit/View" link. Hover 
+over the script you want to include. Click 3 times fast to select it and
+ add the line before your ai_external.js if you use the 2nd way to 
+include the configuration. 
+    </p>
+<hr style="display: block;" height="1"><ul style="display: block;"><li>No custom configuration files found.</li></ul><hr style="display: block;" height="1">  
+    <p style="display: block;">Create a config file with the following id: <input name="ai_config_id" id="ai_config_id" size="20" maxlength="20" type="text"> 
+      <input id="ccf" class="button-primary" name="create-id" value="Create config file" type="submit">
+    </p>
+    </div>
+</div>
+<div class="ai-anchor" id="ad"></div>
+<h1 style="display: none;">Add additional files</h1>
+<div>
+    <div id="icon-options-general" class="icon_ai">
+      <br>
+    </div>    <h2>Add additional files</h2>
+     <p>
+      All settings above are designed for smaller changes of the parent or the iframe. If you want to make bigger changes and you are able to store this in a file including a whole file is the better solution. Below you can add additional Javascript or css files to the different pages.    </p> 
+    
+    
+     <div class="hide-print">
+    <h4>Existing additional files</h4>
+    <p>The following additional files in the folder "advanced-iframe-custom" do currently exist. Please note that you can view/edit this files with the plugin editor of Wordpress by clicking on the "Edit/View" link. Hover over the file you want to include and click 3 times fast to select it. 
+    </p>
+<hr height=1><ul><li>No custom additional files found.</li></ul><hr height=1>  
+    <p>Create a custom file. Only files with the extensions css or js are allowed. All files are prefiex with "custom_":<br /><input name="ai_custom_id" id="ai_custom_id" type="text" size="20" maxlength="20" /> 
+      <input id="ccf" class="button-primary" type="submit" name="create-custom-id" value="Create custom file"/>
+    </p>
+    </div>
+     
+    <h2>Parent</h2>
+    <p>
+      For some features in iframes additional css or js files are needed in the parent(!) page. E.g. for the newest version of lytebox this is needed. Each of the files do get a version number which is randomly changed each time you save the settings. So if you change the css or the js file you should save the settings to make sure your users to get the new version right away and not a chached one. If you need to add css or Javascipt to the iframe please check the settings of the external workaround.    </p>
+    <table class="form-table">
+
+      <tr>
+      <th scope="row">Additional css</th>
+      <td><span class="hide-print">
+      <input name="additional_css" type="text" id="additional_css" value=""  /><br></span>
+      <p class="description">If you want to include an additional css into the parent page please specify the path to this file here. The css file will be added into the header of the page. You can specify a full or relative url. If you specify a relative one /style.css means that the style.css is located in the main directory of Wordpress. Start relative urls with /. Please note: Before Wordpress 3.3 the shortcode attribute cannot be used. You can only set it here. Shortcode attribute: additional_css=""</p></td>
+      </tr>
+      
+      <tr>
+      <th scope="row">Additional js</th>
+      <td><span class="hide-print">
+      <input name="additional_js" type="text" id="additional_js" value=""  /><br></span>
+      <p class="description">If you want to include an additional Javascript into the parent page please specify the path to this file here. The Javascript will be added after the iframe or if you use Wordpress >= 3.3 in the footer section. You can specify a full or relative url. If you specify a relative one /javascript.js means that the javascript.js is located in the main directory of Wordpress. Start relative urls with /. Please note: Before Wordpress 3.3 the shortcode attribute cannot be used. You can only set it here. Shortcode attribute: additional_js=""</p></td>
+      </tr>
+          </table>
+    
+     
+    <h2>Iframe</h2>
+    <p>
+     You can also include a css file directly into the iframe page. This setting is also saved in the external workaround file. In the external workaround file the settings below are written at the place where the ai_external.js is included!    </p>
+        <table class="form-table">
+
+      <tr>
+      <th scope="row">Additional css in iframe<span class="ai-file" alt="Saved to ai_external.js" title="Saved to ai_external.js"></span></th>
+      <td><span class="hide-print">
+      <input name="additional_css_file_iframe" type="text" id="additional_css_file_iframe" value=""  /><br></span>
+      <p class="description">You can also include a css file directly into the iframe page. The css file will be added at the bottom of the body to overwrite also all inline styles. The styles are added after the page is loaded. You can specify a full or relative url. If you specify a relative one /style.css means that the style.css is located in the main directory of the iframe page. Shortcode attribute: additional_css_file_iframe=""</p></td>
+      </tr>
+      
+      <tr>
+      <th scope="row">Additional Javascript in iframe<span class="ai-file" alt="Saved to ai_external.js" title="Saved to ai_external.js"></span></th>
+      <td><span class="hide-print">
+      <input name="additional_js_file_iframe" type="text" id="additional_js_file_iframe" value=""  /><br></span>
+      <p class="description">For the same domain you can also include a css file directly into the iframe page. The css file will be added at the bottom of the body to overwrite also all inline styles. The styles are added after the page is loaded. You can specify a full or relative url. If you specify a relative one /javascript.js means that the javascript.js is located in the main directory of the iframe page. Shortcode attribute: additional_js_file_iframe=""</p></td>
+      </tr>
+          </table>
+    
+ 
+</div>
+<h1 style="display: none;" id="h1-ic">Include content directly</h1>
+<div>
+    <div id="icon-options-general" class="icon_ai">
+      <br>
+    </div>    <h2>
+      Include content directly</h2>
+    <p>
+You can also include content directly with jQuery. The page is loaded 
+and the part you specify below is included by Javascript into the page. 
+The cool thing is that you can specify an id or a class which specify 
+the content area that should be included. This feature does only work if
+ the page is loaded from the <strong>SAME</strong> domain. If you use the setting below no iframe is used anymore. So only include stuff that is for display only.<br>Please
+ note: Loading the external content is done after the page is fully 
+loaded and takes some time. Therefore some extra settings below are 
+possible to make the integration as invisible as possible. The included 
+div has the id ai_temp_&gt;iframe_name&lt;. So if you need to overwrite 
+some css you can put it in an extra file and add this in the section 
+"Additional files" </p><table class="form-table">
+      <tbody><tr>
+      <th scope="row">Include url</th>
+      <td><span class="hide-print">
+      <input name="include_url" id="include_url" type="text"><br></span>
+      <p class="description">Enter the full URL to your page you want to
+ include. e.g. http://www.tinywebgallery.com. If you specify this then 
+the page is included directly, the iframe settings above are not used 
+and no iframe is included. Shortcode attribute: include_url=""</p></td>
+      </tr>
+      
+      <tr>
+      <th scope="row">Include content</th>
+      <td><span class="hide-print">
+      <input name="include_content" id="include_content" type="text"><br></span>
+      <p class="description">You can specify an id or a class which 
+specify the content area that should be included. For an id please use 
+e.g. #id, for a class use .class. Shortcode attribute: 
+include_content=""</p></td>
+      </tr>
+      
+      <tr>
+      <th scope="row">Include height</th>
+      <td><span class="hide-print">
+      <input name="include_height" id="include_height" style="width:150px;" onblur="aiCheckInputNumber(this)" type="text"><br></span>
+      <p class="description">You can specify the height of the content 
+that should be included. If you do this the space for the content is 
+already reserved and this prevents that you maybe see when the page gets
+ updated. You should specify the value in px. Shortcode attribute: 
+include_height=""</p></td>
+      </tr>
+      
+      <tr>
+      <th scope="row">Include fade</th>
+      <td><span class="hide-print">
+      <input name="include_fade" id="include_fade" style="width:150px;" onblur="aiCheckInputNumber(this)" type="text"><br></span>
+      <p class="description">You can specify a fade in time that is used
+ when the content is done loading. If you leave this setting entry the 
+content is shown right away. If you specify a time in milliseconds then 
+this content is faded in in the given time. This does sometimes looks 
+nicer than if the content suddenly appears. Shortcode attribute: 
+include_fade=""</p></td>
+      </tr>
+      
+      <tr>
+      <th scope="row">Hide page until include is loaded</th>
+      <td><span class="hide-print">
+      <input id="include_hide_page_until_loaded" name="include_hide_page_until_loaded" value="true" type="radio"> Yes&nbsp;&nbsp;&nbsp;&nbsp;<input id="include_hide_page_until_loaded" name="include_hide_page_until_loaded" value="false" checked="checked" type="radio"> No<br>
+    </span><p class="description">If you like to hide the whole page 
+until the extra content is loaded you should set this to 'Yes'. You 
+should test this setting and decide what looks best for you. Shortcode 
+attribute: include_hide_page_until_loaded="true" or 
+include_hide_page_until_loaded="false" </p></td>
+    </tr>
+    </tbody></table>     <div id="jqh"></div>
+      
+    </div>
+<h1 style="display: none;" id="h1-jqh">Small jQuery help</h1>
+    <div>
+    <div id="icon-options-general" class="icon_ai">
+      <br>
+    </div><h2>
+      Small jQuery help</h2>
+      <p>
+     You can use jquery selector patterns directly to identify the 
+elements you want to modify at some of the settings. This plugin does 
+use this selectors than at the right place. This is already an advanced 
+topic if you are not familiar with jQuery.      </p>
+    <p>
+    <a href="#" onclick="jQuery('#jquery-help').show(); return false;"> Show me a small jQuery selector help.</a>
+    </p>
+      <div id="jquery-help">
+
+      <p>
+      I have created a small jquery selector help which is optimized for
+ the advanced iframes scenarios. It is an extract from 
+http://refcardz.dzone.com/refcardz/jquery-selectors#refcard-download-social-buttons-display.
+ So please go there if you need an extended version or give someone 
+credit.
+      </p>
+
+      <h3>What are jQuery selectors?</h3>
+      <p>
+      jQuery selectors are one of the most important aspects of the 
+jQuery library. These selectors use familiar CSS syntax to allow page 
+authors to quickly and easily identify any set of page elements to 
+operate upon with the jQuery library methods. Understanding jQuery 
+selectors is the key to using the jQuery library most effectively. The 
+selector is a string expression that identifies the set of DOM elements 
+that will be collected into a matched set to be operated upon by the 
+jQuery methods.
+      </p>
+           <h3>Types of jQuery selectors?</h3>
+      <p>
+        There are three categories of jQuery selectors: Basic CSS selectors, Positional selectors, and Custom jQuery selectors.
+      </p><p>
+The Basic Selectors are known as "find selectors" as they are used to 
+find elements within the DOM. The Positional and Custom Selectors are 
+"filter selectors" as they filter a set of elements (which defaults to 
+the entire set of elements in the DOM). This extract only shows the 
+basic selectors as they are most important and will cover most of your 
+needs.
+      </p>
+
+      <h4>Basic CSS Selectors</h4>
+      <p>These selectors follow standard CSS3 syntax and semantics.</p>
+       <table cellpadding="0" cellspacing="0">
+  			<thead>
+  				<tr>
+  					<th class="left_th_colored">Syntax</th>
+  					<th class="right_th_colored">Description</th>
+  				</tr>
+  			</thead>
+  			<tbody>
+  				<tr>
+  					<td class="left_td_colored">*</td>
+  					<td class="right_td_colored">Matches any element.</td>
+  				</tr>
+  				<tr>
+  					<td class="left_td_colored">E</td>
+  					<td class="right_td_colored">Matches all elements with tag name E.</td>
+  				</tr>
+  				<tr>
+  					<td class="left_td_colored">E F</td>
+  					<td class="right_td_colored">Matches all elements with tag name F that are descendants of E.</td>
+  				</tr>
+  				<tr>
+  					<td class="left_td_colored">E&gt;F</td>
+  					<td class="right_td_colored">Matches all elements with tag name F that are direct children of E.</td>
+  				</tr>
+  				<tr>
+  					<td class="left_td_colored">E+F</td>
+  					<td class="right_td_colored">Matches all elements with tag name F that are immediately preceded by a sibling of tag name E.</td>
+  				</tr>
+  				<tr>
+  					<td class="left_td_colored">E~F</td>
+  					<td class="right_td_colored">Matches all elements with tag name F that are preceded
+by any sibling of tag name E.</td>
+  				</tr>
+					<tr>
+  					<td class="left_td_colored">E:has(F)</td>
+  					<td class="right_td_colored">Matches all elements with tag name E that have at least one descendant with tag name F.</td>
+  				</tr>
+  				<tr>
+  					<td class="left_td_colored">E.c</td>
+  					<td class="right_td_colored">Matches all elements E that possess a class name of c.
+Omitting E is identical to *.c.</td>
+  				</tr>
+  				<tr>
+  					<td class="left_td_colored">E#i</td>
+  					<td class="right_td_colored">Matches all elements E that possess an id value of i.
+Omitting E is identical to *#i.</td>
+  				</tr>
+					<tr>
+  					<td class="left_td_colored">E[a]</td>
+  					<td class="right_td_colored">Matches all elements E that posses an attribute a of any value.</td>
+  				</tr>
+  				<tr>
+  					<td class="left_td_colored">E[a=v]</td>
+  					<td class="right_td_colored">Matches all elements E that posses an attribute a whose value is exactly v.</td>
+  				</tr>
+  				<tr>
+  					<td class="left_td_colored">E[a^=v]</td>
+  					<td class="right_td_colored">Matches all elements E that posses an attribute a whose value starts with v.</td>
+  				</tr>
+					<tr>
+  					<td class="left_td_colored">E[a$=v]</td>
+  					<td class="right_td_colored">Matches all elements E that posses an attribute a whose value ends with v.</td>
+  				</tr>
+  				<tr>
+  					<td class="left_td_colored">E[a*=v]</td>
+  					<td class="right_td_colored">Matches all elements E that posses an attribute a whose value contains v.</td>
+  				</tr>
+				</tbody>
+				</table>
+        <h4>Examples</h4>
+        <ul>
+				<li>$("div") selects all &lt;div&gt; elements</li>
+				<li>$("fieldset a") selects all &lt;a&gt; elements within
+&lt;fieldset&gt; elements</li>
+				<li>$("li&gt;p") selects all &lt;p&gt; elements that are direct children of &lt;li&gt; elements</li>
+				<li>$("div~p") selects all &lt;div&gt; elements that are preceded by a &lt;p&gt; element</li>
+				<li>$("p:has(b)") selects all &lt;p&gt; elements that contain a &lt;b&gt; element</li>
+				<li>$("div.someClass") selects all &lt;div&gt; elements with a class name of someClass</li>
+				<li>$(".someClass") selects all elements with class name someClass</li>
+				<li>$("#testButton") selects the element with the id value of testButton</li>
+				<li>$("img[alt]") selects all &lt;img&gt; elements that possess an alt attribute</li>
+				<li>$("a[href$=.pdf]") selects all &lt;a&gt; elements that possess an href attribute that ends in .pdf</li>
+				<li>$("button[id*=test]") selects all buttons whose id attributes contain test</li>
+				</ul>
+        <p>You can create the union of multiple disparate selectors by 
+listing them, separated by commas. For example, the following matches 
+all &lt;div&gt; and &lt;p&gt; elements: div,p</p>
+      </div>
+
+    <div id="browser-detection"></div>
+     </div>
+     <h1 style="display: none;" id="h1-browser-detection">Advanced iframe browser detection</h1>
+     <div>
+     <div id="icon-options-general" class="icon_ai">
+      <br>
+    </div><h2>
+      Advanced iframe browser detection</h2>
+      <p>
+     Pro users can now specify browser specific iframes. This is 
+imporant especially for the "Show only part of the iframe" feature where
+ browser differences of a few pixels can matter. But you can use this 
+for other things as well because mobile, iphone, ipad can also be 
+detected.
+      </p>
+         <p>
+    <a href="#" onclick="jQuery('#browser-help').show(); return false;"> Show me how to configure the browser detection in advanced iframe pro.</a>
+    </p>
+      <div id="browser-help">
+         <p>
+         Modern website designs are not pixel based anymore and 
+depending on the features of the browser they also look slightly 
+different. So if you use the "Show only part of the iframe" feature it 
+is possible that the area you want to cut out of the website is at a 
+slightly different place. You can also use the browser detection to show
+ different iframes for different browsers or even mobile devices.
+         </p>
+         <h3>Setup</h3>
+         <p>
+         If you want to have different iframe configurations depending on the browser you have to use the shortcode attribute <strong>browser=""</strong> and define the browsers there which should be used for this shortcode. See the different <a href="#config-options">configuration options</a>
+ below. You can define several browsers by separaring them by, and even 
+define browser versions by adding the versions with (version). Each of 
+the shortcodes which are browser dependent need to have the <strong>same id</strong>!
+ The last shortcode should have the attribute browser="default". This is
+ then used if no browser does match before. If you don't do this you can
+ show iframes only for a specific browser.
+         </p>
+         <h4>Example 1 - Special settings for IE 10 and IE 11</h4>
+         <p>
+            [advanced_iframe securitykey="xxx" id="example1" show_part_of_iframe_x="25" browser="ie(10),ie(11)"]<br>
+            [advanced_iframe securitykey="xxx" id="example1" show_part_of_iframe_x="20" browser="default"]
+         </p>
+         <h4>Example 2 - Special settings for IE, Firefox and Chrome</h4>
+         <p>
+            [advanced_iframe securitykey="xxx" id="example2" show_part_of_iframe_x="25" browser="ie"]<br>
+            [advanced_iframe securitykey="xxx" id="example2" show_part_of_iframe_x="23" browser="firefox,chrome"]<br>
+            [advanced_iframe securitykey="xxx" id="example2" show_part_of_iframe_x="20" browser="default"]
+         </p>
+          <h4>Example 3 - Show a different iframe on iframe on apple devices and mobile devices</h4>
+         <p>
+            [advanced_iframe securitykey="xxx" id="example3" src="apple iframe" browser="iphone,ipad,ipod"]<br>
+            [advanced_iframe securitykey="xxx" id="example3" src="other mobile devices iframe" browser="mobile"]<br>
+            [advanced_iframe securitykey="xxx" id="example3" src="normal iframe" browser="default"]
+         </p>
+
+         <h3 id="#config-options">Configuration options</h3>
+         
+         The following options for most common browsers can be used:
+         <ul id="browser-list">
+           <li>ie - Selects all versions of Internet Explorer. Also a version is supported. ie(10) selects IE10, ie(11) selects IE11</li>
+           <li>safari - Selects all versions of Safari. Also a version is supported. Add the version in (). e.g. safari(5)</li>
+           <li>firefox - Selects all versions of Firefox. Also a version is supported. Add the version in (). e.g. firefox(20)</li>
+           <li>chrome - Selects all versions of Chrome. Also a version is supported. Add the version in (). e.g. chrome(25)</li>
+           <li>opera - Selects all versions of Opera. Also a version is supported. Add the version in (). e.g. opera(20)</li>
+           <li>ipad - Selects all versions of ipad.</li>
+           <li>ipod - Selects all versions of ipod.</li>
+           <li>iphone - Selects all versions of iphone.</li>
+           <li>mobile - Selects all mobile devices.</li>
+           <li>tablets - Selects all tablet devices.</li>
+           <li>android - Selects all android devices.</li> 
+           <li>androidtablet - Selects all android tablet devices.</li> 
+           <li>default - Is used if no other advanced iframe pro with the same id was selected before.</li>
+         </ul>
+
+      <h3>Credit and update</h3>
+      <p>
+        Advanced iFrame Pro uses an integrated browser detection which is based on the wordpress plugin "<a target="_blank" href="http://wordpress.org/extend/plugins/php-browser-detection/">php-browser-detection 2.2.3</a>" and the browser detection file (5033, 23 Sep 2014) from browscap.org.
+      </p>
+      <p>
+         You can get an updated version of the browsercap.ini file here: http://tempdownloads.browserscap.com/<br>
+         or the latest version here: http://browscap.org/<br>
+      </p>
+      <p>
+         If you want to update the browser detection file get the 
+php_browscap.ini from there and rename it to 
+php-browser-detection-browscap.ini.<br>
+         Or always get the latest version of the advanced iframe pro plugin. This file is also updated there!
+      </p>
+      </div>
+        </div>
+    <h1 style="display: none;" id="h1-twg">Wordpress Flash Uploader, TinyWebGallery, Joomla Flash Uploader</h1>
+    <div>
+    <div id="icon-options-general" class="icon_ai">
+      <br>
+    </div>    <h2>
+      Wordpress Flash Uploader, TinyWebGallery, Joomla Flash Uploader</h2>
+    <p>
+      This plugin is the extract for the iframe wrapper which was 
+written for the TinyWebGallery. I needed an iframe wrapper that could do
+ more than simply include a page. It needed to pass parameters to the 
+iframe and modify the template on the fly to get more space for TWG. If 
+you want to integrate TWG please use the "TinyWebGallery wrapper". It 
+offers specific features only needed for the gallery. I hope this 
+standalone wrapper is useful for other Wordpress users as well.    </p>
+    <p>
+      Please take a look at my other projects: Wordpress Flash Uploader,
+ TinyWebGallery, Joomla Flash Uploader or TWG Flash Uploader. If you 
+like TWG or one of my other projects like JFU, WFU or TFU you should 
+consider registering,  because you can use all products with one single 
+license, get all features of the gallery and a complete upload solution 
+as well.    </p>
+    <p>
+      Please go <a href="http://www.tinywebgallery.com/" target="_blank">www.tinywebgallery.com</a> for details.    </p>
+    </div>
+   
+</div>
+    
+<div id="wpadminbar" class="wp-core-ui ai-save-bar">
+        <div>
+
+                   <div id="updated_text" style="visibility:hidden;">Settings updated.</div> 
+
+        <input id="wpbarbutton" class="button-primary" name="update_iframe-loader" onclick="setScrollposition();" value="Update Settings" type="submit">
+        </div>
+        
+      
+</div> 
+<input id="scrollposition" name="scrollposition" value="0" type="hidden">   
+</form>
+</div>
+<div class="clear"></div></div><!-- wpbody-content -->
+<div class="clear"></div></div><!-- wpbody -->
+<div class="clear"></div></div><!-- wpcontent -->
+</body></html>

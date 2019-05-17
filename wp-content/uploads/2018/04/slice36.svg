@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 119 46" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;">
+    <g transform="matrix(1,0,0,1,-1066,-701)">
+        <g transform="matrix(1,0,0,1,-0.684275,37)">
+            <g transform="matrix(1,0,0,1,-4.15695,-21.4233)">
+                <g>
+                    <g transform="matrix(0.946681,0,0,1.06493,55.9308,-45.6976)">
+                        <path d="M1168.63,689.095C1168.63,687.992 1167.62,687.097 1166.38,687.097L1074.41,687.097C1073.17,687.097 1072.16,687.992 1072.16,689.095L1072.16,727.63C1072.16,728.733 1073.17,729.628 1074.41,729.628L1166.38,729.628C1167.62,729.628 1168.63,728.733 1168.63,727.63L1168.63,689.095Z" style="fill:rgb(243,110,35);"/>
+                    </g>
+                    <g transform="matrix(1,0,0,2.1703,20.3387,-770.996)">
+                        <rect x="1127.53" y="671.339" width="19.5" height="20.869" style="fill:rgb(243,110,35);"/>
+                    </g>
+                    <g transform="matrix(1,0,0,1,-1.26011,0)">
+                        <path d="M1168.6,686.06C1168.61,686.049 1168.62,686.041 1168.63,686.04C1168.64,686.038 1168.65,686.043 1168.66,686.052C1169.66,687.098 1190.15,708.659 1190.15,708.659L1168.63,731.305C1164.48,716.275 1159.92,701.25 1168.6,686.06Z" style="fill:rgb(243,110,35);"/>
+                    </g>
+                </g>
+                <g transform="matrix(1,0,0,1,23,0)">
+                    <text x="1072.24px" y="714.31px" style="font-family:'Nunito-Regular', 'Nunito';font-size:20px;fill:white;">SENT</text>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

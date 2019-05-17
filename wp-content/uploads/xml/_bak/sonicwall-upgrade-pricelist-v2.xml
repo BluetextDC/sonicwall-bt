@@ -1,0 +1,372 @@
+<Products>
+    <Product name="SuperMassive 9800">
+        <UpgradeOption>
+            <description>
+               SonicWall SuperMassive 9800 Secure Upgrade Plus
+            </description>
+            <DataSheet>/assets/24535/</DataSheet>
+            <Twoyrprice sku="01-SSC-0807">$81,393 USD</Twoyrprice>
+            <Threeyrprice sku="01-SSC-0808">$99,871 USD</Threeyrprice>
+        </UpgradeOption>
+    </Product>
+    <Product name="SuperMassive 9600">
+        <UpgradeOption>
+            <description>
+               SonicWall SuperMassive 9600 Secure Upgrade Plus
+            </description>
+            <DataSheet>/assets/24535/</DataSheet>
+            <Twoyrprice sku="01-SSC-3886">$59,193 USD</Twoyrprice>
+            <Threeyrprice sku="01-SSC-3887">$72,631 USD</Threeyrprice>
+        </UpgradeOption>
+    </Product>
+    <Product name="SuperMassive 9400">
+        <UpgradeOption>
+            <description>
+               SonicWall SuperMassive 9400 Secure Upgrade Plus
+            </description>
+            <DataSheet>/assets/24535/</DataSheet>
+            <Twoyrprice sku="01-SSC-3806">$51,793 USD</Twoyrprice>
+            <Threeyrprice sku="01-SSC-3807">$63,551 USD</Threeyrprice>
+        </UpgradeOption>
+    </Product>
+    <Product name="SuperMassive 9200">
+        <UpgradeOption>
+            <description>
+               SonicWall SuperMassive 9200 Secure Upgrade Plus
+            </description>
+            <DataSheet>/assets/24535/</DataSheet>
+            <Twoyrprice sku="01-SSC-3816">$39,953 USD</Twoyrprice>
+            <Threeyrprice sku="01-SSC-3817">$49,023 USD</Threeyrprice>
+        </UpgradeOption>
+    </Product>
+    <Product name="NSA 6600">
+        <UpgradeOption>
+            <description>SonicWall NSA 6600 Secure Upgrade Plus</description>
+            <DataSheet>/assets/24541/</DataSheet>
+            <ComparisonDocs>
+                <ComparisonDoc name="Cisco">/assets/26336/</ComparisonDoc>
+                <ComparisonDoc name="Palo Alto Networks">/assets/26340/</ComparisonDoc>
+                <ComparisonDoc name="WatchGuard">/assets/26344/</ComparisonDoc>
+            </ComparisonDocs>
+            <Twoyrprice sku="01-SSC-4258">$29,593 USD</Twoyrprice>
+            <Threeyrprice sku="01-SSC-4259">$36,311 USD</Threeyrprice>
+        </UpgradeOption>
+    </Product>
+    <Product name="NSA 5600">
+        <UpgradeOption>
+            <description>SonicWall NSA 5600 Secure Upgrade Plus</description>
+            <DataSheet>/assets/24541/</DataSheet>
+            <ComparisonDocs>
+                <ComparisonDoc name="Cisco">/assets/26335/</ComparisonDoc>
+                <ComparisonDoc name="Palo Alto Networks">/assets/26339/</ComparisonDoc>
+                <ComparisonDoc name="WatchGuard">/assets/26343/</ComparisonDoc>
+            </ComparisonDocs>
+            <Twoyrprice sku="01-SSC-4262">$16,273 USD</Twoyrprice>
+            <Threeyrprice sku="01-SSC-4263">$19,967 USD</Threeyrprice>
+        </UpgradeOption>
+    </Product>
+    <Product name="NSA 4600">
+        <UpgradeOption>
+            <description>SonicWall NSA 4600 Secure Upgrade Plus</description>
+            <DataSheet>/assets/24541/</DataSheet>
+            <ComparisonDocs>
+                <ComparisonDoc name="Cisco">/assets/26334/</ComparisonDoc>
+                <ComparisonDoc name="Palo Alto Networks">/assets/26338/</ComparisonDoc>
+                <ComparisonDoc name="WatchGuard">/assets/26342/</ComparisonDoc>
+            </ComparisonDocs>
+            <Twoyrprice sku="01-SSC-4266">$8,281 USD</Twoyrprice>
+            <Threeyrprice sku="01-SSC-4267">$10,161 USD</Threeyrprice>
+        </UpgradeOption>
+    </Product>
+    <Product name="NSA 3600">
+        <UpgradeOption>
+            <description>SonicWall NSA 3600 Secure Upgrade Plus</description>
+            <DataSheet>/assets/24541/</DataSheet>
+            <ComparisonDocs>
+                <ComparisonDoc name="Cisco">/assets/26333/</ComparisonDoc>
+                <ComparisonDoc name="Palo Alto Networks">/assets/26337/</ComparisonDoc>
+                <ComparisonDoc name="WatchGuard">/assets/26341/</ComparisonDoc>
+            </ComparisonDocs>
+            <Twoyrprice sku="01-SSC-4270">$5,913 USD</Twoyrprice>
+            <Threeyrprice sku="01-SSC-4271">$7,255 USD</Threeyrprice>
+        </UpgradeOption>
+    </Product>
+    <Product name="NSA 2600">
+        <UpgradeOption>
+            <description>SonicWall NSA 2600 Secure Upgrade Plus</description>
+            <DataSheet>/assets/24541/</DataSheet>
+            <ComparisonDocs>
+                <ComparisonDoc name="Cisco">/assets/26333/</ComparisonDoc>
+                <ComparisonDoc name="Palo Alto Networks">/assets/26337/</ComparisonDoc>
+                <ComparisonDoc name="WatchGuard">/assets/26341/</ComparisonDoc>
+            </ComparisonDocs>
+            <Twoyrprice sku="01-SSC-4274">$3,960 USD</Twoyrprice>
+            <Threeyrprice sku="01-SSC-4275">$4,840 USD</Threeyrprice>
+        </UpgradeOption>
+    </Product>
+    <Product name="NSA 220 Series">
+        <UpgradeOption>
+            <description>NSA 220 Secure Upgrade Plus</description>
+            <DataSheet>/assets/24541/</DataSheet>
+            <Twoyrprice sku="01-SSC-4957">$1,710 USD</Twoyrprice>
+            <Threeyrprice sku="01-SSC-4958">$2,077 USD</Threeyrprice>
+        </UpgradeOption>
+    </Product>
+    <Product name="NSA 250M Series">
+        <UpgradeOption>
+            <description>NSA 250M Secure Upgrade Plus</description>
+            <DataSheet>/assets/24541/</DataSheet>
+            <Twoyrprice sku="01-SSC-4951">$2,260 USD</Twoyrprice>
+            <Threeyrprice sku="01-SSC-4952">$2,762 USD</Threeyrprice>
+        </UpgradeOption>
+    </Product>
+    <Product name="TZ 215 Series">
+        <UpgradeOption>
+            <description>SonicWall TZ 215 Secure Upgrade Plus</description>
+            <DataSheet>/assets/24525/</DataSheet>
+            <Twoyrprice sku="01-SSC-4970">$1,095 USD</Twoyrprice>
+            <Threeyrprice sku="01-SSC-4971">$1,350 USD</Threeyrprice>
+        </UpgradeOption>
+    </Product>
+    <Product name="TZ 205 Series">
+        <UpgradeOption>
+            <description>SonicWall TZ 205 Secure Upgrade Plus</description>
+            <DataSheet>/assets/24525/</DataSheet>
+            <Twoyrprice sku="01-SSC-4884">$885 USD</Twoyrprice>
+            <Threeyrprice sku="01-SSC-4885">$1,005 USD</Threeyrprice>
+        </UpgradeOption>
+    </Product>
+    <Product name="TZ600 Series">
+        <UpgradeOption>
+            <description>SonicWall TZ600 Secure Upgrade Plus</description>
+            <DataSheet>/assets/24525/</DataSheet>
+            <Twoyrprice sku="01-SSC-0222">$2,465 USD</Twoyrprice>
+            <Threeyrprice sku="01-SSC-0223">$3,016 USD</Threeyrprice>
+        </UpgradeOption>
+    </Product>
+    <Product name="TZ500 Series">
+        <UpgradeOption>
+            <description>SonicWall TZ500 Secure Upgrade Plus</description>
+            <DataSheet>/assets/24525/</DataSheet>
+            <Twoyrprice sku="01-SSC-0428">$1,865 USD</Twoyrprice>
+            <Threeyrprice sku="01-SSC-0429">$2,283 USD</Threeyrprice>
+        </UpgradeOption>
+        <UpgradeOption>
+            <description>SonicWall TZ500 Wireless-AC Secure Upgrade Plus</description>
+            <Twoyrprice sku="01-SSC-0430">$2,065 USD</Twoyrprice>
+            <Threeyrprice sku="01-SSC-0431">$2,483 USD</Threeyrprice>
+        </UpgradeOption>
+    </Product>
+    <Product name="TZ400 Series">
+        <UpgradeOption>
+            <description>SonicWall TZ400 Secure Upgrade Plus</description>
+            <DataSheet>/assets/24525/</DataSheet>
+            <Twoyrprice sku="01-SSC-0504">$1,225 USD</Twoyrprice>
+            <Threeyrprice sku="01-SSC-0505">$1,521 USD</Threeyrprice>
+        </UpgradeOption>
+        <UpgradeOption>
+            <description>SonicWall TZ400 Wireless-AC Secure Upgrade Plus</description>
+            <Twoyrprice sku="01-SSC-0506">$1,425 USD</Twoyrprice>
+            <Threeyrprice sku="01-SSC-0507">$1,721 USD</Threeyrprice>
+        </UpgradeOption>
+    </Product>
+    <Product name="TZ300 Series">
+        <UpgradeOption>
+            <description>SonicWall TZ300 Secure Upgrade Plus</description>
+            <DataSheet>/assets/24525/</DataSheet>
+            <Twoyrprice sku="01-SSC-0575">$965 USD</Twoyrprice>
+            <Threeyrprice sku="01-SSC-0576">$1,145 USD</Threeyrprice>
+        </UpgradeOption>
+        <UpgradeOption>
+            <description>SonicWall TZ300 Wireless-AC Secure Upgrade Plus</description>
+            <Twoyrprice sku="01-SSC-0577">$1,125 USD</Twoyrprice>
+            <Threeyrprice sku="01-SSC-0578">$1,305 USD</Threeyrprice>
+        </UpgradeOption>
+    </Product>
+    <Product name="SOHO Series">
+        <UpgradeOption>
+            <description>SonicWall SOHO Secure Upgrade Plus</description>
+            <DataSheet>/assets/24525/</DataSheet>
+            <Twoyrprice sku="01-SSC-0645">$525 USD</Twoyrprice>
+            <Threeyrprice sku="01-SSC-0646">$662 USD</Threeyrprice>
+        </UpgradeOption>
+        <UpgradeOption>
+            <description>SonicWall SOHO Wireless-N Secure Upgrade Plus</description>
+            <Twoyrprice sku="01-SSC-0647">$645 USD</Twoyrprice>
+            <Threeyrprice sku="01-SSC-0648">$782 USD</Threeyrprice>
+        </UpgradeOption>
+    </Product>
+    <Product name="SRA 1600">
+        <UpgradeOption>
+            <description>
+                SonicWall SRA 1600 Secure Upgrade Plus (10 Users)
+            </description>
+            <Twoyrprice sku="Need SKU">$1,400 USD</Twoyrprice>
+            <Threeyrprice sku="Need SKU">$1,600 USD</Threeyrprice>
+        </UpgradeOption>
+    </Product>
+    <Product name="SRA 4600">
+        <UpgradeOption>
+            <description>
+                SonicWall SRA 4600 Secure Upgrade Plus (100 Users)
+            </description>
+            <Twoyrprice sku="Need SKU">$2,925 USD</Twoyrprice>
+            <Threeyrprice sku="Need SKU">$3,295 USD</Threeyrprice>
+        </UpgradeOption>
+    </Product>
+    <Product name="ES 8300">
+        <UpgradeOption>
+            <description>
+               SonicWall ES 8300 Secure Upgrade Plus (Hardware Only)
+            </description>
+            <Oneyrprice>$10,797 USD</Oneyrprice>
+        </UpgradeOption>
+    </Product>
+    <Product name="ES 3300">
+        <UpgradeOption>
+            <description>
+               SonicWall ES 3300 Secure Upgrade Plus (Hardware Only)
+            </description>
+            <Oneyrprice>$1,077 USD</Oneyrprice>
+        </UpgradeOption>
+    </Product>
+    <Product name="ES 4300">
+        <UpgradeOption>
+            <description>
+               SonicWall ES 4300 Secure Upgrade Plus (Hardware Only)
+            </description>
+            <Oneyrprice>$4,197 USD</Oneyrprice>
+        </UpgradeOption>
+    </Product>
+    <Product name="ES Virtual Appliance">
+        <UpgradeOption>
+            <description>
+               SonicWall Email Security Virtual Appliance Secure Upgrade Plus
+            </description>
+            <Oneyrprice>$357 USD</Oneyrprice>
+        </UpgradeOption>
+    </Product>
+    <Product name="ES Hosted">
+        <UpgradeOption>
+            <description>
+               SonicWall Hosted Email Security &amp; Dynamic Support 24x7 Secure Upgrade Plus - 10 Users (1 Yr)
+            </description>
+            <Oneyrprice>$100 USD</Oneyrprice>
+        </UpgradeOption>
+    </Product>
+    <Product name="ES Hosted">
+        <UpgradeOption>
+            <description>
+               SonicWall Hosted Email Security &amp; Dynamic Support 24x7 Secure Upgrade Plus - 25 Users (1 Yr)
+            </description>
+            <Oneyrprice>$225 USD</Oneyrprice>
+        </UpgradeOption>
+    </Product>
+    <Product name="ES Hosted">
+        <UpgradeOption>
+            <description>
+               SonicWall Hosted Email Security &amp; Dynamic Support 24x7 Secure Upgrade Plus - 50 Users (1 Yr)
+            </description>
+            <Oneyrprice>$405 USD</Oneyrprice>
+        </UpgradeOption>
+    </Product>
+    <Product name="ES Hosted">
+        <UpgradeOption>
+            <description>
+               SonicWall Hosted Email Security &amp; Dynamic Support 24x7 Secure Upgrade Plus - 100 Users (1 Yr)
+            </description>
+            <Oneyrprice>$728 USD</Oneyrprice>
+        </UpgradeOption>
+    </Product>
+    <Product name="ES Hosted">
+        <UpgradeOption>
+            <description>
+               SonicWall Hosted Email Security &amp; Dynamic Support 24x7 Secure Upgrade Plus - 250 Users (1 Yr)
+            </description>
+            <Oneyrprice>$1,550 USD</Oneyrprice>
+        </UpgradeOption>
+    </Product>
+    <Product name="ES Hosted">
+        <UpgradeOption>
+            <description>
+               SonicWall Hosted Email Security &amp; Dynamic Support 24x7 Secure Upgrade Plus - 500 Users (1 Yr)
+            </description>
+            <Oneyrprice>$2,788 USD</Oneyrprice>
+        </UpgradeOption>
+    </Product>
+    <Product name="ES Hosted">
+        <UpgradeOption>
+            <description>
+               SonicWall Hosted Email Security &amp; Dynamic Support 24x7 Secure Upgrade Plus - 750 Users (1 Yr)
+            </description>
+            <Oneyrprice>$3,765 USD</Oneyrprice>
+        </UpgradeOption>
+    </Product>
+    <Product name="ES Hosted">
+        <UpgradeOption>
+            <description>
+               SonicWall Hosted Email Security &amp; Dynamic Support 24x7 Secure Upgrade Plus - 1000 Users (1 Yr)
+            </description>
+            <Oneyrprice>$4,250 USD</Oneyrprice>
+        </UpgradeOption>
+    </Product>
+    <Product name="NSA 4600">
+        <UpgradeOption>
+            <description>SonicWall NSA 4600 Secure Upgrade Plus</description>
+            <Twoyrprice sku="01-SSC-4266 ">$8,281 USD</Twoyrprice>
+            <Threeyrprice sku="01-SSC-4267 ">$10,161 USD</Threeyrprice>
+        </UpgradeOption>
+    </Product>
+    <Product name="SonicPoint ACe">
+        <UpgradeOption>
+            <description>SonicWall SonicPoint Secure Upgrade Plus</description>
+            <Threeyrprice sku="01-SSC-0724">
+                $480 USD (Includes PoE Injector and 3 years of 24x7 support)
+            </Threeyrprice>
+            <Threeyrprice sku="01-SSC-0725">
+                $1,540 USD (Includes 4 SonicPoints and 3 years of 24x7 support)
+            </Threeyrprice>
+            <Threeyrprice sku="01-SSC-0726">
+                $2,895 USD (Includes 8 SonicPoints and 3 years of 24x7 support)
+            </Threeyrprice>
+        </UpgradeOption>
+    </Product>
+    <Product name="SonicPoint ACi">
+        <UpgradeOption>
+            <description>SonicWall SonicPoint Secure Upgrade Plus</description>
+            <Threeyrprice sku="01-SSC-0727">
+                $405 USD (Includes PoE Injector and 3 years of 24x7 support)
+            </Threeyrprice>
+            <Threeyrprice sku="01-SSC-0728">
+                $1,300 USD (Includes 4 SonicPoints and 3 years of 24x7 support)
+            </Threeyrprice>
+            <Threeyrprice sku="01-SSC-0729">
+                $2,445 USD (Includes 8 SonicPoints and 3 years of 24x7 support)
+            </Threeyrprice>
+        </UpgradeOption>
+    </Product>
+		<Product name="SMA 400">
+        <UpgradeOption>
+            <description>SonicWall SMA 400 Secure Upgrade Plus (Up to 100 Users)</description>
+            <Oneyrprice sku="01-SSC-2415">$2,340 USD</Oneyrprice>
+            <Threeyrprice sku="01-SSC-2416">$3,110 USD</Threeyrprice>
+        </UpgradeOption>
+		<UpgradeOption>
+            <description>SonicWall SMA 400 Secure Upgrade Plus (101-250 Users)</description>
+            <Oneyrprice sku="01-SSC-2908">$3,371 USD</Oneyrprice>
+			<Threeyrprice sku="01-SSC-2417">$5,513 USD</Threeyrprice>
+        </UpgradeOption>
+    </Product>
+	<Product name="SMA 200">
+        <UpgradeOption>
+            <description>SonicWall SMA 200 Secure Upgrade Plus (Up to 25 Users)</description>
+            <Oneyrprice sku="01-SSC-2418">$1,391 USD</Oneyrprice>
+            <Threeyrprice sku="01-SSC-2419">$1,805 USD</Threeyrprice>
+        </UpgradeOption>
+		<UpgradeOption>
+            <description>SonicWall SMA 200 Secure Upgrade Plus (26-50 Users)</description>
+            <Oneyrprice sku="01-SSC-2909">$1,526 USD</Oneyrprice>
+			<Threeyrprice sku="01-SSC-2420">$2,088 USD</Threeyrprice>
+        </UpgradeOption>
+    </Product>
+</Products>

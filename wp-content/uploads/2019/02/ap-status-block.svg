@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="347px" height="98px" viewBox="0 0 347 98" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>Group 71</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="100%" y1="2169.52882%" x2="0%" y2="2169.52882%" id="linearGradient-1">
+            <stop stop-color="#000000" offset="0%"></stop>
+            <stop stop-color="#F36E21" offset="19.4635116%"></stop>
+            <stop stop-color="#F36E21" offset="82.7786308%"></stop>
+            <stop stop-color="#000000" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-17" transform="translate(-7.000000, -443.000000)">
+            <g id="Group-71" transform="translate(7.680000, 440.640000)">
+                <g id="Group-70" transform="translate(0.000000, 0.000000)">
+                    <text id="Access-Points-Status" font-family="Helvetica" font-size="11.52" font-weight="normal" fill="#9B9B9B">
+                        <tspan x="17.28" y="11">ACCESS POINTS STATUS</tspan>
+                    </text>
+                    <path d="M5.68434189e-14,99.36 L345.6,99.36" id="Path-Copy-4" stroke="url(#linearGradient-1)" stroke-width="0.576" stroke-linecap="round" fill-rule="nonzero"></path>
+                    <text id="Online" font-family="Nunito-Regular, Nunito" font-size="11.52" font-weight="normal" fill="#9B9B9B">
+                        <tspan x="181.44" y="40.8">Online</tspan>
+                    </text>
+                    <text id="Offline" font-family="Nunito-Regular, Nunito" font-size="11.52" font-weight="normal" fill="#9B9B9B">
+                        <tspan x="69.12" y="68.64">Offline</tspan>
+                    </text>
+                    <rect id="Rectangle" fill="#98CB04" fill-rule="nonzero" x="17.28" y="33.6" width="134.4" height="5.76" rx="2.88"></rect>
+                    <rect id="Rectangle-Copy-5" fill="#FF0000" fill-rule="nonzero" x="17.28" y="61.44" width="28.8" height="5.76" rx="2.88"></rect>
+                    <path d="M294.987865,32.0435218 C291.505294,27.1738826 285.803297,24 279.36,24" id="Path" stroke="#FF0000" stroke-width="5.76" stroke-linecap="round" fill-rule="nonzero"></path>
+                    <path d="M259.694771,21.1989772 C254.073484,26.4549135 250.56,33.9371477 250.56,42.24 C250.56,58.1458008 263.454199,71.04 279.36,71.04 L279.36,71.04 C295.265801,71.04 308.16,58.1458008 308.16,42.24 C308.16,26.3341992 295.265801,13.44 279.36,13.44" id="Path" stroke="#98CB04" stroke-width="5.76" stroke-linecap="round" fill-rule="nonzero"></path>
+                    <g id="Group-15-Copy-5" transform="translate(50.880000, 56.640000)">
+                        <circle id="Oval" fill="#FF3B30" fill-rule="nonzero" cx="6.72" cy="7.68" r="6.72"></circle>
+                        <circle id="Oval-Copy" fill="#FF3B30" fill-rule="nonzero" cx="6.72" cy="7.68" r="6.72"></circle>
+                        <text id="3" font-family="Helvetica" font-size="8.64" font-weight="normal" fill="#FFFFFF">
+                            <tspan x="4.8" y="11">3</tspan>
+                        </text>
+                    </g>
+                    <g id="Group-16-Copy" transform="translate(158.400000, 28.800000)">
+                        <rect id="Rectangle" fill="#FF3B30" fill-rule="nonzero" x="0" y="0.96" width="17.28" height="13.44" rx="6.72"></rect>
+                        <text id="12" font-family="Helvetica" font-size="8.64" font-weight="normal" fill="#FFFFFF">
+                            <tspan x="2.88" y="10">12</tspan>
+                        </text>
+                    </g>
+                </g>
+                <g id="Group-12-Copy-3" transform="translate(247.680000, 10.560000)" fill="#FFFFFF" fill-opacity="0.16" fill-rule="nonzero">
+                    <path d="M31.68,63.36 C14.1836191,63.36 0,49.1763809 0,31.68 C0,14.1836191 14.1836191,0 31.68,0 C49.1763809,0 63.36,14.1836191 63.36,31.68 C63.36,49.1763809 49.1763809,63.36 31.68,63.36 Z M31.68,57.6 C45.9952207,57.6 57.6,45.9952207 57.6,31.68 C57.6,17.3647793 45.9952207,5.76 31.68,5.76 C17.3647793,5.76 5.76,17.3647793 5.76,31.68 C5.76,45.9952207 17.3647793,57.6 31.68,57.6 Z" id="Shape"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

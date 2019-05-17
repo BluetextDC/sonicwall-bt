@@ -1,0 +1,14 @@
+hand - 1. The enable/disable code star
+2. The options are working (external/internal, header/footer, frontend/admin)
+3. Less and SASS pre-processors 
+4. Minify the code
+5. Preview the changes by adding an URL
+    - save the preview URL for future use
+6. Apply only on these URLs
+    - make a unit test for this and try different combinations
+7. Code revisions
+    - if there is a change in the options, it doesn't save a new revision
+    - the pre-processor and minify options aren't shown/saved in the revision
+    - on restore, test if the options also are restored
+8. Permissions control
+    - see how Visual Composer controls who is allowed to use the plugin per roles or usernames

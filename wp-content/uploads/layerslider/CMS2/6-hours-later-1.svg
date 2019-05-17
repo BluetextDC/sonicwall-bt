@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="133px" height="27px" viewBox="0 0 133 27" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>6 hours later</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M-4676,-8564 L8147,-8564 L8147,5427 L-4676,5427 L-4676,-8564 Z" id="path-1"></path>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="12823" height="13991" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <use id="Rectangle-5" stroke="#979797" mask="url(#mask-2)" stroke-width="12" stroke-dasharray="15,15" xlink:href="#path-1"></use>
+        <text id="6-hours-later" font-family="Nunito-SemiBold, Nunito" font-size="22" font-weight="500" fill="#0F8DD1">
+            <tspan x="3.256" y="21">6 hours later</tspan>
+        </text>
+    </g>
+</svg>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="130px" height="41px" viewBox="0 0 130 41" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>Defcon 2</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Defcon-2">
+            <rect id="Rectangle" fill="#FF9900" x="0" y="0" width="130" height="41" rx="2"></rect>
+            <text id="5" font-family="Nunito-Regular, Nunito" font-size="29" font-weight="normal" fill="#000000" fill-opacity="0.26">
+                <tspan x="4.3" y="29">5</tspan>
+            </text>
+            <text id="4" font-family="Nunito-Regular, Nunito" font-size="29" font-weight="normal" fill="#000000" fill-opacity="0.257699275">
+                <tspan x="30.3" y="29">4</tspan>
+            </text>
+            <text id="3" font-family="Nunito-Regular, Nunito" font-size="29" font-weight="normal" fill="#000000" fill-opacity="0.257699275">
+                <tspan x="56.3" y="29">3</tspan>
+            </text>
+            <text id="2" font-family="Nunito-Regular, Nunito" font-size="29" font-weight="normal" fill="#000000">
+                <tspan x="82.3" y="29">2</tspan>
+            </text>
+            <text id="1" font-family="Nunito-Regular, Nunito" font-size="29" font-weight="normal" fill="#000000" fill-opacity="0.257699275">
+                <tspan x="108.3" y="29">1</tspan>
+            </text>
+        </g>
+    </g>
+</svg>

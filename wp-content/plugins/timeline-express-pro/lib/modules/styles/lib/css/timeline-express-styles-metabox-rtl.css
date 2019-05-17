@@ -1,0 +1,100 @@
+/*--------------------------------------------------------------
+* Timeline Express - Metabox Styles
+* @author Code Parrots <support@codeparrots.com>
+* Copyright © 2017 Code Parrots. All Rights Reserved.
+----------------------------------------------------------------
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Metabox Styles
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Metabox Styles
+--------------------------------------------------------------*/
+#cmb2-metabox-announcement_styles_metabox .ui-tabs-vertical .ui-tabs-panel {
+  min-height: 255px; }
+
+#cmb2-metabox-announcement_styles_metabox #container_styles,
+#cmb2-metabox-announcement_styles_metabox #title_styles,
+#cmb2-metabox-announcement_styles_metabox #date_styles,
+#cmb2-metabox-announcement_styles_metabox #excerpt_styles {
+  /* Inherit Labels */
+  /* Container Background */
+  /* Container border */ }
+  #cmb2-metabox-announcement_styles_metabox #container_styles span.cmb2-metabox-description,
+  #cmb2-metabox-announcement_styles_metabox #title_styles span.cmb2-metabox-description,
+  #cmb2-metabox-announcement_styles_metabox #date_styles span.cmb2-metabox-description,
+  #cmb2-metabox-announcement_styles_metabox #excerpt_styles span.cmb2-metabox-description {
+    display: block;
+    margin-top: 10px;
+    float: right;
+    width: 100%; }
+  #cmb2-metabox-announcement_styles_metabox #container_styles label,
+  #cmb2-metabox-announcement_styles_metabox #title_styles label,
+  #cmb2-metabox-announcement_styles_metabox #date_styles label,
+  #cmb2-metabox-announcement_styles_metabox #excerpt_styles label {
+    display: block; }
+  #cmb2-metabox-announcement_styles_metabox #container_styles label[for="_timeline_styles_container_background_color[inherit]"],
+  #cmb2-metabox-announcement_styles_metabox #container_styles label[for="_timeline_styles_container_border[inherit]"],
+  #cmb2-metabox-announcement_styles_metabox #container_styles label[for="_timeline_styles_container_title_styles[inherit]"],
+  #cmb2-metabox-announcement_styles_metabox #container_styles label[for="_timeline_styles_container_date_styles[inherit]"],
+  #cmb2-metabox-announcement_styles_metabox #title_styles label[for="_timeline_styles_container_background_color[inherit]"],
+  #cmb2-metabox-announcement_styles_metabox #title_styles label[for="_timeline_styles_container_border[inherit]"],
+  #cmb2-metabox-announcement_styles_metabox #title_styles label[for="_timeline_styles_container_title_styles[inherit]"],
+  #cmb2-metabox-announcement_styles_metabox #title_styles label[for="_timeline_styles_container_date_styles[inherit]"],
+  #cmb2-metabox-announcement_styles_metabox #date_styles label[for="_timeline_styles_container_background_color[inherit]"],
+  #cmb2-metabox-announcement_styles_metabox #date_styles label[for="_timeline_styles_container_border[inherit]"],
+  #cmb2-metabox-announcement_styles_metabox #date_styles label[for="_timeline_styles_container_title_styles[inherit]"],
+  #cmb2-metabox-announcement_styles_metabox #date_styles label[for="_timeline_styles_container_date_styles[inherit]"],
+  #cmb2-metabox-announcement_styles_metabox #excerpt_styles label[for="_timeline_styles_container_background_color[inherit]"],
+  #cmb2-metabox-announcement_styles_metabox #excerpt_styles label[for="_timeline_styles_container_border[inherit]"],
+  #cmb2-metabox-announcement_styles_metabox #excerpt_styles label[for="_timeline_styles_container_title_styles[inherit]"],
+  #cmb2-metabox-announcement_styles_metabox #excerpt_styles label[for="_timeline_styles_container_date_styles[inherit]"] {
+    margin-bottom: 5px; }
+  #cmb2-metabox-announcement_styles_metabox #container_styles .container-background-style-holder,
+  #cmb2-metabox-announcement_styles_metabox #title_styles .container-background-style-holder,
+  #cmb2-metabox-announcement_styles_metabox #date_styles .container-background-style-holder,
+  #cmb2-metabox-announcement_styles_metabox #excerpt_styles .container-background-style-holder {
+    margin-bottom: 0; }
+  #cmb2-metabox-announcement_styles_metabox #container_styles .container-styles-holder,
+  #cmb2-metabox-announcement_styles_metabox #title_styles .container-styles-holder,
+  #cmb2-metabox-announcement_styles_metabox #date_styles .container-styles-holder,
+  #cmb2-metabox-announcement_styles_metabox #excerpt_styles .container-styles-holder {
+    display: table;
+    margin: 10px 0 0 0; }
+    #cmb2-metabox-announcement_styles_metabox #container_styles .container-styles-holder.hidden,
+    #cmb2-metabox-announcement_styles_metabox #title_styles .container-styles-holder.hidden,
+    #cmb2-metabox-announcement_styles_metabox #date_styles .container-styles-holder.hidden,
+    #cmb2-metabox-announcement_styles_metabox #excerpt_styles .container-styles-holder.hidden {
+      display: none; }
+    #cmb2-metabox-announcement_styles_metabox #container_styles .container-styles-holder label,
+    #cmb2-metabox-announcement_styles_metabox #container_styles .container-styles-holder div.wp-picker-container,
+    #cmb2-metabox-announcement_styles_metabox #title_styles .container-styles-holder label,
+    #cmb2-metabox-announcement_styles_metabox #title_styles .container-styles-holder div.wp-picker-container,
+    #cmb2-metabox-announcement_styles_metabox #date_styles .container-styles-holder label,
+    #cmb2-metabox-announcement_styles_metabox #date_styles .container-styles-holder div.wp-picker-container,
+    #cmb2-metabox-announcement_styles_metabox #excerpt_styles .container-styles-holder label,
+    #cmb2-metabox-announcement_styles_metabox #excerpt_styles .container-styles-holder div.wp-picker-container {
+      float: right;
+      width: 45%;
+      min-height: 55px;
+      padding: 5px 0 0 15px; }
+      #cmb2-metabox-announcement_styles_metabox #container_styles .container-styles-holder label .cmb2-wrap select,
+      #cmb2-metabox-announcement_styles_metabox #container_styles .container-styles-holder div.wp-picker-container .cmb2-wrap select,
+      #cmb2-metabox-announcement_styles_metabox #title_styles .container-styles-holder label .cmb2-wrap select,
+      #cmb2-metabox-announcement_styles_metabox #title_styles .container-styles-holder div.wp-picker-container .cmb2-wrap select,
+      #cmb2-metabox-announcement_styles_metabox #date_styles .container-styles-holder label .cmb2-wrap select,
+      #cmb2-metabox-announcement_styles_metabox #date_styles .container-styles-holder div.wp-picker-container .cmb2-wrap select,
+      #cmb2-metabox-announcement_styles_metabox #excerpt_styles .container-styles-holder label .cmb2-wrap select,
+      #cmb2-metabox-announcement_styles_metabox #excerpt_styles .container-styles-holder div.wp-picker-container .cmb2-wrap select {
+        margin-top: 0; }
+      #cmb2-metabox-announcement_styles_metabox #container_styles .container-styles-holder label .wp-color-result,
+      #cmb2-metabox-announcement_styles_metabox #container_styles .container-styles-holder div.wp-picker-container .wp-color-result,
+      #cmb2-metabox-announcement_styles_metabox #title_styles .container-styles-holder label .wp-color-result,
+      #cmb2-metabox-announcement_styles_metabox #title_styles .container-styles-holder div.wp-picker-container .wp-color-result,
+      #cmb2-metabox-announcement_styles_metabox #date_styles .container-styles-holder label .wp-color-result,
+      #cmb2-metabox-announcement_styles_metabox #date_styles .container-styles-holder div.wp-picker-container .wp-color-result,
+      #cmb2-metabox-announcement_styles_metabox #excerpt_styles .container-styles-holder label .wp-color-result,
+      #cmb2-metabox-announcement_styles_metabox #excerpt_styles .container-styles-holder div.wp-picker-container .wp-color-result {
+        margin: 2em 0 2em 0; }

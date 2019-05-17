@@ -1,0 +1,29 @@
+// CUSTOM AUDIENCE
+.panel-log-list {
+  .panel-heading .tit::before {
+    @include material-icons(assignment)
+  }
+
+  .panel-footer {
+    text-align: center;
+  }
+
+  .table {
+    margin-bottom: 0;
+
+    .name {
+      max-width: 500px;
+      font-weight: $font-weight-bold;
+
+      .info-extra {
+        font-weight: normal;
+      }
+    }
+
+    @media screen and (min-width: $screen-md-max) {
+      .name {
+        width: auto;
+      }
+    }
+  }
+}

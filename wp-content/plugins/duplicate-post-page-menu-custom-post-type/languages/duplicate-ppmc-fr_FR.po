@@ -1,0 +1,43 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-08-08 13:08+0530\n"
+"PO-Revision-Date: 2017-08-08 13:25+0530\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Poedit 2.0.3\n"
+"Last-Translator: \n"
+"Language: fr\n"
+
+#: class-duplicate-ppmc-settings.php:56
+msgid "Duplicate Post, Page, Menu & CPT"
+msgstr "Dupliquer la poste, la page, le menu et le CPT"
+
+#: class-duplicate-ppmc-settings.php:74
+msgid "Elements to duplicate:"
+msgstr "Éléments à dupliquer:"
+
+#: class-duplicate-ppmc-settings.php:77
+msgid "Post"
+msgstr "Article"
+
+#: class-duplicate-ppmc-settings.php:78
+msgid "Page"
+msgstr "Page"
+
+#: class-duplicate-ppmc-settings.php:91
+msgid "Menu"
+msgstr "Menu"
+
+#: duplicate-post-page-menu-cpt.php:217 duplicate-post-page-menu-cpt.php:237
+msgid "Duplicate"
+msgstr "Dupliquez"

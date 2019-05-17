@@ -1,0 +1,27 @@
+.gform_wrapper .customize-partial-edit-shortcut button {
+	left: -28px;
+}
+
+.stla-partial-formwrapper-shortcut .customize-partial-edit-shortcut-button {
+	top: -30px;
+}
+
+.stla-partial-formheader-shortcut .customize-partial-edit-shortcut-button {
+	left: -70px;
+}
+
+.gform_wrapper .customize-partial-edit-shortcut-button {
+	cursor: pointer !important;
+}
+
+.gform_wrapper .gfield input {
+	cursor: default !important;
+}
+
+.gform_wrapper .customize-partial-edit-shortcut:not(.stla-partial-formwrapper-shortcut) {
+	display: none;
+}
+
+.gform_wrapper .stla-selected-field {
+	outline: 2px dashed rgba(0, 0, 0, .25) !important;
+}

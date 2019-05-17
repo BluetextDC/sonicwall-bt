@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="434px" height="146px" viewBox="0 0 434 146" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>Block 1</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="RM-Composited" transform="translate(-1659.000000, -2186.000000)">
+            <g id="Block-1" transform="translate(1660.000000, 2187.000000)">
+                <path d="M18,0 L414,0 C423.941125,-1.82615513e-15 432,8.0588745 432,18 L432,143.114604 L245,143 L259.809941,117.755543 L172,117.755543 L186,143 L0,143.114604 L0,18 C-1.21743675e-15,8.0588745 8.0588745,1.82615513e-15 18,0 Z" id="Box-1" stroke="#FF791A" stroke-width="2" fill-opacity="0.880491395" fill="#333333"></path>
+                <text id="Turn-off-one-shield," font-family="Nunito-Regular, Nunito" font-size="26" font-weight="normal" line-spacing="28" fill="#999999">
+                    <tspan x="97.063" y="36.894165">Turn off one shield, </tspan>
+                    <tspan x="63.51" y="64.894165">and you can expose your </tspan>
+                    <tspan x="66.396" y="92.894165">entire network to attack.</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>

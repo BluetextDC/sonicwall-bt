@@ -1,0 +1,259 @@
+// DASHBOARD
+.intro-dashboard {
+  @include flexbox;
+  position: relative;
+
+  .tit {
+    font-size: $headings-font-size * 1.5;
+    text-transform: uppercase;
+  }
+
+  p {
+    font-size: floor($font-size-base * 1.3);
+  }
+  
+  .jumbotron-body {
+    margin: auto;
+    
+    .btn {
+      padding: $btn-padding-vertical * 2 $btn-padding-horizontal;
+      margin: $line-height-computed 0 0; //same margin as title
+      white-space: normal;
+      font-size: 2em;
+
+      &::before {
+        font-size: 1.5em;
+      }
+
+      &.btn-block {
+        @media screen and (min-width: $screen-sm-min) {
+          width: auto;
+          display: inline-block;
+        }
+      }
+    }
+  }
+}
+
+.intro-product-catalog {
+  background-color: #F2F4FA;
+  background-image: url('../img/prd-catalog-pattern.png');
+  background-repeat: repeat;
+  background-size: auto;
+  
+  .calltoact {
+    .btn {
+      font-size: $mdb-btn-mini-font-size;
+    }
+  }
+  .actions {
+    margin-top: $form-group-space-bottom;
+    a {
+      font-size: $mdb-input-font-size-base;
+    }
+  }
+
+}
+
+// DASHBOARD DUDE
+.intro-dude {
+  $this__walter-W: 300px;
+
+  @media screen and (min-width: $screen-md-min) {
+    min-height: 400px;
+    padding-right: $this__walter-W;
+
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      display: block;
+      width: $this__walter-W;
+      height: 100%;
+      background-size: contain;
+    }
+  }
+  
+  //dude Configuration
+  &.dude-config {
+    @media screen and (min-width: $screen-md-min) {
+      &::before {
+        background: url('../img/walter-dashboard-config.png') no-repeat 50% 50%;
+        background-size: contain;
+      }
+    }
+  }
+  
+  //dude prodouct catalog
+  &.dude-prd-catalog {
+    $this__walter-W: 400px;
+    padding: $panel-body-padding + $line-height-computed;
+    
+    @media screen and (min-width: $screen-md-min) {
+      min-height: 400px;
+      padding-right: $this__walter-W;
+      &::before {
+        background: url('../img/walter-prd-catalog.png') no-repeat 50% 50%;
+        background-size: contain;
+        width: $this__walter-W;
+      }
+    }
+  }
+
+}
+
+.box-features {
+  margin-top: $general-margin * 5;
+  text-align: center;
+
+  .tit {
+    text-transform: uppercase;
+  }
+}
+
+.list-features {
+  $list-feature__item-icon-W: 100px;
+
+  @include flexbox;
+  @include flex-wrap(wrap);
+
+  .feature {
+    @include flex(0 0 33.33%);
+    margin: $padding-small-horizontal*3 0;
+
+    .feature-icon { // feature icon
+      display: block;
+      background: $grey-light;
+      width: $list-feature__item-icon-W;
+      height: $list-feature__item-icon-W;
+      line-height: $list-feature__item-icon-W;
+      border-radius: 100%;
+      margin: 0 auto $padding-large-horizontal;
+      text-align: center;
+      font-size: 4.5em;
+      color: #FFF;
+    }
+
+    &:nth-child(3n+1) {
+      padding-right: $general-margin * 2;
+    }
+    &:nth-child(3n+2) {
+      padding-left: $general-margin;
+      padding-right: $general-margin;
+    }
+    &:nth-child(3n+3) {
+      padding-left: $general-margin *2;
+    }
+  }
+}
+
+.panel-dashboard-main {
+  position: relative;
+
+  .panel-heading .tit::before {
+    @include material-icons(tune)
+  }
+
+  .panel-body {
+    .data {
+      padding-right: 0;
+      text-align: left;
+    }
+
+    .btn-settings {
+      width: 100%;
+      margin: 0;
+    }
+
+    .data-group-pixel .value {
+      word-break: break-all;
+    }
+
+    @media screen and (min-width: $screen-xs-min) {
+      @include flexbox;
+      @include flex-wrap(wrap);
+
+      .data-group {
+        @include flex(0 0 50%);
+
+        .data {
+          width: auto;
+        }
+
+        .value {
+          width: auto;
+        }
+      }
+
+      .data-group-pixel {
+        @include flex(0 0 100%);
+      }
+    }
+
+    @media screen and (min-width: $screen-sm-min) {
+      .btn-settings {
+        position: absolute;
+        top: 10px;
+        right: $panel-body-padding;
+        width: auto;
+      }
+    }
+  }
+
+  .data-group {
+    padding-bottom: $form-group-space-bottom;
+  }
+
+  .status {
+    .value {
+      text-transform: uppercase;
+      font-weight: bold;
+
+      .value-info {
+        $this__icon-W: 30px;
+
+        position: relative;
+        padding-right: $this__icon-W + $padding-small-horizontal/2;
+
+        &::after {
+          position: absolute;
+          top: 50%;
+          margin-top: -$this__icon-W/2;
+          right: 0;
+          width: $this__icon-W;
+          line-height: $this__icon-W;
+          font-size: 2em;
+          margin-left: $general-margin;
+        }
+      }
+    }
+
+    &.active {
+      .value-info {
+        color: $brand-success;
+
+        &::after {
+          @include material-icons(check);
+          
+        }
+      }
+    }
+
+    &.inactive {
+      .value-info {
+        color: $brand-danger;
+
+        &::after {
+          @include material-icons(close);
+        }
+      }
+    }
+  }
+}
+
+.panel-dashboard-activity {
+  .panel-heading .tit::before {
+    @include material-icons(graphic_eq)
+  }
+}

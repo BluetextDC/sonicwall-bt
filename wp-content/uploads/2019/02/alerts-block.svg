@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="347px" height="117px" viewBox="0 0 347 117" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>Group 69</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="100%" y1="2169.52882%" x2="0%" y2="2169.52882%" id="linearGradient-1">
+            <stop stop-color="#000000" offset="0%"></stop>
+            <stop stop-color="#F36E21" offset="19.4635116%"></stop>
+            <stop stop-color="#F36E21" offset="82.7786308%"></stop>
+            <stop stop-color="#000000" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-17" transform="translate(-7.000000, -309.000000)">
+            <g id="Group-69" transform="translate(7.680000, 306.240000)">
+                <g id="Group-68" transform="translate(0.000000, 0.000000)">
+                    <text id="Alerts" font-family="Helvetica" font-size="11.52" font-weight="normal" fill="#9B9B9B">
+                        <tspan x="17.28" y="11">ALERTS</tspan>
+                    </text>
+                    <path d="M5.68434189e-14,118.56 L345.6,118.56" id="Path-Copy-3" stroke="url(#linearGradient-1)" stroke-width="0.576" stroke-linecap="round" fill-rule="nonzero"></path>
+                    <g id="Group-9" transform="translate(17.280000, 41.280000)">
+                        <rect id="Rectangle" fill="#CC0300" fill-rule="nonzero" x="0" y="0" width="34.56" height="34.56" rx="1.92"></rect>
+                        <text id="" font-family="SonicWallIconFont" font-size="15.36" font-weight="normal" fill="#FFFFFF">
+                            <tspan x="9.6" y="23.6"></tspan>
+                        </text>
+                    </g>
+                    <rect id="Rectangle-Copy-7" fill="#FC9700" fill-rule="nonzero" x="90.24" y="41.28" width="34.56" height="34.56" rx="1.92"></rect>
+                    <text id="High" font-family="Nunito-Regular, Nunito" font-size="9.6" font-weight="normal" fill="#9B9B9B">
+                        <tspan x="24" y="95.44">High</tspan>
+                    </text>
+                    <text id="Medium" font-family="Nunito-Regular, Nunito" font-size="9.6" font-weight="normal" fill="#9B9B9B">
+                        <tspan x="90.24" y="95.44">Medium</tspan>
+                    </text>
+                    <text id="Low" font-family="Nunito-Regular, Nunito" font-size="9.6" font-weight="normal" fill="#9B9B9B">
+                        <tspan x="170.88" y="95.44">Low</tspan>
+                    </text>
+                    <text id="" font-family="SonicWallIconFont" font-size="15.36" font-weight="normal" fill="#000000">
+                        <tspan x="99.84" y="64.88"></tspan>
+                    </text>
+                    <g id="Group-12-Copy-2" transform="translate(247.680000, 26.880000)" fill="#FFFFFF" fill-opacity="0.16" fill-rule="nonzero">
+                        <path d="M31.68,63.36 C14.1836191,63.36 0,49.1763809 0,31.68 C0,14.1836191 14.1836191,0 31.68,0 C49.1763809,0 63.36,14.1836191 63.36,31.68 C63.36,49.1763809 49.1763809,63.36 31.68,63.36 Z M31.68,57.6 C45.9952207,57.6 57.6,45.9952207 57.6,31.68 C57.6,17.3647793 45.9952207,5.76 31.68,5.76 C17.3647793,5.76 5.76,17.3647793 5.76,31.68 C5.76,45.9952207 17.3647793,57.6 31.68,57.6 Z" id="Shape"></path>
+                    </g>
+                    <path d="M250.56,58.56 C250.56,74.4658008 263.454199,87.36 279.36,87.36 L279.36,87.36 C295.265801,87.36 308.16,74.4658008 308.16,58.56 C308.16,42.6541992 295.265801,29.76 279.36,29.76" id="Path" stroke="#EFE47E" stroke-width="5.76" stroke-linecap="round" fill-rule="nonzero"></path>
+                    <path d="M298.56,59.52 C298.56,48.9161328 289.963867,40.32 279.36,40.32" id="Path" stroke="#FC9700" stroke-width="5.76" stroke-linecap="round" fill-rule="nonzero"></path>
+                    <path d="M287.04,58.56 C287.04,54.3184531 283.601547,50.88 279.36,50.88" id="Path" stroke="#CC0300" stroke-width="5.76" stroke-linecap="round" fill-rule="nonzero"></path>
+                    <g id="Group-15-Copy-3" transform="translate(117.120000, 33.600000)">
+                        <circle id="Oval" fill="#FF3B30" fill-rule="nonzero" cx="6.72" cy="7.68" r="6.72"></circle>
+                        <text id="1" font-family="Helvetica" font-size="8.64" font-weight="normal" fill="#FFFFFF">
+                            <tspan x="3.84" y="10">1</tspan>
+                        </text>
+                    </g>
+                    <g id="Group-15-Copy-4" transform="translate(48.000000, 33.600000)">
+                        <circle id="Oval" fill="#FF3B30" fill-rule="nonzero" cx="6.72" cy="7.68" r="6.72"></circle>
+                        <circle id="Oval-Copy" fill="#FF3B30" fill-rule="nonzero" cx="6.72" cy="7.68" r="6.72"></circle>
+                        <text id="3" font-family="Helvetica" font-size="8.64" font-weight="normal" fill="#FFFFFF">
+                            <tspan x="4.8" y="10">3</tspan>
+                        </text>
+                    </g>
+                    <g id="Group-16" transform="translate(191.040000, 33.600000)">
+                        <rect id="Rectangle" fill="#FF3B30" fill-rule="nonzero" x="0" y="0.96" width="17.28" height="13.44" rx="6.72"></rect>
+                        <text id="12" font-family="Helvetica" font-size="8.64" font-weight="normal" fill="#FFFFFF">
+                            <tspan x="2.88" y="10">12</tspan>
+                        </text>
+                    </g>
+                </g>
+                <rect id="Rectangle-Copy-8" fill="#EFE47E" fill-rule="nonzero" x="163.2" y="41.28" width="34.56" height="34.56" rx="1.92"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

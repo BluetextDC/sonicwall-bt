@@ -1,0 +1,29 @@
+.gform_fields.top_label.form_sublabel_below.description_below {
+    clear: both;
+}
+li[class*="column-count-"] {
+    vertical-align: top;
+    box-sizing: border-box;
+    display: inline-block;
+}
+.gfmc-column {
+    display: inline-grid;
+    vertical-align: text-top;
+}
+.gfmc-column .gform_wrapper {
+    width: 100%;
+}
+li.gfmc-column ul {
+    margin-left: 0;
+    padding-left: 0;
+}
+@media screen and (max-width: 600px) {
+    li.gfmc-column {
+        width: 100% !important;
+    }
+}
+/* Class to remove left padding and margins from first column item on the form */
+li[class*="column-count-1"] > div > ul {
+    padding-left: 0;
+    margin-left: 0;
+}

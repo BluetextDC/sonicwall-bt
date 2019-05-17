@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 103 142" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;">
+    <g transform="matrix(1,0,0,1,-442,-176)">
+        <g>
+            <g id="Protection">
+                <g transform="matrix(0.629368,0,0,0.912089,180.12,20.3879)">
+                    <path d="M466.098,231.882L465.852,201.444C466.374,187.98 477.635,178.388 498.028,178.14C518.94,177.886 529.908,188.38 530.227,201.444L530.227,231.882" style="fill:none;stroke:white;stroke-width:16.59px;"/>
+                </g>
+                <path d="M524.545,279.23L462.596,279.23C457.487,279.23 453.34,275.082 453.34,269.974L453.34,234.195C453.34,229.087 457.487,224.939 462.596,224.939L524.545,224.939C529.654,224.939 533.801,229.087 533.801,234.195L533.801,269.974C533.801,275.082 529.654,279.23 524.545,279.23ZM498.308,246.538L498.308,238.517C497.107,233.822 490.436,233.862 489.344,238.517L489.344,246.747C486.066,248.449 483.824,251.875 483.824,255.821C483.824,261.46 488.402,266.038 494.041,266.038C499.679,266.038 504.257,261.46 504.257,255.821C504.257,251.706 501.818,248.155 498.308,246.538Z" style="fill:white;"/>
+            </g>
+            <g transform="matrix(1,0,0,1,-1.23147,8.19752)">
+                <text x="442.09px" y="308.889px" style="font-family:'Nunito-Bold', 'Nunito';font-weight:700;font-size:22px;fill:white;">P<tspan x="456.39px 464.596px " y="308.889px 308.889px ">ro</tspan>tection</text>
+            </g>
+        </g>
+    </g>
+</svg>

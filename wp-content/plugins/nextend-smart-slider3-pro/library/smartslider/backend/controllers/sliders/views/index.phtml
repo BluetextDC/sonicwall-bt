@@ -1,0 +1,37 @@
+<?php
+/**
+ * @var $this   N2View
+ * @var $_class N2SmartsliderBackendSlidersView
+ */
+
+N2Html::topBar();
+
+N2HTML::heading(array(
+    'title'   => n2_('Dashboard') . N2Html::tag('span', array(), n2_('Version') . ': ' . N2SS3::$version . '-' . N2SS3::$plan . '-r' . N2SS3::$revision . ' - <a target="_blank" href="https://smartslider3.helpscoutdocs.com/article/432-changelog">' . n2_('Changelog') . '</a>'),
+    'actions' => $_class->getDashboardButtons()
+));
+?>
+
+<?php
+$model = N2SmartsliderLicenseModel::getInstance();
+if (!$model->hasKey()) {
+    N2Html::banner(array(
+        'id'          => 'n2-ss-add-license-key',
+        'image'       => '$ss$/admin/images/pro/activate-pro.png',
+        'title'       => n2_('Activate Smart Slider 3 PRO'),
+        'description' => n2_('Activation is required to unlock all features!') . ' ' . n2_('Register Smart Slider 3 PRO on this domain to enable auto update, slider templates and slide library.'),
+        'buttons'     => array(
+            '<a onclick="N2Classes.License.get().startActivation();return false;" href="#" class="n2-button n2-button-normal n2-button-green n2-button-l n2-h4 n2-b n2-uc n2-radius-s">' . n2_('Activate now') . '</a>'
+        )
+    ));
+}
+
+?>
+
+    <div class="n2-ss-sliders-outer-container">
+        <?php
+        N2SSBackendFragments::sliderManager();
+        ?>
+    </div>
+
+<?php N2SS3::showBeacon('Main page, Import, Update'); ?>

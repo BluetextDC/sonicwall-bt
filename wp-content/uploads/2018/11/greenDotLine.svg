@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="225px" height="113px" viewBox="0 0 225 113" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.4 (67378) - http://www.bohemiancoding.com/sketch -->
+    <title>greenDotLine</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-dasharray="6,6">
+        <g id="Artboard-Copy-35" transform="translate(-826.000000, -404.000000)" fill-rule="nonzero" stroke="#19AA5B" stroke-width="10">
+            <g id="Group-Copy-2" transform="translate(771.000000, 362.000000)">
+                <path d="M219.663565,204.835965 L219.663565,4.16403461 C219.663565,-5.77709089 211.604691,-13.8359654 201.663565,-13.8359654 L110.663565,-13.8359654" id="greenDotLine" transform="translate(165.163565, 95.500000) scale(-1, -1) rotate(-90.000000) translate(-165.163565, -95.500000) "></path>
+            </g>
+        </g>
+    </g>
+</svg>
