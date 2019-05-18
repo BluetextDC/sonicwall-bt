@@ -531,7 +531,7 @@ div.asp_m.asp_m_1 .probox .prosettings .innericon svg {
     #ajaxsearchpro1_1.asp_msie .probox .proloading,
     #ajaxsearchpro1_2.asp_msie .probox .proloading,
 div.asp_m.asp_m_1.asp_msie .probox .proloading {
-    background-image: url("//test.sonicwall.com/wp-content/plugins/ajax-search-pro//img/loading/newload1.gif");
+    background-image: url("//job-production-import-test.dev.swweb.app/wp-content/plugins/ajax-search-pro//img/loading/newload1.gif");
     float: right;
 }
 
@@ -976,4 +976,4 @@ div.asp_r.asp_r_1 .mCSBap_scrollTools .mCSBap_buttonUp {
     border-style: solid;
     border-width: 0 5px 6px 5px;
     border-color: transparent transparent rgb(112, 112, 112) transparent;
-}/* Generated at: 2019-03-03 01:26:18 */
+}/* Generated at: 2019-05-17 21:52:42 */
