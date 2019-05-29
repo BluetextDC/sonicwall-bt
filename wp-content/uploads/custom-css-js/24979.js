@@ -3,7 +3,7 @@
     //pointer keeps a reference to the type node in product list
     var dataset = null, pricelistdescription = null, pointer = [];
 
-    jQuery(document).ready(function() {
+    jQuery(document).on('gform_post_render',function() {
 
         //disableRegForm(); //disable registration form by default
 
@@ -160,7 +160,7 @@
         jQuery('#banner-link').append('<span class="" style="top: 61px; width: 905px;">\
 	  <span class="headline" style="color: #ffffff;">Get a great deal on deeper <br />network security </span>\
 	  <span class="subheadline" style="color: #ffffff;">Join the Dell Security Customer Advantage Program.</span>\
-	  <span class="action text" style="color: #ffffff;">Read Data Sheet<span>?</span></span>\
+	  <span class="action text" style="color: #ffffff;">Read Data Sheet<span>›</span></span>\
 	</span>');
     });
 
@@ -226,7 +226,6 @@
                 jQuery(this).prop('disabled', false);
 				jQuery(this).parents('.gfield').removeClass('gfield_disabled_c');
 				jQuery('.gform_button').prop('disabled', false);
-				jQuery('#link-to-privacy-policy').css('display', 'block');
             }
         });
 
@@ -241,11 +240,9 @@
 				jQuery(this).prop('disabled', true);
 				jQuery(this).parents('.gfield').addClass('gfield_disabled_c');
 				jQuery('.gform_button').prop('disabled', true);
-				jQuery('#link-to-privacy-policy').css('display', 'none');
             }
         });
 		jQuery('.newUpgradeType').prop('disabled', false);
 		
     }
 </script>
-<!-- end Simple Custom CSS and JS -->
