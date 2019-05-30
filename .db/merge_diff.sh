@@ -15,7 +15,7 @@ echo $hash
 echo "Running Diff:"
 mysql --force -h localhost -u root -proot wp_diff < ./.db/commits/$hash.sql
 echo "Exporting current.sql"
-mysqldump -h localhost -u root -proot wp_diff -r /tmp/mergeoutput.sql
+mysqldump -h localhost -u root -proot testmerge -r /tmp/mergeoutput.sql
 echo "Export Done, Chunk it"
 mkdir /tmp/mergesplit
 cd /tmp/mergesplit
