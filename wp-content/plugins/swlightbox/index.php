@@ -8,7 +8,18 @@ Author: Brad Kendall
 */
 
 function swlightbox( $atts, $content ){
-	$a = new SimpleXMLElement($content);
+	
+	if ($content && strlen($content) > 0)
+	{
+		
+		try {
+			$a = new SimpleXMLElement($content);
+		}
+		catch(Exception $e)
+		{
+			return $content;
+		}
+	
 	
 	if (isset($a) && $a)
 	{
@@ -34,7 +45,7 @@ function swlightbox( $atts, $content ){
 	
     $content = str_replace("<a ", "<a data-fancybox data-type='iframe' ", $content);
 
-	
+	}
     return $content;
 }
 
