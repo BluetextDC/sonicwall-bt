@@ -113,18 +113,45 @@ function main_topic_titles(){
 				foreach ($pt->data as $book_title ) {
 					if ( !empty($book_title->pdf_only))
                     {
-                        $a_href = str_replace("<a ", "<a data-fancybox data-type='iframe' data-src-override='".home_url()."/support/technical-documentation/" . $book_title->post_name."' ", $book_title->pdf_only);
+                        $post_name = $book_title->post_name;
+                        if (!$post_name)
+                        {
+                            if ($book_title && $book_title->pdf_only && strlen($book_title->pdf_only) > 0)
+                            {
+                                try {
+                                    $a = new SimpleXMLElement($book_title->pdf_only);
+                                    
+                                    if ($a && isset($a['href']) && strlen($a['href']) > 0)
+                                    {
+                                        $filename = basename($a['href'], ".pdf");
+                                    
+                                        if ($filename && strlen($filename) > 0)
+                                        {
+                                             $post_name = $filename;
+                                        }
+                                         
+                                    }
+                                }
+                                catch (Exception $e)
+                                {
+                                    //Die silently
+                                }
+                                
+                            }
+                            
+                        }
+                        $a_href = str_replace("<a ", "<a data-fancybox data-type='iframe' data-src-override='".home_url()."/support/technical-documentation/" . $post_name."' ", $book_title->pdf_only);
 						$title_holder .= '<p>' . $a_href . '</p>';
                     
 					}
                     else if ( !empty($book_title->first_child_post_id))
                     {
-                        $title_holder .= '<p><a href="/support/technical-documentation/' . $book_title->post_name . '" >' . $book_title->parent_post_title . '</a></p>';
+                        $title_holder .= '<p><a data-fancybox data-type="iframe" href="/support/technical-documentation/' . $book_title->post_name . '" >' . $book_title->parent_post_title . '</a></p>';
 					}
 					
 				}
-                
-                $title_holder .= '<script>window.initFancybox();</script>';
+//                
+//                $title_holder .= '<script>window.initFancybox();</script>';
 				$title_holder .= '</div></div>';
 			}
 		}
