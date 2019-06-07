@@ -15,8 +15,7 @@ jQuery(document).ready(function(){
     
     window.initFancybox = function()
     {
-        console.log("Running initFancybox");
-       jQuery.fancybox.destroy()
+       jQuery.fancybox.destroy();
        jQuery("[data-fancybox]").fancybox({
 			beforeLoad: function( instance ) {
 
