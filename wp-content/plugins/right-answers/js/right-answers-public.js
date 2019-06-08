@@ -524,6 +524,7 @@ jQuery(function($){
 							$('.sn_result_area').html(resp);
 						}).done(function(){
 							$('#working-label').remove();
+                            window.initFancybox();
 						})
 						
 						// console.log('td-main-done');
@@ -534,8 +535,7 @@ jQuery(function($){
 		$(document).on('change', '#sub_cat_selector', function(){
 			$('div.entry-content').prepend('<h3 id="working-label">Working......</h3>');
 			$('.sn_result_area').html(' ');
-			console.log('sub-cat-selector changed');
-
+		
 			var parent_term = $('#td-main-selector').val();
 			var child_term = $(this).val();
 
@@ -551,6 +551,7 @@ jQuery(function($){
 				$('.sn_result_area').html(respt);
 			}).done(function(){
 				$('#working-label').remove();
+                window.initFancybox();
 			})
 		});
 

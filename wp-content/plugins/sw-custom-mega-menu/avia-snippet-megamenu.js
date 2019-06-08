@@ -170,8 +170,7 @@
 					var listItem = megaItems.filter(':eq('+i+')'),
 						item = listItem.find("div:first");
 
-
-					item.stop().css('display','block').animate({opacity:0},300, function()
+					item.stop().animate({opacity:0},300, function()
 					{
 						$(this).css('display','none');
 						listItem.css({overflow:'hidden'});
