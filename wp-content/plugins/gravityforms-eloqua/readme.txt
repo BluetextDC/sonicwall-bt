@@ -1,8 +1,8 @@
 === Gravity Forms Eloqua ===
 Tags: gravity forms, forms, gravity, form, crm, gravity form, mail, email, newsletter, Eloqua, Oracle, plugin, sidebar, widget, mailing list, API, email marketing, newsletters
 Requires at least: 2.8
-Tested up to: 4.9.6
-Stable tag: 2.1.6
+Tested up to: 5.1.1
+Stable tag: 2.2.5
 Contributors: briandichiara
 Donate link: https://www.paypal.me/briandichiara
 Purchase License: https://briandichiara.com/product/gravityforms-eloqua/
@@ -38,22 +38,42 @@ When this plugin cannot communicate with Eloqua, there could be a couple of reas
 3. Form Feed Setup
 
 == Upgrade Notice ==
-= Latest Version (2.1.7) =
-* Added support for older versions of Gravity Forms
+= Latest Version (2.2.5) =
+* Fixed PHP bug when OAuth token needed to be refreshed.
+* Selectively loaded WP_Http only when needed.
+* Code clean up and added function documentation.
 
-= Previous Version (2.1.6) =
-* Added Compliance with GDPR
-* Removed debug logging of personal data.
-* Added privacy statements to WordPress Privacy updates of v4.9.6
-* Added hooks to remove personal data from stored settings.
+= Previous Version (2.2.4) =
+* Added FormFieldGroup support.
 
-= Recent Version (2.1.5) =
-* Added a Test Connection button for immediate feedback about Eloqua Connection.
-* Fixed issue where object being sent to Eloqua was mistaken for array.
-* Fixed an undefined variable bug.
-* More logging to help uncover authentication issues.
+= Recent Version (2.2.3) =
+* Hot fix release to solve PHP Fatal error when old OAuth token is used with new OAuth library.
 
 == Changelog ==
+= 2.2.5 (2019-05-03) =
+* Fixed PHP bug when OAuth token needed to be refreshed.
+* Selectively loaded WP_Http only when needed.
+* Code clean up and added function documentation.
+
+= 2.2.4 (2019-04-03) =
+* Added FormFieldGroup support.
+
+= 2.2.3 (2019-02-01) =
+* Hot fix release to solve PHP Fatal error when old OAuth token is used with new OAuth library.
+
+= 2.2.2 (2018-12-19) =
+* Fixed a bug where access token wasn't getting restored properly.
+* Fixed a bug with legacy auth not able to send HTTP requests.
+* Fixed a bug where some legacy code for OAuth refresh tokens got removed, now restored.
+
+= 2.2.1 (2018-12-18) =
+* Resolved issue with auto-updater due to changes in Gitlab API.
+
+= 2.2.0 (2018-12-18) =
+* New OAuth Library (thephpleague/oauth2-client) is now being used for authentication, form retrieval, and submissions. You'll need to disconnect and re-connect from Eloqua in order for the libary to be used. Hopefully this should help substantially with Eloqua disconnects in the future. Please send any issues you find to support!
+* Added Eloqua cookie support - Uses elqCustomerGUID by default. Other cookie values can be filtered with gfeloqua_eloqua_cookies.
+* Additional filter added gfeloqua_custom_data for custom data to be sent with request.
+
 = 2.1.7 (2018-10-31) =
 * Added support for older versions of Gravity Forms
 
