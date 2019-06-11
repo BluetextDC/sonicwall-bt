@@ -22,13 +22,13 @@ class GFEloqua_Bootstrap {
 
 		GFForms::include_feed_addon_framework();
 
-		require_once( GFELOQUA_PATH . '/includes/helpers.php' );
-		require_once( GFELOQUA_PATH . '/api/class-eloqua-api.php' );
-		require_once( GFELOQUA_PATH . '/includes/class-gfeloqua-entry-notes.php' );
-		require_once( GFELOQUA_PATH . '/includes/class-gfaddonfeedstablelegacy.php' );
-		require_once( GFELOQUA_PATH . '/includes/class-gfeloqua.php' );
-		require_once( GFELOQUA_PATH . '/includes/class-bd-license-manager.php' );
-		require_once( GFELOQUA_PATH . '/includes/class-gfeloqua-extensions.php' );
+		require_once GFELOQUA_PATH . '/includes/helpers.php';
+		require_once GFELOQUA_PATH . '/api/class-eloqua-api.php';
+		require_once GFELOQUA_PATH . '/includes/class-gfeloqua-entry-notes.php';
+		require_once GFELOQUA_PATH . '/includes/class-gfaddonfeedstablelegacy.php';
+		require_once GFELOQUA_PATH . '/includes/class-gfeloqua.php';
+		require_once GFELOQUA_PATH . '/includes/class-bd-license-manager.php';
+		require_once GFELOQUA_PATH . '/includes/class-gfeloqua-extensions.php';
 
 		GFAddOn::register( 'GFEloqua' );
 

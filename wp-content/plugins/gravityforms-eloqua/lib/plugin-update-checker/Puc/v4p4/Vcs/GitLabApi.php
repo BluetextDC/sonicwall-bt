@@ -11,7 +11,7 @@ if ( !class_exists('Puc_v4p4_Vcs_GitLabApi', false) ):
 		/**
 		 * @var string GitLab server host.
 		 */
-		private $repositoryHost;
+		protected $repositoryHost;
 
 		/**
 		 * @var string GitLab repository name.
@@ -25,13 +25,26 @@ if ( !class_exists('Puc_v4p4_Vcs_GitLabApi', false) ):
 
 		public function __construct($repositoryUrl, $accessToken = null) {
 			//Parse the repository host to support custom hosts.
-			$this->repositoryHost = @parse_url($repositoryUrl, PHP_URL_HOST);
+			$port = @parse_url($repositoryUrl, PHP_URL_PORT);
+			if ( !empty($port) ){
+				$port = ':' . $port;
+			}
+			$this->repositoryHost = @parse_url($repositoryUrl, PHP_URL_HOST) . $port;
 
 			//Find the repository information
 			$path = @parse_url($repositoryUrl, PHP_URL_PATH);
 			if ( preg_match('@^/?(?P<username>[^/]+?)/(?P<repository>[^/#?&]+?)/?$@', $path, $matches) ) {
 				$this->userName = $matches['username'];
 				$this->repositoryName = $matches['repository'];
+			} elseif ( ($this->repositoryHost === 'gitlab.com') ) {
+				//This is probably a repository in a subgroup, e.g. "/organization/category/repo".
+				$parts = explode('/', trim($path, '/'));
+				if ( count($parts) < 3 ) {
+					throw new InvalidArgumentException('Invalid GitLab.com repository URL: "' . $repositoryUrl . '"');
+				}
+				$lastPart = array_pop($parts);
+				$this->userName = implode('/', $parts);
+				$this->repositoryName = $lastPart;
 			} else {
 				//This is not a traditional url, it could be gitlab is in a deeper subdirectory.
 				//Get the path segments.
@@ -69,7 +82,7 @@ if ( !class_exists('Puc_v4p4_Vcs_GitLabApi', false) ):
 		 * @return Puc_v4p4_Vcs_Reference|null
 		 */
 		public function getLatestTag() {
-			$tags = $this->api('/:user/:repo/repository/tags');
+			$tags = $this->api('/:id/repository/tags');
 			if ( is_wp_error($tags) || empty($tags) || !is_array($tags) ) {
 				return null;
 			}
@@ -80,12 +93,12 @@ if ( !class_exists('Puc_v4p4_Vcs_GitLabApi', false) ):
 			}
 
 			$tag = $versionTags[0];
-			return new Puc_v4p4_Vcs_Reference( array(
+			return new Puc_v4p4_Vcs_Reference(array(
 				'name' => $tag->name,
 				'version' => ltrim($tag->name, 'v'),
 				'downloadUrl' => $this->buildArchiveDownloadUrl($tag->name),
-				'apiResponse' => $tag,
-			) );
+				'apiResponse' => $tag
+			));
 		}
 
 		/**
@@ -95,7 +108,7 @@ if ( !class_exists('Puc_v4p4_Vcs_GitLabApi', false) ):
 		 * @return null|Puc_v4p4_Vcs_Reference
 		 */
 		public function getBranch($branchName) {
-			$branch = $this->api('/:user/:repo/repository/branches/' . $branchName);
+			$branch = $this->api('/:id/repository/branches/' . $branchName);
 			if ( is_wp_error($branch) || empty($branch) ) {
 				return null;
 			}
@@ -120,7 +133,7 @@ if ( !class_exists('Puc_v4p4_Vcs_GitLabApi', false) ):
 		 * @return string|null
 		 */
 		public function getLatestCommitTime($ref) {
-			$commits = $this->api('/:user/:repo/repository/commits/', array('ref_name' => $ref));
+			$commits = $this->api('/:id/repository/commits/', array('ref_name' => $ref));
 			if ( is_wp_error($commits) || !is_array($commits) || !isset($commits[0]) ) {
 				return null;
 			}
@@ -143,7 +156,7 @@ if ( !class_exists('Puc_v4p4_Vcs_GitLabApi', false) ):
 			if ( !empty($this->httpFilterName) ) {
 				$options = apply_filters($this->httpFilterName, $options);
 			}
-
+			
 			$response = wp_remote_get($url, $options);
 			if ( is_wp_error($response) ) {
 				do_action('puc_api_error', $response, null, $url, $this->slug);
@@ -175,14 +188,15 @@ if ( !class_exists('Puc_v4p4_Vcs_GitLabApi', false) ):
 		protected function buildApiUrl($url, $queryParams) {
 			$variables = array(
 				'user' => $this->userName,
-				'repo' => $this->repositoryName
+				'repo' => $this->repositoryName,
+				'id'   => $this->userName . '/' . $this->repositoryName,
 			);
 
 			foreach ($variables as $name => $value) {
-				$url = str_replace("/:{$name}", urlencode('/' . $value), $url);
+				$url = str_replace("/:{$name}", '/' . urlencode($value), $url);
 			}
 
-			$url = substr($url, 3);
+			$url = substr($url, 1);
 			$url = sprintf('https://%1$s/api/v4/projects/%2$s', $this->repositoryHost, $url);
 
 			if ( !empty($this->accessToken) ) {
@@ -204,7 +218,7 @@ if ( !class_exists('Puc_v4p4_Vcs_GitLabApi', false) ):
 		 * @return null|string Either the contents of the file, or null if the file doesn't exist or there's an error.
 		 */
 		public function getRemoteFile($path, $ref = 'master') {
-			$response = $this->api('/:user/:repo/repository/files/' . $path, array('ref' => $ref));
+			$response = $this->api('/:id/repository/files/' . $path, array('ref' => $ref));
 			if ( is_wp_error($response) || !isset($response->content) || $response->encoding !== 'base64' ) {
 				return null;
 			}
@@ -220,12 +234,11 @@ if ( !class_exists('Puc_v4p4_Vcs_GitLabApi', false) ):
 		 */
 		public function buildArchiveDownloadUrl($ref = 'master') {
 			$url = sprintf(
-				'https://%1$s/%2$s/%3$s/repository/%4$s/archive.zip',
+				'https://%1$s/api/v4/projects/%2$s/repository/archive.zip',
 				$this->repositoryHost,
-				urlencode($this->userName),
-				urlencode($this->repositoryName),
-				urlencode($ref)
+				urlencode($this->userName . '/' . $this->repositoryName)
 			);
+			$url = add_query_arg('sha', urlencode($ref), $url);
 
 			if ( !empty($this->accessToken) ) {
 				$url = add_query_arg('private_token', $this->accessToken, $url);

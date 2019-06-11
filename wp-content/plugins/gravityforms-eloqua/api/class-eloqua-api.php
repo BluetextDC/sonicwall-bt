@@ -9,10 +9,6 @@ if ( class_exists( 'Eloqua_API' ) ) {
 	return;
 }
 
-if ( ! class_exists( 'WP_Http' ) ) {
-	include_once( ABSPATH . WPINC . '/class-http.php' );
-}
-
 /**
  * Main Eloqua API class
  */
@@ -101,18 +97,27 @@ class Eloqua_API {
 	public $_oauth_token_url = 'https://login.eloqua.com/auth/oauth2/token';
 
 	/**
+	 * OAuth Resource URL
+	 *
+	 * @var string
+	 */
+	public $_oauth_resource_url = 'https://login.eloqua.com/auth/oauth2/resource';
+
+	/**
 	 * Client ID for Gravity Forms Eloqua Application
 	 *
 	 * @var string
 	 */
-	public $_oauth_client_id = '11c8590a-f513-496a-aa9c-4a224dd92861';
+	//public $_oauth_client_id = '11c8590a-f513-496a-aa9c-4a224dd92861';
+	public $_oauth_client_id = '7e447ae3-446f-4244-9fc9-34fb77f3b61d';
 
 	/**
 	 * Client secret for Gravity Forms Eloqua Application
 	 *
 	 * @var string
 	 */
-	public $_oauth_client_secret = '15325mypy7U2JFaTg35mF8ekItAyOdiOwfsZBx2dbHEECNecqSy9KK5ammgNlEhMwhhEav1te0hP8hdmQ1KaZjY1z9yQLlaGkQgP';
+	//public $_oauth_client_secret = '15325mypy7U2JFaTg35mF8ekItAyOdiOwfsZBx2dbHEECNecqSy9KK5ammgNlEhMwhhEav1te0hP8hdmQ1KaZjY1z9yQLlaGkQgP';
+	public $_oauth_client_secret = '160cWuukAl0Ohaq038wZFuvgAssRox08SYARBlQ0Syub3BYPbJ4rgu3RiMPhjUcYdsKdlYfLeqY~2N8hldkauv89BU2HioQYx4ZB';
 
 	/**
 	 * OAuth Redirect URL
@@ -159,12 +164,16 @@ class Eloqua_API {
 	/**
 	 * Constructor
 	 *
-	 * @param string $authstring  Authstring from OAuth.
-	 * @param bool   $use_oauth   Use OAuth (or basic).
+	 * @param string/object $auth       Authstring or Object from OAuth.
+	 * @param bool          $use_oauth  Use OAuth (or basic).
+	 * @param int           $timeout    Timeout for API calls.
 	 */
-	function __construct( $authstring = '', $use_oauth = false, $timeout = 5 ) {
-		if ( $authstring ) {
-			$this->authstring = $authstring;
+	public function __construct( $auth = '', $use_oauth = false, $timeout = 5 ) {
+		if ( $auth ) {
+			if ( is_object( $auth ) && ! is_a( $auth, 'League\OAuth2\Client\Token\AccessToken' ) ) {
+				$auth = unserialize( serialize( $auth ) );
+			}
+			$this->auth = $auth;
 		}
 
 		$this->use_oauth = $use_oauth;
@@ -225,7 +234,7 @@ class Eloqua_API {
 	 *
 	 * @return string  OAuth URL.
 	 */
-	function get_oauth_url( $source = false ) {
+	public function get_oauth_url( $source = false ) {
 		if ( is_multisite() ) {
 			$return_url = get_site_url( get_current_blog_id() );
 		} else {
@@ -233,17 +242,79 @@ class Eloqua_API {
 		}
 		$return_url = str_replace( array( 'http://', 'https://' ), '', $return_url );
 
-		$url = $this->_oauth_authorize_url .
-			'?response_type=code&client_id=' . $this->_oauth_client_id .
-			'&scope=' . urlencode( $this->_oauth_scope ) .
-			'&redirect_uri=' . urlencode( $this->_oauth_redirect_uri ) .
-			'&state=' . $return_url;
+		$provider          = $this->get_oauth_provider( 'auth_url' );
+		$authorization_url = $provider->getAuthorizationUrl(
+			array(
+				'redirect_uri' => $this->_oauth_redirect_uri,
+				'state'        => $return_url,
+				'source'       => $source,
+			)
+		);
 
-		if ( $source ) {
-			$url .= '&source=' . urlencode( $source );
+		$_SESSION['oauth2state'] = $provider->getState();
+
+		return $authorization_url;
+	}
+
+	/**
+	 * Gets an instance of OAuth provider.
+	 *
+	 * @param string $for  Used for debugging.
+	 *
+	 * @return object  OAuth Provider object.
+	 */
+	public function get_oauth_provider( $for = '' ) {
+		$client_id     = $this->_oauth_client_id;
+		$client_secret = $this->_oauth_client_secret;
+
+		$basic_auth = $client_id . ':' . $client_secret . '@';
+		$token_url  = str_replace( array( 'http://', 'https://' ), 'https://' . $basic_auth, $this->_oauth_token_url );
+
+		return new \League\OAuth2\Client\Provider\GenericProvider(
+			array(
+				'clientId'                => $client_id,
+				'clientSecret'            => $client_secret,
+				'redirectUri'             => $this->_oauth_redirect_uri,
+				'urlAuthorize'            => $this->_oauth_authorize_url,
+				'urlAccessToken'          => $token_url,
+				'urlResourceOwnerDetails' => $this->_oauth_resource_url,
+			)
+		);
+	}
+
+	/**
+	 * Retrieves the OAuth access token
+	 *
+	 * @param string $code     Auth code.
+	 * @param bool   $timeout  Request timeout.
+	 *
+	 * @return string|false  Access token or false upon failure.
+	 */
+	public function get_access_token( $code, $timeout = false ) {
+		$provider     = $this->get_oauth_provider( 'auth_code' );
+		$access_token = false;
+
+		try {
+			$params = array(
+				'code'         => $code,
+				'redirect_uri' => $this->_oauth_redirect_uri,
+			);
+			if ( $timeout ) {
+				$params['timeout'] = $timeout;
+			}
+			$access_token = $provider->getAccessToken( 'authorization_code', $params );
+		} catch ( IdentityProviderException $e ) {
+			$response = $e->getResponseBody();
+			$error    = __METHOD__ . '() => ' . $e->getMessage();
+			if ( isset( $response['error_description'] ) ) {
+				$error .= ': ' . $response['error_description'];
+			}
+			$this->errors[] = $error;
+		} catch ( Exception $e ) {
+			$this->errors[] = __METHOD__ . '() => ' . $e->getMessage();
 		}
 
-		return $url;
+		return $access_token;
 	}
 
 	/**
@@ -251,7 +322,7 @@ class Eloqua_API {
 	 *
 	 * @return string  Basic Auth URL
 	 */
-	function get_auth_url() {
+	public function get_auth_url() {
 		return $this->basic_auth_url;
 	}
 
@@ -262,11 +333,7 @@ class Eloqua_API {
 	 *
 	 * @return bool  If initialized
 	 */
-	function init( $connection = false ) {
-		if ( ! $this->connection ) {
-			return false;
-		}
-
+	public function init( $connection = false ) {
 		if ( ! $connection ) {
 			$connection = get_transient( 'gfeloqua_connection' );
 		}
@@ -281,13 +348,70 @@ class Eloqua_API {
 			return false;
 		}
 
-		$this->_setup_urls( $connection->urls );
+		$this->setup_urls( $connection->urls );
 
 		if ( ! get_transient( 'gfeloqua_connection' ) ) {
+			// Keep Connection stored for 1 hour.
 			set_transient( 'gfeloqua_connection', $connection, MINUTE_IN_SECONDS * 60 );
 		}
 
 		return true;
+	}
+
+	/**
+	 * Refreshes the OAuth token.
+	 *
+	 * @return string  New OAuth access token.
+	 */
+	public function refresh_token() {
+		$provider = $this->get_oauth_provider( 'refresh_token' );
+
+		try {
+			$new_access_token = $provider->getAccessToken(
+				'refresh_token',
+				array(
+					'refresh_token' => $this->auth->getRefreshToken(),
+				)
+			);
+		} catch ( Exception $e ) {
+			if ( $e->getMessage() == 'invalid_grant' ) {
+				return false;
+			}
+		}
+
+		update_option( GFELOQUA_OPT_PREFIX . 'access_token', $new_access_token );
+		update_option( GFELOQUA_OPT_PREFIX . 'authentication_timestamp', date( 'Y-m-d H:i:s', current_time( 'timestamp' ) ) );
+
+		return $new_access_token;
+	}
+
+	/**
+	 * Gets the Auth object
+	 *
+	 * @return object|false  Returns false when auth is not an object.
+	 */
+	public function get_auth() {
+		if ( is_object( $this->auth ) ) {
+			if ( $this->auth->hasExpired() ) {
+				$this->refresh_token();
+			}
+			return $this->auth;
+		}
+		return false;
+	}
+
+	/**
+	 * Returns auth string.
+	 *
+	 * @return string  Eloqua OAuth string.
+	 */
+	public function get_auth_string() {
+		if ( is_object( $this->get_auth() ) ) {
+			$string = $this->auth->getToken();
+		} else {
+			$string = $this->auth;
+		}
+		return $string;
 	}
 
 	/**
@@ -300,35 +424,55 @@ class Eloqua_API {
 			return true;
 		}
 
-		$type = $this->use_oauth ? 'Bearer' : 'Basic';
+		$type        = $this->use_oauth ? 'Bearer' : 'Basic';
+		$auth_string = $this->get_auth_string();
 
 		$this->connection_args = array(
 			'headers' => array(
-				'Authorization' => $type . ' ' . $this->authstring,
+				'Authorization' => $type . ' ' . $auth_string,
 			),
 			'timeout' => $this->timeout,
 		);
 
-		$this->connection = new WP_Http();
-		$response = $this->connection->request( $this->get_auth_url(), $this->connection_args );
-		$this->last_response = $response;
+		if ( is_object( $this->auth ) ) {
+			unset( $this->connection_args['headers']['Authorization'] ); // Not needed for getAuthenticatedRequest().
 
-		if ( is_wp_error( $response ) ) {
-			if ( false !== stripos( 'curl error 28', $response->get_error_message() ) ) {
-				$this->is_timeout = true;
+			$provider = $this->get_oauth_provider( 'connect' );
+			try {
+				$url        = $this->get_auth_url();
+				$request    = $provider->getAuthenticatedRequest( 'GET', $url, $this->get_auth(), $this->connection_args );
+				$response   = $provider->getResponse( $request );
+				$connection = $this->validate_response( $response );
+
+				if ( is_object( $connection ) ) {
+					return $this->init( $connection );
+				}
+			} catch ( Exception $e ) {
+				$this->errors[] = __METHOD__ . '() => ' . $e->getMessage();
 			}
-			$this->errors[] = __METHOD__ . '() => WP_Http Error: ' . $response->get_error_message() . ' (' . $response->get_error_code() . ')';
-			return false;
-		}
-
-		if ( $this->is_json( $response['body'] ) ) {
-			$connection = json_decode( $response['body'] );
 		} else {
-			$connection = $response['body'];
-		}
+			$this->load_wp_http();
 
-		if ( is_object( $connection ) ) {
-			return $this->init( $connection );
+			$response            = $this->connection->request( $this->get_auth_url(), $this->connection_args );
+			$this->last_response = $response;
+
+			if ( is_wp_error( $response ) ) {
+				if ( false !== stripos( 'curl error 28', $response->get_error_message() ) ) {
+					$this->is_timeout = true;
+				}
+				$this->errors[] = __METHOD__ . '() => WP_Http Error: ' . $response->get_error_message() . ' (' . $response->get_error_code() . ')';
+				return false;
+			}
+
+			if ( $this->is_json( $response['body'] ) ) {
+				$connection = json_decode( $response['body'] );
+			} else {
+				$connection = $response['body'];
+			}
+
+			if ( is_object( $connection ) ) {
+				return $this->init( $connection );
+			}
 		}
 
 		// Looks like the credentials could be bad.
@@ -342,7 +486,18 @@ class Eloqua_API {
 		$this->errors[] = __METHOD__ . '() => ' . print_r( $connection, true );
 
 		return false;
+	}
 
+	/**
+	 * Loads WP_Http, if necessary.
+	 */
+	public function load_wp_http() {
+		if ( ! class_exists( 'WP_Http' ) ) {
+			include_once ABSPATH . WPINC . '/class-http.php';
+		}
+		if ( ! $this->connection ) {
+			$this->connection = new WP_Http();
+		}
 	}
 
 	/**
@@ -359,7 +514,7 @@ class Eloqua_API {
 	 *
 	 * @param object $urls  Response Object with URLs.
 	 */
-	private function _setup_urls( $urls ) {
+	private function setup_urls( $urls ) {
 		$rest_urls = array();
 		foreach ( $urls->apis->rest as $key => $rest_url ) {
 			$rest_urls[ $key ] = str_replace( '{version}', $this->rest_api_version, $rest_url );
@@ -381,42 +536,76 @@ class Eloqua_API {
 		if ( ! $this->connect() ) {
 			return false;
 		}
+
+		$return = false;
+
 		$this->debug[] = __METHOD__ . '() => API CALL: ' . $endpoint;
 
-		$url = $this->urls['standard'] . trim( $endpoint, '/' );
+		$url  = $this->urls['standard'] . trim( $endpoint, '/' );
 		$args = $this->connection_args;
-		$args['method'] = $method;
 
 		if ( $data ) {
-			$args['body'] = json_encode( $data );
+			$args['body']                    = json_encode( $data );
 			$args['headers']['Content-Type'] = 'application/json';
 		}
 
-		$response = $this->connection->request( $url, $args );
-		$this->last_response = $response;
+		if ( is_object( $this->auth ) ) {
+			unset( $args['headers']['Authorization'] ); // Not needed for getAuthenticatedRequest().
 
-		if ( is_wp_error( $response ) ) {
-			$this->errors[] = __METHOD__ . '() => WP_Http Error: ' . $response->get_error_message() . ' (' . $response->get_error_code() . ')';
-			return false;
-		}
-
-		$data = $this->validate_response( $response );
-
-		if ( $data ) {
-			if ( ! is_object( $data ) ) {
-				if ( is_string( $response ) ) {
-					$this->errors[] = __METHOD__ . '() => ' . __( 'API Response Error', 'gfeloqua' ) . ': ' . print_r( $response, true );
+			$provider = $this->get_oauth_provider( 'call/' . $endpoint );
+			try {
+				$request  = $provider->getAuthenticatedRequest( $method, $url, $this->get_auth(), $args );
+				$response = $provider->getResponse( $request );
+				$return   = $this->validate_response( $response );
+			} catch ( GuzzleHttp\Exception\ClientException $e ) {
+				$response = $e->getResponse();
+				$body     = $response->getBody()->getContents();
+				$json     = json_decode( $body );
+				if ( is_array( $json ) ) { // Probably an object validation error.
+					foreach ( $json as $error ) {
+						if ( ! is_object( $error ) ) {
+							continue;
+						}
+						$this->errors[] = __METHOD__ . '() => ' . $error->type . ' on ' . $error->container->type . '/' . $error->container->objectType . ' for property ' . $error->property . ': ' . $error->requirement->type;
+					}
 				} else {
-					$this->errors[] = __METHOD__ . '() => ' . __( 'Response Validation Failed.', 'gfeloqua' );
+					$this->errors[] = __METHOD__ . '() => Error ' . $response->getStatusCode() . ': ' . $response->getReasonPhrase();
+					$this->errors[] = __METHOD__ . '() => Raw Error: ' . $e->getMessage();
 				}
-
-				return false;
+			} catch ( Exception $e ) {
+				$this->errors[] = __METHOD__ . '() => ' . $e->getMessage();
 			}
 		} else {
-			$this->errors[] = __METHOD__ . '() => ' . __( 'Data returned empty.', 'gfeloqua' );
+			$args['method'] = $method;
+
+			$this->load_wp_http();
+
+			$response            = $this->connection->request( $url, $args );
+			$this->last_response = $response;
+
+			if ( is_wp_error( $response ) ) {
+				$this->errors[] = __METHOD__ . '() => WP_Http Error: ' . $response->get_error_message() . ' (' . $response->get_error_code() . ')';
+				return false;
+			}
+
+			$return = $this->validate_response( $response );
+
+			if ( $return ) {
+				if ( ! is_object( $return ) ) {
+					if ( is_string( $response ) ) {
+						$this->errors[] = __METHOD__ . '() => ' . __( 'API Response Error', 'gfeloqua' ) . ': ' . print_r( $response, true );
+					} else {
+						$this->errors[] = __METHOD__ . '() => ' . __( 'Response Validation Failed.', 'gfeloqua' );
+					}
+
+					return false;
+				}
+			} else {
+				$this->errors[] = __METHOD__ . '() => ' . __( 'Data returned empty.', 'gfeloqua' );
+			}
 		}
 
-		return $data;
+		return $return;
 	}
 
 	/**
@@ -424,39 +613,66 @@ class Eloqua_API {
 	 *
 	 * @api gfeloqua_validate_response  Hook to modify response.
 	 *
-	 * @param object $response  Object from _call().
+	 * @param array|object $response  Object from _call().
 	 *
 	 * @return object  Validated response body
 	 */
 	public function validate_response( $response ) {
 		$return = false;
 
-		if ( $response && is_array( $response ) ) {
-			if ( isset( $response['response'] ) && isset( $response['response']['code'] ) ) {
-				// 201 = "Created"
-				if ( in_array( $response['response']['code'], array( '200', '201', '202' ) ) && $response['body'] ) {
-					if ( $this->is_json( $response['body'] ) ) { // valid response from Eloqua.
-						$return = json_decode( $response['body'] );
-					} elseif ( is_string( $response['body'] ) ) { // Error message.
-						$return = trim( $response['body'], ' \t\n\r\0\x0B"' );
-					} else { // something else.
-						$return = $response['body'];
-					}
-				} elseif ( '400' == $response['response']['code'] ) {
-					if ( $this->is_json( $response['body'] ) ) { // valid, albeit error, response from Eloqua.
-						$error = json_decode( $response['body'] );
-						$this->errors[] = __METHOD__ . '() => ' . __( 'Error 400 Bad Request', 'gfeloqua' ) . ': ' . $error->type . ' => '. print_r( $error, true );
-					} else {
-						$this->errors[] = __METHOD__ . '() => ' . __( 'Response Code 400 Bad Request', 'gfeloqua' ) . ': ' . print_r( $response, true );
-					}
+		$this->last_response = $response;
+
+		if ( is_object( $response ) ) {
+			$status = $response->getStatusCode();
+			$body   = $response->getBody()->getContents();
+
+			if ( in_array( $status, array( '200', '201', '202' ) ) && $body ) {
+				if ( $this->is_json( $body ) ) { // valid response from Eloqua.
+					$return = json_decode( $body );
+				} elseif ( is_string( $body ) ) { // Error message.
+					$return = trim( $body, ' \t\n\r\0\x0B"' );
 				} else {
-					$this->errors[] = __METHOD__ . '() => ' . __( 'Unsupported Response Code', 'gfeloqua' ) . ': ' . print_r( $response, true );
+					$return = $body;
+				}
+			} elseif ( '400' == $status ) {
+				if ( $this->is_json( $body ) ) { // valid, albeit error, response from Eloqua.
+					$error = json_decode( $body );
+
+					$this->errors[] = __METHOD__ . '() => ' . __( 'Error 400 Bad Request', 'gfeloqua' ) . ': ' . $error->type . ' => '. print_r( $error, true );
+				} else {
+					$this->errors[] = __METHOD__ . '() => ' . __( 'Response Code 400 Bad Request', 'gfeloqua' ) . ': ' . print_r( $request, true );
 				}
 			} else {
-				$this->errors[] = __METHOD__ . '() => ' . __( 'Invalid response format', 'gfeloqua' ) . ': ' . print_r( $response, true );
+				$this->errors[] = __METHOD__ . '() => ' . __( 'Unsupported Response Code', 'gfeloqua' ) . ': ' . print_r( $request, true );
 			}
 		} else {
-			$this->errors[] = __METHOD__ . '() => ' . __( 'Bad Response', 'gfeloqua' ) . ': ' . print_r( $response, true );
+			if ( $response && is_array( $response ) ) {
+				if ( isset( $response['response'] ) && isset( $response['response']['code'] ) ) {
+					// 201 = "Created"
+					if ( in_array( $response['response']['code'], array( '200', '201', '202' ) ) && $response['body'] ) {
+						if ( $this->is_json( $response['body'] ) ) { // valid response from Eloqua.
+							$return = json_decode( $response['body'] );
+						} elseif ( is_string( $response['body'] ) ) { // Error message.
+							$return = trim( $response['body'], ' \t\n\r\0\x0B"' );
+						} else { // something else.
+							$return = $response['body'];
+						}
+					} elseif ( '400' == $response['response']['code'] ) {
+						if ( $this->is_json( $response['body'] ) ) { // valid, albeit error, response from Eloqua.
+							$error = json_decode( $response['body'] );
+							$this->errors[] = __METHOD__ . '() => ' . __( 'Error 400 Bad Request', 'gfeloqua' ) . ': ' . $error->type . ' => '. print_r( $error, true );
+						} else {
+							$this->errors[] = __METHOD__ . '() => ' . __( 'Response Code 400 Bad Request', 'gfeloqua' ) . ': ' . print_r( $response, true );
+						}
+					} else {
+						$this->errors[] = __METHOD__ . '() => ' . __( 'Unsupported Response Code', 'gfeloqua' ) . ': ' . print_r( $response, true );
+					}
+				} else {
+					$this->errors[] = __METHOD__ . '() => ' . __( 'Invalid response format', 'gfeloqua' ) . ': ' . print_r( $response, true );
+				}
+			} else {
+				$this->errors[] = __METHOD__ . '() => ' . __( 'Bad Response', 'gfeloqua' ) . ': ' . print_r( $response, true );
+			}
 		}
 
 		return apply_filters( 'gfeloqua_validate_response', $return, $response );
@@ -502,7 +718,7 @@ class Eloqua_API {
 	 *
 	 * @return mixed  Transient value.
 	 */
-	private function get_transient( $transient ){
+	private function get_transient( $transient ) {
 		return get_transient( 'gfeloqua/' . $transient );
 	}
 
@@ -514,7 +730,7 @@ class Eloqua_API {
 	 * @param int    $expiration  Time in seconds untl transient expires.
 	 */
 	private function set_transient( $transient, $value, $expiration = null ) {
-		if ( $expiration === null ) {
+		if ( null === $expiration ) {
 			$expiration = DAY_IN_SECONDS * 15;
 		}
 
@@ -536,7 +752,7 @@ class Eloqua_API {
 	 * @param int $page   For pagination.
 	 * @param int $count  Number of results to return.
 	 *
-	 * @return [type] [description]
+	 * @return array  Eloqua Forms array.
 	 */
 	public function get_forms( $page = null, $count = 1000 ) {
 		$call = 'assets/forms';
@@ -565,7 +781,7 @@ class Eloqua_API {
 			$all_forms = $forms->elements;
 
 			if ( count( $all_forms ) >= $count ) {
-				$page = $page ? $page + 1 : 2;
+				$page     = $page ? $page + 1 : 2;
 				$the_rest = $this->get_forms( $page, $count );
 				if ( is_array( $the_rest ) ) {
 					$all_forms = array_merge( $all_forms, $the_rest );
@@ -648,7 +864,7 @@ class Eloqua_API {
 	/**
 	 * Submit Eloqua Form Data
 	 *
-	 * @param int $form_id  Eloqua Form ID.
+	 * @param int    $form_id     Eloqua Form ID.
 	 * @param object $submission  Eloqua Submission object.
 	 *
 	 * @return bool  If submission was successful.
