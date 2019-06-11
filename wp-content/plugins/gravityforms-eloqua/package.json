@@ -1,6 +1,6 @@
 {
 	"name": "gravityforms-eloqua",
-	"version": "2.1.6",
+	"version": "2.2.5",
 	"dependencies": {},
 	"devDependencies": {
 		"browser-sync": "^2.11.1",

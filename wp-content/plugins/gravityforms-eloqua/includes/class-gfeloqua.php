@@ -234,8 +234,6 @@ class GFEloqua extends GFFeedAddOn {
 
 		$this->entry_notes = new GFEloqua_Entry_Notes();
 
-		$this->init_eloqua();
-
 		add_action( 'wp_ajax_gfeloqua_clear_transient', array( $this, 'clear_eloqua_transient' ) );
 		add_action( 'wp_ajax_gfeloqua_resubmit_entry', array( $this, 'resubmit_entry' ) );
 		add_action( 'wp_ajax_gfeloqua_reset_entry', array( $this, 'reset_entry' ) );
@@ -493,6 +491,9 @@ class GFEloqua extends GFFeedAddOn {
 		if ( $this->eloqua && empty( $connection_string ) ) {
 			return;
 		}
+		if ( empty( $connection_string ) ) {
+			$connection_string = $this->get_connection_string();
+		}
 
 		if ( null === $timeout ) {
 			$legacy_timeout = $this->get_plugin_setting( 'gfeloqua_timeout' ) ? $this->get_plugin_setting( 'gfeloqua_timeout' ) : 5;
@@ -504,17 +505,14 @@ class GFEloqua extends GFFeedAddOn {
 			$auth_type = $this->get_authentication_type();
 		}
 
-		if ( ! empty( $connection_string ) ) {
-			return new Eloqua_API( $connection_string, 'oauth' === $auth_type, $this->timeout );
-		}
-
-		$this->eloqua = new Eloqua_API( $this->get_connection_string(), 'oauth' === $auth_type, $this->timeout );
+		$this->eloqua = new Eloqua_API( $connection_string, 'oauth' === $auth_type, $this->timeout );
+		return $this->eloqua;
 	}
 
 	/**
 	 * This disables the update message for GFEloqua Plugin on the plugin screen
 	 */
-	function insert_version_data() {
+	public function insert_version_data() {
 		$update_info = get_transient( 'gform_update_info' );
 
 		if ( ! $update_info || ! isset( $update_info['body'] ) ) {
@@ -586,6 +584,18 @@ class GFEloqua extends GFFeedAddOn {
 						'tooltip'    => '<h6>' . __( 'Map Fields', 'gfeloqua' ) . '</h6>' . __( 'Associate your Eloqua custom fields to the appropriate Gravity Form fields by selecting the appropriate form field from the list.', 'gfeloqua' ),
 					),
 					array(
+						'name'    => 'cookie_data',
+						'label'   => __( 'Cookie Data', 'gfeloqua' ),
+						'type'    => 'checkbox',
+						'choices' => array(
+							array(
+								'label' => __( 'Send Eloqua Cookie Data with form submission.', 'gfeloqua' ),
+								'name'  => GFELOQUA_OPT_PREFIX . 'use_cookie_data',
+							),
+						),
+						'tooltip' => __( 'This will automatically send any Eloqua cookies along with the form submission.', 'gfeloqua' ),
+					),
+					array(
 						'name'       => 'optin',
 						'label'      => __( 'Opt In', 'gfeloqua' ),
 						'type'       => 'feed_condition',
@@ -602,7 +612,7 @@ class GFEloqua extends GFFeedAddOn {
 	 *
 	 * @return array  enqueue requirements
 	 */
-	function enqueue_conditions() {
+	public function enqueue_conditions() {
 		return array(
 			array(
 				'query' => 'page=gf_edit_forms&view=settings&subview=' . $this->_slug,
@@ -745,6 +755,10 @@ class GFEloqua extends GFFeedAddOn {
 	 * @return string  Eloqua Form Name
 	 */
 	public function get_column_value_gfeloqua_form( $feed ) {
+		if ( ! $this->eloqua ) {
+			$this->init_eloqua();
+		}
+
 		$form_name = '';
 		$form      = $this->eloqua->get_form( $feed['meta'][ GFELOQUA_OPT_PREFIX . 'form' ] );
 
@@ -765,7 +779,7 @@ class GFEloqua extends GFFeedAddOn {
 	 * @return bool  Did testing connect successfully?
 	 */
 	public function test_authentication( $authstring = null ) {
-		$this->log_debug( __METHOD__ . '(): Testing Authentication.' );
+		$this->log_debug( __METHOD__ . '() => Testing Authentication.' );
 		if ( ! empty( $authstring ) ) {
 			$connection_string = $authstring;
 		} else {
@@ -773,11 +787,11 @@ class GFEloqua extends GFFeedAddOn {
 		}
 
 		if ( empty( $connection_string ) ) {
-			$this->log_debug( __METHOD__ . '(): Connection String Missing.' );
+			$this->log_debug( __METHOD__ . '() => Connection String Missing.' );
 			return false;
 		}
 
-		$this->log_debug( __METHOD__ . '(): Connection string found!' );
+		$this->log_debug( __METHOD__ . '() => Connection string found!' );
 
 		if ( ! empty( $authstring ) ) {
 			$auth_type = 'basic';
@@ -785,7 +799,7 @@ class GFEloqua extends GFFeedAddOn {
 			$auth_type = $this->get_authentication_type();
 		}
 
-		$this->log_debug( __METHOD__ . '(): Using Authentication type: ' . $auth_type );
+		$this->log_debug( __METHOD__ . '() => Using Authentication type: ' . $auth_type );
 
 		$test = $this->init_eloqua( $connection_string, $auth_type );
 
@@ -793,24 +807,26 @@ class GFEloqua extends GFFeedAddOn {
 
 			if ( $test->is_timeout() ) {
 				$this->eloqua_timeout = true;
-				$this->log_error( __METHOD__ . '(): Connection Timeout => ' . print_r( $test, true ) );
+
+				$test = wp_json_encode( $test );
+				$this->log_error( __METHOD__ . '() => Connection Timeout: ' . print_r( $test, true ) );
 				return false;
 			}
 
-			$this->log_error( __METHOD__ . '(): Connection Failure => ' . print_r( $test->errors, true ) );
+			$this->log_error( __METHOD__ . '() => Connection Failure: ' . print_r( $test->errors, true ) );
 
 			$refresh_token = $this->get_oauth_refresh_token();
 
 			if ( 'oauth' === $auth_type && $refresh_token ) {
 				// Try the refresh token.
-				$this->log_debug( __METHOD__ . '(): Attempting to use Refresh Token.' );
+				$this->log_debug( __METHOD__ . '() => Attempting to use Refresh Token.' );
 				return $this->refresh_token( $refresh_token );
 			}
 
 			return false;
 		}
 
-		$this->log_debug( __METHOD__ . '(): Connection tested successfully!' );
+		$this->log_debug( __METHOD__ . '() => Connection tested successfully!' );
 		return true;
 	}
 
@@ -823,12 +839,12 @@ class GFEloqua extends GFFeedAddOn {
 	 */
 	public function refresh_token( $refresh_token = false ) {
 		if ( ! $refresh_token ) {
-			$this->log_debug( __METHOD__ . '(): No refresh token found.' );
+			$this->log_debug( __METHOD__ . '() => No refresh token found.' );
 			$this->clear_connection();
 			return false;
 		}
 
-		$this->log_debug( __METHOD__ . '(): Attempting to refresh OAuth token.' );
+		$this->log_debug( __METHOD__ . '() => Attempting to refresh OAuth token.' );
 
 		$this->init_eloqua();
 
@@ -861,7 +877,7 @@ class GFEloqua extends GFFeedAddOn {
 		);
 
 		if ( is_wp_error( $response ) ) {
-			$this->log_error( __METHOD__ . '(): OAUTH WP Error => ' . $response->get_error_message() );
+			$this->log_error( __METHOD__ . '() => OAUTH WP Error: ' . $response->get_error_message() );
 			$this->clear_connection();
 			return false;
 		}
@@ -881,21 +897,21 @@ class GFEloqua extends GFFeedAddOn {
 	public function handle_oauth_json( $json, $context = '' ) {
 		if ( ! $json ) {
 			// When $json is empty, something went wrong, log it.
-			$this->log_error( __METHOD__ . '(): OAUTH JSON Empty => ' . print_r( $args, true ) . ' / Probably an issue with cURL. (context: ' . $context . ')' );
+			$this->log_error( __METHOD__ . '() => OAUTH JSON Empty: ' . print_r( $args, true ) . ' / Probably an issue with cURL. (context: ' . $context . ')' );
 			$this->clear_connection();
 			return false;
 		}
 
 		if ( isset( $json->error ) ) {
-			$this->log_error( __METHOD__ . '(): OAUTH JSON Error => ' . print_r( $json->error, true ) . ' / Possibly invalid grant. (context: ' . $context . ')' );
-			$this->log_error( __METHOD__ . '(): JSON => ' . print_r( $json, true ) );
+			$this->log_error( __METHOD__ . '() => OAUTH JSON Error: ' . print_r( $json->error, true ) . ' / Possibly invalid grant. (context: ' . $context . ')' );
+			$this->log_error( __METHOD__ . '() => JSON: ' . print_r( $json, true ) );
 			$this->clear_connection();
 			return false;
 		}
 
 		if ( ! isset( $json->access_token ) ) {
 			// no idea, logging json object.
-			$this->log_error( __METHOD__ . '(): OAUTH JSON Error => ' . print_r( $json, true ) . ' / No access token present. (context: ' . $context . ')' );
+			$this->log_error( __METHOD__ . '() => OAUTH JSON Error: ' . print_r( $json, true ) . ' / No access token present. (context: ' . $context . ')' );
 			return false;
 		}
 
@@ -911,13 +927,13 @@ class GFEloqua extends GFFeedAddOn {
 		update_option( GFELOQUA_OPT_PREFIX . 'oauth_token', $oauth_token );
 		update_option( GFELOQUA_OPT_PREFIX . 'authentication_timestamp', date( 'Y-m-d H:i:s', current_time( 'timestamp' ) ) );
 
-		$this->log_debug( __METHOD__ . '(): Storing OAuth Token => (context: ' . $context . ')' );
+		$this->log_debug( __METHOD__ . '() => Storing OAuth Token: (context: ' . $context . ')' );
 
 		if ( isset( $json->token_type ) && $json->token_type ) {
 			update_option( GFELOQUA_OPT_PREFIX . 'oauth_token_type', $json->token_type );
 		}
 		if ( isset( $json->refresh_token ) && $json->refresh_token ) {
-			$this->log_debug( __METHOD__ . '(): Updating OAuth Refresh Token => (context: ' . $context . ')' );
+			$this->log_debug( __METHOD__ . '() => Updating OAuth Refresh Token: (context: ' . $context . ')' );
 			update_option( GFELOQUA_OPT_PREFIX . 'oauth_refresh_token', $json->refresh_token );
 		}
 
@@ -932,7 +948,7 @@ class GFEloqua extends GFFeedAddOn {
 	 *
 	 * @return void
 	 */
-	function handle_oauth_code() {
+	public function handle_oauth_code() {
 		if ( empty( $_GET['gfeloqua-oauth-code'] ) ) {
 			return;
 		}
@@ -960,7 +976,7 @@ class GFEloqua extends GFFeedAddOn {
 	/**
 	 * If we grabbed the OAuth token, try to automatically close the window
 	 */
-	function close_oauth_window() {
+	public function close_oauth_window() {
 		if ( ! $this->oauth_token_retrieved ) {
 			return;
 		}
@@ -975,7 +991,7 @@ class GFEloqua extends GFFeedAddOn {
 	 *
 	 * @return string  authstring or oauth token
 	 */
-	function get_connection_string() {
+	public function get_connection_string() {
 		$auth_type = $this->get_authentication_type();
 
 		$connection_string = 'oauth' === $auth_type ? $this->get_oauth_token() : $this->get_authstring();
@@ -988,7 +1004,7 @@ class GFEloqua extends GFFeedAddOn {
 	 *
 	 * @return string  MySQL formatted date/timestamp.
 	 */
-	function get_authentication_timestamp() {
+	public function get_authentication_timestamp() {
 		return get_option( GFELOQUA_OPT_PREFIX . 'authentication_timestamp' );
 	}
 
@@ -997,7 +1013,7 @@ class GFEloqua extends GFFeedAddOn {
 	 *
 	 * @return string  Either oauth or basic.
 	 */
-	function get_authentication_type() {
+	public function get_authentication_type() {
 		$use_basic = get_option( GFELOQUA_OPT_PREFIX . 'auth_basic' );
 		$use_oauth = (bool) get_option( GFELOQUA_OPT_PREFIX . 'use_oauth', ! $use_basic );
 
@@ -1005,7 +1021,7 @@ class GFEloqua extends GFFeedAddOn {
 			$type = 'oauth';
 		} else {
 			$type = 'basic';
-			$this->log_debug( __METHOD__ . '(): Using Basic Authentication.' );
+			$this->log_debug( __METHOD__ . '() => Using Basic Authentication.' );
 		}
 
 		return $type;
@@ -1033,9 +1049,9 @@ class GFEloqua extends GFFeedAddOn {
 
 			$posted = $this->get_posted_settings();
 
-			$license_key = isset( $posted['license_key'] ) && ! empty( $posted['license_key'] ) ? $posted['license_key'] : false;
+			$this->log_debug( __METHOD__ . '() => Checking License Key.' );
 
-			$this->log_debug( __METHOD__ . '(): Checking License Key => ' . $license_key );
+			$license_key = isset( $posted['license_key'] ) && ! empty( $posted['license_key'] ) ? $posted['license_key'] : false;
 
 			if ( ! $license_key ) {
 				$license_key = $this->get_license_key();
@@ -1044,19 +1060,20 @@ class GFEloqua extends GFFeedAddOn {
 					$this->is_activated = true;
 				}
 			} else {
-				$this->log_debug( __METHOD__ . '(): Activating license.' );
+				$this->log_debug( __METHOD__ . '() => Activating license.' );
 				if ( $gfeloqua_license_manager->activate( $license_key ) ) {
-					$this->log_debug( __METHOD__ . '(): License Activated! => ' . print_r( $gfeloqua_license_manager->get_last_response(), true ) );
+					$this->log_debug( __METHOD__ . '() => License Activated!' );
 					$is_unactivated     = false;
 					$this->is_activated = true;
 					$this->store_license_key( $license_key );
 				} else {
-					$this->log_debug( __METHOD__ . '(): License (' . $license_key . ') Activation Failed. => ' . print_r( $gfeloqua_license_manager->get_last_response(), true ) );
+					$license_response = wp_json_encode( $gfeloqua_license_manager->get_last_response() );
+					$this->log_debug( __METHOD__ . '() => License (' . $license_key . ') Activation Failed: ' . print_r( $license_response, true ) );
 				}
 			}
 			$this->last_response = $gfeloqua_license_manager->get_last_response();
 		} else {
-			$this->log_debug( __METHOD__ . '(): Validating license.' );
+			$this->log_debug( __METHOD__ . '() => Validating license.' );
 			$license_key = $this->get_license_key();
 			if ( $gfeloqua_license_manager->is_active_license( $license_key ) ) {
 				$is_unactivated     = false;
@@ -1165,8 +1182,8 @@ class GFEloqua extends GFFeedAddOn {
 			} else {
 				$message .= ' ';
 			}
-
-			$this->log_debug( __METHOD__ . '(): Unactivated Error => ' . print_r( $gfeloqua_license_manager->get_last_response(), true ) );
+			$license_response = wp_json_encode( $gfeloqua_license_manager->get_last_response() );
+			$this->log_debug( __METHOD__ . '() => Unactivated Error: ' . print_r( $license_response, true ) );
 
 			return $message . __( 'If you are having trouble, please contact', 'gfeloqua' ) . ' <a href="https://briandichiara.com" target="_blank" rel="noopener">briandichiara.com</a>';
 		}
@@ -1232,6 +1249,10 @@ class GFEloqua extends GFFeedAddOn {
 			),
 		);
 
+		if ( ! $this->eloqua ) {
+			$this->init_eloqua();
+		}
+
 		if ( $this->eloqua ) {
 			$eloqua_forms = $this->eloqua->get_forms();
 
@@ -1290,6 +1311,10 @@ class GFEloqua extends GFFeedAddOn {
 			return;
 		}
 
+		if ( ! $this->eloqua ) {
+			$this->init_eloqua();
+		}
+
 		$folder = $this->eloqua->get_form_folder_name( $form->folderId ); // @codingStandardsIgnoreLine: ok.
 		$this->folders[ $form->folderId ] = $folder->name; // @codingStandardsIgnoreLine: ok.
 	}
@@ -1337,6 +1362,10 @@ class GFEloqua extends GFFeedAddOn {
 			return array();
 		}
 
+		if ( ! $this->eloqua ) {
+			$this->init_eloqua();
+		}
+
 		$custom_fields = $this->eloqua->get_form_fields( $form_id );
 
 		if ( $this->eloqua->is_disconnected() ) {
@@ -1354,16 +1383,33 @@ class GFEloqua extends GFFeedAddOn {
 
 		if ( is_array( $custom_fields ) && count( $custom_fields ) ) {
 			foreach ( $custom_fields as $custom_field ) {
-				if ( 'submit' === $custom_field->displayType ) { // @codingStandardsIgnoreLine: ok.
-					continue;
-				}
+				if ( isset( $custom_field->type ) && 'FormFieldGroup' === $custom_field->type ) {
+					if ( isset( $custom_field->fields ) && is_array( $custom_field->fields ) && count( $custom_field->fields ) > 0 ) {
+						foreach ( $custom_field->fields as $sub_custom_field ) {
+							if ( 'submit' === $sub_custom_field->displayType ) { // @codingStandardsIgnoreLine: ok.
+								continue;
+							}
 
-				$field_map[] = array(
-					'name'     => $custom_field->id,
-					'label'    => $custom_field->name,
-					'required' => $this->eloqua->is_field_required( $custom_field ),
-					//'default_value' => $this->get_first_field_by_type( 'name', 3 ),
-				);
+							$field_map[] = array(
+								'name'     => $sub_custom_field->id,
+								'label'    => $sub_custom_field->name,
+								'required' => $this->eloqua->is_field_required( $sub_custom_field ),
+								//'default_value' => $this->get_first_field_by_type( 'name', 3 ),
+							);
+						}
+					}
+				} else {
+					if ( 'submit' === $custom_field->displayType ) { // @codingStandardsIgnoreLine: ok.
+						continue;
+					}
+
+					$field_map[] = array(
+						'name'     => $custom_field->id,
+						'label'    => $custom_field->name,
+						'required' => $this->eloqua->is_field_required( $custom_field ),
+						//'default_value' => $this->get_first_field_by_type( 'name', 3 ),
+					);
+				}
 			}
 		} else {
 			$field_map[] = array(
@@ -1395,8 +1441,11 @@ class GFEloqua extends GFFeedAddOn {
 	public function clear_eloqua_transient() {
 		$transient = isset( $_GET['transient'] ) ? sanitize_text_field( $_GET['transient'] ) : false;
 		if ( $transient ) {
+			if ( ! $this->eloqua ) {
+				$this->init_eloqua();
+			}
 			$this->eloqua->clear_transient( $transient );
-			$this->log_debug( __METHOD__ . '(): Transient Cleared => ' . print_r( $transient, true ) );
+			$this->log_debug( __METHOD__ . '() =>  Transient Cleared: ' . print_r( $transient, true ) );
 		}
 
 		wp_send_json(
@@ -1420,7 +1469,7 @@ class GFEloqua extends GFFeedAddOn {
 		$license_key = $this->get_license_key();
 
 		if ( false === $gfeloqua_license_manager->is_active_license( $license_key ) ) {
-			$this->log_debug( __METHOD__ . '(): No valid license found. => ' . $gfeloqua_license_manager->get_debug_message() );
+			$this->log_debug( __METHOD__ . '() => No valid license found. ' . $gfeloqua_license_manager->get_debug_message() );
 			return array(
 				array(
 					'title'       => __( 'Gravity Forms Eloqua License', 'gfeloqua' ),
@@ -1438,7 +1487,7 @@ class GFEloqua extends GFFeedAddOn {
 			);
 		}
 
-		$this->log_debug( __METHOD__ . '(): Plugin is licensed. => ' . $license_key );
+		$this->log_debug( __METHOD__ . '() => Plugin is licensed. (' . trim( $license_key ) . ')' );
 
 		$auth_fields = array();
 
@@ -1694,11 +1743,22 @@ class GFEloqua extends GFFeedAddOn {
 	/**
 	 * Retrieve the oauth token from options
 	 *
+	 * @param bool $object  Return entire object.
+	 *
 	 * @return string  oauth_token
 	 */
-	function get_oauth_token() {
-		$token = get_option( GFELOQUA_OPT_PREFIX . 'oauth_token' );
-		return $token;
+	public function get_oauth_token( $object = true ) {
+		$access = get_option( GFELOQUA_OPT_PREFIX . 'access_token' );
+
+		if ( ! is_object( $access ) ) {
+			return false;
+		}
+
+		if ( $object ) {
+			return $access;
+		}
+
+		return $access->getToken();
 	}
 
 	/**
@@ -1716,7 +1776,7 @@ class GFEloqua extends GFFeedAddOn {
 	 *
 	 * @return string  oauth_token
 	 */
-	function get_authstring() {
+	public function get_authstring() {
 		$authstring = get_option( GFELOQUA_OPT_PREFIX . 'authstring' );
 
 		if ( ! $authstring ) {
@@ -1733,7 +1793,7 @@ class GFEloqua extends GFFeedAddOn {
 	 *
 	 * @return string  authstring
 	 */
-	function generate_authstring( $source_array = array() ) {
+	public function generate_authstring( $source_array = array() ) {
 		$authstring = '';
 		$posted     = array();
 
@@ -1763,7 +1823,7 @@ class GFEloqua extends GFFeedAddOn {
 			} elseif ( ! $this->eloqua_timeout ) {
 				$authstring = '';
 			} else {
-				$this->log_error( __METHOD__ . '(): Authentication test failed due to time out.' );
+				$this->log_error( __METHOD__ . '() => Authentication test failed due to time out.' );
 			}
 		}
 
@@ -1778,7 +1838,11 @@ class GFEloqua extends GFFeedAddOn {
 	 *
 	 * @return string  the field html
 	 */
-	function settings_oauth_link( $field, $echo = true ) {
+	public function settings_oauth_link( $field, $echo = true ) {
+		if ( ! $this->eloqua ) {
+			$this->init_eloqua();
+		}
+
 		$field['type'] = 'oauth_link'; //making sure type is set to oauth_link.
 		$attributes    = $this->get_field_attributes( $field );
 		$default_value = rgar( $field, 'value' ) ? rgar( $field, 'value' ) : rgar( $field, 'default_value' );
@@ -1806,7 +1870,7 @@ class GFEloqua extends GFFeedAddOn {
 	 *
 	 * @return string  the field html
 	 */
-	function settings_eloqua_test( $field, $echo = true ) {
+	public function settings_eloqua_test( $field, $echo = true ) {
 		$field['type'] = 'eloqua_test'; //making sure type is set to eloqua_test.
 		$attributes    = $this->get_field_attributes( $field );
 		$default_value = rgar( $field, 'value' ) ? rgar( $field, 'value' ) : rgar( $field, 'default_value' );
@@ -1827,7 +1891,7 @@ class GFEloqua extends GFFeedAddOn {
 	/**
 	 * Test Connection to Eloqua.
 	 */
-	function ajax_connection_test() {
+	public function ajax_connection_test() {
 		$test = $this->test_authentication();
 
 		$result = $test ? esc_html__( 'Success!', 'gfeqloqua' ) : esc_html__( 'Failed.', 'gfeloqua' );
@@ -1849,7 +1913,7 @@ class GFEloqua extends GFFeedAddOn {
 	 *
 	 * @return string  the field html
 	 */
-	function settings_gfeloqua_extensions( $field, $echo = true ) {
+	public function settings_gfeloqua_extensions( $field, $echo = true ) {
 		$field['type'] = 'gfeloqua_extensions'; //making sure type is set to gfeloqua_extensions
 		$attributes    = $this->get_field_attributes( $field );
 
@@ -1874,6 +1938,7 @@ class GFEloqua extends GFFeedAddOn {
 	 * @return [type] [description]
 	 */
 	public function clear_connection() {
+		delete_option( GFELOQUA_OPT_PREFIX . 'access_token' );
 		delete_option( GFELOQUA_OPT_PREFIX . 'oauth_token' );
 		delete_option( GFELOQUA_OPT_PREFIX . 'oauth_token_type' );
 		delete_option( GFELOQUA_OPT_PREFIX . 'oauth_refresh_token' );
@@ -1887,7 +1952,7 @@ class GFEloqua extends GFFeedAddOn {
 	 *
 	 * @return bool  if settings where cleared
 	 */
-	function _maybe_clear_settings() {
+	public function _maybe_clear_settings() {
 		if ( $this->is_save_postback() ) {
 
 			$posted = $this->get_posted_settings();
@@ -1896,7 +1961,7 @@ class GFEloqua extends GFFeedAddOn {
 
 				$this->clear_connection();
 
-				$this->log_debug( __METHOD__ . '(): Eloqua Disconnected' );
+				$this->log_debug( __METHOD__ . '() => Eloqua Disconnected.' );
 
 				return true;
 			}
@@ -1911,7 +1976,7 @@ class GFEloqua extends GFFeedAddOn {
 	 *
 	 * @return void
 	 */
-	function _maybe_store_settings() {
+	public function _maybe_store_settings() {
 		$settings = $this->get_plugin_settings();
 
 		// backwards compatibility in case credentials are stored.
@@ -1951,6 +2016,7 @@ class GFEloqua extends GFFeedAddOn {
 				update_option( GFELOQUA_OPT_PREFIX . 'auth_basic', '1' );
 				delete_option( GFELOQUA_OPT_PREFIX . 'use_oauth' );
 				delete_option( GFELOQUA_OPT_PREFIX . 'oauth_token' );
+				delete_option( GFELOQUA_OPT_PREFIX . 'access_token' );
 			} elseif ( isset( $posted[ GFELOQUA_OPT_PREFIX . 'use_oauth' ] ) && '1' === $posted[ GFELOQUA_OPT_PREFIX . 'use_oauth' ] ) {
 				update_option( GFELOQUA_OPT_PREFIX . 'use_oauth', '1' );
 				delete_option( GFELOQUA_OPT_PREFIX . 'auth_basic' );
@@ -1980,7 +2046,7 @@ class GFEloqua extends GFFeedAddOn {
 
 		if ( ! $code ) {
 			if ( ! $this->get_oauth_token() ) {
-				$this->log_debug( __METHOD__ . '(): OAUTH Code not present' );
+				$this->log_debug( __METHOD__ . '() => OAUTH Code not present.' );
 			}
 			return false;
 		}
@@ -1992,41 +2058,22 @@ class GFEloqua extends GFFeedAddOn {
 			$this->init_eloqua();
 		}
 
-		$client_id     = $this->eloqua->_oauth_client_id;
-		$client_secret = $this->eloqua->_oauth_client_secret;
-		$token_url     = $this->eloqua->_oauth_token_url;
+		$access_token = $this->eloqua->get_access_token( $code, $this->timeout );
 
-		$basic_auth = $client_id . ':' . $client_secret . '@';
-
-		$url = str_replace( array( 'http://', 'https://' ), 'https://' . $basic_auth, $token_url );
-
-		$args = array(
-			'code'         => $code,
-			'grant_type'   => 'authorization_code',
-			'redirect_uri' => $this->eloqua->_oauth_redirect_uri,
-		);
-
-		$args_string = wp_json_encode( $args );
-
-		$response = wp_remote_post(
-			$url, array(
-				'headers'   => array(
-					'Content-Type' => 'application/json',
-				),
-				'body'      => $args_string,
-				'sslverify' => false,
-				'timeout'   => $this->timeout,
-			)
-		);
-
-		if ( is_wp_error( $response ) ) {
-			$this->log_error( __METHOD__ . '(): OAUTH Error => ' . $response->get_error_message() );
+		if ( ! $access_token ) {
+			$error = $this->eloqua->get_last_error( true );
+			$this->log_debug( __METHOD__ . '() => ' . $error );
 			return false;
 		}
 
-		$json = isset( $response['body'] ) ? json_decode( $response['body'] ) : false;
+		$this->log_debug( __METHOD__ . '() => Storing OAuth Token.' );
+		update_option( GFELOQUA_OPT_PREFIX . 'access_token', $access_token );
+		update_option( GFELOQUA_OPT_PREFIX . 'authentication_timestamp', date( 'Y-m-d H:i:s', current_time( 'timestamp' ) ) );
 
-		return $this->handle_oauth_json( $json, __METHOD__ );
+		// Refresh the eloqua object.
+		$this->eloqua = $this->init_eloqua( $access_token, true );
+
+		return true;
 	}
 
 	/**
@@ -2084,14 +2131,14 @@ class GFEloqua extends GFFeedAddOn {
 			$param = 'license_key';
 
 			if ( ! $license_key ) {
-				$this->log_debug( __METHOD__ . '(): Reading License Key from posted values.' );
+				$this->log_debug( __METHOD__ . '() => Reading License Key from posted values.' );
 				$posted      = $this->get_posted_settings();
 				$license_key = isset( $posted[ $param ] ) ? sanitize_text_field( $posted[ $param ] ) : '';
 			}
 
 			if ( ! $license_key ) {
 				if ( ! $this->get_plugin_setting( $param ) ) {
-					$this->log_debug( __METHOD__ . '(): License key missing.' );
+					$this->log_debug( __METHOD__ . '() => License key missing.' );
 				}
 				return false;
 			}
@@ -2107,16 +2154,16 @@ class GFEloqua extends GFFeedAddOn {
 					update_option( GFELOQUA_OPT_PREFIX . $param, $license_key );
 				}
 				$this->license_key_stored = true;
-				$this->log_debug( __METHOD__ . '(): License key stored.' );
+				$this->log_debug( __METHOD__ . '() => License key stored.' );
 			} else {
-				$this->log_debug( __METHOD__ . '(): Attempting to activate License Key.' );
+				$this->log_debug( __METHOD__ . '() => Attempting to activate License Key.' );
 				global $gfeloqua_license_manager;
 				if ( $gfeloqua_license_manager->activate( $license_key ) ) {
-					$this->log_debug( __METHOD__ . '(): License Activated! => ' . print_r( $gfeloqua_license_manager->get_last_response(), true ) );
+					$this->log_debug( __METHOD__ . '() => License Activated!' );
 					$this->is_activated = true;
 					$this->store_license_key( $license_key );
 				} else {
-					$this->log_debug( __METHOD__ . '(): License Activation failed. => ' . print_r( $gfeloqua_license_manager->get_last_response(), true ) );
+					$this->log_debug( __METHOD__ . '() =>  License Activation failed: ' . print_r( $gfeloqua_license_manager->get_last_response(), true ) );
 				}
 			}
 		}
@@ -2142,7 +2189,7 @@ class GFEloqua extends GFFeedAddOn {
 			$this->entry_notes->add( $note, $feed );
 			$this->entry_notes->done();
 
-			$this->log_error( __METHOD__ . '(): ' . $note . ' => ' . print_r( $feed, true ) );
+			$this->log_error( __METHOD__ . '() => ' . $note . ': ' . print_r( $feed, true ) );
 
 			return false;
 		}
@@ -2184,8 +2231,103 @@ class GFEloqua extends GFFeedAddOn {
 			}
 		}
 
+		if ( isset( $feed['meta'][ GFELOQUA_OPT_PREFIX . 'use_cookie_data' ] ) ) {
+			if ( $feed['meta'][ GFELOQUA_OPT_PREFIX . 'use_cookie_data' ] ) {
+				$note = __( 'Attaching cookie data to submission.', 'gfeloqua' );
+				$this->log_debug( __METHOD__ . '() => ' . $note );
+				$this->entry_notes->add_error( $note );
+
+				$eloqua_cookies = apply_filters( 'gfeloqua_eloqua_cookies', array(
+					'elqCustomerGUID' => 'ELOQUA/GUID', // Example: F3D6C58C478940B8A8F5C585D756162E
+					//'elqCountry'      => 'ELQCOUNTRY', // Example: US
+					//'elqStatus'       => 'ELQSTATUS', // Example: OK
+					//'BKUT'            => 'BKUT', // Example: 1529582256
+					//'_CG_u'           => '__CG/u', // Example: 4469636128322787300
+					//'_CG_s'           => '__CG/s', // Example: 257056290
+					//'_CG_t'           => '__CG/t', // Example: 1541881478145
+					//'_CG_c'           => '__CG/c', // Example: 8
+					//'_CG_k'           => '__CG/k', // Example: login.eloqua.com/46/818/51945
+					//'_CG_f'           => '__CG/f', // Example: 1
+					//'_CG_i'           => '__CG/i', // Example: 1
+				) );
+
+				if ( is_array( $eloqua_cookies ) && count( $eloqua_cookies ) ) {
+					foreach ( $eloqua_cookies as $field => $cookie ) {
+						$key = false;
+						if ( strpos( $cookie, '/' ) !== false ) {
+							list( $cookie, $key ) = explode( '/', $cookie );
+						}
+
+						if ( ! isset( $_COOKIE[ $cookie ] ) ) {
+							continue;
+						}
+
+						$source = $_COOKIE[ $cookie ];
+
+						if ( $key ) {
+							$data = array();
+
+							if ( strpos( $source, '%3A' ) !== false ) {
+								$source = urldecode( $source );
+								if ( strpos( $source, ',' ) === false ) {
+									continue;
+								}
+
+								$pairs = explode( ',', $source );
+
+								foreach ( $pairs as $pair ) {
+									list( $k, $v ) = explode( ':', $pair );
+									$data[ $k ]    = $v;
+								}
+							} elseif ( strpos( $source, '=' ) !== false ) {
+								parse_str( $source, $data );
+							}
+
+							if ( ! isset( $data[ $key ] ) ) {
+								continue;
+							}
+
+							$value = $data[ $key ];
+
+						} else {
+							$value = $source;
+						}
+
+						if ( ! $value ) {
+							continue;
+						}
+
+						$cookie_value        = new stdClass();
+						$cookie_value->id    = $field;
+						$cookie_value->type  = 'FieldValue';
+						$cookie_value->value = $value;
+
+						$form_submission->fieldValues[] = $cookie_value; // @codingStandardsIgnoreLine: ok.
+					}
+				}
+			}
+		}
+
+		$custom_data = apply_filters( 'gfeloqua_custom_data', array(
+			// 'elqCookieWrite' => 0, // (bool) 0 / 1
+		) );
+
+		if ( is_array( $custom_data ) && count( $custom_data ) ) {
+			$note = __( 'Attaching custom data to submission.', 'gfeloqua' );
+			$this->log_debug( __METHOD__ . '() => ' . $note );
+			$this->entry_notes->add_error( $note );
+			foreach ( $custom_data as $key => $value ) {
+				$custom_value        = new stdClass();
+				$custom_value->id    = $key;
+				$custom_value->type  = 'FieldValue';
+				$custom_value->value = $value;
+
+				$form_submission->fieldValues[] = $custom_value; // @codingStandardsIgnoreLine: ok.
+			}
+		}
+
 		$note = __( 'Submitting Object to Eloqua', 'gfeloqua' );
-		$this->log_debug( __METHOD__ . '(): ' . $note );
+		$this->log_debug( __METHOD__ . '() => ' . $note );
 
 		$response = $this->eloqua->submit_form( $form_id, $form_submission );
 		$errors   = $this->eloqua->get_errors();
@@ -2194,10 +2336,6 @@ class GFEloqua extends GFFeedAddOn {
 		if ( ! $response || $errors ) {
 
 			if ( $response ) {
-				$note = __( 'Logging Submission Response', 'gfeloqua' );
-				$this->entry_notes->add_debug( $note, $response );
-				$this->log_debug( __METHOD__ . '(): ' . $note . ' => ' . print_r( $response, true ) );
-
 				$this->mark_as_sent( $entry['id'], $form['id'], $errors );
 			} else {
 				gform_update_meta( $entry['id'], GFELOQUA_OPT_PREFIX . 'success', $this->text_for_failed, $form['id'] );
@@ -2208,6 +2346,7 @@ class GFEloqua extends GFFeedAddOn {
 
 			$status = false;
 		} else {
+			$this->entry_notes->add_debug( $note, $form_submission );
 			$this->mark_as_sent( $entry['id'], $form['id'] );
 			$status = true;
 		}
@@ -2225,7 +2364,7 @@ class GFEloqua extends GFFeedAddOn {
 	 * @param int   $entry_id  GF Entry ID.
 	 * @param bool  $manual    Was this manually logged?
 	 */
-	function prepare_errors( $errors = false, $entry_id = null, $manual = false ) {
+	public function prepare_errors( $errors = false, $entry_id = null, $manual = false ) {
 		$this->entry_notes->set_entry_id( $entry_id );
 
 		$last_response = false;
@@ -2237,8 +2376,11 @@ class GFEloqua extends GFFeedAddOn {
 
 		if ( $last_response ) {
 			$note = __( 'Logging Last Response', 'gfeloqua' );
+			if ( is_object( $last_response ) ) {
+				$last_response = wp_json_encode( $last_response );
+			}
 			$this->entry_notes->add_debug( $note, $last_response );
-			$this->log_debug( __METHOD__ . '(): ' . $note . ' => ' . print_r( $last_response, true ) );
+			$this->log_debug( __METHOD__ . '() => ' . $note . ': ' . print_r( $last_response, true ) );
 		}
 
 		if ( $errors ) {
@@ -2249,7 +2391,7 @@ class GFEloqua extends GFFeedAddOn {
 			foreach ( $errors as $error ) {
 				$note = __( 'Submission Error', 'gfeloqua' );
 				$this->entry_notes->add_error( $note, $error );
-				$this->log_error( __METHOD__ . '(): ' . $note . ' => ' . print_r( $error, true ) );
+				$this->log_error( __METHOD__ . '() => ' . $note . ': ' . print_r( $error, true ) );
 			}
 		}
 
@@ -2263,10 +2405,10 @@ class GFEloqua extends GFFeedAddOn {
 	 * @param int   $form_id   GF Form ID.
 	 * @param array $errors    Errors during submission.
 	 */
-	function mark_as_sent( $entry_id, $form_id = null, $errors = false ) {
+	public function mark_as_sent( $entry_id, $form_id = null, $errors = false ) {
 		$success_text = $this->text_for_success;
 		if ( $errors ) {
-			$success_text .= ' (?)';
+			$success_text = 'Error';
 		}
 
 		gform_update_meta( $entry_id, GFELOQUA_OPT_PREFIX . 'success', $success_text, $form_id );
@@ -2274,11 +2416,11 @@ class GFEloqua extends GFFeedAddOn {
 		if ( $errors ) {
 			$note = __( 'Sent with errors.', 'gfeloqua' );
 			$this->entry_notes->add_error( $note, $errors );
-			$this->log_error( __METHOD__ . '(): ' . $note . ' => ' . print_r( $errors, true ) );
+			$this->log_error( __METHOD__ . '() => ' . $note . ': ' . print_r( $errors, true ) );
 		} else {
 			$note = __( 'Submission sent successfully.', 'gfeloqua' );
 			$this->entry_notes->add( $note, $success_text );
-			$this->log_debug( __METHOD__ . '(): ' . $note );
+			$this->log_debug( __METHOD__ . '() => ' . $note );
 		}
 
 		$this->entry_notes->done();
@@ -2291,7 +2433,7 @@ class GFEloqua extends GFFeedAddOn {
 	 *
 	 * @return bool  Limit reached boolean.
 	 */
-	function limit_reached( $entry_id ) {
+	public function limit_reached( $entry_id ) {
 		return gform_get_meta( $entry_id, GFELOQUA_OPT_PREFIX . 'limit_reached' );
 	}
 
@@ -2301,7 +2443,7 @@ class GFEloqua extends GFFeedAddOn {
 	 * @param int $entry_id  GF Entry ID.
 	 * @param int $form_id   GF Form ID.
 	 */
-	function cease_retries( $entry_id, $form_id = null ) {
+	public function cease_retries( $entry_id, $form_id = null ) {
 		if ( $this->limit_reached( $entry_id ) ) {
 			return;
 		}
@@ -2309,7 +2451,7 @@ class GFEloqua extends GFFeedAddOn {
 		gform_update_meta( $entry_id, GFELOQUA_OPT_PREFIX . 'limit_reached', '1', $form_id );
 
 		$this->log_debug(
-			__METHOD__ . '(): Automatic retry limit reached => ' . print_r(
+			__METHOD__ . '() => Automatic retry limit reached: ' . print_r(
 				array(
 					'Entry ID:' => $entry_id,
 					'Form ID:'  => $form_id,
@@ -2325,7 +2467,7 @@ class GFEloqua extends GFFeedAddOn {
 	 *
 	 * @return void
 	 */
-	function disconnect_notification() {
+	public function disconnect_notification() {
 		$enabled = $this->get_plugin_setting( 'enable_disconnect_alert' );
 
 		if ( ! $enabled ) {
@@ -2339,11 +2481,11 @@ class GFEloqua extends GFFeedAddOn {
 
 		if ( ! $this->test_authentication() ) {
 			if ( $this->eloqua_timeout ) {
-				$this->log_error( __METHOD__ . '(): Connection to Eloqua timed out.' );
+				$this->log_error( __METHOD__ . '() => Connection to Eloqua timed out.' );
 				return;
 			}
 
-			$this->log_error( __METHOD__ . '(): Eloqua Disconnected' );
+			$this->log_error( __METHOD__ . '() => Eloqua Disconnected' );
 
 			// send email.
 			$subject            = __( 'Eloqua Disconnected from Gravity Forms', 'gfeloqua' );
@@ -2362,7 +2504,7 @@ class GFEloqua extends GFFeedAddOn {
 			include( $template );
 			$message = ob_get_clean();
 
-			$this->log_debug( __METHOD__ . '(): Sending disconnect notice email' );
+			$this->log_debug( __METHOD__ . '() => Sending disconnect notice email.' );
 
 			// convert multiple recipients to array.
 			if ( false !== strpos( $recipient, ',' ) ) {
@@ -2379,7 +2521,7 @@ class GFEloqua extends GFFeedAddOn {
 	 *
 	 * @return void
 	 */
-	function retry_limit_notification( $entry_id, $form_id = null ) {
+	public function retry_limit_notification( $entry_id, $form_id = null ) {
 		$enabled = $this->get_plugin_setting( 'enable_retry_limit_alert' );
 		if ( ! $enabled ) {
 			return;
@@ -2415,7 +2557,7 @@ class GFEloqua extends GFFeedAddOn {
 		include( $template );
 		$message = ob_get_clean();
 
-		$this->log_debug( __METHOD__ . '(): Sending retry limit email' );
+		$this->log_debug( __METHOD__ . '() => Sending retry limit email' );
 
 		// convert multiple recipients to array.
 		if ( false !== strpos( $recipient, ',' ) ) {
@@ -2432,14 +2574,14 @@ class GFEloqua extends GFFeedAddOn {
 	 *
 	 * @return void
 	 */
-	function disconnect_notice() {
+	public function disconnect_notice() {
 		$enabled = $this->get_plugin_setting( 'enable_disconnect_notice' );
 		if ( ! $enabled ) {
 			return;
 		}
 
 		if ( ! $this->test_authentication() ) {
-			$this->log_debug( __METHOD__ . '(): Displaying Admin Disconnect Notice.' );
+			$this->log_debug( __METHOD__ . '() => Displaying Admin Disconnect Notice.' );
 			$settings_page_url = $this->get_plugin_settings_url();
 
 			if ( $this->eloqua_timeout ) {
@@ -2461,7 +2603,7 @@ class GFEloqua extends GFFeedAddOn {
 	 *
 	 * @return string  Full Path to admin.
 	 */
-	function get_admin_link( $path = '' ) {
+	public function get_admin_link( $path = '' ) {
 		$itsec_settings = false;
 
 		if ( is_multisite() ) {
@@ -2498,7 +2640,7 @@ class GFEloqua extends GFFeedAddOn {
 	 * @param object $form   Gravity Object.
 	 * @param object $entry  Entry Object.
 	 */
-	function display_entry_notes( $form, $entry ) {
+	public function display_entry_notes( $form, $entry ) {
 		if ( is_admin() ) {
 			$this->entry_notes->set_entry_id( $entry['id'] )
 				->set_form_id( $form['id'] );
@@ -2541,7 +2683,7 @@ class GFEloqua extends GFFeedAddOn {
 	 *
 	 * @return bool  If was successful
 	 */
-	function is_successful_submission( $entry_id, $notes = array(), $form_id = null ) {
+	public function is_successful_submission( $entry_id, $notes = array(), $form_id = null ) {
 		$this->entry_notes->set_entry_id( $entry_id )
 			->set_form_id( $form_id );
 
@@ -2552,7 +2694,7 @@ class GFEloqua extends GFFeedAddOn {
 		if ( 1 === $success ) {
 			$debug_note = sprintf( $success_note, 'marked as success' );
 			$this->entry_notes->add_debug( $debug_note );
-			$this->log_debug( __METHOD__ . '(): Is Success (' . $debug_note . ') => ' . $entry_id );
+			$this->log_debug( __METHOD__ . '() => Is Success (' . $debug_note . '): ' . $entry_id );
 			$this->entry_notes->done();
 			return true;
 		}
@@ -2560,7 +2702,7 @@ class GFEloqua extends GFFeedAddOn {
 		if ( false !== strpos( strtolower( $success ), 'success' ) ) {
 			$debug_note = sprintf( $success_note, 'string "success" found in success meta' );
 			$this->entry_notes->add_debug( $debug_note );
-			$this->log_debug( __METHOD__ . '(): Is Success (' . $debug_note . ') => ' . $entry_id );
+			$this->log_debug( __METHOD__ . '() => Is Success (' . $debug_note . '): ' . $entry_id );
 			$this->entry_notes->done();
 			return true;
 		}
@@ -2577,7 +2719,7 @@ class GFEloqua extends GFFeedAddOn {
 
 						$debug_note = sprintf( $success_note, 'string "Data successfully sent" found in notes' );
 						$this->entry_notes->add( $debug_note );
-						$this->log_debug( __METHOD__ . '(): Is Success (' . $debug_note . ') => ' . print_r( $note, true ) );
+						$this->log_debug( __METHOD__ . '() => Is Success (' . $debug_note . '): ' . print_r( $note, true ) );
 
 						// mark it as successful to future-proof.
 						$this->mark_as_sent( $entry_id );
@@ -2599,7 +2741,7 @@ class GFEloqua extends GFFeedAddOn {
 	 *
 	 * @return json
 	 */
-	function resubmit_entry( $entry_id = null, $form_id = null ) {
+	public function resubmit_entry( $entry_id = null, $form_id = null ) {
 		if ( ! $entry_id ) {
 			$entry_id = isset( $_GET['entry_id'] ) && $_GET['entry_id'] ? (int) sanitize_text_field( $_GET['entry_id'] ) : false;
 		}
@@ -2697,7 +2839,7 @@ class GFEloqua extends GFFeedAddOn {
 	 *
 	 * @return int  Number of retries.
 	 */
-	function get_retry_attempts( $entry_id ) {
+	public function get_retry_attempts( $entry_id ) {
 		return gform_get_meta( $entry_id, GFELOQUA_OPT_PREFIX . 'retries' );
 	}
 
@@ -2707,7 +2849,7 @@ class GFEloqua extends GFFeedAddOn {
 	 * @param int $entry_id  GF Entry ID.
 	 * @param int $form_id   GF Form ID.
 	 */
-	function update_retry_attempts( $entry_id, $form_id = null ) {
+	public function update_retry_attempts( $entry_id, $form_id = null ) {
 		$attempts = $this->get_retry_attempts( $entry_id );
 		if ( ! $attempts ) {
 			$attempts = 0;
@@ -2724,7 +2866,7 @@ class GFEloqua extends GFFeedAddOn {
 	 *
 	 * @return array  Meta content in array
 	 */
-	function get_entry_meta( $entry_meta, $form_id ) {
+	public function get_entry_meta( $entry_meta, $form_id ) {
 		$feeds = GFAPI::get_feeds( null, $form_id, $this->_slug );
 
 		if ( ! $feeds ) {
@@ -2745,7 +2887,7 @@ class GFEloqua extends GFFeedAddOn {
 	 *
 	 * @param array $schedules  Existing cron schedules.
 	 */
-	function add_extra_cron_schedule( $schedules ) {
+	public function add_extra_cron_schedule( $schedules ) {
 		if ( ! isset( $schedules['5min'] ) ) {
 			$schedules['5min'] = array(
 				'interval' => 5 * 60,
@@ -2777,7 +2919,7 @@ class GFEloqua extends GFFeedAddOn {
 	/**
 	 * Retry failed entry submissions to Eloqua
 	 */
-	function retry_failed_submissions() {
+	public function retry_failed_submissions() {
 		$feeds = GFAPI::get_feeds( null, null, $this->_slug );
 
 		$forms = array();
@@ -2805,7 +2947,7 @@ class GFEloqua extends GFFeedAddOn {
 	 *
 	 * @return array  Entries
 	 */
-	function get_failed_entries( $forms = array() ) {
+	public function get_failed_entries( $forms = array() ) {
 		if ( ! $forms ) {
 			return array();
 		}
@@ -2837,7 +2979,7 @@ class GFEloqua extends GFFeedAddOn {
 	 * @param int $entry_id  GF Entry ID.
 	 * @param int $form_id   GF Form ID.
 	 */
-	function reset_entry( $entry_id = null, $form_id = null ) {
+	public function reset_entry( $entry_id = null, $form_id = null ) {
 		if ( ! $entry_id ) {
 			$entry_id = isset( $_GET['entry_id'] ) && $_GET['entry_id'] ? absint( $_GET['entry_id'] ) : false;
 		}
