@@ -1,0 +1,25 @@
+<!-- start Simple Custom CSS and JS -->
+<style type="text/css">
+#truste-consent-buttons button {
+      display:inline-block;
+}
+
+#consent_blackbar {
+    position: fixed;
+    z-index: 501;
+    bottom: 1px;
+    width: 100%;
+}
+
+#truste-consent-button {
+  height:2em;
+  line-height:1.3;
+  border-radius:15px;
+  padding:5px 10px;
+}
+
+#truste-show-consent {
+  color:#ff791a;
+}
+</style>
+<!-- end Simple Custom CSS and JS -->
