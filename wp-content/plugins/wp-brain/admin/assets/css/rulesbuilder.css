@@ -1,0 +1,246 @@
+/* Query Builder */
+.query-builder {
+}
+
+.query-builder .rule-container input[type="text"],
+.query-builder .rule-container input[type="email"],
+.query-builder .rule-container input[type="number"],
+.query-builder .rule-container input[type="date"],
+.query-builder .rule-container select {
+    padding: 0 5px !important;
+    font-size: 12px !important;
+    height: 23px !important;
+    line-height: 20px !important;
+}
+
+.query-builder .rule-container select {
+    padding: 0 !important;
+}
+
+.query-builder .rule-container select[multiple] {
+    height: 92px !important;
+}
+
+.query-builder .rule-container select optgroup {
+    font-size: 14px;
+    font-style: normal;
+}
+
+.query-builder .rule-container select optgroup:before {
+    background-color: #F0F0F0;
+    padding: 3px 5px;
+}
+
+.query-builder .rule-container select option {
+    padding-left: 5px;
+    padding-right: 5px;
+    height: 18px;
+}
+
+.query-builder .rule-filter-container,
+.query-builder .rule-operator-container,
+.query-builder .rule-value-container {
+    position: relative;
+}
+
+.query-builder .rule-filter-container {
+    width: 160px;
+}
+
+.query-builder .rule-operator-container {
+    width: 140px;
+}
+
+.query-builder .rules-group-container.level-1 .rule-value-container {
+    width: 280px;
+}
+
+.query-builder .rules-group-container.level-2 .rule-value-container {
+    width: 267px;
+}
+
+.query-builder .rules-group-container.level-3 .rule-value-container {
+    width: 254px;
+}
+
+.query-builder .rule-value-container input[type="radio"],
+.query-builder .rule-value-container input[type="checkbox"] {
+    display: inline;
+    margin-right: -2px;
+    position: relative;
+    top: -1px;
+    width: auto;
+}
+
+.query-builder .rule-value-container .operator-between,
+.query-builder .rule-value-container .operator-not_between {
+    display: inline-block;
+    width: 50%;
+}
+
+.query-builder .rule-value-container > i {
+    display: none;
+    text-align: center;
+    width: 16%;
+}
+
+/* GROUPS */
+.query-builder .rules-group-container {
+    margin: 10px 0;
+    position: relative;
+    padding-bottom: 23px;
+}
+
+.query-builder .rules-group-header {
+    margin-bottom: 10px;
+    height: 20px;
+}
+
+.query-builder .rules-group-header .group-conditions .btn {
+    border-color: transparent;
+    font-weight: bold;
+    color: #555555;
+    float: right;
+    margin-left: 0;
+    transition: initial;
+}
+
+.query-builder .rules-group-header .group-conditions .btn.active {
+    border-color: #337AB7;
+    background-color: #3498DB;
+    color: #FFFFFF;
+    float: left;
+}
+
+.query-builder .rules-group-header .group-actions .btn,
+.query-builder .rule-header .rule-actions .btn {
+    padding: 0 3px;
+    line-height: 1em;
+}
+
+.query-builder .rules-group-header .group-actions .btn,
+.query-builder .rules-group-header .btn.delete_group {
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 0 10px;
+}
+
+.query-builder .rule-header .rule-actions .btn {
+    border-width: 0;
+    height: 23px;
+}
+
+.query-builder .rules-group-header .group-actions {
+    position: absolute;
+    bottom: 0;
+    left: 13px;
+}
+
+.query-builder .rules-group-header .group-actions .btn {
+    position: relative;
+    height: 23px;
+}
+
+.query-builder .rules-group-header input[name$=_cond] {
+    display: none;
+}
+
+.query-builder .rules-group-body {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.query-builder .rules-list {
+    list-style: none;
+    padding: 0 0 0 13px;
+    margin: 0;
+}
+
+/* RULES */
+.query-builder .rule-container {
+    padding: 8px 9px;
+    background-color: #FAFAFA;
+    border: 1px solid;
+    border-color: #FAFAFA #CCCCCC #CCCCCC #FAFAFA;
+    margin-bottom: 5px;
+}
+
+.query-builder .rule-container > div:not(.rule-header) {
+    display: inline-block;
+    margin: 0 0px 0 0;
+    vertical-align: top;
+}
+
+.query-builder .rule-value-container label {
+    margin-bottom: 0;
+    margin-right: 5px;
+}
+
+.query-builder .rule-value-container label.block {
+    display: block;
+}
+
+/* ERRORS */
+.query-builder .has-error {
+    background: #FFDDDD;
+    border-color: #FF9999;
+}
+
+.query-builder .error-container {
+    display: none !important;
+}
+
+/* TICKS */
+.query-builder .rules-list > * {
+    position: relative;
+}
+
+.query-builder .rules-list > *:before,
+.query-builder .rules-list > *:after,
+.query-builder .rules-group-header .btn.add_rule:before {
+    content: '';
+    position: absolute;
+    left: -14px;
+    width: 12px;
+    height: 50%;
+    padding-top: 3px;
+    border-color: #337AB7;
+    border-style: solid;
+}
+
+.query-builder .rules-list > *:before,
+.query-builder .rules-group-header .btn.add_rule:before {
+    bottom: 50%;
+    border-width: 0 0 1px 1px;
+}
+
+.query-builder .rules-group-header .btn.add_rule:before {
+    padding-top: 9px;
+}
+
+.query-builder .rules-list > *:after {
+    top: 50%;
+    border-width: 0 0 0 1px;
+}
+
+.query-builder .rules-list > dl:before,
+.query-builder .rules-list > dl:after {
+    left: -13px;
+    bottom: auto;
+}
+
+.query-builder .rules-list > dl:before {
+    top: 20px;
+    height: 0;
+    padding-top: 0;
+}
+
+.query-builder .rules-list > dl::after {
+    height: 100%;
+    top: -8px;
+    padding-top: 15px;
+}
+
+.query-builder .rules-list > *:first-child:before {
+    padding-top: 10px;
+}
