@@ -70,7 +70,7 @@ function custom_confirmation($confirmation, $form, $lead, $ajax){
 
         if ($gated_content)
         {
-            $gated_content = "<a data-fancybox data-type='iframe' href='{$gated_content}' id='access_gated_content' class='gform_button button' style='left: 25%; top: 100px;'>Access Content</a><script>jQuery(document).ready(function(){jQuery('#access_gated_content').click();});</script>";
+            $gated_content = "<a data-fancybox data-type='iframe' href='{$gated_content}' id='access_gated_content' class='gform_button button' style='left: 25%; top: 100px;'>Access Content</a><script>jQuery(document).ready(function(){setTimeout(function(){jQuery('#access_gated_content').click();}, 1500);});</script>";
         }
         else
         {

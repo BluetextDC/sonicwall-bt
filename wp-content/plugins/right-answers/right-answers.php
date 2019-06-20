@@ -57,6 +57,28 @@ License: GPL2
     add_action( 'wp_ajax_nopriv_flush_permalinks', 'flush_permalinks' );
 
 
+add_filter( 'wpseo_canonical', 'custom_RA_canonical', 10, 1 );
+
+function custom_RA_canonical($canonical)
+{
+    global $post;
+
+    switch ($post->ID) {
+        case 12368:
+            //Category page
+            $category = get_query_var('kb-slug');
+            return get_site_url()."/support/knowledge-base/".$category;
+            break;
+        case 12371:
+        case 12364:
+            //KB Single solution or Product notification
+            return get_site_url()."/support/knowledge-base/?sol_id=".$_REQUEST['sol_id'];
+            break;
+        default:
+            return $canonical;
+    }    
+}
+
 add_filter('wpseo_title','custom_RA_title',10,1);
 
 function custom_RA_title($title){
