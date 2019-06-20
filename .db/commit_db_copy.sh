@@ -1,6 +1,6 @@
 OLDDIR=`pwd`
 echo "Exporting current.sql"
-mysqldump -h localhost -u root -proot testmerge -r /tmp/mergeoutput.sql
+mysqldump -h localhost -u root -proot testmerge2 -r /tmp/mergeoutput.sql
 echo "Export Done, Chunk it"
 mkdir /tmp/mergesplit
 cd /tmp/mergesplit
