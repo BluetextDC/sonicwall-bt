@@ -141,7 +141,15 @@ function main_topic_titles(){
                             
                         }
                         $a_href = str_replace("<a ", "<a data-fancybox data-type='iframe' data-src-override='".home_url()."/support/technical-documentation/" . $post_name."' ", $book_title->pdf_only);
-						$title_holder .= '<p>' . $a_href . '</p>';
+                        
+                        if ( wp_is_mobile() ) {
+                            $a_basic = str_replace('<a ', '<a target="_blank" ', $book_title->pdf_only);
+                            $title_holder .= '<p>' . $a_basic . '</p>';
+                        }
+						else
+                        {
+                            $title_holder .= '<p>' . $a_href . '</p>';
+                        }
                     
 					}
                     else if ( !empty($book_title->first_child_post_id))
