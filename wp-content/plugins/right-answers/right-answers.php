@@ -249,7 +249,7 @@ if(!class_exists('RightAnswers')) {
 	    // wp_enqueue_style('fonteawesome');
 
 	
-		wp_register_script('ra-public', plugins_url('/js/right-answers-public.js', __FILE__), 'jquery', '2.0', true);
+		wp_register_script('ra-public', plugins_url('/js/right-answers-public-v2.js', __FILE__), 'jquery', '2.1', true);
 		
 		wp_localize_script('ra-public', 'ra_ajax_object', array(
 			'ajaxurl' => admin_url( 'admin-ajax.php' ),
