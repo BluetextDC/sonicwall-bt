@@ -142,7 +142,7 @@ function main_topic_titles(){
                         }
                         $a_href = str_replace("<a ", "<a data-fancybox data-type='iframe' data-src-override='".home_url()."/support/technical-documentation/" . $post_name."' ", $book_title->pdf_only);
                         
-                        if ( wp_is_mobile() ) {
+                        if ( isset($_REQUEST['mobile_pdf']) ) {
                             $a_basic = str_replace('<a ', '<a target="_blank" ', $book_title->pdf_only);
                             $title_holder .= '<p>' . $a_basic . '</p>';
                         }
