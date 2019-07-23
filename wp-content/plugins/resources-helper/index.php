@@ -61,8 +61,9 @@ function lang_redirect()
 add_filter("gform_confirmation", "custom_confirmation", 10, 4);
 function custom_confirmation($confirmation, $form, $lead, $ajax){
 
+    
 
-    if ($form["id"] == 52 || $form["id"] == 61 || $form["id"] == 63)
+    if ($form["id"] == 52 || $form["id"] == 61 || $form["id"] == 63 || $form["id"] == 68)
     {
         $id = get_the_id();
 
@@ -70,7 +71,14 @@ function custom_confirmation($confirmation, $form, $lead, $ajax){
 
         if ($gated_content)
         {
-            $gated_content = "<a data-fancybox data-type='iframe' href='{$gated_content}' id='access_gated_content' class='gform_button button' style='left: 25%; top: 100px;'>Access Content</a><script>jQuery(document).ready(function(){setTimeout(function(){jQuery('#access_gated_content').click();}, 1500);});</script>";
+           if (wp_is_mobile() && $form["id"] == 68)
+            {
+                $gated_content = "<script>setTimeout(function(){window.location.href='{$gated_content}'}, 1500);</script>";
+            }
+            else
+            {
+                 $gated_content = "<a data-fancybox data-type='iframe' href='{$gated_content}' id='access_gated_content' class='gform_button button' style='left: 25%; top: 100px;'>Access Content</a><script>jQuery(document).ready(function(){setTimeout(function(){jQuery('#access_gated_content').click();}, 1500);});</script>";
+            }
         }
         else
         {
@@ -84,7 +92,7 @@ function custom_confirmation($confirmation, $form, $lead, $ajax){
     
         $floodlight_tag = "";
         
-        if ($form["id"] == 52 || $form["id"] == 63)
+        if ($form["id"] == 52 || $form["id"] == 63 || $form["id"] == 68)
         {
             //Resource tag
             $floodlight_tag = '<script> window.dataLayer = window.dataLayer || []; window.dataLayer.push({"event": "gated-asset"})</script>';
