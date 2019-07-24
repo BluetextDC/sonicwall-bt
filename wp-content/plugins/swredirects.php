@@ -8,7 +8,7 @@ Author: Brad Kendall*/
 add_filter('w3tc_minify_urls_for_minification_to_minify_filename', 'w3tc_filename_filter', 20, 3);
 function w3tc_filename_filter($minify_filename, $files, $type ){
     
-    $version = "1.9";
+    $version = "1.16";
     
     $ver = sanitize_title( str_replace('.','', $version) );
     
