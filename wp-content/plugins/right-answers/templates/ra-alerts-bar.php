@@ -21,7 +21,7 @@
                 {
                     $alerts_txt .= '<div class="alerts-display" id="alert-no-' . $i . '">';
                     // need to put a form in here that will submit with the solution ID and do a single solution search.
-                    $alerts_txt .= '<p class="alert-title">' . $alerts->solutions[$i]->title . '  <a class="alert-title-link" href="/support/product-notification/?sol_id=' . $alerts->solutions[$i]->id . '" id="' . $alerts->solutions[$i]->id . '">Read More > </a></p></div>';
+                    $alerts_txt .= '<p class="alert-title">' . $alerts->solutions[$i]->title . '  <a class="alert-title-link" href="/support/product-notification/' . slugifyRA($alerts->solutions[$i]->title) . '/'.$alerts->solutions[$i]->id.'/" id="' . $alerts->solutions[$i]->id . '">Read More > </a></p></div>';
                 }
 				
 			}

@@ -14,8 +14,12 @@
         //Invalid Category ID
         redirect_support_home();
     }
-    
 
+    if (!$c_name)
+    {
+        ra_404();
+    }
+    
     $main_data = show_ra_cat( $c_name, $curpg);
     $sidebar_data = drilldown_menu( $c_name );
          
