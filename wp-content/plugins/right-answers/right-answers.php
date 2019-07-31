@@ -11,6 +11,74 @@ License: GPL2
  
 */
 
+ 
+if ( class_exists( 'WP_CLI' ) ) {
+    
+class cli_right_answers extends WP_CLI_Command {
+     
+  /**
+   * Update right answers data
+   */
+  function update() {
+    global $wpdb;
+    
+    $languages = array(
+        "Chinese",
+        "English",
+        "French",
+        "German",
+        "Italian",
+        "Japanese",
+        "Korean",
+        "Portuguese",
+        "Spanish"
+    );
+    
+    foreach($languages as $lang)
+    {
+        $page = 1;
+
+        $per_page = 10;
+
+        $total_pages = false;
+
+        $map = array();
+
+        $data = download($page, $lang);
+        $total_pages = ceil($data->totalHits / $per_page);
+        
+        WP_CLI::line( $lang.' - Downloading Page: 1 / '.$total_pages );
+
+        $map = array_merge($map, buildMapArray($data->solutions));
+
+        //Now loop and download all the other pages
+        for ($page = 2; $page <= $total_pages; $page++)
+        {
+            WP_CLI::line( $lang.' - Downloading Page: '. $page .' / '.$total_pages );
+            // echo "Downloading page: $page\n";
+            $data = download($page, $lang);
+
+            $map = array_merge($map, buildMapArray($data->solutions));
+        }
+
+        foreach ($map as $m)
+        {
+            $now = date("Y-m-d H:i:s");
+            $sql = "INSERT INTO {$wpdb->prefix}ra_slugs (sol_id,slug,created_at) VALUES (%d,%s,%s) ON DUPLICATE KEY UPDATE slug = %s";
+            $sql = $wpdb->prepare($sql, $m->id, $m->slug, $now, $m->slug);
+            $wpdb->query($sql);
+        }   
+    }
+   
+    WP_CLI::line( 'Finished' );
+    
+  }
+}
+
+    WP_CLI::add_command( 'right_answers', 'cli_right_answers' );
+}
+
+
 // need to write a script to loop through each of the right answers public answers and put them in transient cache
 // set the cache time to 15 minutes 
 // then instead of making a call for each answer to the database, we load the answer from the transient cache if it is there
@@ -65,14 +133,11 @@ function custom_RA_canonical($canonical)
 
     switch ($post->ID) {
         case 12368:
+        case 12371:
+        case 12364:
             //Category page
             $category = get_query_var('kb-slug');
             return get_site_url()."/support/knowledge-base/".$category;
-            break;
-        case 12371:
-        case 12364:
-            //KB Single solution or Product notification
-            return get_site_url()."/support/knowledge-base/?sol_id=".$_REQUEST['sol_id'];
             break;
         default:
             return $canonical;
@@ -97,7 +162,16 @@ function custom_RA_title($title){
             else if ( isset( $_REQUEST['categoryid'] ) ) {
                 $c_name = cat_translator( $_REQUEST['categoryid'] );
             }
-            return $c_name." | SonicWall";
+            
+            if ($c_name)
+            {
+                return $c_name." | SonicWall";
+            }
+            else
+            {
+                return "Page Not Found | SonicWall";
+            }
+            
             break;
         case 12371:
         case 12364:
@@ -105,7 +179,16 @@ function custom_RA_title($title){
             $ra = new RARequests();
             $solution = $ra->get_single_solution( $_REQUEST['sol_id'] );
             $sol = json_decode( $solution );
-            return $sol->title." | SonicWall";
+            
+            if ($sol && $sol->title)
+            {
+               return $sol->title." | SonicWall"; 
+            }
+            else
+            {
+               return "Page Not Found | SonicWall";   
+            }
+            
             break;
         default:
             return $title;
@@ -157,12 +240,313 @@ function custom_RA_title($title){
        add_filter('query_vars', function($vars) {
             $vars[] = "td-slug";
             $vars[] = "kb-slug";
+            $vars[] = 'kb-alert';
             return $vars;
         });
         add_rewrite_rule('^support/technical-documentation/(.+)/?$','index.php?page_id=22984&td-slug=$matches[1]','top');
-        add_rewrite_rule('^support/knowledge-base/(.+)/?$','index.php?page_id=12368&kb-slug=$matches[1]','top');
+        add_rewrite_rule('^support/product-notification/(.+)/?$','index.php?kb-slug=$matches[1]&kb-alert=true','top');
+        add_rewrite_rule('^support/knowledge-base/(.+)/?$','index.php?kb-slug=$matches[1]','top');
       }
 
+    add_filter( 'request', function( array $query_vars ) {
+        
+        
+        if (isset($query_vars['kb-slug']))
+        {
+            global $wpdb;
+            
+            
+            $parts = explode( "/", $query_vars['kb-slug']);
+            
+            if ($parts && count($parts) > 0)
+            {
+                 $slug = urldecode($parts[0]);
+            }
+           
+            if ($parts && count($parts) > 1)
+            {
+                $sol_id = $parts[1];    
+            }
+            
+            
+            if ($slug)
+            {
+                $sql = "SELECT d.*, (SELECT n.slug FROM {$wpdb->prefix}ra_slugs n WHERE sol_id = d.sol_id ORDER BY created_at DESC LIMIT 1) as recent_slug FROM {$wpdb->prefix}ra_slugs d WHERE d.slug=%s LIMIT 1";
+                $sql = $wpdb->prepare($sql, $slug);
+            
+                
+                $result = $wpdb->get_results($sql);
+                
+                if ($result && count($result) > 0)
+                {                    
+                    $_REQUEST['sol_id'] = $result[0]->sol_id;
+
+                    //Check if it is an alert or single solution
+                    if (isset($query_vars['kb-alert']))
+                    {
+                        $query_vars['page_id'] = 12371; //Single Solution
+                        
+                        //Check for a newer slug
+                        if ($result[0]->slug != $result[0]->recent_slug)
+                        {
+                            if ( wp_redirect( "/support/product-notification/".$result[0]->recent_slug."/".$result[0]->sol_id, 301) ) {
+                                exit;
+                            }
+                        }
+
+                        if ($result[0]->sol_id != $sol_id)
+                        {
+                            if ( wp_redirect( "/support/product-notification/".$result[0]->slug."/".$result[0]->sol_id, 301) ) {
+                                exit;
+                            }
+                        }
+
+                    }
+                    else
+                    {
+                        
+                        //Check for a newer slug
+                        if ($result[0]->slug != $result[0]->recent_slug)
+                        {
+                            if ( wp_redirect( "/support/knowledge-base/".$result[0]->recent_slug."/".$result[0]->sol_id, 301) ) {
+                                exit;
+                            }
+                        }
+                        
+                        if ($result[0]->sol_id != $sol_id)
+                        {
+                            if ( wp_redirect( "/support/knowledge-base/".$result[0]->slug."/".$result[0]->sol_id, 301) ) {
+                                exit;
+                            }
+                        }
+                        
+                        $query_vars['page_id'] = 12364; //Single Solution
+                    }
+                }
+                else
+                {
+                    //Check if it's a category, else return a 404
+                    $query_vars['page_id'] = 12368; //Category
+                }    
+            }
+            else
+            {
+                ra_404();
+            }
+            
+            
+        }
+        
+        return $query_vars;
+
+    });
+
+
+register_activation_hook ( __FILE__, 'on_activate' );
+
+function on_activate() {
+    global $wpdb;
+    $create_table_query = "
+            CREATE TABLE IF NOT EXISTS `{$wpdb->prefix}ra_slugs` (
+              `sol_id` bigint(20) NOT NULL PRIMARY KEY,
+              `slug` VARCHAR(255) NOT NULL,
+              `created_at` DATETIME NOT NULL
+            ) ENGINE=MyISAM  DEFAULT CHARSET=utf8;
+    ";
+    require_once( ABSPATH . 'wp-admin/includes/upgrade.php' );
+    dbDelta( $create_table_query );
+}
+
+
+
+function ra_404() {
+    global $wp_query; //$posts (if required)
+    if(is_page()){ // your condition
+        status_header( 404 );
+    }
+}
+
+function buildMapArray($solutions)
+{
+	$map = array();
+
+	foreach($solutions as $solution)
+	{
+        $s = new stdClass;
+        $s->id = $solution->id;
+        $s->slug = slugifyRA($solution->title);
+        $s->title = $solution->title;
+        $s->type = $solution->solutionType;
+
+        $map[] = $s;
+	}
+
+	return $map;
+}
+
+function slugifyRA($str, $options = array())
+{
+     // Make sure string is in UTF-8 and strip invalid UTF-8 characters
+	$str = mb_convert_encoding((string)$str, 'UTF-8', mb_list_encodings());
+	
+	$defaults = array(
+		'delimiter' => '-',
+		'limit' => null,
+		'lowercase' => true,
+		'replacements' => array(),
+		'transliterate' => false,
+	);
+	
+	// Merge options
+	$options = array_merge($defaults, $options);
+	
+	$char_map = array(
+		// Latin
+		'À' => 'A', 'Á' => 'A', 'Â' => 'A', 'Ã' => 'A', 'Ä' => 'A', 'Å' => 'A', 'Æ' => 'AE', 'Ç' => 'C', 
+		'È' => 'E', 'É' => 'E', 'Ê' => 'E', 'Ë' => 'E', 'Ì' => 'I', 'Í' => 'I', 'Î' => 'I', 'Ï' => 'I', 
+		'Ð' => 'D', 'Ñ' => 'N', 'Ò' => 'O', 'Ó' => 'O', 'Ô' => 'O', 'Õ' => 'O', 'Ö' => 'O', 'Ő' => 'O', 
+		'Ø' => 'O', 'Ù' => 'U', 'Ú' => 'U', 'Û' => 'U', 'Ü' => 'U', 'Ű' => 'U', 'Ý' => 'Y', 'Þ' => 'TH', 
+		'ß' => 'ss', 
+		'à' => 'a', 'á' => 'a', 'â' => 'a', 'ã' => 'a', 'ä' => 'a', 'å' => 'a', 'æ' => 'ae', 'ç' => 'c', 
+		'è' => 'e', 'é' => 'e', 'ê' => 'e', 'ë' => 'e', 'ì' => 'i', 'í' => 'i', 'î' => 'i', 'ï' => 'i', 
+		'ð' => 'd', 'ñ' => 'n', 'ò' => 'o', 'ó' => 'o', 'ô' => 'o', 'õ' => 'o', 'ö' => 'o', 'ő' => 'o', 
+		'ø' => 'o', 'ù' => 'u', 'ú' => 'u', 'û' => 'u', 'ü' => 'u', 'ű' => 'u', 'ý' => 'y', 'þ' => 'th', 
+		'ÿ' => 'y',
+		// Latin symbols
+		'©' => '(c)',
+		// Greek
+		'Α' => 'A', 'Β' => 'B', 'Γ' => 'G', 'Δ' => 'D', 'Ε' => 'E', 'Ζ' => 'Z', 'Η' => 'H', 'Θ' => '8',
+		'Ι' => 'I', 'Κ' => 'K', 'Λ' => 'L', 'Μ' => 'M', 'Ν' => 'N', 'Ξ' => '3', 'Ο' => 'O', 'Π' => 'P',
+		'Ρ' => 'R', 'Σ' => 'S', 'Τ' => 'T', 'Υ' => 'Y', 'Φ' => 'F', 'Χ' => 'X', 'Ψ' => 'PS', 'Ω' => 'W',
+		'Ά' => 'A', 'Έ' => 'E', 'Ί' => 'I', 'Ό' => 'O', 'Ύ' => 'Y', 'Ή' => 'H', 'Ώ' => 'W', 'Ϊ' => 'I',
+		'Ϋ' => 'Y',
+		'α' => 'a', 'β' => 'b', 'γ' => 'g', 'δ' => 'd', 'ε' => 'e', 'ζ' => 'z', 'η' => 'h', 'θ' => '8',
+		'ι' => 'i', 'κ' => 'k', 'λ' => 'l', 'μ' => 'm', 'ν' => 'n', 'ξ' => '3', 'ο' => 'o', 'π' => 'p',
+		'ρ' => 'r', 'σ' => 's', 'τ' => 't', 'υ' => 'y', 'φ' => 'f', 'χ' => 'x', 'ψ' => 'ps', 'ω' => 'w',
+		'ά' => 'a', 'έ' => 'e', 'ί' => 'i', 'ό' => 'o', 'ύ' => 'y', 'ή' => 'h', 'ώ' => 'w', 'ς' => 's',
+		'ϊ' => 'i', 'ΰ' => 'y', 'ϋ' => 'y', 'ΐ' => 'i',
+		// Turkish
+		'Ş' => 'S', 'İ' => 'I', 'Ç' => 'C', 'Ü' => 'U', 'Ö' => 'O', 'Ğ' => 'G',
+		'ş' => 's', 'ı' => 'i', 'ç' => 'c', 'ü' => 'u', 'ö' => 'o', 'ğ' => 'g', 
+		// Russian
+		'А' => 'A', 'Б' => 'B', 'В' => 'V', 'Г' => 'G', 'Д' => 'D', 'Е' => 'E', 'Ё' => 'Yo', 'Ж' => 'Zh',
+		'З' => 'Z', 'И' => 'I', 'Й' => 'J', 'К' => 'K', 'Л' => 'L', 'М' => 'M', 'Н' => 'N', 'О' => 'O',
+		'П' => 'P', 'Р' => 'R', 'С' => 'S', 'Т' => 'T', 'У' => 'U', 'Ф' => 'F', 'Х' => 'H', 'Ц' => 'C',
+		'Ч' => 'Ch', 'Ш' => 'Sh', 'Щ' => 'Sh', 'Ъ' => '', 'Ы' => 'Y', 'Ь' => '', 'Э' => 'E', 'Ю' => 'Yu',
+		'Я' => 'Ya',
+		'а' => 'a', 'б' => 'b', 'в' => 'v', 'г' => 'g', 'д' => 'd', 'е' => 'e', 'ё' => 'yo', 'ж' => 'zh',
+		'з' => 'z', 'и' => 'i', 'й' => 'j', 'к' => 'k', 'л' => 'l', 'м' => 'm', 'н' => 'n', 'о' => 'o',
+		'п' => 'p', 'р' => 'r', 'с' => 's', 'т' => 't', 'у' => 'u', 'ф' => 'f', 'х' => 'h', 'ц' => 'c',
+		'ч' => 'ch', 'ш' => 'sh', 'щ' => 'sh', 'ъ' => '', 'ы' => 'y', 'ь' => '', 'э' => 'e', 'ю' => 'yu',
+		'я' => 'ya',
+		// Ukrainian
+		'Є' => 'Ye', 'І' => 'I', 'Ї' => 'Yi', 'Ґ' => 'G',
+		'є' => 'ye', 'і' => 'i', 'ї' => 'yi', 'ґ' => 'g',
+		// Czech
+		'Č' => 'C', 'Ď' => 'D', 'Ě' => 'E', 'Ň' => 'N', 'Ř' => 'R', 'Š' => 'S', 'Ť' => 'T', 'Ů' => 'U', 
+		'Ž' => 'Z', 
+		'č' => 'c', 'ď' => 'd', 'ě' => 'e', 'ň' => 'n', 'ř' => 'r', 'š' => 's', 'ť' => 't', 'ů' => 'u',
+		'ž' => 'z', 
+		// Polish
+		'Ą' => 'A', 'Ć' => 'C', 'Ę' => 'e', 'Ł' => 'L', 'Ń' => 'N', 'Ó' => 'o', 'Ś' => 'S', 'Ź' => 'Z', 
+		'Ż' => 'Z', 
+		'ą' => 'a', 'ć' => 'c', 'ę' => 'e', 'ł' => 'l', 'ń' => 'n', 'ó' => 'o', 'ś' => 's', 'ź' => 'z',
+		'ż' => 'z',
+		// Latvian
+		'Ā' => 'A', 'Č' => 'C', 'Ē' => 'E', 'Ģ' => 'G', 'Ī' => 'i', 'Ķ' => 'k', 'Ļ' => 'L', 'Ņ' => 'N', 
+		'Š' => 'S', 'Ū' => 'u', 'Ž' => 'Z',
+		'ā' => 'a', 'č' => 'c', 'ē' => 'e', 'ģ' => 'g', 'ī' => 'i', 'ķ' => 'k', 'ļ' => 'l', 'ņ' => 'n',
+		'š' => 's', 'ū' => 'u', 'ž' => 'z'
+	);
+	
+	// Make custom replacements
+	$str = preg_replace(array_keys($options['replacements']), $options['replacements'], $str);
+	
+	// Transliterate characters to ASCII
+	if ($options['transliterate']) {
+		$str = str_replace(array_keys($char_map), $char_map, $str);
+	}
+	
+	// Replace non-alphanumeric characters with our delimiter
+	$str = preg_replace('/[^\p{L}\p{Nd}]+/u', $options['delimiter'], $str);
+	
+	// Remove duplicate delimiters
+	$str = preg_replace('/(' . preg_quote($options['delimiter'], '/') . '){2,}/', '$1', $str);
+	
+	// Truncate slug to max. characters
+	$str = mb_substr($str, 0, ($options['limit'] ? $options['limit'] : mb_strlen($str, 'UTF-8')), 'UTF-8');
+	
+	// Remove delimiter from ends
+	$str = trim($str, $options['delimiter']);
+	
+	return $options['lowercase'] ? mb_strtolower($str, 'UTF-8') : $str;
+}
+
+
+function download($page, $lang)
+{
+	if ($data = getCache($page))
+	{
+		return json_decode($data);
+	}
+	else
+	{
+		//Sleep to prevent killing the server
+		sleep(1);
+
+		$curl = curl_init();
+
+		curl_setopt_array($curl, array(
+			  CURLOPT_URL => "https://sonicwall.rightanswers.com/portal/api/rest/search/?companyCode=sonicwall&appInterface=ss&&collections=custom_SS&page={$page}&language={$lang}",
+			  CURLOPT_USERPWD => "apitest:nC0@jC4uIJ3ng",
+			  CURLOPT_RETURNTRANSFER => true,
+			  CURLOPT_ENCODING => "",
+			  CURLOPT_MAXREDIRS => 10,
+			  CURLOPT_TIMEOUT => 30,
+			  CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+			  CURLOPT_CUSTOMREQUEST => "GET",
+			  CURLOPT_FRESH_CONNECT => true,
+			  CURLOPT_HTTPHEADER => array(
+			    "Accept-Encoding: application/gzip,deflate",
+			    "Connection: Keep-Alive",
+			    "User-Agent: Apache-HttpClient/4.1.1 (java 1.7)",
+			    "cache-control: no-cache"
+			  ),
+			));
+
+			$response = curl_exec($curl);
+			$err = curl_error($curl);
+
+			curl_close($curl);
+
+			if ($err) {
+			  return "cURL Error #:" . $err;
+			} else {
+			  setCache($page, $response);
+			  return json_decode($response);
+			}
+	}
+}
+
+
+function getCache($page)
+{
+    return false;
+	$cache_file = __DIR__."/cache/{$page}.json";
+	if (file_exists($cache_file))
+	{
+		return file_get_contents($cache_file);
+	}
+
+	return false;
+}
+
+function setCache($page, $data)
+{
+    return;
+	$cache_file = __DIR__."/cache/{$page}.json";
+	file_put_contents($cache_file, $data);
+}
 
 
 if(!class_exists('RightAnswers')) {
