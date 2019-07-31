@@ -29,7 +29,7 @@
 	foreach ($alerts->solutions as $al) {
 		$alert_sol = json_decode( $ra->get_single_solution( $al->id ) );
 		$alert_sol_lastupdate = str_replace('000', '', $alert_sol->lastModifiedDate);
-		$html .= '<a class="alert-title-link" href="/support/product-notification/?sol_id=' . $al->id . '" id="' . $al->id . '"><div class="alert-block">';
+		$html .= '<a class="alert-title-link" href="/support/product-notification/' . slugifyRA($al->title) . '/'.$al->id.'/" id="' . $al->id . '"><div class="alert-block">';
 		$html .= '<div class="alert-block-header"><div class="alert-icon-holder">';
 		if ( strpos($al->title, 'Notice:') !== false ){
 			$html .= '<i style="margin-right:10px;" class="fa fa-exclamation-circle" aria-hidden="true"></i>';

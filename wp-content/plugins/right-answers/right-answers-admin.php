@@ -118,7 +118,7 @@
 
  	public function get_single_solution($solution_id){
 
-        $key = "single_solution_".$solution_id;
+        $key = "ra_single_solution_".$solution_id;
         
         
         if ( false === ( $response = getRACacheItem($key) ) ) {
@@ -729,6 +729,26 @@ function ajax_video_popup( $vid = null ){
 
 }
 
+function solLink($solution)
+{
+    if ($solution && isset($solution->title) && isset($solution->id))
+    {
+        return slugifyRA($solution->title)."/".$solution->id."/";
+    }
+    else if ($solution && isset($solution->title))
+    {
+        return slugifyRA($solution->title)."/";
+    }
+    else if ($solution && isset($solution->id))
+    {
+        return "?sol_id=".$solution->id;
+    }
+    else
+    {
+        return "";
+    }
+}
+
 function ajax_alerts(){
 
 	$ra = new RARequests();
@@ -747,7 +767,7 @@ function ajax_alerts(){
 		$alert_solu = json_decode($ra->get_single_solution( $al_sol->id ));
         
 		$alert_solu_lastupdate = str_replace('000', '', $alert_solu->lastModifiedDate);
-		$alert_html .= '<a class="alert-title-link" href="/support/product-notification/?sol_id=' . $al_sol->id . '" id="' . $al_sol->id . '"><div class="alert-block">';
+		$alert_html .= '<a class="alert-title-link" href="/support/product-notification/'.solLink($al_sol).'" id="' . $al_sol->id . '"><div class="alert-block">';
 		$alert_html .= '<div class="alert-block-header"><div class="alert-icon-holder">';
 		if ( strpos($al_sol->title, 'Notice:') !== false ){
 			$alert_html .= '<i style="margin-right:10px;" class="fa fa-exclamation-circle" aria-hidden="true"></i>';
@@ -808,7 +828,7 @@ function drilldown_menu( $cpaths ) {
 	$ra = new RARequests();
     $language = $ra->getRALanguage();
     
-    $drilldown_key = $cpaths . '_' . $language . '_drilldown';
+    $drilldown_key = 'ra_'.$cpaths . '_' . $language . '_drilldown';
     
     if ( false === ( $filter_menu = getRACacheItem($drilldown_key) ) ) {
 		  // It wasn't there, so regenerate the data and save the transient
@@ -904,7 +924,7 @@ function show_ra_cat( $cat_name, $curpg, $jax = false ){
     
     $language = $ra->getRALanguage();
     
-    $main_key = $language.$cat_name . '_' . $curpg . '_main_data';
+    $main_key = 'ra_'.$language.$cat_name . '_' . $curpg . '_main_data';
     
     if ( false === ( $answer_form = getRACacheItem($main_key) ) ) {
 		  // It wasn't there, so regenerate the data and save the transient
@@ -935,7 +955,7 @@ function show_ra_cat( $cat_name, $curpg, $jax = false ){
 
 			// print_r($cat);
 
-			$answer_form .= '<a href="/support/knowledge-base/?sol_id=' . $cat->id .  '" id="' . $cat->id . '" class="result_link">' . $cat->title . '</a>';
+			$answer_form .= '<a href="/support/knowledge-base/'.solLink($cat).'" id="' . $cat->id . '" class="result_link">' . $cat->title . '</a>';
 			$answer_form .= '<p class="results-data-relevance"><span style="margin-right: 25px;"><img src="'. plugins_url('/img/calendar.png', __FILE__) . '"> ' . date( 'm/d/Y', $lastupdate ) . '</span> <span style="margin-right: 25px;"><img src="'. plugins_url('/img/thumbs-up.png', __FILE__) . '"> ' . $cat_sol->solvedCount . '</span> <img src="'. plugins_url('/img/eye-con.png', __FILE__) . '"> ' . $cat_sol->viewCount . '</p>';
 			$answer_form .= '<p class="results-excerpt">' . trim_excerpt( $cat_sol->fields[0]->content, 150 ) . '</p>';
 			$answer_form .= '<p class="product-list">Product(s):<br />';
@@ -968,7 +988,7 @@ function redirect_support_home()
         $lang_home_url = $lang_home_url."/";
     }
     $url = $lang_home_url."support";
-    if (wp_redirect($url))
+    if (wp_redirect($url, 301))
     {
         exit();
     }
@@ -1025,7 +1045,7 @@ function general_ra_search( $qterm, $cpag ) {
 			$res_sol = json_decode( $ra->get_single_solution( $res->id ) );
 			$res_sol_lastupdate = str_replace('000', '', $res_sol->lastModifiedDate);
 
-			$answer_form .= '<a href="/support/knowledge-base/?sol_id=' . $res->id . '" id="' . $res->id . '" class="result_link">' . $res->title . '</a>';
+			$answer_form .= '<a href="/support/knowledge-base/'.solLink($res). '" id="' . $res->id . '" class="result_link">' . $res->title . '</a>';
 			$answer_form .= '<p class="results-data-relevance"><span style="margin-right: 25px;"><img src="'. plugins_url('/img/calendar.png', __FILE__) . '"> ' . date( 'm/d/Y', $res_sol_lastupdate ) . '</span> <span style="margin-right: 25px;"><img src="'. plugins_url('/img/thumbs-up.png', __FILE__) . '"> ' . $res_sol->solvedCount . '</span> <img src="'. plugins_url('/img/eye-con.png', __FILE__) . '"> ' . $res_sol->viewCount . '</p>';
 			$answer_form .= '<p class="results-excerpt">' . trim_excerpt( $res_sol->fields[0]->content, 150 ) . '</p>';
 			$answer_form .= '<p class="product-list">Product(s):<br />';
@@ -1062,7 +1082,7 @@ function general_ra_search( $qterm, $cpag ) {
 				$fav_sol = json_decode( $ra->get_single_solution( $solution_id ) );
 				$fav_sol_lastupdate = str_replace('000', '', $fav_sol->lastModifiedDate);
 
-				$answer_form .= '<a href="/support/knowledge-base/?sol_id=' . $solution_id . '" id="' . $solution_id . '" class="result_link">' . $description . '</a>';
+				$answer_form .= '<a href="/support/knowledge-base/'.solLink($fav_sol) . '" id="' . $solution_id . '" class="result_link">' . $description . '</a>';
 				$answer_form .= '<p>' . strip_tags( $fav_sol->fields[0]->content ) . '</p>';
 				$answer_form .= '<p>Product(s):<br />';
 				foreach ($fav_sol->taxonomy as $fstax) {
@@ -1109,11 +1129,11 @@ function single_solution_search( $res_id, $is_alert = false ){
     
         if ($is_alert)
         {
-            $key = $res_id . '_alert';
+            $key = 'ra_'.$res_id . '_alert';
         }
         else
         {
-            $key = $res_id . '_solution';
+            $key = 'ra_'.$res_id . '_solution';
         }
     
         
@@ -1202,7 +1222,7 @@ function single_solution_search( $res_id, $is_alert = false ){
 					$fav_sol = json_decode( $ra->get_single_solution( $fav->solutionID ) );
 					$fav_sol_lastupdate = str_replace('000', '', $fav_sol->lastModifiedDate);
 
-					$answer_form .= '<a href="/support/knowledge-base/?sol_id=' . $fav->solutionID . '" id="' . $fav->solutionID . '" class="result_link">' . $fav->description . '</a>';
+					$answer_form .= '<a href="/support/knowledge-base/'.solLink($fav). '" id="' . $fav->solutionID . '" class="result_link">' . $fav->description . '</a>';
 					$answer_form .= '<p>' . strip_tags( $fav_sol->fields[0]->content ) . '</p>';
 					$answer_form .= '<p>Product(s):<br />';
 					foreach ($fav_sol->taxonomy as $fstax) {
