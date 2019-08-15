@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,700,800');
+
+#plc-product-list-holder #product-selector {
+	width: 100%;
+	max-width: 50%;
+	margin: 0 auto;
+}
+
+#product-lifestyle-container-holder .plc-product-data-table {
+	display: none;
+}
+
+#product-lifestyle-container-holder .plc-product-data-table thead tr th {
+	background-color: #68696b;
+	color: #fff;
+	padding: 5px;
+	position: relative;
+}
+
+#product-lifestyle-container-holder tr:first-child td, #product-lifestyle-container-holder tr td  {
+	border-style: solid; 
+	border-width: 1px;
+	padding: 5px;
+}
+
+#product-lifestyle-container-holder .plc-product-type {
+	float: left;
+	margin-right: 25px;
+	margin-bottom: 25px;
+}
+
+#product-lifestyle-container-holder #product-type-holder .plc-product-type a {
+	background:  #ff791a;
+	color: #fff !important;
+	text-align: center;
+    border: none;
+    border-radius: 2px;
+    padding: 5px 8px;
+    font-size: .9em;
+}
+
+#firmware-release {
+	width: 10%;
+}
+
+#firmware-model {
+	width: 20%;
+}
+
+#firmware-type {
+	width: 8%;
+}
+
+#hardware-model {
+	width: 15%;
+}
+
+#plc-tooltips-holder {
+	display: none;
+}
+
+.tooltip-holder {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	background-color: #000;
+	color: #fff;
+	text-transform: none;
+	font-size: 10px;
+	line-height: 1.3em;
+	padding: 10px;
+	width: 240px;
+	z-index: 1000;
+}
+
+.has-tip {
+    border-bottom: dotted 1px #8a8a8a;
+    font-weight: bold;
+    cursor: help;
+    background: #f60;
+    border-radius: 9px;
+    height: 15px;
+    width: 15px;
+    text-align: center;
+    text-transform: lowercase;
+    font-size: .7rem;
+    margin-left: 1px;
+    padding: 0 6px;
+}
