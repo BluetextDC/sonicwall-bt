@@ -37,6 +37,12 @@ function wpv_combine( $query_args, $view_settings, $view_id ) {
     return $query_args;
 }
 
+//Remove the Resources asset left/right navigation
+add_filter('avia_post_nav_entries','avia_remove_post_nav', 10, 1);
+function avia_remove_post_nav() {   
+    return false; 
+}
+
 add_action( 'wp', 'lang_redirect' );
 function lang_redirect()
 {
@@ -71,7 +77,7 @@ function custom_confirmation($confirmation, $form, $lead, $ajax){
 
         if ($gated_content)
         {
-           if (wp_is_mobile() && $form["id"] == 68)
+           if (wp_is_mobile())
             {
                 $gated_content = "<script>setTimeout(function(){window.location.href='{$gated_content}'}, 1500);</script>";
             }
@@ -605,7 +611,14 @@ function resource_link( $atts, $content ){
         $content = get_post_meta( $id, 'wpcf-resource-content', true);
         
         if(substr($content, -4) == '.pdf'){
-            return "<a data-fancybox data-type='iframe' href='{$url}'>{$title}</a>";
+            if (wp_is_mobile())
+            {
+                return "<a href='{$url}'>{$title}</a>";
+            }
+            else
+            {
+              return "<a data-fancybox data-type='iframe' href='{$url}'>{$title}</a>";  
+            }
         }
     }
     
