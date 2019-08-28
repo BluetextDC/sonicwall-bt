@@ -664,13 +664,20 @@
         <Products>
             <Product name="SonicPoint">
                 <UpgradeProducts>
+					<UpgradeProduct>SonicWave 224w</UpgradeProduct>
+					<UpgradeProduct>SonicWave 231c</UpgradeProduct>
+                    <UpgradeProduct>SonicWave 231o</UpgradeProduct>
                     <UpgradeProduct>SonicWave 432e</UpgradeProduct>
                     <UpgradeProduct>SonicWave 432i</UpgradeProduct>
                     <UpgradeProduct>SonicWave 432o</UpgradeProduct>
+					
                 </UpgradeProducts>
             </Product>
             <Product name="SonicPoint A/B/G">
                 <UpgradeProducts>
+					<UpgradeProduct>SonicWave 224w</UpgradeProduct>
+					<UpgradeProduct>SonicWave 231c</UpgradeProduct>
+                    <UpgradeProduct>SonicWave 231o</UpgradeProduct>
                     <UpgradeProduct>SonicWave 432e</UpgradeProduct>
                     <UpgradeProduct>SonicWave 432i</UpgradeProduct>
                     <UpgradeProduct>SonicWave 432o</UpgradeProduct>
@@ -678,6 +685,9 @@
             </Product>
             <Product name="SonicPoint G">
                 <UpgradeProducts>
+					<UpgradeProduct>SonicWave 224w</UpgradeProduct>
+					<UpgradeProduct>SonicWave 231c</UpgradeProduct>
+                    <UpgradeProduct>SonicWave 231o</UpgradeProduct>
                     <UpgradeProduct>SonicWave 432e</UpgradeProduct>
                     <UpgradeProduct>SonicWave 432i</UpgradeProduct>
                     <UpgradeProduct>SonicWave 432o</UpgradeProduct>
@@ -685,6 +695,9 @@
             </Product>
             <Product name="SonicPoint-N Dual-Band">
                 <UpgradeProducts>
+					<UpgradeProduct>SonicWave 224w</UpgradeProduct>
+					<UpgradeProduct>SonicWave 231c</UpgradeProduct>
+                    <UpgradeProduct>SonicWave 231o</UpgradeProduct>
                     <UpgradeProduct>SonicWave 432e</UpgradeProduct>
                     <UpgradeProduct>SonicWave 432i</UpgradeProduct>
                     <UpgradeProduct>SonicWave 432o</UpgradeProduct>
@@ -692,6 +705,9 @@
             </Product>
             <Product name="SonicPoint-Ne Dual-Band">
                 <UpgradeProducts>
+					<UpgradeProduct>SonicWave 224w</UpgradeProduct>
+					<UpgradeProduct>SonicWave 231c</UpgradeProduct>
+                    <UpgradeProduct>SonicWave 231o</UpgradeProduct>
                     <UpgradeProduct>SonicWave 432e</UpgradeProduct>
                     <UpgradeProduct>SonicWave 432i</UpgradeProduct>
                     <UpgradeProduct>SonicWave 432o</UpgradeProduct>
@@ -699,6 +715,9 @@
             </Product>
             <Product name="SonicPoint-Ni Dual-Band">
                 <UpgradeProducts>
+					<UpgradeProduct>SonicWave 224w</UpgradeProduct>
+					<UpgradeProduct>SonicWave 231c</UpgradeProduct>
+                    <UpgradeProduct>SonicWave 231o</UpgradeProduct>
                     <UpgradeProduct>SonicWave 432e</UpgradeProduct>
                     <UpgradeProduct>SonicWave 432i</UpgradeProduct>
                     <UpgradeProduct>SonicWave 432o</UpgradeProduct>
@@ -706,6 +725,9 @@
             </Product>
             <Product name="SonicPoint-N Dual-Radio">
                 <UpgradeProducts>
+					<UpgradeProduct>SonicWave 224w</UpgradeProduct>
+					<UpgradeProduct>SonicWave 231c</UpgradeProduct>
+                    <UpgradeProduct>SonicWave 231o</UpgradeProduct>
                     <UpgradeProduct>SonicWave 432e</UpgradeProduct>
                     <UpgradeProduct>SonicWave 432i</UpgradeProduct>
                     <UpgradeProduct>SonicWave 432o</UpgradeProduct>
@@ -713,6 +735,9 @@
             </Product>
             <Product name="SonicPoint ACe">
                 <UpgradeProducts>
+					<UpgradeProduct>SonicWave 224w</UpgradeProduct>
+					<UpgradeProduct>SonicWave 231c</UpgradeProduct>
+                    <UpgradeProduct>SonicWave 231o</UpgradeProduct>
                     <UpgradeProduct>SonicWave 432e</UpgradeProduct>
                     <UpgradeProduct>SonicWave 432i</UpgradeProduct>
                     <UpgradeProduct>SonicWave 432o</UpgradeProduct>
@@ -720,6 +745,9 @@
             </Product>
             <Product name="SonicPoint ACi">
                 <UpgradeProducts>
+					<UpgradeProduct>SonicWave 224w</UpgradeProduct>
+					<UpgradeProduct>SonicWave 231c</UpgradeProduct>
+                    <UpgradeProduct>SonicWave 231o</UpgradeProduct>
                     <UpgradeProduct>SonicWave 432e</UpgradeProduct>
                     <UpgradeProduct>SonicWave 432i</UpgradeProduct>
                     <UpgradeProduct>SonicWave 432o</UpgradeProduct>
@@ -727,6 +755,9 @@
             </Product>
             <Product name="SonicPoint N2">
                 <UpgradeProducts>
+					<UpgradeProduct>SonicWave 224w</UpgradeProduct>
+					<UpgradeProduct>SonicWave 231c</UpgradeProduct>
+                    <UpgradeProduct>SonicWave 231o</UpgradeProduct>
                     <UpgradeProduct>SonicWave 432e</UpgradeProduct>
                     <UpgradeProduct>SonicWave 432i</UpgradeProduct>
                     <UpgradeProduct>SonicWave 432o</UpgradeProduct>
