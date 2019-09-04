@@ -8,7 +8,19 @@
         
         if (isset($wp_query->query_vars['kb-slug']))
         {
-            $main_data = single_solution_search( $_REQUEST['sol_id'] );   
+            $main_data = single_solution_search( $_REQUEST['sol_id'] );  
+            
+            //If the RA type is "Alerts", redirect to the same slug but with product-notification instead of knowledge-base
+            if ($main_data->type == "Alerts")
+            {
+                global $wp;
+                $url = home_url( $wp->request );
+                $url = str_replace("/support/knowledge-base/", "/support/product-notification/", $url);
+                if (wp_redirect($url, 301))
+                {
+                    exit();
+                }
+            }
         }
         else
         {
@@ -45,5 +57,5 @@
 ?>
 
 <div id="results-content-holder">
-	<div id="cats-results-holder"><?php echo $main_data; ?></div>
+	<div id="cats-results-holder"><?php echo $main_data->html; ?></div>
 </div>

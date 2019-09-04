@@ -45,7 +45,7 @@
         }
         
 		curl_setopt_array($curl, array(
-		  CURLOPT_URL => $this->baseurl . 'search/?companyCode=sonicwall&appInterface=ss&collections=custom_SS&queryText=' . $query_text . '&page=' . $page.'&language='.$language,
+		  CURLOPT_URL => $this->baseurl . 'search/?companyCode=sonicwall&appInterface=ss&collections=custom_SS&templates=template-sonicwall-Solutions&queryText=' . $query_text . '&page=' . $page.'&language='.$language,
 		  CURLOPT_USERPWD => $this->username . ":" . $this->password,
 		  CURLOPT_RETURNTRANSFER => true,
 		  CURLOPT_ENCODING => "",
@@ -84,7 +84,7 @@
 		$curl = curl_init();
         
 		curl_setopt_array($curl, array(
-		  CURLOPT_URL => $this->baseurl . 'search/?' . $this->companycode . '&' . $this->appinterface . '&collections=custom_SS&queryText=' . $query_text . '&taxonomyPath=' . $sub_cat_name . '&page=' . $page.'&language='.$language,
+		  CURLOPT_URL => $this->baseurl . 'search/?' . $this->companycode . '&' . $this->appinterface . '&collections=custom_SS&templates=template-sonicwall-Solutions&queryText=' . $query_text . '&taxonomyPath=' . $sub_cat_name . '&page=' . $page.'&language='.$language,
 		  CURLOPT_USERPWD => $this->username . ":" . $this->password,
 		  CURLOPT_RETURNTRANSFER => true,
 		  CURLOPT_ENCODING => "",
@@ -1107,7 +1107,7 @@ function ajax_single_search( $spit = false ){
 	}
 	$single_sol = single_solution_search( $_REQUEST['sol_id'], $alert );
 	if ( !$spit ){
-		echo $single_sol;
+		echo $single_sol->html;
 		wp_die();
 	}
 	else {
@@ -1140,106 +1140,116 @@ function single_solution_search( $res_id, $is_alert = false ){
         if ( false === ( $answer_form = getRACacheItem($key) ) ) {
         
     
-		$ra = new RARequests();
-		$solution = $ra->get_single_solution( $res_id );
+            $ra = new RARequests();
+            $solution = $ra->get_single_solution( $res_id );
 
-		$sol = json_decode( $solution );
+            $sol = json_decode( $solution );
+            
+            $answer_form = '';
 
-		$answer_form = '';
+            if ( $sol->status == 'Published' && collections_check( $sol->collections ) == false ){
 
-		if ( $sol->status == 'Published' && collections_check( $sol->collections ) == false ){
+                $lastupdate = str_replace('000', '', $sol->lastModifiedDate);		
+                $answer_form .= '<p class="result_link">' . $sol->title . '</p>';
+                $answer_form .= '<p class="results-data-relevance"><span style="margin-right: 25px;"><img src="'. plugins_url('/img/calendar.png', __FILE__) . '"> ' . date( 'm/d/Y', $lastupdate ) . '</span>';
+                if ( !$is_alert ){
+                    $answer_form .= ' <span style="margin-right: 25px;"><img src="'. plugins_url('/img/thumbs-up.png', __FILE__) . '"> ' . $sol->solvedCount . '</span> <img src="'. plugins_url('/img/eye-con.png', __FILE__) . '"> ' . $sol->viewCount;
+                }
+                $answer_form .= '</p>';
+                $answer_form .= '<p class="single-solution-heading">DESCRIPTION: <br />';
+                $answer_form .= $sol->fields[0]->content . '</p>';
+                if ( !empty( $sol->fields[1]->content ) ){
+                    $answer_form .= '<p class="single-solution-heading">CAUSE: <br />';
+                    $answer_form .= $sol->fields[1]->content . '</p>';
 
-			$lastupdate = str_replace('000', '', $sol->lastModifiedDate);		
-			$answer_form .= '<p class="result_link">' . $sol->title . '</p>';
-			$answer_form .= '<p class="results-data-relevance"><span style="margin-right: 25px;"><img src="'. plugins_url('/img/calendar.png', __FILE__) . '"> ' . date( 'm/d/Y', $lastupdate ) . '</span>';
-			if ( !$is_alert ){
-				$answer_form .= ' <span style="margin-right: 25px;"><img src="'. plugins_url('/img/thumbs-up.png', __FILE__) . '"> ' . $sol->solvedCount . '</span> <img src="'. plugins_url('/img/eye-con.png', __FILE__) . '"> ' . $sol->viewCount;
-			}
-			$answer_form .= '</p>';
-			$answer_form .= '<p class="single-solution-heading">DESCRIPTION: <br />';
-			$answer_form .= $sol->fields[0]->content . '</p>';
-			if ( !empty( $sol->fields[1]->content ) ){
-				$answer_form .= '<p class="single-solution-heading">CAUSE: <br />';
-				$answer_form .= $sol->fields[1]->content . '</p>';
+                }
+                if ( !empty( $sol->fields[2]->content ) ) {
+                    $answer_form .= '<p class="single-solution-heading">RESOLUTION: <br />';
+                    $answer_form .= $sol->fields[2]->content . '</p>';
+                }
 
-			}
-			if ( !empty( $sol->fields[2]->content ) ) {
-				$answer_form .= '<p class="single-solution-heading">RESOLUTION: <br />';
-				$answer_form .= $sol->fields[2]->content . '</p>';
-			}
-			
-			
-			if ( !empty( trim( $sol->fields[3]->content ) ) ){
-				$answer_form .= '<p class="single-solution-heading">ISSUE ID: ';
-				$answer_form .= $sol->fields[3]->content;
-				$answer_form .= '</p>';
-			}
-			else if ( !empty( trim( $sol->fields[4]->content ) ) ){
-				if ( strpos($sol->fields[4]->name, 'Legacy') === false ){
-					$answer_form .= '<p class="single-solution-heading">ISSUE ID: ' . $sol->fields[4]->content . '</p>';
-				}
-			}
-			
 
-			if ( !$is_alert ){
+                if ( !empty( trim( $sol->fields[3]->content ) ) ){
+                    $answer_form .= '<p class="single-solution-heading">ISSUE ID: ';
+                    $answer_form .= $sol->fields[3]->content;
+                    $answer_form .= '</p>';
+                }
+                else if ( !empty( trim( $sol->fields[4]->content ) ) ){
+                    if ( strpos($sol->fields[4]->name, 'Legacy') === false ){
+                        $answer_form .= '<p class="single-solution-heading">ISSUE ID: ' . $sol->fields[4]->content . '</p>';
+                    }
+                }
 
-				$answer_form .= '<div class="ra-solution-footer">';
 
-				$answer_form .= '<div class="ra-product-categories-list">';
-					$answer_form .= '<h4>Categories</h4>';
-					foreach ( $sol->taxonomy as $staxo ) {
-						$answer_form .= '<p class="ra-sol-taxonomy-item">' . str_replace('//', '>', $staxo) . '</p>';
-					}
-				$answer_form .= '</div>';
+                if ( !$is_alert ){
 
-				$answer_form .= '<div id="' . $res_id . '" class="ra-helpfulness-voting">';
-					$answer_form .= '<h4>Was This Article Helpful?</h4>';
-					$answer_form .= '<p><a href="#" class="yes"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 82.3 82.3" style="enable-background:new 0 0 82.3 82.3;" xml:space="preserve"><style type="text/css">.st0{fill:#FFFFFF;}</style><g><circle cx="41" cy="41.3" r="39.8"></circle><path class="st0" d="M66.4,33.8c0-2.1-1.7-3.5-3.9-3.5H43.1c0.9-4,3-8.8,2.4-11.3c-0.9-3.5-2.4-7.1-4.2-8.3s-4.9-0.3-4.9,1.3
-	s0,9.2,0,9.2l-9,13.2H16.6l2.2,24.2l8.5,0.3c1.9,1.1,5.7,2.5,10.8,2.5h19.1c2.1,0,3.9-1.9,3.9-4s-1.7-4-3.9-4h1.9
-	c2.1,0,3.9-1.9,3.9-4s-1.7-4-3.9-4h2.1c2.1,0,3.9-1.9,3.9-4s-1.7-4-3.9-4h1.3C64.7,37.3,66.4,36,66.4,33.8z"></path></g></svg><span style="color: #000;"> Yes </span></a>'; 
-					$answer_form .= '<a id="RA_article_downvote" class="no"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 82.3 82.3" style="enable-background:new 0 0 82.3 82.3;" xml:space="preserve"><style type="text/css">.st0{fill:#FFFFFF;}</style><g><circle cx="41" cy="41.3" r="39.8"></circle><path class="st0" d="M66.4,33.8c0-2.1-1.7-3.5-3.9-3.5H43.1c0.9-4,3-8.8,2.4-11.3c-0.9-3.5-2.4-7.1-4.2-8.3s-4.9-0.3-4.9,1.3
-	s0,9.2,0,9.2l-9,13.2H16.6l2.2,24.2l8.5,0.3c1.9,1.1,5.7,2.5,10.8,2.5h19.1c2.1,0,3.9-1.9,3.9-4s-1.7-4-3.9-4h1.9
-	c2.1,0,3.9-1.9,3.9-4s-1.7-4-3.9-4h2.1c2.1,0,3.9-1.9,3.9-4s-1.7-4-3.9-4h1.3C64.7,37.3,66.4,36,66.4,33.8z"></path></g></svg><span style="color: #000;"> No</span></a></p>';
-				$answer_form .= '<div id="ra-upvote-response"></div>';
-                $answer_form .= '<div id="RA_article_downvote_form" style="display: none;">'.do_shortcode('[gravityform id="65" ajax="true" description="false"]').'</div>';
-				$answer_form .= '</div>';
-               
-			$answer_form .= '</div>';
-			$answer_form .= '<div id="ra-downvote-feedback-form"><div class="ra-not-finding-answers"><h4>Not Finding Your Answer?</h4><a id="ra-request-new-article" data-fancybox data-type="iframe" data-hide-copy-button="true" href="/support/request-new-article-form/"><p class="button">REQUEST NEW ARTICLE</p></a></div></div>';
+                    $answer_form .= '<div class="ra-solution-footer">';
 
-			}
-		}
-		else {
+                    $answer_form .= '<div class="ra-product-categories-list">';
+                        $answer_form .= '<h4>Categories</h4>';
+                        foreach ( $sol->taxonomy as $staxo ) {
+                            $answer_form .= '<p class="ra-sol-taxonomy-item">' . str_replace('//', '>', $staxo) . '</p>';
+                        }
+                    $answer_form .= '</div>';
 
-			$favs = $ra->get_frequent_searches();
-			$favs = json_decode( $favs );
+                    $answer_form .= '<div id="' . $res_id . '" class="ra-helpfulness-voting">';
+                        $answer_form .= '<h4>Was This Article Helpful?</h4>';
+                        $answer_form .= '<p><a href="#" class="yes"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 82.3 82.3" style="enable-background:new 0 0 82.3 82.3;" xml:space="preserve"><style type="text/css">.st0{fill:#FFFFFF;}</style><g><circle cx="41" cy="41.3" r="39.8"></circle><path class="st0" d="M66.4,33.8c0-2.1-1.7-3.5-3.9-3.5H43.1c0.9-4,3-8.8,2.4-11.3c-0.9-3.5-2.4-7.1-4.2-8.3s-4.9-0.3-4.9,1.3
+        s0,9.2,0,9.2l-9,13.2H16.6l2.2,24.2l8.5,0.3c1.9,1.1,5.7,2.5,10.8,2.5h19.1c2.1,0,3.9-1.9,3.9-4s-1.7-4-3.9-4h1.9
+        c2.1,0,3.9-1.9,3.9-4s-1.7-4-3.9-4h2.1c2.1,0,3.9-1.9,3.9-4s-1.7-4-3.9-4h1.3C64.7,37.3,66.4,36,66.4,33.8z"></path></g></svg><span style="color: #000;"> Yes </span></a>'; 
+                        $answer_form .= '<a id="RA_article_downvote" class="no"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 82.3 82.3" style="enable-background:new 0 0 82.3 82.3;" xml:space="preserve"><style type="text/css">.st0{fill:#FFFFFF;}</style><g><circle cx="41" cy="41.3" r="39.8"></circle><path class="st0" d="M66.4,33.8c0-2.1-1.7-3.5-3.9-3.5H43.1c0.9-4,3-8.8,2.4-11.3c-0.9-3.5-2.4-7.1-4.2-8.3s-4.9-0.3-4.9,1.3
+        s0,9.2,0,9.2l-9,13.2H16.6l2.2,24.2l8.5,0.3c1.9,1.1,5.7,2.5,10.8,2.5h19.1c2.1,0,3.9-1.9,3.9-4s-1.7-4-3.9-4h1.9
+        c2.1,0,3.9-1.9,3.9-4s-1.7-4-3.9-4h2.1c2.1,0,3.9-1.9,3.9-4s-1.7-4-3.9-4h1.3C64.7,37.3,66.4,36,66.4,33.8z"></path></g></svg><span style="color: #000;"> No</span></a></p>';
+                    $answer_form .= '<div id="ra-upvote-response"></div>';
+                    $answer_form .= '<div id="RA_article_downvote_form" style="display: none;">'.do_shortcode('[gravityform id="65" ajax="true" description="false"]').'</div>';
+                    $answer_form .= '</div>';
 
-			$answer_form .= '<div id="ra-no-solution-available"><h2>We cannot find the article ' . $res_id . '</h2><p>The site has returned a 404 error. You can view other articles below.</p></div>';
+                $answer_form .= '</div>';
+                $answer_form .= '<div id="ra-downvote-feedback-form"><div class="ra-not-finding-answers"><h4>Not Finding Your Answer?</h4><a id="ra-request-new-article" data-fancybox data-type="iframe" data-hide-copy-button="true" href="/support/request-new-article-form/"><p class="button">REQUEST NEW ARTICLE</p></a></div></div>';
 
-			if ( isset( $favs ) && !empty( $favs ) ){
-				foreach ($favs as $fav) {
+                }
+            }
+            else {
 
-					$fav_sol = json_decode( $ra->get_single_solution( $fav->solutionID ) );
-					$fav_sol_lastupdate = str_replace('000', '', $fav_sol->lastModifiedDate);
+                $favs = $ra->get_frequent_searches();
+                $favs = json_decode( $favs );
 
-					$answer_form .= '<a href="/support/knowledge-base/'.solLink($fav). '" id="' . $fav->solutionID . '" class="result_link">' . $fav->description . '</a>';
-					$answer_form .= '<p>' . strip_tags( $fav_sol->fields[0]->content ) . '</p>';
-					$answer_form .= '<p>Product(s):<br />';
-					foreach ($fav_sol->taxonomy as $fstax) {
-						$answer_form .= str_replace('//', '>', $fstax) . '<br />';
-					}
-					$answer_form .= 'Last Updated on ' . date( 'm/d/Y', $fav_sol_lastupdate ) . '</p>';
-					$answer_form .= '<p class="ra-search-useful"><span style="margin-right: 25px;"><img src="'. plugins_url('/img/calendar.png', __FILE__) . '"> ' . date( 'm/d/Y', $fav_sol_lastupdate ) . ' <img src="'. plugins_url('/img/thumbs-up.png', __FILE__) . '"> ' . $fav_sol->solvedCount . ' <img src="'. plugins_url('/img/eye-con.png', __FILE__) . '">  ' . $fav_sol->viewCount . '</p>';
-					$answer_form .= '<hr />';
+                $answer_form .= '<div id="ra-no-solution-available"><h2>We cannot find the article ' . $res_id . '</h2><p>The site has returned a 404 error. You can view other articles below.</p></div>';
 
-				}
-			}
+                if ( isset( $favs ) && !empty( $favs ) ){
+                    foreach ($favs as $fav) {
 
-		}
-             setRACacheItem($key, $answer_form);
+                        $fav_sol = json_decode( $ra->get_single_solution( $fav->solutionID ) );
+                        $fav_sol_lastupdate = str_replace('000', '', $fav_sol->lastModifiedDate);
+
+                        $answer_form .= '<a href="/support/knowledge-base/'.solLink($fav). '" id="' . $fav->solutionID . '" class="result_link">' . $fav->description . '</a>';
+                        $answer_form .= '<p>' . strip_tags( $fav_sol->fields[0]->content ) . '</p>';
+                        $answer_form .= '<p>Product(s):<br />';
+                        foreach ($fav_sol->taxonomy as $fstax) {
+                            $answer_form .= str_replace('//', '>', $fstax) . '<br />';
+                        }
+                        $answer_form .= 'Last Updated on ' . date( 'm/d/Y', $fav_sol_lastupdate ) . '</p>';
+                        $answer_form .= '<p class="ra-search-useful"><span style="margin-right: 25px;"><img src="'. plugins_url('/img/calendar.png', __FILE__) . '"> ' . date( 'm/d/Y', $fav_sol_lastupdate ) . ' <img src="'. plugins_url('/img/thumbs-up.png', __FILE__) . '"> ' . $fav_sol->solvedCount . ' <img src="'. plugins_url('/img/eye-con.png', __FILE__) . '">  ' . $fav_sol->viewCount . '</p>';
+                        $answer_form .= '<hr />';
+
+                    }
+                }
+
+            }
+            
+                 $answer_form_html = $answer_form;
+            
+                 $answer_form = new stdClass();
+                 $answer_form->type = $sol->templateName;
+                 $answer_form->html = $answer_form_html;
+            
+                 $answer_form = json_encode($answer_form);
+            
+                 setRACacheItem($key, $answer_form);
         }
 
-		return $answer_form;
+    
+		return json_decode($answer_form);
 }
 
 function ajax_upvote_answer(){
