@@ -219,7 +219,7 @@
         $language = $this->getRALanguage();
         
 		curl_setopt_array($curl, array(
-		  CURLOPT_URL => $this->baseurl . 'search/?' . $this->companycode . '&' . $this->appinterface . '&' . '&taxonomyPath=' . $category_name . '&page=' . $page.'&language='.$language,
+		  CURLOPT_URL => $this->baseurl . 'search/?' . $this->companycode . '&' . $this->appinterface . '&' . '&taxonomyPath=' . $category_name . '&page=' . $page.'&language='.$language.'&collections=custom_SS',
 		  CURLOPT_USERPWD => $this->username . ":" . $this->password,
 		  CURLOPT_RETURNTRANSFER => true,
 		  CURLOPT_ENCODING => "",

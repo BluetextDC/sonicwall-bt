@@ -33,6 +33,9 @@ class cli_right_answers extends WP_CLI_Command {
         "Portuguese",
         "Spanish"
     );
+      
+      
+    $sol_ids = [];
     
     foreach($languages as $lang)
     {
@@ -67,11 +70,24 @@ class cli_right_answers extends WP_CLI_Command {
             $sql = "INSERT INTO {$wpdb->prefix}ra_slugs (sol_id,slug,created_at) VALUES (%d,%s,%s) ON DUPLICATE KEY UPDATE slug = %s";
             $sql = $wpdb->prepare($sql, $m->id, $m->slug, $now, $m->slug);
             $wpdb->query($sql);
-        }   
+            
+            $sol_ids[] = $m->id;
+        }  
     }
-   
+      
+    //Delete anything that isn't there if we have more than 10 sol_ids
+      
+    if (count($sol_ids) > 10)
+    {
+         //Remove old solutions that are missing or archived
+        $sol_id_str = implode(",", $sol_ids);
+        $delete_query = "DELETE FROM {$wpdb->prefix}ra_slugs WHERE sol_id NOT IN (".$sol_id_str.")";
+        $wpdb->query($delete_query);
+    }
+      
+  
+      
     WP_CLI::line( 'Finished' );
-    
   }
 }
 
@@ -271,7 +287,7 @@ function custom_RA_title($title){
             
             if ($slug)
             {
-                $sql = "SELECT d.*, (SELECT n.slug FROM {$wpdb->prefix}ra_slugs n WHERE sol_id = d.sol_id ORDER BY created_at DESC LIMIT 1) as recent_slug FROM {$wpdb->prefix}ra_slugs d WHERE d.slug=%s LIMIT 1";
+                $sql = "SELECT d.*, (SELECT n.slug FROM {$wpdb->prefix}ra_slugs n WHERE sol_id = d.sol_id ORDER BY created_at DESC LIMIT 1) as recent_slug FROM {$wpdb->prefix}ra_slugs d WHERE d.slug=%s ORDER BY sol_id DESC LIMIT 1";
                 $sql = $wpdb->prepare($sql, $slug);
             
                 
