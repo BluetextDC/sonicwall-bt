@@ -111,51 +111,65 @@
 		} else {
 		  return $response;
 		}
-
-
  	}
 
 
- 	public function get_single_solution($solution_id){
+ 	public function get_single_solution($solution_id, $preload = false){
 
+        if (!$solution_id)
+        {
+            return;
+        }
         $key = "ra_single_solution_".$solution_id;
         
         
-        if ( false === ( $response = getRACacheItem($key) ) ) {
-            
-        $this->simulateRADowntime("get_single_solution");
+        $response = $response = getRACacheItem($key);
         
-		$curl = curl_init();
+        
+        if ( $response == false || $preload ) {
+            
+            $this->simulateRADowntime("get_single_solution: ".$key);
 
-		curl_setopt_array($curl, array(
-		  CURLOPT_URL => $this->baseurl . 'solution/' . $solution_id . '?' . $this->companycode . '&' . $this->appinterface,
-		  CURLOPT_USERPWD => $this->username . ":" . $this->password,
-		  CURLOPT_RETURNTRANSFER => true,
-		  CURLOPT_ENCODING => "",
-		  CURLOPT_MAXREDIRS => 10,
-		  CURLOPT_TIMEOUT => 30,
-		  CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
-		  CURLOPT_CUSTOMREQUEST => "GET",
-		  CURLOPT_FRESH_CONNECT => true,
-		  CURLOPT_HTTPHEADER => array(
-		    "Accept-Encoding: application/gzip,deflate",
-		    "Connection: Keep-Alive",
-		    "User-Agent: Apache-HttpClient/4.1.1 (java 1.7)",
-		    "cache-control: no-cache"
-		  ),
-		));
+            $curl = curl_init();
 
-		$response = curl_exec($curl);
-		$err = curl_error($curl);
+            curl_setopt_array($curl, array(
+              CURLOPT_URL => $this->baseurl . 'solution/' . $solution_id . '?' . $this->companycode . '&' . $this->appinterface,
+              CURLOPT_USERPWD => $this->username . ":" . $this->password,
+              CURLOPT_RETURNTRANSFER => true,
+              CURLOPT_ENCODING => "",
+              CURLOPT_MAXREDIRS => 10,
+              CURLOPT_TIMEOUT => 30,
+              CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+              CURLOPT_CUSTOMREQUEST => "GET",
+              CURLOPT_FRESH_CONNECT => true,
+              CURLOPT_HTTPHEADER => array(
+                "Accept-Encoding: application/gzip,deflate",
+                "Connection: Keep-Alive",
+                "User-Agent: Apache-HttpClient/4.1.1 (java 1.7)",
+                "cache-control: no-cache"
+              ),
+            ));
 
-		curl_close($curl);
+            $response = curl_exec($curl);
+            $err = curl_error($curl);
 
-		if ($err) {
-		  return "cURL Error #:" . $err;
-		} else {
-            setRACacheItem($key, $response);
-		  return $response;
-		}
+            curl_close($curl);
+
+            if ($err) {
+              return "cURL Error #:" . $err;
+            } else {
+
+            $cache_time = 900;
+
+            if ($preload)
+            {
+                //Set the cache_time to 24 hours
+                $cache_time = 86400;
+            }
+
+            setRACacheItem($key, $response, $cache_time);
+              return $response;
+            }
         }
         
         return $response;
@@ -301,6 +315,11 @@
             $language = $_COOKIE['lang_override'];
         }
         
+        if (isset($_GLOBAL['lang_override']))
+        {
+            $language = $_GLOBAL['lang_override'];
+        }
+        
         return $language;
     }
      
@@ -313,67 +332,75 @@
         
         return false;
     }
-    public function get_ra_categories() {
+    public function get_ra_categories($preload = false) {
 
         $language = $this->getRALanguage();
         
         $key = "ra_categories_".$language;
         
-        if ( false === ( $response = getRACacheItem($key) ) ) {
+        $response = getRACacheItem($key);
             
-        $this->simulateRADowntime("get_categories");
-        
-        
- 		$curl = curl_init();
-
-		curl_setopt_array($curl, array(
-		  CURLOPT_URL => $this->baseurl . 'search/?' . $this->companycode . '&' . $this->appinterface . '&status=published&page=1' .'&language='.$language,
-		  CURLOPT_USERPWD => $this->username . ":" . $this->password,
-		  CURLOPT_RETURNTRANSFER => true,
-		  CURLOPT_ENCODING => "",
-		  CURLOPT_MAXREDIRS => 10,
-		  CURLOPT_TIMEOUT => 30,
-		  CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
-		  CURLOPT_CUSTOMREQUEST => "GET",
-		  CURLOPT_FRESH_CONNECT => true,
-		  CURLOPT_HTTPHEADER => array(
-		    "Accept-Encoding: application/gzip,deflate",
-		    "Connection: Keep-Alive",
-		    "User-Agent: Apache-HttpClient/4.1.1 (java 1.7)",
-		    "cache-control: no-cache"
-		  ),
-		));
-
-		$response = curl_exec($curl);
-		$err = curl_error($curl);
-        
-        $response = json_decode($response)->browsePaths;
-
+        if ($response == false || $preload) {
             
-		curl_close($curl);
+            $this->simulateRADowntime("get_categories");
 
-		if ($err) {
-		  return "cURL Error #:" . $err;
-		} else {
-            $cache_time = 900;
-    
-            setRACacheItem($key, $response, $cache_time);
-		  return $response;
-		} 
-            
+            $curl = curl_init();
+
+            curl_setopt_array($curl, array(
+              CURLOPT_URL => $this->baseurl . 'search/?' . $this->companycode . '&' . $this->appinterface . '&status=published&page=1' .'&language='.$language,
+              CURLOPT_USERPWD => $this->username . ":" . $this->password,
+              CURLOPT_RETURNTRANSFER => true,
+              CURLOPT_ENCODING => "",
+              CURLOPT_MAXREDIRS => 10,
+              CURLOPT_TIMEOUT => 30,
+              CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+              CURLOPT_CUSTOMREQUEST => "GET",
+              CURLOPT_FRESH_CONNECT => true,
+              CURLOPT_HTTPHEADER => array(
+                "Accept-Encoding: application/gzip,deflate",
+                "Connection: Keep-Alive",
+                "User-Agent: Apache-HttpClient/4.1.1 (java 1.7)",
+                "cache-control: no-cache"
+              ),
+            ));
+
+            $response = curl_exec($curl);
+            $err = curl_error($curl);
+
+            $response = json_decode($response)->browsePaths;
+
+
+            curl_close($curl);
+
+            if ($err) {
+              return "cURL Error #:" . $err;
+            } else {
+                $cache_time = 900;
+
+                if ($preload)
+                {
+                    //Set the cache_time to 24 hours
+                    $cache_time = 86400;
+                }
+                setRACacheItem($key, $response, $cache_time);
+              return $response;
+            } 
+
         }
         
         return $response;
         
  	}
 
- 	public function alert_search($page){
+ 	public function alert_search($page, $preload = false){
 
         $language = $this->getRALanguage();
         
         $key = "ra_alert_search_".$language."_".$page;
         
-        if ( false === ( $response = getRACacheItem($key) ) ) {
+        $response = getRACacheItem($key);
+        
+        if ( $response == false || $preload ) {
             
             
             $response = $this->alert_search_language($page, $language);
@@ -382,6 +409,12 @@
             if ($page == 1)
             {
                 $cache_time = 300;
+            }
+            
+            if ($preload)
+            {
+                //Set the cache_time to 24 hours
+                $cache_time = 86400;
             }
             setRACacheItem($key, $response, $cache_time);
             
@@ -832,8 +865,7 @@ function drilldown_menu( $cpaths ) {
     
     if ( false === ( $filter_menu = getRACacheItem($drilldown_key) ) ) {
 		  // It wasn't there, so regenerate the data and save the transient
-        
-    
+
 	$cats = json_decode( $ra->search_by_category( $catname, 1 ) );
 
 	$drill_down = array();
@@ -913,7 +945,7 @@ function drilldown_menu( $cpaths ) {
 	
 }
 
-function show_ra_cat( $cat_name, $curpg, $jax = false ){
+function show_ra_cat( $cat_name, $curpg, $jax = false, $preload = false ){
 
     if (!$curpg)
     {
@@ -926,50 +958,60 @@ function show_ra_cat( $cat_name, $curpg, $jax = false ){
     
     $main_key = 'ra_'.$language.$cat_name . '_' . $curpg . '_main_data';
     
-    if ( false === ( $answer_form = getRACacheItem($main_key) ) ) {
+    $answer_form = getRACacheItem($main_key);
+         
+    if ( $answer_form === false || $preload ) {
 		  // It wasn't there, so regenerate the data and save the transient
 		      
-	$cat_title = str_replace('//', ' > ', $cat_name );
-	
-	$encoded_cat_name = rawurlencode( $cat_name );
+        $cat_title = str_replace('//', ' > ', $cat_name );
 
-	
-	$cats = json_decode( $ra->search_by_category( $encoded_cat_name, $curpg ) );
+        $encoded_cat_name = rawurlencode( $cat_name );
 
-	$lpage = calc_last_page( $cats->totalHits );
+        $cats = json_decode( $ra->search_by_category( $encoded_cat_name, $curpg ) );
 
-	$pn = page_number($curpg, $lpage);	
+        $lpage = calc_last_page( $cats->totalHits );
 
-	if ( $cats->solutions !== NULL ){
-		$answer_form = '';
+        $pn = page_number($curpg, $lpage);	
 
-		$answer_form .= '<h4 class="search-results-header">CATEGORY: ' . $cat_title . '</h4>';
-		
-		foreach ($cats->solutions as $cat) {
-			
-			$cat_sol = json_decode( $ra->get_single_solution( $cat->id ) );
-			$lastupdate = str_replace('000', '', $cat_sol->lastModifiedDate);
+        if ( $cats->solutions !== NULL ){
+            $answer_form = '';
 
-			$language = $cat->language; 
-			$answer_form .= '<p>' . $language . '</p>';
+            $answer_form .= '<h4 class="search-results-header">CATEGORY: ' . $cat_title . '</h4>';
 
-			// print_r($cat);
+            foreach ($cats->solutions as $cat) {
 
-			$answer_form .= '<a href="/support/knowledge-base/'.solLink($cat).'" id="' . $cat->id . '" class="result_link">' . $cat->title . '</a>';
-			$answer_form .= '<p class="results-data-relevance"><span style="margin-right: 25px;"><img src="'. plugins_url('/img/calendar.png', __FILE__) . '"> ' . date( 'm/d/Y', $lastupdate ) . '</span> <span style="margin-right: 25px;"><img src="'. plugins_url('/img/thumbs-up.png', __FILE__) . '"> ' . $cat_sol->solvedCount . '</span> <img src="'. plugins_url('/img/eye-con.png', __FILE__) . '"> ' . $cat_sol->viewCount . '</p>';
-			$answer_form .= '<p class="results-excerpt">' . trim_excerpt( $cat_sol->fields[0]->content, 150 ) . '</p>';
-			$answer_form .= '<p class="product-list">Product(s):<br />';
-			foreach ($cat_sol->taxonomy as $cstax) {
-				$answer_form .= str_replace('//', '>', $cstax ) . '<br />';
-			}
-			$answer_form .= '<hr />';
+                $cat_sol = json_decode( $ra->get_single_solution( $cat->id ) );
+                $lastupdate = str_replace('000', '', $cat_sol->lastModifiedDate);
 
-		}
-		
-	}
-	$answer_form .= '<div id="search-name" class="ra-cat-search" style="display: none;">' . $cat_name . '</div>';
-	$answer_form .= $pn;
-    setRACacheItem($main_key, $answer_form);
+                $language = $cat->language; 
+                $answer_form .= '<p>' . $language . '</p>';
+
+                // print_r($cat);
+
+                $answer_form .= '<a href="/support/knowledge-base/'.solLink($cat).'" id="' . $cat->id . '" class="result_link">' . $cat->title . '</a>';
+                $answer_form .= '<p class="results-data-relevance"><span style="margin-right: 25px;"><img src="'. plugins_url('/img/calendar.png', __FILE__) . '"> ' . date( 'm/d/Y', $lastupdate ) . '</span> <span style="margin-right: 25px;"><img src="'. plugins_url('/img/thumbs-up.png', __FILE__) . '"> ' . $cat_sol->solvedCount . '</span> <img src="'. plugins_url('/img/eye-con.png', __FILE__) . '"> ' . $cat_sol->viewCount . '</p>';
+                $answer_form .= '<p class="results-excerpt">' . trim_excerpt( $cat_sol->fields[0]->content, 150 ) . '</p>';
+                $answer_form .= '<p class="product-list">Product(s):<br />';
+                foreach ($cat_sol->taxonomy as $cstax) {
+                    $answer_form .= str_replace('//', '>', $cstax ) . '<br />';
+                }
+                $answer_form .= '<hr />';
+
+            }
+
+        }
+        $answer_form .= '<div id="search-name" class="ra-cat-search" style="display: none;">' . $cat_name . '</div>';
+        $answer_form .= $pn;
+        
+        $cache_time = 900;
+        
+        if ($preload)
+        {
+            //Set the cache_time to 24 hours
+            $cache_time = 86400;
+        }
+        
+        setRACacheItem($main_key, $answer_form, $cache_time);
     }
    
     

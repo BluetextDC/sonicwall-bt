@@ -89,6 +89,82 @@ class cli_right_answers extends WP_CLI_Command {
       
     WP_CLI::line( 'Finished' );
   }
+    
+    
+    /**
+    * Preload right answers data
+    */
+    function preload()
+    {
+        global $wpdb;
+        
+        require_once(plugin_dir_path( __FILE__ ) . '/right-answers-admin.php');
+        
+        $ra = new RARequests();
+        
+        $languages = array(
+            "Chinese",
+            "English",
+            "French",
+            "German",
+            "Italian",
+            "Japanese",
+            "Korean",
+            "Portuguese",
+            "Spanish"
+        );
+        
+        $categories = array("0","1","2","3","4","5","6","7","8","9");
+
+        WP_CLI::line( "Starting to preload KB articles" );
+
+        //Loop through each language
+        foreach ($languages as $language)
+        {
+            $_GLOBAL['lang_override'] = $language;
+            
+            //Preload all the categories
+            $ra->get_ra_categories(true);
+            
+            
+            //Loop through 20 pages of alerts
+            
+            for ($i = 1; $i <= 20; $i++)
+            {
+                $ra->alert_search($i, true); 
+            }
+            
+            
+          //Loop through every category 
+            foreach ($categories as $categoryid)
+            {
+                $c_name = cat_translator( $categoryid );
+                
+                //Download the drilldown part too
+                drilldown_menu($c_name);
+
+                for ($i = 1; $i <= 200; $i++)
+                {
+                    WP_CLI::line( "Saving {$c_name} Page: {$i} Language: {$language}" );                    
+                    $data = show_ra_cat( $c_name, $i, false, true);
+
+                }
+            }  
+        }
+   
+        //Download and cache every solution ID
+        $sql = "SELECT * FROM {$wpdb->prefix}ra_slugs";
+        $solutions = $wpdb->get_results($sql);
+        
+        foreach ($solutions as $solution)
+        {
+            //Save each solution
+            WP_CLI::line( "Saving sol id: ". $solution->sol_id );
+            $ra->get_single_solution( $solution->sol_id, true  );
+        }
+        
+        WP_CLI::line( 'Finished Preloading' );
+    }
 }
 
     WP_CLI::add_command( 'right_answers', 'cli_right_answers' );
@@ -211,40 +287,6 @@ function custom_RA_title($title){
     }    
 }
 
-    function preload_kb()
-    {
-        echo "Starting to preload KB articles\n";
-        require_once(plugin_dir_path( __FILE__ ) . '/right-answers-admin.php');
-    
-        $categories = array("0","1","2","3","4","5","6","7","8","9");
-
-        foreach ($categories as $categoryid)
-        {
-            $c_name = cat_translator( $categoryid );
-      
-            for ($i = 1; $i <= 200; $i++)
-            {
-                echo "Saving $c_name Page: $i\n";
-                
-                $data = show_ra_cat( $c_name, $i );
-                
-                $pattern = '/sol_id=[0-9A-Za-z]*/';
-                preg_match_all($pattern, $data, $matches);
-                foreach ($matches[0] as $match)
-                {
-                    $prefix = "sol_id=";
-                    if (substr($match, 0, strlen($prefix)) == $prefix) 
-                    {
-                        $sol_id = substr($match, strlen($prefix));
-                        echo "\tSaving solution: {$sol_id}\n";
-                        single_solution_search($sol_id);
-                    }  
-                }
-            }
-           
-        }
-        
-    }
 
    function flush_permalinks() {
         global $wp_rewrite;

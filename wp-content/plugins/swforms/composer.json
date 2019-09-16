@@ -1,0 +1,19 @@
+{
+    "name": "sboregowda/swforms",
+    "description": "Custom forms plugin by sonicwall",
+    "type": "project",
+    "license": "GPL",
+    "authors": [
+        {
+            "name": "sonicwall",
+            "email": "sboregowda@sonicwall.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "league/oauth2-client": "^2.3"
+    },
+    "autoload": {
+        "psr-4": {"Views\\": "./views"}
+    }
+}
