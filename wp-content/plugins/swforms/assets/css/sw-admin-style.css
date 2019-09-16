@@ -1,0 +1,235 @@
+#frmAddBook label.error, #frmEditBook label.error, #frmAddAuthor label.error{
+    color:red;
+}
+.hidden-field{display:block;}   /* This class will overwrite the built in class from wordpress (load-styles.php - which caused out form hidden field to hide in the form editing window). */
+.sw-hide {
+    display: none !important;
+}
+.sw-show {
+    display: block;
+}
+.theme-blue-color {
+    color: #337ab7;
+}
+.update_eloqua_icon {
+    color: #337ab7;
+    padding: 3px 3px;
+    cursor: pointer;
+}
+.sw-cursor-not-allowed {
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+.button-custom {
+    box-shadow: 0 1px 0 #ccc;
+    background: #fafafa;
+    border-color: #ccc;
+    box-shadow: 0 1px 0 #ccc;
+}
+.button-custom:hover {
+    background: #fafafa;
+    border-color: #999;
+    color: #23282d;
+}
+.owt-layout{
+        text-align: center;
+    border: 1px solid black;
+    padding: 10px;
+    width: 25%;
+    margin-left: 10px;
+}
+.clearAfter:after {
+    content:"";
+    display:block;
+    clear:both;
+    visibility:hidden;
+    line-height:0;
+    height:0;
+}
+.sw-forms-admin-heading {
+    font-size: 23px;
+    margin: 20px 0;
+}   
+.sw-forms-admin-heading h1 {
+    font-size: 23px;
+}   
+.padding-10 {
+    padding: 10px !important;
+}
+.notification_height_correction {
+    height: 25px;
+}
+.notification_title_icon {
+    width: auto;
+    display: inline-block;
+    line-height: 25px;
+    height: 25px;
+}
+.sw-admin-validation-class {
+    color: #790000 !important;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+/* --------------------- Settings tabs ---------------------- */
+.nav-tabs {
+	float: left;
+	width: 100%;
+	margin: 0;
+	list-style-type: none;
+	border-bottom: 1px solid transparent;
+}
+
+.nav-tabs > li {
+	float: left;
+	margin-bottom: -1px;
+}
+
+.nav-tabs > li > a {
+	margin-right: 2px;
+	line-height: 1.5;
+	padding: 10px;
+	border: 1px solid transparent;
+	border-radius: 4px 4px 0 0;
+	float: left;
+	text-decoration: none;
+}
+
+.nav-tabs > li > a:hover {
+	border-color: #eee #eee #ddd;
+}
+
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:hover,
+.nav-tabs > li.active > a:focus {
+	color: #555;
+	cursor: default;
+	background-color: #fff;
+    border-color: transparent;
+    outline: none;
+}
+.nav-tabs > li:focus {
+    outline: none;
+}
+
+.tab-content > .tab-pane {
+	float: left;
+	width: 100%;
+	display: none;
+}
+
+.tab-content > .tab-pane.active {
+	display: block;
+	padding: 10px;
+    background-color: #F6FBFD;
+	box-shadow: 0 5px 4px -2px rgba(0, 0, 0, 0.15);
+}
+
+/* ----------------- Settings view ---------------  */
+
+.sw_forms_settings .list-group .list-group-item {
+    border: none;
+    background-color: #F6FBFD;
+}
+.sw_forms_settings .list-group .list-group-item b {
+    width: 250px;
+    display: inline-block;
+}
+.sw_forms_settings .list-group .list-group-item span {
+    width: auto;
+    display: inline-block;
+}
+
+/* -------------- LED Button ----------------- */
+.led {
+    display: grid;
+    position: relative;
+    text-align: center;
+    top: 29%;
+    left: 97.5%;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+}
+.led-red {
+    background-color: #f00;
+    /* box-shadow: #0b08084d 0 -1px 7px 1px, inset #600 0 -1px 9px, #F00 0 2px 12px; */
+    box-shadow: #0b08084d 0 -1px 7px 1px,inset #b00909 0 -1px 9px,#F00 0 2px 12px;
+}
+.led-green {
+    background-color: #99CC00;
+    /* box-shadow: #000 0 -1px 7px 1px, inset #460 0 -1px 9px, #7D0 0 2px 12px; */
+    box-shadow: #000 0 -1px 7px 1px, inset #557a0d 0 -1px 9px, #7D0 0 2px 12px;
+}
+.led-grey {
+    background-color: #CCCCCC;
+    /* box-shadow: #000 0 -1px 7px 1px, inset #660 0 -1px 9px, #CCC 0 2px 12px; */
+    box-shadow: #000 0 -1px 7px 1px, inset #5d5d5d 0 -1px 9px, #CCC 0 2px 12px;
+}
+/* ------------- form fields --------------- */
+.form-field-group {
+    margin: 10px 15px;
+    border: 1px dotted #ccc;
+    padding: 10px 0;
+}
+.form-label-gap {
+    width: 250px;
+    display: inline-block;
+}
+
+.entry-detail-list {
+
+}
+.entry-detail-list .list-group-item {
+
+}
+.entry-detail-list .list-group-item b {
+    width: 300px;
+    display: inline-block;
+}
+.entry-detail-list .list-group-item span {
+    display: inline-block;
+}
+
+/* ------------------ Loading screen -------------------- */
+.swforms-loading {
+    position: fixed;
+    background-color: rgba(43, 44, 44, 0.8);
+    width: 100%;
+    top: 0;
+    height: 100vh;
+    left: 0;
+    z-index: 100000;
+}
+.swforms-loading-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.swforms-loading-class {
+    -webkit-animation: spin 2s linear infinite; /* Safari */
+    animation: spin 2s linear infinite;
+    background: transparent;
+    border: 4px solid #fff;
+    border-bottom-color: #ff791a;
+    border-radius: 50%;
+    height: 50px;
+    left: 50%;
+    margin: -25px 0 0 -25px;
+    opacity: .7;
+    padding: 0;
+    position: absolute;
+    top: 50%;
+    width: 50px;
+    z-index: 99999;
+}
+/* Safari */
+@-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+}
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
