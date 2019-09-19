@@ -1,3 +1,15 @@
+.menu-solutions .solutions-header .menu-item {
+    white-space: nowrap !important;
+    width: 107% !important;
+}
+
+.menu-solutions .solutions-header .menu-item.selected .item-container {
+    white-space: nowrap !important;
+    width: 107% !important;
+}
+
+
+
 /*Top nav style*/
 
 
