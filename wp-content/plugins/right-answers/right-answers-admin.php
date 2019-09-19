@@ -24,6 +24,8 @@
  		//do stuff here if needed
  	}
      
+    private $sol_id = "";
+     
     public function simulateRADowntime($func)
     {
         return;
@@ -1191,6 +1193,7 @@ function single_solution_search( $res_id, $is_alert = false ){
 
             if ( $sol->status == 'Published' && collections_check( $sol->collections ) == false ){
 
+                $sol_id = $sol->id;
                 $lastupdate = str_replace('000', '', $sol->lastModifiedDate);		
                 $answer_form .= '<p class="result_link">' . $sol->title . '</p>';
                 $answer_form .= '<p class="results-data-relevance"><span style="margin-right: 25px;"><img src="'. plugins_url('/img/calendar.png', __FILE__) . '"> ' . date( 'm/d/Y', $lastupdate ) . '</span>';
@@ -1243,7 +1246,7 @@ function single_solution_search( $res_id, $is_alert = false ){
         s0,9.2,0,9.2l-9,13.2H16.6l2.2,24.2l8.5,0.3c1.9,1.1,5.7,2.5,10.8,2.5h19.1c2.1,0,3.9-1.9,3.9-4s-1.7-4-3.9-4h1.9
         c2.1,0,3.9-1.9,3.9-4s-1.7-4-3.9-4h2.1c2.1,0,3.9-1.9,3.9-4s-1.7-4-3.9-4h1.3C64.7,37.3,66.4,36,66.4,33.8z"></path></g></svg><span style="color: #000;"> No</span></a></p>';
                     $answer_form .= '<div id="ra-upvote-response"></div>';
-                    $answer_form .= '<div id="RA_article_downvote_form" style="display: none;">'.do_shortcode('[gravityform id="65" ajax="true" description="false"]').'</div>';
+                    $answer_form .= '<div id="RA_article_downvote_form" style="display: none;">'.do_shortcode('[gravityform id="65" ajax="true" description="false" '. 'field_values="sol_id='.$sol_id.'"' .']').'</div>';
                     $answer_form .= '</div>';
 
                 $answer_form .= '</div>';
