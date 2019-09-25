@@ -83,7 +83,7 @@ if(!class_exists('PLCTable')) {
 
             wp_enqueue_script('jquery');
 	    
-	    wp_register_style('plc-public-styles', plugins_url('assets/css/plc_table_public_css.css', __FILE__));
+            wp_register_style('plc-public-styles', plugins_url('assets/css/plc_table_public_css.css', __FILE__));
 
             wp_register_style('bootstrap', '//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css');
             wp_enqueue_style( 'bootstrap' );
@@ -91,12 +91,13 @@ if(!class_exists('PLCTable')) {
             wp_enqueue_style('bootstrap_style');
             
             wp_register_style('datatables_style', 'https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css');
-	    wp_register_style('datatables_style_resp', 'https://cdn.datatables.net/responsive/2.2.3/css/responsive.dataTables.min.css');
+            wp_register_style('datatables_style_resp', 'https://cdn.datatables.net/responsive/2.2.3/css/responsive.dataTables.min.css');
             wp_register_script('datatables_bootstrap', 'https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js', array('jquery'), true);
             wp_register_script('datatables_bootstrap_resp', 'https://cdn.datatables.net/responsive/2.2.3/js/dataTables.responsive.min.js', array('jquery'), true);
 
             wp_register_script('plc-table-script', plugins_url('assets/js/plc_table.js', __FILE__), 'jquery', '2.0', true);
-
+            
+            
             // if($shortcode_status) {
 		// wp_enqueue_style('datatables_style_resp');
                // wp_enqueue_style('datatables_style');
@@ -124,5 +125,13 @@ if(class_exists('PLCTable')) {
 
 	// instantiate the plugin class
 	$wp_plugin_template = new PLCTable();
+    
+    //Add in custom rewrite rules
+    add_action('init', 'plc_custom_rewrite_rule', 0, 0);
+
+    function plc_custom_rewrite_rule() {
+        add_rewrite_rule('^support/product-lifecycle-tables/(.+)/?$','index.php?page_id=9820','top');
+      }
+
 
 }
