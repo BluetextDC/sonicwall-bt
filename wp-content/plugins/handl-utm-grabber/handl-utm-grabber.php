@@ -4,15 +4,21 @@ Plugin Name: HandL UTM Grabber
 Plugin URI: http://www.haktansuren.com/handl-utm-grabber
 Description: The easiest way to capture UTMs on your (optin) forms.
 Author: Haktan Suren
-Version: 2.6.3
+Version: 2.7.1
 Author URI: http://www.haktansuren.com/
 */
+
+require_once "external/zapier.php";
 
 add_filter('widget_text', 'do_shortcode');
 
 add_action('init', 'CaptureUTMs');
 function CaptureUTMs(){
-       
+
+    if ( is_admin() ) {
+        return "";
+    }
+           
 	if (!isset($_COOKIE['handl_original_ref'])) 
 		$_COOKIE['handl_original_ref'] = isset($_SERVER['HTTP_REFERER']) ? $_SERVER['HTTP_REFERER'] : ''; 
 
@@ -31,14 +37,15 @@ function CaptureUTMs(){
        
     $cookie_field = '';
 	foreach ($fields as $id=>$field){
-		//Lowecase hack
-		$_GET_lower = array_change_key_case($_GET, CASE_LOWER);
+        
+        //Lowecase hack		
+		$_GET_lower = array_change_key_case($_GET, CASE_LOWER);		
 		$field_lower = strtolower($field);
-
+        
 		if (isset($_GET[$field]) && $_GET[$field] != '')
 			$cookie_field = htmlspecialchars($_GET[$field],ENT_QUOTES, 'UTF-8');
-		elseif(isset($_GET_lower[$field_lower]) && $_GET_lower[$field_lower] != ''){
-			$cookie_field = htmlspecialchars($_GET_lower[$field_lower],ENT_QUOTES, 'UTF-8');
+        elseif(isset($_GET_lower[$field_lower]) && $_GET_lower[$field_lower] != ''){		
+			$cookie_field = htmlspecialchars($_GET_lower[$field_lower],ENT_QUOTES, 'UTF-8');		
 		}
 		elseif(isset($_COOKIE[$field]) && $_COOKIE[$field] != ''){ 
 			$cookie_field = $_COOKIE[$field];
@@ -69,6 +76,12 @@ function handl_utm_grabber_enqueue(){
 }
 add_action( 'wp_enqueue_scripts', 'handl_utm_grabber_enqueue' );
 
+function handl_utm_grabber_enqueue_admin(){
+    wp_register_script( 'handl-utm-grabber-admin', plugins_url( '/js/admin.js' , __FILE__ ), array( 'jquery') );
+    wp_register_style( 'handl-utm-grabber-admin-css', plugins_url('/css/admin.css', __FILE__) );
+}
+add_action( 'admin_enqueue_scripts', 'handl_utm_grabber_enqueue_admin' );
+
 function handl_utm_grabber_enable_shortcode($val){
 	return do_shortcode($val);
 }
@@ -97,9 +110,12 @@ add_action( 'admin_menu', 'handl_utm_grabber_menu' );
 
 function register_handl_utm_grabber_settings() {
 	register_setting( 'handl-utm-grabber-settings-group', 'hug_append_all' );
+	register_setting( 'handl-utm-grabber-settings-group', 'hug_zapier_url' );
 }
 
 function handl_utm_grabber_menu_page(){
+wp_enqueue_style('handl-utm-grabber-admin-css');
+wp_enqueue_script('handl-utm-grabber-admin');
 ?>
 	<div class='wrap'>
 		<h2><span class="dashicons dashicons-admin-settings" style='line-height: 1.1;font-size: 30px; padding-right: 10px;'></span> HandL UTM Grabber</h2>
@@ -121,13 +137,40 @@ function handl_utm_grabber_menu_page(){
 							<p class='description' id='handl-utm-grabber-append-all-description'>This feature is still in BETA, please give us feedback <a target='blank' href='https://www.haktansuren.com/handl-utm-grabber/?utm_campaign=HandL+UTM+Grabber+Feedback&utm_content=Append+All+Feedback#reply-title'>here</a></p>
 						</fieldset>
 					</td>
-					
+				</tr>
+				<tr>
+					<th scope='row'>Zapier Webhook URL</th>
+					<td>
+				        <fieldset>
+							<legend class='screen-reader-text'>
+								<span>Set Up Zapier!</span>
+							</legend>
+							<label for='hug_zapier_url'>
+								<input style="width: 500px" name='hug_zapier_url' id='hug_zapier_url' type='text' value='<?php print get_option( 'hug_zapier_url' ) ? get_option( 'hug_zapier_url' ) : '' ?>'/>
+							</label>
+							<p class='description' id='handl-utm-grabber-zapier-description'>Check out the website to <a target='blank' href='https://www.haktansuren.com/zapier-for-contact-form-7-utms-lead-tracking-step-by-step/?utm_campaign=HandL+UTM+Grabber+Feedback&utm_content=Zapier'>learn more...</a></p>
+							<?php if ( get_option( 'hug_zapier_log' ) ){ ?>
+							<button class="accordion" type="button">View Zapier Log (Latest Call Made)</button>
+                            <div class="panel">
+                                <pre><?php print_r(get_option( 'hug_zapier_log' )); ?></pre>
+                            </div>
+							<?php } ?>
+						</fieldset>
+					</td>
 				</tr>
 			</table>
 
-			<p>
 			<?php submit_button(); ?>
 		</form>
+		
+		<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+            <input type="hidden" name="cmd" value="_s-xclick" />
+            <input type="hidden" name="hosted_button_id" value="SS93TW4NEHHNG" />
+            <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+            <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+        </form>
+
+
 	
 	</div>
 <?php
@@ -161,7 +204,7 @@ function HUG_Append_All($content) {
 add_filter( 'the_content', 'HUG_Append_All', 999 );
 
 function HUGGenerateUTMsForURL(){
-  $fields = array('elqCampaignId','elqTrackId','sfc','utm_source','utm_medium','utm_term', 'utm_content', 'utm_campaign', 'gclid');
+   $fields = array('elqCampaignId','elqTrackId','sfc','utm_source','utm_medium','utm_term', 'utm_content', 'utm_campaign', 'gclid');
   $utms = array();
   foreach ($fields as $id=>$field){
     if (isset($_COOKIE[$field]) && $_COOKIE[$field] != '')
@@ -194,7 +237,7 @@ function handl_utm_nav_menu_link_attributes($atts, $item, $args){
 add_filter('nav_menu_link_attributes', 'handl_utm_nav_menu_link_attributes', 10 ,3);
 
 function handl_admin_notice__success() {
-    $field = 'check_v252_doc';
+    $field = 'check_v27_doc';
     if (!get_option($field)) {
     ?>
     <style>
@@ -241,7 +284,8 @@ function handl_admin_notice__success() {
 		<li><span class="dashicons dashicons-heart"></span> <a href="https://wordpress.org/support/view/plugin-reviews/handl-utm-grabber" target="_blank">Like Us!</a></li>
 		<li><span class="dashicons dashicons-smiley"></span> <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=SS93TW4NEHHNG" target="_blank">Donate</a></li>
 	</ul>
-	<p><span class="dashicons dashicons-info"></span> <a href="options-general.php?page=handl-utm-grabber.php">Would you like to append UTM variables to all URLs on your site?</a></p>
+	<p><span class="dashicons dashicons-admin-links"></span> <a href="options-general.php?page=handl-utm-grabber.php">Would you like to append UTM variables to all URLs on your site?</a></p>
+	<p><span class="dashicons dashicons-share"></span> <a href="options-general.php?page=handl-utm-grabber.php">Would you like to implement with Zapier?</a></p>
 	<p class='new-plugin'><span class="dashicons dashicons-video-alt3"></span> <a href="https://www.haktansuren.com/handl-youtube-extra/?utm_medium=referral&utm_source=<?php print $_SERVER["SERVER_NAME"]?>&utm_campaign=HandL+UTM+Grabber&utm_content=New+Plugin+HandL+YouTube+Extra" target="_blank">New Plugin! Track your YouTube videos</a></p>
     </div>
     <script>
@@ -263,7 +307,7 @@ function handl_admin_notice__success() {
 add_action( 'admin_notices', 'handl_admin_notice__success' );
 
 function handl_notice_dismiss(){
-	add_option( $_POST['field'], '1', '', 'yes' ) or update_option($_POST['field'], '1'); 
+	add_option( 'check_v27_doc', '1', '', 'yes' ) or update_option('check_v27_doc', '1'); 
 	die();
 }
 add_action( 'wp_ajax_handl_notice_dismiss', 'handl_notice_dismiss' );

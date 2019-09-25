@@ -86,12 +86,14 @@ class Cache_Redis extends Cache_Base {
 		$v = $accessor->get( $storage_key );
 		$v = @unserialize( $v );
 
-		if ( !is_array( $v ) || !isset( $v['key_version'] ) )
+		if ( !is_array( $v ) || !isset( $v['key_version'] ) ) {
 			return array( null, $has_old_data );
+		}
 
 		$key_version = $this->_get_key_version( $group );
-		if ( $v['key_version'] == $key_version )
+		if ( $v['key_version'] == $key_version ) {
 			return array( $v, $has_old_data );
+		}
 
 		if ( $v['key_version'] > $key_version ) {
 			$this->_set_key_version( $v['key_version'], $group );
@@ -152,7 +154,8 @@ class Cache_Redis extends Cache_Base {
 				return true;
 			}
 		}
-		return $accessor->delete( $storage_key );
+
+		return $accessor->setex( $storage_key, 1, '' );
 	}
 
 	/**
@@ -167,7 +170,7 @@ class Cache_Redis extends Cache_Base {
 		if ( is_null( $accessor ) )
 			return false;
 
-		return $accessor->delete( $storage_key );
+		return $accessor->setex( $storage_key, 1, '' );
 	}
 
 	/**
@@ -178,8 +181,10 @@ class Cache_Redis extends Cache_Base {
 	 */
 	function flush( $group = '' ) {
 		$this->_get_key_version( $group );   // initialize $this->_key_version
-		$this->_key_version[$group]++;
-		$this->_set_key_version( $this->_key_version[$group], $group );
+		if (isset($this->_key_version[$group])) {
+			$this->_key_version[$group]++;
+			$this->_set_key_version( $this->_key_version[$group], $group );
+		}
 
 		return true;
 	}
@@ -343,6 +348,12 @@ class Cache_Redis extends Cache_Base {
 							null, null, $this->_instance_id . '_' . $this->_dbid );
 					else
 						$accessor->connect( trim( substr( $server, 5 ) ) );
+				} elseif ( strpos( $server, ':' ) === false ) {
+					if ( $this->_persistent )
+						$accessor->pconnect( trim( $server ),
+							null, null, $this->_instance_id . '_' . $this->_dbid );
+					else
+						$accessor->connect( trim( $server ) );
 				} else {
 					list( $ip, $port ) = explode( ':', $server );
 

@@ -5,7 +5,7 @@ if ( !defined( 'ABSPATH' ) ) {
 }
 
 define( 'W3TC', true );
-define( 'W3TC_VERSION', '0.9.7.2' );
+define( 'W3TC_VERSION', '0.10.1' );
 define( 'W3TC_POWERED_BY', 'W3 Total Cache' );
 define( 'W3TC_EMAIL', 'w3tc@w3-edge.com' );
 define( 'W3TC_TEXT_DOMAIN', 'w3-total-cache' );
@@ -22,7 +22,7 @@ define( 'W3TC_SUPPORT_REQUEST_URL', 'https://api.w3-edge.com/v1/support-request'
 define( 'W3TC_SUPPORT_SERVICES_URL', 'https://api.w3-edge.com/v1/support-serviceinventory' );
 define( 'W3TC_FAQ_URL', 'https://api.w3-edge.com/v1/redirects/faq' );
 define( 'W3TC_TERMS_URL', 'https://api.w3-edge.com/v1/redirects/policies-terms' );
-define( 'W3TC_TERMS_ACCEPT_URL', 'https://api.w3-edge.com/v1/redirects/policies-privacy' );
+define( 'W3TC_TERMS_ACCEPT_URL', 'https://api.w3-edge.com/v1/redirects/policies-accept' );
 define( 'W3TC_MAILLINGLIST_SIGNUP_URL', 'https://api.w3-edge.com/v1/signup-newsletter' );
 define( 'W3TC_NEWRELIC_SIGNUP_URL', 'https://api.w3-edge.com/v1/redirects/newrelic/signup' );
 define( 'W3TC_MAXCDN_SIGNUP_URL', 'https://api.w3-edge.com/v1/redirects/maxcdn/signup' );
@@ -502,45 +502,6 @@ function w3tc_opcache_flush( $http = false ) {
 			'body' => array(
 				'nonce' => wp_hash( $path ),
 				'command' => 'flush' ),
-		);
-		$result = wp_remote_post( $url, $post );
-		if ( is_wp_error( $result ) ) {
-			return $result;
-		} elseif ( $result['response']['code'] != '200' ) {
-			return $result['response']['code'];
-		}
-
-		return true;
-	}
-}
-
-/**
- * deprecated
- * Reloads files.
- *
- * @param string[] $files list of files supports, fullpath, from root, wp-content
- * @param bool    $http  if delete request should be made over http to current site. Default false.
- * @return mixed
- */
-function w3tc_opcache_flush_file( $file, $http = false ) {
-	if ( !$http ) {
-		$o = \W3TC\Dispatcher::component( 'CacheFlush' );
-		return $o->opcache_flush_file( $file );
-	} else {
-		$url = WP_PLUGIN_URL . '/' . dirname( W3TC_FILE ) . '/pub/opcache.php';
-		$path = parse_url( $url, PHP_URL_PATH );
-
-		$post = array(
-			'method' => 'POST',
-			'timeout' => 45,
-			'redirection' => 5,
-			'httpversion' => '1.0',
-			'blocking' => true,
-			'body' => array(
-				'nonce' => wp_hash( $path ),
-				'command' => 'flush_file',
-				'file' => $file
-			),
 		);
 		$result = wp_remote_post( $url, $post );
 		if ( is_wp_error( $result ) ) {

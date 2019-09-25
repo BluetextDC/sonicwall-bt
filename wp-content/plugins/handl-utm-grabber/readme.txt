@@ -3,8 +3,8 @@ Contributors: haktansuren
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=SS93TW4NEHHNG
 Tags: utm,grabber,shortcodes,gclid,contact form 7,leads,collect,collect leads
 Requires at least: 3.6.0
-Tested up to: 5.1
-Stable tag: 2.6.3
+Tested up to: 5.2
+Stable tag: 2.7.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -51,6 +51,24 @@ This section describes how to install the plugin and get it working.
 1. Append UTM variables to all URLs automatically.
 
 == Changelog ==
+
+= 2.7.1 =
+* fix for null coalescing operator for PHP < 7.0 compatiblility
+
+= 2.7 =
+* Zapier integration added for Contact Form 7, Ninja Form, Gravity Form
+
+= 2.6.6 =
+* simple_html_dom.php dependency upgraded to the latest
+
+= 2.6.5 =
+* Critical Bug Fix: Possible cross-site request forgery (CSRF) due to add_option, update_option usage
+
+= 2.6.4 =
+* Varnish cache and WP Engine workaround fix (JS based COOKIE save)
+* 502 error fixed. Possibly caused by printed text before we set the COOKIES. 
+* PHP 7.3 related warnings due to simple_html_dom.php fixed
+
 = 2.6.3 =
 * BUG FIX: https://wordpress.org/support/topic/php-notice-undefined-index-ninja-php/ & https://wordpress.org/support/topic/php-deprecated-function/
 

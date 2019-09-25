@@ -2,8 +2,8 @@
 Contributors: fredericktownes
 Tags: seo, cache, caching, compression, maxcdn, nginx, varnish, redis, new relic, aws, amazon web services, s3, cloudfront, rackspace, cloudflare, azure, apache
 Requires at least: 3.2
-Tested up to: 5.0.3
-Stable tag: 0.9.7.2
+Tested up to: 5.2
+Stable tag: 0.10.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -44,6 +44,7 @@ https://youtu.be/7AsNSSrZq4Y
 * Caching of database objects in memory or on disk
 * Caching of objects in memory or on disk
 * Caching of fragments in memory or on disk
+* Caching methods include local Disk, Redis, Memcached, APC, APCu, eAccelerator, XCache, and WinCache
 * Minification of posts and pages and feeds
 * Minification of inline, embedded or 3rd party JavaScript (with automated updates)
 * Minification of inline, embedded or 3rd party CSS (with automated updates)
@@ -269,6 +270,55 @@ It's quite difficult to recall all of the innovators that have shared their thou
 Please reach out to all of these people and support their projects if you're so inclined.
 
 == Changelog ==
+
+= 0.10.1 =
+* Fixed slowdown in memcached engine
+* Fixed Purge Cache menu links so they flush current blog in WPMU
+* Fixed error during upgrade, "Call to undefined method W3TC\Util_Content::is_database_error"
+* Updated Redis cache engine to avoid "Function Redis::delete() is deprecated" warning
+
+= 0.10.0 =
+* Improved Statistics component for pro users
+* Improved support for CloudFront distributions with multiple origins
+* Improved redirects by using safter wp_safe redirect
+* Improved .htaccess usage when pagecache does not require it
+* Improved protection of unexpected values in global variables
+* Added more Amazon S3 regions
+* Added support for memcached binary protocol when available
+* Added caching for webp MIME type
+* Updated S3 bucket creation by settings CORS policy
+* Updated blogmap to allow urls with custom ports
+* Fixed usage of base url with minify
+* Fixed mixing content of sync & async scripts with minify
+
+* Fixed S3 + CloudFront urls when CNAMEs not used
+
+= 0.9.7.5 =
+* Updated AWS library
+* Added support of set_sql_mode by dbcluster
+* Improved support for webserver running on non-default port with disk-enhanced
+* Improved menu icons
+* Fixed php warning when remote service cannot be loaded
+* Fixed php warnings on support page
+
+= 0.9.7.4 =
+* Fixed PHP warning when Redis integration not configured correctly
+* Fixed 404 in multisite caused by subdirectory issue
+* Fixed object cache issue in multisite where object cache was cleared at wrong time
+* Fixed database cluster in WordPress 5.1
+* Fixed warning caused by user agent theme change used
+* Fixed minification in multisite when URLs were set to root-blog based url
+* Fixed undefined w3tc_ga issue
+* Improved purging of current page by using post_id instead of URL
+* Improved cache delivery of /feed URLs
+* Improved security on calls to opcache flush
+* Improved minification of files in environments running on non-default ports
+
+= 0.9.7.3 =
+* Fixed caching of redirect responses based on empty response body
+* Improved compatibility with WordPress 5.1
+* Improved transports, unix: prefix not required
+* Improved minify html
 
 = 0.9.7.2 =
 * Fixed fatal error during media file upload with CDN module active
@@ -546,6 +596,9 @@ Please reach out to all of these people and support their projects if you're so 
 
 
 == Upgrade Notice ==
+
+= 0.9.7.5 =
+Users running Cloudflare CDN may experience issues beginning June 6th. Please upgrade to W3 Total Cache 0.9.7.5 for the latest Cloudflare patches.
 
 = 0.9.5.3 =
 Thanks for using W3 Total Cache! This release includes compatibility fixes that have been reported. In addition, numerous other improvements are now yours!
