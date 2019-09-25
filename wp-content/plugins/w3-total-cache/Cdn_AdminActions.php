@@ -423,12 +423,17 @@ class Cdn_AdminActions {
 
 			@set_time_limit( $this->_config->get_integer( 'timelimit.cdn_test' ) );
 
-			if ( $w3_cdn->test( $error ) ) {
-				$result = true;
-				$error = __( 'Test passed', 'w3-total-cache' );
-			} else {
+			try {
+				if ( $w3_cdn->test( $error ) ) {
+					$result = true;
+					$error = __( 'Test passed', 'w3-total-cache' );
+				} else {
+					$result = false;
+					$error = sprintf( __( 'Error: %s', 'w3-total-cache' ), $error );
+				}
+			} catch ( \Exception $ex ) {
 				$result = false;
-				$error = sprintf( __( 'Error: %s', 'w3-total-cache' ), $error );
+				$error = sprintf( __( 'Error: %s', 'w3-total-cache' ), $ex->getMessage() );
 			}
 		}
 
@@ -454,8 +459,6 @@ class Cdn_AdminActions {
 				'debug' => false
 			) );
 
-		$result = false;
-		$error = __( 'Incorrect type.', 'w3-total-cache' );
 		$container_id = '';
 
 		switch ( $engine ) {
@@ -463,22 +466,24 @@ class Cdn_AdminActions {
 		case 'cf':
 		case 'cf2':
 		case 'azure':
-			$result = true;
-			break;
-		}
-
-		if ( $result ) {
 			$w3_cdn = CdnEngine::instance( $engine, $config );
 
-			@set_time_limit( $this->_config->get_integer( 'timelimit.cdn_container_create' ) );
+			@set_time_limit( $this->_config->get_integer( 'timelimit.cdn_upload' ) );
 
-			if ( $w3_cdn->create_container( $container_id, $error ) ) {
+			$result = false;
+			try {
+				$container_id = $w3_cdn->create_container();
 				$result = true;
 				$error = __( 'Created successfully.', 'w3-total-cache' );
-			} else {
-				$result = false;
-				$error = sprintf( __( 'Error: %s', 'w3-total-cache' ), $error );
+			} catch ( \Exception $ex ) {
+				$error = sprintf( __( 'Error: %s', 'w3-total-cache' ),
+					$ex->getMessage() );
 			}
+
+			break;
+		default:
+			$result = false;
+			$error = __( 'Incorrect type.', 'w3-total-cache' );
 		}
 
 		$response = array(
@@ -488,34 +493,6 @@ class Cdn_AdminActions {
 		);
 
 		echo json_encode( $response );
-	}
-
-	/**
-	 * S3 bucket location lightbox
-	 *
-	 * @return void
-	 */
-	function w3tc_cdn_s3_bucket_location() {
-		$type = Util_Request::get_string( 'type', 's3' );
-
-		$locations = array(
-			'us-east-1' 	=> __( 'US East (N. Virginia)', 'w3-total-cache' ),
-			'us-east-2' 	=> __( 'US East (Ohio)', 'w3-total-cache' ),
-			'us-west-1' 	=> __( 'US-West (N. California)', 'w3-total-cache' ),
-			'us-west-2' 	=> __( 'US-West (Oregon)', 'w3-total-cache' ),
-			'ca-central-1'	=> __( 'Canada (Montreal)', 'w3-total-cache' ),
-			'ap-south-1' 	=> __( 'Asia Pacific (Mumbai)', 'w3-total-cache' ),
-			'ap-northeast-2'=> __( 'Asia Pacific (Seoul)', 'w3-total-cache' ),
-			'ap-southeast-1'=> __( 'Asia Pacific (Singapore)', 'w3-total-cache' ),
-			'ap-southeast-2'=> __( 'Asia Pacific (Sydney)', 'w3-total-cache' ),
-			'ap-northeast-1'=> __( 'Asia Pacific (Tokyo)', 'w3-total-cache' ),
-			'eu-central-1' 	=> __( 'EU (Frankfurt)', 'w3-total-cache' ),
-			'eu-west-1' 	=> __( 'EU (Ireland)', 'w3-total-cache' ),
-			'eu-west-2' 	=> __( 'EU (London)', 'w3-total-cache' ),
-			'sa-east-1' 	=> __( 'South America (S&atilde;o Paulo)', 'w3-total-cache' ),
-		);
-
-		include W3TC_INC_DIR . '/lightbox/cdn_s3_bucket_location.php';
 	}
 
 

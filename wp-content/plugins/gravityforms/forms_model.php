@@ -1451,7 +1451,7 @@ class GFFormsModel {
 
 		// If property is trash, log user login
 		if ( $property_name == 'status' && $property_value == 'trash' && ! empty( $current_user->user_login ) ) {
-			GFCommon::log_debug( __METHOD__ . "(): User ID {$current_user->ID} requested moving of entry #{$lead_id} to trash." );		
+			GFCommon::log_debug( __METHOD__ . "(): User ID {$current_user->ID} requested moving of entry #{$lead_id} to trash." );
 		}
 
 		//updating lead
@@ -1574,8 +1574,8 @@ class GFFormsModel {
 
 		// Log user login for user requesting the deletion of entries
 		if ( ! empty( $current_user->user_login ) ) {
-			GFCommon::log_debug( __METHOD__ . "(): User ID {$current_user->ID} requested deletion of entries: " . json_encode( $entry_ids ) );		
-		}	
+			GFCommon::log_debug( __METHOD__ . "(): User ID {$current_user->ID} requested deletion of entries: " . json_encode( $entry_ids ) );
+		}
 
 			foreach ( $entry_ids as $entry_id ) {
 
@@ -1640,7 +1640,7 @@ class GFFormsModel {
 		// Log user login for user requesting deletion of views
 		if ( ! empty( $current_user->user_login ) ) {
 			GFCommon::log_debug( __METHOD__ . "(): User ID {$current_user->ID} requested deletion of views for form #{$form_id}." );
-		}			
+		}
 
 		$form_view_table = self::get_form_view_table_name();
 
@@ -1667,7 +1667,7 @@ class GFFormsModel {
 		// Log user login for user requesting deletion of form
 		if ( ! empty( $current_user->user_login ) ) {
 			GFCommon::log_debug( __METHOD__ . "(): User ID {$current_user->ID} requested deletion of form #{$form_id}." );
-		}			
+		}
 
         /**
          * Fires before a form is deleted
@@ -1722,7 +1722,7 @@ class GFFormsModel {
 		// Log user login for user moving the form to trash
 		if ( ! empty( $current_user->user_login ) ) {
 			GFCommon::log_debug( __METHOD__ . "(): User ID {$current_user->ID} requested moving of form #{$form_id} to trash." );
-		}		
+		}
 		$form_table_name = self::get_form_table_name();
 		$sql             = $wpdb->prepare( "UPDATE $form_table_name SET is_trash=1 WHERE id=%d", $form_id );
 		$result          = $wpdb->query( $sql );
@@ -2478,7 +2478,7 @@ class GFFormsModel {
 
 		// Log if user requested deletion of entries
 		if ( ! empty( $current_user->user_login ) ) {
-			GFCommon::log_debug( __METHOD__ . "(): User ID {$current_user->ID} requested deletion of entry #{$entry_id}" );			
+			GFCommon::log_debug( __METHOD__ . "(): User ID {$current_user->ID} requested deletion of entry #{$entry_id}" );
 		}
 
 		if ( version_compare( GFFormsModel::get_database_version(), '2.3-dev-1', '<' ) ) {
@@ -2525,7 +2525,7 @@ class GFFormsModel {
 		$wpdb->query( $sql );
 	}
 
-	public static function add_note( $entry_id, $user_id, $user_name, $note, $note_type = 'note' ) {
+	public static function add_note( $entry_id, $user_id, $user_name, $note, $note_type = 'user', $sub_type = null ) {
 		global $wpdb;
 
 		if ( version_compare( GFFormsModel::get_database_version(), '2.3-dev-1', '<' ) ) {
@@ -2534,21 +2534,26 @@ class GFFormsModel {
 		}
 
 		$table_name = self::get_entry_notes_table_name();
-		$sql        = $wpdb->prepare( "INSERT INTO $table_name(entry_id, user_id, user_name, value, note_type, date_created) values(%d, %d, %s, %s, %s, utc_timestamp())", $entry_id, $user_id, $user_name, $note, $note_type );
+		$sql        = $wpdb->prepare( "INSERT INTO $table_name(entry_id, user_id, user_name, value, note_type, sub_type, date_created) values(%d, %d, %s, %s, %s, %s, utc_timestamp())", $entry_id, $user_id, $user_name, $note, $note_type, $sub_type );
 
 		$wpdb->query( $sql );
 
 		/**
 		 * Fires after a note has been added to an entry
 		 *
+		 * @since 2.4.13  Added sub_type parameter.
+		 * @since Unknown
+		 *
 		 * @param int    $wpdb->insert_id The row ID of this note in the database
-		 * @param int    $entry_id         The ID of the entry that the note was added to
+		 * @param int    $entry_id        The ID of the entry that the note was added to
 		 * @param int    $user_id         The ID of the current user adding the note
 		 * @param string $user_name       The user name of the current user
 		 * @param string $note            The content of the note being added
 		 * @param string $note_type       The type of note being added.  Defaults to 'note'
+		 * @param string $sub_type        The sub-type of note being added.
+		 *
 		 */
-		do_action( 'gform_post_note_added', $wpdb->insert_id, $entry_id, $user_id, $user_name, $note, $note_type );
+		do_action( 'gform_post_note_added', $wpdb->insert_id, $entry_id, $user_id, $user_name, $note, $note_type, $sub_type );
 	}
 
 	public static function delete_note( $note_id ) {
@@ -3354,7 +3359,13 @@ class GFFormsModel {
 				break;
 
 			case 'ends_with' :
+				// If target value is a 0 set $val2 to 0 rather than the empty string it currently is to prevent false positives.
+				if ( empty( $val2 ) ) {
+					$val2 = 0;
+				}
+
 				$start = strlen( $val1 ) - strlen( $val2 );
+
 				if ( $start < 0 ) {
 					return false;
 				}
@@ -5059,14 +5070,26 @@ class GFFormsModel {
 			}
 
 		} else {
-			// Deleting details for this field
-			$sql    = $wpdb->prepare( "DELETE FROM $entry_meta_table_name WHERE entry_id=%d AND meta_key = %s ", $entry_id, $input_id );
-			if ( $item_index ) {
-				$sql .= $wpdb->prepare( ' AND item_index=%s', $item_index );
-			}
-			$result = $wpdb->query( $sql );
-			if ( false === $result ) {
-				return false;
+			// when the value is empty and no $entry_meta_id was set, check if it's a repeater field.
+			if ( empty( $entry_meta_id ) && $field instanceof GF_Field_Repeater && isset( $field->fields ) && is_array( $field->fields ) ) {
+				foreach ( $field->fields as $subfield ) {
+					self::update_entry_field_value( $form, $entry, $subfield, 0, $subfield->id, '' );
+				}
+			} else {
+				// Deleting details for this field
+				if ( is_array( $field->get_entry_inputs() ) ) {
+					$_input_id = ( false === strpos( $input_id, '.' ) ) ? sprintf( '%d.%%', $input_id ) : $input_id;
+					$sql = $wpdb->prepare( "DELETE FROM $entry_meta_table_name WHERE entry_id=%d AND meta_key LIKE %s ", $entry_id, $_input_id );
+				} else {
+					$sql = $wpdb->prepare( "DELETE FROM $entry_meta_table_name WHERE entry_id=%d AND meta_key = %s ", $entry_id, $input_id );
+				}
+				if ( $item_index ) {
+					$sql .= $wpdb->prepare( ' AND item_index=%s', $item_index );
+				}
+				$result = $wpdb->query( $sql );
+				if ( false === $result ) {
+					return false;
+				}
 			}
 		}
 
@@ -5408,6 +5431,9 @@ class GFFormsModel {
 
 		$drop_tables = array_merge( $drop_tables, $legacy_tables );
 
+		// Prevent the legacy table query notice when they are dropped by wp_uninitialize_site().
+		remove_filter( 'query', array( 'GFForms', 'filter_query' ) );
+
 		return $drop_tables;
 	}
 
@@ -5515,7 +5541,7 @@ class GFFormsModel {
 
 		return $wpdb->get_results(
 			$wpdb->prepare(
-				"  SELECT n.id, n.user_id, n.date_created, n.value, n.note_type, ifnull(u.display_name,n.user_name) as user_name, u.user_email
+				"  SELECT n.id, n.user_id, n.date_created, n.value, n.note_type, n.sub_type, ifnull(u.display_name,n.user_name) as user_name, u.user_email
                                                     FROM $notes_table n
                                                     LEFT OUTER JOIN $wpdb->users u ON n.user_id = u.id
                                                     WHERE entry_id=%d ORDER BY id", $lead_id
@@ -6984,7 +7010,7 @@ class GFFormsModel {
 		if ( isset( $logic['rules'] ) && is_array( $logic['rules'] ) ) {
 			foreach ( $logic['rules'] as &$rule ) {
 				if ( isset( $rule['fieldId'] ) ) {
-					// Field ID could be meta key
+					// Field ID could be meta key.
 					$rule['fieldId'] = wp_strip_all_tags( $rule['fieldId'] );
 				}
 				if ( isset( $rule['operator'] ) ) {
@@ -6993,7 +7019,11 @@ class GFFormsModel {
 				}
 
 				if ( isset( $rule['value'] ) ) {
-					$rule['value'] = wp_strip_all_tags( $rule['value'] );
+					// Strip scripts but don't encode.
+					$allowed_protocols = wp_allowed_protocols();
+					$rule['value']     = wp_kses_no_null( $rule['value'], array( 'slash_zero' => 'keep' ) );
+					$rule['value']     = wp_kses_hook( $rule['value'], 'post', $allowed_protocols );
+					$rule['value']     = wp_kses_split( $rule['value'], 'post', $allowed_protocols );
 				}
 			}
 		}
@@ -7110,7 +7140,7 @@ class GFFormsModel {
 
 		$recent_form_ids = get_user_meta( $current_user_id, 'gform_recent_forms', true );
 
-		if ( empty( $recent_form_ids ) ) {
+		if ( empty( $recent_form_ids ) || ! is_array( $recent_form_ids ) ) {
 			$all_form_ids    = self::get_form_ids();
 			$all_form_ids    = array_reverse( $all_form_ids );
 			$recent_form_ids = array_slice( $all_form_ids, 0, 10 );

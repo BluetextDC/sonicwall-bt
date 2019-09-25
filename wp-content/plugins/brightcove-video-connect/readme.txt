@@ -1,11 +1,11 @@
 === Brightcove Video Connect ===
 
-Contributors: 10up, ivankk, technosailor, ChrisWiegman, tott, eduardmaghakyan, mattonomics, phoenixfireball, karinedo, foobuilder, helen, tlovett1, jonathantneal, brightcove, adamsilverstein, jonbellah, sudar, bctbaldwin, collinsinternet
+Contributors: 10up, oscarssanchez, collinsinternet, ivankk, technosailor, ChrisWiegman, tott, eduardmaghakyan, mattonomics, phoenixfireball, karinedo, foobuilder, helen, tlovett1, jonathantneal, brightcove, adamsilverstein, jonbellah, sudar, bctbaldwin
 Donate link: https://supporters.eff.org/donate
 Tags: brightcove, 10up, videos, video
 Requires at least: 4.2
-Tested up to: 5.0
-Stable tag: 1.6.1
+Tested up to: 5.2
+Stable tag: 1.7.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -21,6 +21,24 @@ With this plugin, developed by 10up.com, you have the power to handle multiple a
 For installation, usage, and Frequently Asked Question please see the [Brightcove Support Site](https://support.brightcove.com/getting-started-brightcove-video-connect-wordpress-cms).
 
 == Changelog ==
+
+= 1.7.2 =
+
+* Fix: Increase padding on iframe.
+* Fix: Source account bug on upload page.
+* Fix: Stop showing inactive players in the plugin.
+
+= 1.7.1 =
+
+* Fix: Settings page not loading when plugin is network activated.
+* Fix: Adding multiple Gutenberg blocks to a post causes videos to sync video content.
+* Fix: PHP notice when information from Brightcove account not available.
+
+= 1.7.0 =
+
+* Enhancement: Folder API support.
+* Fix: Removed extra slashes that appeared on titles and descriptions.
+* Fix: Behavior of status update messages.
 
 = 1.6.1 =
 
