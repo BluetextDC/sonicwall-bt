@@ -595,6 +595,34 @@ $keys = array(
 		'type' => 'boolean',
 		'default' => false
 	),
+	'stats.slot_seconds' => array(
+		'type' => 'integer',
+		'default' => 60,
+	),
+	'stats.slots_count' => array(
+		'type' => 'integer',
+		'default' => 60,
+	),
+	'stats.cpu.enabled' => array(
+		'type' => 'boolean',
+		'default' => false
+	),
+	'stats.access_log.enabled' => array(
+		'type' => 'boolean',
+		'default' => false
+	),
+	'stats.access_log.filename' => array(
+		'type' => 'string',
+		'default' => ''
+	),
+	'stats.access_log.format' => array(
+		'type' => 'string',
+		'default' => '%h %l %u %t \"%r\" %>s %O \"%{Referer}i\" \"%{User-Agent}i\"'
+	),
+	'stats.access_log.webserver' => array(
+		'type' => 'string',
+		'default' => ''
+	),
 
 	'minify.configuration_overloaded' => array(
 		'type' => 'boolean',
@@ -2257,10 +2285,6 @@ $keys = array(
 		'default' => 600
 	),
 	'timelimit.cdn_test' => array(
-		'type' => 'integer',
-		'default' => 300
-	),
-	'timelimit.cdn_container_create' => array(
 		'type' => 'integer',
 		'default' => 300
 	),

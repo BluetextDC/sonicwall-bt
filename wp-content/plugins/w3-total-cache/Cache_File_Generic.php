@@ -106,7 +106,9 @@ class Cache_File_Generic extends Cache_File {
 				if ( !empty( $links) ) {
 					$rules .= "<IfModule mod_headers.c>\n";
 					$rules .= "    Header unset Link\n";
+					$rules .= "    <FilesMatch \"\.(html|html_gzip|html_br)$\">\n";
 					$rules .= $links;
+					$rules .= "    </FilesMatch>\n";
 					$rules .= "</IfModule>\n";
 				}
 			}
@@ -187,9 +189,14 @@ class Cache_File_Generic extends Cache_File {
 		if ( $this->_locking )
 			@flock( $fp, LOCK_UN );
 
+		$headers = array();
+		if ( substr( $path, -4 ) == '.xml' ) {
+			$headers['Content-type'] = 'text/xml';
+		}
+
 		return array(
 			'404' => false,
-			'headers' => array(),
+			'headers' => $headers,
 			'time' => null,
 			'content' => $var
 		);

@@ -59,6 +59,10 @@ class Cache_Memcached extends Cache_Base {
 		if ( defined( '\Memcached::OPT_REMOVE_FAILED_SERVERS' ) ) {
 			$this->_memcache->setOption( \Memcached::OPT_REMOVE_FAILED_SERVERS, true );
 		}
+		if ( defined( '\Memcached::OPT_BINARY_PROTOCOL' ) && defined( '\Memcached::OPT_TCP_NODELAY' ) ) {
+			$this->_memcache->setOption( \Memcached::OPT_BINARY_PROTOCOL, true );
+			$this->_memcache->setOption( \Memcached::OPT_TCP_NODELAY, true );
+		}
 
 		if ( isset( $config['aws_autodiscovery'] ) &&
 			$config['aws_autodiscovery'] &&
@@ -68,9 +72,9 @@ class Cache_Memcached extends Cache_Base {
 				\Memcached::DYNAMIC_CLIENT_MODE );
 
 		foreach ( (array)$config['servers'] as $server ) {
-			if ( substr( $server, 0, 5 ) == 'unix:' )
+			if ( substr( $server, 0, 5 ) == 'unix:' || strpos( $server, ':' ) === false ) {
 				$this->_memcache->addServer( trim( $server ), 0 );
-			else {
+			} else {
 				list( $ip, $port ) = explode( ':', $server );
 				$this->_memcache->addServer( trim( $ip ), (integer) trim( $port ) );
 			}
@@ -370,7 +374,7 @@ class Cache_Memcached extends Cache_Base {
 			return true;
 
 		$storage_key = $this->get_item_key( $key );
-		$r = @$this->_memcache->increment( $storage_key, $value );
+		$r = $this->_memcache->increment( $storage_key, $value, 0, 3600 );
 		if ( !$r )   // it doesnt initialize counter by itself
 			$this->counter_set( $key, 0 );
 

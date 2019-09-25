@@ -39,6 +39,8 @@ class cli_right_answers extends WP_CLI_Command {
     
     foreach($languages as $lang)
     {
+        //Download all solutions
+        
         $page = 1;
 
         $per_page = 10;
@@ -47,19 +49,19 @@ class cli_right_answers extends WP_CLI_Command {
 
         $map = array();
 
-        $data = download($page, $lang);
+        $data = download($page, $lang, 'solution');
         $total_pages = ceil($data->totalHits / $per_page);
         
-        WP_CLI::line( $lang.' - Downloading Page: 1 / '.$total_pages );
+        WP_CLI::line( $lang.' - Downloading Solutions Page: 1 / '.$total_pages );
 
         $map = array_merge($map, buildMapArray($data->solutions));
 
         //Now loop and download all the other pages
         for ($page = 2; $page <= $total_pages; $page++)
         {
-            WP_CLI::line( $lang.' - Downloading Page: '. $page .' / '.$total_pages );
+            WP_CLI::line( $lang.' - Downloading Solutions Page: '. $page .' / '.$total_pages );
             // echo "Downloading page: $page\n";
-            $data = download($page, $lang);
+            $data = download($page, $lang, 'solution');
 
             $map = array_merge($map, buildMapArray($data->solutions));
         }
@@ -67,8 +69,46 @@ class cli_right_answers extends WP_CLI_Command {
         foreach ($map as $m)
         {
             $now = date("Y-m-d H:i:s");
-            $sql = "INSERT INTO {$wpdb->prefix}ra_slugs (sol_id,slug,created_at) VALUES (%d,%s,%s) ON DUPLICATE KEY UPDATE slug = %s";
-            $sql = $wpdb->prepare($sql, $m->id, $m->slug, $now, $m->slug);
+            $sql = "INSERT INTO {$wpdb->prefix}ra_slugs (sol_id,slug,created_at, type) VALUES (%d,%s,%s,%s) ON DUPLICATE KEY UPDATE slug = %s, type=%s";
+            $sql = $wpdb->prepare($sql, $m->id, $m->slug, $now, 'solution', $m->slug, 'solution');
+            $wpdb->query($sql);
+            
+            $sol_ids[] = $m->id;
+        }  
+        
+        
+        //Download all alerts
+        
+        $page = 1;
+
+        $per_page = 10;
+
+        $total_pages = false;
+
+        $map = array();
+
+        $data = download($page, $lang, 'alert');
+        $total_pages = ceil($data->totalHits / $per_page);
+        
+        WP_CLI::line( $lang.' - Downloading Solutions Page: 1 / '.$total_pages );
+
+        $map = array_merge($map, buildMapArray($data->solutions));
+
+        //Now loop and download all the other pages
+        for ($page = 2; $page <= $total_pages; $page++)
+        {
+            WP_CLI::line( $lang.' - Downloading Solutions Page: '. $page .' / '.$total_pages );
+            // echo "Downloading page: $page\n";
+            $data = download($page, $lang, 'alert');
+
+            $map = array_merge($map, buildMapArray($data->solutions));
+        }
+
+        foreach ($map as $m)
+        {
+            $now = date("Y-m-d H:i:s");
+            $sql = "INSERT INTO {$wpdb->prefix}ra_slugs (sol_id,slug,created_at, type) VALUES (%d,%s,%s,%s) ON DUPLICATE KEY UPDATE slug = %s, type=%s";
+            $sql = $wpdb->prepare($sql, $m->id, $m->slug, $now, 'alert', $m->slug, 'alert');
             $wpdb->query($sql);
             
             $sol_ids[] = $m->id;
@@ -209,8 +249,7 @@ class cli_right_answers extends WP_CLI_Command {
         
     }
 
-     //Add in custom rewrite rules
-    add_action('init', 'custom_rewrite_rule', 0, 0);
+     
 
     //Custom flush function
     add_action( 'wp_ajax_flush_permalinks', 'flush_permalinks' );
@@ -294,6 +333,8 @@ function custom_RA_title($title){
        exit("Flushed Rewrite Rules");
        
     }
+
+
    function custom_rewrite_rule() {
        add_filter('query_vars', function($vars) {
             $vars[] = "td-slug";
@@ -305,6 +346,9 @@ function custom_RA_title($title){
         add_rewrite_rule('^support/product-notification/(.+)/?$','index.php?kb-slug=$matches[1]&kb-alert=true','top');
         add_rewrite_rule('^support/knowledge-base/(.+)/?$','index.php?kb-slug=$matches[1]','top');
       }
+
+    //Add in custom rewrite rules
+    add_action('init', 'custom_rewrite_rule', 0, 0);
 
     add_filter( 'request', function( array $query_vars ) {
         
@@ -327,7 +371,67 @@ function custom_RA_title($title){
             }
             
             
-            if ($slug)
+            if ($sol_id)
+            {
+                $sql = "SELECT d.*, (SELECT n.slug FROM {$wpdb->prefix}ra_slugs n WHERE sol_id = d.sol_id ORDER BY created_at DESC LIMIT 1) as recent_slug FROM {$wpdb->prefix}ra_slugs d WHERE d.sol_id=%s ORDER BY sol_id DESC LIMIT 1";
+                $sql = $wpdb->prepare($sql, $sol_id);
+            
+                
+                $result = $wpdb->get_results($sql);
+                
+                if ($result && count($result) > 0)
+                {                    
+                    $_REQUEST['sol_id'] = $result[0]->sol_id;
+
+                    //Check if it is an alert or single solution
+                    if (isset($query_vars['kb-alert']))
+                    {
+                        $query_vars['page_id'] = 12371; //Single Solution
+                        
+                        //Check for a newer slug
+                        if ($result[0]->slug != $result[0]->recent_slug)
+                        {
+                            if ( wp_redirect( "/support/product-notification/".$result[0]->recent_slug."/".$result[0]->sol_id, 301) ) {
+                                exit;
+                            }
+                        }
+
+                        if ($result[0]->sol_id != $sol_id)
+                        {
+                            if ( wp_redirect( "/support/product-notification/".$result[0]->slug."/".$result[0]->sol_id, 301) ) {
+                                exit;
+                            }
+                        }
+
+                    }
+                    else
+                    {
+                        
+                        //Check for a newer slug
+                        if ($result[0]->slug != $result[0]->recent_slug)
+                        {
+                            if ( wp_redirect( "/support/knowledge-base/".$result[0]->recent_slug."/".$result[0]->sol_id, 301) ) {
+                                exit;
+                            }
+                        }
+                        
+                        if ($result[0]->sol_id != $sol_id)
+                        {
+                            if ( wp_redirect( "/support/knowledge-base/".$result[0]->slug."/".$result[0]->sol_id, 301) ) {
+                                exit;
+                            }
+                        }
+                        
+                        $query_vars['page_id'] = 12364; //Single Solution
+                    }
+                }
+                else
+                {
+                    //Check if it's a category, else return a 404
+                    $query_vars['page_id'] = 12368; //Category
+                } 
+            }
+            else if ($slug)
             {
                 $sql = "SELECT d.*, (SELECT n.slug FROM {$wpdb->prefix}ra_slugs n WHERE sol_id = d.sol_id ORDER BY created_at DESC LIMIT 1) as recent_slug FROM {$wpdb->prefix}ra_slugs d WHERE d.slug=%s ORDER BY sol_id DESC LIMIT 1";
                 $sql = $wpdb->prepare($sql, $slug);
@@ -400,6 +504,7 @@ function custom_RA_title($title){
     });
 
 
+
 register_activation_hook ( __FILE__, 'on_activate' );
 
 function on_activate() {
@@ -408,7 +513,8 @@ function on_activate() {
             CREATE TABLE IF NOT EXISTS `{$wpdb->prefix}ra_slugs` (
               `sol_id` bigint(20) NOT NULL PRIMARY KEY,
               `slug` VARCHAR(255) NOT NULL,
-              `created_at` DATETIME NOT NULL
+              `created_at` DATETIME NOT NULL,
+              `type` VARCHAR(255) NOT NULL
             ) ENGINE=MyISAM  DEFAULT CHARSET=utf8;
     ";
     require_once( ABSPATH . 'wp-admin/includes/upgrade.php' );
@@ -541,7 +647,7 @@ function slugifyRA($str, $options = array())
 }
 
 
-function download($page, $lang)
+function download($page, $lang, $type = 'solution')
 {
 	if ($data = getCache($page))
 	{
@@ -550,12 +656,22 @@ function download($page, $lang)
 	else
 	{
 		//Sleep to prevent killing the server
-		sleep(1);
+//		sleep(1);
+        
+        //Default the type to solution
+        $template = "template-sonicwall-Solutions";
+        
+        if ($type == 'alert')
+        {
+            $template = "template-sonicwall-Alerts";    
+        }
+       
+        
 
 		$curl = curl_init();
 
 		curl_setopt_array($curl, array(
-			  CURLOPT_URL => "https://sonicwall.rightanswers.com/portal/api/rest/search/?companyCode=sonicwall&appInterface=ss&&collections=custom_SS&page={$page}&language={$lang}",
+			  CURLOPT_URL => "https://sonicwall.rightanswers.com/portal/api/rest/search/?companyCode=sonicwall&appInterface=ss&&collections=custom_SS&page={$page}&language={$lang}&templates={$template}",
 			  CURLOPT_USERPWD => "apitest:nC0@jC4uIJ3ng",
 			  CURLOPT_RETURNTRANSFER => true,
 			  CURLOPT_ENCODING => "",

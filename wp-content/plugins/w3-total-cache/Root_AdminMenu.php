@@ -117,7 +117,7 @@ class Root_AdminMenu {
 		$pages = $this->generate_menu_array();
 
 		uasort( $pages, function($a, $b) {
-    			return ($a['order'] - $b['order']);
+				return ($a['order'] - $b['order']);
 			}
 		);
 
@@ -125,7 +125,7 @@ class Root_AdminMenu {
 			__( 'Performance', 'w3-total-cache' ),
 			apply_filters( 'w3tc_capability_menu_w3tc_dashboard',
 				$base_capability ),
-			'w3tc_dashboard', '', 'div' );
+			'w3tc_dashboard', '', 'none' );
 
 		$submenu_pages = array();
 		$is_master = ( is_network_admin() || !Util_Environment::is_wpmu() );
@@ -167,8 +167,8 @@ class Root_AdminMenu {
 			$this->_page = 'w3tc_dashboard';
 
 		/*
-         * Hidden pages
-         */
+		 * Hidden pages
+		 */
 		if ( isset( $_REQUEST['w3tc_dbcluster_config'] ) ) {
 			$options_dbcache = new DbCache_Page();
 			$options_dbcache->dbcluster_config();
@@ -226,6 +226,11 @@ class Root_AdminMenu {
 		case 'w3tc_cdn':
 			$options_cdn = new Cdn_Page();
 			$options_cdn->options();
+			break;
+
+		case 'w3tc_stats':
+			$p = new UsageStatistics_Page();
+			$p->render();
 			break;
 
 		case 'w3tc_support':

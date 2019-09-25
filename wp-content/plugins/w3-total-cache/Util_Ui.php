@@ -352,8 +352,9 @@ class Util_Ui {
 	 * @param bool    $disabled
 	 * @param int     $size
 	 */
-	static public function textbox( $id, $name, $value, $disabled = false, $size = 40 ) {
-		echo '<input class="enabled" type="text" id="' . esc_attr( $id ) .
+	static public function textbox( $id, $name, $value, $disabled = false, $size = 40, $type = 'text' ) {
+		echo '<input class="enabled" type="' . esc_attr( $type ) .
+			'" id="' . esc_attr( $id ) .
 			'" name="' . esc_attr( $name ) .
 			'" value="' . esc_attr( $value ) . '" ';
 		disabled( $disabled );
@@ -466,7 +467,8 @@ class Util_Ui {
 				$postfix = $label_or_array['postfix'];
 			}
 
-			echo '<label><input type="radio" name="' . esc_attr( $name )  .
+			echo '<label><input type="radio" id="' . esc_attr( $name . '__' . $key )  .
+				'" name="' . esc_attr( $name )  .
 				'" value="' . esc_attr( $key ) . '"';
 			checked( $value, $key );
 			disabled( $disabled || $item_disabled );
@@ -596,7 +598,8 @@ class Util_Ui {
 			elseif ( $key == 'textbox' )
 				Util_Ui::textbox( $id, $e['name'], $e['value'],
 					( isset( $e['disabled'] ) ? $e['disabled'] : false ),
-					( !empty( $e['size'] ) ? $e['size'] : 20 ) );
+					( !empty( $e['size'] ) ? $e['size'] : 20 ),
+					( !empty( $e['type'] ) ? $e['type'] : 'text' ) );
 			elseif ( $key == 'textarea' )
 				Util_Ui::textarea( $id, $e['name'], $e['value'],
 					( isset( $e['disabled'] ) ? $e['disabled'] : false ) );
@@ -690,6 +693,7 @@ class Util_Ui {
 					'name' => Util_Ui::config_key_to_http_name( $a['key'] ),
 					'value' => $a['value'],
 					'disabled' => $disabled,
+					'type' => isset( $a['textbox_type'] ) ?  $a['textbox_type'] : null,
 					'size' => isset( $a['textbox_size'] ) ?  $a['textbox_size'] : null
 				);
 			} else if ( $a['control'] == 'textarea' ) {

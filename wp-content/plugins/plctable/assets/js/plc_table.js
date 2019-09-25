@@ -1,9 +1,9 @@
 jQuery(function ($) {
 setTimeout(function(){
     if ($("pre.plc-formatted-data").length > 0) {
-        var urlHash = window.location.hash;
+        var urlHash = getSlug();
         window.addEventListener('hashchange', function (e) { // url hashchange event
-            if (urlHash !== window.location.hash) {
+            if (urlHash !== getSlug()) {
                 urlParser(true);
             }
         });
@@ -142,8 +142,19 @@ setTimeout(function(){
         if (urlHash.length > 0) {
             urlParser(true);
         }
+        
+        function getSlug() {
+            
+            var path_split = window.location.pathname.split('/support/product-lifecycle-tables');
+            
+            if (path_split && path_split.length > 1)
+            {
+                return "#" + path_split[1];        
+            }
+            return "";
+        }
         function urlParser(urlCond) {
-            const hash = window.location.hash.match(/#.+/gi) ? window.location.hash.match(/#.+/gi)[0].split('/') : [];
+            const hash = getSlug().match(/#.+/gi) ? getSlug().match(/#.+/gi)[0].split('/') : [];
             const condNav = hash[1] !== undefined && hash[2] !== undefined;
             if (urlCond && hash.length > 0 && condNav) {
                 if (condNav && hash[1].length > 0 && hash[2].length > 0) {
@@ -159,10 +170,20 @@ setTimeout(function(){
                     }
                 }
             } else {
-               const newHash = window.location.hash === '' ? '/#/' : hash[0];
-                window.location.hash = newHash + "/" + $("select#product-selector").children("option:selected").val() + "/" + $(".sw-plc-product-type-holder .tab_titles .active_tab").get(0).innerHTML.toLowerCase() + "/";         
+                
+               const newHash = getSlug() === '' ? '/#/' : hash[0];
+               var set = newHash + "/" + $("select#product-selector").children("option:selected").val() + "/" + $(".sw-plc-product-type-holder .tab_titles .active_tab").get(0).innerHTML.toLowerCase() + "/";  
+                
+                //Remove the hash or any trailing slash to set the history
+                while(set.charAt(0) === '#' || set.charAt(0) === "/")
+                {
+                 set = set.substr(1);
+                }
+                
+                var urlPath = window.location.origin + '/support/product-lifecycle-tables/' + set;
+                history.pushState({urlPath: urlPath},"",urlPath);
             }
-            urlHash = window.location.hash;
+            urlHash = getSlug();
         }
     }
  }, 500);
