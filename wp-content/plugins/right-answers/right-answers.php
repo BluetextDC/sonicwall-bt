@@ -373,7 +373,7 @@ function custom_RA_title($title){
             
             if ($sol_id)
             {
-                $sql = "SELECT d.*, (SELECT n.slug FROM {$wpdb->prefix}ra_slugs n WHERE sol_id = d.sol_id ORDER BY created_at DESC LIMIT 1) as recent_slug FROM {$wpdb->prefix}ra_slugs d WHERE d.sol_id=%s ORDER BY sol_id DESC LIMIT 1";
+                $sql = "SELECT d.*, (SELECT n.slug FROM {$wpdb->prefix}ra_slugs n WHERE sol_id = d.sol_id ORDER BY created_at DESC LIMIT 1) as recent_slug FROM {$wpdb->prefix}ra_slugs d WHERE d.sol_id=%s ORDER BY created_at DESC LIMIT 1";
                 $sql = $wpdb->prepare($sql, $sol_id);
             
                 
@@ -433,7 +433,7 @@ function custom_RA_title($title){
             }
             else if ($slug)
             {
-                $sql = "SELECT d.*, (SELECT n.slug FROM {$wpdb->prefix}ra_slugs n WHERE sol_id = d.sol_id ORDER BY created_at DESC LIMIT 1) as recent_slug FROM {$wpdb->prefix}ra_slugs d WHERE d.slug=%s ORDER BY sol_id DESC LIMIT 1";
+                $sql = "SELECT d.*, (SELECT n.slug FROM {$wpdb->prefix}ra_slugs n WHERE sol_id = d.sol_id ORDER BY created_at DESC LIMIT 1) as recent_slug FROM {$wpdb->prefix}ra_slugs d WHERE d.slug=%s ORDER BY created_at DESC LIMIT 1";
                 $sql = $wpdb->prepare($sql, $slug);
             
                 
