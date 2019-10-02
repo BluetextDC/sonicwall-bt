@@ -15,8 +15,16 @@ function megamenu_override() {
   wp_dequeue_script( 'avia-megamenu' );
   wp_deregister_script( 'avia-megamenu' );
   wp_enqueue_script( 'avia-megamenu',  MEGAMENU_OVERRIDE_URI . 'avia-snippet-megamenu.js', array(), '', true );
-} 
+}
 
+add_action ('wp_enqueue_scripts', 'sticky_header_override');
+
+function sticky_header_override() {
+  define( 'STICKY_HEADER_OVERRIDE_URI', plugin_dir_url(__FILE__) );
+  wp_dequeue_script( 'avia-sticky-header' );
+  wp_deregister_script( 'avia-sticky-header' );
+  wp_enqueue_script( 'avia-sticky-header',  STICKY_HEADER_OVERRIDE_URI . 'avia-snippet-sticky-header.js', array(), '', true );
+}
 
 class new_walker extends Walker_Nav_Menu
 {
