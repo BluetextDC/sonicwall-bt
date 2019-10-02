@@ -206,9 +206,10 @@ if (have_posts()) :
 	            	
 	            	if(!empty($cats))
                     {
-                        $cat_output .= '<span class="blog-categories minor-meta">';
-                        $cat_output .= $cats;
-                        $cat_output .= '</span>';
+//                        Removed by Brad due to hidden link in header
+//                        $cat_output .= '<span class="blog-categories minor-meta">';
+//                        $cat_output .= $cats;
+//                        $cat_output .= '</span>';
                         $cats = "";
                     }
 
