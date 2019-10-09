@@ -331,7 +331,7 @@ jQuery(function($){
 			$('.video-holder a span.image-overlay').remove();
 		}
 
-		$(document).on('hover', '.video-holder', function(){
+		$(document).on('hover', '.video-holder', function(e){
 			video_overlay();
 		});
 
