@@ -370,8 +370,66 @@ function custom_RA_title($title){
                 $sol_id = $parts[1];    
             }
             
+            if ($sol_id && slug)
+            {
+                $sql = "SELECT d.*, (SELECT n.slug FROM {$wpdb->prefix}ra_slugs n WHERE sol_id = d.sol_id ORDER BY created_at DESC LIMIT 1) as recent_slug FROM {$wpdb->prefix}ra_slugs d WHERE d.sol_id=%s ORDER BY created_at DESC LIMIT 1";
+                $sql = $wpdb->prepare($sql, $sol_id);
             
-            if ($sol_id)
+                $result = $wpdb->get_results($sql);
+                
+                if ($result && count($result) > 0)
+                {                    
+                    $_REQUEST['sol_id'] = $result[0]->sol_id;
+
+                    //Check if it is an alert or single solution
+                    if (isset($query_vars['kb-alert']))
+                    {
+                        $query_vars['page_id'] = 12371; //Single Solution
+                        
+                        //Check for a newer slug
+                        if ($result[0]->slug != $slug)
+                        {
+                            if ( wp_redirect( "/support/product-notification/".$result[0]->recent_slug."/".$result[0]->sol_id, 301) ) {
+                                exit;
+                            }
+                        }
+
+                        if ($result[0]->sol_id != $sol_id)
+                        {
+                            if ( wp_redirect( "/support/product-notification/".$result[0]->slug."/".$result[0]->sol_id, 301) ) {
+                                exit;
+                            }
+                        }
+
+                    }
+                    else
+                    {
+                        
+                        //Check for a newer slug
+                        if ($result[0]->slug != $slug)
+                        {
+                            if ( wp_redirect( "/support/knowledge-base/".$result[0]->recent_slug."/".$result[0]->sol_id, 301) ) {
+                                exit;
+                            }
+                        }
+                        
+                        if ($result[0]->sol_id != $sol_id)
+                        {
+                            if ( wp_redirect( "/support/knowledge-base/".$result[0]->slug."/".$result[0]->sol_id, 301) ) {
+                                exit;
+                            }
+                        }
+                        
+                        $query_vars['page_id'] = 12364; //Single Solution
+                    }
+                }
+                else
+                {
+                    //Check if it's a category, else return a 404
+                    $query_vars['page_id'] = 12368; //Category
+                } 
+            }
+            else if ($sol_id)
             {
                 $sql = "SELECT d.*, (SELECT n.slug FROM {$wpdb->prefix}ra_slugs n WHERE sol_id = d.sol_id ORDER BY created_at DESC LIMIT 1) as recent_slug FROM {$wpdb->prefix}ra_slugs d WHERE d.sol_id=%s ORDER BY created_at DESC LIMIT 1";
                 $sql = $wpdb->prepare($sql, $sol_id);
