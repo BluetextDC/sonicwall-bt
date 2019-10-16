@@ -62,7 +62,7 @@ window.onresize = function(event) {
     bounce(toggler);
 };
 
-toggler.addEventListener('change', (event) => {
+toggler.addEventListener('change', function(event) {
   if (event.target.checked) {
     //Check to see if it overlaps.
     bounce(event.target);
