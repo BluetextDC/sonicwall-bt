@@ -769,53 +769,65 @@
         <Products>
             <Product name="SSLVPN 200">
                 <UpgradeProducts>
-                    <UpgradeProduct>SMA 200</UpgradeProduct>
+                    <UpgradeProduct>SMA 210</UpgradeProduct>
+                    <UpgradeProduct>SMA 410</UpgradeProduct>
+                    <UpgradeProduct>SMA 500v</UpgradeProduct>
                 </UpgradeProducts>
             </Product>
             <Product name="SSLVPN 2000">
                 <UpgradeProducts>
-                    <UpgradeProduct>SMA 200</UpgradeProduct>
-                    <UpgradeProduct>SMA 400</UpgradeProduct>
-                </UpgradeProducts>
-            </Product>
-            <Product name="SRA 1200">
-                <UpgradeProducts>
-                    <UpgradeProduct>SMA 200</UpgradeProduct>
-                    <UpgradeProduct>SMA 400</UpgradeProduct>
-                </UpgradeProducts>
-            </Product>
-            <Product name="SRA 1600">
-                <UpgradeProducts>
-                    <UpgradeProduct>SMA 200</UpgradeProduct>
-                    <UpgradeProduct>SMA 400</UpgradeProduct>
+                    <UpgradeProduct>SMA 210</UpgradeProduct>
+                    <UpgradeProduct>SMA 410</UpgradeProduct>
+                    <UpgradeProduct>SMA 500v</UpgradeProduct>
                 </UpgradeProducts>
             </Product>
             <Product name="SSLVPN 4000">
                 <UpgradeProducts>
-                    <UpgradeProduct>SMA 400</UpgradeProduct>
+                    <UpgradeProduct>SMA 210</UpgradeProduct>
+                    <UpgradeProduct>SMA 410</UpgradeProduct>
+                    <UpgradeProduct>SMA 500v</UpgradeProduct>
+                    <!-- <UpgradeProduct>SMA 400</UpgradeProduct> -->
+                </UpgradeProducts>
+            </Product>
+            <Product name="SRA 1200">
+                <UpgradeProducts>
+                    <UpgradeProduct>SMA 210</UpgradeProduct>
+                    <UpgradeProduct>SMA 410</UpgradeProduct>
+                    <UpgradeProduct>SMA 500v</UpgradeProduct>
+                </UpgradeProducts>
+            </Product>
+            <Product name="SRA 1600">
+                <UpgradeProducts>
+                    <UpgradeProduct>SMA 210</UpgradeProduct>
+                    <UpgradeProduct>SMA 410</UpgradeProduct>
+                    <UpgradeProduct>SMA 500v</UpgradeProduct>
                 </UpgradeProducts>
             </Product>
             <Product name="SRA 4200">
                 <UpgradeProducts>
-                    <UpgradeProduct>SMA 400</UpgradeProduct>
+                    <UpgradeProduct>SMA 210</UpgradeProduct>
+                    <UpgradeProduct>SMA 410</UpgradeProduct>
+                    <UpgradeProduct>SMA 500v</UpgradeProduct>
                 </UpgradeProducts>
             </Product>
             <Product name="SRA 4600">
                 <UpgradeProducts>
-                    <UpgradeProduct>SMA 400</UpgradeProduct>
+                    <UpgradeProduct>SMA 210</UpgradeProduct>
+                    <UpgradeProduct>SMA 410</UpgradeProduct>
+                    <UpgradeProduct>SMA 500v</UpgradeProduct>
                 </UpgradeProducts>
             </Product>
             <Product name="EX6000">
                 <UpgradeProducts>
-                    <UpgradeProduct>SMA 6200</UpgradeProduct>
-                    <UpgradeProduct>SMA 7200</UpgradeProduct>
+                    <UpgradeProduct>SMA 6210</UpgradeProduct>
+                    <UpgradeProduct>SMA 7210</UpgradeProduct>
                     <UpgradeProduct>SMA 8200v</UpgradeProduct>
                 </UpgradeProducts>
             </Product>
             <Product name="EX7000">
                 <UpgradeProducts>
-                    <UpgradeProduct>SMA 6200</UpgradeProduct>
-                    <UpgradeProduct>SMA 7200</UpgradeProduct>
+                    <UpgradeProduct>SMA 6210</UpgradeProduct>
+                    <UpgradeProduct>SMA 7210</UpgradeProduct>
                     <UpgradeProduct>SMA 8200v</UpgradeProduct>
                 </UpgradeProducts>
             </Product>

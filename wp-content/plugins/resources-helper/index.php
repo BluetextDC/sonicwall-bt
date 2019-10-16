@@ -77,7 +77,7 @@ function custom_confirmation($confirmation, $form, $lead, $ajax){
 
         if ($gated_content)
         {
-           if (wp_is_mobile())
+           if (ignore_lightbox())
             {
                 $gated_content = "<script>setTimeout(function(){window.location.href='{$gated_content}'}, 1500);</script>";
             }
@@ -611,7 +611,7 @@ function resource_link( $atts, $content ){
         $content = get_post_meta( $id, 'wpcf-resource-content', true);
         
         if(substr($content, -4) == '.pdf'){
-            if (wp_is_mobile())
+            if (ignore_lightbox())
             {
                 return "<a href='{$url}'>{$title}</a>";
             }
@@ -631,6 +631,33 @@ function resource_link( $atts, $content ){
     return "<a href='{$url}' {$new_window}>{$title}</a>";
 }
 
+function ignore_lightbox()
+{
+    if (wp_is_mobile())
+    {
+        return true;
+    }
+    
+    if (wp_is_ie())
+    {
+        return true;
+    }
+    
+    return false;
+}
+
+function wp_is_ie()
+{
+    $ua = htmlentities($_SERVER['HTTP_USER_AGENT'], ENT_QUOTES, 'UTF-8');
+    
+    if (preg_match('~MSIE|Internet Explorer~i', $ua) || (strpos($ua, 'Trident/7.0') !== false && strpos($ua, 'rv:11.0') !== false)) {
+        return true;
+    }      
+    else
+    {
+        return false;
+    }
+}
 add_shortcode( 'resource-link', 'resource_link' );
 
 
