@@ -313,6 +313,22 @@ jQuery(function($){
 			}
 		});
 
+        $("#gform_65").submit(function(){
+			var data = {
+				'action': 'single_downvote',
+				email_id: $('#input_65_1').val(),
+				sol_id: $('.ra-helpfulness-voting').attr('id'),
+				comment: $('#input_65_3').val()
+			};
+			$.post(ra_ajax_object.ajaxurl, data, function(response){
+				if ( response == 'true' ){
+					console.log('comment submit success');
+				} else {
+					console.log('comment submit fail');
+				}
+			});
+		});
+        
 //		if ( $('.ra-solution-footer').length > 0 ){
 //			var controlheight = 0;
 //			$( '.ra-solution-footer div').each(function(){
