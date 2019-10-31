@@ -284,6 +284,17 @@
 	/*text-transform: uppercase;*/
 }
 
+#cats-results-holder h1.result_link {
+	font-size: 24px !important;
+	color: #ff791a !important;
+	/*text-transform: uppercase;*/
+	text-transform: capitalize !important;
+    font-weight: 400 !important;
+    margin: 0 0 10px 0;
+    line-height: 34px;
+}
+
+
 #cats-results-holder .results-data-relevance {
 	font-size: 18px !important;
 	margin: 0 0 5px 0 !important;
