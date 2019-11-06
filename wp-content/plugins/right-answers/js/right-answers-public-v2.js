@@ -9,11 +9,31 @@ jQuery(function($){
 
 	$(document).ready(function() {
 
-         jQuery(document).on('click', '#RA_article_downvote', function(){
-            jQuery("#RA_article_downvote_form").show(); 
-            jQuery('.ra-helpfulness-voting a.no svg').css("fill", "#ff6c0c");
-            jQuery('.ra-helpfulness-voting a.yes svg').css("fill", "#e1e1e1");
-        });
+        jQuery(document).on('click', '#RA_article_downvote', function () {
+			jQuery("#RA_article_downvote_form").show();
+			jQuery('.ra-helpfulness-voting a.no svg').css("fill", "#ff6c0c");
+			jQuery('.ra-helpfulness-voting a.yes svg').css("fill", "#e1e1e1");
+            
+            //Add check / reload for gForm ReCaptcha
+            window.gFormReCaptchaLoaded = function(){
+                jQuery(".ginput_recaptcha").each(function(){
+                    var sitekey = jQuery(this).data('sitekey');
+                    var theme = jQuery(this).data('theme');
+
+                    if (grecaptcha && sitekey && theme)
+                    {
+                        grecaptcha.render(this, {
+                            'sitekey': sitekey,
+                            'theme': theme
+                        });
+                    }
+                });
+            }
+
+            if (typeof grecaptcha != "function") { 
+                jQuery.getScript("https://www.google.com/recaptcha/api.js?onload=gFormReCaptchaLoaded&render=explicit", function(){});
+            }
+		});
         
         jQuery(document).on('click', '.ra-helpfulness-voting .yes', function(){
             jQuery("#RA_article_downvote_form").hide(); 

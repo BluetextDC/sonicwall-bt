@@ -1,0 +1,13 @@
+<!-- start Simple Custom CSS and JS -->
+<style type="text/css">
+.snc_company ul{
+	width: 70%;
+	left: 28.5% !important;
+    margin-left: 0;
+}
+
+ul li p {
+    display: inline;
+}
+</style>
+<!-- end Simple Custom CSS and JS -->
