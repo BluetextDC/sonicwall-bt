@@ -140,7 +140,7 @@ class cli_right_answers extends WP_CLI_Command {
         
         require_once(plugin_dir_path( __FILE__ ) . '/right-answers-admin.php');
         
-        $ra = new RARequests();
+        $ra = new KBRequests();
         
         $languages = array(
             "Chinese",
@@ -205,11 +205,149 @@ class cli_right_answers extends WP_CLI_Command {
         
         WP_CLI::line( 'Finished Preloading' );
     }
+    
+    
+    /**
+    * Download all right answers data (takes 2+ hours)
+    */
+    function download()
+    {
+        global $wpdb;
+        
+        require_once(plugin_dir_path( __FILE__ ) . '/right-answers-admin.php');
+                   
+        //Download and cache every solution ID
+        $sql = "SELECT * FROM {$wpdb->prefix}ra_slugs";
+        $solutions = $wpdb->get_results($sql);
+        
+        foreach ($solutions as $solution)
+        {
+            //Save each solution
+            WP_CLI::line( "Saving sol id: ". $solution->sol_id );
+            download_single_solution_data($solution->sol_id, $solution->type == 'alert');
+        }
+        
+        WP_CLI::line( 'Finished Downloading' );
+    }
+    
+    /**
+    * Download only solutions updated within the last 24 hours
+    */
+    function update_new_solutions()
+    {
+        global $wpdb;
+        
+        require_once(plugin_dir_path( __FILE__ ) . '/right-answers-admin.php');
+        
+        $kb = new KBRequests();
+        
+        $languages = array(
+            "Chinese",
+            "English",
+            "French",
+            "German",
+            "Italian",
+            "Japanese",
+            "Korean",
+            "Portuguese",
+            "Spanish"
+        );
+        
+        foreach($languages as $language)
+        {
+            $_GLOBAL['lang_override'] = $language;
+            
+            //Get first page of updates and calculate the number of pages
+        
+            $data = $kb->get_new_solutions(1, $language);
+
+            if ($data->totalHits > 0)
+            {
+                $total_solutions = $data->totalHits;
+                $solutions = $data->solutions;
+
+                //Calculate out the number of pages
+                $number_of_pages = ceil($total_solutions / count($solutions));
+
+                //Loop through each solution and download the data
+                foreach($solutions as $solution)
+                {
+                    //Get the solution type
+                    $sql = "SELECT * FROM {$wpdb->prefix}ra_slugs WHERE sol_id = %d ORDER BY created_at DESC LIMIT 1";
+                    $sql = $wpdb->prepare($sql, $solution->id);
+                    $sol_data = $wpdb->get_results($sql);
+
+                    if ($sol_data && count($sol_data) == 1)
+                    {
+                        $solution = $sol_data[0];
+
+                        download_single_solution_data($solution->sol_id, $solution->type == 'alert'); 
+                    }
+                    else
+                    {
+                        //Can't find the slug, but let's download the raw content and assume it isn't an alert to speed things up
+                        download_single_solution_data($solution->id, false);
+                    }
+                }
+
+                //Loop through all the pages except for page 1
+                for ($i = 2; $i <= $number_of_pages; $i++)
+                {
+                    $data = $kb->get_new_solutions($i, $language);
+                    
+                    if ($data->totalHits > 0)
+                    {
+                        $solutions = $data->solutions;
+
+                        //Loop through each solution and download the data
+                        foreach($solutions as $solution)
+                        {
+                            //Get the solution type
+                            $sql = "SELECT * FROM {$wpdb->prefix}ra_slugs WHERE sol_id = %d ORDER BY created_at DESC LIMIT 1";
+                            $sql = $wpdb->prepare($sql, $solution->id);
+                            $sol_data = $wpdb->get_results($sql);
+
+                            if ($sol_data && count($sol_data) == 1)
+                            {
+                                $solution = $sol_data[0];
+
+                                download_single_solution_data($solution->sol_id, $solution->type == 'alert'); 
+                            }
+                            else
+                            {
+                                //Can't find the slug, but let's download the raw content and assume it isn't an alert to speed things up
+                                download_single_solution_data($solution->id, false);
+                            }
+                        }   
+                    }
+                }
+            }
+            
+            
+        }
+    }
 }
 
     WP_CLI::add_command( 'right_answers', 'cli_right_answers' );
 }
 
+
+//Download a single RA solution and store it
+function download_single_solution_data($solution_id, $alert = false)
+{
+    global $wpdb;
+        
+    require_once(plugin_dir_path( __FILE__ ) . '/right-answers-admin.php');
+    
+    $kb = new KBRequests();
+    
+    $solution = $kb->get_single_solution( $solution_id, true);
+            
+    $sql = "INSERT INTO {$wpdb->prefix}ra_data (sol_id,data) VALUES (%d,%s) ON DUPLICATE KEY UPDATE data = %s";
+    $sql = $wpdb->prepare($sql, $solution_id, json_encode($solution), json_encode($solution));
+    
+    $wpdb->query($sql); 
+}
 
 // need to write a script to loop through each of the right answers public answers and put them in transient cache
 // set the cache time to 15 minutes 
@@ -270,10 +408,28 @@ function custom_RA_canonical($canonical)
             $category = get_query_var('kb-slug');
             return get_site_url()."/support/knowledge-base/".$category;
             break;
+        case 14738:
+            return $canonical.'?vid_id='.$_REQUEST['vid_id'];
+		    break;
         default:
             return $canonical;
     }    
 }
+
+
+add_filter('wpseo_opengraph_url', 'custom_RA_canonical', 10, 1);
+function alternate_hrefs_manipulator_callback($languages) 
+{
+    global $post;
+    if($post->ID == 14738) {
+        foreach ($languages as $lang_code => $language) {
+            $languages[$lang_code] = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://" . 
+            $_SERVER['HTTP_HOST'].'/'.$lang_code.$_SERVER['REQUEST_URI'];
+        }
+    }
+	return $languages;
+}
+add_filter( 'wpml_hreflangs', 'alternate_hrefs_manipulator_callback' );
 
 add_filter('wpseo_title','custom_RA_title',10,1);
 
@@ -307,10 +463,11 @@ function custom_RA_title($title){
         case 12371:
         case 12364:
             //KB Single solution or Product notification
-            $ra = new RARequests();
+            $ra = new KBRequests();
             $solution = $ra->get_single_solution( $_REQUEST['sol_id'] );
-            $sol = json_decode( $solution );
             
+            $sol = json_decode( $solution );
+                    
             if ($sol && $sol->title)
             {
                return $sol->title." | SonicWall"; 
@@ -321,6 +478,21 @@ function custom_RA_title($title){
             }
             
             break;
+        case 14738:
+			$vid = new BC_CMS_API();
+			$vid_details = $vid->video_get( $_REQUEST['vid_id'] );
+			
+			if($vid_details["state"] != "ACTIVE") {
+				global $wp_query;
+				$wp_query->set_404();
+				status_header( 404 );
+				nocache_headers();
+				require get_404_template();
+				return "Page Not Found | SonicWall";
+			} else {
+				return $vid_details['name'];
+			}
+			break;
         default:
             return $title;
     }    
@@ -567,7 +739,7 @@ register_activation_hook ( __FILE__, 'on_activate' );
 
 function on_activate() {
     global $wpdb;
-    $create_table_query = "
+    $create_slug_table = "
             CREATE TABLE IF NOT EXISTS `{$wpdb->prefix}ra_slugs` (
               `sol_id` bigint(20) NOT NULL PRIMARY KEY,
               `slug` VARCHAR(255) NOT NULL,
@@ -575,8 +747,17 @@ function on_activate() {
               `type` VARCHAR(255) NOT NULL
             ) ENGINE=MyISAM  DEFAULT CHARSET=utf8;
     ";
+    
+    $create_data_table = "
+            CREATE TABLE IF NOT EXISTS `{$wpdb->prefix}ra_data` (
+              `sol_id` bigint(20) NOT NULL PRIMARY KEY,
+              `data` LONGTEXT NOT NULL
+            ) ENGINE=MyISAM  DEFAULT CHARSET=utf8;
+    ";
+    
     require_once( ABSPATH . 'wp-admin/includes/upgrade.php' );
-    dbDelta( $create_table_query );
+    dbDelta( $create_slug_table );
+    dbDelta( $create_data_table );
 }
 
 
