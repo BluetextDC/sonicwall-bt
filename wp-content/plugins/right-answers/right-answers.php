@@ -479,25 +479,38 @@ function custom_RA_title($title){
             
             break;
         case 14738:
-			$vid = new BC_CMS_API();
-			$vid_details = $vid->video_get( $_REQUEST['vid_id'] );
-			
-			if($vid_details["state"] != "ACTIVE") {
-				global $wp_query;
-				$wp_query->set_404();
-				status_header( 404 );
-				nocache_headers();
-				require get_404_template();
-				return "Page Not Found | SonicWall";
-			} else {
-				return $vid_details['name'];
-			}
+			try {
+                if (!class_exists('BC_Logging'))
+                {
+                    require_once(get_home_path().'/wp-content/plugins/brightcove-video-connect/includes/class-bc-logging.php');
+                }
+                $vid = new BC_CMS_API();
+                $vid_details = $vid->video_get( $_REQUEST['vid_id'] );
+                if($vid_details["state"] == "ACTIVE") {
+                            return $vid_details['name'];
+                } else {
+			     get_404_support_videos();
+                }
+            }
+ 			catch(exception $e)
+            {
+		       get_404_support_videos();  
+            }
 			break;
         default:
             return $title;
     }    
 }
 
+   	function get_404_support_videos() {
+                    global $wp_query;
+                    $wp_query->set_404();
+                    status_header( 404 );
+                    nocache_headers();
+                    require get_404_template();
+                    return "Page Not Found | SonicWall";
+		
+	}
 
    function flush_permalinks() {
         global $wp_rewrite;
