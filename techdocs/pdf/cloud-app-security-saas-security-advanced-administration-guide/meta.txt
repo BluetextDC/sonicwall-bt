@@ -1,0 +1,5 @@
+Title=Cloud App Security (SaaS Security) Advanced Administration Guide
+Product=Cloud App Security
+Category=Cloud Security
+Resources=Administration Guide
+Language=English

@@ -1,0 +1,5 @@
+Title=Anti Spam Desktop 6.7.0 Quick Start Guide
+Product=Email Security (on-premises)
+Category=Email Security
+Resources=Quick Start Guide
+Language=English

@@ -1,0 +1,5 @@
+Title=WiFi Cloud Manager 1.1 Administration Guide
+Product=WiFi Cloud Manager
+Category=Secure Wireless Products
+Resources=Administration Guide
+Language=English

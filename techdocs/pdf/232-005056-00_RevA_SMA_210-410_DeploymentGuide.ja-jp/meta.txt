@@ -1,0 +1,5 @@
+Title=SMA 210/410 展開ガイド
+Product=SMA 100 Series
+Category=Secure Remote Access
+Resources=Deployment Guide
+Language=Japanese

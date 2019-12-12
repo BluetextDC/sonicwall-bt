@@ -1,0 +1,5 @@
+Title=适用于 Android 的 Mobile Connect 5.0 用户指南
+Product=Mobile Connect
+Category=SSL VPN Clients
+Resources=User Guide
+Language=Chinese (Simplified)

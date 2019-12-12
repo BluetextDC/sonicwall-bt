@@ -1,0 +1,5 @@
+Title=SonicOS 6.5 接続
+Product=SonicOS, SuperMassive, NSa Series, NSA Series, TZ Series
+Category=Firewalls
+Resources=Administration Guide
+Language=Japanese

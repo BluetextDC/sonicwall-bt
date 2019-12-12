@@ -1,0 +1,5 @@
+Title=SonicOS 6.2.5 / 6.2.7 / 6.2.9 ログ イベント リファレンス ガイド
+Product=SonicOS, SuperMassive, NSA Series, TZ Series
+Category=Firewalls
+Resources=Reference Guide
+Language=Japanese

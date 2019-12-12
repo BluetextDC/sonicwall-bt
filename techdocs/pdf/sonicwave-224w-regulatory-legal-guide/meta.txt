@@ -1,0 +1,5 @@
+Title=SonicWave 224w Regulatory/Legal Guide
+Product=SonicWave 200 Series
+Category=Secure Wireless Products
+Resources=Regulatory Guide
+Language=English

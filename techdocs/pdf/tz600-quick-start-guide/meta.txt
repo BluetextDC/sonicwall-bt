@@ -1,0 +1,5 @@
+Title=TZ600 Quick Start Guide
+Product=TZ Series
+Category=Firewalls
+Resources=Quick Start Guide
+Language=English

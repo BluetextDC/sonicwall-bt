@@ -1,0 +1,5 @@
+Title=Global VPN Client 4.10 Guia do administrador
+Product=VPN Client
+Category=VPN Client
+Resources=Administration Guide
+Language=Portuguese

@@ -1,0 +1,5 @@
+Title=SonicOS 6.5 安全設定
+Product=SonicOS, TZ Series, NSA Series, NSa Series, NSsp Series, SuperMassive 
+Category=Firewalls
+Resources=Administration Guide
+Language=Chinese (Traditional)

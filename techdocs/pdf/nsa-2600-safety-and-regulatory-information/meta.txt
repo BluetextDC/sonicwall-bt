@@ -1,0 +1,5 @@
+Title=NSA 2600 Safety and Regulatory Information
+Product=NSA Series
+Category=Firewalls
+Resources=Regulatory Guide
+Language=English

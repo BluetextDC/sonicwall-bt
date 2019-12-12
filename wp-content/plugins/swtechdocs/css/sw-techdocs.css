@@ -1,0 +1,254 @@
+.td-main-content {
+    border-top: 1px #e1e1e1 solid;
+}
+
+.td-filters {
+    border-right-width: 2px;
+    border-right-style: solid;
+}
+
+.td_filter_expand {
+    width: 100%;
+    height: 20px;
+    background-color: #e1e1e1;
+    position: relative;
+    cursor: pointer;
+}
+
+.td_filter_expand:hover {
+    color: #ff791a;
+}
+
+.td_filter_expand::after {
+    content: '\EDC5';
+    font-family: 'sonicwalliconfont';
+    display: inline-block;
+    transform: rotate(-90deg);
+    padding: 0;
+    position: absolute;
+    left: 50%;
+    margin-left: -5px;
+    top: 0;
+    cursor: pointer;
+}
+
+.td_filter_contract {
+    width: 100%;
+    height: 20px;
+    background-color: #e1e1e1;
+    position: relative;
+    cursor: pointer;
+    display: none;
+}
+
+.td_filter_contract:hover {
+    color: #ff791a;
+}
+
+.td_filter_contract::after {
+    content: '\EDC5';
+    font-family: 'sonicwalliconfont';
+    display: inline-block;
+    transform: rotate(90deg);
+    padding: 0;
+    position: absolute;
+    left: 50%;
+    margin-left: -5px;
+    top: 0;
+    cursor: pointer;
+}
+
+.td_toc_toggle {
+    cursor: pointer;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Opera and Firefox */
+}
+
+.td_toc_toggle a.disable {
+    color: gray !important;
+    cursor: not-allowed;
+}
+
+.td_page_toggle {
+    cursor: pointer;
+}
+
+.td_page_toggle.active {
+    color: gray !important;
+    cursor: not-allowed;
+}
+
+.td-search-btn {
+    cursor: pointer;
+}
+
+.filter-display {
+     margin-top: 20px;
+     margin-bottom: 20px;
+}
+
+.filter-display .filter-btn {
+    background-color: #c0c0c0;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.filter-display .filter-btn:after {
+    content: ' X'
+}
+
+.td-view-toggle button.selected {
+    background: #ff791a !important; 
+}
+
+.td-card-container {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.td-card-row {
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+}
+
+.td-card-row h3 {
+/*    font-weight: 300 !important;*/
+    text-transform: none !important;
+    font-size: 20px !important;
+    max-width: 90%;
+}
+
+.td-italics {
+    font-style: italic !important;
+}
+
+.td-card-row p a {
+    color: #666666 !important;
+    font-size: 14px;
+}
+
+.td-filter-root .sw-cust-toggler {
+    border-bottom: 1px #e1e1e1 solid;
+}
+
+.td-filter-root .sw-cust-heading {
+    text-transform: uppercase;
+}
+
+.td-filter-root .sw-checkbox-value {
+    font-size: 14px;
+}
+
+.td-card-row .file-type {
+    background-color: #ff791a;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: absolute;
+    right: 0;
+    top: 30%;
+    border-radius: 10px;
+}
+
+.td-card-row .file-type-icon {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.td-card-row .file-type-icon {
+    max-width: 70px;
+}
+
+.td_toc_pages a{
+    margin: 2px;
+}
+
+.sw-filter-value label{
+    cursor: pointer;
+}
+
+.sw-filter-value input{
+    cursor: pointer;
+}
+
+.sw-filter-value .hide-total {
+    display: none;
+}
+
+.sw-td-hide {
+    display: none;
+}
+
+.sw-td-show {
+    display: block;
+}
+
+.td_filter_hidden {
+    display: none !important;
+}
+
+.hide-filtered-td {
+    display: none;
+}
+
+.show-filtered-td {
+    display: block;
+}
+
+.td-no-results-found {
+    display: none;
+    margin-top: 20px;
+}
+
+.td-search-results-term {
+    font-weight: 600;
+}
+
+/* The Modal (background) */
+.beta-modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.beta-modal .modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.beta-modal .close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.beta-modal .close:hover,
+.beta-modal .close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}

@@ -1,0 +1,5 @@
+Title=Analyzer 8.3 Administration Guide
+Product=Analyzer
+Category=Firewall Management and Analytics
+Resources=Administration Guide
+Language=English

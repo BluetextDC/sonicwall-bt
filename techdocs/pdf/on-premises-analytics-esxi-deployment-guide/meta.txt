@@ -1,0 +1,5 @@
+Title=On-Premises Analytics ESXi Deployment Guide
+Product=Analytics
+Category=Firewall Management and Analytics
+Resources=Deployment Guide
+Language=English

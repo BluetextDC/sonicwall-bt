@@ -1,0 +1,5 @@
+Title=SonicOS 6.5.4 NSv Series Log Events Reference Guide
+Product=SonicOS, NSv Series
+Category=Firewalls
+Resources=Reference Guide
+Language=English
