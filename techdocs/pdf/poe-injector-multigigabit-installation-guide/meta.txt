@@ -1,0 +1,5 @@
+Title=PoE Injector MultiGigabit Installation Guide
+Product=SonicWave 200 Series, SonicWave 400 Series
+Category=Secure Wireless Products
+Resources=Installation Guide
+Language=English

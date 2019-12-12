@@ -1,0 +1,5 @@
+Title=SonicPoint N2 Getting Started Guide
+Product=SonicPoint Series
+Category=Secure Wireless Products
+Resources=Getting Started Guide
+Language=English

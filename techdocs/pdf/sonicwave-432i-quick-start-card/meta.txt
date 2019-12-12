@@ -1,0 +1,5 @@
+Title=SonicWave 432i Quick Start Card
+Product=SonicWave 400 Series
+Category=Secure Wireless Products
+Resources=Quick Start Guide
+Language=English

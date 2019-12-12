@@ -1,0 +1,5 @@
+Title=350W-550W AC Power Supply Installation Guide
+Product=SMA 1000 Series
+Category=Secure Remote Access
+Resources=Installation Guide
+Language=English

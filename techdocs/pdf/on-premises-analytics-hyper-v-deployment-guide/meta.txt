@@ -1,0 +1,5 @@
+Title=On-Premises Analytics Hyper-V Deployment Guide
+Product=Analytics
+Category=Firewall Management and Analytics
+Resources=Deployment Guide
+Language=English

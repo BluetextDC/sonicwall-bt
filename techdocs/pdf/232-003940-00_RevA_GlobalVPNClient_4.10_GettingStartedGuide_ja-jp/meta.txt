@@ -1,0 +1,5 @@
+Title=グローバル VPN クライアント 4.10 導入ガイド
+Product=VPN Client
+Category=Secure Remote Access
+Resources=Getting Started Guide
+Language=Japanese

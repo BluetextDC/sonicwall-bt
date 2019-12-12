@@ -1,0 +1,5 @@
+Title=Zero-Touch Deployment Guide
+Product=GMS (on-premises), CSC Firewall Management
+Category=Firewall Management and Analytics
+Resources=Deployment Guide
+Language=English

@@ -1,0 +1,5 @@
+Title=X 系列解決方案部署指南
+Product=SonicOS, TZ Series, NSA Series, NSa Series 
+Category=Firewalls
+Resources=Deployment Guide
+Language=Chinese (Traditional)

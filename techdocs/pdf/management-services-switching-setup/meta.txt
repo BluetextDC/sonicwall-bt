@@ -1,0 +1,5 @@
+Title=Management Services Switching Setup
+Product=CSC Firewall Management
+Category=Firewall Management and Analytics
+Resources=Administration Guide
+Language=English

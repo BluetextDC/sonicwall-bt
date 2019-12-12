@@ -1,0 +1,5 @@
+Title=SonicOS 6.5 NSsp12k SM9800 Log Events Reference Guide
+Product=NSsp Series, SuperMassive 
+Category=Firewalls
+Resources=Reference Guide
+Language=English

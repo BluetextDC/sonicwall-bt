@@ -1,0 +1,5 @@
+Title=TZ400 TZ400-Wireless Quick Start Guide
+Product=TZ Series
+Category=Firewalls
+Resources=Quick Start Guide
+Language=English

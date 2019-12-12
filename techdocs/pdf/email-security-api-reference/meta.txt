@@ -1,0 +1,5 @@
+Title=Email Security API Reference Guide
+Product=Email Security (on-premises), Hosted Email Security
+Category=Email Security
+Resources=Reference Guide
+Language=English

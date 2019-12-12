@@ -1,0 +1,5 @@
+Title=ES 9.2 Managed Service Provider Deployment Guide
+Product=Email Security (on-premises)
+Category=Email Security
+Resources=Deployment Guide
+Language=English

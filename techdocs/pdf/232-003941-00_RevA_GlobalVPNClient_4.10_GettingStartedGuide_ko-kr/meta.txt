@@ -1,0 +1,5 @@
+Title=Global VPN Client 4.10 시작가이드
+Product=VPN Client
+Category=VPN Client
+Resources=Getting Started Guide
+Language=Korean

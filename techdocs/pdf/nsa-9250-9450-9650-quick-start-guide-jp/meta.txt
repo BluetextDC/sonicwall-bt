@@ -1,0 +1,5 @@
+Title=NSa 9250/9450/9650 クイック スタート ガイド
+Product=SonicOS,  NSa Series
+Category=Firewalls
+Resources=Quick Start Guide
+Language=Japanese

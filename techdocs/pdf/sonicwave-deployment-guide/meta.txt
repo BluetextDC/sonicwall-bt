@@ -1,0 +1,5 @@
+Title=SonicWave Deployment Guide
+Product=SonicWave 200 Series, SonicWave 400 Series
+Category=Secure Wireless Products
+Resources=Deployment Guide
+Language=English

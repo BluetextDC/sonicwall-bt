@@ -1,0 +1,5 @@
+Title=TZ300P/TZ600P Guia de início rápido
+Product=TZ Series
+Category=Firewalls
+Resources=Quick Start Guide
+Language=Portuguese

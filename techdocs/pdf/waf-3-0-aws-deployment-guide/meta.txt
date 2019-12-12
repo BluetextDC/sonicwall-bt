@@ -1,0 +1,5 @@
+Title=WAF 3.0 AWS Deployment Guide
+Product=Web Application Firewall
+Category=Cloud Security
+Resources=Deployment Guide
+Language=English

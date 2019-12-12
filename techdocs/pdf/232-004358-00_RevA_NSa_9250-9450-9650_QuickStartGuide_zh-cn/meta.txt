@@ -1,0 +1,5 @@
+Title=NSa 9250/9450/9650 快速入门指南
+Product=NSa Series
+Category=Firewalls
+Resources=Quick Start Guide
+Language=Chinese (Simplified)

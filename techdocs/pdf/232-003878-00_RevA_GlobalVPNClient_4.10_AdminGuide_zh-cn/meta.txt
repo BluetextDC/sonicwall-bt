@@ -1,0 +1,5 @@
+Title=Global VPN Client 4.10 管理员指南
+Product=VPN Client
+Category=Secure Remote Access
+Resources=Administration Guide
+Language=Chinese (Simplified)

@@ -1,0 +1,5 @@
+Title=Management Services Firewall Setup
+Product=CSC Firewall Management
+Category=Firewall Management and Analytics
+Resources=Administration Guide
+Language=English

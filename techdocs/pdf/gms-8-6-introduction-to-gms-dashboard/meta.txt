@@ -1,0 +1,5 @@
+Title=GMS 8.6 Introduction to GMS Dashboard
+Product=GMS (on-premises)
+Category=Firewall Management and Analytics
+Resources=Administration Guide
+Language=English

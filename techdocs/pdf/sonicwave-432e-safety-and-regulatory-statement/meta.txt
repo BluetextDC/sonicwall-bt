@@ -1,0 +1,5 @@
+Title=SonicWave 432e Safety and Regulatory Statement
+Product=SonicWave 400 Series
+Category=Secure Wireless Products
+Resources=Regulatory Guide
+Language=English
