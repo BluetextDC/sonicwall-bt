@@ -1,0 +1,5 @@
+Title=Email Security 9.1 Guide de l'utilisateur
+Product=Email Security (on-premises)
+Category=Email Security
+Resources=User Guide
+Language=French

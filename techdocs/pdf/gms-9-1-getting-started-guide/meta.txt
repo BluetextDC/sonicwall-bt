@@ -1,0 +1,5 @@
+Title=GMS 9.1 Getting Started Guide
+Product=GMS (on-premises)
+Category=Firewall Management and Analytics
+Resources=Getting Started Guide
+Language=English

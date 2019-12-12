@@ -1,0 +1,5 @@
+Title=SuperMassive™ 9200/9400/9600 시작 가이드
+Product=SuperMassive 
+Category=Firewalls
+Resources=Getting Started Guide
+Language=Korean

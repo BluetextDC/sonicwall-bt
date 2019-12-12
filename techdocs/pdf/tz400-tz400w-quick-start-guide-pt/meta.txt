@@ -1,0 +1,5 @@
+Title=TZ400 / TZ400 W Guia de início rápido
+Product=TZ Series
+Category=Firewalls
+Resources=Quick Start Guide
+Language=Portuguese

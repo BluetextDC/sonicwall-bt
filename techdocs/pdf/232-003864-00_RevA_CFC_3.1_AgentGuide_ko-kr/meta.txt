@@ -1,0 +1,5 @@
+Title=콘텐츠 필터링 클라 이언트 3.1 에이전트 가이드
+Product=Content Filtering Client
+Category=Endpoint Security
+Resources=Agent Guide
+Language=Korean

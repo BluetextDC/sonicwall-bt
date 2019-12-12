@@ -1,0 +1,5 @@
+Title=SonicOS 6.5.4 NSv Security Configuration
+Product=SonicOS, NSv Series
+Category=Firewalls
+Resources=Administration Guide
+Language=English

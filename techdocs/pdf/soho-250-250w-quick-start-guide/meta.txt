@@ -1,0 +1,5 @@
+Title=SOHO 250/250W Quick Start Guide
+Product=TZ Series
+Category=Firewalls
+Resources=Quick Start Guide
+Language=English

@@ -1,0 +1,5 @@
+Title=SonicWave 231o 빠른 시작 가이드
+Product=SonicWave 200 Series
+Category=Secure Wireless Products
+Resources=Quick Start Guide
+Language=Korean

@@ -1,0 +1,5 @@
+Title=SOHO Wireless クイック スタート ガイド
+Product=TZ Series
+Category=Firewalls
+Resources=Quick Start Guide
+Language=Japanese

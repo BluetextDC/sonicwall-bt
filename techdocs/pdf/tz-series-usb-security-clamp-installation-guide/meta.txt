@@ -1,0 +1,5 @@
+Title=TZ Series USB Security Clamp Installation Guide
+Product=TZ Series
+Category=Firewalls
+Resources=Installation Guide
+Language=English

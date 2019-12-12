@@ -1,0 +1,5 @@
+Title=SMA 12.3 Deployment Planning Guide
+Product=SMA 1000 Series
+Category=Secure Remote Access
+Resources=Deployment Guide
+Language=English

@@ -1,0 +1,5 @@
+Title=Secure Mobile Access SMA 500v Virtual Appliance 8.6 導入ガイド
+Product=SMA 100 Series
+Category=Secure Remote Access
+Resources=Getting Started Guide
+Language=Japanese

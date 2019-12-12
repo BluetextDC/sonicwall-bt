@@ -1,0 +1,5 @@
+Title=Hosted Email Security 10.0 Administration Guide
+Product=Hosted Email Security
+Category=Email Security
+Resources=Administration Guide
+Language=English

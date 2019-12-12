@@ -1,0 +1,5 @@
+Title=SOHO 250 및 SOHO 250W 빠른 시작 가이드
+Product=SonicOS, TZ Series, NSA Series, NSa Series 
+Category=Firewalls
+Resources=Quick Start Guide
+Language=Korean

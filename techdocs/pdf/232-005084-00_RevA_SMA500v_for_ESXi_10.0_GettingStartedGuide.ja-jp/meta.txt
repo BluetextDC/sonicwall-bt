@@ -1,0 +1,5 @@
+Title=ESXi 用 Secure Mobile Access SMA 500v 仮想装置 10.0 導入ガイド
+Product=SMA 100 Series
+Category=Secure Remote Access
+Resources=Getting Started Guide
+Language=Japanese

@@ -1,0 +1,5 @@
+Title=SonicWave 432o 시작 가이드
+Product=SonicWave 400 Series
+Category=Secure Wireless Products
+Resources=Getting Started Guide
+Language=Korean

@@ -1,0 +1,5 @@
+Title=Mobile Connect 4.0 OSX User Guide
+Product=VPN Client
+Category=Secure Remote Access
+Resources=User Guide
+Language=English

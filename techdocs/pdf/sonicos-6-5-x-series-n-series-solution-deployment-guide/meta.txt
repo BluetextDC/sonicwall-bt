@@ -1,0 +1,5 @@
+Title=SonicOS 6.5 X-Series / N-Series Solution Deployment Guide
+Product=SuperMassive, NSa Series, NSA Series, TZ Series
+Category=Firewalls
+Resources=Deployment Guide
+Language=English

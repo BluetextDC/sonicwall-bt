@@ -1,0 +1,5 @@
+Title=NSa 4650/5650/6650 Quick Start Guide
+Product=SonicOS,  NSa Series
+Category=Firewalls
+Resources=Quick Start Guide
+Language=English

@@ -1,0 +1,5 @@
+Title=SFP/SFP+ Transceiver Modules Reference Guide
+Product=NSsp Series, NSa Series
+Category=Firewalls
+Resources=Reference Guide
+Language=English

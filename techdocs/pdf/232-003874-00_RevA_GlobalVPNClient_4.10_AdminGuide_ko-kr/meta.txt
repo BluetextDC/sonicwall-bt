@@ -1,0 +1,5 @@
+Title=Global VPN Client 4.10 관리 가이드
+Product=VPN Client
+Category=VPN Client
+Resources=Administration Guide
+Language=Korean

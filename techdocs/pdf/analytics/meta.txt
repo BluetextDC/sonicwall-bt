@@ -1,0 +1,5 @@
+Title=CGMS Analytics
+Product=Analytics
+Category=Firewall Management and Analytics
+Resources=Administration Guide
+Language=English

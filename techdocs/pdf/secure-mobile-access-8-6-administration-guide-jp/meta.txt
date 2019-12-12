@@ -1,0 +1,5 @@
+Title=Secure Mobile Access 8.6 管理ガイド
+Product=SMA 100 Series
+Category=Secure Remote Access
+Resources=Administration Guide
+Language=Japanese

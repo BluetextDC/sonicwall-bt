@@ -1,0 +1,5 @@
+Title=Secure Mobile Access 12.1 Client Extensibility Toolkit Reference Guide
+Product=SMA 1000 Series
+Category=Secure Remote Access
+Resources=Reference Guide
+Language=English

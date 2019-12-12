@@ -1,0 +1,5 @@
+Title=ゼロタッチ展開ガイド
+Product=SonicOS, TZ Series, NSA Series, NSa Series 
+Category=Firewalls
+Resources=Deployment Guide
+Language=Japanese

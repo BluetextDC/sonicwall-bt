@@ -1,0 +1,5 @@
+Title=NSA 2650/3650 빠른 시작 가이드
+Product=SonicOS,  NSA Series
+Category=Firewalls
+Resources=Quick Start Guide
+Language=Korean

@@ -1,0 +1,5 @@
+Title=Cliente de VPN Global 4.10 Guia de noções básicas
+Product=VPN Client
+Category=VPN Client
+Resources=Getting Started Guide
+Language=Portuguese

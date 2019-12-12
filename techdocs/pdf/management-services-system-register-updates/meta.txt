@@ -1,0 +1,5 @@
+Title=Management Services System Register/Updates
+Product=CSC Firewall Management
+Category=Firewall Management and Analytics
+Resources=Administration Guide
+Language=English

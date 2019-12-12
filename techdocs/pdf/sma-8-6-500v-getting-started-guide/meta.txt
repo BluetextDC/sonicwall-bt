@@ -1,0 +1,5 @@
+Title=SMA 8.6 500v Getting Started Guide
+Product=SMA 100 Series
+Category=Secure Remote Access
+Resources=Getting Started Guide
+Language=English

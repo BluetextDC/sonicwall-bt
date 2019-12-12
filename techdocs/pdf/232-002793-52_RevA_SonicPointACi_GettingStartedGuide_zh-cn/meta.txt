@@ -1,0 +1,5 @@
+Title=SonicPoint ACi 入门指南
+Product=SonicPoint Series
+Category=Secure Wireless Products
+Resources=Getting Started Guide
+Language=Chinese (Simplified)

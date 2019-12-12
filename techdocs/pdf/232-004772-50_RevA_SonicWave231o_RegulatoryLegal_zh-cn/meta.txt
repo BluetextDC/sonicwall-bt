@@ -1,0 +1,5 @@
+Title=SonicWave 231o 安全、监管和法律信息
+Product=SonicWave 200 Series
+Category=Secure Wireless Products
+Resources=Regulatory Guide
+Language=Chinese (Simplified)
