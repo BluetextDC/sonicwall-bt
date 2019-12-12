@@ -1,0 +1,5 @@
+Title=Injetor Power over Ethernet (PoE) Guia do usuário
+Product=SonicPoint Series
+Category=Secure Wireless Products
+Resources=User Guide
+Language=Portuguese

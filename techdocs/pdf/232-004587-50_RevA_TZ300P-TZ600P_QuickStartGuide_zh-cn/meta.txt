@@ -1,0 +1,5 @@
+Title=TZ300P/TZ600P 快速入门指南
+Product=TZ Series,TZ Series
+Category=Firewalls,Firewalls
+Resources=Quick Start Guide,Quick Start Guide
+Language=Chinese (Simplified)

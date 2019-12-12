@@ -1,0 +1,5 @@
+Title=SMA 12.1 WorkPlace 用户指南
+Product=SMA 1000 Series
+Category=Secure Remote Access
+Resources=User Guide
+Language=Chinese (Simplified)

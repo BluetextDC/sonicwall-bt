@@ -1,0 +1,5 @@
+Title=Hosted Email Security 10.0 Getting Started Guide
+Product=Hosted Email Security
+Category=Email Security
+Resources=Getting Started Guide
+Language=English

@@ -1,0 +1,5 @@
+Title=TZ400 Wireless クイック スタート ガイド
+Product=TZ Series
+Category=Firewalls
+Resources=Quick Start Guide
+Language=Japanese

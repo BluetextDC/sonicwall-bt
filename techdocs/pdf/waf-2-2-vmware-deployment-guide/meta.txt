@@ -1,0 +1,5 @@
+Title=WAF 2.2 VMware Deployment Guide
+Product=Web Application Firewall
+Category=Cloud Security
+Resources=Deployment Guide
+Language=English

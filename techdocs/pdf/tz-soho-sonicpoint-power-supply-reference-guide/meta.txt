@@ -1,0 +1,5 @@
+Title=TZ/SOHO/SonicPoint Power Supply Reference Guide
+Product=SonicPoint Series, TZ Series
+Category=Secure Wireless Products, Firewalls
+Resources=Reference Guide
+Language=English

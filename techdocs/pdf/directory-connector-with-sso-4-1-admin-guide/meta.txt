@@ -1,0 +1,5 @@
+Title=Directory Connector with SSO 4.1 Administration Guide
+Product=SonicOS
+Category=Firewalls
+Resources=Administration Guide
+Language=English

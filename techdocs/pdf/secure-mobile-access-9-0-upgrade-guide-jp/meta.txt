@@ -1,0 +1,5 @@
+Title=Secure Mobile Access 9.0 アップグレード ガイド
+Product=SMA 100 Series
+Category=Secure Remote Access
+Resources=Upgrade Guide
+Language=Japanese

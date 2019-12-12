@@ -1,0 +1,7 @@
+<wpml-config>
+ <custom-fields>
+ <custom-field action="translate" style="line" label="Title">custom-title</custom-field>
+ <custom-field action="translate" style="textarea" label="Description">custom-description</custom-field>
+ <custom-field action="translate" style="visual" label="Some content" group="Custom group">custom-wysiwyg</custom-field>
+ </custom-fields>
+</wpml-config>

@@ -1,0 +1,5 @@
+Title=NSv Series on Hyper V Getting Started Guide
+Product=SonicOS, NSv Series
+Category=Firewalls
+Resources=Getting Started Guide
+Language=English

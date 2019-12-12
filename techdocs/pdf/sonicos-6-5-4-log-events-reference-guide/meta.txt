@@ -1,0 +1,5 @@
+Title=SonicOS 6.5.4 Log Events Reference Guide
+Product=SonicOS, SuperMassive, NSa Series, NSA Series, TZ Series
+Category=Firewalls
+Resources=Reference Guide
+Language=English

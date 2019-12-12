@@ -1,0 +1,5 @@
+Title=9600 Safety and Regulatory Information
+Product=SuperMassive 
+Category=Firewalls
+Resources=Regulatory Guide
+Language=English

@@ -1,0 +1,5 @@
+Title=Analytics 2.0 CONSOLE
+Product=Analytics
+Category=Firewall Management and Analytics
+Resources=Administration Guide
+Language=English

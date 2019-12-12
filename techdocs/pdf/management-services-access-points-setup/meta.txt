@@ -1,0 +1,5 @@
+Title=Management Services Access Points Setup
+Product=CSC Firewall Management
+Category=Firewall Management and Analytics
+Resources=Administration Guide
+Language=English

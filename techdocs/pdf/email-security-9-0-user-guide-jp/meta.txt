@@ -1,0 +1,5 @@
+Title=Email Security 9.0 ユーザ ガ イ ド
+Product=Email Security (on-premises)
+Category=Email Security
+Resources=User Guide
+Language=Japanese

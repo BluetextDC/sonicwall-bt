@@ -1,0 +1,5 @@
+Title=Secure Mobile Access 6200/7200 System Fan Installation Guide
+Product=SMA 1000 Series
+Category=Secure Remote Access
+Resources=Installation Guide
+Language=English

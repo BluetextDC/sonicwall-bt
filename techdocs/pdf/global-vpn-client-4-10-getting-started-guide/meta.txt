@@ -1,0 +1,5 @@
+Title=Global VPN Client 4.10 Getting Started Guide
+Product=VPN Client
+Category=Secure Remote Access
+Resources=Getting Started Guide
+Language=English

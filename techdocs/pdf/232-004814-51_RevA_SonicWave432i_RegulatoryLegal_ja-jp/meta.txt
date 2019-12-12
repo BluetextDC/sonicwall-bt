@@ -1,0 +1,5 @@
+Title=SonicWave 432i 安全性、規定、および法令に関する情報
+Product=SonicWave 400 Series
+Category=Secure Wireless Products
+Resources=Regulatory Guide
+Language=Japanese

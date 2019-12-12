@@ -1,0 +1,5 @@
+Title=Cloud App Security (Shadow IT) User Guide
+Product=Cloud App Security
+Category=Cloud Security
+Resources=User Guide
+Language=English

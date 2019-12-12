@@ -1,0 +1,5 @@
+Title=Content Filtering Service 4.0 Upgrade Guide
+Product=SonicOS
+Category=Firewalls
+Resources=Upgrade Guide
+Language=English
