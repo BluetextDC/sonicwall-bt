@@ -64,6 +64,23 @@ if (substr($path, 0, strlen($query)) === $query)
             }
         }
     }
+    
+    $query = "/support/product-notification/";
+    
+    if (substr($path, 0, strlen($query)) === $query)
+    {
+        $parts = explode("/", trim($path, "/"));
+        
+        if (count($parts) == 3 && $parts[0] == "support" && $parts[1] == "product-notification" && is_numeric($parts[2]))
+        {
+            $url = "/support/product-notification/?sol_id=".$parts[2];
+            
+            if (wp_redirect($url))
+            {
+                exit();
+            }
+        }
+    }
 
     if ($path == "/lp/2019-cyber-threat-report/")
     {
