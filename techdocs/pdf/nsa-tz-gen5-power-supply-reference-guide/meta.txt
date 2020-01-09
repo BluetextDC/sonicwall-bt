@@ -1,5 +1,0 @@
-Title=NSA/TZ Gen5 Power Supply Reference Guide
-Product=NSA Series, TZ Series
-Category=Firewalls
-Resources=Reference Guide
-Language=English

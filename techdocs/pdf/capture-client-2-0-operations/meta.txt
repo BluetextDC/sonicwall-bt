@@ -1,5 +1,0 @@
-Title=Capture Client 2.0 Operations
-Product=Capture Client
-Category=Endpoint Security
-Resources=Operations Guide
-Language=English

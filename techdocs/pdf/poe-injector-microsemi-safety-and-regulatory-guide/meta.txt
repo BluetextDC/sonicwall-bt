@@ -1,5 +1,0 @@
-Title=PoE Injector Microsemi Safety and Regulatory Guide
-Product=SonicPoint Series
-Category=Secure Wireless Products
-Resources=Regulatory Guide
-Language=English

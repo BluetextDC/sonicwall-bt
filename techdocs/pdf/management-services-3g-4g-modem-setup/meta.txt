@@ -1,5 +1,0 @@
-Title=Management Services 3G/4G/Modem Setup
-Product=CSC Firewall Management
-Category=Firewall Management and Analytics
-Resources=Administration Guide
-Language=English

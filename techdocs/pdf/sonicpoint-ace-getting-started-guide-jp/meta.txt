@@ -1,5 +1,0 @@
-Title=SonicPoint ACe 導入ガイド
-Product=SonicPoint Series
-Category=Secure Wireless Products
-Resources=Getting Started Guide
-Language=Japanese

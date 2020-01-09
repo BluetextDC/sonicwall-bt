@@ -1,5 +1,0 @@
-Title=TZ300P/TZ600P Safety and Regulatory Statement
-Product=TZ Series
-Category=Firewalls
-Resources=Regulatory Guide
-Language=English

@@ -1,5 +1,0 @@
-Title=Power over Ethernet (PoE) インジェクタ ユーザ ガイド
-Product=SonicPoint Series
-Category=Secure Wireless Products
-Resources=User Guide
-Language=Japanese

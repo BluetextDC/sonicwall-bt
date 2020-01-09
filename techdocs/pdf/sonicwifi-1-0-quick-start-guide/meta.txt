@@ -1,5 +1,0 @@
-Title=SonicWiFi 1.0 Quick Start Guide
-Product=WiFi Cloud Manager
-Category=Secure Wireless Products
-Resources=Quick Start Guide
-Language=English

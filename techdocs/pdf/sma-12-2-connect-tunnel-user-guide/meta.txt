@@ -1,5 +1,0 @@
-Title=SMA 12.2 Connect Tunnel User Guide
-Product=SMA 1000 Series
-Category=Secure Remote Access
-Resources=User Guide
-Language=English

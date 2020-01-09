@@ -1,5 +1,0 @@
-Title=SonicWave 224w 安全、規範和法律資訊
-Product=SonicWave 200 Series
-Category=Secure Wireless Products
-Resources=Regulatory Guide
-Language=Chinese (Traditional)

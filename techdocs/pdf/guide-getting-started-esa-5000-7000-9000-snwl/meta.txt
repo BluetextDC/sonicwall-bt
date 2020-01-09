@@ -1,5 +1,0 @@
-Title=Email Security Appliance 5000/7000/9000 Getting Started Guide
-Product=Email Security (on-premises)
-Category=Email Security
-Resources=Getting Started Guide
-Language=English

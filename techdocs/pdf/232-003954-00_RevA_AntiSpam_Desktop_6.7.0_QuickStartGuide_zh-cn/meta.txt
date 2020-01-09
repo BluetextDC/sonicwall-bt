@@ -1,5 +1,0 @@
-Title=反垃圾邮件桌面系统 6.7.0 快速入门指南
-Product=Hosted Email Security 
-Category=Email Security
-Resources=Quick Start Guide
-Language=Chinese (Simplified)

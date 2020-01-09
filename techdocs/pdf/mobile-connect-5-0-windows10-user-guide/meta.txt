@@ -1,5 +1,0 @@
-Title=Mobile Connect 5.0 Windows10 User Guide
-Product=VPN Client
-Category=Secure Remote Access
-Resources=User Guide
-Language=English

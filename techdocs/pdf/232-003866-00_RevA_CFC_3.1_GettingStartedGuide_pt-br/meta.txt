@@ -1,5 +1,0 @@
-Title=Cliente de filtragem de conteúdo 3.1 Guia de noções básicas
-Product=Content Filtering Client
-Category=Endpoint Security
-Resources=Getting Started Guide
-Language=Portuguese

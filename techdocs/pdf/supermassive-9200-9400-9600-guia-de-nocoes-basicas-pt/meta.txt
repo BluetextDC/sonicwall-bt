@@ -1,5 +1,0 @@
-Title=SuperMassive 9200/9400/9600 Guia de noções básicas
-Product=SuperMassive 
-Category=Firewalls
-Resources=Getting Started Guide
-Language=Portuguese

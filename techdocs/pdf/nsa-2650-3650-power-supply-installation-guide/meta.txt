@@ -1,5 +1,0 @@
-Title=NSa 2650-3650 Power Supply Installation Guide
-Product=SonicOS,  NSa Series
-Category=Firewalls
-Resources=Installation Guide
-Language=English

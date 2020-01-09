@@ -1,5 +1,0 @@
-Title=SOHO 250 Safety Regulatory
-Product=TZ Series
-Category=Firewalls
-Resources=Regulatory Guide
-Language=English

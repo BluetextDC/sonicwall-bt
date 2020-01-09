@@ -1,5 +1,0 @@
-Title=SOHO 无线快速入门指南
-Product=TZ Series
-Category=Firewalls
-Resources=Quick Start Guide
-Language=Chinese (Simplified)

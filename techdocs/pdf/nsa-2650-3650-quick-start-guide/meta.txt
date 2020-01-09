@@ -1,5 +1,0 @@
-Title=NSA 2650/3650 Quick Start Guide
-Product=SonicOS,  NSA Series
-Category=Firewalls
-Resources=Quick Start Guide
-Language=English

@@ -1,5 +1,0 @@
-Title=SonicWave 432e e SonicWave 432i Guia de noções básicas
-Product=SonicWave 400 Series
-Category=Secure Wireless Products
-Resources=Getting Started Guide
-Language=Portuguese

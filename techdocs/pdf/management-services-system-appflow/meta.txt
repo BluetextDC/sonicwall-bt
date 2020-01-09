@@ -1,5 +1,0 @@
-Title=Management Services System AppFlow
-Product=CSC Firewall Management
-Category=Firewall Management and Analytics
-Resources=Administration Guide
-Language=English

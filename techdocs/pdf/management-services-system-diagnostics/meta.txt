@@ -1,5 +1,0 @@
-Title=Management Services System Diagnostics
-Product=CSC Firewall Management
-Category=Firewall Management and Analytics
-Resources=Administration Guide
-Language=English

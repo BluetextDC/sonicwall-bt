@@ -1,5 +1,0 @@
-Title=NSa 2650/3650 快速入門指南
-Product=NSA Series
-Category=Firewalls
-Resources=Quick Start Guide
-Language=Chinese (Traditional)

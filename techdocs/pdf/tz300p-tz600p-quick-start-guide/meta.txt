@@ -1,5 +1,0 @@
-Title=TZ300P/TZ600P Quick Start Guide
-Product=TZ Series
-Category=Firewalls
-Resources=Quick Start Guide
-Language=English

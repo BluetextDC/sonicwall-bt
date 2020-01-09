@@ -1,5 +1,0 @@
-Title=SonicOS 5.9 Upgrade Guide
-Product=SonicOS, SuperMassive, NSA Series, TZ Series
-Category=Firewalls
-Resources=Upgrade Guide
-Language=English

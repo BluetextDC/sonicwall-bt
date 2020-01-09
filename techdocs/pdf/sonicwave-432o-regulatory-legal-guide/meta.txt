@@ -1,5 +1,0 @@
-Title=SonicWave 432o Regulatory/Legal Guide
-Product=SonicWave 400 Series
-Category=Secure Wireless Products
-Resources=Regulatory Guide
-Language=English

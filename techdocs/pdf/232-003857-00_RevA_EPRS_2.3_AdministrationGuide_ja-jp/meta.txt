@@ -1,5 +1,0 @@
-Title=強制クライアント ポリシーおよびレポート サーバ 2.3 管理ガイド
-Product=SonicOS, TZ Series, NSA Series, NSa Series 
-Category=Firewalls
-Resources=Administration Guide
-Language=Japanese

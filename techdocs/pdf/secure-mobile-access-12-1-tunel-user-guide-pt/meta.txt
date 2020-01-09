@@ -1,5 +1,0 @@
-Title=Secure Mobile Access 12.1 Túnel de conexão Guia do usuário
-Product=SMA 1000 Series
-Category=Secure Remote Access
-Resources=User Guide
-Language=Portuguese

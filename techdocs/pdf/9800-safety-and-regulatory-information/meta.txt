@@ -1,5 +1,0 @@
-Title=9800 Safety and Regulatory Information
-Product=SuperMassive 
-Category=Firewalls
-Resources=Regulatory Guide
-Language=English

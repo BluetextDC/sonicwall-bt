@@ -1,5 +1,0 @@
-Title=Email Security 10.0 Administration Guide
-Product=Email Security (on-premises)
-Category=Email Security
-Resources=Administration Guide
-Language=English

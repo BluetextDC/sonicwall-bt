@@ -1,5 +1,0 @@
-Title=NSa 4650-9650 Power Supply Installation Guide
-Product=SonicOS,  NSa Series
-Category=Firewalls
-Resources=Installation Guide
-Language=English
