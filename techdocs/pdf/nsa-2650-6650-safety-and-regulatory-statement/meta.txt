@@ -1,5 +1,0 @@
-Title=NSa 2650-6650 Safety and Regulatory Statement
-Product=SonicOS,  NSa Series
-Category=Firewalls
-Resources=Regulatory Guide
-Language=English

@@ -1,5 +1,0 @@
-Title=SonicWave 224w Standoff Mounting Plate Installation Guide
-Product=SonicWave 200 Series
-Category=Secure Wireless Products
-Resources=Installation Guide
-Language=English

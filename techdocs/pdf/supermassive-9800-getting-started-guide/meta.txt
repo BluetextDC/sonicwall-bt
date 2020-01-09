@@ -1,5 +1,0 @@
-Title=SuperMassive 9800 Getting Started Guide
-Product=SuperMassive 
-Category=Firewalls
-Resources=Getting Started Guide
-Language=English

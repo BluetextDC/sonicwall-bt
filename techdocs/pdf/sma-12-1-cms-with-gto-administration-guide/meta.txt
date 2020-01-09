@@ -1,5 +1,0 @@
-Title=SMA 12.1 CMS with GTO Administration Guide
-Product=Remote Access Management and Reporting
-Category=Secure Remote Access
-Resources=Administration Guide
-Language=English

@@ -1,5 +1,0 @@
-Title=Radio Equipment Directive (RED) Addendum
-Product=SuperMassive, NSa Series, NSA Series, TZ Series
-Category=Firewalls
-Resources=Regulatory Guide
-Language=English

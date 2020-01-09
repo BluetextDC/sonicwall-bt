@@ -1,5 +1,0 @@
-Title=Secure Mobile Access 12.1 アップグレード ガイド
-Product=SMA 1000 Series
-Category=Secure Remote Access
-Resources=Upgrade Guide
-Language=Japanese

@@ -1,5 +1,0 @@
-Title=SonicOS 6.5 NSsp12k SM9800 Updates
-Product=SonicOS, NSsp Series, SuperMassive
-Category=Firewalls
-Resources=Administration Guide
-Language=English

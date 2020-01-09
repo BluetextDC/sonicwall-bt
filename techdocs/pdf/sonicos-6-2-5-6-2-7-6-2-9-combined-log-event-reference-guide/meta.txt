@@ -1,5 +1,0 @@
-Title=SonicOS 6.2.5-6.2.7-6.2.9 Combined Log Event Reference Guide
-Product=SonicOS, SuperMassive, NSA Series, TZ Series
-Category=Firewalls
-Resources=Reference Guide
-Language=English

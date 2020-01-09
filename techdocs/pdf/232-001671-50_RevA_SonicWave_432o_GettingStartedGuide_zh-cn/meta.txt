@@ -1,5 +1,0 @@
-Title=SonicWave 432o 入门指南
-Product=SonicWave 400 Series
-Category=Secure Wireless Products
-Resources=Getting Started Guide
-Language=Chinese (Simplified)

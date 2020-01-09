@@ -1,5 +1,0 @@
-Title=On-Premises Analytics Getting Started Guide
-Product=Analytics
-Category=Firewall Management and Analytics
-Resources=Getting Started Guide
-Language=English

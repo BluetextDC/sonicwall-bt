@@ -1,5 +1,0 @@
-Title=TZ600 Rack Mount Tray Assembly Installation Guide
-Product=TZ Series
-Category=Firewalls
-Resources=Installation Guide
-Language=English

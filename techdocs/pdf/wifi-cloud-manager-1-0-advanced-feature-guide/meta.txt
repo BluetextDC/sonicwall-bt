@@ -1,5 +1,0 @@
-Title=WiFi Cloud Manager 1.0 Advanced Feature Guide
-Product=WiFi Cloud Manager
-Category=Secure Wireless Products
-Resources=Advanced Feature Guide
-Language=English

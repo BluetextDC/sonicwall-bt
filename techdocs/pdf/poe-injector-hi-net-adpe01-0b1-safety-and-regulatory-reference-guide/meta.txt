@@ -1,5 +1,0 @@
-Title=PoE Injector Hi-Net ADPE01-0B1 Safety and Regulatory Reference Guide
-Product=SonicPoint Series
-Category=Secure Wireless Products
-Resources=Regulatory Guide
-Language=English

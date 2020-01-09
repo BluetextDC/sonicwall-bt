@@ -1,5 +1,0 @@
-Title=SOHO 250 與 SOHO 250W 快速入門指南
-Product=TZ Series
-Category=Firewalls
-Resources=Quick Start Guide
-Language=Chinese (Traditional)

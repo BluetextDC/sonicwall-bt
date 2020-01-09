@@ -1,5 +1,0 @@
-Title=SonicWave 200 Series Power Supply Reference Guide
-Product=SonicWave 200 Series
-Category=Secure Wireless Products
-Resources=Reference Guide
-Language=English

@@ -1,5 +1,0 @@
-Title=Built-in Storage Module Installation Guide
-Product=SonicOS,  NSa Series
-Category=Firewalls
-Resources=Installation Guide
-Language=English

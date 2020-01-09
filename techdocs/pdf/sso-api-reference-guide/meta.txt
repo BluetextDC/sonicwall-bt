@@ -1,5 +1,0 @@
-Title=SSO API Reference Guide
-Product=SonicOS
-Category=Firewalls
-Resources=Reference Guide
-Language=English

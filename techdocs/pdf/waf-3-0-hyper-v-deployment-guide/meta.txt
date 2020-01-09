@@ -1,5 +1,0 @@
-Title=WAF 3.0 Hyper-V Deployment Guide
-Product=Web Application Firewall
-Category=Cloud Security
-Resources=Deployment Guide
-Language=English

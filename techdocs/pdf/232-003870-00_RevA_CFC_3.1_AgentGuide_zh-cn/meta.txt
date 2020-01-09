@@ -1,5 +1,0 @@
-Title=内容过滤客户端 3.1 代理指南
-Product=Content Filtering Client
-Category=Endpoint Security
-Resources=Agent Guide
-Language=Chinese (Simplified)

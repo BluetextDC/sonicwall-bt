@@ -9,237 +9,6 @@ require 'vendor/autoload.php';
 use Aws\S3\S3Client;
 use Aws\Exception\AwsException;
 
-add_action( 'wp_loaded', function() {
-
-if (class_exists('TablePress_Table_Model')) {
-    
- 
-    //Create a new tablepress table modal class
-   class TablePress_Table_Model_2 extends TablePress_Table_Model{
-       
-       //overload the load function to load custom data for the techdocs table
-      public function load( $table_id, $load_data = true, $load_options_visibility = true ) {
-      
-        if ($table_id == "84")
-        {
-            if ( empty( $table_id ) ) {
-			     return new WP_Error( 'table_load_empty_table_id' );
-            }
-            $post_id = $this->_get_post_id( $table_id );
-            if ( false === $post_id ) {
-                return new WP_Error( 'table_load_no_post_id_for_table_id', '', $table_id );
-            }
-            $post = $this->model_post->get( $post_id );
-            if ( false === $post ) {
-                return new WP_Error( 'table_load_no_post_for_post_id', '', $post_id );
-            }
-            $table = self::TD_Data_Override($this->_post_to_table( $post, $table_id, $load_data ));
-            if ( $load_options_visibility ) {
-                $table['options'] = $this->_get_table_options( $post_id );
-                $table['visibility'] = $this->_get_table_visibility( $post_id );
-            }
-
-            return $table;
-        }
-        else
-        {
-            //Use the default TablePress classes if it's not the table we are interested in
-            return parent::load($table_id, $load_data, $load_options_visibility);
-        }
-      }
-       
-      private function TD_Data_Override($table)
-      {
-          $header = array("Document Title", "Document Title", "Product", "Category", "Resources", "Language");
-          
-          //Create a global techdocs array that will be overwritten with the most desired doc type
-          $techdocs = array();
-                  
-          //Glob through the PDFs for the base
-          $pdf_glob = "techdocs/pdf/";
-          $pdf_dirs = array_filter(glob($pdf_glob.'*'), 'is_dir');
-          
-          foreach ($pdf_dirs as $pdf)
-          {
-              $meta_file = $pdf."/meta.txt";
-              
-              if (file_exists($meta_file))
-              {
-                  $meta = $this->process_td_meta($meta_file);
-                
-                  $slug = explode($pdf_glob, $pdf)[1];
-                  $title = $meta->title;
-                  $product = $meta->product;
-                  $category = $meta->category;
-                  $resources = $meta->resources;
-                  $language = $meta->language;
-                  $beta = strtolower($meta->beta) == "yes";
-
-                  if ($this->beta_check($beta))
-                  {
-                      $techdocs[$slug] = array(
-                        '<a href ="https://techdocs.sonicwall.com/wp-content/uploads/pdf/'.$slug.'/">'.$title.'</a>',
-                        '[swlightbox]<a href ="https://techdocs.sonicwall.com/wp-content/uploads/pdf/'.$slug.'.pdf">'.$title.'</a>[/swlightbox]',
-                        $product,
-                        $category,
-                        $resources,
-                        $language  
-                      );      
-                  }
-              }              
-          }
-          
-          //Now glob through the generated html docs
-              
-          $html_glob = "techdocs/html/";
-          $html_dirs = array_filter(glob($html_glob.'*'), 'is_dir');
-          
-          foreach ($html_dirs as $html)
-          {
-              $meta_file = $html."/meta.txt";
-              
-              if (file_exists($meta_file))
-              {
-                  $meta = $this->process_td_meta($meta_file);
-                
-                  $slug = explode($html_glob, $html)[1];
-                  $title = $meta->title;
-                  $product = $meta->product;
-                  $category = $meta->category;
-                  $resources = $meta->resources;
-                  $language = $meta->language;
-                  $beta = strtolower($meta->beta) == "yes";
-                  if ($this->beta_check($beta))
-                  {
-                      $techdocs[$slug] = array(
-                        '<a href ="/techdocs/html/'.$slug.'/">'.$title.'</a>',
-                        '[swlightbox]<a href="/techdocs/html/'.$slug.'">'.$title.'</a>[/swlightbox]',
-                        $product,
-                        $category,
-                        $resources,
-                        $language  
-                      );   
-                  }
-              }              
-          }
-          
-          //Now glob throught the flare docs
-          
-          $flare_glob = "techdocs/flare/";
-  
-          $flare_dirs = array_filter(glob($flare_glob.'*'), 'is_dir');
-
-          foreach ($flare_dirs as $flare)
-          {
-              $meta_file = $flare."/Content/Resources/meta.txt";
-              
-              if (file_exists($meta_file))
-              {
-                  $meta = $this->process_td_meta($meta_file);
-                                  
-                  $slug = explode($flare_glob, $flare)[1];
-                  $title = $meta->title;
-                  $product = $meta->product;
-                  $category = $meta->category;
-                  $resources = $meta->resources;
-                  $language = $meta->language;
-                  $beta = strtolower($meta->beta) == "yes";
-                  
-                  if ($beta)
-                  {
-                    $title = $title." ".$beta;   
-                  }
-                  
-
-                  if ($this->beta_check($beta))
-                  {
-                      $techdocs[$slug] = array(
-                        '<a href ="/techdocs/flare/'.$slug.'/">'.$title.'</a>',
-                        '[swlightbox]<a href="/techdocs/flare/'.$slug.'">'.$title.'</a>[/swlightbox]',
-                        $product,
-                        $category,
-                        $resources,
-                        $language  
-                      );   
-                  }
-              }              
-          }
-          
-          
-          
-          $table_data = array($header);
-          
-          foreach($techdocs as $techdoc)
-          {
-              $table_data[] = $techdoc;
-          }
-          
-          
-          $table["data"] = $table_data;
-          
-          return $table;
-      }
-       
-       private function process_td_meta($meta_file)
-       {
-           $meta = new stdClass();
-           
-           if (file_exists($meta_file))
-           {
-               
-              $contents = file_get_contents($meta_file);
-               
-              $lines = explode("\n", $contents);
-               
-              foreach($lines as $line)
-              {
-                  $parts = explode("=",$line);
-                  
-                  if (count($parts) == 2)
-                  {
-                      $key = preg_replace('/[\x00-\x1F\x80-\xFF]/', '', strval(trim(strtolower($parts[0]))));
-                      $meta->{$key} = preg_replace('/[\x00-\x1F\x80-\xFF]/', '', strval(trim($parts[1])));
-                  }
-              }               
-           }           
-           return $meta;
-       }
-       
-       private function beta_check($is_beta)
-       {
-           if ($is_beta)
-           {
-               //The document is a beta document, so make sure the session is set to beta login
-               session_start();
-               
-               if ($_SESSION['beta_techdocs_login'])
-               {
-                   return true;
-               }
-               else
-               {
-                   return false;
-               }
-           }
-           else
-           {
-               //Return true because it isn't a beta so it should always show
-               return true;
-           }
-           
-           return false;
-       }
-
-   }
-
-    
-   $techdocs_override = new TablePress_Table_Model_2();
-   //Set the modal table variable to the override class 
-   TablePress::$model_table = $techdocs_override;
-}
-
-});
-
 //The WPML String translation package
 function getWPMLPackage()
 {
@@ -417,6 +186,7 @@ function td_build_filter($type, $data, $display_value)
                 <input class="sw-checkbox-input td-filter-checkbox" type="checkbox" value="'.$d->title.'" data-value="'.$d->title.'" data-type="'.$type.'" data-display-value="'.$display_value.'">
                   <a class="sw-checkbox-value">'.swTDItalics($d->title).'</a>
                   <span class="sw-filter-count pull-right '.$hide_total.'">'.$d->total.'</span>
+                  <span class="pull-right td-filter-addition">+</span>
               </label>
             </p>
         ';
@@ -455,8 +225,18 @@ function getTDData()
               $d->resources = $meta->resources;
               $d->language = $meta->language;
               $d->beta = strtolower($meta->beta) == "yes";
+              $d->description = $meta->description;
               $d->file_type = "pdf";
-              $d->url = "https://techdocs.sonicwall.com/wp-content/uploads/pdf/" . $d->slug . ".pdf";
+              
+              if (file_exists($pdf."/".$d->slug.".pdf"))
+              {
+                  $d->url = "/techdocs/pdf/" . $d->slug . ".pdf";
+              }
+              else
+              {
+                  //Link it to techdocs as it doesn't exist
+                  $d->url = "https://techdocs.sonicwall.com/wp-content/uploads/pdf/" . $d->slug . ".pdf";
+              }
 
               $pdf_links[$d->slug] = $d->url;
               
@@ -534,7 +314,9 @@ function getTDData()
           }              
       }
 
-    return bumpOrder(td_localize($techdocs));
+    $techdocs = bumpOrder(td_localize($techdocs));
+ 
+    return $techdocs;
 }
 
 function td_localize($techdocs) {
@@ -635,12 +417,45 @@ function process_td_meta($meta_file)
 
           if (count($parts) == 2)
           {
-              $key = strval(trim(strtolower($parts[0])));//preg_replace('/[\x00-\x1F\x80-\xFF]/', '', strval(trim(strtolower($parts[0]))));
-              $meta->{$key} = strval(trim($parts[1]));// preg_replace('/[\x00-\x1F\x80-\xFF]/', '', strval(trim($parts[1])));
+              $key = preg_replace('/[\x00-\x1F\x80-\xFF]/', '', strval(trim(strtolower($parts[0]))));//strval(trim(strtolower($parts[0])));
+              $meta->{$key} = mb_convert_encoding(strval(trim($parts[1])), 'UTF-8', 'UTF-8');
           }
       }               
-   }           
+   }  
+    
+    //Override with new fields if they exist
+    
+    //Model
+    if ($meta && isset($meta->model) && strlen($meta->model) > 0)
+    {
+      $meta->category = $meta->model;
+    }
+
+
+    //Document
+    if ($meta && isset($meta->document) && strlen($meta->document) > 0)
+    {
+      $meta->resources = $meta->document;
+    }
+    
    return $meta;
+}
+
+
+function set_pdf_meta($pdf_file, $techdoc)
+{
+    $pdf_title = $techdoc->title;
+    $pdf_description = $techdoc->description;
+    
+    $cmd = "exiftool -Title=\"{$pdf_title}\" -Subject=\"{$pdf_description}\" {$pdf_file}";
+    
+    $output=shell_exec($cmd.' 2>&1');
+    
+    //Remove backup file
+    if (file_exists($pdf_file."_original"))
+    {
+        unlink($pdf_file."_original");
+    }
 }
 
 function beta_check($is_beta)
@@ -711,7 +526,7 @@ if ( class_exists( 'WP_CLI' ) ) {
 class cli_techdocs extends WP_CLI_Command {
     
    /**
-   * Import PDFs from CSV
+   * Register WPML strings for translation of dynamic fields
    */
   function register_wpml_strings($args) {
       
@@ -769,7 +584,239 @@ class cli_techdocs extends WP_CLI_Command {
       
       WP_CLI::line( 'WPML string registration complete.' ); 
   }
+
+     /**
+   * Fix missing titles bug
+   */
+  function fix_titles($args) {
       
+      $techdocs = getTDData();
+      
+      //Get all the metadata from the CSVs
+      
+      $csv_files = array(
+        "output-zh.csv",
+        "output-tw.csv",
+        "output-pt.csv",
+        "output-master.csv",
+        "output-kr.csv",
+        "output-jp.csv"
+      );
+      
+      $docs = new stdClass();
+      
+      foreach($csv_files as $csv_file)
+      {
+            $csv_file = plugin_dir_path(__FILE__).$csv_file;
+            $data = array_map('str_getcsv', file($csv_file));
+
+            //Terri Map
+            $map = array(
+                "title" => 0,
+                "link" => 1,
+                "category" => 6,
+                "product" => 7,
+                "resources" => 2,
+                "language" => 3,
+                "description" => 8
+            );
+
+            foreach($data as $doc)
+            {
+              $import = new stdClass();
+              $import->title = $doc[$map["title"]];
+              $import->link = $doc[$map["link"]];
+
+              //Product Category
+              $import->category = $doc[$map["category"]];
+
+              //Model
+              $import->product = $doc[$map["product"]];
+
+              //Document Type
+              $import->resources = $doc[$map["resources"]];
+
+              //Language
+              $import->language = $doc[$map["language"]];
+
+              $import->description = $doc[$map["description"]];
+
+              //Get the slug
+              $import->slug = basename($import->link, '.pdf');
+
+              //Now that we made an object, lets merge them
+              if (!$docs->{$import->slug})
+              {
+                  $docs->{$import->slug} = new stdClass();
+                  $docs->{$import->slug}->category = array();
+                  $docs->{$import->slug}->product = array();
+                  $docs->{$import->slug}->resources = array();
+              }
+
+              $docs->{$import->slug}->title = $import->title;
+              $docs->{$import->slug}->link = $import->link;
+              $docs->{$import->slug}->slug = $import->slug;
+              $docs->{$import->slug}->category[] = $import->category;
+              $docs->{$import->slug}->product[] = $import->product;
+              $docs->{$import->slug}->resources[] = $import->resources;
+              $docs->{$import->slug}->language = $import->language;
+              $docs->{$import->slug}->description = $import->description;      
+            }
+
+      }
+      
+
+      foreach ($techdocs as $techdoc)
+      {
+          if ($techdoc && (!$techdoc->title || strlen($techdoc->title) <= 0))
+          {
+               $doc = $docs->{$techdoc->slug};
+               $meta_content = "Title=".$doc->title."
+Product=".$techdoc->product."
+Category=".$techdoc->category."
+Resources=".$techdoc->resources."
+Language=".$techdoc->language."
+Description=".$techdoc->description;
+              
+            $dir = ABSPATH."techdocs/pdf/".$techdoc->slug;
+            $meta_file = $dir."/meta.txt";
+         
+           
+            file_put_contents($meta_file, $meta_content); 
+              
+          }
+      }
+      
+      
+      WP_CLI::line( 'Title Fix complete' ); 
+  }
+    
+    
+   /**
+   * Download PDF files from techdocs.sonicwall.com and process meta data
+   */
+  function download_pdf($args) {
+      
+      $techdocs = getTDData();
+      
+      //Get all the metadata from the CSVs
+      
+      $csv_files = array(
+        "output-zh.csv",
+        "output-tw.csv",
+        "output-pt.csv",
+        "output-master.csv",
+        "output-kr.csv",
+        "output-jp.csv"
+      );
+      
+      $docs = new stdClass();
+      
+      foreach($csv_files as $csv_file)
+      {
+            $csv_file = plugin_dir_path(__FILE__).$csv_file;
+            $data = array_map('str_getcsv', file($csv_file));
+
+            //Terri Map
+            $map = array(
+                "title" => 0,
+                "link" => 1,
+                "category" => 6,
+                "product" => 7,
+                "resources" => 2,
+                "language" => 3,
+                "description" => 8
+            );
+
+            foreach($data as $doc)
+            {
+              $import = new stdClass();
+              $import->title = $doc[$map["title"]];
+              $import->link = $doc[$map["link"]];
+
+              //Product Category
+              $import->category = $doc[$map["category"]];
+
+              //Model
+              $import->product = $doc[$map["product"]];
+
+              //Document Type
+              $import->resources = $doc[$map["resources"]];
+
+              //Language
+              $import->language = $doc[$map["language"]];
+
+              $import->description = $doc[$map["description"]];
+
+              //Get the slug
+              $import->slug = basename($import->link, '.pdf');
+
+              //Now that we made an object, lets merge them
+              if (!$docs->{$import->slug})
+              {
+                  $docs->{$import->slug} = new stdClass();
+                  $docs->{$import->slug}->category = array();
+                  $docs->{$import->slug}->product = array();
+                  $docs->{$import->slug}->resources = array();
+              }
+
+              $docs->{$import->slug}->title = $import->title;
+              $docs->{$import->slug}->link = $import->link;
+              $docs->{$import->slug}->slug = $import->slug;
+              $docs->{$import->slug}->category[] = $import->category;
+              $docs->{$import->slug}->product[] = $import->product;
+              $docs->{$import->slug}->resources[] = $import->resources;
+              $docs->{$import->slug}->language = $import->language;
+              $docs->{$import->slug}->description = $import->description;      
+            }
+
+      }
+      
+
+      foreach ($techdocs as $techdoc)
+      {
+          //Add description to meta.txt
+          if ($docs->{$techdoc->slug} && $docs->{$techdoc->slug}->description && strlen($docs->{$techdoc->slug}->description) > 0)
+          {
+              
+              $doc = $docs->{$techdoc->slug};
+              $meta_content = "Title=".$techdoc->title."
+Product=".$techdoc->product."
+Category=".$techdoc->category."
+Resources=".$techdoc->resources."
+Language=".$techdoc->language."
+Description=".$doc->description;
+        
+            $dir = ABSPATH."techdocs/pdf/".$techdoc->slug;
+            $meta_file = $dir."/meta.txt";
+         
+           
+            file_put_contents($meta_file, $meta_content); 
+          }
+          
+          
+          if ($techdoc->file_type === "pdf")
+          {
+              //Download the PDF and add the meta
+                      
+
+              $pdf_file = $dir."/".$techdoc->slug.".pdf";
+              
+              //Force the td server URL
+              $td_server_url = "https://techdocs.sonicwall.com/wp-content/uploads/pdf/" . $techdoc->slug . ".pdf";
+              
+              file_put_contents($pdf_file, file_get_contents($td_server_url));
+              
+              set_pdf_meta($pdf_file, $techdoc);
+          }
+          
+      }
+      
+      
+      WP_CLI::line( 'PDF download complete.' ); 
+  }
+  
+    
   /**
    * Import PDFs from CSV
    */
@@ -779,17 +826,6 @@ class cli_techdocs extends WP_CLI_Command {
       
     $docs = new stdClass();
       
-      
-    //Ray Map
-//    $map = array(
-//        "title" => 0,
-//        "link" => 1,
-//        "category" => 4,
-//        "product" => 9,
-//        "resources" => 15,
-//        "language" => 23,
-//        "description" => 7
-//    );
       
     //Terri Map
     $map = array(
@@ -860,10 +896,6 @@ Language=".$doc->language."";
         $meta_file = $dir."/meta.txt";
         
         file_put_contents($meta_file, $meta_content);
-        
-        //Skip downloading PDFs while we are hosting on techdocs.
-//        $pdf_file = $dir."/".$doc->slug.".pdf";
-//        file_put_contents($pdf_file, file_get_contents($doc->link));
     }
   }
       
@@ -889,15 +921,42 @@ Language=".$doc->language."";
                 )
           ]);
           
+          $dirs = array("/td/".$branch."/a/", "/td/".$branch."/b/");
+          
+          //Check for the main dir
+          if (!file_exists("/td"))
+          {
+              mkdir("/td");
+          }
+          //Create the branch dir
+          if (!file_exists("/td/".$branch))
+          {
+              mkdir("/td/".$branch);
+          }
+          
+          //Create the directories if they don't exist
+          foreach($dirs as $dir)
+          {
+              if (!file_exists($dir))
+              {
+                  mkdir($dir);
+              }
+          }
+          
           $directory = $branch;
           
           //Find out which directory to use a staging directory
           
           //Temporary storage directory for seamless switching between jobs
-                    
-          $current_dir = readlink(ABSPATH."techdocs/flare");
           
-          $directories = array_values(array_diff(array("/td/a/", "/td/b/"), array($current_dir)));
+          $current_dir = false;
+          
+          if (file_exists(ABSPATH."techdocs"))
+          {
+             $current_dir = readlink(ABSPATH."techdocs");   
+          }
+         
+          $directories = array_values(array_diff($dirs, array($current_dir)));
           
           if (count($directories) <= 0)
           {
@@ -907,12 +966,6 @@ Language=".$doc->language."";
           
           $basePath = $directories[0];
 
-          //Make the tmp directory if it doesn't exist
-          if (!file_exists($basePath))
-          {
-            mkdir($basePath);  
-          }
-          
           //sync the entire bucket (only changed files)
           $s3->downloadBucket($basePath . $directory, $bucket, $directory);
           
@@ -953,24 +1006,27 @@ Language=".$doc->language."";
               if (file_exists($payload))
               {
                   $filename = basename($payload);
-                  $dest = $basePath.$branch."/".$filename;
+                  $dest = $basePath.$branch."/flare/".$filename;
+                  
+                  //Make the dir
+                  if (!file_exists($basePath.$branch."/flare/"))
+                  {
+                      mkdir($basePath.$branch."/flare/");
+                  }
+                  
                   copy($payload, $dest);
               }
           }
           
           
           //Now switch the symlink to make all the changes live
-          if (is_link(ABSPATH."techdocs/flare"))
+          if (is_link(ABSPATH."techdocs"))
           {
-              unlink(ABSPATH."techdocs/flare");
-              symlink($basePath.$branch, ABSPATH."techdocs/flare");
-              WP_CLI::line( 'Finished: '.$branch ); 
+              unlink(ABSPATH."techdocs");
           }
-          else
-          {
-              WP_CLI::line( 'Error: flare folder is not a symlink!' ); 
-              exit();
-          }
+          
+          symlink($basePath.$branch, ABSPATH."techdocs");
+          WP_CLI::line( 'Finished: '.$branch ); 
           
       }
       else

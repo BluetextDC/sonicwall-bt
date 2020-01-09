@@ -1,5 +1,0 @@
-Title=ES 9.2 Virtual Appliance Getting Started Guide
-Product=Email Security (on-premises)
-Category=Email Security
-Resources=Getting Started Guide
-Language=English

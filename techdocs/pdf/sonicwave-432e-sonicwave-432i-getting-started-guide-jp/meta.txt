@@ -1,5 +1,0 @@
-Title=SonicWave 432e および SonicWave 432i 導入ガイド
-Product=SonicWave 400 Series
-Category=Secure Wireless Products
-Resources=Getting Started Guide
-Language=Japanese

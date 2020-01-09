@@ -1,5 +1,0 @@
-Title=SonicOS 6.5 調査
-Product=SonicOS, SuperMassive, NSa Series, NSA Series, TZ Series
-Category=Firewalls
-Resources=Administration Guide
-Language=Japanese

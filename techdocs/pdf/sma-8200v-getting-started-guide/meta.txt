@@ -1,5 +1,0 @@
-Title=SMA 8200v Getting Started Guide
-Product=SMA 1000 Series
-Category=Secure Remote Access
-Resources=Getting Started Guide
-Language=English

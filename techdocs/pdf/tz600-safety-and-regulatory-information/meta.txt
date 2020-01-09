@@ -1,5 +1,0 @@
-Title=TZ600 Safety and Regulatory Information
-Product=TZ Series
-Category=Firewalls
-Resources=Regulatory Guide
-Language=English

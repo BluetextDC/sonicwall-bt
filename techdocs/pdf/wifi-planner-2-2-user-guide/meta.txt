@@ -1,5 +1,0 @@
-Title=WiFi Planner 2.2 User Guide
-Product=WiFi Planner
-Category=Secure Wireless Products
-Resources=User Guide
-Language=English

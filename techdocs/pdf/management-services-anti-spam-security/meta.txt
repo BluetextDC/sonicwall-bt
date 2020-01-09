@@ -1,5 +1,0 @@
-Title=Management Services Anti Spam Security
-Product=CSC Firewall Management
-Category=Firewall Management and Analytics
-Resources=Administration Guide
-Language=English

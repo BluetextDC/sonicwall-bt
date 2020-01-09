@@ -1,5 +1,0 @@
-Title=TZ350W Safety Regulatory
-Product=TZ Series
-Category=Firewalls
-Resources=Regulatory Guide
-Language=English

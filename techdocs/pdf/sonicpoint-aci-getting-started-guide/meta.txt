@@ -1,5 +1,0 @@
-Title=SonicPoint ACi Getting Started Guide
-Product=SonicPoint Series
-Category=Secure Wireless Products
-Resources=Getting Started Guide
-Language=English

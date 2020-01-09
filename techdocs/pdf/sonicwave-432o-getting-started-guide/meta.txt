@@ -1,5 +1,0 @@
-Title=SonicWave 432o Getting Started Guide
-Product=SonicWave 400 Series
-Category=Secure Wireless Products
-Resources=Getting Started Guide
-Language=English

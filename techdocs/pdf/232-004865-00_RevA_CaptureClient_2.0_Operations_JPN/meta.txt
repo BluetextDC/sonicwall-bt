@@ -1,5 +1,0 @@
-Title=Capture Client 2.0 操作ガイド
-Product=Capture Client
-Category=Endpoint Security
-Resources=Operations Guide
-Language=Japanese
