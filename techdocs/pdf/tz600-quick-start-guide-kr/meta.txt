@@ -1,5 +1,0 @@
-Title=TZ600 빠른 시작 가이드
-Product=TZ Series
-Category=Firewalls
-Resources=Quick Start Guide
-Language=Korean

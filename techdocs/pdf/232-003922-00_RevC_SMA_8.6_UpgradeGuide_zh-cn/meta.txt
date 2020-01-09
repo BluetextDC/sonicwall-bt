@@ -1,5 +1,0 @@
-Title=SMA 8.6 升级指南
-Product=SMA 100 Series
-Category=Secure Remote Access
-Resources=Upgrade Guide
-Language=Chinese (Simplified)

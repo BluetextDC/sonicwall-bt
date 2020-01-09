@@ -1,5 +1,0 @@
-Title=SonicOS 5.9 Admin Guide
-Product=SonicOS, SuperMassive, NSa Series, NSA Series, TZ Series
-Category=Firewalls
-Resources=Administration Guide
-Language=English

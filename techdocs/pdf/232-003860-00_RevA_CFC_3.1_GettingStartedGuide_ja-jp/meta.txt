@@ -1,5 +1,0 @@
-Title=コンテンツ フィルタ クライアント 3.1 導入ガイド
-Product=Content Filtering Client
-Category=Endpoint Security
-Resources=Getting Started Guide
-Language=Japanese

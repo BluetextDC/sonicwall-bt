@@ -1,5 +1,0 @@
-Title=SMA 8.6 用户指南
-Product=SMA 100 Series
-Category=Secure Remote Access
-Resources=Administration Guide
-Language=Chinese (Simplified)

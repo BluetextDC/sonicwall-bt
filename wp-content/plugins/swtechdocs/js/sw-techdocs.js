@@ -4,7 +4,9 @@ jQuery(document).ready(function(){
     window.td_per_page = 20;
     window.td_current_page = 1;
     window.td_view_type = 'card';
-
+    
+    window.td_current_language = window.td_default_langauge;
+    
     window.td_current_filters = [];
     
     window.default_languages = [
@@ -28,22 +30,26 @@ jQuery(document).ready(function(){
         {
             for (var key in urlFilters)
             {
-                addFilter(key, urlFilters[key], lookupKey(key));  
+                var pieces = urlFilters[key].split(',');
+                
+                for (var i = 0; i < pieces.length; i++)
+                {
+                    var piece = pieces[i];
+                    addFilter(key, piece, lookupKey(key));  
+                }
             }
         }
     }
-    else
-    {
-        setDefaultLang();   
-    }
+    
+    setDefaultLang();
     
     function setDefaultLang()
     {
         //Set default language
-        if (window.td_default_langauge)
+        if (window.td_default_language)
         {
-            jQuery('.td-filter-language').find("[data-value='" + window.td_default_langauge + "']").prop("checked", true);
-            addFilter('language', window.td_default_langauge, lookupKey('language'));
+            jQuery('.td-filter-language').find("[data-value='" + window.td_default_language + "']").prop("checked", true);
+            addFilter('language', window.td_default_language, lookupKey('language'));
         }
     }
 
@@ -170,6 +176,7 @@ function getJsonFromUrl(url) {
   return result;
 }
 
+
  function resetFilterExpander()
    {
        jQuery(".td_filter_expand").each(function(){
@@ -186,15 +193,24 @@ function getJsonFromUrl(url) {
        
        //Update collapse toggles && counts
         jQuery(".td-filter-root").each(function(){
-            var visible_filters = jQuery(this).find(".sw-filter-value.show-filtered-td");
-
-            if (visible_filters.length <= 10)
+            
+            var visible_filters = 0;
+            
+            jQuery(this).find(".sw-filter-count").each(function(){
+               if (parseInt(jQuery(this).html()) > 0)
+               {
+                   visible_filters = visible_filters + 1;
+               }
+            });
+ 
+            if (visible_filters <= 10)
             {
                 jQuery(this).find('.td_filter_expand').addClass('sw-td-hide').removeClass('sw-td-show').nextAll('.sw-filter-value').removeClass('td_filter_hidden');
                 jQuery(this).find('.td_filter_contract').addClass('sw-td-hide').removeClass('sw-td-show');
             }
             else
             {
+                //Show filter expander
                 jQuery(this).find('.td_filter_expand').addClass('sw-td-show').removeClass('sw-td-hide');
             }
         });
@@ -204,40 +220,29 @@ function addFilter(type, value, display_value, skip_hash)
 {
     if (type == "language")
     {
-        //Delect the other select filted
-        var selected_lang_filters = [];
-        
-         for (var key in window.td_current_filters) {
-             if (window.td_current_filters.hasOwnProperty(key)) {
-                 var f = window.td_current_filters[key];
-                 
-                 if (f.type == "language")
-                 {
-                     removeFilter(f.type, f.value);
-                 }
-             }
-         }
+        window.td_current_language = value;
+        jQuery(".td-filter-checkbox[data-type='language']").prop("checked", false);
+        jQuery(".td-filter-checkbox[data-type='language']").prop("disabled", false);
+        jQuery(".td-filter-checkbox[data-value='" + value + "']").prop("disabled", true);
+        jQuery(".td-filter-checkbox[data-value='" + value + "']").prop("checked", true);
     }
+    else
+    {
+        var key = type + value;
     
-    var key = type + value;
-    
-    window.td_current_filters[key] = {
-        type: type,
-        value: value,
-        display_value: display_value
-    };
-    
-    jQuery(".td-filter-checkbox[data-value='" + value + "']").prop("checked", true);
+        window.td_current_filters[key] = {
+            type: type,
+            value: value,
+            display_value: display_value
+        };
+
+        jQuery(".td-filter-checkbox[data-value='" + value + "']").prop("checked", true);
+    }
     
     buildCurrentView(skip_hash);
-    
-    if (type == "language")
-    {
-         jQuery(".td-filter-checkbox[data-type='language']").prop("disabled", false);
-         jQuery(".td-filter-checkbox[data-value='" + value + "']").prop("disabled", true);
-    }
-    
+
     resetFilterExpander();
+    
 }
 
 function removeFilter(type, value, skip_add, skip_build)
@@ -256,34 +261,108 @@ function removeFilter(type, value, skip_add, skip_build)
     if (!skip_build)
     {
         buildCurrentView();
-        langIt(skip_add);
     }
     
     resetFilterExpander();
 }
 
-function langIt(skip_add)
+
+function buildFilterGroups(potential_filter)
 {
-    //check for language filter bug
+    var filter_groups = { }
+    
+    if (Object.keys(window.td_current_filters).length > 0)
+    {
+        for (var filter_key in window.td_current_filters)
+        {
+          if (window.td_current_filters.hasOwnProperty(filter_key))
+          {
+              var filter = window.td_current_filters[filter_key];
 
-    var language_found = false;
+              if (!filter_groups[filter.type])
+              {
+                filter_groups[filter.type] = [];        
+              }
 
-    for (var key in window.td_current_filters) {
-        if (window.td_current_filters.hasOwnProperty(key)) {  
-            var filter = window.td_current_filters[key];
-
-            if (filter.type == "language")
+              filter_groups[filter.type].push(filter);
+          }
+        }
+        
+        if (potential_filter)
+        {
+            if (!filter_groups[potential_filter.type])
             {
-                language_found = true;
+                filter_groups[potential_filter.type] = [];        
             }
+            filter_groups[potential_filter.type].push(potential_filter);
         }
     }
-
-    if (!language_found && !skip_add)
+    
+    return filter_groups;
+}
+function calculateView(potential_filter)
+{    
+    var filter_groups = buildFilterGroups(potential_filter);
+    
+    var view = {};
+    
+    //Filter Language first
+    for (var key in window.td_all) {
+      if (window.td_all.hasOwnProperty(key)) {
+          var doc = window.td_all[key];
+          
+          if (doc.language == window.td_current_language)
+          {
+              view[doc.slug] = doc;
+          }
+      }
+    }
+    
+    //Now loop through each filter type and apply sub filters to the data, slowly dwindling the results
+    
+    if (Object.keys(filter_groups).length > 0)
     {
-        addFilter("language", td_default_langauge, lookupKey("language"), true);
-        removeFilter("language", td_default_langauge, true);        
-    } 
+      for (var order_key in filter_groups)
+      {
+          if (filter_groups[order_key])
+          {
+              var filter_group = filter_groups[order_key];
+              
+              var sub_view = {};
+              
+              for (var i = 0; i < filter_group.length; i++)
+              {
+                  var filter = filter_group[i];
+                  
+                  for (var key in view) {
+                      if (view.hasOwnProperty(key)) {
+
+                          var doc = view[key];
+                          
+                          var pieces = doc[filter.type].split(",");
+                          
+                          
+                          for (var x = 0; x < pieces.length; x++)
+                          {
+                              var piece = pieces[x].trim();
+                              
+                              if ( piece == filter.value )
+                              {
+                                  sub_view[doc.slug] = doc;
+                              }
+                          } 
+                          
+                      }
+                  }
+              }
+              
+              view = sub_view;
+          }
+      }
+    }
+    
+    return view
+    
 }
 
 function buildCurrentView(skip_hash)
@@ -291,56 +370,13 @@ function buildCurrentView(skip_hash)
     window.td_current_page = 1;
     window.td_current_view = [];
     
-    for (var key in window.td_all) {
-      if (window.td_all.hasOwnProperty(key)) {
-          if (Object.keys(window.td_current_filters).length > 0)
-          {
-              var doc = window.td_all[key];
-              
-              var doc_failed_filter = false;
-              
-              for (var filter_key in window.td_current_filters)
-              {
-                  if (window.td_current_filters.hasOwnProperty(filter_key))
-                  {
-                      var filter = window.td_current_filters[filter_key];
-                      
-                      if (filter)
-                      {          
-                          var pieces = doc[filter.type].split(",");
-                          
-                          var piece_passed_filter = false;
-                          
-                          for (var i = 0; i < pieces.length; i++)
-                          {
-                              var piece = pieces[i].trim();
-                              
-                              if ( piece == filter.value)
-                              {
-                                  piece_passed_filter = true;
-                                  break;
-                              }
-                          } 
-                          
-                          if (!piece_passed_filter)
-                          {
-                              doc_failed_filter = true;
-                          }
-                      }
-                  }
-              }
-              
-              if (!doc_failed_filter)
-              {
-                  window.td_current_view.push(doc);
-              }
-          }
-          else
-          {
-            //No filters, add everything    
-            window.td_current_view.push(window.td_all[key]);
-          } 
-      }
+    var td_filter = calculateView();
+    
+    if (Object.keys(td_filter).length > 0)
+    {
+        for (var key in td_filter) {
+            window.td_current_view.push(td_filter[key]);
+        }
     }
     
     if (window.td_current_view.length > 0)
@@ -362,23 +398,30 @@ function buildCurrentView(skip_hash)
 
 function set_filter_hash()
 {
-    if (Object.keys(window.td_current_filters).length > 0)
-    {
-        var filter_hash = "?";
-        for (var filter_key in window.td_current_filters)
-        {
-            var filter = window.td_current_filters[filter_key];
-
-            filter_hash += filter.type + "=" + filter.value + "&";
+    var filter_hash = "?";
+    
+    filter_hash += "language=" + window.td_current_language + "&";
+    
+    var filter_groups = buildFilterGroups();
+    
+    if (Object.keys(filter_groups).length > 0) {
+        for (var key in filter_groups) {
+            var filter_group = filter_groups[key];
+            
+            var vals = [];
+            
+            for (var i = 0; i < filter_group.length; i++)
+            {
+                var filter = filter_group[i];
+                vals.push(filter.value);
+            }
+            
+            filter_hash += key + "=" + vals.join(',') + '&';
         }
-
-        filter_hash = filter_hash.replace(/(^&)|(&$)/g, "");
-        window.history.pushState(null,null, filter_hash);
     }
-    else
-    {
-        window.history.pushState(null,null, window.location.pathname);
-    }
+    
+    filter_hash = filter_hash.replace(/(^&)|(&$)/g, "");
+    window.history.pushState(null,null, filter_hash);
 }
 
 function redraw_td_filters()
@@ -390,49 +433,76 @@ function redraw_td_filters()
             var type = jQuery(this).data("filter-type");
             var value = jQuery(this).data("filter-value");
 
-            var found = false;
-
-            for (var i = 0; i < window.td_current_view.length; i++)
+            
+            var root_filter_set = false;
+            
+            for (var filter_key in window.td_current_filters)
             {
-                var doc = window.td_current_view[i];
+                var filter = window.td_current_filters[filter_key];
 
-                if (doc[type].indexOf(value) > -1)
+                if (filter.type == type)
                 {
-                    found = true;
+                    root_filter_set = true;
                     break;
                 }
             }
 
-            if (found)
+            if (root_filter_set)
             {
-                jQuery(this).addClass('show-filtered-td');
-                jQuery(this).removeClass('hide-filtered-td');
+                jQuery(".td-filter-" + type).addClass("root-filter-set");
             }
             else
             {
-                jQuery(this).addClass('hide-filtered-td'); 
-                jQuery(this).removeClass('show-filtered-td');
+                jQuery(".td-filter-" + type).removeClass("root-filter-set");
             }
-            
-            //Always show Language
-            if (type == 'language')
-            {
-                jQuery(this).addClass('show-filtered-td');
-                jQuery(this).removeClass('hide-filtered-td');
-            }
+
+           
         });   
     }
     else
     {
-        //jQuery(".sw-filter-value").show();
         jQuery(".sw-filter-value").addClass('sw-td-show').removeClass('sw-td-hide');
+        
+        jQuery(".sw-filter-value").each(function(){
+        
+            var type = jQuery(this).data("filter-type");
+            jQuery(".td-filter-" + type).removeClass("root-filter-set");
+        });
     }
     
     //Update collapse toggles && counts
-    jQuery(".td-filter-root").each(function(){
-        var visible_filters = jQuery(this).find(".sw-filter-value.show-filtered-td");
+    jQuery(".td-filter-root:not(.td-filter-language)").each(function(){      
         
-        if (visible_filters.length <= 10)
+        var filters_to_count = jQuery(this).find(".sw-filter-value");
+        
+        var valid_filters = 0;
+        //Update count here
+        for (var i = 0; i < filters_to_count.length; i++)
+        {
+            var type = jQuery(filters_to_count[i]).data("filter-type");
+            var value = jQuery(filters_to_count[i]).data("filter-value"); 
+            var count = getDocCount(type, value);
+            
+            jQuery(filters_to_count[i]).find(".sw-filter-count").html(count);
+            
+            if (count > 0)
+            {
+                valid_filters = valid_filters + 1;
+                jQuery(filters_to_count[i]).show();
+            }
+            else
+            {
+                //Hide any filter with a zero count
+                jQuery(filters_to_count[i]).hide();
+            }
+            
+            if (valid_filters >= 10)
+            {
+                jQuery(filters_to_count[i]).addClass('td_filter_hidden');
+            }
+        }
+        
+        if (valid_filters > 10)
         {
             jQuery(this).find('.td_filter_expand').addClass('sw-td-hide').removeClass('sw-td-show').nextAll('.sw-filter-value').removeClass('td_filter_hidden');
             jQuery(this).find('.td_filter_contract').addClass('sw-td-hide').removeClass('sw-td-show');
@@ -441,109 +511,68 @@ function redraw_td_filters()
         {
             jQuery(this).find('.td_filter_expand').addClass('sw-td-show').removeClass('sw-td-hide');
         }
-        
-        //Update count here
-        for (var i = 0; i < visible_filters.length; i++)
-        {
-            var type = jQuery(visible_filters[i]).data("filter-type");
-            var value = jQuery(visible_filters[i]).data("filter-value"); 
-            var count = getDocCount(type, value);
-            
-            jQuery(visible_filters[i]).find(".sw-filter-count").html(count);
-            
-            if (i >= 10 && type != "language")
-            {
-                jQuery(visible_filters[i]).addClass('td_filter_hidden');
-            }
-        }
     });
     
     //Update the filter view
     jQuery(".td-filter-display").html('');
     
-    if (Object.keys(window.td_current_filters).length > 0) {
-        for (var key in window.td_current_filters) {
-            var filter = window.td_current_filters[key];
+    
+    var filter_groups = buildFilterGroups();
+    
+    if (Object.keys(filter_groups).length > 0) {
+        for (var key in filter_groups) {
+            var filter_group = filter_groups[key];
             
-            if (filter.type != "language")
+            var filter_html = "";
+            
+            for (var i = 0; i < filter_group.length; i++)
             {
-                 jQuery(".td-filter-display").append('<div class="filter-display"><span>' + filter.display_value + ': </span><span class="filter-btn" data-filter-type="' + filter.type + '" data-filter-value="' + filter.value + '">' + filter.value + '</span></div>');
+                var filter = filter_group[i];
+                
+                if (i == 0)
+                {
+                    filter_html = filter_html + '<div class="filter-btn-parent"><p class="filter-btn-title">' + filter.display_value + ': </p><div class="filter-btn-container">';
+                }
+                
+                filter_html = filter_html + '<span class="filter-btn" data-filter-type="' + filter.type + '" data-filter-value="' + filter.value + '">' + filter.value + '</span>';
             }
-           
+            
+            if (filter_html.length > 0)
+            {
+                filter_html = filter_html + '</div></div>';
+                jQuery(".td-filter-display").append(filter_html);
+            }            
         }
     }
+    
+    resetFilterExpander();
 }
 
 function getDocCount(type, value)
 {
-    var count = 0;
-  
-    for (var i = 0; i < window.td_current_view.length; i++)
-    {
-        var doc = window.td_current_view[i];
-
-        if (doc[type].indexOf(value) > -1)
-        {
-            count = count + 1;
-        }
-    }    
+    var potential_filter = {
+        type: type,
+        value: value
+    };
     
-    return count;
-}
+    var tmp_view = calculateView(potential_filter);
+    
+    var count = 0;
+    
+    if (Object.keys(tmp_view).length > 0) {
+        for (var key in tmp_view) {
+            var doc = tmp_view[key];
 
-function buildDataWithoutLangFilter()
-{
-    for (var key in window.td_all) {
-      if (window.td_all.hasOwnProperty(key)) {
-          if (Object.keys(window.td_current_filters).length > 0)
-          {
-              var doc = window.td_all[key];
-              
-              var doc_failed_filter = false;
-              
-              for (var filter_key in window.td_current_filters)
-              {
-                  if (window.td_current_filters.hasOwnProperty(filter_key))
-                  {
-                      var filter = window.td_current_filters[filter_key];
-                      
-                      if (filter)
-                      {          
-                          var pieces = doc[filter.type].split(",");
-                          
-                          var piece_passed_filter = false;
-                          
-                          for (var i = 0; i < pieces.length; i++)
-                          {
-                              var piece = pieces[i].trim();
-                              
-                              if ( piece == filter.value)
-                              {
-                                  piece_passed_filter = true;
-                                  break;
-                              }
-                          } 
-                          
-                          if (!piece_passed_filter)
-                          {
-                              doc_failed_filter = true;
-                          }
-                      }
-                  }
-              }
-              
-              if (!doc_failed_filter)
-              {
-                  window.td_current_view.push(doc);
-              }
-          }
-          else
-          {
-            //No filters, add everything    
-            window.td_current_view.push(window.td_all[key]);
-          } 
-      }
+            if (doc)
+            {
+                if (doc[type].indexOf(value) > -1)
+                {
+                    count = count + 1;
+                } 
+            }
+        }
     }
+    return count;
 }
 
 function redraw_td_table()
@@ -669,29 +698,7 @@ function apply_text_search()
         
         window.td_current_view = filtered_results;
     }
-    else
-    {
-      //check for language filter bug
 
-        var language_found = false;
-
-        for (var key in window.td_current_filters) {
-            if (window.td_current_filters.hasOwnProperty(key)) {  
-                var filter = window.td_current_filters[key];
-
-                if (filter.type == "language")
-                {
-                    language_found = true;
-                }
-            }
-        }
-
-        if (!language_found)
-        {
-            addFilter("language", td_default_langauge, lookupKey("language"), true);  
-            removeFilter("language", td_default_langauge, true, true);
-        } 
-    }
 
     if (window.td_current_view.length > 0)
     {
@@ -751,18 +758,6 @@ function build_pagination(page, per_page)
         }
         
     }
-    
-//    for (var i = 1; i <= pages; i++)
-//    {
-//        var active = '';
-//        
-//        if (i == page)
-//        {
-//            active = 'active';        
-//        }
-//        
-//        page_html += '<a class="td_page_toggle ' + active + '" data-page="' + i + '">' + i + '</a>';    
-//    }
     
     jQuery(".td_toc_pages").html(page_html);
 }

@@ -1,5 +1,0 @@
-Title=SonicPoint ACe Safety and Regulatory Information
-Product=SonicPoint Series
-Category=Secure Wireless Products
-Resources=Regulatory Guide
-Language=English

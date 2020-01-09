@@ -1,5 +1,0 @@
-Title=9800 Rail Kit Installation Guide
-Product=SuperMassive 
-Category=Firewalls
-Resources=Installation Guide
-Language=English

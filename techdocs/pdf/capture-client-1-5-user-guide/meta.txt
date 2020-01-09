@@ -1,5 +1,0 @@
-Title=Capture Client 1.5 User Guide
-Product=Capture Client
-Category=Endpoint Security
-Resources=User Guide
-Language=English

@@ -1,5 +1,0 @@
-Title=SMA 210/410 Safety and Regulatory Statement
-Product=SMA 100 Series
-Category=Secure Remote Access
-Resources=Regulatory Guide
-Language=English

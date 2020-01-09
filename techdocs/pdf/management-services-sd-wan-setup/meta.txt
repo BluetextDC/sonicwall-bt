@@ -1,5 +1,0 @@
-Title=Management Services SD-WAN Setup
-Product=CSC Firewall Management
-Category=Firewall Management and Analytics
-Resources=Administration Guide
-Language=English

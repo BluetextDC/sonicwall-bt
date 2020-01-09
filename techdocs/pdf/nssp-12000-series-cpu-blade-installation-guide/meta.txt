@@ -1,5 +1,0 @@
-Title=NSsp 12000 Series CPU Blade Installation Guide
-Product=NSsp Series 
-Category=Firewalls
-Resources=Installation Guide
-Language=English

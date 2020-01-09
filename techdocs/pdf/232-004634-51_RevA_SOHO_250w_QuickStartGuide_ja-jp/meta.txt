@@ -1,5 +1,0 @@
-Title=SOHO 250W クイック スタート ガイド
-Product=SonicOS, TZ Series
-Category=Firewalls
-Resources=Quick Start Guide
-Language=Japanese

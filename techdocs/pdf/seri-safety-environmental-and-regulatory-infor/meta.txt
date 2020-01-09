@@ -1,5 +1,0 @@
-Title=SERI - Safety, Environmental, and Regulatory Information Guide
-Product=NSsp Series, SuperMassive, NSa Series, NSA Series, TZ Series, NSv Series, Web Application Firewall
-Category=Firewalls
-Resources=Regulatory Guide
-Language=English

@@ -1,5 +1,0 @@
-Title=SMA 200/400 入门指南
-Product=SMA 100 Series
-Category=Secure Remote Access
-Resources=Getting Started Guide
-Language=Chinese (Simplified)

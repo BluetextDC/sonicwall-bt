@@ -1,5 +1,0 @@
-Title=Power over Ethernet (PoE) 供电器用户指南
-Product=SonicOS, TZ Series, NSA Series, NSa Series 
-Category=Firewalls
-Resources=User Guide
-Language=Chinese (Simplified)

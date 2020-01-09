@@ -1,5 +1,0 @@
-Title=WAF 2.2 Administration Guide
-Product=Web Application Firewall
-Category=Cloud Security
-Resources=Administration Guide
-Language=English

@@ -1,5 +1,0 @@
-Title=SonicOS 6.5.4 API Reference Guide
-Product=
-Category=Firewalls
-Resources=Reference Guide
-Language=English

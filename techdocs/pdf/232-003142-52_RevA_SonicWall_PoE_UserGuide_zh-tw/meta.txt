@@ -1,5 +1,0 @@
-Title=乙太網路供電 (PoE) 轉換器 使用者手冊
-Product=SonicPoint Series
-Category=Secure Wireless Products
-Resources=User Guide
-Language=Chinese (Traditional)

@@ -1,5 +1,0 @@
-Title=SMA SMA 500v 虚拟设备 8.6 入门指南
-Product=SMA 100 Series
-Category=Secure Remote Access
-Resources=Getting Started Guide
-Language=Chinese (Simplified)

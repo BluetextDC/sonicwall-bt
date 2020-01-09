@@ -1,5 +1,0 @@
-Title=SonicOS 6.5 NSv Logs and Reporting
-Product=SonicOS, NSv Series
-Category=Firewalls
-Resources=Administration Guide
-Language=English

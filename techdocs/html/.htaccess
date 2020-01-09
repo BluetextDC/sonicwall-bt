@@ -1,3 +1,0 @@
-RewriteEngine on
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteRule ^(.*)$ /techdocs/html/index.php?path=$1 [NC,L,QSA]
