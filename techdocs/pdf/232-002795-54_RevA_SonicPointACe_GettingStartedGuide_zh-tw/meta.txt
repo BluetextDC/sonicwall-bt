@@ -1,5 +1,0 @@
-Title=SonicPoint ACe 快速入門指南
-Product=SonicPoint Series
-Category=Secure Wireless Products
-Resources=Getting Started Guide
-Language=Chinese (Traditional)

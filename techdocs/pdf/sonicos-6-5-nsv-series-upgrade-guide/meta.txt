@@ -1,5 +1,0 @@
-Title=SonicOS 6.5 NSv Series Upgrade Guide
-Product=SonicOS, NSv Series
-Category=Firewalls
-Resources=Upgrade Guide
-Language=English

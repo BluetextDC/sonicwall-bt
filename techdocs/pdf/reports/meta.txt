@@ -1,5 +1,0 @@
-Title=Reports
-Product=CSC Firewall Management, Analytics
-Category=Firewall Management and Analytics
-Resources=Administration Guide
-Language=English

@@ -1,5 +1,0 @@
-Title=SMA 12.2 Workplace User Guide
-Product=SMA 1000 Series
-Category=Secure Remote Access
-Resources=User Guide
-Language=English

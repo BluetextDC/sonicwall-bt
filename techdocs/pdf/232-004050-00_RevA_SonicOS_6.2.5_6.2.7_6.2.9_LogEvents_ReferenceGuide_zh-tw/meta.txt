@@ -1,5 +1,0 @@
-Title=SonicOS 6.5.1 記錄事件 參考指南
-Product=SonicOS, TZ Series, NSA Series, NSa Series, NSsp Series, SuperMassive 
-Category=Firewalls
-Resources=Reference Guide
-Language=Chinese (Traditional)

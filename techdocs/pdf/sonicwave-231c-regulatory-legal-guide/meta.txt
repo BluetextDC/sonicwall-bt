@@ -1,5 +1,0 @@
-Title=SonicWave 231c Regulatory/Legal Guide
-Product=SonicWave 200 Series
-Category=Secure Wireless Products
-Resources=Regulatory Guide
-Language=English

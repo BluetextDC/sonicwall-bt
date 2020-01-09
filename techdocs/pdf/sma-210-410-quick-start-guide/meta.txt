@@ -1,5 +1,0 @@
-Title=SMA 210/410 Quick Start Guide
-Product=SMA 100 Series
-Category=Secure Remote Access
-Resources=Quick Start Guide
-Language=English

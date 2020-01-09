@@ -1,5 +1,0 @@
-Title=グローバル VPN クライアント 4.10 管理ガイド
-Product=VPN Client
-Category=Secure Remote Access
-Resources=Administration Guide
-Language=Japanese

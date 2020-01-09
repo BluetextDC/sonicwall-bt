@@ -1,5 +1,0 @@
-Title=WAF 3.0 Administration Guide
-Product=Web Application Firewall
-Category=Cloud Security
-Resources=Administration Guide
-Language=English

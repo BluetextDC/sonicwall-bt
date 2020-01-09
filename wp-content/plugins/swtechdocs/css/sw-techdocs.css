@@ -87,18 +87,35 @@
     cursor: pointer;
 }
 
+.td-filter-display {
+    white-space: nowrap;
+}
+
 .filter-display {
      margin-top: 20px;
      margin-bottom: 20px;
 }
 
-.filter-display .filter-btn {
+.td-filter-display .filter-btn-title {
+    display: inline;
+}
+.td-filter-display .filter-btn-container {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: inline-flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.td-filter-display .filter-btn {
     background-color: #c0c0c0;
     padding: 5px;
     cursor: pointer;
+    margin: 5px;
+    user-select: none;
 }
 
-.filter-display .filter-btn:after {
+.td-filter-display .filter-btn:after {
     content: ' X'
 }
 
@@ -198,7 +215,15 @@
     display: none !important;
 }
 
-.hide-filtered-td {
+.td-filter-addition {
+    display: none;
+}
+
+.td-filter-root.root-filter-set .td-filter-addition {
+    display: block;
+}
+
+.td-filter-checkbox:checked ~ .td-filter-addition {
     display: none;
 }
 

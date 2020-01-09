@@ -1,5 +1,0 @@
-Title=TZ500 W Safety and Regulatory Information
-Product=TZ Series
-Category=Firewalls
-Resources=Regulatory Guide
-Language=English

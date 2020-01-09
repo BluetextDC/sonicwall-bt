@@ -1,5 +1,0 @@
-Title=コンテンツ フィルタ クライアント 3.1 エージェント ガイド
-Product=Content Filtering Client
-Category=Endpoint Security
-Resources=Agent Guide
-Language=Japanese

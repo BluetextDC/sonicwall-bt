@@ -1,5 +1,0 @@
-Title=SonicOS 6.5 アップグレード ガイド
-Product=SonicOS, SuperMassive, NSa Series, NSA Series, TZ Series
-Category=Firewalls
-Resources=Upgrade Guide
-Language=Japanese

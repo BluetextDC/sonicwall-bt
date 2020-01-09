@@ -1,5 +1,0 @@
-Title=SonicOS 5.9 Guia de atualização
-Product=SonicOS, TZ Series, NSA Series, NSa Series 
-Category=Firewalls
-Resources=Upgrade Guide
-Language=Portuguese

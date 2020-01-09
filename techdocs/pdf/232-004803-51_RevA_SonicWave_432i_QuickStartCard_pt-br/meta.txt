@@ -1,5 +1,0 @@
-Title=SonicWave 432i Guia de início rápido
-Product=SonicWave 400 Series
-Category=Secure Wireless Products
-Resources=Quick Start Guide
-Language=Portuguese

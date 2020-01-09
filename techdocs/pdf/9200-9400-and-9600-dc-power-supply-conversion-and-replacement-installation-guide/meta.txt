@@ -1,5 +1,0 @@
-Title=9200, 9400, and 9600 DC Power Supply Conversion and Replacement Installation Guide
-Product=SuperMassive 
-Category=Firewalls
-Resources=Installation Guide
-Language=English

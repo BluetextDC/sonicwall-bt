@@ -1,5 +1,0 @@
-Title=SMA 9.0 Upgrade Guide
-Product=SMA 100 Series
-Category=Secure Remote Access
-Resources=Upgrade Guide
-Language=English

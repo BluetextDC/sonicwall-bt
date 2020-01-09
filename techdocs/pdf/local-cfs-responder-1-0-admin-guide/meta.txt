@@ -1,5 +1,0 @@
-Title=Local CFS 1.0 Administration Guide
-Product=SonicOS
-Category=Firewalls
-Resources=Administration Guide
-Language=English

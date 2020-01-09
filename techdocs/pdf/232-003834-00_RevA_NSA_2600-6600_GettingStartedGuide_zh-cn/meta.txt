@@ -1,5 +1,0 @@
-Title=NSA 2600/3600/4600/5600/6600 入门指南
-Product=NSA Series
-Category=Firewalls
-Resources=Getting Started Guide
-Language=Chinese (Simplified)

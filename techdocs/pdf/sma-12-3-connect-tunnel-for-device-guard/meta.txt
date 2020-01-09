@@ -1,5 +1,0 @@
-Title=SMA 12.3 Connect Tunnel for Device Guard
-Product=SMA 1000 Series
-Category=Secure Remote Access
-Resources=User Guide
-Language=English

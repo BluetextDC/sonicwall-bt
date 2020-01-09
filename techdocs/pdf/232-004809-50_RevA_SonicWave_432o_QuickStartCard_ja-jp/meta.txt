@@ -1,5 +1,0 @@
-Title=SonicWave 432o クイック スタート ガイド
-Product=SonicWave 400 Series
-Category=Secure Wireless Products
-Resources=Quick Start Guide
-Language=Japanese

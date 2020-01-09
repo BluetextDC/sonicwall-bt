@@ -1,5 +1,0 @@
-Title=SonicPoint N2 시작 가이드
-Product=SonicPoint Series
-Category=Secure Wireless Products
-Resources=Getting Started Guide
-Language=Korean

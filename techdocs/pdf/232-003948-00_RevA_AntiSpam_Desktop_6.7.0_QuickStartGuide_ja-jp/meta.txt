@@ -1,5 +1,0 @@
-Title=Anti-Spam Desktop 6.7.0 クイック スタート ガイド
-Product=Email Security (on-premises)
-Category=Email Security
-Resources=Quick Start Guide
-Language=Japanese

@@ -1,5 +1,0 @@
-Title=SMA 10.0 User Guide
-Product=SMA 100 Series
-Category=Secure Remote Access
-Resources=User Guide
-Language=English

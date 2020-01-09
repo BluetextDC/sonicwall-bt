@@ -1,5 +1,0 @@
-Title=SMA 12.3 CMS with GTO Administration Guide
-Product=SMA 1000 Series
-Category=Secure Remote Access
-Resources=Administration Guide
-Language=English
