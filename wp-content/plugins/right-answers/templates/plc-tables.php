@@ -1,7 +1,5 @@
 <?php 
 
-	wp_cache_flush();
-
 	$plc_request = new RARequests();
 	$plc_data = json_decode($plc_request->get_plc_tables() );
 

@@ -1,7 +1,4 @@
 <?php 
-	
-	wp_cache_flush();
-
 	$ra = new RARequests();
 
     $alerts =  $ra->alert_search(1); 
