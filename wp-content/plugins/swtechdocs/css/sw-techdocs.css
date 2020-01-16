@@ -161,19 +161,8 @@
     font-size: 14px;
 }
 
-.td-card-row .file-type {
-    background-color: #ff791a;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 15px;
-    padding-right: 15px;
-    position: absolute;
-    right: 0;
-    top: 30%;
-    border-radius: 10px;
-}
 
-.td-card-row .file-type-icon {
+.td-card-row .file-type-container {
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 15px;
@@ -181,10 +170,17 @@
     position: absolute;
     right: 0;
     top: 0;
+    height: 70px;
 }
 
+
 .td-card-row .file-type-icon {
-    max-width: 70px;
+    height: 100%;
+    padding: 10px;
+}
+
+.td-card-row .file-type-icon img {
+    height: 100%
 }
 
 .td_toc_pages a{

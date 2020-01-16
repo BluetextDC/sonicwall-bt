@@ -1,6 +1,4 @@
 <?php
-	
-	wp_cache_flush();
 
 	if ( !isset( $_REQUEST['alertpg'] ) || $_REQUEST['alertpg'] = '' ){
 		$alert_pg_num = 1;

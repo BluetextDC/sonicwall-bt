@@ -27,7 +27,7 @@
 	$next_page = $curpg == $total_pages ? $curpg : $curpg + 1;
 	$prev_page = $curpg > 1 ? $curpg - 1 : 1;
 
-	$pages = '<p class="page-numbers"><a class="video-prev-page">&#60; Prev</a> Page <span id="video-cur-page">' . $curpg . '</span> of <span id="video-total-pages">' . $total_pages . '</span> <a class="video-next-page">Next  &#62;</a></p>'; 
+	$pages = '<p class="page-numbers"><a class="video-prev-page" href="/support/video-tutorials/?page_num=' . $prev_page . '">&#60; Prev</a> Page <span id="video-cur-page">' . $curpg . '</span> of <span id="video-total-pages">' . $total_pages . '</span> <a class="video-next-page" href="/support/video-tutorials/?page_num=' . $next_page . '">Next  &#62;</a></p>'; 
 	// href="/support/video-tutorials/?page_num=' . $prev_page . '"    href="/support/video-tutorials/?page_num=' . $next_page . '" 
 
 	$vid_holder = '<div id="video-container">';
