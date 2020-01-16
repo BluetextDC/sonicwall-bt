@@ -1,1 +1,0 @@
-!function(s){s(window).on("load resize",function(i){s(".metaslider").each(function(i){var a=s(this).outerWidth();a<600?s(this).addClass("ms-is-small"):s(this).removeClass("ms-is-small")})})}(jQuery);

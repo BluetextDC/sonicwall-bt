@@ -639,13 +639,24 @@ function redraw_td_table()
                 {
                     file_type = '<a class="file-type-icon" target="_blank" href="' + doc.url + '"><img src="/wp-content/plugins/swtechdocs/img/pdf-icon.png"></a>';
                 }
+                else if (doc.file_type == "html")
+                {
+                    file_type = "";
+   
+                     if (doc.pdf)
+                     {
+                         file_type = file_type + '<a class="file-type-icon" target="_blank" href="' + doc.pdf + '"><img src="/wp-content/plugins/swtechdocs/img/pdf-icon.png"></a>';
+                     }
+                    
+                     file_type = file_type + '<a class="file-type-icon" target="_blank" href="' + doc.url + '"><img src="/wp-content/plugins/swtechdocs/img/html-icon.png"></a>';
+                }
                 
                 td_doc_html += '<div class="row td-card-row">';
                 td_doc_html += '<div class="col-xs-12">';
                 td_doc_html += '<h3><a target="_blank" href="' + doc.url + '">' + doc.title +'</a></h3>';
                 td_doc_html += '<p><a target="_blank" href="' + doc.url + '"><span class="td-italics">' + lookupKey('resources') + ':</span> ' + doc.resources + '</a></p>';
                 
-                td_doc_html += file_type;
+                td_doc_html += '<div class="file-type-container">' + file_type + '</div>';
                 
                 td_doc_html += '</div>';
                 td_doc_html += '</div>';

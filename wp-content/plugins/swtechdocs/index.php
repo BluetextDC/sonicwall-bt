@@ -247,42 +247,10 @@ function getTDData()
           }              
       }
 
-      //Now glob through the generated html docs
 
-      $html_glob = "techdocs/html/";
-      $html_dirs = array_filter(glob($html_glob.'*'), 'is_dir');
+      //Now glob throught the flare (html) docs
 
-      foreach ($html_dirs as $html)
-      {
-          $meta_file = $html."/meta.txt";
-
-          if (file_exists($meta_file))
-          {
-              $meta = process_td_meta($meta_file);
-
-              $d = new stdClass();
-              
-              $d->slug = explode($html_glob, $html)[1];
-              $d->title = swTDItalics($meta->title);
-              $d->product = $meta->product;
-              $d->category = $meta->category;
-              $d->resources = $meta->resources;
-              $d->language = $meta->language;
-              $d->beta = strtolower($meta->beta) == "yes";
-              $d->file_type = "html";
-              $d->url = "/techdocs/" . $d->file_type . "/" . $d->slug;
-              $d->pdf = $pdf_links[$d->slug];
-              
-              if (beta_check($d->beta))
-              {
-                  $techdocs[$d->slug] = $d;
-              }
-          }              
-      }
-
-      //Now glob throught the flare docs
-
-      $flare_glob = "techdocs/flare/";
+      $flare_glob = "techdocs/html/";
 
       $flare_dirs = array_filter(glob($flare_glob.'*'), 'is_dir');
 
@@ -303,7 +271,7 @@ function getTDData()
               $d->resources = $meta->resources;
               $d->language = $meta->language;
               $d->beta = strtolower($meta->beta) == "yes";
-              $d->file_type = "flare";
+              $d->file_type = "html";
               $d->url = "/techdocs/" . $d->file_type . "/" . $d->slug;
               $d->pdf = $pdf_links[$d->slug];
               
@@ -418,24 +386,47 @@ function process_td_meta($meta_file)
           if (count($parts) == 2)
           {
               $key = preg_replace('/[\x00-\x1F\x80-\xFF]/', '', strval(trim(strtolower($parts[0]))));//strval(trim(strtolower($parts[0])));
-              $meta->{$key} = mb_convert_encoding(strval(trim($parts[1])), 'UTF-8', 'UTF-8');
+              $value = mb_convert_encoding(strval(trim($parts[1])), 'UTF-8', 'UTF-8');
+              
+              if ($value && strtolower($value) != "null")
+              {
+                $meta->{$key} = $value;  
+              }
+              
           }
       }               
    }  
     
-    //Override with new fields if they exist
+    //Product = category
+    //Model = product
+    //Document Type = resources
+    
+    //Override with new fields if they exist (v2)
     
     //Model
-    if ($meta && isset($meta->model) && strlen($meta->model) > 0)
+    if ($meta && isset($meta->document) && strlen($meta->document) > 0 && $meta && isset($meta->model) && strlen($meta->model) > 0 && isset($meta->product) && strlen($meta->product) > 0)
     {
-      $meta->category = $meta->model;
-    }
-
-
-    //Document
-    if ($meta && isset($meta->document) && strlen($meta->document) > 0)
-    {
+      $meta->category = $meta->product;
+      $meta->product = $meta->model;
       $meta->resources = $meta->document;
+    }
+    
+    //Override with even new meta.txt fields if they exist (v3)
+    
+    if ($meta && isset($meta->{"product category"}))
+    {
+        $meta->category = $meta->{"product category"};
+        $meta->product = $meta->model;
+        $meta->resources = $meta->{"document type"};
+        
+        $meta->firmware_version = $meta->{"firmware version"};
+        $meta->software_version = $meta->{"software version"};
+        
+        //Unset the old fields
+        unset($meta->{"product category"});
+        unset($meta->{"document type"});
+        unset($meta->{"firmware version"});
+        unset($meta->{"software version"});
     }
     
    return $meta;
@@ -1006,12 +997,12 @@ Language=".$doc->language."";
               if (file_exists($payload))
               {
                   $filename = basename($payload);
-                  $dest = $basePath.$branch."/flare/".$filename;
+                  $dest = $basePath.$branch."/html/".$filename;
                   
                   //Make the dir
-                  if (!file_exists($basePath.$branch."/flare/"))
+                  if (!file_exists($basePath.$branch."/html/"))
                   {
-                      mkdir($basePath.$branch."/flare/");
+                      mkdir($basePath.$branch."/html/");
                   }
                   
                   copy($payload, $dest);
@@ -1019,6 +1010,9 @@ Language=".$doc->language."";
           }
           
           
+          //Fix url encoded filenames
+          glob_dir($basePath.$branch);
+
           //Now switch the symlink to make all the changes live
           if (is_link(ABSPATH."techdocs"))
           {
@@ -1058,6 +1052,27 @@ Language=".$doc->language."";
      
   } 
 }
+
+    function glob_dir($dir)
+    {
+       foreach (glob($dir."/*") as $filename) {
+
+           $decoded_filename = urldecode($filename);
+
+           if ($filename != $decoded_filename)
+           {
+               echo "Change: ".$filename." to: ".$decoded_filename.PHP_EOL;
+               rename($filename, $decoded_filename);
+               $filename = $decoded_filename;
+           }
+
+           if (is_dir($filename))
+           {
+               //Recurse
+               glob_dir($filename);
+           }
+        }
+    }
 
     WP_CLI::add_command( 'techdocs', 'cli_techdocs' );
 }

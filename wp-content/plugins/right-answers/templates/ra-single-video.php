@@ -1,7 +1,5 @@
 <?php 
 
-	wp_cache_flush();
-
 	if ( isset( $_REQUEST['vid_id'] ) ){
 		$video_id = $_REQUEST['vid_id'];
 	}
