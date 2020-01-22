@@ -496,13 +496,13 @@ function redraw_td_filters()
                 jQuery(filters_to_count[i]).hide();
             }
             
-            if (valid_filters >= 10)
+            if (valid_filters > 10)
             {
                 jQuery(filters_to_count[i]).addClass('td_filter_hidden');
             }
         }
         
-        if (valid_filters > 10)
+        if (valid_filters >= 10)
         {
             jQuery(this).find('.td_filter_expand').addClass('sw-td-hide').removeClass('sw-td-show').nextAll('.sw-filter-value').removeClass('td_filter_hidden');
             jQuery(this).find('.td_filter_contract').addClass('sw-td-hide').removeClass('sw-td-show');
@@ -702,8 +702,19 @@ function apply_text_search()
         {
             var doc = window.td_current_view[i];
             
-            if (doc && doc.title && doc.title.toUpperCase().indexOf(text_search.toUpperCase()) > -1) {
-              filtered_results.push(doc);
+            if (doc && doc.title) {
+                
+                 var title = doc.title;
+                //Strip any HTML from the search
+                title = title.replace(/<[^>]*>?/gm, '');
+                
+                //Set all to uppercase
+                title = title.toUpperCase();
+                
+                if (title.indexOf(text_search.toUpperCase()) > -1)
+                {
+                    filtered_results.push(doc);
+                }
             }
         }
         
