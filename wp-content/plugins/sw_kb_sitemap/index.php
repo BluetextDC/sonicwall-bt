@@ -12,12 +12,14 @@ add_action( 'bwp_gxs_modules_built', 'my_bwp_gxs_add_modules' );
 function my_bwp_gxs_add_modules() {
     global $bwp_gxs;
     $bwp_gxs->add_module( 'kb' );
+    $bwp_gxs->add_module( 'techdocs' );
 }
 
 add_filter( 'bwp_gxs_rewrite_rules', 'my_bwp_gxs_add_rewrite_rules' );
 function my_bwp_gxs_add_rewrite_rules() {
     $my_rules = array(
-        'kb.xml' => 'index.php?gxs_module=kb'
+        'kb.xml' => 'index.php?gxs_module=kb',
+        'techdocs.xml' => 'index.php?gxs_module=techdocs'
     );
     return $my_rules;
 }
