@@ -397,18 +397,40 @@ add_filter( 'wpseo_canonical', 'custom_RA_canonical', 10, 1 );
 function custom_RA_canonical($canonical)
 {
     global $post;
+    
+    $post_id = $post->ID;
+    
+    if ( function_exists('icl_object_id') ) {
 
-    switch ($post->ID) {
-        case 12368:
+            $default_language = wpml_get_default_language(); // will return 'en'
+            $post_id = icl_object_id($post_id, 'post', true, $default_language);
+    }
+
+    switch ($post_id) {
         case 12371:
             //Category page
             $category = get_query_var('kb-slug');
-            return get_site_url()."/support/product-notification/".$category;
+            $site_url = apply_filters( 'wpml_home_url', get_option( 'home' ) );
+            
+            if (!$site_url)
+            {
+                $site_url = get_site_url()."/";
+            }
+            return $site_url."support/product-notification/".$category;
             break;
+        case 12368:
         case 12364:
             //Category page
             $category = get_query_var('kb-slug');
-            return get_site_url()."/support/knowledge-base/".$category;
+            
+            $site_url = apply_filters( 'wpml_home_url', get_option( 'home' ) );
+            
+            if (!$site_url)
+            {
+                $site_url = get_site_url();
+            }
+            
+            return $site_url."/support/knowledge-base/".$category;
             break;
         case 14738:
             return $canonical.'?vid_id='.$_REQUEST['vid_id'];
@@ -418,6 +440,42 @@ function custom_RA_canonical($canonical)
     }    
 }
 
+
+add_filter( 'wpml_ls_language_url', 'fix_url', 10 ,2 );
+
+function fix_url( $url,$data) {
+    
+    global $post;
+    
+    $post_id = $post->ID;
+    
+    if ( function_exists('icl_object_id') ) {
+
+            $default_language = wpml_get_default_language(); // will return 'en'
+            $post_id = icl_object_id($post_id, 'post', true, $default_language);
+    }
+    
+    switch ($post_id) {
+        case 12368:
+        case 12371:
+            //Category page
+            $category = get_query_var('kb-slug');
+            return ($data['code'] != "en" ? "/".$data['code']."/" : "/")."support/knowledge-base/".$category;
+            break;
+        case 12364:
+            //Category page
+            $category = get_query_var('kb-slug');
+            return ($data['code'] != "en" ? "/".$data['code']."/" : "/")."support/knowledge-base/".$category;
+            break;
+        case 14738:
+            return $url.'?vid_id='.$_REQUEST['vid_id'];
+		    break;
+        default:
+            return $url;
+    }    
+    
+    return $url;
+}
 
 add_filter('wpseo_opengraph_url', 'custom_RA_canonical', 10, 1);
 function alternate_hrefs_manipulator_callback($languages) 
@@ -438,8 +496,16 @@ add_filter('wpseo_title','custom_RA_title',10,1);
 function custom_RA_title($title){
     
     global $post;
+    
+    $post_id = $post->ID;
+    
+    if ( function_exists('icl_object_id') ) {
 
-    switch ($post->ID) {
+            $default_language = wpml_get_default_language(); // will return 'en'
+            $post_id = icl_object_id($post_id, 'post', true, $default_language);
+    }
+
+    switch ($post_id) {
         case 12368:
             //Category page
             $category = get_query_var('kb-slug');
@@ -451,6 +517,7 @@ function custom_RA_title($title){
             else if ( isset( $_REQUEST['categoryid'] ) ) {
                 $c_name = cat_translator( $_REQUEST['categoryid'] );
             }
+            
             
             if ($c_name)
             {
@@ -552,6 +619,7 @@ function custom_RA_title($title){
 
     //Add in custom rewrite rules
     add_action('init', 'custom_rewrite_rule', 0, 0);
+    
 
     add_filter( 'request', function( array $query_vars ) {
         
@@ -724,8 +792,7 @@ function custom_RA_title($title){
                             }
                         }
 
-                    }
-                    else
+                    }else
                     {
                         
                         //Check for a newer slug
@@ -745,9 +812,7 @@ function custom_RA_title($title){
                         
                         $query_vars['page_id'] = 12364; //Single Solution
                     }
-                }
-                else
-                {
+                }else{
                     //Check if it's a category, else return a 404
                     $query_vars['page_id'] = 12368; //Category
                 }    
@@ -1070,8 +1135,8 @@ if(!class_exists('RightAnswers')) {
 		wp_register_style('ra-pub-styles', plugins_url('/css/ra-public-styles.css', __FILE__), '', '2.0');
 		wp_enqueue_style('ra-pub-styles');
 
-		wp_register_style('bootstrap', '//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css');
-	    wp_enqueue_style( 'bootstrap' );
+//		wp_register_style('bootstrap', '//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css');
+//	    wp_enqueue_style( 'bootstrap' );
 
 	    // wp_register_style('fonteawesome', 'https://use.fontawesome.com/releases/v5.7.2/css/all.css' );
 	    // wp_enqueue_style('fonteawesome');

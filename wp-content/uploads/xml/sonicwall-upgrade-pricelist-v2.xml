@@ -78,6 +78,13 @@
             <Threeyrprice sku="01-SSC-4267">$10,161 USD</Threeyrprice>
         </UpgradeOption>
     </Product>
+    <Product name="NSa 4650">
+        <UpgradeOption>
+            <description>SonicWall NSa 4650 Secure Upgrade Plus Advanced Edition</description>
+            <Twoyrprice sku="01-SSC-4098">$10,995 USD</Twoyrprice>
+            <Threeyrprice sku="01-SSC-4097">$14,145 USD</Threeyrprice>
+        </UpgradeOption>
+    </Product>
     <Product name="NSA 3600">
         <UpgradeOption>
             <description>SonicWall NSA 3600 Secure Upgrade Plus</description>
@@ -91,6 +98,13 @@
             <Threeyrprice sku="01-SSC-4271">$7,255 USD</Threeyrprice>
         </UpgradeOption>
     </Product>
+    <Product name="NSa 3650">
+        <UpgradeOption>
+            <description>SonicWall NSa 3650 Secure Upgrade Plus Advanced Edition</description>
+            <Twoyrprice sku="01-SSC-4079">$6,840 USD</Twoyrprice>
+            <Threeyrprice sku="01-SSC-4082">$8,840 USD</Threeyrprice>
+        </UpgradeOption>
+    </Product>
     <Product name="NSA 2600">
         <UpgradeOption>
             <description>SonicWall NSA 2600 Secure Upgrade Plus</description>
@@ -102,6 +116,13 @@
             </ComparisonDocs>
             <Twoyrprice sku="01-SSC-4274">$3,960 USD</Twoyrprice>
             <Threeyrprice sku="01-SSC-4275">$4,840 USD</Threeyrprice>
+        </UpgradeOption>
+    </Product>
+    <Product name="NSa 2650">
+        <UpgradeOption>
+            <description>SonicWall NSa 2650 Secure Upgrade Plus Advanced Edition</description>
+            <Twoyrprice sku="01-SSC-1995">$4,465 USD</Twoyrprice>
+            <Threeyrprice sku="01-SSC-1997">$5,960 USD</Threeyrprice>
         </UpgradeOption>
     </Product>
     <Product name="NSA 220 Series">
@@ -183,6 +204,18 @@
             <Threeyrprice sku="01-SSC-0578">$1,305 USD</Threeyrprice>
         </UpgradeOption>
     </Product>
+    <Product name="TZ350 Series">
+        <UpgradeOption>
+            <description>SonicWall TZ350 Secure Upgrade Plus</description>
+            <Twoyrprice sku="02-SSC-1845">$980 USD</Twoyrprice>
+            <Threeyrprice sku="02-SSC-1847">$1,290 USD</Threeyrprice>
+        </UpgradeOption>
+        <UpgradeOption>
+            <description>SonicWall TZ350 Wireless-AC Secure Upgrade Plus</description>
+            <Twoyrprice sku="02-SSC-1853">$1,080 USD</Twoyrprice>
+            <Threeyrprice sku="02-SSC-1855">$1,390 USD</Threeyrprice>
+        </UpgradeOption>
+    </Product>
     <Product name="SOHO Series">
         <UpgradeOption>
             <description>SonicWall SOHO Secure Upgrade Plus</description>
@@ -194,6 +227,18 @@
             <description>SonicWall SOHO Wireless-N Secure Upgrade Plus</description>
             <Twoyrprice sku="01-SSC-0647">$645 USD</Twoyrprice>
             <Threeyrprice sku="01-SSC-0648">$782 USD</Threeyrprice>
+        </UpgradeOption>
+    </Product>
+    <Product name="SOHO 250 Series">
+        <UpgradeOption>
+            <description>SonicWall SOHO 250 Secure Upgrade Plus</description>
+            <Twoyrprice sku="02-SSC-1821">$625 USD</Twoyrprice>
+            <Threeyrprice sku="02-SSC-1819">$825 USD</Threeyrprice>
+        </UpgradeOption>
+        <UpgradeOption>
+            <description>SonicWall SOHO 250 Wireless-N Secure Upgrade Plus</description>
+            <Twoyrprice sku="02-SSC-1834">$725 USD</Twoyrprice>
+            <Threeyrprice sku="02-SSC-1832">$925 USD</Threeyrprice>
         </UpgradeOption>
     </Product>
     <Product name="SRA 1600">

@@ -6,14 +6,548 @@ Description: Advanced Techdocs Override
 
 */
 
-
-
-
 require 'vendor/autoload.php';
 require 'sw_td_data.php';
 
 use Aws\S3\S3Client;
 use Aws\Exception\AwsException;
+
+
+//Add custom rewrite rule
+ function custom_td_rewrite_rule() {
+   add_filter('query_vars', function($vars) {
+        $vars[] = "td-path";
+        return $vars;
+    });
+    add_rewrite_rule('^support/technical-documentation/docs/(.+)/?$','index.php?page_id=22984&td-path=$matches[1]','top');
+  }
+
+//Add in custom rewrite rules
+add_action('init', 'custom_td_rewrite_rule', 0, 0);
+
+add_filter('wpseo_title','custom_TD_title',99,99);
+
+function custom_TD_title($title){
+    
+    global $post;
+
+    if ($post->ID == "22984") {
+        return getDocumentTitle();        
+    }
+    
+    return $title;
+}
+
+function getDocumentTitle($hide_company = false, $type = false)
+{
+    $slug_pieces = explode("/", get_query_var('td-path'));
+    
+    $doc_slug = $slug_pieces[0];
+    unset($slug_pieces[0]);
+
+    $doc_path = implode("/",$slug_pieces);
+
+    $root_path = ABSPATH."techdocs/html/".$doc_slug;
+
+    $file_path = $root_path."/".$doc_path;
+
+    $meta_file = $root_path."/Content/Resources/meta.txt";
+
+    $sw_td_data = new SW_TD_Data();
+
+    $meta = $sw_td_data->process_td_meta($meta_file);
+
+    $ret = new stdClass();
+    
+    if ($meta && $meta->title)
+    {
+        if (file_exists($file_path))
+        {
+            $book_content = file_get_contents($file_path);
+
+            if ($book_content && strlen($book_content) > 0)
+            {   
+                //Extract the section title
+                preg_match("/<title[^>]*>(.*?)<\/title>/is", $book_content, $matches);
+
+                $section_title = $matches[1];
+                
+                $ret->title = $meta->title;
+                $ret->subtitle = $section_title;
+                
+            }
+        }
+        else
+        {
+            $ret->title = $meta->title;
+            $ret->subtitle = false;
+            
+            
+        }
+        
+        if ($hide_company)
+        {
+            if ($type)
+            {
+                if ($type == "title")
+                {
+                    return $ret->title;
+                }
+                else if ($type == "subtitle")
+                {
+                    return $ret->subtitle;
+                }
+                else
+                {
+                    return $ret->title . " - ".$ret->subtitle;
+                }
+            }
+            else
+            {
+                if ($ret->title && $ret->subtitle)
+                {
+                     return $ret->title . " - ".$ret->subtitle;
+                }
+                else
+                {
+                    return $ret->title;
+                }
+            }
+        }
+        else
+        {
+            if ($ret->title && $ret->subtitle)
+            {
+                 return $ret->title . " - ".$ret->subtitle." - SonicWall";
+            }
+            else
+            {
+                return $ret->title . " - SonicWall";
+            }
+        }
+    }
+    
+    return false;
+}
+
+
+function do_techdocs_doc_viewer( $atts, $content, $tag)
+{            
+    wp_register_script('sw-techdocs-singledoc_js', plugins_url('js/sw-td-singledoc.js', __FILE__));
+    wp_enqueue_script('sw-techdocs-singledoc_js');
+    wp_register_style('sw-techdocs-singledoc_css', plugins_url('css/sw-td-singledoc.css',__FILE__ ));
+    wp_enqueue_style('sw-techdocs-singledoc_css');
+    
+    $slug_pieces = explode("/", get_query_var('td-path'));
+    
+    $doc_slug = $slug_pieces[0];
+    unset($slug_pieces[0]);
+    
+    $doc_root_path = "/support/technical-documentation/docs/".$doc_slug;
+    
+    $doc_path = implode("/",$slug_pieces);
+    if ($doc_slug)
+    {
+        require_once('CJSON.php');
+
+        $root_path = ABSPATH."techdocs/html/".$doc_slug;
+        
+        $toc_roots = glob($root_path."/Data/Tocs/*.js");
+        $toc_chunks = glob($root_path."/Data/Tocs/*_Chunk*.js");
+
+
+        $toc_root_file = array_diff($toc_roots, $toc_chunks)[0];
+
+        $toc_map = file_get_contents($toc_root_file);
+
+        $chunk_map = new stdClass();
+
+        foreach($toc_chunks as $chunk)
+        {
+            $chunk = file_get_contents($chunk);
+
+            $chunk = get_string_between($chunk, 'define(', ');');
+
+            $chunk = CJSON::decode($chunk, false);
+
+            foreach($chunk as $url => $c)
+            {
+                $index = $c->i[0];
+                $title = $c->t[0];
+
+                $link = new stdClass();
+                $link->title = $title;
+                $link->url = $url;
+
+                $chunk_map->{$index} = $link;
+            }
+        }
+
+        $map = get_string_between($toc_map, 'define(', ');');
+
+        $map = CJSON::decode($map, false);
+
+        $first_link = false;
+        $current_link = false;
+
+        $tree = $map->tree->n;
+
+        $toc_html = "<ul>";
+        $d = false;
+
+        foreach($tree as $t)
+        {
+           $d = process_toc_level($t, $chunk_map, $doc_root_path);
+           $toc_html .= $d->html;
+
+            if (!$first_link)
+            {
+                $first_link = "/support/technical-documentation/docs/".$doc_slug.$d->link;
+            }
+        }
+
+        $toc_html .="</ul>";
+
+        $breadcrumbs = build_breadcrumbs($toc_html, $doc_root_path);
+
+
+        $meta_file = $root_path."/Content/Resources/meta.txt";
+
+        $sw_td_data = new SW_TD_Data();
+        
+        $meta = $sw_td_data->process_td_meta($meta_file);
+
+        //Check if a PDF exists
+        $slug = $root_path;
+        $pdf_link = $doc_path."/".$slug."/".$slug.".pdf";
+        $pdf_path = $_SERVER['DOCUMENT_ROOT'].$pdf_link;
+
+        $pdf = false;
+
+        if (file_exists($pdf_path))
+        {
+            $pdf = $pdf_link;
+        }
+        
+        $file_path = $root_path."/".$doc_path;
+                
+        
+        if (file_exists($file_path))
+        {
+            $book_content = file_get_contents($file_path);
+
+            if ($book_content && strlen($book_content) > 0)
+            {
+                
+                //Extract the section title
+                preg_match("/<title[^>]*>(.*?)<\/title>/is", $book_content, $matches);
+                
+                $section_title = $matches[1];
+                
+                //Extract the body from the madcap html
+                preg_match("/<body[^>]*>(.*?)<\/body>/is", $book_content, $matches);
+                    
+                $book_content = processHTML($matches[1], $doc_slug);
+                $toc_content = $toc_html;
+                $breadcrumbs_content = build_breadcrumb_html($breadcrumbs, $doc_slug);
+                $next_previous_content = getPrevNextLinks($doc_root_path);
+                $up_down_vote_content = getUpDownVote();
+                
+               
+                ob_start();
+                //include the specified file
+                include(plugin_dir_path(__FILE__).'views/techdocs-singledoc.php');
+                //assign the file output to $content variable and clean buffer
+                $content = ob_get_clean();
+                //return the $content
+                //return is important for the output to appear at the correct position
+                //in the content
+                return $content;
+
+            }
+            else
+            {
+                //No content, try to load the first doc from the TOC
+                header("Location: ".$first_link);
+            }
+        }
+        else
+        {
+            exit("404");
+        }
+    }
+    
+    return "not found";
+}
+
+function processHTML($html, $doc_slug)
+{
+    $doc = new DOMDocument();
+    $doc->loadHTML($html);
+    $imageTags = $doc->getElementsByTagName('img');
+
+    foreach($imageTags as $tag) {
+        
+        $src = $tag->getAttribute('src');
+        
+        if ($src && startsWith($src, "../"))
+        {                
+            if (substr($src, 0, strlen("../")) == "../") {
+                $new_src = str_replace("../", "/techdocs/html/".$doc_slug."/Content/", $src);
+                
+                $html = str_replace($src, $new_src, $html);
+            } 
+        }
+    }
+    
+    $aTags = $doc->getElementsByTagName('a');
+    
+    foreach ($aTags as $tag) {
+        
+        $href = $tag->getAttribute('href');
+        
+        if ($href && !startsWith($href, "/"))
+        {
+            $new_href = "../".$href;
+            
+            $html = str_replace($href, $new_href, $html);
+        }
+    }
+    return $html;
+}
+function build_breadcrumb_html($breadcrumbs, $doc_slug)
+{
+    $html = '<a href="/support/technical-documentation">Technical Documentation</a> > ';
+    
+    $html = $html.'<a href="/support/technical-documentation/docs/'.$doc_slug.'">'.getDocumentTitle(true, 'title').'</a> > ';
+    
+    $i = 0;
+    foreach ($breadcrumbs as $crumb)
+    {
+        $i++;
+        $html = $html.'<a href="'.$crumb->link.'">'.$crumb->title.'</a>';
+        
+        if ($i < count($breadcrumbs))
+        {
+            $html = $html." > ";
+        }
+    }
+    
+    return $html;
+}
+
+function getPrevNextLinks($doc_root_path)
+{    
+    return '<div id="next_prev_links">
+                <a href="'.$doc_root_path.'/'.$GLOBALS['previous_link'].'">< Previous Section</a><a href="'.$doc_root_path.'/'.$GLOBALS['next_link'].'">Next Section ></a>
+        </div>';
+}
+
+function getUpDownVote()
+{
+    return '<div class="td-voting">
+            <div id="" class="td-helpfulness-voting">
+                <h4>Was This Article Helpful?</h4>
+                <p class="td-help-improve">Help us to improve our support portal</p>
+                <div class="buttons">
+                <p><a class="yes" style="width: 35px; height: 35px;"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 82.3 82.3" style="enable-background:new 0 0 82.3 82.3;" xml:space="preserve"><style type="text/css">.st0{fill:#FFFFFF;}</style><g><circle cx="41" cy="41.3" r="39.8"></circle><path class="st0" d="M66.4,33.8c0-2.1-1.7-3.5-3.9-3.5H43.1c0.9-4,3-8.8,2.4-11.3c-0.9-3.5-2.4-7.1-4.2-8.3s-4.9-0.3-4.9,1.3
+        s0,9.2,0,9.2l-9,13.2H16.6l2.2,24.2l8.5,0.3c1.9,1.1,5.7,2.5,10.8,2.5h19.1c2.1,0,3.9-1.9,3.9-4s-1.7-4-3.9-4h1.9
+        c2.1,0,3.9-1.9,3.9-4s-1.7-4-3.9-4h2.1c2.1,0,3.9-1.9,3.9-4s-1.7-4-3.9-4h1.3C64.7,37.3,66.4,36,66.4,33.8z"></path></g></svg><span style="color: #000;"> Yes! </span></a>
+        
+            <a class="no" style="width: 35px; height: 35px;"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 82.3 82.3" style="enable-background:new 0 0 82.3 82.3;" xml:space="preserve"><style type="text/css">.st0{fill:#FFFFFF;}</style><g><circle cx="41" cy="41.3" r="39.8"></circle><path class="st0" d="M66.4,33.8c0-2.1-1.7-3.5-3.9-3.5H43.1c0.9-4,3-8.8,2.4-11.3c-0.9-3.5-2.4-7.1-4.2-8.3s-4.9-0.3-4.9,1.3
+        s0,9.2,0,9.2l-9,13.2H16.6l2.2,24.2l8.5,0.3c1.9,1.1,5.7,2.5,10.8,2.5h19.1c2.1,0,3.9-1.9,3.9-4s-1.7-4-3.9-4h1.9
+        c2.1,0,3.9-1.9,3.9-4s-1.7-4-3.9-4h2.1c2.1,0,3.9-1.9,3.9-4s-1.7-4-3.9-4h1.3C64.7,37.3,66.4,36,66.4,33.8z"></path></g></svg><span style="color: #000;"> Not Really</span></a></p>
+            </div>
+            <div id="td-upvote-response">
+                    '.do_shortcode('[gravityform id="72" ajax="true" description="false" field_values="document_title='.getDocumentTitle(true).'&document_url='.$_SERVER['REQUEST_URI'].'"]').'
+                    </div>
+            <div id="td-downvote-response">
+                    '.do_shortcode('[gravityform id="73" ajax="true" description="false" field_values="document_title='.getDocumentTitle(true).'&document_url='.$_SERVER['REQUEST_URI'].'"]').'
+            </div>
+                   
+        </div>';   
+}
+
+
+function str_replace_first($from, $to, $content)
+{
+    $from = '/'.preg_quote($from, '/').'/';
+    return preg_replace($from, $to, $content, 1);
+}
+
+function build_breadcrumbs($html, $doc_root_path)
+{
+    $link = getTOCReqPath($doc_root_path);
+    
+    $doc = new DOMDocument();
+    $doc->loadHTML($html);
+    
+    getCurrentNode($doc, $link, $doc_root_path);
+    
+    $breadcrumbs = $GLOBALS['breadcrumbs'];
+    unset($GLOBALS['breadcrumbs']);
+    return $breadcrumbs;
+}
+
+function getCurrentNode(DOMNode $domNode, $link, $doc_root_path) {
+    
+    foreach ($domNode->childNodes as $node)
+    {
+        if ($node->tagName == "a")
+        {
+            $toc_link = str_replace($doc_root_path."/", "", $node->getAttribute("href"));
+            
+            if ($toc_link == $link)
+            {
+                //Found the current node! Now iterate through and find all the parents
+                
+                $GLOBALS['breadcrumbs'] = array();
+                
+                $crumb = new stdClass();
+                $crumb->link = $node->getAttribute("href");
+                $crumb->title = $node->textContent;
+                
+                $GLOBALS['breadcrumbs'][] = $crumb;
+                
+                iterateNodeParent($node);
+                
+                $GLOBALS['breadcrumbs'] = array_reverse($GLOBALS['breadcrumbs']);
+            }
+        }
+
+        if($node->hasChildNodes()) {
+            getCurrentNode($node, $link, $doc_root_path);
+        }
+    }    
+}
+
+function iterateNodeParent(DOMNode $node) {
+    
+    if ($node && $node->parentNode && $node->parentNode->parentNode && $node->parentNode->parentNode->previousSibling)
+    {
+        $n = $node->parentNode->parentNode->previousSibling;
+        
+        if ($n->tagName == "a")
+        {            
+            $crumb = new stdClass();
+            $crumb->link = $n->getAttribute("href");
+            $crumb->title = $n->textContent;
+
+            $GLOBALS['breadcrumbs'][] = $crumb;
+        
+            iterateNodeParent($n);
+        }
+    }
+}
+
+function get_string_between($string, $start, $end){
+    $string = ' ' . $string;
+    $ini = strpos($string, $start);
+    if ($ini == 0) return '';
+    $ini += strlen($start);
+    $len = strpos($string, $end, $ini) - $ini;
+    return substr($string, $ini, $len);
+}
+
+function getTOCReqPath($doc_root_path)
+{
+    $req_path = $_SERVER['REQUEST_URI'];
+
+    if (substr($req_path, 0, strlen($doc_root_path)) == $doc_root_path) {
+        $req_path = substr($req_path, strlen($doc_root_path));
+    } 
+    
+    //Trim slashes
+    $req_path = rtrim($req_path, "/");
+    
+    
+    return $req_path;
+}
+
+function process_toc_level($toc, $chunk_map, $doc_root_path)
+{    
+    $current_link = false;
+    
+    $ret = "";
+        
+    $req_path = getTOCReqPath($doc_root_path);
+    
+    $chunk = $chunk_map->{$toc->i};
+    
+    $link = $chunk->url;
+    
+    //Set the first link
+    if (!$GLOBALS['last_link'])
+    {
+        $GLOBALS['last_link'] = $link;
+    }
+     
+    if ($GLOBALS['hit_next'])
+    {
+        $GLOBALS['next_link'] = $link;
+        $GLOBALS['hit_next'] = false;
+    }
+    
+    $active = "";
+    $toggle_on_open = "";
+    
+    $current_active = false;
+    
+
+    if ($link == $req_path)
+    {
+        $active = "active";
+        $toggle_on_open = "toggle-on-open open";
+        
+        $show_next = true;
+        $GLOBALS['previous_link'] = $GLOBALS['last_link'];
+        $GLOBALS['hit_next'] = true;
+        
+        $current_active = true;
+    }
+    
+    $has_sub_level = isset($toc->n) && count($toc->n) > 0;
+    
+    $sub_nav = "";
+    
+    if ($has_sub_level)
+    {        
+        $sub_nav_toggle = '<a class="toc-collapse-toggle"></a>';    
+    }
+    
+    $ret .= '<li class="'.$toggle_on_open.'">'.$sub_nav_toggle.'<a href="'.$doc_root_path.'/'.$link.'" class="'.$active.'">'.$chunk->title.'</a>';
+
+    if ($has_sub_level)
+    {
+        $ret .= '<ul>';
+        $d = false;
+            
+        foreach ($toc->n as $t)
+        {   
+           $d = process_toc_level($t, $chunk_map, $doc_root_path);
+           $GLOBALS['last_link'] = $d->link;
+           $ret .= $d->html;
+        }
+        $ret .= '</ul>';
+    }
+    else
+    {
+        $GLOBALS['last_link'] = $link;
+    }
+    
+    
+    
+    $data = new stdClass();
+    $data->html = $ret;
+    $data->link = $link;
+
+    return $data;
+}
+
+
+//Techdocs 2.0 doc viewer shortcode
+add_shortcode('techdocs_2_doc', 'do_techdocs_doc_viewer');
+
 
 //The WPML String translation package
 function getWPMLPackage()
@@ -46,11 +580,14 @@ function do_techdocs( $atts, $content, $tag)
 {    
     wp_register_script('sw-techdocs_js', plugins_url('js/sw-techdocs.js', __FILE__));
     wp_enqueue_script('sw-techdocs_js');
-    wp_register_style('sw-techdocs_css', plugins_url('css/sw-techdocs.css',__FILE__ ));
+    wp_register_style('sw-techdocs_css', plugins_url('css/sw-techdocs.css', __FILE__ ));
     wp_enqueue_style('sw-techdocs_css');
     
-    //Get the content
+    //Load tmp bootstrap - TODO - Remove this dependancy
+    wp_register_style('sw-techdocs_bootstrap', plugins_url('css/bootstrap.min.css', __FILE__));
+    wp_enqueue_style('sw-techdocs_bootstrap');
     
+    //Get the content
     $sw_td_data = new SW_TD_Data();
     $td_data = $sw_td_data->getTDData();
     
@@ -63,7 +600,6 @@ function do_techdocs( $atts, $content, $tag)
     
 
     
-
   ob_start();
   //include the specified file
   include(plugin_dir_path(__FILE__).'views/techdocs-main.php');
@@ -74,7 +610,6 @@ function do_techdocs( $atts, $content, $tag)
   //in the content
   return $content;
 }
-
 
 function TD_get_wpml_lang()
 {

@@ -83,7 +83,7 @@ class SW_TD_Data {
                   $d->language = $meta->language;
                   $d->beta = strtolower($meta->beta) == "yes";
                   $d->file_type = "html";
-                  $d->url = "/techdocs/" . $d->file_type . "/" . $d->slug;
+                  $d->url = "/support/technical-documentation/docs/". $d->slug;
                   $d->pdf = $pdf_links[$d->slug];
                   $d->modified = isset($meta->modified) ? $meta->modified : time();
 

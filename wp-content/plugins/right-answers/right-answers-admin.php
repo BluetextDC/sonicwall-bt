@@ -726,8 +726,9 @@ function ajax_upvote_answer(){
 function ajax_downvote_answer(){
     $downvote_email = $_REQUEST['email_id'];
     $s_id = $_REQUEST['sol_id'];
-    $_comment = $_REQUEST['comment'];
-    $ra = new KBRequests();
+	$down_comment = $_REQUEST['comment'];
+	$_comment = stripslashes($down_comment);
+	 $ra = new KBRequests();
     $resp = $ra->downvote_answer($downvote_email, $s_id, $_comment);
     if ( $resp == true ){
         echo $resp;
