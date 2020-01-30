@@ -20,8 +20,8 @@ if (!class_exists("WD_ASP_CustomFonts_Action")) {
          * Instead adding the links directly to the header is the best way to go.
          */
         public function handle( ) {
-            $_cf = WD_ASP_Search_Shortcode::getInstance();
-            $_cf->fonts();
+//            $_cf = WD_ASP_Search_Shortcode::getInstance();
+//            $_cf->fonts();
         }
 
         // ------------------------------------------------------------

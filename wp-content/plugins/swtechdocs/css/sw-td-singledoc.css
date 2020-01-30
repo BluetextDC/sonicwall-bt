@@ -1,0 +1,266 @@
+#toc {
+	width: 100%;
+	max-height: 100%;
+	height: 100%;
+	min-height: 100%;
+	position: fixed;
+	right: 0;
+	top: 0;
+	background-color: rgba(255,255,255,0.8);
+	padding: 0;
+	margin: 0;
+}
+
+#toc_list {
+	max-height: 100%;
+	overflow: scroll;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	padding-left: 5px;
+	padding-top: 5px;
+}
+
+#toc_list > li:before {
+	content: '';
+	position: absolute;
+	background-color: #e1e1e1;
+	width: 2px;
+	height: 100%;
+	left: -2px;
+}
+
+#toc_list > li.active:before {
+	content: '';
+	position: absolute;
+	background-color: #ff791a;
+	width: 2px;
+	height: 100%;
+	left: -2px;
+}
+
+#toc_container {
+    height: 300px;
+    overflow-y: scroll;
+    position: fixed;
+    left: 0;
+    width: 33%;
+    padding-left: 10%;
+    padding-top: 40px;
+}
+
+#toc_container ul {
+    padding-bottom: 5px !important;
+    padding-top: 0px !important;
+    margin-bottom: 0px !important;
+    margin-top: 0px !important;
+    font-size: 14px;
+}
+
+#toc_container ul li {
+    list-style-type: none !important;
+    padding-bottom: 5px !important;
+    padding-top: 5px !important;
+    margin-bottom: 0px !important;
+    margin-top: 0px !important;
+}
+
+#toc_container ul li:before {
+    content: '';
+    display: none;
+}
+
+#toc_container  li {
+    position: relative;
+}
+
+
+#toc_container .toc-collapse-toggle {
+    position: absolute;
+	top: 10px;
+	width: 10px;
+	height: 10px;
+	background: transparent;
+	border-top: 2px solid black;
+	border-right: 2px solid black;
+	box-shadow: 0 0 0 lightgray;
+	transition: all 200ms ease;
+    left: -25px;
+    transform: translate3d(0,-50%,0) rotate(-225deg);
+    cursor: pointer;
+}
+
+#toc_container li.open > .toc-collapse-toggle {
+    top: 15px;
+    transform: translate3d(0,-50%,0) rotate(-45deg);
+}
+
+
+#toc_container li.open > ul {
+  display: block;
+}
+
+#toc_container li > ul {
+  display: none;
+}
+
+#toc_container li a.active {
+	font-weight: 1000;
+}
+
+#toc a {
+	color: black;
+	text-decoration: none;
+}
+
+#book_container {
+    height: 100%;
+    padding-top: 40px;
+    float: right;
+    width: 66%;
+    color: black;
+    font-size: 16px;
+}
+
+#next_prev_links {
+    height: 100px;
+}
+
+#next_prev_links a:first-child {
+    float: left;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+#next_prev_links a:last-child {
+    float: right;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+#next_prev_links a {
+    padding: 10px;
+}
+
+#book_container .td-download-btn {
+    color: black;
+    position: absolute;
+    right: 40%;
+    margin-top: 5px;
+}
+
+/*Helpfulness Voting */
+
+.td-voting {
+    border-top: 1px solid black;
+    padding-top: 20px;
+}
+
+.td-helpfulness-voting {
+	width: 100%;
+    text-align: center;
+}
+
+.td-helpfulness-voting a.yes {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.td-helpfulness-voting a.no {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.td-helpfulness-voting a svg {
+	width: 35px;
+	height: 35px;
+	display: inline-block;
+	margin: 0 0 -11px 0;
+	fill: #e1e1e1;
+}
+
+.td-helpfulness-voting a:hover svg {
+	fill: #ff6c0c;
+}
+
+.td-helpfulness-voting a.no svg {
+	-ms-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+	transform: rotate(180deg);
+}
+
+#td-upvote-response {
+    display: none;
+}
+
+#td-downvote-response {
+    display: none;
+}
+
+.td-breadcrumbs {
+    position: relative;
+    left: 0;
+    right: 0;
+    padding-left: 10%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: #e1e1e1;
+    z-index: 9999999;
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+}
+
+.gform_body {
+    background-color: #F0F0F0;
+    padding: 20px;
+}
+
+.gform_body textarea {
+    background-color: #FFFFFF !important;
+}
+
+#td-downvote-response .gform_wrapper .gform_footer input[type=submit]:hover {
+    color: white !important;
+}
+
+.td-document-title {
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+    text-align: left;
+    padding-left:10%;
+    font-size: 30px !important; 
+}
+
+#book_container h1:first-child {
+    font-size: 24px !important;
+    text-transform: none !important;
+    color: #000000;
+    font-weight: 800 !important;
+}
+
+/* Media Queries for mobile */
+
+@media (max-width: 767px) {
+  
+    .td-breadcrumbs {
+        position: relative;
+        top: initial;
+        z-index: 0;
+    }
+    
+    #toc_container {
+        position: relative;
+        width: 100%;
+        height: 100% !important;
+        overflow: visible;
+        top: 0 !important;
+    }
+    
+    #book_container {
+        position: relative;
+        width: 100%;
+        float: none;
+    }
+  
+}
+
