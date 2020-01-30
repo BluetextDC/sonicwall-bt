@@ -45,7 +45,7 @@
     }
 
     
-	wp_cache_flush();
+//	wp_cache_flush();
 
     $plc_request = new SWRequests();
     $plc_data = json_decode($plc_request->get_plc_tables() );
@@ -106,7 +106,8 @@
           return $text;
         }
     }
-	// Sort the multidimensional array
+    // Sort the multidimensional array
+    // echo '<pre>'.json_encode($plc_data->records).'</pre>';
 	$x = 0;
 	foreach ($plc_data->records as $prec) {
 		$p_name_array = explode(',', $prec->Product_Name__c);
@@ -124,7 +125,8 @@
             {
                 $slug_type_found = true;
             }
-
+            // echo '<pre>'.json_encode($pnn).'</pre>';
+            // echo '<pre>'.json_encode($prec).'</pre>';
 			if ( $prec->Type__c == 'Software' ){
 				$master_array[$pnn][$prec->Type__c][$x]['version'] = $prec->Model__c;
 				$master_array[$pnn][$prec->Type__c][$x]['fsaof'] = $prec->Full_Support_as_of__c;
@@ -148,8 +150,46 @@
 				$x++;
 			}
 			if ( $prec->Type__c == 'Firmware' ){
+                $model = '';
+                if (strpos(strtolower($pnn), 'supermassive')) {
+                    $arr = explode(',', $prec->Model__c);
+                    $filtered = [];
+                    foreach ($arr as $var) {
+                        if (strpos(strtolower($var), 'sm9')) {
+                            array_push($filtered, $var);
+                        }
+                    }
+                    $model = implode(',', $filtered);
+                } else if (strpos(strtolower($pnn), 'e-class')) {
+                    $arr = explode(',', $prec->Model__c);
+                    $filtered = [];
+                    foreach ($arr as $var) {
+                        if (strpos(strtolower($var), 'nsae')) {
+                            array_push($filtered, $var);
+                        }
+                    }
+                    $model = implode(',', $filtered);
+                } else if (strpos(strtolower($pnn), 'nsa')) {
+                    $arr = explode(',', $prec->Model__c);
+                    $filtered = [];
+                    foreach ($arr as $var) {
+                        if (strpos(strtolower($var), 'nsa') && !strpos(strtolower($var), 'nsae')) {
+                            array_push($filtered, $var);
+                        }
+                    }
+                    $model = implode(',', $filtered);
+                } else  if (strpos(strtolower($pnn), 'tz')) {
+                    $arr = explode(',', $prec->Model__c);
+                    $filtered = [];
+                    foreach ($arr as $var) {
+                        if (strpos(strtolower($var), 'tz') || strpos(strtolower($var), 'soho')) {
+                            array_push($filtered, $var);
+                        }
+                    }
+                    $model = implode(',', $filtered);
+                }
 				$master_array[$pnn][$prec->Type__c][$x]['release'] = $prec->Release__c;
-				$master_array[$pnn][$prec->Type__c][$x]['model'] = $prec->Model__c;
+				$master_array[$pnn][$prec->Type__c][$x]['model'] = $model; // $prec->Model__c
 				$master_array[$pnn][$prec->Type__c][$x]['type'] = $prec->Release_Type__c;
 				$master_array[$pnn][$prec->Type__c][$x]['rd'] = $prec->Release_Date__c;
 				$master_array[$pnn][$prec->Type__c][$x]['status'] = $prec->Status__c;
@@ -172,6 +212,8 @@
             }
         }
     }
+    // echo '<pre>'.json_encode($master_array).'</pre>';
+    // echo '<pre>'.json_encode($product_list).'</pre>';
 ?>
 <div id="plc-product-list-holder"></div>
 

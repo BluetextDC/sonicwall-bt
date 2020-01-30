@@ -85,10 +85,10 @@ if(!class_exists('PLCTable')) {
 	    
             wp_register_style('plc-public-styles', plugins_url('assets/css/plc_table_public_css.css', __FILE__));
 
-            wp_register_style('bootstrap', '//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css');
-            wp_enqueue_style( 'bootstrap' );
-            wp_register_style('bootstrap_style', 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css');
-            wp_enqueue_style('bootstrap_style');
+//            wp_register_style('bootstrap', '//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css');
+//            wp_enqueue_style( 'bootstrap' );
+//            wp_register_style('bootstrap_style', 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css');
+//            wp_enqueue_style('bootstrap_style');
             
             wp_register_style('datatables_style', 'https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css');
             wp_register_style('datatables_style_resp', 'https://cdn.datatables.net/responsive/2.2.3/css/responsive.dataTables.min.css');

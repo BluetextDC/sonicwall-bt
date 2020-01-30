@@ -1,0 +1,122 @@
+<!-- start Simple Custom CSS and JS -->
+<style type="text/css">
+.av-caption-always .isotope-item .av-masonry-image-container{
+	padding-left:0px;
+	padding-right:0px;
+	padding-top:0px;
+	padding-bottom:0px;
+}
+
+/* Paragraph */
+/*.av_textblock_section .avia_textblock p{
+	color: #999999 !important;
+}
+*/
+.avia_textblock ul li{
+	color:#cccccc !important;
+	list-style-type:none;
+	word-wrap:normal;
+	padding-left:17px;
+	text-indent:-20px !important;
+	color: #696969 !important;
+}
+
+.avia_textblock ul li::before{
+	content: "•";
+	font-size: 30px;
+	color: #FF791A;
+	padding-right: 10px;
+	position:relative;
+	top:5px;
+}
+
+/* h1.override{
+    color: #ff791a;
+    font-size: 46px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 300 !important;
+    position: relative;
+}
+
+h1{
+	font-size: 0;
+	width: 1px;
+	height: 1px;
+	display: inline-block;
+	overflow: hidden;
+	position: absolute!important;
+	border: 0!important;
+	padding: 0!important;
+	margin: 0!important;
+	clip: rect(1px,1px,1px,1px);
+} 
+
+.html_minimal_header #main > .avia-builder-el-0, .av_minimal_header + #main .container_wrap_first:first-child{
+	border-top: none;
+	display: none;
+} */
+
+h1.npl_header_title {
+	font-size: 0;
+	width: 1px;
+	height: 1px;
+	display: inline-block;
+	overflow: hidden;
+	position: absolute!important;
+	border: 0!important;
+	padding: 0!important;
+	margin: 0!important;
+	clip: rect(1px,1px,1px,1px);
+} 
+
+[class^="icon-"]:before, [class*=" icon-"]:before{
+	font-family: 'nice-popup' !important;
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	margin-left: 0;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.av-caption-always .isotope-item .av-inner-masonry-content{
+	padding-right: 10px !important;
+	padding-left: 10px !important;
+	white-space: nowrap;
+	font-size: 74%;
+}
+
+.npl_wrap{
+	overflow-y: scroll !important;
+}
+
+@media (max-width:1080px){
+
+	.av-caption-always .isotope-item .av-inner-masonry-content{
+		padding: 20px 20px 0px 20px;
+		font-size: 14px;
+	}
+	
+}
+
+@media (max-width:800px){
+
+	.av-caption-always .isotope-item h3{
+		margin-left: -12px;
+		width:138px;
+	}
+	
+}
+
+@media (max-width:600px){
+
+	.av-caption-always .isotope-item .av-masonry-entry-content{
+		margin-left: -12px;
+	}
+	
+}
+</style>
+<!-- end Simple Custom CSS and JS -->
