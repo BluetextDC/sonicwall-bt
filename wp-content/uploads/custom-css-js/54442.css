@@ -1,0 +1,181 @@
+<!-- start Simple Custom CSS and JS -->
+<style type="text/css">
+#privacy-policy {
+    display: none;
+    position: absolute;
+    background: #fff;
+    border: 1px solid #DDD;
+    padding: 15px;
+    width:80%;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-box-shadow: 0 1px 5px rgba(0,0,0,0.1);
+    -moz-box-shadow: 0 1px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 1px 5px rgba(0,0,0,0.1);
+  	background-color: #2b2828 !important;
+}
+
+#privacy-policy{z-index:100;}
+.gfield_checkbox {width:100% !important}
+
+
+/* Desktop-CSS */
+.threat-report-header{
+ 	font-family: Nunito sans;
+    line-height: 100%;
+    font-weight: bold;
+    color: #F2F2F2;
+    padding-top: 70px !important;
+}
+
+.threat-report-button{
+      padding-top: 70px !important;
+}
+.iconbox_content_title{
+  padding-bottom: 20px !important;
+}
+.gform_button{
+    position: relative;
+    left: 0px !important;
+  	top: -10px !important;
+  	font-size: 15px !important;
+}
+.gform_button:hover{
+    color:#ffffff !important;
+}
+.sw_button a {
+      left: 0px !important;
+}
+.CompanySearchResults{
+   width: auto !important;
+   left: 30px !important; 
+}
+
+/* Mobile-CSS */
+@media (max-width:767px){
+	/* Paragraph */
+.threat-report-header{
+    padding-top: 300px;
+	font-size: 40px !important;
+}
+	/* Blockquote-section */
+ blockquote {
+	font-family: Nunito;
+}
+	/* Threat-report-button */
+.threat-report-button{
+    padding: 40px 0px 40px 0px !important;
+    min-width: 108% !important;
+}
+  
+	/* Columns-padding-section */
+.flex_column{
+    padding: 20px 20px 0px 0px !important;
+}
+.sw_threatreport_section_padding{
+   padding: 0px 10px 0px 20px !important;
+}
+.sw_threatreport_section5_padding{
+     padding: 50px 20px 0px 0px !important;
+}
+.sw_threatreport_section2 {
+    padding: 40px 10px 0px 20px !important;
+}
+}
+
+/* Form-section */
+.ginput_container{
+  width:90% !important;
+  margin-left:10% !important;
+}
+.gform_wrapper form ul.gform_fields:not(.top_label) li.gfield_html_formatted {
+    margin-left: 10%!important;
+    width: 90%;
+}
+.gform_wrapper .gform_footer:not(.top_label) {
+    padding: 0px 0 0px;
+    margin-left: 10%;
+    width: 90%;
+}
+.gform_wrapper input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file]) {
+    margin: 0.5% !important;
+    border-color: transparent !important;
+    background-color: #f2f2f2 !important;
+    color: #7d7d7d !important;
+    border-radius: 0px !important;
+    margin: 0.5% !important;
+}
+.gform_wrapper select {
+
+    border-color: transparent !important;
+    background-color: #f2f2f2 !important;
+    color: #7d7d7d !important;
+    border-radius: 0px !important;
+    margin: 0.5% !important;
+}
+.sw_threatreport_section{
+ margin-left: 3% !important;
+}
+.sw-threat-report-image {
+  padding-right:40px;
+}
+.sw-threat-header-image {
+  min-width:200px;
+  max-width:450px;
+}
+
+@media (min-width:768px){
+/* Blockquote-section-Desktop */
+blockquote {
+	font-family: Nunito;
+	font-size: 28px;
+	max-width: 600px;
+	line-height: 1.4;
+	position: relative;
+	margin: 0;
+    padding-left: 2em;
+    padding-top: 1em;
+    border: none !important;
+}
+
+blockquote:before{
+ 	position: absolute;
+	color: #ff791a;;
+	font-size: 25rem !important;
+	width: 4rem;
+	height: 4rem;
+}
+blockquote:after {
+	position: absolute;
+	color: #ff791a;;
+	font-size: 25rem !important;
+	width: 4rem;
+	height: 4rem;
+}
+blockquote:before {
+	content: '“';
+	left: -5rem;
+    top: -7rem;
+}
+blockquote:after {
+	content: '”';
+	right: -2rem;
+    top: 10rem;
+}
+.sw-threat-report-footer {
+    padding-top: 35px;
+    font-size: 24px;
+  }
+  
+.sw_threatreport_section2 {
+  padding: 40px 10px 20px 60px !important;
+}
+}
+
+/* Fix z-index issue with company dropdown */
+#av_section_2 .template-page.content { 
+	z-index: 10;
+}
+</style>
+<!-- end Simple Custom CSS and JS -->
