@@ -18,33 +18,48 @@ function w3tc_filename_filter($minify_filename, $files, $type ){
     
 }
 
+add_filter("gform_confirmation", "set_threat_report_cookie", 10, 4);
+function set_threat_report_cookie($confirmation, $form, $lead, $ajax){
+
+    if ($form["id"] == 72)
+    {
+        session_start();
+        $_SESSION['threat_report'] = true;
+    }
+    
+    return $confirmation;
+}
+
 add_action( 'setup_theme', 'redirect_override' );
 
 function redirect_override() {  
 
     $path = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
 
-    $query = "/support/technical-documentation/";
-    if (substr($path, 0, strlen($query)) === $query && substr($_SERVER["REQUEST_URI"], -strlen(".pdf")) != ".pdf")
+    $query = "/resources/2020-cyber-threat-report-pdf/";
+    
+    if (substr($path, 0, strlen($query)) === $query)
     {
-        $parts = explode("/", trim($path, "/"));
-        
-        if (count($parts) > 2)
+        session_start();
+        if (isset($_SESSION['threat_report']))
         {
-            $parts = array_slice($parts, 0, 3);
-            
-            if (endsWith($parts[2], "-(1)"))
-            {
-                $parts[2] = replaceEnd($parts[2], "-(1)");                
-            }
-            
-            $url = "/".implode("/", $parts).".pdf";
-            
-            if (wp_redirect($url))
-            {
-                exit();
-            }
+           $pdf_url = get_post_meta(54437, "wpcf-gated-content")[0];
+    
+           $pdf = file_get_contents($pdf_url);
+        
+            header('Content-type: application/pdf');
+            header('Content-Disposition: inline; filename="2020-sonicwall-cyber-threat-report.pdf"');
+
+            echo $pdf;
+
+            exit(); 
         }
+        else
+        {
+            wp_redirect("/2020-cyber-threat-report/");
+            exit();
+        }
+        
     }
 
     
