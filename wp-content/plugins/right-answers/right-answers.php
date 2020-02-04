@@ -1135,8 +1135,8 @@ if(!class_exists('RightAnswers')) {
 		wp_register_style('ra-pub-styles', plugins_url('/css/ra-public-styles.css', __FILE__), '', '2.0');
 		wp_enqueue_style('ra-pub-styles');
 
-//		wp_register_style('bootstrap', '//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css');
-//	    wp_enqueue_style( 'bootstrap' );
+		wp_register_style('bootstrap', '//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css');
+	    wp_enqueue_style( 'bootstrap' );
 
 	    // wp_register_style('fonteawesome', 'https://use.fontawesome.com/releases/v5.7.2/css/all.css' );
 	    // wp_enqueue_style('fonteawesome');
