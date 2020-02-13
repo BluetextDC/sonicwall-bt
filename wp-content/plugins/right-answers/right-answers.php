@@ -370,23 +370,6 @@ function download_single_solution_data($solution_id, $alert = false)
     // Add hook for front-end <head></head>
     add_action( 'wp_head', 'add_lang_home' );
 
-    add_action( 'send_headers', 'do_techdoc_pdf' );
-    function do_techdoc_pdf() {
-        
-        $first_bit = "/support/technical-documentation/";
-        if (substr($_SERVER["REQUEST_URI"], 0, strlen($first_bit)) === $first_bit && substr($_SERVER["REQUEST_URI"], -strlen(".pdf")) === ".pdf")
-        {
-            
-            $file_name = substr($_SERVER["REQUEST_URI"], strlen($first_bit),  -strlen(".pdf"));
-        
-            
-            echo '<iframe style="position:fixed; top:0; left:0; bottom:0; right:0; width:100%; height:100%; border:none; margin:0; padding:0; overflow:hidden; z-index:999999;" src="https://techdocs.sonicwall.com/wp-content/uploads/pdf/'.$file_name.'.pdf"></iframe>';
-            
-            die();
-        }
-        
-    }
-
      
 
     //Custom flush function
@@ -607,12 +590,10 @@ function custom_RA_title($title){
 
    function custom_rewrite_rule() {
        add_filter('query_vars', function($vars) {
-            $vars[] = "td-slug";
             $vars[] = "kb-slug";
             $vars[] = 'kb-alert';
             return $vars;
         });
-        add_rewrite_rule('^support/technical-documentation/(.+)/?$','index.php?page_id=22984&td-slug=$matches[1]','top');
         add_rewrite_rule('^support/product-notification/(.+)/?$','index.php?kb-slug=$matches[1]&kb-alert=true','top');
         add_rewrite_rule('^support/knowledge-base/(.+)/?$','index.php?kb-slug=$matches[1]','top');
       }
@@ -1135,8 +1116,8 @@ if(!class_exists('RightAnswers')) {
 		wp_register_style('ra-pub-styles', plugins_url('/css/ra-public-styles.css', __FILE__), '', '2.0');
 		wp_enqueue_style('ra-pub-styles');
 
-		wp_register_style('bootstrap', '//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css');
-	    wp_enqueue_style( 'bootstrap' );
+//		wp_register_style('bootstrap', '//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css');
+//	    wp_enqueue_style( 'bootstrap' );
 
 	    // wp_register_style('fonteawesome', 'https://use.fontawesome.com/releases/v5.7.2/css/all.css' );
 	    // wp_enqueue_style('fonteawesome');
