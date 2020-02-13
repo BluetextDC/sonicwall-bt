@@ -10,6 +10,22 @@ Author: Brad Kendall
 
 //Settings
 
+function circularMenuLightbox($link)
+{
+    $ie =(strpos($_SERVER["HTTP_USER_AGENT"], 'Trident/7.0; rv:11.0') > -1);
+    
+    if ($link->lightbox == "on" && !$ie)
+    {
+        return " data-fancybox data-type='iframe' ";
+    }
+    else if ($link->lightbox == "on" && $ie)
+    {
+        return " target='_blank' ";
+    }
+    
+    return "";
+}
+
 function getDatasheets()
 {
     $datasheets = array();

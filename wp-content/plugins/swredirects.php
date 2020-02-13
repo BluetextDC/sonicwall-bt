@@ -5,6 +5,15 @@ Plugin URI: https://www.sonicwall.com
 Description: Advanced Redirects
 Version: 0.1.0
 Author: Brad Kendall*/
+
+//Add minimized bootstrap css for styling
+add_action('wp_enqueue_scripts', 'sw_load_bootstrap');
+function sw_load_bootstrap() {
+    wp_register_style('sw_bootstrap', '/wp-content/bootstrap.css');
+    wp_enqueue_style( 'sw_bootstrap' );
+}
+
+
 add_filter('w3tc_minify_urls_for_minification_to_minify_filename', 'w3tc_filename_filter', 20, 3);
 function w3tc_filename_filter($minify_filename, $files, $type ){
     
