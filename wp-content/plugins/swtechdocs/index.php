@@ -359,10 +359,10 @@ function getUpDownVote()
         c2.1,0,3.9-1.9,3.9-4s-1.7-4-3.9-4h2.1c2.1,0,3.9-1.9,3.9-4s-1.7-4-3.9-4h1.3C64.7,37.3,66.4,36,66.4,33.8z"></path></g></svg><span style="color: #000;"> Not Really</span></a></p>
             </div>
             <div id="td-upvote-response">
-                    '.do_shortcode('[gravityform id="72" ajax="true" description="false" field_values="document_title='.getDocumentTitle(true).'&document_url='.$_SERVER['REQUEST_URI'].'"]').'
+                    '.do_shortcode('[gravityform id="73" ajax="true" description="false" field_values="document_title='.getDocumentTitle(true).'&document_url='.$_SERVER['REQUEST_URI'].'"]').'
                     </div>
             <div id="td-downvote-response">
-                    '.do_shortcode('[gravityform id="73" ajax="true" description="false" field_values="document_title='.getDocumentTitle(true).'&document_url='.$_SERVER['REQUEST_URI'].'"]').'
+                    '.do_shortcode('[gravityform id="74" ajax="true" description="false" field_values="document_title='.getDocumentTitle(true).'&document_url='.$_SERVER['REQUEST_URI'].'"]').'
             </div>
                    
         </div>';   

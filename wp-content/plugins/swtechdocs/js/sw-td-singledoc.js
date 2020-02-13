@@ -129,7 +129,7 @@
             jQuery(".td-help-improve").hide();
             jQuery("#td-upvote-response").show();
             jQuery(".td-voting .td-helpfulness-voting .buttons").hide();
-            jQuery("#gform_submit_button_72").css("opacity", "0").css("height", "0").click().hide();
+            jQuery("#gform_submit_button_73").css("opacity", "0").css("height", "0").click().hide();
             
         });
         
