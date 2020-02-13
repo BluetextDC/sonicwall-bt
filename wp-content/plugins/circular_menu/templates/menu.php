@@ -34,7 +34,7 @@ window.circular_menu_anchor = "<?php echo $menuData->anchor;?>";
           if ($link->enabled === "on") {
         ?>
         <li class='menu-item'>
-          <a href='<?php echo $link->link;?>' <?php echo $link->lightbox == "on" ? " data-fancybox data-type='iframe' " : "";?> target='<?php echo $link->new_window === 'on' ? '_blank' : ''?>'>
+          <a href='<?php echo $link->link;?>' <?php echo circularMenuLightbox($link);?> target='<?php echo $link->new_window === 'on' ? '_blank' : ''?>'>
             <i class='<?php echo $link->icon;?>'></i>
             <div class="menu-item-text-container">
               <p class="menu-item-text"><?php echo $link->title;?></p>
