@@ -30,7 +30,7 @@ versionpress.maintenance
 !/wp-content/languages/
 !/wp-content/uploads/
 !/wp-content/vpdb/
-
+!/wp-content/bootstrap.css
 
 #------------------------
 #  Log files
