@@ -578,6 +578,37 @@ add_shortcode('techdocs_2', 'do_techdocs');
 
 function do_techdocs( $atts, $content, $tag)
 {    
+    
+    $redirect = false;
+    
+    if (isset($_GET['language']) && $_GET['language'] != "English")
+    {
+        foreach($_GET as $key => $value)
+        {
+            $old = $value;
+            $cat = ucfirst($key);
+            $new = td_translate_str($old, $cat."-".$old);
+            
+            if ($old != $new)
+            {
+                $redirect = true;
+                
+                $_GET[$key] = $new;
+            }
+        }
+    }
+    
+    if ($redirect)
+    {
+        $uri_parts = explode('?', $_SERVER['REQUEST_URI'], 2);
+        $qs = http_build_query($_GET);
+        $url = $uri_parts[0].'?'.$qs;
+        if (wp_redirect($url))
+        {
+            exit();
+        }
+    }    
+    
     wp_register_script('sw-techdocs_js', plugins_url('js/sw-techdocs.js', __FILE__));
     wp_enqueue_script('sw-techdocs_js');
     wp_register_style('sw-techdocs_css', plugins_url('css/sw-techdocs.css', __FILE__ ));

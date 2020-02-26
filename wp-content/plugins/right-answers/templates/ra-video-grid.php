@@ -48,7 +48,7 @@
 
 			$vid_holder .= '<div class="video-holder"><p class="video-time-stamp">' . $dur . '</p>';
 			$vid_holder .= '<a class="video-image-link" href="#"><img id="' . $vid['id'] . '" class="sw-support-vid" src="' . $vid['images']['poster']['src'] . '" /></a>'; 
-			$vid_holder .= '<div class="vid-name"><p class="video-title"><a href="/support/video-tutorials/single-video/?vid_id=' . $vid['id'] . '">' . $vid['name'] . '</a></p></div>';
+			$vid_holder .= '<div class="vid-name"><p class="video-title"><a href="/support/video-tutorials/'.sanitize_title($vid['name']).'/' . $vid['id'] . '">' . $vid['name'] . '</a></p></div>';
 			$vid_holder .= '<div class="vid-description"><p class="video-desc">' . $vid['description'] .'</p></div>';
 			$vid_holder .= '</div>';
 		}

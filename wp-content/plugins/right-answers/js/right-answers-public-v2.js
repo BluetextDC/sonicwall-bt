@@ -7,9 +7,74 @@ jQuery(function($){
 
 	$('.ra-search-submit-button').html('<img src="/wp-content/plugins/right-answers/img/search-icon.png" />');
 
+    
 	$(document).ready(function() {
+        
+        function ra_vote_set(sol_id, vote)
+        {
+            var storage_string = vote + "--" + window.ra_sol_last_modified;
+            localStorage.setItem(sol_id, storage_string);
+        }
+        
+        function ra_vote_check(sol_id)
+        {
+            var vote_check = localStorage.getItem($('.ra-helpfulness-voting').attr('id'));
+            
+            if (vote_check)
+            {
+                //Check for legacy
+                var pieces = vote_check.split("--");
+                if (pieces.length > 1)
+                {
+                    //Current Vote
+                    var vote = pieces[0];
+                    var vote_modified = pieces[1];
+                    
+                    if (parseInt(vote_modified < window.ra_sol_last_modified))
+                    {
+                        //Old vote, return null for new vote
+                        return null;
+                    }
+                    else
+                    {
+                        //Still a valid vote
+                        return vote;
+                    }
+                }
+                else
+                {
+                    //Legacy
+                    return null;
+                }
+            }
+            
+            return null;
+           
+        }
+        //Check the vote and hide the voting
+        var vote_check = ra_vote_check($('.ra-helpfulness-voting').attr('id'));
+        
+        if (vote_check)
+        {
+            if ( vote_check == 'yes' ){
+				$('#ra-upvote-response').html('You indicated this response was helpful');
+				// console.log('second vote blocked');
+			}
+            else{
+                $('#ra-upvote-response').html('You indicated this response was not helpful');
+            }
+            
+            jQuery(".helpful-buttons").hide();
+        }
 
         jQuery(document).on('click', '#RA_article_downvote', function () {
+            
+            if (ga)
+            {
+                ga('send', 'event', 'Helpful', 'Click','No');
+            }
+            
+            jQuery(".helpful-buttons").hide();
 			jQuery("#RA_article_downvote_form").show();
 			jQuery('.ra-helpfulness-voting a.no svg').css("fill", "#ff6c0c");
 			jQuery('.ra-helpfulness-voting a.yes svg').css("fill", "#e1e1e1");
@@ -36,6 +101,11 @@ jQuery(function($){
 		});
         
         jQuery(document).on('click', '.ra-helpfulness-voting .yes', function(){
+            if (ga)
+            {
+                ga('send', 'event', 'Helpful', 'Click','Yes');
+            }
+            jQuery(".helpful-buttons").hide();
             jQuery("#RA_article_downvote_form").hide(); 
             jQuery('.ra-helpfulness-voting a.no svg').css("fill", "#e1e1e1");
             jQuery('.ra-helpfulness-voting a.yes svg').css("fill", "#ff6c0c");
@@ -257,25 +327,6 @@ jQuery(function($){
 		});
 
 
-		$('.ra-helpfulness-voting a').each(function(){
-
-			var link = $(this).closest('.ra-helpfulness-voting');
-			var so_id = link.attr("id");
-
-			var vote_check = localStorage.getItem(so_id);
-
-			// console.log(vote_check);
-
-//			if ( vote_check == 'yes' ){
-//				$('.ra-helpfulness-voting a.yes svg').css("fill", "#ff6c0c");
-//			}
-//			else if ( vote_check == 'no' ) {
-//				$('.ra-helpfulness-voting a.no svg').css("fill", "#ff6c0c");
-//			}
-
-
-		})
-
 		$(document).on('click', '.ra-helpfulness-voting a.yes', function(e){
 			e.preventDefault();
 			var link = $(this).closest('.ra-helpfulness-voting');
@@ -283,7 +334,7 @@ jQuery(function($){
 
 			// console.log(so_id);
 
-			var vote_check = localStorage.getItem(so_id);
+			var vote_check = ra_vote_check(so_id);
 			if ( vote_check == 'yes' ){
 				$('#ra-upvote-response').html('You indicated this response was helpful');
 				// console.log('second vote blocked');
@@ -300,7 +351,8 @@ jQuery(function($){
 				}
 				$.post(ra_ajax_object.ajaxurl, data, function(response){
 					if ( response == 'true' ){
-						localStorage.setItem(so_id, 'yes');
+                        
+                        ra_vote_set(so_id, 'yes');
 						$('#ra-upvote-response').html('You indicated this response was helpful');
 						$('.ra-helpfulness-voting a.yes').css("fill", "#ff6c0c");
 					}
@@ -315,7 +367,7 @@ jQuery(function($){
 			e.preventDefault();
 			var link = $(this).closest('.ra-helpfulness-voting');
 			var so_id = link.attr("id");
-			var vote_check = localStorage.getItem(so_id);
+			var vote_check = ra_vote_check(so_id);
 			if ( vote_check == 'no' ){
 				$('#ra-upvote-response').html('Vote once per answer please');
 				// $('#ra-downvote-feedback-form').hide();
@@ -328,13 +380,13 @@ jQuery(function($){
 			}
 			else {
 				// $('#ra-downvote-feedback-form').show();
-				localStorage.setItem(so_id, 'no');
+                ra_vote_set(so_id, 'no');
 				$('.ra-helpfulness-voting a.no').css("fill", "#ff6c0c");
 			}
 		});
 
         $("#gform_65").submit(function(){
-			var data = {
+            var data = {
 				'action': 'single_downvote',
 				email_id: $('#input_65_1').val(),
 				sol_id: $('.ra-helpfulness-voting').attr('id'),
