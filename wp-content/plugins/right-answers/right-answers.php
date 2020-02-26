@@ -416,7 +416,7 @@ function custom_RA_canonical($canonical)
             return $site_url."/support/knowledge-base/".$category;
             break;
         case 14738:
-            return $canonical.'?vid_id='.$_REQUEST['vid_id'];
+            return $site_url."/support/video-tutorials/".get_query_var('vid-slug');
 		    break;
         default:
             return $canonical;
@@ -451,7 +451,7 @@ function fix_url( $url,$data) {
             return ($data['code'] != "en" ? "/".$data['code']."/" : "/")."support/knowledge-base/".$category;
             break;
         case 14738:
-            return $url.'?vid_id='.$_REQUEST['vid_id'];
+            return "/support/video-tutorials/".get_query_var('vid-slug');
 		    break;
         default:
             return $url;
@@ -553,11 +553,27 @@ function custom_RA_title($title){
                     require_once(get_home_path().'/wp-content/plugins/brightcove-video-connect/includes/class-bc-logging.php');
                 }
                 $vid = new BC_CMS_API();
-                $vid_details = $vid->video_get( $_REQUEST['vid_id'] );
+                $video_id = explode("/", get_query_var('vid-slug'))[1];
+                
+                if (!$video_id)
+                {   
+                    $vid_details = $vid->video_get( $_GET['vid_id'] );
+                    
+                    if($vid_details["state"] == "ACTIVE" && $vid_details['name'])
+                    {
+                        $redirect = "/support/video-tutorials/".sanitize_title($vid_details['name'])."/".$vid_details['id'];
+                        if (wp_redirect($redirect, 301))
+                        {
+                            exit();
+                        }
+                    }
+                    
+                }
+                $vid_details = $vid->video_get( $video_id );
                 if($vid_details["state"] == "ACTIVE") {
-                            return $vid_details['name'];
+                    return $vid_details['name'];
                 } else {
-			     get_404_support_videos();
+			        get_404_support_videos();
                 }
             }
  			catch(exception $e)
@@ -592,10 +608,12 @@ function custom_RA_title($title){
        add_filter('query_vars', function($vars) {
             $vars[] = "kb-slug";
             $vars[] = 'kb-alert';
+            $vars[] = "vid-slug";
             return $vars;
         });
         add_rewrite_rule('^support/product-notification/(.+)/?$','index.php?kb-slug=$matches[1]&kb-alert=true','top');
         add_rewrite_rule('^support/knowledge-base/(.+)/?$','index.php?kb-slug=$matches[1]','top');
+        add_rewrite_rule('^support/video-tutorials/(.+)/?$','index.php?page_id=14738&vid-slug=$matches[1]','top');
       }
 
     //Add in custom rewrite rules
@@ -804,7 +822,10 @@ function custom_RA_title($title){
             }
             
             
-        }
+        }else if (isset($query_vars['vid-slug'])) {
+		    $query_vars['page_id'] = 14738;  // Single video
+            return $query_vars;
+	    }
         
         return $query_vars;
 
