@@ -9,35 +9,25 @@ jQuery(document).ready(function(){
 	
 
 	jQuery(".menu-left .menu-item").click(function(event){
-        
-        if (window && window.lang && window.lang == "en_US")
+        jQuery(this).find("a").get(0).click();
+	});
+
+    
+	jQuery(".menu-left .menu-item").hover(function(event){
+		
+        event.preventDefault();
+
+        if (jQuery(this).hasClass('menu-item-pop'))
         {
-            jQuery(this).find("a").get(0).click();
+
+           var firewalls = jQuery(".menu-left .menu-item:first");
+           setLeftActive(firewalls, true); 
         }
         else
         {
-            event.preventDefault();
-		    setLeftActive(this);
+            setLeftActive(this);
         }
-		
-	});
-
-	jQuery(".menu-left .menu-item").hover(function(event){
-		
-        if (window && window.lang && window.lang == "en_US")
-        {
-            event.preventDefault();
-
-            if (jQuery(this).attr('id') == "menu-item-16546")
-            {
-                var firewalls = jQuery("#menu-item-11595");
-               setLeftActive(firewalls, true); 
-            }
-            else
-            {
-                setLeftActive(this);
-            }
-        }
+        
 	});
 
     jQuery(".menu-right .menu-item").hover(function(){
