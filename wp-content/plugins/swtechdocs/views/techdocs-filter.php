@@ -45,7 +45,7 @@
         <section class="sw-cust-section">
           <div class="sw-cust-toggle">
             <p class="sw-cust-toggler">
-              <span class="sw-cust-heading"><?php echo td_translate_str('Model', 'UI-Model');?></span>
+              <span class="sw-cust-heading"><?php echo td_translate_str('Product Series', 'UI-Product-Series');?></span>
               <span class="sw-cust-toggle_inner">
                 <span class="sw-cust-vert"></span>
                 <span class="sw-cust-hor"></span>
