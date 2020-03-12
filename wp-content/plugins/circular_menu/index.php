@@ -242,7 +242,23 @@ function getPostLinks($post)
             $links[] = $linkObj;
         }
     }
-
+    
+    $switch_to_default = true;
+    
+    foreach($links as $link)
+    {
+        if ($link->enabled == "on")
+        {
+            $switch_to_default = false;
+            break;
+        }
+    }
+    
+    if ($switch_to_default)
+    {
+        $links = $defaultLinks;   
+    }
+    
     return $links;
 }
 
