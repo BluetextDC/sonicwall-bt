@@ -973,6 +973,7 @@ class cli_techdocs extends WP_CLI_Command {
       $ui_elements = array(
         "Filter Results" => "UI",
         "Product Category" => "UI",
+        "Product Series" => "UI",
         "Model" => "UI",
         "Document Type" => "UI",
         "Language" => "UI",
